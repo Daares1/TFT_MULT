@@ -1,0 +1,10 @@
+# space <name> <id> <mau size>
+space	system:sw:main	1	8
+# chip <name> <id> <mau size> <size> <type>
+chip	system:ROM_XMEN	1	8	421888	rom
+chip	system:TSK3000_1	2	8	32768	rom
+chip	system:RAM_XRAM	0	8	626687	ram
+# map <space id> <start in space> <size in space> <chip id> <start on chip>
+map	1	17199104	626687	0	0
+map	1	16777216	421888	1	0
+map	1	0	32768	2	0

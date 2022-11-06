@@ -1,0 +1,1 @@
+  -Wa-I"c:\users\david\desktop\tft_mult\softembebido" -Wa-I"C:\PROGRAM FILES\ALTIUM DESIGNER SUMMER 09\System\Tasking\c3000\include" -Wa-gs -Wa-il --use-hardware=md -o "Output\MAIN.obj"

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Par" num="282" delta="new" >No user timing constraints were detected or you have set the option to ignore timing constraints (&quot;par -x&quot;). Place and Route will run in &quot;Performance Evaluation Mode&quot; to automatically improve the performance of all internal clocks in this design. Because there are not defined timing requirements, a timing score will not be reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock. Note: For the fastest runtime, set the effort level to &quot;std&quot;.  For best performance, set the effort level to &quot;high&quot;.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_VGA/INT_O(2)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_VGA/INT_O(0)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TFT/IO_INT_O</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(6)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(7)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_WB_MULTIMASTER_1_M0_S0_SRAM_ADR_1</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_0</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_1</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_2</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_3</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_4</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_5</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_6</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_7</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_8</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_9</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">TFT_TSC_BUSY_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_10</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_11</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_12</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_13</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_14</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">PinSignal_U1_O_15</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TERMINAL_1/TDOENABLE</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/RUNNING</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_WB_MULTIMASTER_1_M0_S0_SRAM_ADR_0</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(10)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_20</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_23</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_22</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TERMINAL_1/INT_O(0)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_VGA/CSYNC</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_VGA/BLANK</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_1</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_0</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_3</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_2</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_5</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_4</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_7</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_dip/pao_6</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TERMINAL_1/INT_O(1)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(13)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(11)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(12)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(21)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(20)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(15)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(14)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(23)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(22)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(31)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(30)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(17)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(16)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(25)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(24)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(19)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(18)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(27)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(26)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(29)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(28)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(1)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(0)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(3)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(2)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(5)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(4)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_21</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(9)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(8)</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Place" num="414" delta="new" >The input design contains local clock signal(s). To get a better result, we recommend users run map with the &quot;-timing&quot; option set before starting the placement.
+</msg>
+
+<msg type="info" file="Timing" num="2761" delta="new" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">VGA_CLK_int</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">JTAG_NEXUS_TCK_ibuf</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">47</arg> CLK pins and <arg fmt="%d" index="3">0</arg> NON_CLK pins failed to route using a CLK template.
+</msg>
+
+<msg type="info" file="Timing" num="2761" delta="new" >N/A entries in the Constraints List may indicate that the constraint is not analyzed due to the following: No paths covered by this constraint; Other constraints intersect with this constraint; or This constraint was disabled by a Path Tracing Control. Please run the Timespec Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.</msg>
+
+<msg type="warning" file="ParHelpers" num="361" delta="new" >There are <arg fmt="%d" index="1">72</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+<msg type="warning" file="Par" num="283" delta="new" >There are <arg fmt="%d" index="1">72</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+</messages>
+

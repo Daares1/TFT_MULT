@@ -1,0 +1,6453 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc5224a --dep-file=Output\frameout\drv_spi_drv_spi.d --make-target=Output\frameout\drv_spi_drv_spi.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\drv_spi.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c"
+
+	.section	.text.drv_spi.spi_open ,cluster('$group_spi_open')
+	.align	4
+	.global	spi_open
+; Function spi_open
+.L161:
+spi_open:	.type	func
+	addiu	$sp,$sp,-4
+.L360:
+	move	$v0,$a0
+	sll	$v0,$v0,2
+	subu	$v0,$v0,$a0
+	sll	$v0,$v0,6
+	lui	$v1,@hi(drv_table)
+	addiu	$v1,$v1,@lo(drv_table)
+	addu	$a3,$v0,$v1
+.L565:
+	lw	$v0,0($a3)
+.L361:
+	sw	$ra,0($sp)
+.L362:
+	bne	$v0,$zero,.L2
+.L641:
+	nop
+.L367:
+	sll	$v0,$a0,4
+	lui	$v1,@hi(drv_spi_instance_table)
+	addiu	$v1,$v1,@lo(drv_spi_instance_table)
+	addu	$a2,$v0,$v1
+.L560:
+	lw	$v0,12($a2)
+.L642:
+	li	$v1,0x8
+.L643:
+	sll	$v0,$v0,4
+	lui	$a0,@hi(per_spi_instance_table)
+.L559:
+	addiu	$a0,$a0,@lo(per_spi_instance_table)
+	addu	$v0,$v0,$a0
+.L557:
+	lw	$a0,0($v0)
+	sw	$a0,0($a3)
+.L644:
+	lbu	$a0,11($v0)
+.L645:
+	sb	$v1,4($a3)
+.L646:
+	lw	$v0,4($v0)
+.L647:
+	sb	$a0,5($a3)
+.L648:
+	addiu	$v0,$v0,-8
+.L558:
+	sltiu	$v0,$v0,1
+	sb	$v0,7($a3)
+.L649:
+	sb	$zero,6($a3)
+.L650:
+	lw	$a1,4($a2)
+.L561:
+	jal	spi_set_baudrate
+	move	$a0,$a3
+.L651:
+	lw	$v1,0($a2)
+	li	$a0,0x1
+.L562:
+	beq	$v1,$a0,.L4
+.L652:
+	li	$v0,0x22
+.L563:
+	li	$a0,0x2
+	beq	$v1,$a0,.L5
+	nop
+	li	$a0,0x3
+	beq	$v1,$a0,.L6
+	nop
+	j	.L7
+	nop
+.L4:
+	j	.L8
+.L653:
+	li	$v0,0x32
+.L5:
+	j	.L9
+.L654:
+	li	$v0,0x2a
+.L6:
+	li	$v0,0x3a
+.L7:
+.L9:
+.L8:
+	lw	$v1,0($a3)
+	sw	$v0,12($v1)
+.L2:
+	move	$v0,$a3
+.L564:
+	lw	$ra,0($sp)
+.L556:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L356:
+	.size	spi_open,*-spi_open
+.L222:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_set_baudrate ,cluster('$group_spi_set_baudrate')
+	.align	4
+	.global	spi_set_baudrate
+; Function spi_set_baudrate
+.L163:
+spi_set_baudrate:	.type	func
+	lui	$v0,0x2fa
+	ori	$v0,$v0,0xf080
+	addu	$v1,$a1,$a1
+	divu	$v1,$v0,$v1
+.L567:
+	divu	$v0,$v0,$v1
+	srl	$v0,$v0,1
+	sltu	$v0,$a1,$v0
+	addu	$v0,$v1,$v0
+.L566:
+	bne	$v0,$zero,.L11
+.L659:
+	nop
+.L660:
+	li	$v0,0x1
+.L11:
+	lw	$v1,0($a0)
+.L380:
+	addiu	$v0,$v0,-1
+.L381:
+	sw	$v0,20($v1)
+.L661:
+	jr	$ra
+.L662:
+	nop
+.L372:
+	.size	spi_set_baudrate,*-spi_set_baudrate
+.L227:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_baudrate ,cluster('$group_spi_get_baudrate')
+	.align	4
+	.global	spi_get_baudrate
+; Function spi_get_baudrate
+.L165:
+spi_get_baudrate:	.type	func
+	lui	$v0,0x2fa
+	lw	$v1,0($a0)
+	ori	$v0,$v0,0xf080
+	lw	$v1,20($v1)
+	addiu	$v1,$v1,1
+	divu	$v0,$v0,$v1
+.L667:
+	jr	$ra
+.L668:
+	srl	$v0,$v0,1
+.L383:
+	.size	spi_get_baudrate,*-spi_get_baudrate
+.L232:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_set_endianess ,cluster('$group_spi_set_endianess')
+	.align	4
+	.global	spi_set_endianess
+; Function spi_set_endianess
+.L167:
+spi_set_endianess:	.type	func
+	lw	$v0,0($a0)
+	beq	$a1,$zero,.L13
+	addiu	$v0,$v0,12
+.L673:
+	lw	$v1,0($v0)
+	j	.L14
+	ori	$v1,$v1,0x20
+.L13:
+	lw	$v1,0($v0)
+	addiu	$a0,$zero,-33
+.L568:
+	and	$v1,$v1,$a0
+.L14:
+	sw	$v1,0($v0)
+.L674:
+	jr	$ra
+.L675:
+	nop
+.L385:
+	.size	spi_set_endianess,*-spi_set_endianess
+.L237:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_set_mode ,cluster('$group_spi_set_mode')
+	.align	4
+	.global	spi_set_mode
+; Function spi_set_mode
+.L169:
+spi_set_mode:	.type	func
+	lw	$v0,0($a0)
+	addiu	$v1,$v0,12
+	lw	$v0,12($v0)
+	addiu	$a0,$zero,-25
+.L569:
+	and	$v0,$v0,$a0
+.L570:
+	li	$a0,0x1
+	beq	$a1,$a0,.L15
+	nop
+	li	$a0,0x2
+	beq	$a1,$a0,.L16
+	nop
+	li	$a0,0x3
+	beq	$a1,$a0,.L17
+	nop
+	j	.L18
+	nop
+.L15:
+	j	.L19
+.L680:
+	ori	$v0,$v0,0x10
+.L16:
+	j	.L20
+.L681:
+	ori	$v0,$v0,0x8
+.L17:
+	ori	$v0,$v0,0x18
+.L18:
+.L20:
+.L19:
+	sw	$v0,0($v1)
+.L682:
+	jr	$ra
+.L683:
+	nop
+.L389:
+	.size	spi_set_mode,*-spi_set_mode
+.L242:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_cs_lo ,cluster('$group_spi_cs_lo')
+	.align	4
+	.global	spi_cs_lo
+; Function spi_cs_lo
+.L171:
+spi_cs_lo:	.type	func
+	lw	$v0,0($a0)
+	addiu	$v1,$zero,-3
+	lw	$a0,12($v0)
+.L571:
+	and	$v1,$a0,$v1
+	sw	$v1,12($v0)
+.L688:
+	jr	$ra
+.L689:
+	nop
+.L394:
+	.size	spi_cs_lo,*-spi_cs_lo
+.L247:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_cs_hi ,cluster('$group_spi_cs_hi')
+	.align	4
+	.global	spi_cs_hi
+; Function spi_cs_hi
+.L173:
+spi_cs_hi:	.type	func
+	lw	$v0,0($a0)
+	lw	$v1,12($v0)
+	ori	$v1,$v1,0x2
+	sw	$v1,12($v0)
+.L694:
+	jr	$ra
+.L695:
+	nop
+.L396:
+	.size	spi_cs_hi,*-spi_cs_hi
+.L252:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transmit8 ,cluster('$group_spi_transmit8')
+	.align	4
+	.global	spi_transmit8
+; Function spi_transmit8
+.L175:
+spi_transmit8:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L21
+	nop
+.L22:
+	nop
+.L403:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L22
+	nop
+.L21:
+	lw	$v0,0($a0)
+	sw	$a1,0($v0)
+.L700:
+	jr	$ra
+.L701:
+	nop
+.L398:
+	.size	spi_transmit8,*-spi_transmit8
+.L257:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transceive8 ,cluster('$group_spi_transceive8')
+	.align	4
+	.global	spi_transceive8
+; Function spi_transceive8
+.L177:
+spi_transceive8:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L23
+	nop
+.L24:
+	nop
+.L439:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L24
+	nop
+.L23:
+	lw	$v0,0($a0)
+	sw	$a1,0($v0)
+.L729:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L25
+	nop
+.L26:
+	nop
+.L441:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L26
+	nop
+.L25:
+	lw	$v0,0($a0)
+	lbu	$v0,3($v0)
+.L730:
+	jr	$ra
+.L731:
+	nop
+.L436:
+	.size	spi_transceive8,*-spi_transceive8
+.L272:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_received8 ,cluster('$group_spi_received8')
+	.align	4
+	.global	spi_received8
+; Function spi_received8
+.L179:
+spi_received8:	.type	func
+	lw	$v0,0($a0)
+	lbu	$v0,3($v0)
+.L765:
+	jr	$ra
+.L766:
+	nop
+.L485:
+	.size	spi_received8,*-spi_received8
+.L287:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transmit16 ,cluster('$group_spi_transmit16')
+	.align	4
+	.global	spi_transmit16
+; Function spi_transmit16
+.L181:
+spi_transmit16:	.type	func
+	lb	$v1,7($a0)
+	beq	$v1,$zero,.L29
+	lw	$v0,0($a0)
+.L411:
+	lw	$v0,12($v0)
+.L417:
+	li	$v1,2
+.L418:
+	andi	$v0,$v0,0x20
+	sltu	$v0,$zero,$v0
+.L706:
+	sltu	$v0,$zero,$v0
+.L572:
+	sll	$a2,$v0,3
+.L574:
+	sltiu	$v0,$v0,1
+.L573:
+	sll	$v0,$v0,4
+	addiu	$v0,$v0,-8
+.L32:
+	lw	$a3,0($a0)
+	lw	$a3,16($a3)
+	andi	$a3,$a3,0x1
+	beq	$a3,$zero,.L33
+	nop
+.L34:
+	nop
+.L420:
+	lw	$a3,0($a0)
+	lw	$a3,16($a3)
+	andi	$a3,$a3,0x1
+	bne	$a3,$zero,.L34
+	nop
+.L33:
+	lw	$a3,0($a0)
+	srav	$t0,$a1,$a2
+	andi	$t0,$t0,0xff
+	sw	$t0,0($a3)
+.L707:
+	addiu	$v1,$v1,-1
+	bgtz	$v1,.L32
+.L708:
+	addu	$a2,$a2,$v0
+.L412:
+	jr	$ra
+.L709:
+	nop
+.L29:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L36
+	nop
+.L37:
+	nop
+.L422:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L37
+	nop
+.L36:
+	lw	$v0,0($a0)
+	sw	$a1,4($v0)
+.L710:
+	jr	$ra
+.L711:
+	nop
+.L407:
+	.size	spi_transmit16,*-spi_transmit16
+.L262:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transceive16 ,cluster('$group_spi_transceive16')
+	.align	4
+	.global	spi_transceive16
+; Function spi_transceive16
+.L183:
+spi_transceive16:	.type	func
+	move	$a2,$a0
+.L445:
+	lw	$v0,0($a2)
+.L448:
+	lb	$v1,7($a2)
+.L575:
+	beq	$v1,$zero,.L38
+.L736:
+	move	$a3,$zero
+.L449:
+	lw	$v0,12($v0)
+.L455:
+	li	$t0,2
+.L456:
+	andi	$v0,$v0,0x20
+	sltu	$v0,$zero,$v0
+.L737:
+	sltu	$v0,$zero,$v0
+.L577:
+	sll	$t1,$v0,3
+.L576:
+	sltiu	$v0,$v0,1
+.L578:
+	sll	$v0,$v0,4
+	addiu	$v0,$v0,-8
+.L41:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	beq	$v1,$zero,.L42
+	nop
+.L43:
+	nop
+.L458:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	bne	$v1,$zero,.L43
+	nop
+.L42:
+	lw	$v1,0($a2)
+	srav	$a0,$a1,$t1
+	andi	$a0,$a0,0xff
+	sw	$a0,0($v1)
+.L738:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	beq	$v1,$zero,.L44
+	nop
+.L45:
+	nop
+.L460:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	bne	$v1,$zero,.L45
+	nop
+.L44:
+	lw	$v1,0($a2)
+.L739:
+	addiu	$t0,$t0,-1
+.L740:
+	lw	$v1,0($v1)
+	sllv	$v1,$v1,$t1
+	addu	$v1,$a3,$v1
+	andi	$a3,$v1,0xffff
+.L741:
+	bgtz	$t0,.L41
+.L742:
+	addu	$t1,$t1,$v0
+.L450:
+	j	.L46
+	nop
+.L38:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L47
+	nop
+.L48:
+	nop
+.L461:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L48
+	nop
+.L47:
+	lw	$v0,0($a2)
+	sw	$a1,4($v0)
+.L743:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L49
+	nop
+.L50:
+	nop
+.L462:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L50
+	nop
+.L49:
+	lw	$v0,0($a2)
+	lhu	$a3,6($v0)
+.L46:
+	jr	$ra
+.L744:
+	andi	$v0,$a3,0xffff
+.L442:
+	.size	spi_transceive16,*-spi_transceive16
+.L277:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_received16 ,cluster('$group_spi_received16')
+	.align	4
+	.global	spi_received16
+; Function spi_received16
+.L185:
+spi_received16:	.type	func
+	lw	$v0,0($a0)
+	lhu	$v0,6($v0)
+.L771:
+	jr	$ra
+.L772:
+	nop
+.L487:
+	.size	spi_received16,*-spi_received16
+.L292:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transmit32 ,cluster('$group_spi_transmit32')
+	.align	4
+	.global	spi_transmit32
+; Function spi_transmit32
+.L187:
+spi_transmit32:	.type	func
+	lb	$v1,7($a0)
+	beq	$v1,$zero,.L53
+	lw	$v0,0($a0)
+.L426:
+	lw	$v0,12($v0)
+	andi	$v0,$v0,0x20
+	sltu	$v0,$zero,$v0
+.L716:
+	sltu	$v0,$zero,$v0
+.L579:
+	beq	$v0,$zero,.L55
+.L717:
+	nop
+.L718:
+	j	.L56
+.L719:
+	li	$v1,0x18
+.L55:
+	move	$v1,$zero
+.L56:
+	sltiu	$v0,$v0,1
+.L580:
+	sll	$v0,$v0,4
+	addiu	$v0,$v0,-8
+.L431:
+	li	$a2,4
+.L58:
+	lw	$a3,0($a0)
+	lw	$a3,16($a3)
+	andi	$a3,$a3,0x1
+	beq	$a3,$zero,.L59
+	nop
+.L60:
+	nop
+.L433:
+	lw	$a3,0($a0)
+	lw	$a3,16($a3)
+	andi	$a3,$a3,0x1
+	bne	$a3,$zero,.L60
+	nop
+.L59:
+	lw	$a3,0($a0)
+	srlv	$t0,$a1,$v1
+	andi	$t0,$t0,0xff
+	sw	$t0,0($a3)
+.L720:
+	addiu	$a2,$a2,-1
+	bgtz	$a2,.L58
+.L721:
+	addu	$v1,$v1,$v0
+.L427:
+	jr	$ra
+.L722:
+	nop
+.L53:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L62
+	nop
+.L63:
+	nop
+.L435:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L63
+	nop
+.L62:
+	lw	$v0,0($a0)
+	sw	$a1,8($v0)
+.L723:
+	jr	$ra
+.L724:
+	nop
+.L423:
+	.size	spi_transmit32,*-spi_transmit32
+.L267:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_transceive32 ,cluster('$group_spi_transceive32')
+	.align	4
+	.global	spi_transceive32
+; Function spi_transceive32
+.L189:
+spi_transceive32:	.type	func
+	move	$a3,$a0
+.L467:
+	lw	$v0,0($a3)
+.L472:
+	lb	$v1,7($a3)
+.L468:
+	move	$a2,$a1
+.L469:
+	beq	$v1,$zero,.L64
+.L749:
+	move	$t0,$zero
+.L473:
+	lw	$v0,12($v0)
+	andi	$v0,$v0,0x20
+	sltu	$v0,$zero,$v0
+.L750:
+	sltu	$v0,$zero,$v0
+.L581:
+	beq	$v0,$zero,.L66
+.L751:
+	nop
+.L752:
+	j	.L67
+.L753:
+	li	$t1,0x18
+.L66:
+	move	$t1,$zero
+.L67:
+	sltiu	$v0,$v0,1
+.L582:
+	sll	$v0,$v0,4
+	addiu	$v0,$v0,-8
+.L478:
+	li	$v1,4
+.L69:
+	lw	$a0,0($a3)
+	lw	$a0,16($a0)
+	andi	$a0,$a0,0x1
+	beq	$a0,$zero,.L70
+	nop
+.L71:
+	nop
+.L480:
+	lw	$a0,0($a3)
+	lw	$a0,16($a0)
+	andi	$a0,$a0,0x1
+	bne	$a0,$zero,.L71
+	nop
+.L70:
+	lw	$a0,0($a3)
+	srlv	$a1,$a2,$t1
+	andi	$a1,$a1,0xff
+	sw	$a1,0($a0)
+.L754:
+	lw	$a0,0($a3)
+	lw	$a0,16($a0)
+	andi	$a0,$a0,0x1
+	beq	$a0,$zero,.L72
+	nop
+.L73:
+	nop
+.L482:
+	lw	$a0,0($a3)
+	lw	$a0,16($a0)
+	andi	$a0,$a0,0x1
+	bne	$a0,$zero,.L73
+	nop
+.L72:
+	lw	$a0,0($a3)
+.L755:
+	addiu	$v1,$v1,-1
+.L756:
+	lw	$a0,0($a0)
+	sllv	$a0,$a0,$t1
+	addu	$t0,$t0,$a0
+.L757:
+	bgtz	$v1,.L69
+.L758:
+	addu	$t1,$t1,$v0
+.L474:
+	j	.L74
+	nop
+.L64:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L75
+	nop
+.L76:
+	nop
+.L483:
+	lw	$v0,0($a3)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L76
+	nop
+.L75:
+	lw	$v0,0($a3)
+	sw	$a2,8($v0)
+.L759:
+	lw	$v0,0($a3)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L77
+	nop
+.L78:
+	nop
+.L484:
+	lw	$v0,0($a3)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L78
+	nop
+.L77:
+	lw	$v0,0($a3)
+	lw	$t0,8($v0)
+.L74:
+	jr	$ra
+.L760:
+	move	$v0,$t0
+.L463:
+	.size	spi_transceive32,*-spi_transceive32
+.L282:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_received32 ,cluster('$group_spi_received32')
+	.align	4
+	.global	spi_received32
+; Function spi_received32
+.L191:
+spi_received32:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,8($v0)
+.L777:
+	jr	$ra
+.L778:
+	nop
+.L489:
+	.size	spi_received32,*-spi_received32
+.L297:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_busy ,cluster('$group_spi_busy')
+	.align	4
+	.global	spi_busy
+; Function spi_busy
+.L193:
+spi_busy:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+.L935:
+	jr	$ra
+.L936:
+	sltu	$v0,$zero,$v0
+.L544:
+	.size	spi_busy,*-spi_busy
+.L332:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_bus ,cluster('$group_spi_get_bus')
+	.align	4
+	.global	spi_get_bus
+; Function spi_get_bus
+.L195:
+spi_get_bus:	.type	func
+	move	$a2,$a0
+.L585:
+	lbu	$v0,6($a2)
+	bne	$v0,$zero,.L83
+.L861:
+	move	$a3,$a1
+.L584:
+	beq	$a3,$zero,.L84
+.L862:
+	nop
+.L863:
+	li	$v0,0x16
+	slt	$v0,$v0,$a3
+	bne	$v0,$zero,.L85
+	nop
+.L864:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L86
+	nop
+.L87:
+	nop
+.L525:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L87
+	nop
+.L86:
+	lw	$v0,0($a2)
+.L865:
+	li	$v1,0x2
+.L866:
+	lw	$t2,12($v0)
+.L588:
+	lw	$a0,0($a2)
+.L583:
+	ori	$a1,$t2,0x2
+.L586:
+	lw	$t0,20($a0)
+.L587:
+	addiu	$t1,$a2,100
+	sw	$t2,100($a2)
+.L867:
+	addiu	$t3,$a2,8
+	sw	$t0,8($a2)
+.L868:
+	sw	$a1,12($v0)
+.L869:
+	lw	$v0,0($a2)
+.L870:
+	li	$a0,0x4
+.L871:
+	sw	$v1,12($v0)
+.L872:
+	lw	$v0,0($a2)
+.L873:
+	li	$a1,0x6
+.L874:
+	sw	$a0,20($v0)
+.L875:
+	lw	$v0,0($a2)
+	sw	$a1,12($v0)
+.L876:
+	lw	$v0,0($a2)
+	sw	$a1,12($v0)
+.L877:
+	lw	$v0,0($a2)
+	sw	$v1,12($v0)
+.L878:
+	lw	$v0,0($a2)
+	sw	$v1,12($v0)
+.L879:
+	lw	$v0,0($a2)
+	sw	$a1,12($v0)
+.L880:
+	lw	$v0,0($a2)
+	sw	$a1,12($v0)
+.L881:
+	ori	$v0,$a3,0x80
+	lw	$v1,0($a2)
+	sw	$v0,0($v1)
+.L882:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	beq	$v1,$zero,.L88
+	nop
+.L89:
+	nop
+.L527:
+	lw	$v1,0($a2)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	bne	$v1,$zero,.L89
+	nop
+.L88:
+	lw	$v1,0($a2)
+	sw	$v0,0($v1)
+.L883:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L90
+	nop
+.L91:
+	nop
+.L528:
+	lw	$v0,0($a2)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L91
+	nop
+.L90:
+	lw	$v0,0($a2)
+	lbu	$v0,3($v0)
+.L884:
+	lw	$v1,0($a2)
+	sw	$t0,20($v1)
+.L885:
+	lw	$v1,0($a2)
+	sw	$t2,12($v1)
+.L886:
+	beq	$v0,$zero,.L92
+.L887:
+	nop
+.L84:
+.L85:
+.L83:
+	jr	$ra
+.L888:
+	move	$v0,$zero
+.L92:
+	sb	$a3,6($a2)
+.L889:
+	sll	$v0,$a3,2
+	addu	$v1,$t3,$v0
+	lw	$v1,0($v1)
+	beq	$v1,$zero,.L94
+	nop
+.L890:
+	lw	$a0,0($a2)
+.L891:
+	addu	$v0,$t1,$v0
+.L892:
+	sw	$v1,20($a0)
+.L893:
+	lw	$v1,0($a2)
+	lw	$v0,0($v0)
+	sw	$v0,12($v1)
+.L94:
+	jr	$ra
+.L894:
+	li	$v0,0x1
+.L519:
+	.size	spi_get_bus,*-spi_get_bus
+.L317:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_release_bus ,cluster('$group_spi_release_bus')
+	.align	4
+	.global	spi_release_bus
+; Function spi_release_bus
+.L197:
+spi_release_bus:	.type	func
+	lbu	$v0,6($a0)
+.L589:
+	beq	$v0,$zero,.L96
+.L899:
+	nop
+.L900:
+	lw	$v1,0($a0)
+	sll	$v0,$v0,2
+.L590:
+	addiu	$a1,$a0,100
+	lw	$a2,12($v1)
+	addu	$a1,$a1,$v0
+	sw	$a2,0($a1)
+.L901:
+	addiu	$a1,$a0,8
+	lw	$a2,20($v1)
+	addu	$v0,$a1,$v0
+	sw	$a2,0($v0)
+.L902:
+	lw	$v0,16($v1)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L97
+	nop
+.L98:
+	nop
+.L532:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L98
+	nop
+.L97:
+	lw	$v0,0($a0)
+.L903:
+	li	$v1,0x12
+.L904:
+	lw	$a1,12($v0)
+.L905:
+	li	$a2,0x4
+.L906:
+	ori	$a1,$a1,0x2
+	sw	$a1,12($v0)
+.L907:
+	lw	$v0,0($a0)
+.L908:
+	li	$a1,0x16
+.L909:
+	sw	$v1,12($v0)
+.L910:
+	lw	$v0,0($a0)
+	sw	$a2,20($v0)
+.L911:
+	lw	$v0,0($a0)
+	sw	$a1,12($v0)
+.L912:
+	lw	$v0,0($a0)
+	sw	$zero,0($v0)
+.L913:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L99
+	nop
+.L100:
+	nop
+.L534:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L100
+	nop
+.L99:
+	lw	$v0,0($a0)
+	lw	$v1,8($a0)
+	sw	$v1,20($v0)
+.L914:
+	lw	$v0,0($a0)
+	lw	$v1,100($a0)
+	sw	$v1,12($v0)
+.L915:
+	sb	$zero,6($a0)
+.L96:
+	jr	$ra
+.L916:
+	nop
+.L529:
+	.size	spi_release_bus,*-spi_release_bus
+.L322:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_init_channel ,cluster('$group_spi_init_channel')
+	.align	4
+	.global	spi_init_channel
+; Function spi_init_channel
+.L199:
+spi_init_channel:	.type	func
+	lbu	$v0,6($a0)
+	beq	$v0,$a1,.L101
+	nop
+.L921:
+	slti	$v0,$a1,23
+	bne	$v0,$zero,.L102
+	nop
+.L101:
+	jr	$ra
+.L922:
+	move	$v0,$zero
+.L102:
+	li	$v1,0x1
+	beq	$a3,$v1,.L104
+.L923:
+	li	$v0,0x22
+.L594:
+	li	$v1,0x2
+	beq	$a3,$v1,.L105
+	nop
+	li	$v1,0x3
+	beq	$a3,$v1,.L106
+	nop
+	j	.L107
+	nop
+.L104:
+	j	.L108
+.L924:
+	li	$v0,0x32
+.L105:
+	j	.L109
+.L925:
+	li	$v0,0x2a
+.L106:
+	li	$v0,0x3a
+.L107:
+.L109:
+.L108:
+	lui	$v1,0x2fa
+	ori	$v1,$v1,0xf080
+	addu	$a3,$a2,$a2
+.L591:
+	divu	$a3,$v1,$a3
+.L592:
+	divu	$v1,$v1,$a3
+	srl	$v1,$v1,1
+	sltu	$v1,$a2,$v1
+	addu	$v1,$a3,$v1
+.L593:
+	bne	$v1,$zero,.L110
+.L926:
+	nop
+.L927:
+	li	$v1,0x1
+.L110:
+	addiu	$v1,$v1,-1
+.L541:
+	sll	$a1,$a1,2
+.L595:
+	addiu	$a2,$a0,8
+.L596:
+	addu	$a2,$a2,$a1
+	sw	$v1,0($a2)
+.L928:
+	addiu	$v1,$a0,100
+	addu	$v1,$v1,$a1
+	sw	$v0,0($v1)
+.L929:
+	jr	$ra
+.L930:
+	li	$v0,0x1
+.L535:
+	.size	spi_init_channel,*-spi_init_channel
+.L327:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_gpin_pincount ,cluster('$group_spi_get_gpin_pincount')
+	.align	4
+	.global	spi_get_gpin_pincount
+; Function spi_get_gpin_pincount
+.L201:
+spi_get_gpin_pincount:	.type	func
+	jr	$ra
+.L941:
+	lbu	$v0,4($a0)
+.L546:
+	.size	spi_get_gpin_pincount,*-spi_get_gpin_pincount
+.L337:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_slavecount ,cluster('$group_spi_get_slavecount')
+	.align	4
+	.global	spi_get_slavecount
+; Function spi_get_slavecount
+.L203:
+spi_get_slavecount:	.type	func
+	jr	$ra
+.L946:
+	lbu	$v0,5($a0)
+.L548:
+	.size	spi_get_slavecount,*-spi_get_slavecount
+.L342:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_gpin ,cluster('$group_spi_get_gpin')
+	.align	4
+	.global	spi_get_gpin
+; Function spi_get_gpin
+.L205:
+spi_get_gpin:	.type	func
+	lw	$v0,0($a0)
+	lbu	$v0,27($v0)
+.L855:
+	jr	$ra
+.L856:
+	nop
+.L517:
+	.size	spi_get_gpin,*-spi_get_gpin
+.L312:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_set_cs ,cluster('$group_spi_set_cs')
+	.align	4
+	.global	spi_set_cs
+; Function spi_set_cs
+.L207:
+spi_set_cs:	.type	func
+	lw	$v0,0($a0)
+	sw	$a1,28($v0)
+.L951:
+	jr	$ra
+.L952:
+	nop
+.L550:
+	.size	spi_set_cs,*-spi_set_cs
+.L347:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_get_cs ,cluster('$group_spi_get_cs')
+	.align	4
+	.global	spi_get_cs
+; Function spi_get_cs
+.L209:
+spi_get_cs:	.type	func
+	lw	$v0,0($a0)
+	lbu	$v0,31($v0)
+.L957:
+	jr	$ra
+.L958:
+	nop
+.L553:
+	.size	spi_get_cs,*-spi_get_cs
+.L352:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_readblock ,cluster('$group_spi_readblock')
+	.align	4
+	.global	spi_readblock
+; Function spi_readblock
+.L211:
+spi_readblock:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L116
+	nop
+.L117:
+	nop
+.L498:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L117
+	nop
+.L116:
+	slti	$v0,$a2,10
+	beq	$v0,$zero,.L118
+	nop
+.L783:
+	lw	$v0,0($a0)
+	li	$v1,0xff
+	sw	$v1,0($v0)
+.L784:
+	addiu	$v0,$a2,-1
+.L597:
+	beq	$v0,$zero,.L119
+.L785:
+	nop
+.L120:
+	lw	$v1,0($a0)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	beq	$v1,$zero,.L121
+	nop
+.L122:
+	nop
+.L500:
+	lw	$v1,0($a0)
+	lw	$v1,16($v1)
+	andi	$v1,$v1,0x1
+	bne	$v1,$zero,.L122
+	nop
+.L121:
+	lw	$v1,0($a0)
+.L786:
+	li	$a2,0xff
+.L787:
+	lbu	$a3,3($v1)
+.L788:
+	addiu	$v0,$v0,-1
+.L789:
+	sb	$a3,0($a1)
+.L790:
+	sw	$a2,0($v1)
+.L791:
+	bne	$v0,$zero,.L120
+.L792:
+	addiu	$a1,$a1,1
+.L119:
+	lw	$v0,0($a0)
+.L598:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L123
+	nop
+.L124:
+	nop
+.L501:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L124
+	nop
+.L123:
+	lw	$v0,0($a0)
+	lbu	$v0,3($v0)
+	sb	$v0,0($a1)
+.L793:
+	jr	$ra
+.L794:
+	nop
+.L118:
+	andi	$v0,$a1,0x3
+	beq	$v0,$zero,.L126
+	nop
+.L127:
+	lw	$v0,0($a0)
+	li	$v1,0xff
+	sw	$v1,0($v0)
+.L795:
+	lw	$v0,0($a0)
+.L796:
+	addiu	$a2,$a2,-1
+.L797:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L128
+	nop
+.L129:
+	nop
+.L502:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L129
+	nop
+.L128:
+	lw	$v0,0($a0)
+	lbu	$v0,3($v0)
+	sb	$v0,0($a1)
+.L798:
+	addiu	$a1,$a1,1
+.L799:
+	andi	$v0,$a1,0x3
+	bne	$v0,$zero,.L127
+	nop
+.L126:
+	lw	$v0,0($a0)
+	addiu	$v1,$zero,-1
+	sw	$v1,8($v0)
+.L800:
+	slti	$v0,$a2,8
+	bne	$v0,$zero,.L130
+	nop
+.L131:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L132
+	nop
+.L133:
+	nop
+.L503:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L133
+	nop
+.L132:
+	lw	$v0,0($a0)
+.L801:
+	addiu	$v1,$zero,-1
+.L802:
+	lw	$a3,8($v0)
+.L803:
+	addiu	$a2,$a2,-4
+.L804:
+	sw	$a3,0($a1)
+.L805:
+	sw	$v1,8($v0)
+.L806:
+	li	$v0,0x7
+	slt	$t0,$v0,$a2
+	bne	$t0,$zero,.L131
+.L807:
+	addiu	$a1,$a1,4
+.L130:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L134
+	nop
+.L135:
+	nop
+.L504:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L135
+	nop
+.L134:
+	lw	$v0,0($a0)
+.L808:
+	addiu	$v1,$a1,4
+.L599:
+	lw	$v0,8($v0)
+.L809:
+	slti	$a3,$a2,5
+.L810:
+	sw	$v0,0($a1)
+.L811:
+	bne	$a3,$zero,.L136
+.L812:
+	nop
+.L137:
+	lw	$v0,0($a0)
+	li	$a1,0xff
+	sw	$a1,0($v0)
+.L813:
+	lw	$v0,0($a0)
+.L814:
+	addiu	$a2,$a2,-1
+.L815:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L138
+	nop
+.L139:
+	nop
+.L505:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L139
+	nop
+.L138:
+	lw	$v0,0($a0)
+.L816:
+	li	$a1,0x4
+.L817:
+	lbu	$v0,3($v0)
+.L818:
+	slt	$a3,$a1,$a2
+.L819:
+	sb	$v0,0($v1)
+.L820:
+	bne	$a3,$zero,.L137
+.L821:
+	addiu	$v1,$v1,1
+.L136:
+	jr	$ra
+.L822:
+	nop
+.L491:
+	.size	spi_readblock,*-spi_readblock
+.L302:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_spi.spi_writeblock ,cluster('$group_spi_writeblock')
+	.align	4
+	.global	spi_writeblock
+; Function spi_writeblock
+.L213:
+spi_writeblock:	.type	func
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L140
+	nop
+.L141:
+	nop
+.L511:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L141
+	nop
+.L140:
+	slti	$v0,$a2,8
+	beq	$v0,$zero,.L142
+	nop
+.L827:
+	j	.L143
+	nop
+.L144:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L145
+	nop
+.L146:
+	nop
+.L513:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L146
+	nop
+.L145:
+.L143:
+	lw	$v0,0($a0)
+	lbu	$v1,0($a1)
+.L828:
+	addiu	$a1,$a1,1
+.L829:
+	sw	$v1,0($v0)
+.L830:
+	addiu	$a2,$a2,-1
+.L831:
+	bne	$a2,$zero,.L144
+.L832:
+	nop
+.L833:
+	jr	$ra
+.L834:
+	nop
+.L142:
+	andi	$v0,$a1,0x3
+	beq	$v0,$zero,.L148
+	nop
+.L149:
+	lw	$v0,0($a0)
+	lbu	$v1,0($a1)
+.L835:
+	addiu	$a1,$a1,1
+.L836:
+	sw	$v1,0($v0)
+.L837:
+	lw	$v0,0($a0)
+.L838:
+	addiu	$a2,$a2,-1
+.L839:
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L150
+	nop
+.L151:
+	nop
+.L514:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L151
+	nop
+.L150:
+	andi	$v0,$a1,0x3
+	bne	$v0,$zero,.L149
+	nop
+.L148:
+	slti	$v0,$a2,4
+	bne	$v0,$zero,.L152
+	nop
+.L153:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L154
+	nop
+.L155:
+	nop
+.L515:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L155
+	nop
+.L154:
+	lw	$v0,0($a0)
+	lw	$v1,0($a1)
+.L840:
+	addiu	$a1,$a1,4
+.L841:
+	sw	$v1,8($v0)
+.L842:
+	addiu	$a2,$a2,-4
+.L843:
+	li	$v0,0x3
+	slt	$a3,$v0,$a2
+	bne	$a3,$zero,.L153
+	nop
+.L152:
+	beq	$a2,$zero,.L156
+.L844:
+	nop
+.L157:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	beq	$v0,$zero,.L158
+	nop
+.L159:
+	nop
+.L516:
+	lw	$v0,0($a0)
+	lw	$v0,16($v0)
+	andi	$v0,$v0,0x1
+	bne	$v0,$zero,.L159
+	nop
+.L158:
+	lw	$v0,0($a0)
+	lbu	$v1,0($a1)
+.L845:
+	addiu	$a1,$a1,1
+.L846:
+	sw	$v1,0($v0)
+.L847:
+	addiu	$a2,$a2,-1
+.L848:
+	bne	$a2,$zero,.L157
+.L849:
+	nop
+.L156:
+	jr	$ra
+.L850:
+	nop
+.L506:
+	.size	spi_writeblock,*-spi_writeblock
+.L307:
+	; End of function
+	.endsec	; End of section
+
+	.section	.bss.drv_spi.drv_table ,cluster('$group_bss')
+	.align	4
+drv_table:	.type	object
+	.size	drv_table,192
+	.ds	192
+	.endsec	; End of section
+
+	.calls	'spi_open','spi_set_baudrate'
+	.calls	'spi_open','',4
+	.calls	'spi_set_baudrate','',0
+	.calls	'spi_get_baudrate','',0
+	.calls	'spi_set_endianess','',0
+	.calls	'spi_set_mode','',0
+	.calls	'spi_cs_lo','',0
+	.calls	'spi_cs_hi','',0
+	.calls	'spi_transmit8','',0
+	.calls	'spi_transceive8','',0
+	.calls	'spi_received8','',0
+	.calls	'spi_transmit16','',0
+	.calls	'spi_transceive16','',0
+	.calls	'spi_received16','',0
+	.calls	'spi_transmit32','',0
+	.calls	'spi_transceive32','',0
+	.calls	'spi_received32','',0
+	.calls	'spi_busy','',0
+	.calls	'spi_get_bus','',0
+	.calls	'spi_release_bus','',0
+	.calls	'spi_init_channel','',0
+	.calls	'spi_get_gpin_pincount','',0
+	.calls	'spi_get_slavecount','',0
+	.calls	'spi_get_gpin','',0
+	.calls	'spi_set_cs','',0
+	.calls	'spi_get_cs','',0
+	.calls	'spi_readblock','',0
+	.calls	'spi_writeblock','',0
+	.extern	per_spi_instance_table
+	.extern	drv_spi_instance_table
+	.section	.debug_info
+.L215:
+	.dw	2605
+	.dh	3
+	.dw	.L216
+	.db	4
+.L214:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L217
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	.L363-.L215
+	.db	3,0
+.L363:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7
+.L402:
+	.db	2
+	.db	"threadwait",0
+	.db	3,2,48,13,1,1
+.L404:
+	.db	4
+	.db	"drv",0
+	.db	2,48,41
+	.dw	.L355-.L215
+.L406:
+	.db	3,0
+.L355:
+	.db	6
+	.dw	.L600-.L215
+.L600:
+	.db	7
+	.db	"drv_spi_s",0
+	.db	2,27,8,192,1,8
+	.db	"baseaddress",0
+	.db	4
+	.dw	.L601-.L215
+	.db	2,35,0,8
+	.db	"inputpinscount",0
+	.db	1
+	.dw	.L400-.L215
+	.db	2,35,4,8
+	.db	"slavecount",0
+	.db	1
+	.dw	.L400-.L215
+	.db	2,35,5,8
+	.db	"channel",0
+	.db	1
+	.dw	.L400-.L215
+	.db	2,35,6,8
+	.db	"transfersize8",0
+	.db	1
+	.dw	.L387-.L215
+	.db	2,35,7,8
+	.db	"cdiv",0
+	.db	92
+	.dw	.L602-.L215
+	.db	2,35,8,8
+	.db	"ctrl",0
+	.db	92
+	.dw	.L602-.L215
+	.db	2,35,100,0
+.L601:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7
+.L400:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8
+.L387:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2
+.L602:
+	.db	9,92
+	.dw	508
+	.db	10,22,0
+.L375:
+	.db	11
+	.db	"spi_calc_cdiv",0
+	.db	3,2,81,17
+	.dw	508
+	.db	1,1
+.L376:
+	.db	4
+	.db	"baudrate",0
+	.db	2,81,41
+	.dw	508
+.L378:
+	.db	3,0,12
+	.dw	314
+	.db	3,0,12
+	.dw	352
+	.db	3,0,12
+	.dw	397
+	.db	3,0,12
+	.dw	443
+	.db	13
+	.dw	490
+	.db	3,0
+.L357:
+	.db	5
+	.db	"int",0
+	.db	4,5
+.L365:
+	.db	14
+	.dw	556
+.L368:
+	.db	14
+	.dw	.L603-.L215
+.L603:
+	.db	6
+	.dw	.L604-.L215
+.L604:
+	.db	15
+	.dw	.L605-.L215
+.L605:
+	.db	16,3,45,9,16,8
+	.db	"spimode",0
+	.db	4
+	.dw	844
+	.db	2,35,0,8
+	.db	"spi_frequency",0
+	.db	4
+	.dw	508
+	.db	2,35,4,8
+	.db	"nb_multiplex_support",0
+	.db	1
+	.dw	749
+	.db	2,35,8,8
+	.db	"channels",0
+	.db	1
+	.dw	732
+	.db	2,35,9,8
+	.db	"per_spi",0
+	.db	4
+	.dw	844
+	.db	2,35,12,0
+.L370:
+	.db	14
+	.dw	.L606-.L215
+.L606:
+	.db	6
+	.dw	.L607-.L215
+.L607:
+	.db	15
+	.dw	.L608-.L215
+.L608:
+	.db	16,4,33,9,16,8
+	.db	"baseaddress",0
+	.db	4
+	.dw	508
+	.db	2,35,0,8
+	.db	"transfersize",0
+	.db	4
+	.dw	508
+	.db	2,35,4,8
+	.db	"slavecount",0
+	.db	4
+	.dw	508
+	.db	2,35,8,8
+	.db	"modepinenabled",0
+	.db	1
+	.dw	749
+	.db	2,35,12,8
+	.db	"option_isnanoboard",0
+	.db	1
+	.dw	749
+	.db	2,35,13,0
+.L391:
+	.db	17,5,35,9,4,18
+	.db	"SPI_MODE0",0
+	.db	0,18
+	.db	"SPI_MODE1",0
+	.db	1,18
+	.db	"SPI_MODE2",0
+	.db	2,18
+	.db	"SPI_MODE3",0
+	.db	3,0
+.L409:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7
+.L493:
+	.db	6
+	.dw	732
+.L496:
+	.db	6
+	.dw	508
+	.db	12
+	.dw	524
+	.db	13
+	.dw	542
+	.db	3,0,12
+	.dw	767
+	.db	13
+	.dw	792
+	.db	3,0,19
+	.db	"__wchar_t",0
+	.db	2,1,1
+	.dw	1172
+	.db	19
+	.db	"__size_t",0
+	.db	2,1,1
+	.dw	508
+	.db	19
+	.db	"__ssize_t",0
+	.db	2,1,1
+	.dw	844
+	.db	19
+	.db	"__ptrdiff_t",0
+	.db	2,1,1
+	.dw	844
+	.db	19
+	.db	"__codeptr",0
+	.db	2,1,1
+	.dw	.L609-.L215
+.L609:
+	.db	6
+	.dw	.L610-.L215
+.L610:
+	.db	20,1,19
+	.db	"size_t",0
+	.db	6,20,25
+	.dw	508
+	.db	19
+	.db	"_iob_flag_t",0
+	.db	7,92,25
+	.dw	1172
+	.db	19
+	.db	"uint8_t",0
+	.db	8,22,33
+	.dw	732
+	.db	19
+	.db	"uint16_t",0
+	.db	8,24,33
+	.dw	1172
+	.db	19
+	.db	"int32_t",0
+	.db	8,25,33
+	.dw	844
+	.db	19
+	.db	"uint32_t",0
+	.db	8,26,33
+	.dw	508
+	.db	19
+	.db	"uint64_t",0
+	.db	8,28,33
+	.dw	.L611-.L215
+.L611:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,19
+	.db	"uintptr_t",0
+	.db	8,58,33
+	.dw	711
+	.db	19
+	.db	"time_t",0
+	.db	9,36,27
+	.dw	711
+	.db	19
+	.db	"posix_thread_t",0
+	.db	9,44,25
+	.dw	.L612-.L215
+.L612:
+	.db	21
+	.db	"thread_t",0
+	.db	9,44,16,1,19
+	.db	"posix_threadqueue_t",0
+	.db	9,50,9
+	.dw	.L613-.L215
+.L613:
+	.db	7
+	.db	"posix_threadqueue_t",0
+	.db	9,46,17,8,8
+	.db	"head",0
+	.db	4
+	.dw	.L614-.L215
+	.db	2,35,0,8
+	.db	"tail",0
+	.db	4
+	.dw	.L614-.L215
+	.db	2,35,4,0
+.L614:
+	.db	6
+	.dw	1526
+	.db	19
+	.db	"pthread_attr_t",0
+	.db	9,107,3
+	.dw	.L615-.L215
+.L615:
+	.db	7
+	.db	"pthread_attr_t",0
+	.db	9,90,16,24,8
+	.db	"stacksize",0
+	.db	4
+	.dw	508
+	.db	2,35,0,8
+	.db	"stackaddr",0
+	.db	4
+	.dw	.L616-.L215
+	.db	2,35,4,8
+	.db	"guardsize",0
+	.db	4
+	.dw	508
+	.db	2,35,8,8
+	.db	"schedparam",0
+	.db	4
+	.dw	.L617-.L215
+	.db	2,35,12,22
+	.db	"detachstate",0
+	.db	1
+	.dw	732
+	.db	2,0,2,35,16,22
+	.db	"scope",0
+	.db	1
+	.dw	732
+	.db	2,2,2,35,16,22
+	.db	"inheritsched",0
+	.db	1
+	.dw	732
+	.db	2,4,2,35,16,22
+	.db	"schedpolicy",0
+	.db	1
+	.dw	732
+	.db	2,6,2,35,16,8
+	.db	"init",0
+	.db	4
+	.dw	508
+	.db	2,35,20,0
+.L616:
+	.db	6
+	.dw	.L618-.L215
+.L618:
+	.db	23
+	.db	"void",0
+.L617:
+	.db	7
+	.db	"sched_param",0
+	.db	9,75,8,4,8
+	.db	"sched_priority",0
+	.db	4
+	.dw	844
+	.db	2,35,0,0,19
+	.db	"pthread_mutex_t",0
+	.db	9,160,1,33
+	.dw	.L619-.L215
+.L619:
+	.db	7
+	.db	"_pthread_mutex_t",0
+	.db	9,162,1,8,32,22
+	.db	"type",0
+	.db	1
+	.dw	732
+	.db	2,0,2,35,0,22
+	.db	"protocol",0
+	.db	1
+	.dw	732
+	.db	2,2,2,35,0,22
+	.db	"prioceiling",0
+	.db	4
+	.dw	508
+	.db	16,4,2,35,0,22
+	.db	"recursive",0
+	.db	2
+	.dw	1172
+	.db	8,4,2,35,2,22
+	.db	"preprio",0
+	.db	2
+	.dw	.L620-.L215
+	.db	16,0,2,35,4,8
+	.db	"initi",0
+	.db	4
+	.dw	844
+	.db	2,35,8,8
+	.db	"owner",0
+	.db	4
+	.dw	1622
+	.db	2,35,12,8
+	.db	"nestup",0
+	.db	4
+	.dw	.L621-.L215
+	.db	2,35,16,8
+	.db	"nestdown",0
+	.db	4
+	.dw	.L621-.L215
+	.db	2,35,20,8
+	.db	"queue",0
+	.db	8
+	.dw	1568
+	.db	2,35,24,0
+.L620:
+	.db	5
+	.db	"short int",0
+	.db	2,5
+.L621:
+	.db	6
+	.dw	1927
+	.db	19
+	.db	"clockid_t",0
+	.db	9,183,1,13
+	.dw	844
+	.db	19
+	.db	"pal_arch_atomic_t",0
+	.db	1,49,13
+	.dw	844
+	.db	19
+	.db	"sigset_t",0
+	.db	10,64,26
+	.dw	1444
+	.db	19
+	.db	"sa_sighandler_t",0
+	.db	10,103,16
+	.dw	.L622-.L215
+.L622:
+	.db	6
+	.dw	.L623-.L215
+.L623:
+	.db	24,1,1,25
+	.dw	844
+	.db	0,19
+	.db	"sa_siginfoaction_t",0
+	.db	10,104,16
+	.dw	.L624-.L215
+.L624:
+	.db	6
+	.dw	.L625-.L215
+.L625:
+	.db	24,1,1,25
+	.dw	844
+	.db	25
+	.dw	.L626-.L215
+	.db	25
+	.dw	1849
+	.db	0
+.L626:
+	.db	6
+	.dw	.L627-.L215
+.L627:
+	.db	16,10,88,9,12,8
+	.db	"si_signo",0
+	.db	4
+	.dw	844
+	.db	2,35,0,8
+	.db	"si_code",0
+	.db	4
+	.dw	844
+	.db	2,35,4,8
+	.db	"si_value",0
+	.db	4
+	.dw	.L628-.L215
+	.db	2,35,8,0
+.L628:
+	.db	26
+	.db	"sigval",0
+	.db	10,66,7,4,8
+	.db	"sival_int",0
+	.db	4
+	.dw	844
+	.db	2,35,0,8
+	.db	"sival_ptr",0
+	.db	4
+	.dw	1849
+	.db	2,35,0,0,19
+	.db	"per_spi_cfg_instance_t",0
+	.db	4,40,3
+	.dw	997
+	.db	27
+	.db	"per_spi_instance_table",0
+	.db	4,42,37
+	.dw	.L629-.L215
+	.db	1,1
+.L629:
+	.db	15
+	.dw	.L630-.L215
+.L630:
+	.db	28
+	.dw	997
+	.db	29,0,19
+	.db	"drv_spi_cfg_instance_t",0
+	.db	3,52,3
+	.dw	871
+	.db	27
+	.db	"drv_spi_instance_table",0
+	.db	3,54,37
+	.dw	.L631-.L215
+	.db	1,1
+.L631:
+	.db	15
+	.dw	.L632-.L215
+.L632:
+	.db	28
+	.dw	871
+	.db	29,0,19
+	.db	"spi_mode_t",0
+	.db	5,41,3
+	.dw	1118
+	.db	19
+	.db	"spi_t",0
+	.db	5,43,26
+	.dw	561
+.L555:
+	.db	9,192,1
+	.dw	561
+	.db	10,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L216:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,15,0,73,19,0,0,7,19,1,3,8,58
+	.db	15,59,15,57,15,11,15,0,0,8,13,0,3,8,11,15,73,19,56,9,0,0,9,1,1,11,15,73,19,0,0,10,33,0,47,15,0,0,11,46
+	.db	1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,12,46,1,49,19,0,0,13,5,0,49,19,0,0,14,55,0,73,19,0
+	.db	0,15,38,0,73,19,0,0,16,19,1,58,15,59,15,57,15,11,15,0,0,17,4,1,58,15,59,15,57,15,11,15,0,0,18,40,0,3,8
+	.db	28,13,0,0,19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,21,0,54,15,0,0,21,19,0,3,8,58,15,59,15,57,15,60,12
+	.db	0,0,22,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,23,59,0,3,8,0,0,24,21,1,54,15,39,12,0,0,25,5,0,73,19
+	.db	0,0,26,23,1,3,8,58,15,59,15,57,15,11,15,0,0,27,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,28,1,1
+	.db	73,19,0,0,29,33,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L217:
+	.dw	.L634-.L633
+.L633:
+	.dh	3
+	.dw	.L636-.L635
+.L635:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\drv_spi_cfg_instance.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\per_spi_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\include\\drv_spi.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\signal.h",0
+	.db	0,0,0,0
+.L636:
+.L634:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_open')
+.L218:
+	.dw	467
+	.dh	3
+	.dw	.L219
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L221,.L220
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_open",0
+	.db	1,101,9
+	.dw	.L355
+	.db	1,1,1
+	.dw	.L161,.L356,.L160
+	.db	4
+	.db	"id",0
+	.db	1,101,23
+	.dw	.L357,.L358
+	.db	5
+	.dw	.L161,.L356
+	.db	6
+	.dw	.L359
+	.db	7
+	.db	"ctrl",0
+	.db	1,105,14
+	.dw	.L363,.L364
+	.db	7
+	.db	"drv",0
+	.db	1,107,22
+	.dw	.L365,.L366
+	.db	5
+	.dw	.L367,.L2
+	.db	7
+	.db	"drv_cfg",0
+	.db	1,111,49
+	.dw	.L368,.L369
+	.db	7
+	.db	"per_cfg",0
+	.db	1,112,49
+	.dw	.L370,.L371
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_open')
+.L219:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	11,1,85,6,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_open')
+.L220:
+	.dw	.L638-.L637
+.L637:
+	.dh	3
+	.dw	.L640-.L639
+.L639:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L640:
+	.db	5,9,7,0,5,2
+	.dw	.L161
+	.db	3,228,0,1,5,26,9
+	.dh	.L360-.L161
+	.db	3,6,1,5,5,9
+	.dh	.L565-.L360
+	.db	3,2,1,5,9,9
+	.dh	.L361-.L565
+	.db	3,120,1,5,5,9
+	.dh	.L362-.L361
+	.db	3,8,1,7
+	.db	14+9*((.L641-.L362)/4)
+	.db	5,57
+	.db	16+9*((.L367-.L641)/4)
+	.db	15+9*((.L560-.L367)/4)
+	.db	5,32
+	.db	17+9*((.L642-.L560)/4)
+	.db	5,57
+	.db	11+9*((.L643-.L642)/4)
+	.db	5,48
+	.db	16+9*((.L557-.L643)/4)
+	.db	5,53
+	.db	16+9*((.L644-.L557)/4)
+	.db	5,32
+	.db	13+9*((.L645-.L644)/4)
+	.db	5,65
+	.db	17+9*((.L646-.L645)/4)
+	.db	5,53
+	.db	12+9*((.L647-.L646)/4)
+	.db	5,65
+	.db	16+9*((.L648-.L647)/4)
+	.db	5,25
+	.db	15+9*((.L649-.L648)/4)
+	.db	5,56,9
+	.dh	.L650-.L649
+	.db	3,9,1,5,9,9
+	.dh	.L651-.L650
+	.db	3,5,1,5,32
+	.db	12+9*((.L652-.L651)/4)
+	.db	5,9
+	.db	16+9*((.L563-.L652)/4)
+	.db	5,17,9
+	.dh	.L4-.L563
+	.db	3,4,1,5,38
+	.db	13+9*((.L653-.L4)/4)
+	.db	5,17
+	.db	18+9*((.L5-.L653)/4)
+	.db	5,38
+	.db	13+9*((.L654-.L5)/4)
+	.db	5,54
+	.db	17+9*((.L6-.L654)/4)
+	.db	5,44
+	.db	18+9*((.L8-.L6)/4)
+	.db	5,5
+	.db	17+9*((.L2-.L8)/4)
+	.db	5,1
+	.db	15+9*((.L564-.L2)/4)
+	.db	9
+	.dh	.L222-.L564
+	.db	0,1,1
+.L638:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_open')
+.L221:
+	.dw	-1
+	.dw	.L161
+	.dw	0
+	.dw	.L222-.L161
+	.dw	0,0
+.L359:
+	.dw	-1
+	.dw	.L161,.L360-.L161,.L361-.L161,.L362-.L161,.L356-.L161
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_set_baudrate')
+.L223:
+	.dw	480
+	.dh	3
+	.dw	.L224
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L226,.L225
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_set_baudrate",0
+	.db	1,163,1,6,1,1,1
+	.dw	.L163,.L372,.L162
+	.db	4
+	.db	"drv",0
+	.db	1,163,1,41
+	.dw	.L355,.L373
+	.db	4
+	.db	"baudrate",0
+	.db	1,163,1,55
+	.dw	.L363,.L374
+	.db	5
+	.dw	.L163,.L372
+	.db	6
+	.dw	.L375,.L163,.L11
+	.db	7
+	.dw	.L376,.L377
+	.db	8
+	.dw	.L378,.L379
+	.db	9
+	.db	"cdiv",0
+	.db	1,83,14
+	.dw	.L363,.L382
+	.db	0,0,6
+	.dw	.L375,.L380,.L381
+	.db	7
+	.dw	.L376,.L377
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_set_baudrate')
+.L224:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.db	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,85,6,0,0,9,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_set_baudrate')
+.L225:
+	.dw	.L656-.L655
+.L655:
+	.dh	3
+	.dw	.L658-.L657
+.L657:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L658:
+	.db	5,40,7,0,5,2
+	.dw	.L163
+	.db	3,211,0,1,5,56
+	.db	15+9*((.L567-.L163)/4)
+	.db	5,5
+	.db	15+9*((.L566-.L567)/4)
+	.db	7
+	.db	14+9*((.L659-.L566)/4)
+	.db	5,30
+	.db	14+9*((.L660-.L659)/4)
+	.db	5,61,9
+	.dh	.L11-.L660
+	.db	3,210,0,1,5,5,9
+	.dh	.L380-.L11
+	.db	3,175,127,1,5,61,9
+	.dh	.L381-.L380
+	.db	3,209,0,1,5,1
+	.db	15+9*((.L661-.L381)/4)
+	.db	7
+	.db	14+9*((.L662-.L661)/4)
+	.db	9
+	.dh	.L227-.L662
+	.db	0,1,1
+.L656:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_set_baudrate')
+.L226:
+	.dw	-1
+	.dw	.L163
+	.dw	0
+	.dw	.L227-.L163
+	.dw	0,0
+.L379:
+	.dw	-1
+	.dw	.L163
+	.dw	0
+	.dw	.L11-.L163,.L380-.L163,.L381-.L163
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_baudrate')
+.L228:
+	.dw	388
+	.dh	3
+	.dw	.L229
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L231,.L230
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_baudrate",0
+	.db	1,183,1,10
+	.dw	.L363
+	.db	1,1,1
+	.dw	.L165,.L383,.L164
+	.db	4
+	.db	"drv",0
+	.db	1,183,1,45
+	.dw	.L355,.L384
+	.db	5
+	.dw	.L165,.L383
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_baudrate')
+.L229:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_baudrate')
+.L230:
+	.dw	.L664-.L663
+.L663:
+	.dh	3
+	.dw	.L666-.L665
+.L665:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L666:
+	.db	5,5,7,0,5,2
+	.dw	.L165
+	.db	3,185,1,1,5,1
+	.db	15+9*((.L667-.L165)/4)
+	.db	5,5,7
+	.db	13+9*((.L668-.L667)/4)
+	.db	5,1,9
+	.dh	.L232-.L668
+	.db	3,1,0,1,1
+.L664:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_baudrate')
+.L231:
+	.dw	-1
+	.dw	.L165
+	.dw	0
+	.dw	.L232-.L165
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_set_endianess')
+.L233:
+	.dw	408
+	.dh	3
+	.dw	.L234
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L236,.L235
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_set_endianess",0
+	.db	1,208,1,6,1,1,1
+	.dw	.L167,.L385,.L166
+	.db	4
+	.db	"drv",0
+	.db	1,208,1,42
+	.dw	.L355,.L386
+	.db	4
+	.db	"endianess",0
+	.db	1,208,1,52
+	.dw	.L387,.L388
+	.db	5
+	.dw	.L167,.L385
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_set_endianess')
+.L234:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_set_endianess')
+.L235:
+	.dw	.L670-.L669
+.L669:
+	.dh	3
+	.dw	.L672-.L671
+.L671:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L672:
+	.db	5,5,7,0,5,2
+	.dw	.L167
+	.db	3,210,1,1,5,56
+	.db	16+9*((.L673-.L167)/4)
+	.db	5,57,9
+	.dh	.L13-.L673
+	.db	3,5,1,5,1
+	.db	17+9*((.L674-.L13)/4)
+	.db	7
+	.db	14+9*((.L675-.L674)/4)
+	.db	9
+	.dh	.L237-.L675
+	.db	0,1,1
+.L670:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_set_endianess')
+.L236:
+	.dw	-1
+	.dw	.L167
+	.dw	0
+	.dw	.L237-.L167
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_set_mode')
+.L238:
+	.dw	417
+	.dh	3
+	.dw	.L239
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L241,.L240
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_set_mode",0
+	.db	1,232,1,6,1,1,1
+	.dw	.L169,.L389,.L168
+	.db	4
+	.db	"drv",0
+	.db	1,232,1,37
+	.dw	.L355,.L390
+	.db	4
+	.db	"mode",0
+	.db	1,232,1,59
+	.dw	.L391,.L392
+	.db	5
+	.dw	.L169,.L389
+	.db	6
+	.db	"ctrl",0
+	.db	1,234,1,14
+	.dw	.L363,.L393
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_set_mode')
+.L239:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_set_mode')
+.L240:
+	.dw	.L677-.L676
+.L676:
+	.dh	3
+	.dw	.L679-.L678
+.L678:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L679:
+	.db	5,75,7,0,5,2
+	.dw	.L169
+	.db	3,236,1,1,5,5
+	.db	16+9*((.L570-.L169)/4)
+	.db	5,13,9
+	.dh	.L15-.L570
+	.db	3,4,1,5,34
+	.db	13+9*((.L680-.L15)/4)
+	.db	5,13
+	.db	18+9*((.L16-.L680)/4)
+	.db	5,34
+	.db	13+9*((.L681-.L16)/4)
+	.db	5,50
+	.db	17+9*((.L17-.L681)/4)
+	.db	5,40
+	.db	18+9*((.L19-.L17)/4)
+	.db	5,1
+	.db	15+9*((.L682-.L19)/4)
+	.db	7
+	.db	14+9*((.L683-.L682)/4)
+	.db	9
+	.dh	.L242-.L683
+	.db	0,1,1
+.L677:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_set_mode')
+.L241:
+	.dw	-1
+	.dw	.L169
+	.dw	0
+	.dw	.L242-.L169
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_cs_lo')
+.L243:
+	.dw	377
+	.dh	3
+	.dw	.L244
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L246,.L245
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_cs_lo",0
+	.db	1,138,2,6,1,1,1
+	.dw	.L171,.L394,.L170
+	.db	4
+	.db	"drv",0
+	.db	1,138,2,34
+	.dw	.L355,.L395
+	.db	5
+	.dw	.L171,.L394
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_cs_lo')
+.L244:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_cs_lo')
+.L245:
+	.dw	.L685-.L684
+.L684:
+	.dh	3
+	.dw	.L687-.L686
+.L686:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L687:
+	.db	5,49,7,0,5,2
+	.dw	.L171
+	.db	3,140,2,1,5,1
+	.db	15+9*((.L688-.L171)/4)
+	.db	7
+	.db	14+9*((.L689-.L688)/4)
+	.db	9
+	.dh	.L247-.L689
+	.db	0,1,1
+.L685:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_cs_lo')
+.L246:
+	.dw	-1
+	.dw	.L171
+	.dw	0
+	.dw	.L247-.L171
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_cs_hi')
+.L248:
+	.dw	377
+	.dh	3
+	.dw	.L249
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L251,.L250
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_cs_hi",0
+	.db	1,155,2,6,1,1,1
+	.dw	.L173,.L396,.L172
+	.db	4
+	.db	"drv",0
+	.db	1,155,2,34
+	.dw	.L355,.L397
+	.db	5
+	.dw	.L173,.L396
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_cs_hi')
+.L249:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_cs_hi')
+.L250:
+	.dw	.L691-.L690
+.L690:
+	.dh	3
+	.dw	.L693-.L692
+.L692:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L693:
+	.db	5,48,7,0,5,2
+	.dw	.L173
+	.db	3,157,2,1,5,1
+	.db	15+9*((.L694-.L173)/4)
+	.db	7
+	.db	14+9*((.L695-.L694)/4)
+	.db	9
+	.dh	.L252-.L695
+	.db	0,1,1
+.L691:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_cs_hi')
+.L251:
+	.dw	-1
+	.dw	.L173
+	.dw	0
+	.dw	.L252-.L173
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transmit8')
+.L253:
+	.dw	435
+	.dh	3
+	.dw	.L254
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L256,.L255
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transmit8",0
+	.db	1,173,2,6,1,1,1
+	.dw	.L175,.L398,.L174
+	.db	4
+	.db	"drv",0
+	.db	1,173,2,38
+	.dw	.L355,.L399
+	.db	4
+	.db	"val",0
+	.db	1,173,2,51
+	.dw	.L400,.L401
+	.db	5
+	.dw	.L175,.L398
+	.db	6
+	.dw	.L402,.L22,.L403
+	.db	7
+	.dw	.L404,.L405
+	.db	8
+	.dw	.L406,.L22,.L403
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transmit8')
+.L254:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.db	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transmit8')
+.L255:
+	.dw	.L697-.L696
+.L696:
+	.dh	3
+	.dw	.L699-.L698
+.L698:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L699:
+	.db	5,57,7,0,5,2
+	.dw	.L175
+	.db	3,175,2,1,5,5,9
+	.dh	.L22-.L175
+	.db	3,157,126,1,5,57,9
+	.dh	.L403-.L22
+	.db	3,227,1,1,5,40
+	.db	15+9*((.L21-.L403)/4)
+	.db	5,1
+	.db	15+9*((.L700-.L21)/4)
+	.db	7
+	.db	14+9*((.L701-.L700)/4)
+	.db	9
+	.dh	.L257-.L701
+	.db	0,1,1
+.L697:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transmit8')
+.L256:
+	.dw	-1
+	.dw	.L175
+	.dw	0
+	.dw	.L257-.L175
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transmit16')
+.L258:
+	.dw	556
+	.dh	3
+	.dw	.L259
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L261,.L260
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transmit16",0
+	.db	1,235,2,6,1,1,1
+	.dw	.L181,.L407,.L180
+	.db	4
+	.db	"drv",0
+	.db	1,235,2,39
+	.dw	.L355,.L408
+	.db	4
+	.db	"val",0
+	.db	1,235,2,53
+	.dw	.L409,.L410
+	.db	5
+	.dw	.L181,.L407
+	.db	5
+	.dw	.L411,.L412
+	.db	6
+	.db	"bigendian",0
+	.db	1,241,2,14
+	.dw	.L387,.L413
+	.db	6
+	.db	"m",0
+	.db	1,242,2,13
+	.dw	.L357,.L414
+	.db	6
+	.db	"n",0
+	.db	1,243,2,13
+	.dw	.L357,.L415
+	.db	7
+	.dw	.L416
+	.db	6
+	.db	"i",0
+	.db	1,245,2,18
+	.dw	.L357,.L419
+	.db	8
+	.dw	.L402,.L34,.L420
+	.db	9
+	.dw	.L404,.L421
+	.db	10
+	.dw	.L406,.L34,.L420
+	.db	0,0,0,8
+	.dw	.L402,.L37,.L422
+	.db	9
+	.dw	.L404,.L421
+	.db	10
+	.dw	.L406,.L37,.L422
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transmit16')
+.L259:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49,16,2,6,0,0,10,11
+	.db	0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transmit16')
+.L260:
+	.dw	.L703-.L702
+.L702:
+	.dh	3
+	.dw	.L705-.L704
+.L704:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L705:
+	.db	5,5,7,0,5,2
+	.dw	.L181
+	.db	3,238,2,1,5,84
+	.db	16+9*((.L411-.L181)/4)
+	.db	5,30
+	.db	18+9*((.L417-.L411)/4)
+	.db	5,84
+	.db	10+9*((.L418-.L417)/4)
+	.db	5,24
+	.db	14+9*((.L706-.L418)/4)
+	.db	5,15
+	.db	15+9*((.L572-.L706)/4)
+	.db	5,26
+	.db	15+9*((.L574-.L572)/4)
+	.db	5,65
+	.db	18+9*((.L32-.L574)/4)
+	.db	5,5,9
+	.dh	.L34-.L32
+	.db	3,214,125,1,5,65,9
+	.dh	.L420-.L34
+	.db	3,170,2,1,5,62
+	.db	15+9*((.L33-.L420)/4)
+	.db	5,30
+	.db	11+9*((.L707-.L33)/4)
+	.db	5,19
+	.db	18+9*((.L708-.L707)/4)
+	.db	5,1,9
+	.dh	.L412-.L708
+	.db	3,8,1,7
+	.db	14+9*((.L709-.L412)/4)
+	.db	5,61
+	.db	11+9*((.L29-.L709)/4)
+	.db	5,5,9
+	.dh	.L37-.L29
+	.db	3,207,125,1,5,61,9
+	.dh	.L422-.L37
+	.db	3,177,2,1,5,45
+	.db	15+9*((.L36-.L422)/4)
+	.db	5,1
+	.db	16+9*((.L710-.L36)/4)
+	.db	7
+	.db	14+9*((.L711-.L710)/4)
+	.db	9
+	.dh	.L262-.L711
+	.db	0,1,1
+.L703:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transmit16')
+.L261:
+	.dw	-1
+	.dw	.L181
+	.dw	0
+	.dw	.L262-.L181
+	.dw	0,0
+.L416:
+	.dw	-1
+	.dw	.L181,.L417-.L181,.L418-.L181,.L32-.L181,.L412-.L181
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transmit32')
+.L263:
+	.dw	560
+	.dh	3
+	.dw	.L264
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L266,.L265
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transmit32",0
+	.db	1,212,3,6,1,1,1
+	.dw	.L187,.L423,.L186
+	.db	4
+	.db	"drv",0
+	.db	1,212,3,39
+	.dw	.L355,.L424
+	.db	4
+	.db	"val",0
+	.db	1,212,3,53
+	.dw	.L363,.L425
+	.db	5
+	.dw	.L187,.L423
+	.db	5
+	.dw	.L426,.L427
+	.db	6
+	.db	"bigendian",0
+	.db	1,218,3,14
+	.dw	.L387,.L428
+	.db	6
+	.db	"m",0
+	.db	1,219,3,13
+	.dw	.L357,.L429
+	.db	6
+	.db	"n",0
+	.db	1,220,3,13
+	.dw	.L357,.L430
+	.db	5
+	.dw	.L431,.L427
+	.db	6
+	.db	"i",0
+	.db	1,222,3,18
+	.dw	.L357,.L432
+	.db	7
+	.dw	.L402,.L60,.L433
+	.db	8
+	.dw	.L404,.L434
+	.db	9
+	.dw	.L406,.L60,.L433
+	.db	0,0,0,7
+	.dw	.L402,.L63,.L435
+	.db	8
+	.dw	.L404,.L434
+	.db	9
+	.dw	.L406,.L63,.L435
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transmit32')
+.L264:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.db	1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transmit32')
+.L265:
+	.dw	.L713-.L712
+.L712:
+	.dh	3
+	.dw	.L715-.L714
+.L714:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L715:
+	.db	5,5,7,0,5,2
+	.dw	.L187
+	.db	3,215,3,1,5,84
+	.db	16+9*((.L426-.L187)/4)
+	.db	5,24
+	.db	14+9*((.L716-.L426)/4)
+	.db	5,17
+	.db	15+9*((.L579-.L716)/4)
+	.db	7
+	.db	14+9*((.L717-.L579)/4)
+	.db	5,31
+	.db	14+9*((.L718-.L717)/4)
+	.db	5,26
+	.db	14+9*((.L719-.L718)/4)
+	.db	15+9*((.L56-.L719)/4)
+	.db	5,30
+	.db	16+9*((.L431-.L56)/4)
+	.db	5,65
+	.db	16+9*((.L58-.L431)/4)
+	.db	5,5,9
+	.dh	.L60-.L58
+	.db	3,237,124,1,5,65,9
+	.dh	.L433-.L60
+	.db	3,147,3,1,5,62
+	.db	15+9*((.L59-.L433)/4)
+	.db	5,30
+	.db	11+9*((.L720-.L59)/4)
+	.db	5,19
+	.db	18+9*((.L721-.L720)/4)
+	.db	5,1,9
+	.dh	.L427-.L721
+	.db	3,8,1,7
+	.db	14+9*((.L722-.L427)/4)
+	.db	5,61
+	.db	11+9*((.L53-.L722)/4)
+	.db	5,5,9
+	.dh	.L63-.L53
+	.db	3,230,124,1,5,61,9
+	.dh	.L435-.L63
+	.db	3,154,3,1,5,45
+	.db	15+9*((.L62-.L435)/4)
+	.db	5,1
+	.db	16+9*((.L723-.L62)/4)
+	.db	7
+	.db	14+9*((.L724-.L723)/4)
+	.db	9
+	.dh	.L267-.L724
+	.db	0,1,1
+.L713:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transmit32')
+.L266:
+	.dw	-1
+	.dw	.L187
+	.dw	0
+	.dw	.L267-.L187
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transceive8')
+.L268:
+	.dw	477
+	.dh	3
+	.dw	.L269
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L271,.L270
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transceive8",0
+	.db	1,194,2,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L177,.L436,.L176
+	.db	4
+	.db	"drv",0
+	.db	1,194,2,43
+	.dw	.L355,.L437
+	.db	4
+	.db	"val",0
+	.db	1,194,2,56
+	.dw	.L400,.L438
+	.db	5
+	.dw	.L177,.L436
+	.db	6
+	.dw	.L402,.L24,.L439
+	.db	7
+	.dw	.L404,.L440
+	.db	8
+	.dw	.L406,.L24,.L439
+	.db	0,6
+	.dw	.L402,.L26,.L441
+	.db	7
+	.dw	.L404,.L440
+	.db	8
+	.dw	.L406,.L26,.L441
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transceive8')
+.L269:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	29,1,49,16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transceive8')
+.L270:
+	.dw	.L726-.L725
+.L725:
+	.dh	3
+	.dw	.L728-.L727
+.L727:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L728:
+	.db	5,57,7,0,5,2
+	.dw	.L177
+	.db	3,196,2,1,5,5,9
+	.dh	.L24-.L177
+	.db	3,136,126,1,5,57,9
+	.dh	.L439-.L24
+	.db	3,248,1,1,5,40
+	.db	15+9*((.L23-.L439)/4)
+	.db	5,57
+	.db	15+9*((.L729-.L23)/4)
+	.db	5,5,9
+	.dh	.L26-.L729
+	.db	3,134,126,1,5,57,9
+	.dh	.L441-.L26
+	.db	3,250,1,1,5,5
+	.db	15+9*((.L25-.L441)/4)
+	.db	5,1
+	.db	15+9*((.L730-.L25)/4)
+	.db	7
+	.db	14+9*((.L731-.L730)/4)
+	.db	9
+	.dh	.L272-.L731
+	.db	0,1,1
+.L726:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transceive8')
+.L271:
+	.dw	-1
+	.dw	.L177
+	.dw	0
+	.dw	.L272-.L177
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transceive16')
+.L273:
+	.dw	657
+	.dh	3
+	.dw	.L274
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L276,.L275
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transceive16",0
+	.db	1,149,3,10
+	.dw	.L409
+	.db	1,1,1
+	.dw	.L183,.L442,.L182
+	.db	4
+	.db	"drv",0
+	.db	1,149,3,45
+	.dw	.L355,.L443
+	.db	4
+	.db	"val",0
+	.db	1,149,3,59
+	.dw	.L409,.L444
+	.db	5
+	.dw	.L183,.L442
+	.db	5
+	.dw	.L445,.L442
+	.db	6
+	.db	"ret",0
+	.db	1,153,3,14
+	.dw	.L409,.L446
+	.db	7
+	.dw	.L447
+	.db	6
+	.db	"bigendian",0
+	.db	1,157,3,14
+	.dw	.L387,.L451
+	.db	6
+	.db	"m",0
+	.db	1,158,3,13
+	.dw	.L357,.L452
+	.db	6
+	.db	"n",0
+	.db	1,159,3,13
+	.dw	.L357,.L453
+	.db	7
+	.dw	.L454
+	.db	6
+	.db	"i",0
+	.db	1,161,3,18
+	.dw	.L357,.L457
+	.db	8
+	.dw	.L402,.L43,.L458
+	.db	9
+	.dw	.L404,.L459
+	.db	10
+	.dw	.L406,.L43,.L458
+	.db	0,8
+	.dw	.L402,.L45,.L460
+	.db	9
+	.dw	.L404,.L459
+	.db	10
+	.dw	.L406,.L45,.L460
+	.db	0,0,0,8
+	.dw	.L402,.L48,.L461
+	.db	9
+	.dw	.L404,.L459
+	.db	10
+	.dw	.L406,.L48,.L461
+	.db	0,8
+	.dw	.L402,.L50,.L462
+	.db	9
+	.dw	.L404,.L459
+	.db	10
+	.dw	.L406,.L50,.L462
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transceive16')
+.L274:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,11,1,85,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49,16,2,6,0
+	.db	0,10,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transceive16')
+.L275:
+	.dw	.L733-.L732
+.L732:
+	.dh	3
+	.dw	.L735-.L734
+.L734:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L735:
+	.db	5,10,7,0,5,2
+	.dw	.L183
+	.db	3,148,3,1,5,26
+	.db	16+9*((.L445-.L183)/4)
+	.db	5,5
+	.db	18+9*((.L448-.L445)/4)
+	.db	5,18
+	.db	12+9*((.L736-.L448)/4)
+	.db	5,84
+	.db	18+9*((.L449-.L736)/4)
+	.db	5,30
+	.db	18+9*((.L455-.L449)/4)
+	.db	5,84
+	.db	10+9*((.L456-.L455)/4)
+	.db	5,24
+	.db	14+9*((.L737-.L456)/4)
+	.db	5,15
+	.db	15+9*((.L577-.L737)/4)
+	.db	5,26
+	.db	15+9*((.L576-.L577)/4)
+	.db	5,65
+	.db	18+9*((.L41-.L576)/4)
+	.db	5,5,9
+	.dh	.L43-.L41
+	.db	3,170,125,1,5,65,9
+	.dh	.L458-.L43
+	.db	3,214,2,1,5,62
+	.db	15+9*((.L42-.L458)/4)
+	.db	5,65
+	.db	15+9*((.L738-.L42)/4)
+	.db	5,5,9
+	.dh	.L45-.L738
+	.db	3,168,125,1,5,65,9
+	.dh	.L460-.L45
+	.db	3,216,2,1,5,71
+	.db	15+9*((.L44-.L460)/4)
+	.db	5,30,9
+	.dh	.L739-.L44
+	.db	3,123,1,5,71,9
+	.dh	.L740-.L739
+	.db	3,5,1,5,30,9
+	.dh	.L741-.L740
+	.db	3,123,1,5,19,7,9
+	.dh	.L742-.L741
+	.db	3,6,1,5,30,9
+	.dh	.L450-.L742
+	.db	3,122,1,5,61,9
+	.dh	.L38-.L450
+	.db	3,11,1,5,5,9
+	.dh	.L48-.L38
+	.db	3,161,125,1,5,61,9
+	.dh	.L461-.L48
+	.db	3,223,2,1,5,45
+	.db	15+9*((.L47-.L461)/4)
+	.db	5,61
+	.db	15+9*((.L743-.L47)/4)
+	.db	5,5,9
+	.dh	.L50-.L743
+	.db	3,159,125,1,5,61,9
+	.dh	.L462-.L50
+	.db	3,225,2,1,5,56
+	.db	15+9*((.L49-.L462)/4)
+	.db	5,1
+	.db	18+9*((.L46-.L49)/4)
+	.db	5,5,7
+	.db	13+9*((.L744-.L46)/4)
+	.db	5,1,9
+	.dh	.L277-.L744
+	.db	3,1,0,1,1
+.L733:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transceive16')
+.L276:
+	.dw	-1
+	.dw	.L183
+	.dw	0
+	.dw	.L277-.L183
+	.dw	0,0
+.L447:
+	.dw	-1
+	.dw	.L183,.L445-.L183,.L448-.L183,.L449-.L183,.L450-.L183
+	.dw	0,0
+.L454:
+	.dw	-1
+	.dw	.L183,.L455-.L183,.L456-.L183,.L41-.L183,.L450-.L183
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_transceive32')
+.L278:
+	.dw	657
+	.dh	3
+	.dw	.L279
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L281,.L280
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_transceive32",0
+	.db	1,254,3,10
+	.dw	.L363
+	.db	1,1,1
+	.dw	.L189,.L463,.L188
+	.db	4
+	.db	"drv",0
+	.db	1,254,3,45
+	.dw	.L355,.L464
+	.db	4
+	.db	"val",0
+	.db	1,254,3,59
+	.dw	.L363,.L465
+	.db	5
+	.dw	.L189,.L463
+	.db	6
+	.dw	.L466
+	.db	7
+	.db	"ret",0
+	.db	1,130,4,14
+	.dw	.L363,.L470
+	.db	6
+	.dw	.L471
+	.db	7
+	.db	"bigendian",0
+	.db	1,134,4,14
+	.dw	.L387,.L475
+	.db	7
+	.db	"m",0
+	.db	1,135,4,13
+	.dw	.L357,.L476
+	.db	7
+	.db	"n",0
+	.db	1,136,4,13
+	.dw	.L357,.L477
+	.db	5
+	.dw	.L478,.L474
+	.db	7
+	.db	"i",0
+	.db	1,138,4,18
+	.dw	.L357,.L479
+	.db	8
+	.dw	.L402,.L71,.L480
+	.db	9
+	.dw	.L404,.L481
+	.db	10
+	.dw	.L406,.L71,.L480
+	.db	0,8
+	.dw	.L402,.L73,.L482
+	.db	9
+	.dw	.L404,.L481
+	.db	10
+	.dw	.L406,.L73,.L482
+	.db	0,0,0,8
+	.dw	.L402,.L76,.L483
+	.db	9
+	.dw	.L404,.L481
+	.db	10
+	.dw	.L406,.L76,.L483
+	.db	0,8
+	.dw	.L402,.L78,.L484
+	.db	9
+	.dw	.L404,.L481
+	.db	10
+	.dw	.L406,.L78,.L484
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_transceive32')
+.L279:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	11,1,85,6,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,8,29,1,49,16,17,1,18,1,0,0,9,5,0,49,16,2,6,0
+	.db	0,10,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_transceive32')
+.L280:
+	.dw	.L746-.L745
+.L745:
+	.dh	3
+	.dw	.L748-.L747
+.L747:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L748:
+	.db	5,10,7,0,5,2
+	.dw	.L189
+	.db	3,253,3,1,5,26
+	.db	16+9*((.L467-.L189)/4)
+	.db	5,5
+	.db	18+9*((.L472-.L467)/4)
+	.db	5,10,9
+	.dh	.L468-.L472
+	.db	3,122,1,5,5,9
+	.dh	.L469-.L468
+	.db	3,6,1,5,18,7
+	.db	12+9*((.L749-.L469)/4)
+	.db	5,84
+	.db	18+9*((.L473-.L749)/4)
+	.db	5,24
+	.db	14+9*((.L750-.L473)/4)
+	.db	5,17
+	.db	15+9*((.L581-.L750)/4)
+	.db	7
+	.db	14+9*((.L751-.L581)/4)
+	.db	5,31
+	.db	14+9*((.L752-.L751)/4)
+	.db	5,26
+	.db	14+9*((.L753-.L752)/4)
+	.db	15+9*((.L67-.L753)/4)
+	.db	5,30
+	.db	16+9*((.L478-.L67)/4)
+	.db	5,65
+	.db	16+9*((.L69-.L478)/4)
+	.db	5,5,9
+	.dh	.L71-.L69
+	.db	3,193,124,1,5,65,9
+	.dh	.L480-.L71
+	.db	3,191,3,1,5,62
+	.db	15+9*((.L70-.L480)/4)
+	.db	5,65
+	.db	15+9*((.L754-.L70)/4)
+	.db	5,5,9
+	.dh	.L73-.L754
+	.db	3,191,124,1,5,65,9
+	.dh	.L482-.L73
+	.db	3,193,3,1,5,59
+	.db	15+9*((.L72-.L482)/4)
+	.db	5,30,9
+	.dh	.L755-.L72
+	.db	3,123,1,5,59,9
+	.dh	.L756-.L755
+	.db	3,5,1,5,30,9
+	.dh	.L757-.L756
+	.db	3,123,1,5,19,7,9
+	.dh	.L758-.L757
+	.db	3,6,1,5,30,9
+	.dh	.L474-.L758
+	.db	3,122,1,5,61,9
+	.dh	.L64-.L474
+	.db	3,11,1,5,5,9
+	.dh	.L76-.L64
+	.db	3,184,124,1,5,61,9
+	.dh	.L483-.L76
+	.db	3,200,3,1,5,45
+	.db	15+9*((.L75-.L483)/4)
+	.db	5,61
+	.db	15+9*((.L759-.L75)/4)
+	.db	5,5,9
+	.dh	.L78-.L759
+	.db	3,182,124,1,5,61,9
+	.dh	.L484-.L78
+	.db	3,202,3,1,5,45
+	.db	15+9*((.L77-.L484)/4)
+	.db	5,1
+	.db	18+9*((.L74-.L77)/4)
+	.db	5,5,7
+	.db	13+9*((.L760-.L74)/4)
+	.db	5,1,9
+	.dh	.L282-.L760
+	.db	3,1,0,1,1
+.L746:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_transceive32')
+.L281:
+	.dw	-1
+	.dw	.L189
+	.dw	0
+	.dw	.L282-.L189
+	.dw	0,0
+.L466:
+	.dw	-1
+	.dw	.L189,.L467-.L189,.L468-.L189,.L469-.L189,.L463-.L189
+	.dw	0,0
+.L471:
+	.dw	-1
+	.dw	.L189,.L467-.L189,.L472-.L189,.L473-.L189,.L474-.L189
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_received8')
+.L283:
+	.dw	385
+	.dh	3
+	.dw	.L284
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L286,.L285
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_received8",0
+	.db	1,215,2,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L179,.L485,.L178
+	.db	4
+	.db	"drv",0
+	.db	1,215,2,41
+	.dw	.L355,.L486
+	.db	5
+	.dw	.L179,.L485
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_received8')
+.L284:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_received8')
+.L285:
+	.dw	.L762-.L761
+.L761:
+	.dh	3
+	.dw	.L764-.L763
+.L763:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L764:
+	.db	5,5,7,0,5,2
+	.dw	.L179
+	.db	3,217,2,1,5,1
+	.db	15+9*((.L765-.L179)/4)
+	.db	7
+	.db	14+9*((.L766-.L765)/4)
+	.db	9
+	.dh	.L287-.L766
+	.db	0,1,1
+.L762:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_received8')
+.L286:
+	.dw	-1
+	.dw	.L179
+	.dw	0
+	.dw	.L287-.L179
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_received16')
+.L288:
+	.dw	386
+	.dh	3
+	.dw	.L289
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L291,.L290
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_received16",0
+	.db	1,192,3,10
+	.dw	.L409
+	.db	1,1,1
+	.dw	.L185,.L487,.L184
+	.db	4
+	.db	"drv",0
+	.db	1,192,3,43
+	.dw	.L355,.L488
+	.db	5
+	.dw	.L185,.L487
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_received16')
+.L289:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_received16')
+.L290:
+	.dw	.L768-.L767
+.L767:
+	.dh	3
+	.dw	.L770-.L769
+.L769:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L770:
+	.db	5,5,7,0,5,2
+	.dw	.L185
+	.db	3,194,3,1,5,1
+	.db	15+9*((.L771-.L185)/4)
+	.db	7
+	.db	14+9*((.L772-.L771)/4)
+	.db	9
+	.dh	.L292-.L772
+	.db	0,1,1
+.L768:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_received16')
+.L291:
+	.dw	-1
+	.dw	.L185
+	.dw	0
+	.dw	.L292-.L185
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_received32')
+.L293:
+	.dw	386
+	.dh	3
+	.dw	.L294
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L296,.L295
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_received32",0
+	.db	1,169,4,10
+	.dw	.L363
+	.db	1,1,1
+	.dw	.L191,.L489,.L190
+	.db	4
+	.db	"drv",0
+	.db	1,169,4,43
+	.dw	.L355,.L490
+	.db	5
+	.dw	.L191,.L489
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_received32')
+.L294:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_received32')
+.L295:
+	.dw	.L774-.L773
+.L773:
+	.dh	3
+	.dw	.L776-.L775
+.L775:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L776:
+	.db	5,5,7,0,5,2
+	.dw	.L191
+	.db	3,171,4,1,5,1
+	.db	15+9*((.L777-.L191)/4)
+	.db	7
+	.db	14+9*((.L778-.L777)/4)
+	.db	9
+	.dh	.L297-.L778
+	.db	0,1,1
+.L774:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_received32')
+.L296:
+	.dw	-1
+	.dw	.L191
+	.dw	0
+	.dw	.L297-.L191
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_readblock')
+.L298:
+	.dw	691
+	.dh	3
+	.dw	.L299
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L301,.L300
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_readblock",0
+	.db	1,194,6,6,1,1,1
+	.dw	.L211,.L491,.L210
+	.db	4
+	.db	"drv",0
+	.db	1,194,6,38
+	.dw	.L355,.L492
+	.db	4
+	.db	"buf",0
+	.db	1,194,6,53
+	.dw	.L493,.L494
+	.db	4
+	.db	"bufsize",0
+	.db	1,194,6,62
+	.dw	.L357,.L495
+	.db	5
+	.dw	.L211,.L491
+	.db	6
+	.db	"buf32",0
+	.db	1,196,6,16
+	.dw	.L496,.L497
+	.db	7
+	.dw	.L402,.L117,.L498
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L117,.L498
+	.db	0,7
+	.dw	.L402,.L122,.L500
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L122,.L500
+	.db	0,7
+	.dw	.L402,.L124,.L501
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L124,.L501
+	.db	0,7
+	.dw	.L402,.L129,.L502
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L129,.L502
+	.db	0,7
+	.dw	.L402,.L133,.L503
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L133,.L503
+	.db	0,7
+	.dw	.L402,.L135,.L504
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L135,.L504
+	.db	0,7
+	.dw	.L402,.L139,.L505
+	.db	8
+	.dw	.L404,.L499
+	.db	9
+	.dw	.L406,.L139,.L505
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_readblock')
+.L299:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.db	1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_readblock')
+.L300:
+	.dw	.L780-.L779
+.L779:
+	.dh	3
+	.dw	.L782-.L781
+.L781:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L782:
+	.db	5,57,7,0,5,2
+	.dw	.L211
+	.db	3,197,6,1,5,5,9
+	.dh	.L117-.L211
+	.db	3,135,122,1,5,57,9
+	.dh	.L498-.L117
+	.db	3,249,5,1,5,5
+	.db	16+9*((.L116-.L498)/4)
+	.db	5,45
+	.db	16+9*((.L783-.L116)/4)
+	.db	5,16
+	.db	15+9*((.L784-.L783)/4)
+	.db	5,26
+	.db	14+9*((.L597-.L784)/4)
+	.db	7
+	.db	14+9*((.L785-.L597)/4)
+	.db	5,65
+	.db	16+9*((.L120-.L785)/4)
+	.db	5,5,9
+	.dh	.L122-.L120
+	.db	3,128,122,1,5,65,9
+	.dh	.L500-.L122
+	.db	3,128,6,1,5,58
+	.db	15+9*((.L121-.L500)/4)
+	.db	5,49
+	.db	15+9*((.L786-.L121)/4)
+	.db	5,58
+	.db	13+9*((.L787-.L786)/4)
+	.db	5,16
+	.db	11+9*((.L788-.L787)/4)
+	.db	5,58
+	.db	17+9*((.L789-.L788)/4)
+	.db	5,49
+	.db	15+9*((.L790-.L789)/4)
+	.db	5,26
+	.db	10+9*((.L791-.L790)/4)
+	.db	5,18,7,9
+	.dh	.L792-.L791
+	.db	3,5,1,5,61
+	.db	16+9*((.L119-.L792)/4)
+	.db	5,5,9
+	.dh	.L124-.L119
+	.db	3,251,121,1,5,61,9
+	.dh	.L501-.L124
+	.db	3,133,6,1,5,54
+	.db	15+9*((.L123-.L501)/4)
+	.db	5,1,9
+	.dh	.L793-.L123
+	.db	3,35,1,7
+	.db	14+9*((.L794-.L793)/4)
+	.db	5,40,9
+	.dh	.L118-.L794
+	.db	3,97,1,5,49
+	.db	16+9*((.L127-.L118)/4)
+	.db	5,65
+	.db	16+9*((.L795-.L127)/4)
+	.db	5,22
+	.db	13+9*((.L796-.L795)/4)
+	.db	5,65
+	.db	15+9*((.L797-.L796)/4)
+	.db	5,5,9
+	.dh	.L129-.L797
+	.db	3,242,121,1,5,65,9
+	.dh	.L502-.L129
+	.db	3,142,6,1,5,60
+	.db	15+9*((.L128-.L502)/4)
+	.db	5,17
+	.db	14+9*((.L798-.L128)/4)
+	.db	5,40,9
+	.dh	.L799-.L798
+	.db	3,123,1,5,52,9
+	.dh	.L126-.L799
+	.db	3,9,1,5,28
+	.db	15+9*((.L800-.L126)/4)
+	.db	5,65
+	.db	16+9*((.L131-.L800)/4)
+	.db	5,5,9
+	.dh	.L133-.L131
+	.db	3,234,121,1,5,65,9
+	.dh	.L503-.L133
+	.db	3,150,6,1,5,52
+	.db	15+9*((.L132-.L503)/4)
+	.db	5,56
+	.db	15+9*((.L801-.L132)/4)
+	.db	5,52
+	.db	13+9*((.L802-.L801)/4)
+	.db	5,25
+	.db	17+9*((.L803-.L802)/4)
+	.db	5,52
+	.db	11+9*((.L804-.L803)/4)
+	.db	5,56
+	.db	15+9*((.L805-.L804)/4)
+	.db	5,28
+	.db	10+9*((.L806-.L805)/4)
+	.db	5,20,9
+	.dh	.L807-.L806
+	.db	3,5,1,5,61
+	.db	17+9*((.L130-.L807)/4)
+	.db	5,5,9
+	.dh	.L135-.L130
+	.db	3,228,121,1,5,61,9
+	.dh	.L504-.L135
+	.db	3,156,6,1,5,50
+	.db	15+9*((.L134-.L504)/4)
+	.db	5,15
+	.db	14+9*((.L808-.L134)/4)
+	.db	5,50
+	.db	14+9*((.L599-.L808)/4)
+	.db	5,29
+	.db	18+9*((.L809-.L599)/4)
+	.db	5,50
+	.db	10+9*((.L810-.L809)/4)
+	.db	5,29
+	.db	18+9*((.L811-.L810)/4)
+	.db	7
+	.db	14+9*((.L812-.L811)/4)
+	.db	5,49
+	.db	16+9*((.L137-.L812)/4)
+	.db	5,65
+	.db	16+9*((.L813-.L137)/4)
+	.db	5,22
+	.db	13+9*((.L814-.L813)/4)
+	.db	5,65
+	.db	15+9*((.L815-.L814)/4)
+	.db	5,5,9
+	.dh	.L139-.L815
+	.db	3,219,121,1,5,65,9
+	.dh	.L505-.L139
+	.db	3,165,6,1,5,60
+	.db	15+9*((.L138-.L505)/4)
+	.db	5,29,9
+	.dh	.L816-.L138
+	.db	3,123,1,5,60,9
+	.dh	.L817-.L816
+	.db	3,5,1,5,29,9
+	.dh	.L818-.L817
+	.db	3,123,1,5,60,9
+	.dh	.L819-.L818
+	.db	3,5,1,5,29,9
+	.dh	.L820-.L819
+	.db	3,123,1,5,17,7,9
+	.dh	.L821-.L820
+	.db	3,5,1,5,1
+	.db	17+9*((.L136-.L821)/4)
+	.db	7
+	.db	14+9*((.L822-.L136)/4)
+	.db	9
+	.dh	.L302-.L822
+	.db	0,1,1
+.L780:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_readblock')
+.L301:
+	.dw	-1
+	.dw	.L211
+	.dw	0
+	.dw	.L302-.L211
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_writeblock')
+.L303:
+	.dw	620
+	.dh	3
+	.dw	.L304
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L306,.L305
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_writeblock",0
+	.db	1,136,7,6,1,1,1
+	.dw	.L213,.L506,.L212
+	.db	4
+	.db	"drv",0
+	.db	1,136,7,39
+	.dw	.L355,.L507
+	.db	4
+	.db	"buf",0
+	.db	1,136,7,54
+	.dw	.L493,.L508
+	.db	4
+	.db	"bufsize",0
+	.db	1,136,7,63
+	.dw	.L357,.L509
+	.db	5
+	.dw	.L213,.L506
+	.db	6
+	.db	"buf32",0
+	.db	1,138,7,16
+	.dw	.L496,.L510
+	.db	7
+	.dw	.L402,.L141,.L511
+	.db	8
+	.dw	.L404,.L512
+	.db	9
+	.dw	.L406,.L141,.L511
+	.db	0,7
+	.dw	.L402,.L146,.L513
+	.db	8
+	.dw	.L404,.L512
+	.db	9
+	.dw	.L406,.L146,.L513
+	.db	0,7
+	.dw	.L402,.L151,.L514
+	.db	8
+	.dw	.L404,.L512
+	.db	9
+	.dw	.L406,.L151,.L514
+	.db	0,7
+	.dw	.L402,.L155,.L515
+	.db	8
+	.dw	.L404,.L512
+	.db	9
+	.dw	.L406,.L155,.L515
+	.db	0,7
+	.dw	.L402,.L159,.L516
+	.db	8
+	.dw	.L404,.L512
+	.db	9
+	.dw	.L406,.L159,.L516
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_writeblock')
+.L304:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.db	1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_writeblock')
+.L305:
+	.dw	.L824-.L823
+.L823:
+	.dh	3
+	.dw	.L826-.L825
+.L825:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L826:
+	.db	5,57,7,0,5,2
+	.dw	.L213
+	.db	3,139,7,1,5,5,9
+	.dh	.L141-.L213
+	.db	3,193,121,1,5,57,9
+	.dh	.L511-.L141
+	.db	3,191,6,1,5,5
+	.db	16+9*((.L140-.L511)/4)
+	.db	5,26
+	.db	17+9*((.L827-.L140)/4)
+	.db	5,65
+	.db	16+9*((.L144-.L827)/4)
+	.db	5,5,9
+	.dh	.L146-.L144
+	.db	3,186,121,1,5,65,9
+	.dh	.L513-.L146
+	.db	3,198,6,1,5,51
+	.db	15+9*((.L143-.L513)/4)
+	.db	5,49
+	.db	14+9*((.L828-.L143)/4)
+	.db	5,51
+	.db	14+9*((.L829-.L828)/4)
+	.db	5,16
+	.db	11+9*((.L830-.L829)/4)
+	.db	5,26
+	.db	14+9*((.L831-.L830)/4)
+	.db	7
+	.db	14+9*((.L832-.L831)/4)
+	.db	5,1,9
+	.dh	.L833-.L832
+	.db	3,32,1,7
+	.db	14+9*((.L834-.L833)/4)
+	.db	5,40,9
+	.dh	.L142-.L834
+	.db	3,104,1,5,51
+	.db	16+9*((.L149-.L142)/4)
+	.db	5,49
+	.db	14+9*((.L835-.L149)/4)
+	.db	5,51
+	.db	14+9*((.L836-.L835)/4)
+	.db	5,65
+	.db	16+9*((.L837-.L836)/4)
+	.db	5,22
+	.db	13+9*((.L838-.L837)/4)
+	.db	5,65
+	.db	15+9*((.L839-.L838)/4)
+	.db	5,5,9
+	.dh	.L151-.L839
+	.db	3,176,121,1,5,65,9
+	.dh	.L514-.L151
+	.db	3,208,6,1,5,40
+	.db	10+9*((.L150-.L514)/4)
+	.db	5,28,9
+	.dh	.L148-.L150
+	.db	3,9,1,5,65
+	.db	16+9*((.L153-.L148)/4)
+	.db	5,5,9
+	.dh	.L155-.L153
+	.db	3,169,121,1,5,65,9
+	.dh	.L515-.L155
+	.db	3,215,6,1,5,54
+	.db	15+9*((.L154-.L515)/4)
+	.db	5,52
+	.db	14+9*((.L840-.L154)/4)
+	.db	5,54
+	.db	14+9*((.L841-.L840)/4)
+	.db	5,25
+	.db	15+9*((.L842-.L841)/4)
+	.db	5,28
+	.db	10+9*((.L843-.L842)/4)
+	.db	5,25,9
+	.dh	.L152-.L843
+	.db	3,8,1,7
+	.db	14+9*((.L844-.L152)/4)
+	.db	5,65
+	.db	16+9*((.L157-.L844)/4)
+	.db	5,5,9
+	.dh	.L159-.L157
+	.db	3,161,121,1,5,65,9
+	.dh	.L516-.L159
+	.db	3,223,6,1,5,51
+	.db	15+9*((.L158-.L516)/4)
+	.db	5,49
+	.db	14+9*((.L845-.L158)/4)
+	.db	5,51
+	.db	14+9*((.L846-.L845)/4)
+	.db	5,22
+	.db	15+9*((.L847-.L846)/4)
+	.db	5,25
+	.db	10+9*((.L848-.L847)/4)
+	.db	7
+	.db	14+9*((.L849-.L848)/4)
+	.db	5,1,9
+	.dh	.L156-.L849
+	.db	3,7,1,7
+	.db	14+9*((.L850-.L156)/4)
+	.db	9
+	.dh	.L307-.L850
+	.db	0,1,1
+.L824:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_writeblock')
+.L306:
+	.dw	-1
+	.dw	.L213
+	.dw	0
+	.dw	.L307-.L213
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_gpin')
+.L308:
+	.dw	384
+	.dh	3
+	.dw	.L309
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L311,.L310
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_gpin",0
+	.db	1,142,6,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L205,.L517,.L204
+	.db	4
+	.db	"drv",0
+	.db	1,142,6,40
+	.dw	.L355,.L518
+	.db	5
+	.dw	.L205,.L517
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_gpin')
+.L309:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_gpin')
+.L310:
+	.dw	.L852-.L851
+.L851:
+	.dh	3
+	.dw	.L854-.L853
+.L853:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L854:
+	.db	5,5,7,0,5,2
+	.dw	.L205
+	.db	3,143,6,1,5,1
+	.db	15+9*((.L855-.L205)/4)
+	.db	7
+	.db	14+9*((.L856-.L855)/4)
+	.db	9
+	.dh	.L312-.L856
+	.db	0,1,1
+.L852:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_gpin')
+.L311:
+	.dw	-1
+	.dw	.L205
+	.dw	0
+	.dw	.L312-.L205
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_bus')
+.L313:
+	.dw	567
+	.dh	3
+	.dw	.L314
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L316,.L315
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_bus",0
+	.db	1,204,4,6
+	.dw	.L387
+	.db	1,1,1
+	.dw	.L195,.L519,.L194
+	.db	4
+	.db	"drv",0
+	.db	1,204,4,36
+	.dw	.L355,.L520
+	.db	4
+	.db	"channel",0
+	.db	1,204,4,49
+	.dw	.L400,.L521
+	.db	5
+	.dw	.L195,.L519
+	.db	6
+	.db	"data",0
+	.db	1,210,4,14
+	.dw	.L400,.L522
+	.db	6
+	.db	"cdiv",0
+	.db	1,211,4,14
+	.dw	.L363,.L523
+	.db	6
+	.db	"ctrl",0
+	.db	1,212,4,14
+	.dw	.L363,.L524
+	.db	7
+	.dw	.L402,.L87,.L525
+	.db	8
+	.dw	.L404,.L526
+	.db	9
+	.dw	.L406,.L87,.L525
+	.db	0,7
+	.dw	.L402,.L89,.L527
+	.db	8
+	.dw	.L404,.L526
+	.db	9
+	.dw	.L406,.L89,.L527
+	.db	0,7
+	.dw	.L402,.L91,.L528
+	.db	8
+	.dw	.L404,.L526
+	.db	9
+	.dw	.L406,.L91,.L528
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_bus')
+.L314:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17
+	.db	1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_bus')
+.L315:
+	.dw	.L858-.L857
+.L857:
+	.dh	3
+	.dw	.L860-.L859
+.L859:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L860:
+	.db	5,6,7,0,5,2
+	.dw	.L195
+	.db	3,203,4,1,5,5,9
+	.dh	.L585-.L195
+	.db	3,13,1,5,6,9
+	.dh	.L861-.L585
+	.db	3,115,1,5,10,9
+	.dh	.L584-.L861
+	.db	3,14,1,7
+	.db	14+9*((.L862-.L584)/4)
+	.db	5,37
+	.db	14+9*((.L863-.L862)/4)
+	.db	5,57
+	.db	18+9*((.L864-.L863)/4)
+	.db	5,5,9
+	.dh	.L87-.L864
+	.db	3,239,123,1,5,57,9
+	.dh	.L525-.L87
+	.db	3,145,4,1,5,40
+	.db	16+9*((.L86-.L525)/4)
+	.db	5,47,9
+	.dh	.L865-.L86
+	.db	3,7,1,5,40,9
+	.dh	.L866-.L865
+	.db	3,121,1
+	.db	15+9*((.L588-.L866)/4)
+	.db	5,54
+	.db	18+9*((.L583-.L588)/4)
+	.db	5,40
+	.db	10+9*((.L586-.L583)/4)
+	.db	5,24
+	.db	15+9*((.L587-.L586)/4)
+	.db	15+9*((.L867-.L587)/4)
+	.db	5,54
+	.db	16+9*((.L868-.L867)/4)
+	.db	5,47
+	.db	16+9*((.L869-.L868)/4)
+	.db	5,60
+	.db	15+9*((.L870-.L869)/4)
+	.db	5,47
+	.db	13+9*((.L871-.L870)/4)
+	.db	5,60
+	.db	15+9*((.L872-.L871)/4)
+	.db	5,63
+	.db	16+9*((.L873-.L872)/4)
+	.db	5,60
+	.db	12+9*((.L874-.L873)/4)
+	.db	5,63
+	.db	16+9*((.L875-.L874)/4)
+	.db	15+9*((.L876-.L875)/4)
+	.db	5,47
+	.db	15+9*((.L877-.L876)/4)
+	.db	15+9*((.L878-.L877)/4)
+	.db	5,63
+	.db	15+9*((.L879-.L878)/4)
+	.db	15+9*((.L880-.L879)/4)
+	.db	5,51
+	.db	16+9*((.L881-.L880)/4)
+	.db	5,57
+	.db	15+9*((.L882-.L881)/4)
+	.db	5,5,9
+	.dh	.L89-.L882
+	.db	3,219,123,1,5,57,9
+	.dh	.L527-.L89
+	.db	3,165,4,1,5,51
+	.db	15+9*((.L88-.L527)/4)
+	.db	5,57
+	.db	15+9*((.L883-.L88)/4)
+	.db	5,5,9
+	.dh	.L91-.L883
+	.db	3,217,123,1,5,57,9
+	.dh	.L528-.L91
+	.db	3,167,4,1,5,50
+	.db	16+9*((.L90-.L528)/4)
+	.db	5,40
+	.db	16+9*((.L884-.L90)/4)
+	.db	15+9*((.L885-.L884)/4)
+	.db	5,5
+	.db	16+9*((.L886-.L885)/4)
+	.db	7
+	.db	14+9*((.L887-.L886)/4)
+	.db	5,1,9
+	.dh	.L83-.L887
+	.db	3,19,1,5,9,7,9
+	.dh	.L888-.L83
+	.db	3,112,1,5,31,9
+	.dh	.L92-.L888
+	.db	3,7,1,5,9
+	.db	15+9*((.L889-.L92)/4)
+	.db	5,62
+	.db	16+9*((.L890-.L889)/4)
+	.db	15+9*((.L891-.L890)/4)
+	.db	13+9*((.L892-.L891)/4)
+	.db	15+9*((.L893-.L892)/4)
+	.db	5,1,9
+	.dh	.L94-.L893
+	.db	3,5,1,5,9,7
+	.db	11+9*((.L894-.L94)/4)
+	.db	5,1,9
+	.dh	.L317-.L894
+	.db	3,3,0,1,1
+.L858:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_bus')
+.L316:
+	.dw	-1
+	.dw	.L195
+	.dw	0
+	.dw	.L317-.L195
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_release_bus')
+.L318:
+	.dw	477
+	.dh	3
+	.dw	.L319
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L321,.L320
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_release_bus",0
+	.db	1,156,5,6,1,1,1
+	.dw	.L197,.L529,.L196
+	.db	4
+	.db	"drv",0
+	.db	1,156,5,40
+	.dw	.L355,.L530
+	.db	5
+	.dw	.L197,.L529
+	.db	6
+	.db	"channel",0
+	.db	1,158,5,14
+	.dw	.L400,.L531
+	.db	7
+	.dw	.L402,.L98,.L532
+	.db	8
+	.dw	.L404,.L533
+	.db	9
+	.dw	.L406,.L98,.L532
+	.db	0,7
+	.dw	.L402,.L100,.L534
+	.db	8
+	.dw	.L404,.L533
+	.db	9
+	.dw	.L406,.L100,.L534
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_release_bus')
+.L319:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.db	1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_release_bus')
+.L320:
+	.dw	.L896-.L895
+.L895:
+	.dh	3
+	.dw	.L898-.L897
+.L897:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L898:
+	.db	5,27,7,0,5,2
+	.dw	.L197
+	.db	3,161,5,1,5,5
+	.db	15+9*((.L589-.L197)/4)
+	.db	7
+	.db	14+9*((.L899-.L589)/4)
+	.db	5,54
+	.db	16+9*((.L900-.L899)/4)
+	.db	15+9*((.L901-.L900)/4)
+	.db	5,57
+	.db	17+9*((.L902-.L901)/4)
+	.db	5,5,9
+	.dh	.L98-.L902
+	.db	3,164,123,1,5,57,9
+	.dh	.L532-.L98
+	.db	3,220,4,1,5,48
+	.db	16+9*((.L97-.L532)/4)
+	.db	5,63
+	.db	15+9*((.L903-.L97)/4)
+	.db	5,48
+	.db	13+9*((.L904-.L903)/4)
+	.db	5,60
+	.db	16+9*((.L905-.L904)/4)
+	.db	5,48
+	.db	12+9*((.L906-.L905)/4)
+	.db	5,63
+	.db	15+9*((.L907-.L906)/4)
+	.db	5,79
+	.db	16+9*((.L908-.L907)/4)
+	.db	5,63
+	.db	12+9*((.L909-.L908)/4)
+	.db	5,60
+	.db	15+9*((.L910-.L909)/4)
+	.db	5,79
+	.db	15+9*((.L911-.L910)/4)
+	.db	5,38
+	.db	16+9*((.L912-.L911)/4)
+	.db	5,57
+	.db	15+9*((.L913-.L912)/4)
+	.db	5,5,9
+	.dh	.L100-.L913
+	.db	3,156,123,1,5,57,9
+	.dh	.L534-.L100
+	.db	3,228,4,1,5,48
+	.db	15+9*((.L99-.L534)/4)
+	.db	15+9*((.L914-.L99)/4)
+	.db	5,21
+	.db	16+9*((.L915-.L914)/4)
+	.db	5,1
+	.db	15+9*((.L96-.L915)/4)
+	.db	7
+	.db	14+9*((.L916-.L96)/4)
+	.db	9
+	.dh	.L322-.L916
+	.db	0,1,1
+.L896:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_release_bus')
+.L321:
+	.dw	-1
+	.dw	.L197
+	.dw	0
+	.dw	.L322-.L197
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_init_channel')
+.L323:
+	.dw	525
+	.dh	3
+	.dw	.L324
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L326,.L325
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_init_channel",0
+	.db	1,198,5,6
+	.dw	.L387
+	.db	1,1,1
+	.dw	.L199,.L535,.L198
+	.db	4
+	.db	"drv",0
+	.db	1,198,5,41
+	.dw	.L355,.L536
+	.db	4
+	.db	"channel",0
+	.db	1,198,5,54
+	.dw	.L400,.L537
+	.db	4
+	.db	"baudrate",0
+	.db	1,198,5,72
+	.dw	.L363,.L538
+	.db	4
+	.db	"spimode",0
+	.db	1,198,5,93
+	.dw	.L391,.L539
+	.db	5
+	.dw	.L199,.L535
+	.db	6
+	.db	"ctrl",0
+	.db	1,200,5,14
+	.dw	.L363,.L540
+	.db	7
+	.dw	.L375,.L108,.L541
+	.db	8
+	.dw	.L376,.L542
+	.db	9
+	.dw	.L378,.L108,.L541
+	.db	6
+	.db	"cdiv",0
+	.db	1,83,14
+	.dw	.L363,.L543
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_init_channel')
+.L324:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.db	1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_init_channel')
+.L325:
+	.dw	.L918-.L917
+.L917:
+	.dh	3
+	.dw	.L920-.L919
+.L919:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L920:
+	.db	5,5,7,0,5,2
+	.dw	.L199
+	.db	3,202,5,1
+	.db	15+9*((.L921-.L199)/4)
+	.db	5,1,9
+	.dh	.L101-.L921
+	.db	3,23,1,5,52,7,9
+	.dh	.L922-.L101
+	.db	3,105,1,5,5,9
+	.dh	.L102-.L922
+	.db	3,5,1,5,28
+	.db	12+9*((.L923-.L102)/4)
+	.db	5,5
+	.db	16+9*((.L594-.L923)/4)
+	.db	5,13,9
+	.dh	.L104-.L594
+	.db	3,4,1,5,34
+	.db	13+9*((.L924-.L104)/4)
+	.db	5,13
+	.db	18+9*((.L105-.L924)/4)
+	.db	5,34
+	.db	13+9*((.L925-.L105)/4)
+	.db	5,50
+	.db	17+9*((.L106-.L925)/4)
+	.db	5,40,9
+	.dh	.L108-.L106
+	.db	3,250,122,1,5,56
+	.db	15+9*((.L592-.L108)/4)
+	.db	5,5
+	.db	15+9*((.L593-.L592)/4)
+	.db	7
+	.db	14+9*((.L926-.L593)/4)
+	.db	5,30
+	.db	14+9*((.L927-.L926)/4)
+	.db	5,5
+	.db	15+9*((.L110-.L927)/4)
+	.db	5,51,9
+	.dh	.L541-.L110
+	.db	3,136,5,1,5,30
+	.db	15+9*((.L928-.L541)/4)
+	.db	5,1
+	.db	17+9*((.L929-.L928)/4)
+	.db	5,5,7
+	.db	13+9*((.L930-.L929)/4)
+	.db	5,1,9
+	.dh	.L327-.L930
+	.db	3,1,0,1,1
+.L918:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_init_channel')
+.L326:
+	.dw	-1
+	.dw	.L199
+	.dw	0
+	.dw	.L327-.L199
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_busy')
+.L328:
+	.dw	380
+	.dh	3
+	.dw	.L329
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L331,.L330
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_busy",0
+	.db	1,185,4,6
+	.dw	.L387
+	.db	1,1,1
+	.dw	.L193,.L544,.L192
+	.db	4
+	.db	"drv",0
+	.db	1,185,4,33
+	.dw	.L355,.L545
+	.db	5
+	.dw	.L193,.L544
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_busy')
+.L329:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_busy')
+.L330:
+	.dw	.L932-.L931
+.L931:
+	.dh	3
+	.dw	.L934-.L933
+.L933:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L934:
+	.db	5,70,7,0,5,2
+	.dw	.L193
+	.db	3,187,4,1,5,1
+	.db	15+9*((.L935-.L193)/4)
+	.db	5,70,7
+	.db	13+9*((.L936-.L935)/4)
+	.db	5,1,9
+	.dh	.L332-.L936
+	.db	3,1,0,1,1
+.L932:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_busy')
+.L331:
+	.dw	-1
+	.dw	.L193
+	.dw	0
+	.dw	.L332-.L193
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_gpin_pincount')
+.L333:
+	.dw	393
+	.dh	3
+	.dw	.L334
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L336,.L335
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_gpin_pincount",0
+	.db	1,239,5,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L201,.L546,.L200
+	.db	4
+	.db	"drv",0
+	.db	1,239,5,49
+	.dw	.L355,.L547
+	.db	5
+	.dw	.L201,.L546
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_gpin_pincount')
+.L334:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_gpin_pincount')
+.L335:
+	.dw	.L938-.L937
+.L937:
+	.dh	3
+	.dw	.L940-.L939
+.L939:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L940:
+	.db	5,1,7,0,5,2
+	.dw	.L201
+	.db	3,241,5,1,5,5,7
+	.db	13+9*((.L941-.L201)/4)
+	.db	5,1,9
+	.dh	.L337-.L941
+	.db	3,1,0,1,1
+.L938:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_gpin_pincount')
+.L336:
+	.dw	-1
+	.dw	.L201
+	.dw	0
+	.dw	.L337-.L201
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_slavecount')
+.L338:
+	.dw	390
+	.dh	3
+	.dw	.L339
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L341,.L340
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_slavecount",0
+	.db	1,255,5,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L203,.L548,.L202
+	.db	4
+	.db	"drv",0
+	.db	1,255,5,46
+	.dw	.L355,.L549
+	.db	5
+	.dw	.L203,.L548
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_slavecount')
+.L339:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_slavecount')
+.L340:
+	.dw	.L943-.L942
+.L942:
+	.dh	3
+	.dw	.L945-.L944
+.L944:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L945:
+	.db	5,1,7,0,5,2
+	.dw	.L203
+	.db	3,129,6,1,5,5,7
+	.db	13+9*((.L946-.L203)/4)
+	.db	5,1,9
+	.dh	.L342-.L946
+	.db	3,1,0,1,1
+.L943:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_slavecount')
+.L341:
+	.dw	-1
+	.dw	.L203
+	.dw	0
+	.dw	.L342-.L203
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_set_cs')
+.L343:
+	.dw	395
+	.dh	3
+	.dw	.L344
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L346,.L345
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_set_cs",0
+	.db	1,158,6,6,1,1,1
+	.dw	.L207,.L550,.L206
+	.db	4
+	.db	"drv",0
+	.db	1,158,6,35
+	.dw	.L355,.L551
+	.db	4
+	.db	"val",0
+	.db	1,158,6,48
+	.dw	.L400,.L552
+	.db	5
+	.dw	.L207,.L550
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_set_cs')
+.L344:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_set_cs')
+.L345:
+	.dw	.L948-.L947
+.L947:
+	.dh	3
+	.dw	.L950-.L949
+.L949:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L950:
+	.db	5,37,7,0,5,2
+	.dw	.L207
+	.db	3,159,6,1,5,1
+	.db	15+9*((.L951-.L207)/4)
+	.db	7
+	.db	14+9*((.L952-.L951)/4)
+	.db	9
+	.dh	.L347-.L952
+	.db	0,1,1
+.L948:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_set_cs')
+.L346:
+	.dw	-1
+	.dw	.L207
+	.dw	0
+	.dw	.L347-.L207
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_spi_get_cs')
+.L348:
+	.dw	382
+	.dh	3
+	.dw	.L349
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L351,.L350
+	.db	2
+	.dw	.L214
+	.db	3
+	.db	"spi_get_cs",0
+	.db	1,173,6,9
+	.dw	.L400
+	.db	1,1,1
+	.dw	.L209,.L553,.L208
+	.db	4
+	.db	"drv",0
+	.db	1,173,6,38
+	.dw	.L355,.L554
+	.db	5
+	.dw	.L209,.L553
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_spi_get_cs')
+.L349:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_spi_get_cs')
+.L350:
+	.dw	.L954-.L953
+.L953:
+	.dh	3
+	.dw	.L956-.L955
+.L955:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	0,0,0,0
+.L956:
+	.db	5,5,7,0,5,2
+	.dw	.L209
+	.db	3,174,6,1,5,1
+	.db	15+9*((.L957-.L209)/4)
+	.db	7
+	.db	14+9*((.L958-.L957)/4)
+	.db	9
+	.dh	.L352-.L958
+	.db	0,1,1
+.L954:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_spi_get_cs')
+.L351:
+	.dw	-1
+	.dw	.L209
+	.dw	0
+	.dw	.L352-.L209
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L353:
+	.dw	336
+	.dh	3
+	.dw	.L354
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\spi\\src\\drv_spi.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L214
+	.db	3
+	.db	"drv_table",0
+	.db	2,45,14
+	.dw	.L555
+	.db	5,3
+	.dw	drv_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L354:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_endianess')
+.L386:
+	.dw	-1
+	.dw	.L167,.L167-.L167,.L568-.L167
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L413:
+	.dw	-1
+	.dw	.L181,.L572-.L181,.L573-.L181
+	.dh	1
+	.db	82
+	.dw	0,0
+.L408:
+	.dw	-1
+	.dw	.L181,.L181-.L181,.L407-.L181
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L424:
+	.dw	-1
+	.dw	.L187,.L187-.L187,.L423-.L187
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L520:
+	.dw	-1
+	.dw	.L195,.L195-.L195,.L583-.L195
+	.dh	1
+	.db	84
+	.dw	.L585-.L195,.L519-.L195
+	.dh	1
+	.db	86
+	.dw	0,0
+.L524:
+	.dw	-1
+	.dw	.L195,.L92-.L195,.L519-.L195
+	.dh	1
+	.db	90
+	.dw	.L588-.L195,.L83-.L195
+	.dh	1
+	.db	90
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L510:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit8')
+.L401:
+	.dw	-1
+	.dw	.L175,.L175-.L175,.L398-.L175
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L415:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive8')
+.L437:
+	.dw	-1
+	.dw	.L177,.L177-.L177,.L436-.L177
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L470:
+	.dw	-1
+	.dw	.L189,.L473-.L189,.L463-.L189
+	.dh	1
+	.db	88
+	.dw	.L469-.L189,.L473-.L189
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_release_bus')
+.L533:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L509:
+	.dw	-1
+	.dw	.L213,.L213-.L213,.L506-.L213
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_mode')
+.L393:
+	.dw	-1
+	.dw	.L169,.L570-.L169,.L389-.L169
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_release_bus')
+.L531:
+	.dw	-1
+	.dw	.L197,.L589-.L197,.L590-.L197
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L430:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L492:
+	.dw	-1
+	.dw	.L211,.L211-.L211,.L491-.L211
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L477:
+	.dw	0,0
+.L465:
+	.dw	-1
+	.dw	.L189,.L64-.L189,.L74-.L189
+	.dh	1
+	.db	85
+	.dw	.L469-.L189,.L463-.L189
+	.dh	1
+	.db	86
+	.dw	.L189-.L189,.L69-.L189
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L371:
+	.dw	-1
+	.dw	.L161,.L557-.L161,.L558-.L161
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_baudrate')
+.L377:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive8')
+.L176:
+	.dw	-1
+	.dw	.L177,.L177-.L177,.L436-.L177
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_cs_hi')
+.L397:
+	.dw	-1
+	.dw	.L173,.L173-.L173,.L396-.L173
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L459:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L543:
+	.dw	-1
+	.dw	.L199,.L592-.L199,.L593-.L199
+	.dh	1
+	.db	87
+	.dw	.L593-.L199,.L541-.L199
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L479:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received32')
+.L190:
+	.dw	-1
+	.dw	.L191,.L191-.L191,.L489-.L191
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L358:
+	.dw	-1
+	.dw	.L161,.L161-.L161,.L559-.L161
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L526:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit8')
+.L405:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_release_bus')
+.L196:
+	.dw	-1
+	.dw	.L197,.L197-.L197,.L529-.L197
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L210:
+	.dw	-1
+	.dw	.L211,.L211-.L211,.L491-.L211
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L429:
+	.dw	-1
+	.dw	.L187,.L56-.L187,.L53-.L187
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_gpin')
+.L204:
+	.dw	-1
+	.dw	.L205,.L205-.L205,.L517-.L205
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L194:
+	.dw	-1
+	.dw	.L195,.L195-.L195,.L519-.L195
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_cs_lo')
+.L395:
+	.dw	-1
+	.dw	.L171,.L171-.L171,.L571-.L171
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_endianess')
+.L166:
+	.dw	-1
+	.dw	.L167,.L167-.L167,.L385-.L167
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L507:
+	.dw	-1
+	.dw	.L213,.L213-.L213,.L506-.L213
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L425:
+	.dw	-1
+	.dw	.L187,.L187-.L187,.L423-.L187
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_cs')
+.L552:
+	.dw	-1
+	.dw	.L207,.L207-.L207,.L550-.L207
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L446:
+	.dw	-1
+	.dw	.L183,.L449-.L183,.L442-.L183
+	.dh	1
+	.db	87
+	.dw	.L575-.L183,.L449-.L183
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_endianess')
+.L388:
+	.dw	-1
+	.dw	.L167,.L167-.L167,.L385-.L167
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L160:
+	.dw	-1
+	.dw	.L161,.L161-.L161,.L360-.L161
+	.dh	2
+	.db	141,0
+	.dw	.L360-.L161,.L356-.L161
+	.dh	2
+	.db	141,4
+	.dw	.L356-.L161,.L356-.L161
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L536:
+	.dw	-1
+	.dw	.L199,.L199-.L199,.L535-.L199
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive8')
+.L440:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_mode')
+.L168:
+	.dw	-1
+	.dw	.L169,.L169-.L169,.L389-.L169
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received16')
+.L488:
+	.dw	-1
+	.dw	.L185,.L185-.L185,.L487-.L185
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L497:
+	.dw	-1
+	.dw	.L211,.L599-.L211,.L491-.L211
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L481:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L180:
+	.dw	-1
+	.dw	.L181,.L181-.L181,.L407-.L181
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_cs_hi')
+.L172:
+	.dw	-1
+	.dw	.L173,.L173-.L173,.L396-.L173
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received16')
+.L184:
+	.dw	-1
+	.dw	.L185,.L185-.L185,.L487-.L185
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L182:
+	.dw	-1
+	.dw	.L183,.L183-.L183,.L442-.L183
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_cs')
+.L206:
+	.dw	-1
+	.dw	.L207,.L207-.L207,.L550-.L207
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L453:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received32')
+.L490:
+	.dw	-1
+	.dw	.L191,.L191-.L191,.L489-.L191
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L522:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L540:
+	.dw	-1
+	.dw	.L199,.L594-.L199,.L535-.L199
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_release_bus')
+.L530:
+	.dw	-1
+	.dw	.L197,.L197-.L197,.L529-.L197
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_mode')
+.L390:
+	.dw	-1
+	.dw	.L169,.L169-.L169,.L569-.L169
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L421:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_busy')
+.L545:
+	.dw	-1
+	.dw	.L193,.L193-.L193,.L544-.L193
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L512:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L521:
+	.dw	-1
+	.dw	.L195,.L584-.L195,.L519-.L195
+	.dh	1
+	.db	87
+	.dw	.L195-.L195,.L586-.L195
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received8')
+.L178:
+	.dw	-1
+	.dw	.L179,.L179-.L179,.L485-.L179
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit8')
+.L399:
+	.dw	-1
+	.dw	.L175,.L175-.L175,.L398-.L175
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_slavecount')
+.L549:
+	.dw	-1
+	.dw	.L203,.L203-.L203,.L548-.L203
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L499:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L188:
+	.dw	-1
+	.dw	.L189,.L189-.L189,.L463-.L189
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_baudrate')
+.L164:
+	.dw	-1
+	.dw	.L165,.L165-.L165,.L383-.L165
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L542:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L464:
+	.dw	-1
+	.dw	.L189,.L467-.L189,.L463-.L189
+	.dh	1
+	.db	87
+	.dw	.L189-.L189,.L69-.L189
+	.dh	1
+	.db	84
+	.dw	.L64-.L189,.L74-.L189
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_baudrate')
+.L374:
+	.dw	-1
+	.dw	.L163,.L163-.L163,.L372-.L163
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L410:
+	.dw	-1
+	.dw	.L181,.L181-.L181,.L407-.L181
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L369:
+	.dw	-1
+	.dw	.L161,.L560-.L161,.L2-.L161
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L432:
+	.dw	0,0
+.L428:
+	.dw	-1
+	.dw	.L187,.L579-.L187,.L580-.L187
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_gpin')
+.L518:
+	.dw	-1
+	.dw	.L205,.L205-.L205,.L517-.L205
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L495:
+	.dw	-1
+	.dw	.L211,.L118-.L211,.L491-.L211
+	.dh	1
+	.db	86
+	.dw	.L597-.L211,.L598-.L211
+	.dh	1
+	.db	82
+	.dw	.L211-.L211,.L597-.L211
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L198:
+	.dw	-1
+	.dw	.L199,.L199-.L199,.L535-.L199
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L444:
+	.dw	-1
+	.dw	.L183,.L183-.L183,.L442-.L183
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_gpin_pincount')
+.L200:
+	.dw	-1
+	.dw	.L201,.L201-.L201,.L546-.L201
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L537:
+	.dw	-1
+	.dw	.L199,.L199-.L199,.L595-.L199
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L364:
+	.dw	-1
+	.dw	.L161,.L563-.L161,.L2-.L161
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_cs_lo')
+.L170:
+	.dw	-1
+	.dw	.L171,.L171-.L171,.L394-.L171
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_busy')
+.L192:
+	.dw	-1
+	.dw	.L193,.L193-.L193,.L544-.L193
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_bus')
+.L523:
+	.dw	-1
+	.dw	.L195,.L92-.L195,.L519-.L195
+	.dh	1
+	.db	88
+	.dw	.L587-.L195,.L83-.L195
+	.dh	1
+	.db	88
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L508:
+	.dw	-1
+	.dw	.L213,.L213-.L213,.L506-.L213
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_mode')
+.L392:
+	.dw	-1
+	.dw	.L169,.L169-.L169,.L389-.L169
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L476:
+	.dw	-1
+	.dw	.L189,.L67-.L189,.L64-.L189
+	.dh	1
+	.db	89
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_open')
+.L366:
+	.dw	-1
+	.dw	.L161,.L561-.L161,.L562-.L161
+	.dh	1
+	.db	84
+	.dw	.L564-.L161,.L356-.L161
+	.dh	1
+	.db	82
+	.dw	.L565-.L161,.L356-.L161
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L538:
+	.dw	-1
+	.dw	.L199,.L199-.L199,.L596-.L199
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L434:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_init_channel')
+.L539:
+	.dw	-1
+	.dw	.L199,.L199-.L199,.L591-.L199
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit32')
+.L186:
+	.dw	-1
+	.dw	.L187,.L187-.L187,.L423-.L187
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive32')
+.L475:
+	.dw	-1
+	.dw	.L189,.L581-.L189,.L582-.L189
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L451:
+	.dw	-1
+	.dw	.L183,.L577-.L183,.L578-.L183
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_cs')
+.L551:
+	.dw	-1
+	.dw	.L207,.L207-.L207,.L550-.L207
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L443:
+	.dw	-1
+	.dw	.L183,.L183-.L183,.L41-.L183
+	.dh	1
+	.db	84
+	.dw	.L38-.L183,.L46-.L183
+	.dh	1
+	.db	84
+	.dw	.L445-.L183,.L442-.L183
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_received8')
+.L486:
+	.dw	-1
+	.dw	.L179,.L179-.L179,.L485-.L179
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_cs')
+.L554:
+	.dw	-1
+	.dw	.L209,.L209-.L209,.L553-.L209
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit8')
+.L174:
+	.dw	-1
+	.dw	.L175,.L175-.L175,.L398-.L175
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_cs')
+.L208:
+	.dw	-1
+	.dw	.L209,.L209-.L209,.L553-.L209
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_baudrate')
+.L384:
+	.dw	-1
+	.dw	.L165,.L165-.L165,.L383-.L165
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_baudrate')
+.L373:
+	.dw	-1
+	.dw	.L163,.L163-.L163,.L372-.L163
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_gpin_pincount')
+.L547:
+	.dw	-1
+	.dw	.L201,.L201-.L201,.L546-.L201
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_readblock')
+.L494:
+	.dw	-1
+	.dw	.L211,.L211-.L211,.L137-.L211
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L457:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L419:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_get_slavecount')
+.L202:
+	.dw	-1
+	.dw	.L203,.L203-.L203,.L548-.L203
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_baudrate')
+.L382:
+	.dw	-1
+	.dw	.L163,.L566-.L163,.L381-.L163
+	.dh	1
+	.db	82
+	.dw	.L567-.L163,.L566-.L163
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transmit16')
+.L414:
+	.dw	-1
+	.dw	.L181,.L574-.L181,.L29-.L181
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive8')
+.L438:
+	.dw	-1
+	.dw	.L177,.L177-.L177,.L436-.L177
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_writeblock')
+.L212:
+	.dw	-1
+	.dw	.L213,.L213-.L213,.L506-.L213
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_transceive16')
+.L452:
+	.dw	-1
+	.dw	.L183,.L576-.L183,.L38-.L183
+	.dh	1
+	.db	89
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_spi_set_baudrate')
+.L162:
+	.dw	-1
+	.dw	.L163,.L163-.L163,.L372-.L163
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L959:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_open')
+	.dw	72
+	.dw	.L959,.L161,.L356-.L161
+	.db	8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,4
+	.dw	(.L360-.L161)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L362-.L360)/4
+	.db	17,31,124,4
+	.dw	(.L556-.L362)/4
+	.db	223,4
+	.dw	(.L356-.L556)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_set_baudrate')
+	.dw	40
+	.dw	.L959,.L163,.L372-.L163
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_baudrate')
+	.dw	44
+	.dw	.L959,.L165,.L383-.L165
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_set_endianess')
+	.dw	44
+	.dw	.L959,.L167,.L385-.L167
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_set_mode')
+	.dw	44
+	.dw	.L959,.L169,.L389-.L169
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_cs_lo')
+	.dw	48
+	.dw	.L959,.L171,.L394-.L171
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_cs_hi')
+	.dw	48
+	.dw	.L959,.L173,.L396-.L173
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transmit8')
+	.dw	48
+	.dw	.L959,.L175,.L398-.L175
+	.db	8,3,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transceive8')
+	.dw	48
+	.dw	.L959,.L177,.L436-.L177
+	.db	8,3,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_received8')
+	.dw	48
+	.dw	.L959,.L179,.L485-.L179
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transmit16')
+	.dw	40
+	.dw	.L959,.L181,.L407-.L181
+	.db	8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transceive16')
+	.dw	36
+	.dw	.L959,.L183,.L442-.L183
+	.db	8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_received16')
+	.dw	48
+	.dw	.L959,.L185,.L487-.L185
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transmit32')
+	.dw	40
+	.dw	.L959,.L187,.L423-.L187
+	.db	8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_transceive32')
+	.dw	36
+	.dw	.L959,.L189,.L463-.L189
+	.db	8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_received32')
+	.dw	48
+	.dw	.L959,.L191,.L489-.L191
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_busy')
+	.dw	48
+	.dw	.L959,.L193,.L544-.L193
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_bus')
+	.dw	32
+	.dw	.L959,.L195,.L519-.L195
+	.db	8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_release_bus')
+	.dw	44
+	.dw	.L959,.L197,.L529-.L197
+	.db	8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_init_channel')
+	.dw	36
+	.dw	.L959,.L199,.L535-.L199
+	.db	8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_gpin_pincount')
+	.dw	48
+	.dw	.L959,.L201,.L546-.L201
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_slavecount')
+	.dw	48
+	.dw	.L959,.L203,.L548-.L203
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_gpin')
+	.dw	48
+	.dw	.L959,.L205,.L517-.L205
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_set_cs')
+	.dw	48
+	.dw	.L959,.L207,.L550-.L207
+	.db	8,3,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_get_cs')
+	.dw	48
+	.dw	.L959,.L209,.L553-.L209
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_readblock')
+	.dw	40
+	.dw	.L959,.L211,.L491-.L211
+	.db	8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_spi_writeblock')
+	.dw	40
+	.dw	.L959,.L213,.L506-.L213
+	.db	8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,163 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc8508a --dep-file=Output\frameout\sysutils_sysutils.d --make-target=Output\frameout\sysutils_sysutils.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\sysutils.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\src\\sysutils.c"
+
+	.section	.text.sysutils.devsync_cleanup_mutexlock ,cluster('$group_devsync_cleanup_mutexlock')
+	.align	4
+	.global	devsync_cleanup_mutexlock
+; Function devsync_cleanup_mutexlock
+.L3:
+devsync_cleanup_mutexlock:	.type	func
+	jr	$ra
+.L27:
+	nop
+.L13:
+	.size	devsync_cleanup_mutexlock,*-devsync_cleanup_mutexlock
+.L12:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'devsync_cleanup_mutexlock','',0
+	.section	.debug_info
+.L5:
+	.dw	338
+	.dh	3
+	.dw	.L6
+	.db	4
+.L4:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\src\\sysutils.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L7
+.L14:
+	.db	2
+	.dw	.L16-.L5
+.L16:
+	.db	3
+	.db	"void",0
+	.db	4
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L17-.L5
+.L17:
+	.db	2
+	.dw	.L18-.L5
+.L18:
+	.db	5,1,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L6:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,59,0,3,8,0,0,4,22,0,3,8,58,15,59,15,57
+	.db	15,73,19,0,0,5,21,0,54,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L7:
+	.dw	.L20-.L19
+.L19:
+	.dh	3
+	.dw	.L22-.L21
+.L21:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\src\\sysutils.c",0
+	.db	0,0,0,0
+.L22:
+.L20:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_devsync_cleanup_mutexlock')
+.L8:
+	.dw	382
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\src\\sysutils.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L11,.L10
+	.db	2
+	.dw	.L4
+	.db	3
+	.db	"devsync_cleanup_mutexlock",0
+	.db	1,13,13,1,1,1
+	.dw	.L3,.L13,.L2
+	.db	4
+	.db	"arg",0
+	.db	1,13,48
+	.dw	.L14,.L15
+	.db	5
+	.dw	.L3,.L13
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_devsync_cleanup_mutexlock')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_devsync_cleanup_mutexlock')
+.L10:
+	.dw	.L24-.L23
+.L23:
+	.dh	3
+	.dw	.L26-.L25
+.L25:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\src\\sysutils.c",0
+	.db	0,0,0,0
+.L26:
+	.db	5,1,7,0,5,2
+	.dw	.L3
+	.db	3,17,1,7
+	.db	14+9*((.L27-.L3)/4)
+	.db	9
+	.dh	.L12-.L27
+	.db	0,1,1
+.L24:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_devsync_cleanup_mutexlock')
+.L11:
+	.dw	-1
+	.dw	.L3
+	.dw	0
+	.dw	.L12-.L3
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_devsync_cleanup_mutexlock')
+.L2:
+	.dw	-1
+	.dw	.L3,.L3-.L3,.L13-.L3
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L15:
+	.dw	-1
+	.dw	.L3,.L3-.L3,.L13-.L3
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L28:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_devsync_cleanup_mutexlock')
+	.dw	52
+	.dw	.L28,.L3,.L13-.L3
+	.db	8,2,8,3,8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,4813 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc2688a --dep-file=Output\frameout\graphics_graphics_fill_segment.d --make-target=Output\frameout\graphics_graphics_fill_segment.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\graphics_fill_segment.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c"
+
+	.section	.text.graphics_fill_segment.graphics_fill_segment ,cluster('$group_graphics_fill_segment')
+	.align	4
+	.global	graphics_fill_segment
+; Function graphics_fill_segment
+.L141:
+graphics_fill_segment:	.type	func
+	addiu	$sp,$sp,-16
+.L235:
+	sw	$ra,12($sp)
+.L236:
+	lw	$v0,16($sp)
+.L248:
+	lhu	$t0,84($a0)
+.L624:
+	lw	$v1,20($sp)
+.L243:
+	beq	$t0,$zero,.L2
+.L625:
+	lw	$t1,24($sp)
+.L250:
+	li	$t2,0x5a
+	beq	$t0,$t2,.L3
+	nop
+	li	$t2,0xb4
+	beq	$t0,$t2,.L4
+	nop
+	li	$t2,0x10e
+	beq	$t0,$t2,.L5
+	nop
+	j	.L6
+	nop
+.L2:
+	sw	$v0,0($sp)
+	sw	$v1,4($sp)
+	lw	$v0,44($a0)
+.L249:
+	sw	$t1,8($sp)
+	lw	$v1,48($a0)
+.L244:
+	addu	$a1,$v0,$a1
+.L247:
+	j	.L7
+.L626:
+	addu	$a2,$v1,$a2
+.L3:
+	addiu	$v0,$v0,-90
+.L238:
+	sw	$v0,0($sp)
+	sw	$v1,4($sp)
+	lw	$v0,48($a0)
+	sw	$t1,8($sp)
+	lw	$v1,44($a0)
+.L240:
+	subu	$v0,$v0,$a2
+.L627:
+	j	.L8
+.L628:
+	addu	$a2,$v1,$a1
+.L4:
+	addiu	$v0,$v0,180
+.L246:
+	sw	$v0,0($sp)
+	sw	$v1,4($sp)
+	lw	$v0,44($a0)
+	sw	$t1,8($sp)
+	lw	$v1,48($a0)
+.L245:
+	subu	$a1,$v0,$a1
+.L239:
+	j	.L9
+.L629:
+	subu	$a2,$v1,$a2
+.L5:
+	addiu	$v0,$v0,90
+.L242:
+	sw	$v0,0($sp)
+	sw	$v1,4($sp)
+	lw	$v0,48($a0)
+	sw	$t1,8($sp)
+	lw	$v1,44($a0)
+.L241:
+	addu	$v0,$v0,$a2
+	subu	$a2,$v1,$a1
+.L8:
+	move	$a1,$v0
+.L7:
+.L9:
+	jal	_graphics_fill_segment
+	nop
+.L6:
+	lw	$ra,12($sp)
+.L237:
+	jr	$ra
+	addiu	$sp,$sp,16
+.L172:
+	.size	graphics_fill_segment,*-graphics_fill_segment
+.L156:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.graphics_fill_segment._graphics_fill_segment ,cluster('$group__graphics_fill_segment')
+	.align	4
+; Function _graphics_fill_segment
+.L143:
+_graphics_fill_segment:	.type	func
+	addiu	$sp,$sp,-104
+.L251:
+	sw	$ra,8($sp)
+.L252:
+	sw	$s0,12($sp)
+.L253:
+	sw	$s1,16($sp)
+.L254:
+	sw	$s2,20($sp)
+.L255:
+	sw	$s3,24($sp)
+.L256:
+	sw	$s4,28($sp)
+.L257:
+	sw	$s5,32($sp)
+.L258:
+	sw	$s6,36($sp)
+.L259:
+	sw	$s7,40($sp)
+.L260:
+	sw	$s8,44($sp)
+.L261:
+	sw	$a0,84($sp)
+.L312:
+	move	$s7,$a1
+.L459:
+	sw	$a2,96($sp)
+.L355:
+	move	$s6,$a3
+.L419:
+	lw	$s5,104($sp)
+.L433:
+	lw	$s4,108($sp)
+.L277:
+	lw	$a0,112($sp)
+.L488:
+	addiu	$v0,$sp,48
+	li	$v1,8
+.L10:
+	sb	$zero,0($v0)
+	addiu	$v1,$v1,-1
+	bgtz	$v1,.L10
+	addiu	$v0,$v0,1
+.L544:
+	sw	$zero,68($sp)
+.L497:
+	sw	$zero,64($sp)
+.L498:
+	lw	$v0,84($sp)
+.L541:
+	move	$s1,$zero
+.L490:
+	lw	$v1,60($v0)
+.L345:
+	move	$s2,$zero
+.L545:
+	sw	$v1,60($sp)
+.L323:
+	lw	$v1,68($v0)
+.L346:
+	move	$s3,$zero
+.L360:
+	sw	$v1,56($sp)
+.L347:
+	lw	$v1,64($v0)
+.L438:
+	sw	$v1,92($sp)
+.L332:
+	lw	$v1,72($v0)
+.L374:
+	sw	$v1,88($sp)
+.L361:
+	lw	$v0,24($v0)
+.L469:
+	jalr	$ra,$v0
+.L634:
+	move	$s0,$zero
+.L329:
+	beq	$s4,$zero,.L11
+.L635:
+	sw	$v0,112($sp)
+.L636:
+	slti	$v0,$s4,360
+.L489:
+	beq	$v0,$zero,.L12
+	nop
+.L637:
+	slti	$v0,$s4,-359
+	beq	$v0,$zero,.L13
+	nop
+.L12:
+	lw	$v0,112($sp)
+.L454:
+	sw	$v0,0($sp)
+	lw	$a0,84($sp)
+.L534:
+	move	$a1,$s7
+.L408:
+	lw	$a2,96($sp)
+.L368:
+	jal	graphics_fill_circle
+	move	$a3,$s6
+.L369:
+	j	.L14
+	nop
+.L13:
+	bgez	$s4,.L15
+.L638:
+	addu	$v0,$s5,$s4
+.L639:
+	j	.L16
+	move	$v1,$v0
+.L15:
+	move	$v1,$s5
+.L535:
+	move	$s5,$v0
+.L16:
+	lui	$v0,0xb60b
+	ori	$v0,$v0,0x60b7
+	mult	$v1,$v0
+	mfhi	$v0
+	addu	$v0,$v0,$v1
+	sra	$v0,$v0,8
+	slt	$a0,$v1,$zero
+	addu	$v0,$v0,$a0
+	li	$a0,0x168
+	mult	$v0,$a0,$v0
+	subu	$t0,$v1,$v0
+.L536:
+	bgez	$t0,.L17
+.L640:
+	nop
+.L641:
+	addiu	$t0,$t0,360
+.L17:
+	lui	$v0,0xb60b
+	ori	$v0,$v0,0x60b7
+	mult	$s5,$v0
+	mfhi	$v0
+	addu	$v0,$v0,$s5
+	sra	$v0,$v0,8
+	slt	$v1,$s5,$zero
+	addu	$v0,$v0,$v1
+	li	$v1,0x168
+	mult	$v0,$v1,$v0
+	subu	$t1,$s5,$v0
+.L434:
+	bgez	$t1,.L18
+.L642:
+	nop
+.L643:
+	addiu	$t1,$t1,360
+.L18:
+	lui	$v0,0xb60b
+	ori	$v0,$v0,0x60b7
+	mult	$t0,$v0
+	mfhi	$v0
+	addu	$v0,$v0,$t0
+	sra	$v0,$v0,5
+	slt	$v1,$t0,$zero
+	addu	$v0,$v0,$v1
+.L483:
+	sltiu	$v1,$v0,8
+	beq	$v1,$zero,.L20
+.L644:
+	sw	$v0,100($sp)
+.L496:
+	lui	$v1,@hi(.L19)
+	addiu	$v1,$v1,@lo(.L19)
+	sll	$v0,$v0,2
+.L484:
+	addu	$v0,$v0,$v1
+	lw	$v0,0($v0)
+	jr	$v0
+	nop
+.L278:
+	.endsec	; End of section
+
+	.section	.rodata.graphics_fill_segment._graphics_fill_segment ,cluster('$group__graphics_fill_segment')
+	.align	4
+.L19:
+	.dw	.L21
+	.dw	.L22
+	.dw	.L23
+	.dw	.L24
+	.dw	.L25
+	.dw	.L26
+	.dw	.L27
+	.dw	.L28
+	.endsec	; End of section
+
+	.resume	.text.graphics_fill_segment._graphics_fill_segment ,cluster('$group__graphics_fill_segment')
+.L21:
+	addu	$v0,$t0,$t0
+.L517:
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L430:
+	multu	$v0,$v0,$s6
+.L431:
+	srl	$a0,$v0,16
+.L523:
+	sw	$a0,68($sp)
+.L304:
+	jal	_get_delta2
+	move	$a1,$s6
+.L356:
+	move	$s3,$v0
+.L314:
+	lw	$v0,68($sp)
+.L315:
+	j	.L29
+.L645:
+	subu	$s2,$zero,$v0
+.L22:
+	li	$v0,0x5a
+	subu	$v0,$v0,$t0
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+	multu	$v0,$v0,$s6
+	srl	$s3,$v0,16
+.L646:
+	move	$a0,$s3
+.L548:
+	move	$a1,$s6
+.L425:
+	jal	_get_delta2
+.L647:
+	sw	$s3,68($sp)
+.L426:
+	j	.L30
+.L648:
+	subu	$s2,$zero,$v0
+.L23:
+	addu	$v0,$t0,$t0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-180($v0)
+	multu	$v0,$v0,$s6
+	srl	$a0,$v0,16
+.L460:
+	sw	$a0,68($sp)
+.L649:
+	subu	$s3,$zero,$a0
+.L439:
+	jal	_get_delta2
+	move	$a1,$s6
+.L461:
+	j	.L31
+.L650:
+	subu	$s2,$zero,$v0
+.L24:
+	li	$v0,0xb4
+	subu	$v0,$v0,$t0
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+	multu	$v0,$v0,$s6
+	srl	$a0,$v0,16
+.L506:
+	sw	$a0,68($sp)
+.L298:
+	jal	_get_delta2
+	move	$a1,$s6
+.L521:
+	subu	$s3,$zero,$v0
+.L387:
+	lw	$v0,68($sp)
+.L388:
+	j	.L32
+.L651:
+	subu	$s2,$zero,$v0
+.L25:
+	addu	$v0,$t0,$t0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-360($v0)
+	multu	$v0,$v0,$s6
+	srl	$a0,$v0,16
+.L471:
+	sw	$a0,68($sp)
+.L354:
+	jal	_get_delta2
+	move	$a1,$s6
+.L567:
+	j	.L33
+.L652:
+	subu	$s3,$zero,$v0
+.L26:
+	li	$v0,0x10e
+	subu	$v0,$v0,$t0
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+	multu	$v0,$v0,$s6
+	srl	$v0,$v0,16
+.L519:
+	sw	$v0,68($sp)
+.L653:
+	subu	$s3,$zero,$v0
+.L505:
+	move	$a0,$v0
+.L405:
+	jal	_get_delta2
+	move	$a1,$s6
+.L324:
+	j	.L34
+.L654:
+	move	$s2,$v0
+.L27:
+	addu	$v0,$t0,$t0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-540($v0)
+	multu	$v0,$v0,$s6
+	srl	$s3,$v0,16
+.L655:
+	move	$a0,$s3
+.L394:
+	move	$a1,$s6
+.L539:
+	jal	_get_delta2
+.L656:
+	sw	$s3,68($sp)
+.L395:
+	j	.L35
+.L657:
+	move	$s2,$v0
+.L28:
+	li	$v0,0x168
+	subu	$v0,$v0,$t0
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+	multu	$v0,$v0,$s6
+	srl	$a0,$v0,16
+.L334:
+	sw	$a0,68($sp)
+.L501:
+	jal	_get_delta2
+	move	$a1,$s6
+.L335:
+	move	$s3,$v0
+.L33:
+	lw	$s2,68($sp)
+.L20:
+.L35:
+.L34:
+.L32:
+.L31:
+.L30:
+.L29:
+	lui	$v0,0xb60b
+	ori	$v0,$v0,0x60b7
+.L411:
+	mult	$t1,$v0
+.L412:
+	mfhi	$v0
+.L321:
+	addu	$v0,$v0,$t1
+.L322:
+	sra	$v0,$v0,5
+.L514:
+	slt	$v1,$t1,$zero
+.L515:
+	addu	$v0,$v0,$v1
+.L283:
+	sltiu	$v1,$v0,8
+	beq	$v1,$zero,.L37
+.L658:
+	sw	$v0,72($sp)
+.L453:
+	lui	$v1,@hi(.L36)
+	addiu	$v1,$v1,@lo(.L36)
+	sll	$v0,$v0,2
+.L284:
+	addu	$v0,$v0,$v1
+	lw	$v0,0($v0)
+	jr	$v0
+	nop
+.L305:
+	.endsec	; End of section
+
+	.section	.rodata.graphics_fill_segment._graphics_fill_segment ,cluster('$group__graphics_fill_segment')
+	.align	4
+.L36:
+	.dw	.L38
+	.dw	.L39
+	.dw	.L40
+	.dw	.L41
+	.dw	.L42
+	.dw	.L43
+	.dw	.L44
+	.dw	.L45
+	.endsec	; End of section
+
+	.resume	.text.graphics_fill_segment._graphics_fill_segment ,cluster('$group__graphics_fill_segment')
+.L38:
+	addu	$v0,$t1,$t1
+.L420:
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L507:
+	multu	$v0,$v0,$s6
+.L508:
+	srl	$a0,$v0,16
+.L522:
+	sw	$a0,64($sp)
+.L291:
+	jal	_get_delta2
+	move	$a1,$s6
+.L292:
+	move	$s1,$v0
+.L529:
+	lw	$v0,64($sp)
+.L530:
+	j	.L46
+.L659:
+	subu	$s0,$zero,$v0
+.L39:
+	li	$v0,0x5a
+.L400:
+	subu	$v0,$v0,$t1
+.L401:
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L455:
+	multu	$v0,$v0,$s6
+.L456:
+	srl	$s1,$v0,16
+.L417:
+	move	$a0,$s1
+.L372:
+	move	$a1,$s6
+.L492:
+	jal	_get_delta2
+.L660:
+	sw	$s1,64($sp)
+.L373:
+	j	.L47
+.L661:
+	subu	$s0,$zero,$v0
+.L40:
+	addu	$v0,$t1,$t1
+.L542:
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-180($v0)
+.L379:
+	multu	$v0,$v0,$s6
+.L380:
+	srl	$a0,$v0,16
+.L309:
+	sw	$a0,64($sp)
+.L540:
+	subu	$s1,$zero,$a0
+.L418:
+	jal	_get_delta2
+	move	$a1,$s6
+.L310:
+	j	.L48
+.L662:
+	subu	$s0,$zero,$v0
+.L41:
+	li	$v0,0xb4
+.L427:
+	subu	$v0,$v0,$t1
+.L428:
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L532:
+	multu	$v0,$v0,$s6
+.L533:
+	srl	$a0,$v0,16
+.L442:
+	sw	$a0,64($sp)
+.L470:
+	jal	_get_delta2
+	move	$a1,$s6
+.L443:
+	subu	$s1,$zero,$v0
+.L437:
+	lw	$v0,64($sp)
+.L402:
+	j	.L49
+.L663:
+	subu	$s0,$zero,$v0
+.L42:
+	addu	$v0,$t1,$t1
+.L543:
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-360($v0)
+.L294:
+	multu	$v0,$v0,$s6
+.L295:
+	srl	$a0,$v0,16
+.L385:
+	sw	$a0,64($sp)
+.L336:
+	jal	_get_delta2
+	move	$a1,$s6
+.L386:
+	j	.L50
+.L664:
+	subu	$s1,$zero,$v0
+.L43:
+	li	$v0,0x10e
+.L571:
+	subu	$v0,$v0,$t1
+.L572:
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L414:
+	multu	$v0,$v0,$s6
+.L415:
+	srl	$v0,$v0,16
+.L524:
+	sw	$v0,64($sp)
+.L525:
+	subu	$s1,$zero,$v0
+.L502:
+	move	$a0,$v0
+.L316:
+	jal	_get_delta2
+	move	$a1,$s6
+.L333:
+	j	.L51
+.L665:
+	move	$s0,$v0
+.L44:
+	addu	$v0,$t1,$t1
+.L486:
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,-540($v0)
+.L475:
+	multu	$v0,$v0,$s6
+.L476:
+	srl	$s1,$v0,16
+.L275:
+	move	$a0,$s1
+.L406:
+	move	$a1,$s6
+.L509:
+	jal	_get_delta2
+.L666:
+	sw	$s1,64($sp)
+.L276:
+	j	.L52
+.L667:
+	move	$s0,$v0
+.L45:
+	li	$v0,0x168
+.L561:
+	subu	$v0,$v0,$t1
+.L562:
+	addu	$v0,$v0,$v0
+	lui	$v1,@hi(_sin_degrees_lut)
+	addiu	$v1,$v1,@lo(_sin_degrees_lut)
+	addu	$v0,$v0,$v1
+	lhu	$v0,0($v0)
+.L364:
+	multu	$v0,$v0,$s6
+.L365:
+	srl	$a0,$v0,16
+.L440:
+	sw	$a0,64($sp)
+.L429:
+	jal	_get_delta2
+	move	$a1,$s6
+.L441:
+	move	$s1,$v0
+.L50:
+	lw	$s0,64($sp)
+.L37:
+.L52:
+.L51:
+.L49:
+.L48:
+.L47:
+.L46:
+	slt	$v0,$s0,$s2
+.L451:
+	beq	$v0,$zero,.L53
+	nop
+.L352:
+	move	$v0,$s1
+.L353:
+	move	$s1,$s3
+.L410:
+	move	$s3,$v0
+.L319:
+	move	$v0,$s0
+.L320:
+	move	$s0,$s2
+.L407:
+	move	$s2,$v0
+.L53:
+	lw	$v0,100($sp)
+.L445:
+	lw	$v1,72($sp)
+.L457:
+	bne	$v0,$v1,.L54
+	nop
+.L474:
+	slt	$v0,$t1,$t0
+.L446:
+	beq	$v0,$zero,.L55
+	nop
+.L668:
+	addiu	$v0,$sp,48
+.L669:
+	li	$v1,8
+.L458:
+	li	$a0,0x1
+.L56:
+	sb	$a0,0($v0)
+.L670:
+	addiu	$v1,$v1,-1
+	bgtz	$v1,.L56
+.L671:
+	addiu	$v0,$v0,1
+.L672:
+	j	.L57
+	nop
+.L55:
+	addiu	$v0,$sp,48
+.L673:
+	li	$v1,8
+.L58:
+	sb	$zero,0($v0)
+.L674:
+	addiu	$v1,$v1,-1
+	bgtz	$v1,.L58
+.L675:
+	addiu	$v0,$v0,1
+.L676:
+	j	.L59
+	nop
+.L54:
+	lw	$v0,100($sp)
+.L677:
+	lw	$v1,72($sp)
+	beq	$v0,$v1,.L60
+	nop
+.L61:
+	addiu	$v1,$sp,48
+.L678:
+	addu	$v1,$v1,$v0
+	li	$a0,0x1
+	sb	$a0,0($v1)
+.L679:
+	addiu	$v0,$v0,1
+.L549:
+	lw	$v1,72($sp)
+.L337:
+	andi	$v0,$v0,0x7
+.L510:
+	bne	$v0,$v1,.L61
+.L680:
+	nop
+.L60:
+	addiu	$v0,$sp,48
+.L511:
+	lw	$v1,100($sp)
+.L557:
+	addu	$v0,$v0,$v1
+	andi	$v1,$v1,0x1
+.L558:
+	sb	$v1,0($v0)
+.L681:
+	addiu	$v0,$sp,48
+.L682:
+	lw	$v1,72($sp)
+.L403:
+	addu	$v0,$v0,$v1
+	andi	$v1,$v1,0x1
+.L404:
+	sltiu	$v1,$v1,1
+	sb	$v1,0($v0)
+.L57:
+.L59:
+	move	$s4,$s6
+.L413:
+	li	$v0,0x3
+.L512:
+	addu	$v1,$s6,$s6
+.L513:
+	subu	$s8,$v0,$v1
+.L299:
+	addiu	$v0,$sp,48
+.L683:
+	lw	$v1,100($sp)
+.L389:
+	move	$s5,$zero
+.L390:
+	addu	$v1,$v0,$v1
+.L391:
+	sw	$v1,80($sp)
+	lw	$v1,72($sp)
+.L570:
+	addu	$v0,$v0,$v1
+.L480:
+	bltz	$s6,.L63
+	sw	$v0,76($sp)
+.L64:
+	lw	$v0,68($sp)
+.L493:
+	bne	$s5,$v0,.L65
+	nop
+.L684:
+	lw	$v0,100($sp)
+.L494:
+	andi	$v0,$v0,0x1
+.L516:
+	bne	$v0,$zero,.L66
+	nop
+.L685:
+	lw	$v1,80($sp)
+	li	$v0,0x1
+	sb	$v0,0($v1)
+.L686:
+	addiu	$v0,$zero,-1
+.L432:
+	sw	$v0,68($sp)
+.L66:
+.L65:
+	lw	$v0,64($sp)
+.L546:
+	bne	$s5,$v0,.L67
+	nop
+.L687:
+	lw	$v0,72($sp)
+.L338:
+	andi	$v0,$v0,0x1
+.L339:
+	beq	$v0,$zero,.L68
+	nop
+.L688:
+	lw	$v1,76($sp)
+	li	$v0,0x1
+	sb	$v0,0($v1)
+.L689:
+	addiu	$v0,$zero,-1
+.L363:
+	sw	$v0,64($sp)
+.L68:
+.L67:
+	lw	$v0,96($sp)
+.L559:
+	subu	$t4,$v0,$s4
+	lw	$v0,92($sp)
+.L553:
+	slt	$v0,$t4,$v0
+.L554:
+	bne	$v0,$zero,.L69
+	nop
+.L690:
+	lw	$v0,88($sp)
+.L499:
+	slt	$v0,$v0,$t4
+.L500:
+	bne	$v0,$zero,.L70
+	nop
+.L691:
+	lb	$v0,49($sp)
+	beq	$v0,$zero,.L71
+	nop
+.L692:
+	lb	$v1,50($sp)
+	beq	$v1,$zero,.L72
+	nop
+.L393:
+	subu	$t5,$s7,$s5
+.L272:
+	j	.L73
+.L693:
+	addu	$a2,$s7,$s5
+.L72:
+.L71:
+	beq	$v0,$zero,.L74
+.L694:
+	nop
+.L695:
+	subu	$v0,$zero,$s4
+	sw	$v0,0($sp)
+	li	$v0,0x1
+	sw	$v0,4($sp)
+.L555:
+	move	$a0,$s3
+.L279:
+	move	$a1,$s2
+.L280:
+	move	$a2,$s1
+.L381:
+	jal	_get_x
+	move	$a3,$s0
+.L382:
+	addu	$t5,$s7,$v0
+.L293:
+	j	.L75
+.L696:
+	addu	$a2,$s7,$s5
+.L74:
+	lb	$v0,50($sp)
+	beq	$v0,$zero,.L76
+	nop
+.L495:
+	subu	$t5,$s7,$s5
+.L302:
+	subu	$v0,$zero,$s4
+	sw	$v0,0($sp)
+.L273:
+	move	$a0,$s3
+.L274:
+	move	$a1,$s2
+.L351:
+	move	$a2,$s1
+.L464:
+	move	$a3,$s0
+.L327:
+	jal	_get_x
+	sw	$zero,4($sp)
+.L328:
+	addu	$a2,$s7,$v0
+.L75:
+.L73:
+	lw	$v0,60($sp)
+.L396:
+	slt	$v0,$t5,$v0
+.L303:
+	beq	$v0,$zero,.L77
+	nop
+	lw	$t5,60($sp)
+.L77:
+	lw	$v0,56($sp)
+.L564:
+	slt	$v1,$v0,$a2
+	beq	$v1,$zero,.L78
+	nop
+	move	$a2,$v0
+.L78:
+	lw	$a0,84($sp)
+.L311:
+	lw	$v1,112($sp)
+.L552:
+	lw	$v0,16($a0)
+.L565:
+	sw	$v1,0($sp)
+.L359:
+	move	$a1,$t5
+.L344:
+	move	$a3,$t4
+	jalr	$ra,$v0
+	nop
+.L76:
+.L70:
+.L69:
+	lw	$v0,96($sp)
+.L281:
+	subu	$t4,$v0,$s5
+	lw	$v0,92($sp)
+.L282:
+	slt	$v0,$t4,$v0
+.L547:
+	bne	$v0,$zero,.L79
+	nop
+.L697:
+	lw	$v0,88($sp)
+.L330:
+	slt	$v0,$v0,$t4
+.L331:
+	bne	$v0,$zero,.L80
+	nop
+.L698:
+	lb	$v0,48($sp)
+	beq	$v0,$zero,.L81
+	nop
+.L699:
+	lb	$v1,51($sp)
+	beq	$v1,$zero,.L82
+	nop
+.L566:
+	subu	$t5,$s7,$s4
+.L463:
+	j	.L83
+.L700:
+	addu	$a2,$s7,$s4
+.L82:
+.L81:
+	beq	$v0,$zero,.L84
+.L701:
+	nop
+.L702:
+	subu	$v0,$zero,$s5
+	sw	$v0,0($sp)
+	li	$v0,0x1
+	sw	$v0,4($sp)
+.L526:
+	move	$a0,$s3
+.L462:
+	move	$a1,$s2
+.L448:
+	move	$a2,$s1
+.L342:
+	jal	_get_x
+	move	$a3,$s0
+.L343:
+	addu	$t5,$s7,$v0
+.L556:
+	j	.L85
+.L703:
+	addu	$a2,$s7,$s4
+.L84:
+	lb	$v0,51($sp)
+	beq	$v0,$zero,.L86
+	nop
+.L520:
+	subu	$t5,$s7,$s4
+.L325:
+	subu	$v0,$zero,$s5
+	sw	$v0,0($sp)
+.L452:
+	move	$a0,$s3
+.L444:
+	move	$a1,$s2
+.L340:
+	move	$a2,$s1
+.L341:
+	move	$a3,$s0
+.L288:
+	jal	_get_x
+	sw	$zero,4($sp)
+.L289:
+	addu	$a2,$s7,$v0
+.L85:
+.L83:
+	lw	$v0,60($sp)
+.L531:
+	slt	$v0,$t5,$v0
+.L326:
+	beq	$v0,$zero,.L87
+	nop
+	lw	$t5,60($sp)
+.L87:
+	lw	$v0,56($sp)
+.L478:
+	slt	$v1,$v0,$a2
+	beq	$v1,$zero,.L88
+	nop
+	move	$a2,$v0
+.L88:
+	lw	$a0,84($sp)
+.L306:
+	lw	$v1,112($sp)
+.L560:
+	lw	$v0,16($a0)
+.L479:
+	sw	$v1,0($sp)
+.L317:
+	move	$a1,$t5
+.L318:
+	move	$a3,$t4
+	jalr	$ra,$v0
+	nop
+.L86:
+.L80:
+.L79:
+	lw	$v0,96($sp)
+.L537:
+	addu	$t4,$v0,$s5
+	lw	$v0,92($sp)
+.L538:
+	slt	$v0,$t4,$v0
+.L568:
+	bne	$v0,$zero,.L89
+	nop
+.L704:
+	lw	$v0,88($sp)
+.L375:
+	slt	$v0,$v0,$t4
+.L376:
+	bne	$v0,$zero,.L90
+	nop
+.L705:
+	lb	$v0,52($sp)
+	beq	$v0,$zero,.L91
+	nop
+.L706:
+	lb	$v1,55($sp)
+	beq	$v1,$zero,.L92
+	nop
+.L447:
+	subu	$t5,$s7,$s4
+.L466:
+	j	.L93
+.L707:
+	addu	$a2,$s7,$s4
+.L92:
+.L91:
+	lb	$v1,55($sp)
+	beq	$v1,$zero,.L94
+	nop
+.L708:
+	sw	$s5,0($sp)
+	li	$v0,0x1
+	sw	$v0,4($sp)
+.L472:
+	move	$a0,$s3
+.L473:
+	move	$a1,$s2
+.L421:
+	move	$a2,$s1
+.L349:
+	jal	_get_x
+	move	$a3,$s0
+.L350:
+	addu	$t5,$s7,$v0
+.L296:
+	j	.L95
+.L709:
+	addu	$a2,$s7,$s4
+.L94:
+	beq	$v0,$zero,.L96
+.L710:
+	nop
+.L485:
+	subu	$t5,$s7,$s4
+.L370:
+	sw	$s5,0($sp)
+.L377:
+	move	$a0,$s3
+.L378:
+	move	$a1,$s2
+.L487:
+	move	$a2,$s1
+.L409:
+	move	$a3,$s0
+.L398:
+	jal	_get_x
+	sw	$zero,4($sp)
+.L399:
+	addu	$a2,$s7,$v0
+.L95:
+.L93:
+	lw	$v0,60($sp)
+.L550:
+	slt	$v0,$t5,$v0
+.L371:
+	beq	$v0,$zero,.L97
+	nop
+	lw	$t5,60($sp)
+.L97:
+	lw	$v0,56($sp)
+.L286:
+	slt	$v1,$v0,$a2
+	beq	$v1,$zero,.L98
+	nop
+	move	$a2,$v0
+.L98:
+	lw	$a0,84($sp)
+.L569:
+	lw	$v1,112($sp)
+.L362:
+	lw	$v0,16($a0)
+.L287:
+	sw	$v1,0($sp)
+.L435:
+	move	$a1,$t5
+.L436:
+	move	$a3,$t4
+	jalr	$ra,$v0
+	nop
+.L96:
+.L90:
+.L89:
+	lw	$v0,96($sp)
+.L422:
+	addu	$t4,$v0,$s4
+	lw	$v0,92($sp)
+.L423:
+	slt	$v0,$t4,$v0
+.L551:
+	bne	$v0,$zero,.L99
+	nop
+.L711:
+	lw	$v0,88($sp)
+.L481:
+	slt	$v0,$v0,$t4
+.L482:
+	bne	$v0,$zero,.L100
+	nop
+.L712:
+	lb	$v0,53($sp)
+	beq	$v0,$zero,.L101
+	nop
+.L713:
+	lb	$v1,54($sp)
+	beq	$v1,$zero,.L102
+	nop
+.L416:
+	subu	$t5,$s7,$s5
+.L367:
+	j	.L103
+.L714:
+	addu	$a2,$s7,$s5
+.L102:
+.L101:
+	lb	$v1,54($sp)
+	beq	$v1,$zero,.L104
+	nop
+.L715:
+	sw	$s4,0($sp)
+	li	$v0,0x1
+	sw	$v0,4($sp)
+.L477:
+	move	$a0,$s3
+.L357:
+	move	$a1,$s2
+.L358:
+	move	$a2,$s1
+.L290:
+	jal	_get_x
+	move	$a3,$s0
+.L397:
+	addu	$t5,$s7,$v0
+.L491:
+	j	.L105
+.L716:
+	addu	$a2,$s7,$s5
+.L104:
+	beq	$v0,$zero,.L106
+.L717:
+	nop
+.L467:
+	subu	$t5,$s7,$s5
+.L468:
+	sw	$s4,0($sp)
+.L465:
+	move	$a0,$s3
+.L449:
+	move	$a1,$s2
+.L450:
+	move	$a2,$s1
+.L383:
+	move	$a3,$s0
+.L392:
+	jal	_get_x
+	sw	$zero,4($sp)
+.L384:
+	addu	$a2,$s7,$v0
+.L105:
+.L103:
+	lw	$v0,60($sp)
+.L527:
+	slt	$v0,$t5,$v0
+.L528:
+	beq	$v0,$zero,.L107
+	nop
+	lw	$t5,60($sp)
+.L107:
+	lw	$v0,56($sp)
+.L503:
+	slt	$v1,$v0,$a2
+	beq	$v1,$zero,.L108
+	nop
+	move	$a2,$v0
+.L108:
+	lw	$a0,84($sp)
+.L366:
+	lw	$v1,112($sp)
+.L285:
+	lw	$v0,16($a0)
+.L504:
+	sw	$v1,0($sp)
+.L518:
+	move	$a1,$t5
+.L348:
+	move	$a3,$t4
+	jalr	$ra,$v0
+	nop
+.L106:
+.L100:
+.L99:
+	lw	$v0,68($sp)
+.L307:
+	bne	$s5,$v0,.L109
+	nop
+.L718:
+	lw	$v0,100($sp)
+.L308:
+	andi	$v0,$v0,0x1
+.L563:
+	beq	$v0,$zero,.L110
+	nop
+.L719:
+	lw	$v0,80($sp)
+	sb	$zero,0($v0)
+.L720:
+	addiu	$v0,$zero,-1
+.L297:
+	sw	$v0,68($sp)
+.L110:
+.L109:
+	lw	$v0,64($sp)
+.L300:
+	bne	$s5,$v0,.L111
+	nop
+.L721:
+	lw	$v0,72($sp)
+.L301:
+	andi	$v0,$v0,0x1
+.L424:
+	bne	$v0,$zero,.L112
+	nop
+.L722:
+	lw	$v0,76($sp)
+	sb	$zero,0($v0)
+.L723:
+	addiu	$v0,$zero,-1
+.L313:
+	sw	$v0,64($sp)
+.L112:
+.L111:
+	bgez	$s8,.L113
+.L724:
+	nop
+.L725:
+	sll	$v0,$s5,2
+	addiu	$v0,$v0,6
+	j	.L114
+	addu	$s8,$s8,$v0
+.L113:
+	subu	$v0,$s5,$s4
+	sll	$v0,$v0,2
+	addiu	$v0,$v0,10
+	addu	$s8,$s8,$v0
+.L726:
+	addiu	$s4,$s4,-1
+.L114:
+	addiu	$s5,$s5,1
+.L727:
+	slt	$s6,$s4,$s5
+	beq	$s6,$zero,.L64
+	nop
+.L63:
+.L14:
+.L11:
+	lw	$s8,44($sp)
+.L262:
+	lw	$s7,40($sp)
+.L263:
+	lw	$s6,36($sp)
+.L264:
+	lw	$s5,32($sp)
+.L265:
+	lw	$s4,28($sp)
+.L266:
+	lw	$s3,24($sp)
+.L267:
+	lw	$s2,20($sp)
+.L268:
+	lw	$s1,16($sp)
+.L269:
+	lw	$s0,12($sp)
+.L270:
+	lw	$ra,8($sp)
+.L271:
+	jr	$ra
+	addiu	$sp,$sp,104
+.L183:
+	.size	_graphics_fill_segment,*-_graphics_fill_segment
+.L161:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.graphics_fill_segment._get_delta2 ,cluster('$group__get_delta2')
+	.align	4
+; Function _get_delta2
+.L145:
+_get_delta2:	.type	func
+	move	$v0,$zero
+.L573:
+	li	$v1,0x3
+	addu	$a2,$a1,$a1
+.L732:
+	bltz	$a1,.L115
+.L733:
+	subu	$v1,$v1,$a2
+.L116:
+	beq	$v0,$a0,.L117
+.L734:
+	nop
+.L735:
+	bgez	$v1,.L118
+.L736:
+	nop
+.L737:
+	sll	$a2,$v0,2
+	addiu	$a2,$a2,6
+	j	.L119
+	addu	$v1,$v1,$a2
+.L118:
+	subu	$a2,$v0,$a1
+	sll	$a2,$a2,2
+	addiu	$a2,$a2,10
+	addu	$v1,$v1,$a2
+.L738:
+	addiu	$a1,$a1,-1
+.L119:
+	addiu	$v0,$v0,1
+.L739:
+	slt	$a3,$a1,$v0
+	beq	$a3,$zero,.L116
+	nop
+.L115:
+.L117:
+	jr	$ra
+.L740:
+	move	$v0,$a1
+.L214:
+	.size	_get_delta2,*-_get_delta2
+.L166:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.graphics_fill_segment._get_x ,cluster('$group__get_x')
+	.align	4
+; Function _get_x
+.L147:
+_get_x:	.type	func
+	lw	$v0,0($sp)
+.L582:
+	beq	$v0,$a1,.L122
+.L745:
+	lb	$v1,7($sp)
+.L576:
+	bne	$v0,$a3,.L123
+.L746:
+	nop
+.L747:
+	jr	$ra
+.L748:
+	move	$v0,$a2
+.L123:
+	slt	$t0,$a0,$a2
+	beq	$t0,$zero,.L125
+	nop
+.L749:
+	li	$t0,0x1
+.L578:
+	j	.L126
+.L750:
+	subu	$a2,$a2,$a0
+.L125:
+	addiu	$t0,$zero,-1
+.L579:
+	subu	$a2,$a0,$a2
+.L126:
+	subu	$a3,$a3,$a1
+.L581:
+	slt	$t1,$a3,$a2
+	beq	$t1,$zero,.L127
+	nop
+.L575:
+	move	$t1,$zero
+.L574:
+	addu	$t2,$a3,$a3
+.L751:
+	j	.L128
+.L752:
+	subu	$t2,$t2,$a2
+.L127:
+	li	$t1,0x1
+.L580:
+	addu	$t2,$a2,$a2
+	subu	$t2,$t2,$a3
+.L128:
+	addiu	$t3,$t0,-1
+	sltiu	$t3,$t3,1
+.L753:
+	beq	$t1,$zero,.L130
+.L754:
+	xor	$v1,$v1,$t3
+.L577:
+	beq	$a1,$v0,.L131
+.L755:
+	nop
+	addu	$v1,$a2,$a2
+.L132:
+	bltz	$t2,.L133
+.L756:
+	nop
+.L757:
+	addu	$a0,$a0,$t0
+.L758:
+	addu	$a2,$a3,$a3
+	subu	$t2,$t2,$a2
+.L133:
+	addiu	$a1,$a1,1
+.L759:
+	bne	$a1,$v0,.L132
+.L760:
+	addu	$t2,$t2,$v1
+.L761:
+	j	.L134
+	nop
+.L130:
+	addu	$v0,$v0,$v1
+.L762:
+	beq	$a1,$v0,.L135
+.L763:
+	nop
+.L764:
+	addu	$a3,$a3,$a3
+.L136:
+	bltz	$t2,.L137
+.L765:
+	nop
+.L766:
+	addiu	$a1,$a1,1
+.L767:
+	addu	$t1,$a2,$a2
+	subu	$t2,$t2,$t1
+.L137:
+	addu	$a0,$a0,$t0
+.L768:
+	bne	$a1,$v0,.L136
+.L769:
+	addu	$t2,$t2,$a3
+.L135:
+	beq	$v1,$zero,.L138
+.L770:
+	nop
+.L771:
+	subu	$a0,$a0,$t0
+.L131:
+.L138:
+.L134:
+.L122:
+	jr	$ra
+.L772:
+	move	$v0,$a0
+.L220:
+	.size	_get_x,*-_get_x
+.L171:
+	; End of function
+	.endsec	; End of section
+
+	.section	.rodata.graphics_fill_segment.$ini ,cluster('$group_rodata')
+	.align	4
+_1_ini:	.type	object
+	.size	_1_ini,8
+	.bs	8,0
+	.endsec	; End of section
+
+	.calls	'graphics_fill_segment','_graphics_fill_segment'
+	.calls	'_graphics_fill_segment','__INDIRECT__'
+	.calls	'_graphics_fill_segment','graphics_fill_circle'
+	.calls	'_graphics_fill_segment','_get_delta2'
+	.calls	'_graphics_fill_segment','_get_x'
+	.calls	'graphics_fill_segment','',16
+	.calls	'_graphics_fill_segment','',104
+	.calls	'_get_delta2','',0
+	.calls	'_get_x','',0
+	.extern	graphics_fill_circle
+	.extern	_sin_degrees_lut
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L149:
+	.dw	2187
+	.dh	3
+	.dw	.L150
+	.db	4
+.L148:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L151
+	.db	2
+	.db	"graphics_fill_circle",0
+	.db	1,131,1,13,1,1,1,1,3
+	.db	"canvas",0
+	.db	1,131,1,60
+	.dw	.L173-.L149
+	.db	3
+	.db	"x",0
+	.db	1,131,1,72
+	.dw	.L175-.L149
+	.db	3
+	.db	"y",0
+	.db	1,131,1,79
+	.dw	.L175-.L149
+	.db	3
+	.db	"r",0
+	.db	1,131,1,95
+	.dw	.L178-.L149
+	.db	3
+	.db	"color",0
+	.db	1,131,1,106
+	.dw	.L178-.L149
+	.db	0
+.L173:
+	.db	4
+	.dw	.L583-.L149
+.L583:
+	.db	5
+	.dw	.L584-.L149
+.L584:
+	.db	6
+	.db	"_canvas_s",0
+	.db	2,8,8,88,7
+	.db	"buffer",0
+	.db	4
+	.dw	.L585-.L149
+	.db	2,35,0,7
+	.db	"draw_pixel",0
+	.db	4
+	.dw	.L586-.L149
+	.db	2,35,4,7
+	.db	"draw_pixel_alpha",0
+	.db	4
+	.dw	.L587-.L149
+	.db	2,35,8,7
+	.db	"get_pixel",0
+	.db	4
+	.dw	.L588-.L149
+	.db	2,35,12,7
+	.db	"draw_horizontal",0
+	.db	4
+	.dw	.L589-.L149
+	.db	2,35,16,7
+	.db	"draw_vertical",0
+	.db	4
+	.dw	.L589-.L149
+	.db	2,35,20,7
+	.db	"convert_color_to_native",0
+	.db	4
+	.dw	.L590-.L149
+	.db	2,35,24,7
+	.db	"convert_color_from_native",0
+	.db	4
+	.dw	.L590-.L149
+	.db	2,35,28,7
+	.db	"drv",0
+	.db	4
+	.dw	.L591-.L149
+	.db	2,35,32,7
+	.db	"buffer_width",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,36,7
+	.db	"buffer_height",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,40,7
+	.db	"canvas_left",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,44,7
+	.db	"canvas_top",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,48,7
+	.db	"canvas_width",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,52,7
+	.db	"canvas_height",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,56,7
+	.db	"pane_left",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,60,7
+	.db	"pane_top",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,64,7
+	.db	"pane_right",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,68,7
+	.db	"pane_bottom",0
+	.db	4
+	.dw	.L175-.L149
+	.db	2,35,72,7
+	.db	"default_font",0
+	.db	4
+	.dw	.L592-.L149
+	.db	2,35,76,7
+	.db	"color_format",0
+	.db	4
+	.dw	.L593-.L149
+	.db	2,35,80,7
+	.db	"rotation",0
+	.db	2
+	.dw	.L594-.L149
+	.db	2,35,84,7
+	.db	"allocation_type",0
+	.db	1
+	.dw	.L595-.L149
+	.db	2,35,86,7
+	.db	"locked",0
+	.db	1
+	.dw	.L226-.L149
+	.db	2,35,87,0
+.L585:
+	.db	8
+	.db	"unsigned long int",0
+	.db	4,7
+.L586:
+	.db	4
+	.dw	.L596-.L149
+.L596:
+	.db	9,1,1,10
+	.dw	.L597-.L149
+	.db	10
+	.dw	.L175-.L149
+	.db	10
+	.dw	.L175-.L149
+	.db	10
+	.dw	.L178-.L149
+	.db	0
+.L597:
+	.db	4
+	.dw	.L598-.L149
+.L598:
+	.db	5
+	.dw	434
+.L175:
+	.db	8
+	.db	"int",0
+	.db	4,5
+.L178:
+	.db	8
+	.db	"unsigned int",0
+	.db	4,7
+.L587:
+	.db	4
+	.dw	.L599-.L149
+.L599:
+	.db	9,1,1,10
+	.dw	1022
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1039
+	.db	10
+	.dw	.L595-.L149
+	.db	0
+.L595:
+	.db	8
+	.db	"unsigned char",0
+	.db	1,8
+.L588:
+	.db	4
+	.dw	.L600-.L149
+.L600:
+	.db	11
+	.dw	1039
+	.db	1,1,10
+	.dw	1022
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1032
+	.db	0
+.L589:
+	.db	4
+	.dw	.L601-.L149
+.L601:
+	.db	9,1,1,10
+	.dw	1022
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1032
+	.db	10
+	.dw	1039
+	.db	0
+.L590:
+	.db	4
+	.dw	.L602-.L149
+.L602:
+	.db	11
+	.dw	1039
+	.db	1,1,10
+	.dw	1039
+	.db	0
+.L591:
+	.db	4
+	.dw	.L603-.L149
+.L603:
+	.db	12
+	.db	"void",0
+.L592:
+	.db	4
+	.dw	.L604-.L149
+.L604:
+	.db	5
+	.dw	.L605-.L149
+.L605:
+	.db	13
+	.db	"_font_s",0
+	.db	1,82,16,1
+.L593:
+	.db	14,1,64,9,4,15
+	.db	"COLOR_INVALID",0
+	.db	0,15
+	.db	"COLOR_PALETTE1",0
+	.db	1,15
+	.db	"COLOR_PALETTE2",0
+	.db	2,15
+	.db	"COLOR_PALETTE4",0
+	.db	4,15
+	.db	"COLOR_PALETTE8",0
+	.db	8,15
+	.db	"COLOR_RGB565",0
+	.db	16,15
+	.db	"COLOR_RGB888",0
+	.db	24,15
+	.db	"COLOR_NO_BUFFER",0
+	.db	25,15
+	.db	"COLOR_NO_BUFFER_BGR565",0
+	.db	26,15
+	.db	"COLOR_NO_BUFFER_BW",0
+	.db	27,15
+	.db	"COLOR_NO_BUFFER_MONO2",0
+	.db	28,15
+	.db	"COLOR_NO_BUFFER_MONO4",0
+	.db	29,15
+	.db	"COLOR_NO_BUFFER_MONO8",0
+	.db	30,0
+.L594:
+	.db	8
+	.db	"unsigned short int",0
+	.db	2,7
+.L226:
+	.db	8
+	.db	"_Bool",0
+	.db	1,2
+.L191:
+	.db	16,8
+	.dw	1498
+	.db	17,7,0,18
+	.db	"__INDIRECT__",0
+	.db	3,1,1,1,1,1,19
+	.db	"__wchar_t",0
+	.db	3,1,1
+	.dw	1476
+	.db	19
+	.db	"__size_t",0
+	.db	3,1,1
+	.dw	1039
+	.db	19
+	.db	"__ptrdiff_t",0
+	.db	3,1,1
+	.dw	1032
+	.db	19
+	.db	"__codeptr",0
+	.db	3,1,1
+	.dw	.L606-.L149
+.L606:
+	.db	4
+	.dw	.L607-.L149
+.L607:
+	.db	20,1,19
+	.db	"int8_t",0
+	.db	4,21,33
+	.dw	.L608-.L149
+.L608:
+	.db	8
+	.db	"char",0
+	.db	1,6,19
+	.db	"uint8_t",0
+	.db	4,22,33
+	.dw	1089
+	.db	19
+	.db	"uint16_t",0
+	.db	4,24,33
+	.dw	1476
+	.db	19
+	.db	"int32_t",0
+	.db	4,25,33
+	.dw	1032
+	.db	19
+	.db	"uint32_t",0
+	.db	4,26,33
+	.dw	1039
+	.db	19
+	.db	"uintptr_t",0
+	.db	4,58,33
+	.dw	972
+	.db	19
+	.db	"color_t",0
+	.db	1,29,25
+	.dw	1039
+	.db	19
+	.db	"color_format_t",0
+	.db	1,79,3
+	.dw	1220
+	.db	19
+	.db	"font_t",0
+	.db	1,82,24
+	.dw	1207
+	.db	19
+	.db	"canvas_t",0
+	.db	5,14,26
+	.dw	434
+	.db	21
+	.db	"_sin_degrees_lut",0
+	.db	6,38,17
+	.dw	.L609-.L149
+	.db	1,1
+.L609:
+	.db	16,92
+	.dw	1476
+	.db	17,45,0,19
+	.db	"bmfileheader_t",0
+	.db	6,77,3
+	.dw	.L610-.L149
+.L610:
+	.db	22,6,71,9,14,7
+	.db	"type",0
+	.db	2
+	.dw	.L611-.L149
+	.db	2,35,0,7
+	.db	"size",0
+	.db	4
+	.dw	.L612-.L149
+	.db	2,35,2,7
+	.db	"reserved",0
+	.db	4
+	.dw	.L612-.L149
+	.db	2,35,6,7
+	.db	"offset",0
+	.db	4
+	.dw	.L612-.L149
+	.db	2,35,10,0
+.L611:
+	.db	16,2
+	.dw	.L613-.L149
+	.db	17,1,0
+.L613:
+	.db	8
+	.db	"char",0
+	.db	1,6
+.L612:
+	.db	16,4
+	.dw	1089
+	.db	17,3,0,19
+	.db	"bminfoheader_t",0
+	.db	6,100,3
+	.dw	.L614-.L149
+.L614:
+	.db	22,6,87,9,40,7
+	.db	"size",0
+	.db	4
+	.dw	1938
+	.db	2,35,0,7
+	.db	"width",0
+	.db	4
+	.dw	1938
+	.db	2,35,4,7
+	.db	"height",0
+	.db	4
+	.dw	1938
+	.db	2,35,8,7
+	.db	"planes",0
+	.db	2
+	.dw	.L615-.L149
+	.db	2,35,12,7
+	.db	"bitcount",0
+	.db	2
+	.dw	.L615-.L149
+	.db	2,35,14,7
+	.db	"compression",0
+	.db	4
+	.dw	1938
+	.db	2,35,16,7
+	.db	"imagesize",0
+	.db	4
+	.dw	1938
+	.db	2,35,20,7
+	.db	"xppm",0
+	.db	4
+	.dw	1938
+	.db	2,35,24,7
+	.db	"yppm",0
+	.db	4
+	.dw	1938
+	.db	2,35,28,7
+	.db	"colorused",0
+	.db	4
+	.dw	1938
+	.db	2,35,32,7
+	.db	"colorimportant",0
+	.db	4
+	.dw	1938
+	.db	2,35,36,0
+.L615:
+	.db	16,2
+	.dw	1089
+	.db	17,1,0,19
+	.db	"size_t",0
+	.db	7,20,25
+	.dw	1039
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L150:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.db	3,5,0,3,8,58,15,59,15,57,15,73,19,0,0,4,15,0,73,19,0,0,5,38,0,73,19,0,0,6,19,1,3,8,58,15,59,15,57,15,11
+	.db	15,0,0,7,13,0,3,8,11,15,73,19,56,9,0,0,8,36,0,3,8,11,15,62,15,0,0,9,21,1,54,15,39,12,0,0,10,5,0,73,19
+	.db	0,0,11,21,1,73,19,54,15,39,12,0,0,12,59,0,3,8,0,0,13,19,0,3,8,58,15,59,15,57,15,60,12,0,0,14,4,1,58,15
+	.db	59,15,57,15,11,15,0,0,15,40,0,3,8,28,13,0,0,16,1,1,11,15,73,19,0,0,17,33,0,47,15,0,0,18,46,0,3,8,58,15
+	.db	59,15,57,15,54,15,63,12,60,12,0,0,19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,21,0,54,15,0,0,21,52,0,3
+	.db	8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,22,19,1,58,15,59,15,57,15,11,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L151:
+	.dw	.L617-.L616
+.L616:
+	.dh	3
+	.dw	.L619-.L618
+.L618:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\canvas_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\canvas.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\graphics_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0,0
+.L619:
+.L617:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_graphics_fill_segment')
+.L152:
+	.dw	516
+	.dh	3
+	.dw	.L153
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L155,.L154
+	.db	2
+	.dw	.L148
+	.db	3
+	.db	"graphics_fill_segment",0
+	.db	1,55,6,1,1,1
+	.dw	.L141,.L172,.L140
+	.db	4
+	.db	"canvas",0
+	.db	1,55,54
+	.dw	.L173,.L174
+	.db	4
+	.db	"x",0
+	.db	1,55,66
+	.dw	.L175,.L176
+	.db	4
+	.db	"y",0
+	.db	1,55,73
+	.dw	.L175,.L177
+	.db	4
+	.db	"r",0
+	.db	1,55,89
+	.dw	.L178,.L179
+	.db	4
+	.db	"start_angle",0
+	.db	1,55,96
+	.dw	.L175,.L180
+	.db	4
+	.db	"segment_angle",0
+	.db	1,55,113
+	.dw	.L175,.L181
+	.db	4
+	.db	"color",0
+	.db	1,55,136,1
+	.dw	.L178,.L182
+	.db	5
+	.dw	.L141,.L172
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_graphics_fill_segment')
+.L153:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_graphics_fill_segment')
+.L154:
+	.dw	.L621-.L620
+.L620:
+	.dh	3
+	.dw	.L623-.L622
+.L622:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	0,0,0,0
+.L623:
+	.db	5,6,7,0,5,2
+	.dw	.L141
+	.db	3,54,1,5,5
+	.db	16+9*((.L248-.L141)/4)
+	.db	5,6
+	.db	12+9*((.L624-.L248)/4)
+	.db	5,5
+	.db	16+9*((.L243-.L624)/4)
+	.db	5,6,7
+	.db	12+9*((.L625-.L243)/4)
+	.db	5,5
+	.db	16+9*((.L250-.L625)/4)
+	.db	5,125,9
+	.dh	.L2-.L250
+	.db	3,4,1,5,9
+	.db	15+9*((.L247-.L2)/4)
+	.db	5,125
+	.db	13+9*((.L626-.L247)/4)
+	.db	5,133,1,9
+	.dh	.L3-.L626
+	.db	3,5,1,5,9,9
+	.dh	.L627-.L3
+	.db	3,1,1,5,133,1
+	.db	13+9*((.L628-.L627)/4)
+	.db	5,136,1,9
+	.dh	.L4-.L628
+	.db	3,5,1,5,9,9
+	.dh	.L239-.L4
+	.db	3,1,1,5,136,1
+	.db	13+9*((.L629-.L239)/4)
+	.db	5,135,1,9
+	.dh	.L5-.L629
+	.db	3,5,1,5,1,9
+	.dh	.L6-.L5
+	.db	3,4,1,9
+	.dh	.L156-.L6
+	.db	0,1,1
+.L621:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_graphics_fill_segment')
+.L155:
+	.dw	-1
+	.dw	.L141
+	.dw	0
+	.dw	.L156-.L141
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__graphics_fill_segment')
+.L157:
+	.dw	894
+	.dh	3
+	.dw	.L158
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L160,.L159
+	.db	2
+	.dw	.L148
+	.db	3
+	.db	"_graphics_fill_segment",0
+	.db	1,83,13,1,1
+	.dw	.L143,.L183,.L142
+	.db	4
+	.db	"canvas",0
+	.db	1,83,62
+	.dw	.L173,.L184
+	.db	4
+	.db	"x",0
+	.db	1,83,74
+	.dw	.L175,.L185
+	.db	4
+	.db	"y",0
+	.db	1,83,81
+	.dw	.L175,.L186
+	.db	4
+	.db	"r",0
+	.db	1,83,97
+	.dw	.L178,.L187
+	.db	4
+	.db	"start_angle",0
+	.db	1,83,104
+	.dw	.L175,.L188
+	.db	4
+	.db	"segment_angle",0
+	.db	1,83,121
+	.dw	.L175,.L189
+	.db	4
+	.db	"color",0
+	.db	1,83,144,1
+	.dw	.L178,.L190
+	.db	5
+	.dw	.L143,.L183
+	.db	6
+	.db	"part_mask",0
+	.db	1,85,10
+	.dw	.L191,.L192
+	.db	6
+	.db	"start_part",0
+	.db	1,86,10
+	.dw	.L175,.L193
+	.db	6
+	.db	"end_part",0
+	.db	1,87,10
+	.dw	.L175,.L194
+	.db	6
+	.db	"start_delta",0
+	.db	1,88,10
+	.dw	.L175,.L195
+	.db	6
+	.db	"end_delta",0
+	.db	1,89,10
+	.dw	.L175,.L196
+	.db	6
+	.db	"sa",0
+	.db	1,90,10
+	.dw	.L175,.L197
+	.db	6
+	.db	"ea",0
+	.db	1,91,10
+	.dw	.L175,.L198
+	.db	6
+	.db	"eps",0
+	.db	1,92,10
+	.dw	.L175,.L199
+	.db	6
+	.db	"d1",0
+	.db	1,93,10
+	.dw	.L175,.L200
+	.db	6
+	.db	"d2",0
+	.db	1,94,10
+	.dw	.L175,.L201
+	.db	6
+	.db	"x1",0
+	.db	1,95,10
+	.dw	.L175,.L202
+	.db	6
+	.db	"y1",0
+	.db	1,95,18
+	.dw	.L175,.L203
+	.db	6
+	.db	"x2",0
+	.db	1,96,10
+	.dw	.L175,.L204
+	.db	6
+	.db	"y2",0
+	.db	1,96,18
+	.dw	.L175,.L205
+	.db	6
+	.db	"a",0
+	.db	1,97,10
+	.dw	.L175,.L206
+	.db	6
+	.db	"b",0
+	.db	1,97,13
+	.dw	.L175,.L207
+	.db	6
+	.db	"swap",0
+	.db	1,98,10
+	.dw	.L175,.L208
+	.db	6
+	.db	"left",0
+	.db	1,99,10
+	.dw	.L175,.L209
+	.db	6
+	.db	"right",0
+	.db	1,100,10
+	.dw	.L175,.L210
+	.db	6
+	.db	"top",0
+	.db	1,101,10
+	.dw	.L175,.L211
+	.db	6
+	.db	"bottom",0
+	.db	1,102,10
+	.dw	.L175,.L212
+	.db	6
+	.db	"i",0
+	.db	1,103,10
+	.dw	.L175,.L213
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__graphics_fill_segment')
+.L158:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.db	15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__graphics_fill_segment')
+.L159:
+	.dw	.L631-.L630
+.L630:
+	.dh	3
+	.dw	.L633-.L632
+.L632:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	0,0,0,0
+.L633:
+	.db	5,13,7,0,5,2
+	.dw	.L143
+	.db	3,210,0,1,5,23,9
+	.dh	.L488-.L143
+	.db	3,2,1,5,22
+	.db	17+9*((.L544-.L488)/4)
+	.db	5,20
+	.db	15+9*((.L497-.L544)/4)
+	.db	5,17,9
+	.dh	.L498-.L497
+	.db	3,10,1,5,13
+	.db	11+9*((.L541-.L498)/4)
+	.db	5,17
+	.db	17+9*((.L490-.L541)/4)
+	.db	5,21
+	.db	10+9*((.L345-.L490)/4)
+	.db	5,17
+	.db	18+9*((.L545-.L345)/4)
+	.db	15+9*((.L323-.L545)/4)
+	.db	5,13,9
+	.dh	.L346-.L323
+	.db	3,123,1,5,17,9
+	.dh	.L360-.L346
+	.db	3,5,1
+	.db	15+9*((.L347-.L360)/4)
+	.db	15+9*((.L332-.L347)/4)
+	.db	5,51
+	.db	17+9*((.L361-.L332)/4)
+	.db	5,21,9
+	.dh	.L634-.L361
+	.db	3,119,1,5,5,9
+	.dh	.L329-.L634
+	.db	3,11,1,5,51,7
+	.db	12+9*((.L635-.L329)/4)
+	.db	5,9,9
+	.dh	.L636-.L635
+	.db	3,7,1,5,50
+	.db	14+9*((.L637-.L636)/4)
+	.db	5,53
+	.db	16+9*((.L12-.L637)/4)
+	.db	5,9,9
+	.dh	.L369-.L12
+	.db	3,1,1,5,5
+	.db	17+9*((.L13-.L369)/4)
+	.db	7
+	.db	14+9*((.L638-.L13)/4)
+	.db	5,41
+	.db	16+9*((.L639-.L638)/4)
+	.db	5,25,9
+	.dh	.L15-.L639
+	.db	3,5,1,5,41
+	.db	15+9*((.L535-.L15)/4)
+	.db	5,14
+	.db	16+9*((.L16-.L535)/4)
+	.db	5,5,9
+	.dh	.L536-.L16
+	.db	3,1,1,7
+	.db	14+9*((.L640-.L536)/4)
+	.db	5,27
+	.db	14+9*((.L641-.L640)/4)
+	.db	5,14
+	.db	16+9*((.L17-.L641)/4)
+	.db	5,5,9
+	.dh	.L434-.L17
+	.db	3,1,1,7
+	.db	14+9*((.L642-.L434)/4)
+	.db	5,27
+	.db	14+9*((.L643-.L642)/4)
+	.db	5,25
+	.db	16+9*((.L18-.L643)/4)
+	.db	5,5,9
+	.dh	.L483-.L18
+	.db	3,1,1,5,25
+	.db	13+9*((.L644-.L483)/4)
+	.db	5,5
+	.db	15+9*((.L496-.L644)/4)
+	.db	5,69,9
+	.dh	.L21-.L496
+	.db	3,3,1,5,41,9
+	.dh	.L304-.L21
+	.db	3,1,1,5,26
+	.db	15+9*((.L314-.L304)/4)
+	.db	5,9
+	.db	15+9*((.L315-.L314)/4)
+	.db	5,26
+	.db	13+9*((.L645-.L315)/4)
+	.db	5,74
+	.db	17+9*((.L22-.L645)/4)
+	.db	5,42,9
+	.dh	.L646-.L22
+	.db	3,2,1,5,74
+	.db	12+9*((.L647-.L646)/4)
+	.db	5,9
+	.db	17+9*((.L426-.L647)/4)
+	.db	5,42
+	.db	13+9*((.L648-.L426)/4)
+	.db	5,74
+	.db	17+9*((.L23-.L648)/4)
+	.db	5,26,9
+	.dh	.L649-.L23
+	.db	3,1,1,5,42
+	.db	15+9*((.L439-.L649)/4)
+	.db	5,9
+	.db	15+9*((.L461-.L439)/4)
+	.db	5,42
+	.db	13+9*((.L650-.L461)/4)
+	.db	5,75
+	.db	17+9*((.L24-.L650)/4)
+	.db	5,42,9
+	.dh	.L298-.L24
+	.db	3,1,1,5,26
+	.db	15+9*((.L387-.L298)/4)
+	.db	5,9
+	.db	15+9*((.L388-.L387)/4)
+	.db	5,26
+	.db	13+9*((.L651-.L388)/4)
+	.db	5,75
+	.db	17+9*((.L25-.L651)/4)
+	.db	5,42,9
+	.dh	.L354-.L25
+	.db	3,1,1,5,9
+	.db	16+9*((.L567-.L354)/4)
+	.db	5,42
+	.db	12+9*((.L652-.L567)/4)
+	.db	5,75
+	.db	18+9*((.L26-.L652)/4)
+	.db	5,26,9
+	.dh	.L653-.L26
+	.db	3,1,1,5,41
+	.db	15+9*((.L505-.L653)/4)
+	.db	5,9
+	.db	15+9*((.L324-.L505)/4)
+	.db	5,41
+	.db	13+9*((.L654-.L324)/4)
+	.db	5,75
+	.db	17+9*((.L27-.L654)/4)
+	.db	5,41,9
+	.dh	.L655-.L27
+	.db	3,2,1,5,75
+	.db	12+9*((.L656-.L655)/4)
+	.db	5,9
+	.db	17+9*((.L395-.L656)/4)
+	.db	5,41
+	.db	13+9*((.L657-.L395)/4)
+	.db	5,75
+	.db	17+9*((.L28-.L657)/4)
+	.db	5,41,9
+	.dh	.L501-.L28
+	.db	3,1,1,5,25
+	.db	15+9*((.L33-.L501)/4)
+	.db	5,23
+	.db	18+9*((.L29-.L33)/4)
+	.db	5,5,9
+	.dh	.L283-.L29
+	.db	3,1,1,5,23
+	.db	13+9*((.L658-.L283)/4)
+	.db	5,5
+	.db	15+9*((.L453-.L658)/4)
+	.db	5,67,9
+	.dh	.L38-.L453
+	.db	3,3,1,5,39,9
+	.dh	.L291-.L38
+	.db	3,1,1,5,24
+	.db	15+9*((.L529-.L291)/4)
+	.db	5,9
+	.db	15+9*((.L530-.L529)/4)
+	.db	5,24
+	.db	13+9*((.L659-.L530)/4)
+	.db	5,72
+	.db	17+9*((.L39-.L659)/4)
+	.db	5,40,9
+	.dh	.L417-.L39
+	.db	3,2,1,5,72
+	.db	12+9*((.L660-.L417)/4)
+	.db	5,9
+	.db	17+9*((.L373-.L660)/4)
+	.db	5,40
+	.db	13+9*((.L661-.L373)/4)
+	.db	5,72
+	.db	17+9*((.L40-.L661)/4)
+	.db	5,24,9
+	.dh	.L540-.L40
+	.db	3,1,1,5,40
+	.db	15+9*((.L418-.L540)/4)
+	.db	5,9
+	.db	15+9*((.L310-.L418)/4)
+	.db	5,40
+	.db	13+9*((.L662-.L310)/4)
+	.db	5,73
+	.db	17+9*((.L41-.L662)/4)
+	.db	5,40,9
+	.dh	.L470-.L41
+	.db	3,1,1,5,24
+	.db	15+9*((.L437-.L470)/4)
+	.db	5,9
+	.db	15+9*((.L402-.L437)/4)
+	.db	5,24
+	.db	13+9*((.L663-.L402)/4)
+	.db	5,73
+	.db	17+9*((.L42-.L663)/4)
+	.db	5,40,9
+	.dh	.L336-.L42
+	.db	3,1,1,5,9
+	.db	16+9*((.L386-.L336)/4)
+	.db	5,40
+	.db	12+9*((.L664-.L386)/4)
+	.db	5,73
+	.db	18+9*((.L43-.L664)/4)
+	.db	5,24,9
+	.dh	.L525-.L43
+	.db	3,1,1,5,39
+	.db	15+9*((.L502-.L525)/4)
+	.db	5,9
+	.db	15+9*((.L333-.L502)/4)
+	.db	5,39
+	.db	13+9*((.L665-.L333)/4)
+	.db	5,73
+	.db	17+9*((.L44-.L665)/4)
+	.db	5,39,9
+	.dh	.L275-.L44
+	.db	3,2,1,5,73
+	.db	12+9*((.L666-.L275)/4)
+	.db	5,9
+	.db	17+9*((.L276-.L666)/4)
+	.db	5,39
+	.db	13+9*((.L667-.L276)/4)
+	.db	5,73
+	.db	17+9*((.L45-.L667)/4)
+	.db	5,39,9
+	.dh	.L429-.L45
+	.db	3,1,1,5,23
+	.db	15+9*((.L50-.L429)/4)
+	.db	5,5,9
+	.dh	.L46-.L50
+	.db	3,5,1,5,18
+	.db	16+9*((.L352-.L46)/4)
+	.db	5,16
+	.db	15+9*((.L353-.L352)/4)
+	.db	5,18
+	.db	15+9*((.L410-.L353)/4)
+	.db	15+9*((.L319-.L410)/4)
+	.db	5,16
+	.db	15+9*((.L320-.L319)/4)
+	.db	5,18
+	.db	15+9*((.L407-.L320)/4)
+	.db	5,5
+	.db	17+9*((.L53-.L407)/4)
+	.db	5,9
+	.db	16+9*((.L474-.L53)/4)
+	.db	5,23,9
+	.dh	.L668-.L474
+	.db	3,232,126,1,5,30,9
+	.dh	.L669-.L668
+	.db	3,154,1,1,5,36
+	.db	16+9*((.L458-.L669)/4)
+	.db	5,30
+	.db	12+9*((.L670-.L458)/4)
+	.db	5,33
+	.db	14+9*((.L671-.L670)/4)
+	.db	5,30
+	.db	14+9*((.L672-.L671)/4)
+	.db	5,23,9
+	.dh	.L55-.L672
+	.db	3,230,126,1,5,30,9
+	.dh	.L673-.L55
+	.db	3,161,1,1,5,37
+	.db	16+9*((.L58-.L673)/4)
+	.db	5,30
+	.db	12+9*((.L674-.L58)/4)
+	.db	5,33
+	.db	14+9*((.L675-.L674)/4)
+	.db	5,9
+	.db	12+9*((.L676-.L675)/4)
+	.db	5,23,9
+	.dh	.L54-.L676
+	.db	3,10,1,5,29
+	.db	15+9*((.L677-.L54)/4)
+	.db	5,23,9
+	.dh	.L61-.L677
+	.db	3,214,126,1,5,32,9
+	.dh	.L678-.L61
+	.db	3,172,1,1,5,16
+	.db	15+9*((.L679-.L678)/4)
+	.db	5,29
+	.db	11+9*((.L549-.L679)/4)
+	.db	5,19
+	.db	18+9*((.L337-.L549)/4)
+	.db	5,29
+	.db	10+9*((.L510-.L337)/4)
+	.db	7
+	.db	14+9*((.L680-.L510)/4)
+	.db	5,23,9
+	.dh	.L60-.L680
+	.db	3,214,126,1,5,47,9
+	.dh	.L511-.L60
+	.db	3,176,1,1,5,23,9
+	.dh	.L681-.L511
+	.db	3,208,126,1,5,46,9
+	.dh	.L682-.L681
+	.db	3,177,1,1,5,11,9
+	.dh	.L59-.L682
+	.db	3,5,1,5,23
+	.db	15+9*((.L413-.L59)/4)
+	.db	9
+	.dh	.L299-.L413
+	.db	3,201,126,1,5,21,9
+	.dh	.L683-.L299
+	.db	3,184,1,1,5,11
+	.db	11+9*((.L389-.L683)/4)
+	.db	5,21
+	.db	17+9*((.L390-.L389)/4)
+	.db	5,13
+	.db	17+9*((.L64-.L390)/4)
+	.db	5,54
+	.db	14+9*((.L684-.L64)/4)
+	.db	5,41
+	.db	16+9*((.L685-.L684)/4)
+	.db	5,29
+	.db	15+9*((.L686-.L685)/4)
+	.db	5,13
+	.db	16+9*((.L65-.L686)/4)
+	.db	5,50
+	.db	14+9*((.L687-.L65)/4)
+	.db	5,39
+	.db	16+9*((.L688-.L687)/4)
+	.db	5,27
+	.db	15+9*((.L689-.L688)/4)
+	.db	5,13,9
+	.dh	.L67-.L689
+	.db	3,5,1,5,44
+	.db	14+9*((.L690-.L67)/4)
+	.db	5,17
+	.db	16+9*((.L691-.L690)/4)
+	.db	5,42
+	.db	14+9*((.L692-.L691)/4)
+	.db	5,27
+	.db	16+9*((.L393-.L692)/4)
+	.db	5,69,9
+	.dh	.L272-.L393
+	.db	3,6,1,5,27,9
+	.dh	.L693-.L272
+	.db	3,123,1,5,17,9
+	.dh	.L71-.L693
+	.db	3,9,1,7
+	.db	14+9*((.L694-.L71)/4)
+	.db	5,62
+	.db	16+9*((.L695-.L694)/4)
+	.db	5,73,9
+	.dh	.L293-.L695
+	.db	3,7,1,5,31,9
+	.dh	.L696-.L293
+	.db	3,122,1,5,22,9
+	.dh	.L74-.L696
+	.db	3,8,1,5,31
+	.db	16+9*((.L495-.L74)/4)
+	.db	5,63
+	.db	15+9*((.L302-.L495)/4)
+	.db	5,44,9
+	.dh	.L73-.L302
+	.db	3,3,1,5,45
+	.db	15+9*((.L77-.L73)/4)
+	.db	5,73
+	.db	16+9*((.L78-.L77)/4)
+	.db	5,13,9
+	.dh	.L69-.L78
+	.db	3,6,1,5,44
+	.db	14+9*((.L697-.L69)/4)
+	.db	5,17
+	.db	16+9*((.L698-.L697)/4)
+	.db	5,42
+	.db	14+9*((.L699-.L698)/4)
+	.db	5,27
+	.db	16+9*((.L566-.L699)/4)
+	.db	5,69,9
+	.dh	.L463-.L566
+	.db	3,7,1,5,27,9
+	.dh	.L700-.L463
+	.db	3,122,1,5,17,9
+	.dh	.L81-.L700
+	.db	3,10,1,7
+	.db	14+9*((.L701-.L81)/4)
+	.db	5,62
+	.db	16+9*((.L702-.L701)/4)
+	.db	5,73,9
+	.dh	.L556-.L702
+	.db	3,7,1,5,31,9
+	.dh	.L703-.L556
+	.db	3,122,1,5,22,9
+	.dh	.L84-.L703
+	.db	3,8,1,5,31
+	.db	16+9*((.L520-.L84)/4)
+	.db	5,63
+	.db	15+9*((.L325-.L520)/4)
+	.db	5,44,9
+	.dh	.L83-.L325
+	.db	3,3,1,5,45
+	.db	15+9*((.L87-.L83)/4)
+	.db	5,73
+	.db	16+9*((.L88-.L87)/4)
+	.db	5,13,9
+	.dh	.L79-.L88
+	.db	3,5,1,5,44
+	.db	14+9*((.L704-.L79)/4)
+	.db	5,17
+	.db	16+9*((.L705-.L704)/4)
+	.db	5,42
+	.db	14+9*((.L706-.L705)/4)
+	.db	5,27
+	.db	16+9*((.L447-.L706)/4)
+	.db	5,69,9
+	.dh	.L466-.L447
+	.db	3,7,1,5,27,9
+	.dh	.L707-.L466
+	.db	3,122,1,5,17,9
+	.dh	.L91-.L707
+	.db	3,10,1,5,61
+	.db	16+9*((.L708-.L91)/4)
+	.db	5,73,9
+	.dh	.L296-.L708
+	.db	3,7,1,5,31,9
+	.dh	.L709-.L296
+	.db	3,122,1,5,22,9
+	.dh	.L94-.L709
+	.db	3,8,1,7
+	.db	14+9*((.L710-.L94)/4)
+	.db	5,31
+	.db	16+9*((.L485-.L710)/4)
+	.db	5,62
+	.db	15+9*((.L370-.L485)/4)
+	.db	5,44,9
+	.dh	.L93-.L370
+	.db	3,3,1,5,45
+	.db	15+9*((.L97-.L93)/4)
+	.db	5,73
+	.db	16+9*((.L98-.L97)/4)
+	.db	5,13,9
+	.dh	.L89-.L98
+	.db	3,5,1,5,44
+	.db	14+9*((.L711-.L89)/4)
+	.db	5,17
+	.db	16+9*((.L712-.L711)/4)
+	.db	5,42
+	.db	14+9*((.L713-.L712)/4)
+	.db	5,27
+	.db	16+9*((.L416-.L713)/4)
+	.db	5,69,9
+	.dh	.L367-.L416
+	.db	3,7,1,5,27,9
+	.dh	.L714-.L367
+	.db	3,122,1,5,17,9
+	.dh	.L101-.L714
+	.db	3,10,1,5,61
+	.db	16+9*((.L715-.L101)/4)
+	.db	5,73,9
+	.dh	.L491-.L715
+	.db	3,6,1,5,31,9
+	.dh	.L716-.L491
+	.db	3,123,1,5,22,9
+	.dh	.L104-.L716
+	.db	3,7,1,7
+	.db	14+9*((.L717-.L104)/4)
+	.db	5,31
+	.db	16+9*((.L467-.L717)/4)
+	.db	5,62
+	.db	15+9*((.L468-.L467)/4)
+	.db	5,44,9
+	.dh	.L103-.L468
+	.db	3,3,1,5,45
+	.db	15+9*((.L107-.L103)/4)
+	.db	5,73
+	.db	16+9*((.L108-.L107)/4)
+	.db	5,13,9
+	.dh	.L99-.L108
+	.db	3,210,0,1,5,54
+	.db	14+9*((.L718-.L99)/4)
+	.db	5,42
+	.db	16+9*((.L719-.L718)/4)
+	.db	5,29
+	.db	15+9*((.L720-.L719)/4)
+	.db	5,13
+	.db	16+9*((.L109-.L720)/4)
+	.db	5,50
+	.db	14+9*((.L721-.L109)/4)
+	.db	5,40
+	.db	16+9*((.L722-.L721)/4)
+	.db	5,27
+	.db	15+9*((.L723-.L722)/4)
+	.db	5,9
+	.db	17+9*((.L111-.L723)/4)
+	.db	7
+	.db	14+9*((.L724-.L111)/4)
+	.db	5,33
+	.db	16+9*((.L725-.L724)/4)
+	.db	5,41
+	.db	18+9*((.L113-.L725)/4)
+	.db	5,17
+	.db	15+9*((.L726-.L113)/4)
+	.db	5,13
+	.db	16+9*((.L114-.L726)/4)
+	.db	5,21,9
+	.dh	.L727-.L114
+	.db	3,240,125,1,5,1,9
+	.dh	.L11-.L727
+	.db	3,146,2,1,9
+	.dh	.L161-.L11
+	.db	0,1,1
+.L631:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__graphics_fill_segment')
+.L160:
+	.dw	-1
+	.dw	.L143
+	.dw	0
+	.dw	.L161-.L143
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__get_delta2')
+.L162:
+	.dw	465
+	.dh	3
+	.dw	.L163
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L165,.L164
+	.db	2
+	.dw	.L148
+	.db	3
+	.db	"_get_delta2",0
+	.db	1,162,4,12
+	.dw	.L175
+	.db	1,1
+	.dw	.L145,.L214,.L144
+	.db	4
+	.db	"delta1",0
+	.db	1,162,4,28
+	.dw	.L175,.L215
+	.db	4
+	.db	"r",0
+	.db	1,162,4,49
+	.dw	.L178,.L216
+	.db	5
+	.dw	.L145,.L214
+	.db	6
+	.db	"eps",0
+	.db	1,164,4,9
+	.dw	.L175,.L217
+	.db	6
+	.db	"d1",0
+	.db	1,165,4,9
+	.dw	.L175,.L218
+	.db	6
+	.db	"d2",0
+	.db	1,166,4,9
+	.dw	.L175,.L219
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__get_delta2')
+.L163:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__get_delta2')
+.L164:
+	.dw	.L729-.L728
+.L728:
+	.dh	3
+	.dw	.L731-.L730
+.L730:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	0,0,0,0
+.L731:
+	.db	5,11,7,0,5,2
+	.dw	.L145
+	.db	3,167,4,1,5,23
+	.db	16+9*((.L573-.L145)/4)
+	.db	5,21
+	.db	15+9*((.L732-.L573)/4)
+	.db	5,23,7
+	.db	13+9*((.L733-.L732)/4)
+	.db	5,9
+	.db	17+9*((.L116-.L733)/4)
+	.db	7
+	.db	14+9*((.L734-.L116)/4)
+	.db	18+9*((.L735-.L734)/4)
+	.db	7
+	.db	14+9*((.L736-.L735)/4)
+	.db	5,33
+	.db	16+9*((.L737-.L736)/4)
+	.db	5,41
+	.db	18+9*((.L118-.L737)/4)
+	.db	5,17
+	.db	15+9*((.L738-.L118)/4)
+	.db	5,13
+	.db	16+9*((.L119-.L738)/4)
+	.db	5,21,9
+	.dh	.L739-.L119
+	.db	3,113,1,5,1,9
+	.dh	.L117-.L739
+	.db	3,19,1,5,5,7
+	.db	13+9*((.L740-.L117)/4)
+	.db	5,1,9
+	.dh	.L166-.L740
+	.db	3,1,0,1,1
+.L729:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__get_delta2')
+.L165:
+	.dw	-1
+	.dw	.L145
+	.dw	0
+	.dw	.L166-.L145
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__get_x')
+.L167:
+	.dw	599
+	.dh	3
+	.dw	.L168
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L170,.L169
+	.db	2
+	.dw	.L148
+	.db	3
+	.db	"_get_x",0
+	.db	1,193,4,12
+	.dw	.L175
+	.db	1,1
+	.dw	.L147,.L220,.L146
+	.db	4
+	.db	"x1",0
+	.db	1,193,4,23
+	.dw	.L175,.L221
+	.db	4
+	.db	"y1",0
+	.db	1,193,4,31
+	.dw	.L175,.L222
+	.db	4
+	.db	"x2",0
+	.db	1,193,4,39
+	.dw	.L175,.L223
+	.db	4
+	.db	"y2",0
+	.db	1,193,4,47
+	.dw	.L175,.L224
+	.db	4
+	.db	"y",0
+	.db	1,193,4,55
+	.dw	.L175,.L225
+	.db	4
+	.db	"left",0
+	.db	1,193,4,63
+	.dw	.L226,.L227
+	.db	5
+	.dw	.L147,.L220
+	.db	6
+	.db	"result",0
+	.db	1,195,4,10
+	.dw	.L175,.L228
+	.db	6
+	.db	"step",0
+	.db	1,196,4,10
+	.dw	.L175,.L229
+	.db	6
+	.db	"dx",0
+	.db	1,197,4,10
+	.dw	.L175,.L230
+	.db	6
+	.db	"dy",0
+	.db	1,197,4,14
+	.dw	.L175,.L231
+	.db	6
+	.db	"steep",0
+	.db	1,198,4,10
+	.dw	.L226,.L232
+	.db	6
+	.db	"extend",0
+	.db	1,199,4,10
+	.dw	.L226,.L233
+	.db	6
+	.db	"err",0
+	.db	1,200,4,10
+	.dw	.L175,.L234
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__get_x')
+.L168:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__get_x')
+.L169:
+	.dw	.L742-.L741
+.L741:
+	.dh	3
+	.dw	.L744-.L743
+.L743:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_segment.c",0
+	.db	0,0,0,0
+.L744:
+	.db	5,12,7,0,5,2
+	.dw	.L147
+	.db	3,192,4,1,5,5,9
+	.dh	.L582-.L147
+	.db	3,9,1,5,12,7,9
+	.dh	.L745-.L582
+	.db	3,119,1,5,5,9
+	.dh	.L576-.L745
+	.db	3,14,1,7
+	.db	14+9*((.L746-.L576)/4)
+	.db	5,1,9
+	.dh	.L747-.L746
+	.db	3,194,0,1,5,9,7,9
+	.dh	.L748-.L747
+	.db	3,64,1,5,5
+	.db	17+9*((.L123-.L748)/4)
+	.db	5,17
+	.db	16+9*((.L749-.L123)/4)
+	.db	5,21
+	.db	15+9*((.L750-.L749)/4)
+	.db	5,18
+	.db	18+9*((.L125-.L750)/4)
+	.db	5,21
+	.db	15+9*((.L579-.L125)/4)
+	.db	5,17
+	.db	17+9*((.L126-.L579)/4)
+	.db	5,5
+	.db	16+9*((.L581-.L126)/4)
+	.db	5,22
+	.db	16+9*((.L575-.L581)/4)
+	.db	5,26
+	.db	15+9*((.L574-.L575)/4)
+	.db	5,22
+	.db	13+9*((.L751-.L574)/4)
+	.db	5,26
+	.db	15+9*((.L752-.L751)/4)
+	.db	5,21
+	.db	18+9*((.L127-.L752)/4)
+	.db	5,26
+	.db	15+9*((.L580-.L127)/4)
+	.db	5,33
+	.db	16+9*((.L128-.L580)/4)
+	.db	5,5
+	.db	16+9*((.L753-.L128)/4)
+	.db	5,33,7
+	.db	12+9*((.L754-.L753)/4)
+	.db	5,23
+	.db	18+9*((.L577-.L754)/4)
+	.db	7
+	.db	14+9*((.L755-.L577)/4)
+	.db	5,13
+	.db	16+9*((.L132-.L755)/4)
+	.db	7
+	.db	14+9*((.L756-.L132)/4)
+	.db	5,31
+	.db	16+9*((.L757-.L756)/4)
+	.db	5,30
+	.db	15+9*((.L758-.L757)/4)
+	.db	5,17
+	.db	17+9*((.L133-.L758)/4)
+	.db	5,23,9
+	.dh	.L759-.L133
+	.db	3,120,1,5,26,7,9
+	.dh	.L760-.L759
+	.db	3,7,1,5,23,9
+	.dh	.L761-.L760
+	.db	3,121,1,5,16,9
+	.dh	.L130-.L761
+	.db	3,15,1,5,23
+	.db	16+9*((.L762-.L130)/4)
+	.db	7
+	.db	14+9*((.L763-.L762)/4)
+	.db	5,16
+	.db	12+9*((.L764-.L763)/4)
+	.db	5,13
+	.db	18+9*((.L136-.L764)/4)
+	.db	7
+	.db	14+9*((.L765-.L136)/4)
+	.db	5,21
+	.db	16+9*((.L766-.L765)/4)
+	.db	5,30
+	.db	15+9*((.L767-.L766)/4)
+	.db	5,27
+	.db	16+9*((.L137-.L767)/4)
+	.db	5,23,9
+	.dh	.L768-.L137
+	.db	3,121,1,5,26,7,9
+	.dh	.L769-.L768
+	.db	3,8,1,5,9
+	.db	16+9*((.L135-.L769)/4)
+	.db	7
+	.db	14+9*((.L770-.L135)/4)
+	.db	5,27
+	.db	16+9*((.L771-.L770)/4)
+	.db	5,1,9
+	.dh	.L122-.L771
+	.db	3,5,1,5,5,7
+	.db	13+9*((.L772-.L122)/4)
+	.db	5,1,9
+	.dh	.L171-.L772
+	.db	3,1,0,1,1
+.L742:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__get_x')
+.L170:
+	.dw	-1
+	.dw	.L147
+	.dw	0
+	.dw	.L171-.L147
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L217:
+	.dw	-1
+	.dw	.L145,.L116-.L145,.L214-.L145
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L186:
+	.dw	-1
+	.dw	.L143,.L281-.L143,.L282-.L143
+	.dh	1
+	.db	82
+	.dw	.L143-.L143,.L329-.L143
+	.dh	1
+	.db	86
+	.dw	.L355-.L143,.L278-.L143
+	.dh	2
+	.db	145,120
+	.dw	.L368-.L143,.L369-.L143
+	.dh	1
+	.db	86
+	.dw	.L422-.L143,.L423-.L143
+	.dh	1
+	.db	82
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,120
+	.dw	.L537-.L143,.L538-.L143
+	.dh	1
+	.db	82
+	.dw	.L559-.L143,.L553-.L143
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L223:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L126-.L147
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L193:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,124
+	.dw	.L389-.L143,.L391-.L143
+	.dh	1
+	.db	83
+	.dw	.L445-.L143,.L446-.L143
+	.dh	1
+	.db	82
+	.dw	.L483-.L143,.L484-.L143
+	.dh	1
+	.db	82
+	.dw	.L496-.L143,.L278-.L143
+	.dh	2
+	.db	145,124
+	.dw	.L510-.L143,.L511-.L143
+	.dh	1
+	.db	82
+	.dw	.L494-.L143,.L516-.L143
+	.dh	1
+	.db	82
+	.dw	.L557-.L143,.L558-.L143
+	.dh	1
+	.db	83
+	.dw	.L54-.L143,.L549-.L143
+	.dh	1
+	.db	82
+	.dw	.L308-.L143,.L563-.L143
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L177:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L8-.L141
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L222:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L215:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L214-.L145
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L189:
+	.dw	-1
+	.dw	.L143,.L277-.L143,.L278-.L143
+	.dh	1
+	.db	100
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L22-.L143,.L29-.L143
+	.dh	1
+	.db	100
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,4
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,4
+	.dw	0,0
+.L202:
+	.dw	0,0
+.L212:
+	.dw	-1
+	.dw	.L143,.L330-.L143,.L331-.L143
+	.dh	1
+	.db	82
+	.dw	.L361-.L143,.L278-.L143
+	.dh	2
+	.db	145,112
+	.dw	.L374-.L143,.L329-.L143
+	.dh	1
+	.db	83
+	.dw	.L375-.L143,.L376-.L143
+	.dh	1
+	.db	82
+	.dw	.L481-.L143,.L482-.L143
+	.dh	1
+	.db	82
+	.dw	.L499-.L143,.L500-.L143
+	.dh	1
+	.db	82
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,112
+	.dw	0,0
+.L195:
+	.dw	-1
+	.dw	.L143,.L273-.L143,.L274-.L143
+	.dh	1
+	.db	99
+	.dw	.L279-.L143,.L280-.L143
+	.dh	1
+	.db	98
+	.dw	.L297-.L143,.L109-.L143
+	.dh	1
+	.db	82
+	.dw	.L304-.L143,.L305-.L143
+	.dh	2
+	.db	145,92
+	.dw	.L307-.L143,.L308-.L143
+	.dh	1
+	.db	82
+	.dw	.L314-.L143,.L315-.L143
+	.dh	1
+	.db	99
+	.dw	.L324-.L143,.L27-.L143
+	.dh	1
+	.db	82
+	.dw	.L327-.L143,.L328-.L143
+	.dh	1
+	.db	84
+	.dw	.L334-.L143,.L335-.L143
+	.dh	1
+	.db	84
+	.dw	.L342-.L143,.L343-.L143
+	.dh	1
+	.db	84
+	.dw	.L351-.L143,.L328-.L143
+	.dh	1
+	.db	85
+	.dw	.L356-.L143,.L22-.L143
+	.dh	1
+	.db	82
+	.dw	.L357-.L143,.L358-.L143
+	.dh	1
+	.db	84
+	.dw	.L346-.L143,.L360-.L143
+	.dh	1
+	.db	80
+	.dw	.L319-.L143,.L53-.L143
+	.dh	1
+	.db	99
+	.dw	.L377-.L143,.L378-.L143
+	.dh	1
+	.db	99
+	.dw	.L387-.L143,.L388-.L143
+	.dh	1
+	.db	99
+	.dw	.L349-.L143,.L350-.L143
+	.dh	1
+	.db	84
+	.dw	.L394-.L143,.L395-.L143
+	.dh	1
+	.db	84
+	.dw	.L353-.L143,.L410-.L143
+	.dh	1
+	.db	99
+	.dw	.L279-.L143,.L280-.L143
+	.dh	1
+	.db	84
+	.dw	.L360-.L143,.L278-.L143
+	.dh	1
+	.db	99
+	.dw	.L421-.L143,.L350-.L143
+	.dh	1
+	.db	85
+	.dw	.L280-.L143,.L382-.L143
+	.dh	1
+	.db	85
+	.dw	.L432-.L143,.L65-.L143
+	.dh	1
+	.db	82
+	.dw	.L444-.L143,.L340-.L143
+	.dh	1
+	.db	84
+	.dw	.L335-.L143,.L33-.L143
+	.dh	1
+	.db	82
+	.dw	.L392-.L143,.L384-.L143
+	.dh	1
+	.db	84
+	.dw	.L448-.L143,.L343-.L143
+	.dh	1
+	.db	85
+	.dw	.L449-.L143,.L450-.L143
+	.dh	1
+	.db	84
+	.dw	.L46-.L143,.L451-.L143
+	.dh	1
+	.db	98
+	.dw	.L452-.L143,.L444-.L143
+	.dh	1
+	.db	99
+	.dw	.L460-.L143,.L461-.L143
+	.dh	1
+	.db	84
+	.dw	.L462-.L143,.L448-.L143
+	.dh	1
+	.db	84
+	.dw	.L465-.L143,.L449-.L143
+	.dh	1
+	.db	99
+	.dw	.L25-.L143,.L471-.L143
+	.dh	1
+	.db	99
+	.dw	.L472-.L143,.L473-.L143
+	.dh	1
+	.db	99
+	.dw	.L405-.L143,.L324-.L143
+	.dh	1
+	.db	84
+	.dw	.L477-.L143,.L357-.L143
+	.dh	1
+	.db	99
+	.dw	.L398-.L143,.L399-.L143
+	.dh	1
+	.db	84
+	.dw	.L473-.L143,.L421-.L143
+	.dh	1
+	.db	84
+	.dw	.L378-.L143,.L487-.L143
+	.dh	1
+	.db	84
+	.dw	.L462-.L143,.L448-.L143
+	.dh	1
+	.db	98
+	.dw	.L449-.L143,.L450-.L143
+	.dh	1
+	.db	98
+	.dw	.L493-.L143,.L494-.L143
+	.dh	1
+	.db	82
+	.dw	.L357-.L143,.L358-.L143
+	.dh	1
+	.db	98
+	.dw	.L288-.L143,.L289-.L143
+	.dh	1
+	.db	84
+	.dw	.L473-.L143,.L421-.L143
+	.dh	1
+	.db	98
+	.dw	.L444-.L143,.L340-.L143
+	.dh	1
+	.db	98
+	.dw	.L505-.L143,.L405-.L143
+	.dh	1
+	.db	99
+	.dw	.L439-.L143,.L506-.L143
+	.dh	1
+	.db	99
+	.dw	.L39-.L143,.L46-.L143
+	.dh	2
+	.db	145,92
+	.dw	.L487-.L143,.L399-.L143
+	.dh	1
+	.db	85
+	.dw	.L395-.L143,.L28-.L143
+	.dh	1
+	.db	82
+	.dw	.L274-.L143,.L351-.L143
+	.dh	1
+	.db	84
+	.dw	.L27-.L143,.L395-.L143
+	.dh	1
+	.db	99
+	.dw	.L22-.L143,.L460-.L143
+	.dh	1
+	.db	99
+	.dw	.L320-.L143,.L407-.L143
+	.dh	1
+	.db	98
+	.dw	.L519-.L143,.L405-.L143
+	.dh	1
+	.db	82
+	.dw	.L506-.L143,.L521-.L143
+	.dh	1
+	.db	84
+	.dw	.L340-.L143,.L289-.L143
+	.dh	1
+	.db	85
+	.dw	.L450-.L143,.L384-.L143
+	.dh	1
+	.db	85
+	.dw	.L523-.L143,.L356-.L143
+	.dh	1
+	.db	84
+	.dw	.L526-.L143,.L462-.L143
+	.dh	1
+	.db	99
+	.dw	.L26-.L143,.L519-.L143
+	.dh	1
+	.db	99
+	.dw	.L378-.L143,.L487-.L143
+	.dh	1
+	.db	98
+	.dw	.L497-.L143,.L278-.L143
+	.dh	2
+	.db	145,92
+	.dw	.L388-.L143,.L25-.L143
+	.dh	1
+	.db	82
+	.dw	.L381-.L143,.L382-.L143
+	.dh	1
+	.db	84
+	.dw	.L544-.L143,.L497-.L143
+	.dh	1
+	.db	80
+	.dw	.L345-.L143,.L545-.L143
+	.dh	1
+	.db	80
+	.dw	.L28-.L143,.L334-.L143
+	.dh	1
+	.db	99
+	.dw	.L548-.L143,.L426-.L143
+	.dh	1
+	.db	84
+	.dw	.L545-.L143,.L360-.L143
+	.dh	1
+	.db	98
+	.dw	.L33-.L143,.L29-.L143
+	.dh	1
+	.db	99
+	.dw	.L290-.L143,.L397-.L143
+	.dh	1
+	.db	84
+	.dw	.L274-.L143,.L351-.L143
+	.dh	1
+	.db	98
+	.dw	.L555-.L143,.L279-.L143
+	.dh	1
+	.db	99
+	.dw	.L471-.L143,.L567-.L143
+	.dh	1
+	.db	84
+	.dw	.L358-.L143,.L397-.L143
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L221:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	1
+	.db	84
+	.dw	0,0
+.L232:
+	.dw	-1
+	.dw	.L147,.L574-.L147,.L127-.L147
+	.dh	1
+	.db	89
+	.dw	.L575-.L147,.L574-.L147
+	.dh	1
+	.db	80
+	.dw	.L580-.L147,.L136-.L147
+	.dh	1
+	.db	89
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L182:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,8
+	.dw	.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,8
+	.dw	.L250-.L141,.L6-.L141
+	.dh	1
+	.db	89
+	.dw	0,0
+.L180:
+	.dw	-1
+	.dw	.L141,.L3-.L141,.L238-.L141
+	.dh	1
+	.db	82
+	.dw	.L5-.L141,.L242-.L141
+	.dh	1
+	.db	82
+	.dw	.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,0
+	.dw	.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,0
+	.dw	.L4-.L141,.L246-.L141
+	.dh	1
+	.db	82
+	.dw	.L248-.L141,.L249-.L141
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L218:
+	.dw	-1
+	.dw	.L145,.L573-.L145,.L214-.L145
+	.dh	1
+	.db	82
+	.dw	.L145-.L145,.L573-.L145
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L140:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L235-.L141
+	.dh	2
+	.db	141,0
+	.dw	.L235-.L141,.L172-.L141
+	.dh	2
+	.db	141,16
+	.dw	.L172-.L141,.L172-.L141
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L142:
+	.dw	-1
+	.dw	.L143,.L143-.L143,.L251-.L143
+	.dh	2
+	.db	141,0
+	.dw	.L251-.L143,.L183-.L143
+	.dh	3
+	.db	141,232,0
+	.dw	.L183-.L143,.L183-.L143
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L219:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L214-.L145
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L187:
+	.dw	-1
+	.dw	.L143,.L291-.L143,.L292-.L143
+	.dh	1
+	.db	102
+	.dw	.L294-.L143,.L295-.L143
+	.dh	1
+	.db	102
+	.dw	.L291-.L143,.L39-.L143
+	.dh	1
+	.db	85
+	.dw	.L298-.L143,.L25-.L143
+	.dh	1
+	.db	85
+	.dw	.L316-.L143,.L44-.L143
+	.dh	1
+	.db	85
+	.dw	.L336-.L143,.L43-.L143
+	.dh	1
+	.db	85
+	.dw	.L354-.L143,.L26-.L143
+	.dh	1
+	.db	85
+	.dw	.L304-.L143,.L356-.L143
+	.dh	1
+	.db	102
+	.dw	.L364-.L143,.L365-.L143
+	.dh	1
+	.db	102
+	.dw	.L379-.L143,.L380-.L143
+	.dh	1
+	.db	102
+	.dw	.L336-.L143,.L386-.L143
+	.dh	1
+	.db	102
+	.dw	.L405-.L143,.L27-.L143
+	.dh	1
+	.db	85
+	.dw	.L414-.L143,.L415-.L143
+	.dh	1
+	.db	102
+	.dw	.L418-.L143,.L310-.L143
+	.dh	1
+	.db	102
+	.dw	.L419-.L143,.L278-.L143
+	.dh	1
+	.db	102
+	.dw	.L304-.L143,.L22-.L143
+	.dh	1
+	.db	85
+	.dw	.L425-.L143,.L426-.L143
+	.dh	1
+	.db	85
+	.dw	.L429-.L143,.L50-.L143
+	.dh	1
+	.db	85
+	.dw	.L430-.L143,.L431-.L143
+	.dh	1
+	.db	102
+	.dw	.L143-.L143,.L329-.L143
+	.dh	1
+	.db	87
+	.dw	.L439-.L143,.L24-.L143
+	.dh	1
+	.db	85
+	.dw	.L455-.L143,.L456-.L143
+	.dh	1
+	.db	102
+	.dw	.L429-.L143,.L441-.L143
+	.dh	1
+	.db	102
+	.dw	.L475-.L143,.L476-.L143
+	.dh	1
+	.db	102
+	.dw	.L480-.L143,.L64-.L143
+	.dh	1
+	.db	102
+	.dw	.L492-.L143,.L373-.L143
+	.dh	1
+	.db	85
+	.dw	.L501-.L143,.L33-.L143
+	.dh	1
+	.db	85
+	.dw	.L368-.L143,.L13-.L143
+	.dh	1
+	.db	87
+	.dw	.L418-.L143,.L41-.L143
+	.dh	1
+	.db	85
+	.dw	.L507-.L143,.L508-.L143
+	.dh	1
+	.db	102
+	.dw	.L509-.L143,.L276-.L143
+	.dh	1
+	.db	85
+	.dw	.L512-.L143,.L513-.L143
+	.dh	1
+	.db	102
+	.dw	.L470-.L143,.L443-.L143
+	.dh	1
+	.db	102
+	.dw	.L372-.L143,.L492-.L143
+	.dh	1
+	.db	102
+	.dw	.L532-.L143,.L533-.L143
+	.dh	1
+	.db	102
+	.dw	.L539-.L143,.L395-.L143
+	.dh	1
+	.db	85
+	.dw	.L316-.L143,.L333-.L143
+	.dh	1
+	.db	102
+	.dw	.L406-.L143,.L509-.L143
+	.dh	1
+	.db	102
+	.dw	.L22-.L143,.L29-.L143
+	.dh	1
+	.db	102
+	.dw	.L470-.L143,.L42-.L143
+	.dh	1
+	.db	85
+	.dw	.L59-.L143,.L413-.L143
+	.dh	1
+	.db	102
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L234:
+	.dw	-1
+	.dw	.L147,.L128-.L147,.L122-.L147
+	.dh	1
+	.db	90
+	.dw	0,0
+.L228:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L204:
+	.dw	0,0
+.L194:
+	.dw	-1
+	.dw	.L143,.L283-.L143,.L284-.L143
+	.dh	1
+	.db	82
+	.dw	.L39-.L143,.L46-.L143
+	.dh	2
+	.db	145,96
+	.dw	.L337-.L143,.L60-.L143
+	.dh	1
+	.db	83
+	.dw	.L338-.L143,.L339-.L143
+	.dh	1
+	.db	82
+	.dw	.L403-.L143,.L404-.L143
+	.dh	1
+	.db	83
+	.dw	.L301-.L143,.L424-.L143
+	.dh	1
+	.db	82
+	.dw	.L54-.L143,.L61-.L143
+	.dh	1
+	.db	83
+	.dw	.L453-.L143,.L305-.L143
+	.dh	2
+	.db	145,96
+	.dw	.L457-.L143,.L458-.L143
+	.dh	1
+	.db	83
+	.dw	.L55-.L143,.L58-.L143
+	.dh	1
+	.db	83
+	.dw	.L570-.L143,.L64-.L143
+	.dh	1
+	.db	83
+	.dw	0,0
+.L184:
+	.dw	-1
+	.dw	.L143,.L306-.L143,.L79-.L143
+	.dh	1
+	.db	84
+	.dw	.L311-.L143,.L69-.L143
+	.dh	1
+	.db	84
+	.dw	.L312-.L143,.L278-.L143
+	.dh	2
+	.db	145,108
+	.dw	.L366-.L143,.L99-.L143
+	.dh	1
+	.db	84
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,108
+	.dw	.L534-.L143,.L369-.L143
+	.dh	1
+	.db	84
+	.dw	.L541-.L143,.L329-.L143
+	.dh	1
+	.db	82
+	.dw	.L143-.L143,.L488-.L143
+	.dh	1
+	.db	84
+	.dw	.L569-.L143,.L89-.L143
+	.dh	1
+	.db	84
+	.dw	0,0
+.L199:
+	.dw	-1
+	.dw	.L143,.L299-.L143,.L11-.L143
+	.dh	1
+	.db	110
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L224:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L581-.L147
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L209:
+	.dw	-1
+	.dw	.L143,.L272-.L143,.L71-.L143
+	.dh	1
+	.db	93
+	.dw	.L293-.L143,.L74-.L143
+	.dh	1
+	.db	93
+	.dw	.L296-.L143,.L94-.L143
+	.dh	1
+	.db	93
+	.dw	.L302-.L143,.L303-.L143
+	.dh	1
+	.db	93
+	.dw	.L317-.L143,.L318-.L143
+	.dh	1
+	.db	93
+	.dw	.L323-.L143,.L278-.L143
+	.dh	2
+	.db	145,84
+	.dw	.L325-.L143,.L326-.L143
+	.dh	1
+	.db	93
+	.dw	.L344-.L143,.L69-.L143
+	.dh	1
+	.db	85
+	.dw	.L345-.L143,.L346-.L143
+	.dh	1
+	.db	83
+	.dw	.L348-.L143,.L99-.L143
+	.dh	1
+	.db	85
+	.dw	.L359-.L143,.L344-.L143
+	.dh	1
+	.db	93
+	.dw	.L367-.L143,.L101-.L143
+	.dh	1
+	.db	93
+	.dw	.L370-.L143,.L371-.L143
+	.dh	1
+	.db	93
+	.dw	.L396-.L143,.L303-.L143
+	.dh	1
+	.db	82
+	.dw	.L318-.L143,.L79-.L143
+	.dh	1
+	.db	85
+	.dw	.L435-.L143,.L436-.L143
+	.dh	1
+	.db	93
+	.dw	.L436-.L143,.L89-.L143
+	.dh	1
+	.db	85
+	.dw	.L463-.L143,.L81-.L143
+	.dh	1
+	.db	93
+	.dw	.L466-.L143,.L91-.L143
+	.dh	1
+	.db	93
+	.dw	.L491-.L143,.L104-.L143
+	.dh	1
+	.db	93
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,84
+	.dw	.L518-.L143,.L348-.L143
+	.dh	1
+	.db	93
+	.dw	.L527-.L143,.L528-.L143
+	.dh	1
+	.db	82
+	.dw	.L531-.L143,.L326-.L143
+	.dh	1
+	.db	82
+	.dw	.L550-.L143,.L371-.L143
+	.dh	1
+	.db	82
+	.dw	.L556-.L143,.L84-.L143
+	.dh	1
+	.db	93
+	.dw	.L468-.L143,.L528-.L143
+	.dh	1
+	.db	93
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L179:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L6-.L141
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L188:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	1
+	.db	101
+	.dw	.L433-.L143,.L278-.L143
+	.dh	1
+	.db	101
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L181:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,4
+	.dw	.L141-.L141,.L172-.L141
+	.dh	2
+	.db	145,4
+	.dw	.L3-.L141,.L240-.L141
+	.dh	1
+	.db	83
+	.dw	.L5-.L141,.L241-.L141
+	.dh	1
+	.db	83
+	.dw	.L243-.L141,.L244-.L141
+	.dh	1
+	.db	83
+	.dw	.L4-.L141,.L245-.L141
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L208:
+	.dw	-1
+	.dw	.L143,.L353-.L143,.L53-.L143
+	.dh	1
+	.db	82
+	.dw	0,0
+.L207:
+	.dw	-1
+	.dw	.L143,.L73-.L143,.L69-.L143
+	.dh	1
+	.db	86
+	.dw	.L83-.L143,.L79-.L143
+	.dh	1
+	.db	86
+	.dw	.L93-.L143,.L89-.L143
+	.dh	1
+	.db	86
+	.dw	.L103-.L143,.L99-.L143
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L230:
+	.dw	-1
+	.dw	.L147,.L126-.L147,.L132-.L147
+	.dh	1
+	.db	86
+	.dw	.L130-.L147,.L122-.L147
+	.dh	1
+	.db	86
+	.dw	0,0
+.L233:
+	.dw	-1
+	.dw	.L147,.L577-.L147,.L132-.L147
+	.dh	1
+	.db	83
+	.dw	.L130-.L147,.L122-.L147
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L144:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L214-.L145
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L227:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	2
+	.db	145,4
+	.dw	.L576-.L147,.L577-.L147
+	.dh	1
+	.db	83
+	.dw	0,0
+.L229:
+	.dw	-1
+	.dw	.L147,.L578-.L147,.L125-.L147
+	.dh	1
+	.db	88
+	.dw	.L579-.L147,.L122-.L147
+	.dh	1
+	.db	88
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L174:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L6-.L141
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L185:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	1
+	.db	103
+	.dw	.L289-.L143,.L83-.L143
+	.dh	1
+	.db	103
+	.dw	.L143-.L143,.L329-.L143
+	.dh	1
+	.db	85
+	.dw	.L393-.L143,.L71-.L143
+	.dh	1
+	.db	103
+	.dw	.L408-.L143,.L369-.L143
+	.dh	1
+	.db	85
+	.dw	.L416-.L143,.L101-.L143
+	.dh	1
+	.db	103
+	.dw	.L384-.L143,.L103-.L143
+	.dh	1
+	.db	103
+	.dw	.L399-.L143,.L93-.L143
+	.dh	1
+	.db	103
+	.dw	.L350-.L143,.L94-.L143
+	.dh	1
+	.db	103
+	.dw	.L447-.L143,.L91-.L143
+	.dh	1
+	.db	103
+	.dw	.L382-.L143,.L74-.L143
+	.dh	1
+	.db	103
+	.dw	.L459-.L143,.L278-.L143
+	.dh	1
+	.db	103
+	.dw	.L467-.L143,.L468-.L143
+	.dh	1
+	.db	103
+	.dw	.L328-.L143,.L73-.L143
+	.dh	1
+	.db	103
+	.dw	.L485-.L143,.L370-.L143
+	.dh	1
+	.db	103
+	.dw	.L495-.L143,.L302-.L143
+	.dh	1
+	.db	103
+	.dw	.L520-.L143,.L325-.L143
+	.dh	1
+	.db	103
+	.dw	.L343-.L143,.L84-.L143
+	.dh	1
+	.db	103
+	.dw	.L397-.L143,.L104-.L143
+	.dh	1
+	.db	103
+	.dw	.L566-.L143,.L81-.L143
+	.dh	1
+	.db	103
+	.dw	0,0
+.L206:
+	.dw	0,0
+.L203:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_segment')
+.L176:
+	.dw	-1
+	.dw	.L141,.L3-.L141,.L239-.L141
+	.dh	1
+	.db	85
+	.dw	.L5-.L141,.L9-.L141
+	.dh	1
+	.db	85
+	.dw	.L141-.L141,.L247-.L141
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L146:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L192:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,72
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,72
+	.dw	0,0
+.L213:
+	.dw	-1
+	.dw	.L143,.L549-.L143,.L510-.L143
+	.dh	1
+	.db	82
+	.dw	0,0
+.L201:
+	.dw	-1
+	.dw	.L143,.L413-.L143,.L11-.L143
+	.dh	1
+	.db	100
+	.dw	0,0
+.L197:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	1
+	.db	88
+	.dw	.L21-.L143,.L517-.L143
+	.dh	1
+	.db	88
+	.dw	.L535-.L143,.L536-.L143
+	.dh	1
+	.db	83
+	.dw	.L536-.L143,.L278-.L143
+	.dh	1
+	.db	88
+	.dw	.L474-.L143,.L446-.L143
+	.dh	1
+	.db	88
+	.dw	0,0
+.L190:
+	.dw	-1
+	.dw	.L143,.L285-.L143,.L99-.L143
+	.dh	1
+	.db	83
+	.dw	.L362-.L143,.L89-.L143
+	.dh	1
+	.db	83
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,8
+	.dw	.L454-.L143,.L369-.L143
+	.dh	1
+	.db	82
+	.dw	.L488-.L143,.L329-.L143
+	.dh	1
+	.db	84
+	.dw	.L329-.L143,.L489-.L143
+	.dh	1
+	.db	82
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,8
+	.dw	.L552-.L143,.L69-.L143
+	.dh	1
+	.db	83
+	.dw	.L560-.L143,.L79-.L143
+	.dh	1
+	.db	83
+	.dw	0,0
+.L200:
+	.dw	-1
+	.dw	.L143,.L389-.L143,.L390-.L143
+	.dh	1
+	.db	80
+	.dw	.L390-.L143,.L11-.L143
+	.dh	1
+	.db	101
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_delta2')
+.L216:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L214-.L145
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L198:
+	.dw	-1
+	.dw	.L143,.L321-.L143,.L322-.L143
+	.dh	1
+	.db	89
+	.dw	.L143-.L143,.L278-.L143
+	.dh	2
+	.db	145,0
+	.dw	.L400-.L143,.L401-.L143
+	.dh	1
+	.db	89
+	.dw	.L411-.L143,.L412-.L143
+	.dh	1
+	.db	89
+	.dw	.L38-.L143,.L420-.L143
+	.dh	1
+	.db	89
+	.dw	.L427-.L143,.L428-.L143
+	.dh	1
+	.db	89
+	.dw	.L433-.L143,.L434-.L143
+	.dh	1
+	.db	101
+	.dw	.L474-.L143,.L446-.L143
+	.dh	1
+	.db	89
+	.dw	.L44-.L143,.L486-.L143
+	.dh	1
+	.db	89
+	.dw	.L514-.L143,.L515-.L143
+	.dh	1
+	.db	89
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,0
+	.dw	.L40-.L143,.L542-.L143
+	.dh	1
+	.db	89
+	.dw	.L42-.L143,.L543-.L143
+	.dh	1
+	.db	89
+	.dw	.L434-.L143,.L278-.L143
+	.dh	1
+	.db	89
+	.dw	.L22-.L143,.L29-.L143
+	.dh	1
+	.db	89
+	.dw	.L561-.L143,.L562-.L143
+	.dh	1
+	.db	89
+	.dw	.L571-.L143,.L572-.L143
+	.dh	1
+	.db	89
+	.dw	0,0
+.L210:
+	.dw	-1
+	.dw	.L143,.L286-.L143,.L287-.L143
+	.dh	1
+	.db	82
+	.dw	.L347-.L143,.L278-.L143
+	.dh	2
+	.db	145,80
+	.dw	.L346-.L143,.L438-.L143
+	.dh	1
+	.db	83
+	.dw	.L478-.L143,.L479-.L143
+	.dh	1
+	.db	82
+	.dw	.L503-.L143,.L504-.L143
+	.dh	1
+	.db	82
+	.dw	.L564-.L143,.L565-.L143
+	.dh	1
+	.db	82
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L231:
+	.dw	-1
+	.dw	.L147,.L581-.L147,.L136-.L147
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L211:
+	.dw	-1
+	.dw	.L143,.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,116
+	.dw	.L332-.L143,.L278-.L143
+	.dh	2
+	.db	145,116
+	.dw	.L438-.L143,.L374-.L143
+	.dh	1
+	.db	83
+	.dw	.L282-.L143,.L547-.L143
+	.dh	1
+	.db	82
+	.dw	.L423-.L143,.L551-.L143
+	.dh	1
+	.db	82
+	.dw	.L553-.L143,.L554-.L143
+	.dh	1
+	.db	82
+	.dw	.L538-.L143,.L568-.L143
+	.dh	1
+	.db	82
+	.dw	0,0
+.L196:
+	.dw	-1
+	.dw	.L143,.L275-.L143,.L276-.L143
+	.dh	1
+	.db	97
+	.dw	.L288-.L143,.L289-.L143
+	.dh	1
+	.db	87
+	.dw	.L290-.L143,.L104-.L143
+	.dh	1
+	.db	87
+	.dw	.L300-.L143,.L301-.L143
+	.dh	1
+	.db	82
+	.dw	.L309-.L143,.L310-.L143
+	.dh	1
+	.db	84
+	.dw	.L313-.L143,.L111-.L143
+	.dh	1
+	.db	82
+	.dw	.L319-.L143,.L320-.L143
+	.dh	1
+	.db	96
+	.dw	.L50-.L143,.L46-.L143
+	.dh	1
+	.db	97
+	.dw	.L333-.L143,.L44-.L143
+	.dh	1
+	.db	82
+	.dw	.L340-.L143,.L341-.L143
+	.dh	1
+	.db	97
+	.dw	.L349-.L143,.L350-.L143
+	.dh	1
+	.db	86
+	.dw	.L352-.L143,.L353-.L143
+	.dh	1
+	.db	97
+	.dw	.L363-.L143,.L67-.L143
+	.dh	1
+	.db	82
+	.dw	.L372-.L143,.L373-.L143
+	.dh	1
+	.db	84
+	.dw	.L381-.L143,.L382-.L143
+	.dh	1
+	.db	86
+	.dw	.L383-.L143,.L384-.L143
+	.dh	1
+	.db	86
+	.dw	.L385-.L143,.L386-.L143
+	.dh	1
+	.db	84
+	.dw	.L341-.L143,.L288-.L143
+	.dh	1
+	.db	96
+	.dw	.L383-.L143,.L392-.L143
+	.dh	1
+	.db	96
+	.dw	.L290-.L143,.L397-.L143
+	.dh	1
+	.db	86
+	.dw	.L398-.L143,.L399-.L143
+	.dh	1
+	.db	87
+	.dw	.L349-.L143,.L350-.L143
+	.dh	1
+	.db	96
+	.dw	.L402-.L143,.L42-.L143
+	.dh	1
+	.db	82
+	.dw	.L316-.L143,.L333-.L143
+	.dh	1
+	.db	84
+	.dw	.L406-.L143,.L276-.L143
+	.dh	1
+	.db	84
+	.dw	.L407-.L143,.L53-.L143
+	.dh	1
+	.db	96
+	.dw	.L409-.L143,.L398-.L143
+	.dh	1
+	.db	96
+	.dw	.L410-.L143,.L407-.L143
+	.dh	1
+	.db	97
+	.dw	.L417-.L143,.L40-.L143
+	.dh	1
+	.db	97
+	.dw	.L280-.L143,.L381-.L143
+	.dh	1
+	.db	97
+	.dw	.L381-.L143,.L382-.L143
+	.dh	1
+	.db	96
+	.dw	.L290-.L143,.L397-.L143
+	.dh	1
+	.db	96
+	.dw	.L437-.L143,.L402-.L143
+	.dh	1
+	.db	97
+	.dw	.L440-.L143,.L441-.L143
+	.dh	1
+	.db	84
+	.dw	.L442-.L143,.L443-.L143
+	.dh	1
+	.db	84
+	.dw	.L329-.L143,.L278-.L143
+	.dh	1
+	.db	96
+	.dw	.L292-.L143,.L39-.L143
+	.dh	1
+	.db	82
+	.dw	.L276-.L143,.L45-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L381-.L143,.L74-.L143
+	.dh	1
+	.db	87
+	.dw	.L22-.L143,.L29-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L464-.L143,.L328-.L143
+	.dh	1
+	.db	86
+	.dw	.L341-.L143,.L289-.L143
+	.dh	1
+	.db	86
+	.dw	.L469-.L143,.L329-.L143
+	.dh	1
+	.db	80
+	.dw	.L470-.L143,.L42-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L342-.L143,.L343-.L143
+	.dh	1
+	.db	86
+	.dw	.L291-.L143,.L39-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L490-.L143,.L329-.L143
+	.dh	1
+	.db	97
+	.dw	.L349-.L143,.L94-.L143
+	.dh	1
+	.db	87
+	.dw	.L497-.L143,.L498-.L143
+	.dh	1
+	.db	80
+	.dw	.L336-.L143,.L43-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L502-.L143,.L316-.L143
+	.dh	1
+	.db	97
+	.dw	.L342-.L143,.L343-.L143
+	.dh	1
+	.db	96
+	.dw	.L464-.L143,.L327-.L143
+	.dh	1
+	.db	96
+	.dw	.L276-.L143,.L45-.L143
+	.dh	1
+	.db	82
+	.dw	.L522-.L143,.L292-.L143
+	.dh	1
+	.db	84
+	.dw	.L524-.L143,.L316-.L143
+	.dh	1
+	.db	82
+	.dw	.L525-.L143,.L44-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L46-.L143,.L451-.L143
+	.dh	1
+	.db	96
+	.dw	.L421-.L143,.L349-.L143
+	.dh	1
+	.db	97
+	.dw	.L448-.L143,.L342-.L143
+	.dh	1
+	.db	97
+	.dw	.L529-.L143,.L530-.L143
+	.dh	1
+	.db	97
+	.dw	.L392-.L143,.L384-.L143
+	.dh	1
+	.db	87
+	.dw	.L540-.L143,.L41-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L441-.L143,.L50-.L143
+	.dh	1
+	.db	82
+	.dw	.L429-.L143,.L46-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L327-.L143,.L328-.L143
+	.dh	1
+	.db	87
+	.dw	.L450-.L143,.L383-.L143
+	.dh	1
+	.db	97
+	.dw	.L541-.L143,.L490-.L143
+	.dh	1
+	.db	80
+	.dw	.L546-.L143,.L338-.L143
+	.dh	1
+	.db	82
+	.dw	.L358-.L143,.L290-.L143
+	.dh	1
+	.db	97
+	.dw	.L373-.L143,.L40-.L143
+	.dh	2
+	.db	145,88
+	.dw	.L342-.L143,.L84-.L143
+	.dh	1
+	.db	87
+	.dw	.L351-.L143,.L464-.L143
+	.dh	1
+	.db	97
+	.dw	.L418-.L143,.L41-.L143
+	.dh	1
+	.db	97
+	.dw	.L22-.L143,.L29-.L143
+	.dh	1
+	.db	96
+	.dw	.L409-.L143,.L399-.L143
+	.dh	1
+	.db	86
+	.dw	.L487-.L143,.L409-.L143
+	.dh	1
+	.db	97
+	.dw	.L498-.L143,.L278-.L143
+	.dh	2
+	.db	145,88
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__get_x')
+.L225:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L220-.L147
+	.dh	2
+	.db	145,0
+	.dw	.L147-.L147,.L220-.L147
+	.dh	2
+	.db	145,0
+	.dw	.L147-.L147,.L220-.L147
+	.dh	2
+	.db	145,0
+	.dw	.L582-.L147,.L122-.L147
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_segment')
+.L205:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L773:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_graphics_fill_segment')
+	.dw	48
+	.dw	.L773,.L141,.L172-.L141
+	.db	4
+	.dw	(.L235-.L141)/4
+	.db	19,16,22,29,3,19,141,16,4
+	.dw	(.L236-.L235)/4
+	.db	17,31,124,4
+	.dw	(.L237-.L236)/4
+	.db	223,4
+	.dw	(.L172-.L237)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__graphics_fill_segment')
+	.dw	184
+	.dw	.L773,.L143,.L183-.L143
+	.db	4
+	.dw	(.L251-.L143)/4
+	.db	19,232,0,22,29,4,19,141,232,0,4
+	.dw	(.L252-.L251)/4
+	.db	17,31,160,127,4
+	.dw	(.L253-.L252)/4
+	.db	17,16,164,127,4
+	.dw	(.L254-.L253)/4
+	.db	17,17,168,127,4
+	.dw	(.L255-.L254)/4
+	.db	17,18,172,127,4
+	.dw	(.L256-.L255)/4
+	.db	17,19,176,127,4
+	.dw	(.L257-.L256)/4
+	.db	17,20,180,127,4
+	.dw	(.L258-.L257)/4
+	.db	17,21,184,127,4
+	.dw	(.L259-.L258)/4
+	.db	17,22,188,127,4
+	.dw	(.L260-.L259)/4
+	.db	17,23,64,4
+	.dw	(.L261-.L260)/4
+	.db	17,30,68,4
+	.dw	(.L262-.L261)/4
+	.db	222,4
+	.dw	(.L263-.L262)/4
+	.db	215,4
+	.dw	(.L264-.L263)/4
+	.db	214,4
+	.dw	(.L265-.L264)/4
+	.db	213,4
+	.dw	(.L266-.L265)/4
+	.db	212,4
+	.dw	(.L267-.L266)/4
+	.db	211,4
+	.dw	(.L268-.L267)/4
+	.db	210,4
+	.dw	(.L269-.L268)/4
+	.db	209,4
+	.dw	(.L270-.L269)/4
+	.db	208,4
+	.dw	(.L271-.L270)/4
+	.db	223,4
+	.dw	(.L183-.L271)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__get_delta2')
+	.dw	40
+	.dw	.L773,.L145,.L214-.L145
+	.db	8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__get_x')
+	.dw	32
+	.dw	.L773,.L147,.L220-.L147
+	.db	8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	; Module end
+	.end

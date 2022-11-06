@@ -1,0 +1,148 @@
+###############################################################################
+### Altium HDL Synthesizer 1.1.0.1
+### Copyright (C) 2005-2009, Altium Limited. All Rights Reserved
+###############################################################################
+### Timestamp: 16/11/2010 04:43:36 p.m.
+###############################################################################
+### Commandline: AltiumSynthesizer.exe "-o" "TFT_MULTIFUNCIONAL.mof" "-p" "TFT_MULTIFUNCIONAL.mpf"
+###
+### Options:
+###
+### Synthesizing TFT_MULTIFUNCIONAL for Spartan3AN
+### Entity                  : TFT_MULTIFUNCIONAL
+### VerilogMode             : 1 (0=Verilog95, 1=Verilog2001, 2=VerilogSystem, 3=Ams)
+### VHDL87                  : False
+### Insert Toplevel Buffers : True
+###############################################################################
+### Compilation Report
+###############################################################################
+
+analyzing entity iobuf16b
+analyzing architecture structure
+analyzing entity configurable_u2
+analyzing architecture structure
+analyzing entity configurable_u3
+analyzing architecture structure
+analyzing entity configurable_dip
+analyzing architecture rtl
+analyzing entity configurable_led
+analyzing architecture structure
+analyzing entity configurable_spi
+analyzing architecture rtl
+analyzing entity configurable_sram
+analyzing architecture rtl
+analyzing entity configurable_tsk3000a_1
+analyzing architecture structure
+analyzing entity j16s_16b
+analyzing architecture structure
+analyzing entity configurable_wb_intercon_1
+analyzing architecture rtl
+analyzing entity configurable_wb_intercon_2
+analyzing architecture rtl
+analyzing entity configurable_wb_multimaster_1
+analyzing architecture rtl
+analyzing entity tft_touch
+analyzing architecture structure
+analyzing entity tft_multifuncional
+analyzing architecture structure
+###############################################################################
+### Elaboration Report
+###############################################################################
+
+executing IOBUF16B(STRUCTURE)
+executing configurable_u2(structure)
+executing configurable_u3(structure)
+executing configurable_dip(RTL)
+executing configurable_led(structure)
+##I|Configurable_led.VHD|172|-- possible Multiplexer: 32-1 for la_r
+##I|../vhdl_packages/syn_arit.vhd|1623|-- found LessThan: 8<8
+##I|../vhdl_packages/syn_arit.vhd|1697|-- found LessThan: 5<5
+##I|../vhdl_packages/syn_unsi.vhd|118|-- found Adder: 7+7
+##I|Configurable_led.VHD|374|-- possible Multiplexer: 32-1 for dat_o
+executing configurable_spi(RTL)
+executing Configurable_SRAM(RTL)
+##I|Configurable_SRAM.VHD|216|-- possible Multiplexer: 16-1 for outbits_write
+##N|Configurable_SRAM.VHD|295|others clause is never selected
+##I|Configurable_SRAM.VHD|295|-- possible Selector: 6-1 for writeactive_cycle
+##I|../vhdl_packages/syn_unsi.vhd|154|-- found Adder: 4+4
+executing Configurable_TSK3000A_1(Structure)
+executing J16S_16B(STRUCTURE)
+executing Configurable_WB_INTERCON_1(RTL)
+executing Configurable_WB_INTERCON_2(RTL)
+executing configurable_wb_multimaster_1(RTL)
+##W|Configurable_WB_MULTIMASTER_1.VHD|139|possible_next_state should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|154|possible_next_state should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|157|s0_accessrequest should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|159|possible_next_state should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|174|possible_next_state should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|177|s0_accessrequest should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|178|s1_accessrequest should be on the sensitivity list of the process
+##W|Configurable_WB_MULTIMASTER_1.VHD|180|possible_next_state should be on the sensitivity list of the process
+##I|Configurable_WB_MULTIMASTER_1.VHD|196|-- possible Multiplexer: 8-1 for next_state
+executing TFT_TOUCH(structure)
+executing TFT_MULTIFUNCIONAL(structure)
+
+###############################################################################
+### Synthesis Report
+###############################################################################
+
+##O|TFT_TOUCH.VHD|854|Dissolving instance TSK3000A_1_LO(J16S_16B)
+##O|TFT_TOUCH.VHD|876|Dissolving instance TSK3000A_1_HI(J16S_16B)
+##O|TFT_TOUCH.VHD|898|Dissolving instance TSK3000A_1(Configurable_TSK3000A_1)
+##O|TFT_TOUCH.VHD|1049|Dissolving instance spi(configurable_spi)
+##O|TFT_TOUCH.VHD|1084|Dissolving instance dip(configurable_dip)
+##O|TFT_MULTIFUN.VHD|266|Dissolving instance U_TFT_TOUCH(TFT_TOUCH)
+##O|TFT_MULTIFUN.VHD|351|Dissolving instance U3(configurable_u3)
+##O|TFT_MULTIFUN.VHD|365|Dissolving instance U2(configurable_u2)
+###############################################################################
+### Optimization Report
+###  command: mmHDLtoEDIF -f xilinx -n spartan3an -p spartan3 -o "C:\Users\David\Desktop\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL.edf" -b "C:\Users\David\Desktop\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL.bfl" -e TFT_MULTIFUNCIONAL 
+
+optimizing "_blf\TFT_MULTIFUNCIONAL"
+optimizing "_blf\IOBUF16B"
+optimizing "_blf\configurable_led"
+optimizing "_blf\Configurable_SRAM"
+optimizing "_blf\Configurable_WB_INTERCON_1"
+optimizing "_blf\Configurable_WB_INTERCON_2"
+optimizing "_blf\configurable_wb_multimaster_1"
+ 
+###############################################################################
+### Design Statistics
+###############################################################################
+ 
+Tristates                                                 : 48
+                                                          
+Flipflops:                                                : 245
+    Flipflops with RESET                    (Synchronous) : 12
+    Flipflops with PRESET                   (Synchronous) : 2
+    Flipflops                                             : 26
+    Flipflops with RESET and ENABLE         (Synchronous) : 197
+    Flipflops with ENABLE                                 : 8
+                                                          
+MacroCells:                                               
+    WB_SPI32                                              : 1
+    TSK3000A_Shift_Barrel                                 : 1
+    VGA32_16BPP                                           : 1
+    TSK3000A_OCDS                                         : 1
+    TSK3000A_MDU                                          : 1
+    INV                                                   : 1
+    Memory_TSK3000A_1                                     : 1
+    TERMINAL                                              : 1
+    PRTIO1X8_W                                            : 1
+    XORCY                                                 : 15
+    MUXCY                                                 : 204
+    WB_ILI9320                                            : 1
+    WB_TSPENDOWN                                          : 1
+    TSK3000A_MCU                                          : 1
+                                                          
+Area Estimates:                                           
+    Area Estimate (2 Input Gate Count)                    : 2537
+    Area Estimate (LUT Count)                             : 1522
+ 
+###############################################################################
+ 
+formating EDIF....                            
+
+###############################################################################
+Synthesis successful
+###############################################################################

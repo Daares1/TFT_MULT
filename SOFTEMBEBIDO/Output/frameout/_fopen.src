@@ -1,0 +1,747 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc2884a --dep-file=Output\frameout\posix_devio__fopen.d --make-target=Output\frameout\posix_devio__fopen.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\_fopen.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\_fopen.c"
+
+	.section	.text._fopen._fopen ,cluster('$group__fopen')
+	.align	4
+	.global	_fopen
+; Function _fopen
+.L21:
+_fopen:	.type	func
+	addiu	$sp,$sp,-12
+.L44:
+	sw	$ra,0($sp)
+.L45:
+	sw	$s0,4($sp)
+.L46:
+	sw	$s1,8($sp)
+.L47:
+	move	$s0,$a2
+.L58:
+	move	$v0,$zero
+.L54:
+	j	.L2
+.L88:
+	move	$s1,$zero
+.L3:
+	li	$v1,0x2b
+	beq	$a2,$v1,.L4
+	nop
+	li	$v1,0x61
+	beq	$a2,$v1,.L5
+	nop
+	li	$v1,0x62
+	beq	$a2,$v1,.L6
+	nop
+	li	$v1,0x72
+	beq	$a2,$v1,.L7
+	nop
+	li	$v1,0x77
+	beq	$a2,$v1,.L8
+	nop
+	j	.L9
+	nop
+.L7:
+	move	$v0,$zero
+.L56:
+	j	.L10
+.L89:
+	li	$s1,0x1
+.L8:
+	li	$v0,0x301
+.L90:
+	j	.L11
+.L91:
+	li	$s1,0x2
+.L5:
+	li	$v0,0x109
+.L92:
+	j	.L12
+.L93:
+	li	$s1,0x2
+.L6:
+	j	.L13
+.L94:
+	ori	$v0,$v0,0x8000
+.L4:
+	andi	$v0,$v0,0xfffc
+.L55:
+	ori	$v0,$v0,0x2
+.L61:
+	li	$s1,0x3
+.L9:
+.L13:
+.L12:
+.L11:
+.L10:
+.L2:
+	lb	$a2,0($a1)
+.L52:
+	bne	$a2,$zero,.L3
+.L95:
+	addiu	$a1,$a1,1
+.L96:
+	addiu	$v1,$zero,-1
+	bne	$a3,$v1,.L14
+	nop
+.L60:
+	jal	_open
+	move	$a1,$v0
+.L51:
+	move	$a3,$v0
+.L14:
+	bltz	$a3,.L15
+.L97:
+	nop
+.L98:
+	sb	$a3,18($s0)
+.L99:
+	jal	malloc
+	li	$a0,0x200
+.L59:
+	sw	$v0,4($s0)
+.L100:
+	sw	$v0,0($s0)
+.L101:
+	beq	$v0,$zero,.L16
+.L102:
+	sw	$zero,8($s0)
+.L103:
+	ori	$v0,$s1,0x10
+.L57:
+	j	.L17
+.L104:
+	li	$v1,0x200
+.L16:
+	ori	$v0,$s1,0x4
+.L53:
+	addiu	$v1,$zero,-1
+.L17:
+	sw	$v1,12($s0)
+.L105:
+	sh	$v0,16($s0)
+.L106:
+	j	.L18
+	li	$v0,0x1
+.L15:
+	move	$v0,$zero
+.L18:
+	lw	$s1,8($sp)
+.L48:
+	lw	$s0,4($sp)
+.L49:
+	lw	$ra,0($sp)
+.L50:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L32:
+	.size	_fopen,*-_fopen
+.L30:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'_fopen','_open'
+	.calls	'_fopen','malloc'
+	.calls	'_fopen','',12
+	.extern	malloc
+	.extern	free
+	.extern	_open
+	.section	.debug_info
+.L23:
+	.dw	1359
+	.dh	3
+	.dw	.L24
+	.db	4
+.L22:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\_fopen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L25
+	.db	2
+	.db	"malloc",0
+	.db	1,70,33
+	.dw	.L62-.L23
+	.db	1,1,1,1,3,1,70,44
+	.dw	.L63-.L23
+	.db	0
+.L62:
+	.db	4
+	.dw	.L64-.L23
+.L64:
+	.db	5
+	.db	"void",0
+.L63:
+	.db	6
+	.db	"unsigned int",0
+	.db	4,7
+.L31:
+	.db	6
+	.db	"int",0
+	.db	4,5
+.L33:
+	.db	4
+	.dw	.L65-.L23
+.L65:
+	.db	7
+	.dw	.L42-.L23
+.L42:
+	.db	6
+	.db	"char",0
+	.db	1,6
+.L36:
+	.db	4
+	.dw	.L66-.L23
+.L66:
+	.db	8
+	.db	"_iobuf",0
+	.db	2,94,8,20,9
+	.db	"_ptr",0
+	.db	4
+	.dw	.L67-.L23
+	.db	2,35,0,9
+	.db	"_base",0
+	.db	4
+	.dw	.L67-.L23
+	.db	2,35,4,9
+	.db	"_cnt",0
+	.db	4
+	.dw	364
+	.db	2,35,8,9
+	.db	"_bufsiz",0
+	.db	4
+	.dw	364
+	.db	2,35,12,9
+	.db	"_flag",0
+	.db	2
+	.dw	.L39-.L23
+	.db	2,35,16,9
+	.db	"_file",0
+	.db	1
+	.dw	.L68-.L23
+	.db	2,35,18,0
+.L67:
+	.db	4
+	.dw	381
+.L39:
+	.db	6
+	.db	"unsigned short int",0
+	.db	2,7
+.L68:
+	.db	6
+	.db	"unsigned char",0
+	.db	1,8,2
+	.db	"_open",0
+	.db	3,93,17
+	.dw	.L69-.L23
+	.db	1,1,1,1,10
+	.db	"pathname",0
+	.db	3,93,35
+	.dw	371
+	.db	10
+	.db	"flags",0
+	.db	3,93,59
+	.dw	502
+	.db	0
+.L69:
+	.db	6
+	.db	"char",0
+	.db	1,6,11
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	502
+	.db	11
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	348
+	.db	11
+	.db	"__ssize_t",0
+	.db	4,1,1
+	.dw	364
+	.db	11
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	364
+	.db	11
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L70-.L23
+.L70:
+	.db	4
+	.dw	.L71-.L23
+.L71:
+	.db	12,1,11
+	.db	"size_t",0
+	.db	2,33,25
+	.dw	348
+	.db	11
+	.db	"_iob_flag_t",0
+	.db	2,92,25
+	.dw	502
+	.db	11
+	.db	"FILE",0
+	.db	2,105,25
+	.dw	394
+	.db	11
+	.db	"uint16_t",0
+	.db	5,24,33
+	.dw	502
+	.db	11
+	.db	"int32_t",0
+	.db	5,25,33
+	.dw	364
+	.db	11
+	.db	"uint32_t",0
+	.db	5,26,33
+	.dw	348
+	.db	11
+	.db	"int_least8_t",0
+	.db	5,33,33
+	.dw	591
+	.db	11
+	.db	"uint_least8_t",0
+	.db	5,34,33
+	.dw	524
+	.db	11
+	.db	"uint_least16_t",0
+	.db	5,36,33
+	.dw	502
+	.db	11
+	.db	"off_t",0
+	.db	6,18,25
+	.dw	.L72-.L23
+.L72:
+	.db	6
+	.db	"long int",0
+	.db	4,5,11
+	.db	"pid_t",0
+	.db	6,34,13
+	.dw	364
+	.db	11
+	.db	"time_t",0
+	.db	6,36,27
+	.dw	.L73-.L23
+.L73:
+	.db	6
+	.db	"unsigned long int",0
+	.db	4,7,11
+	.db	"posix_thread_t",0
+	.db	6,44,25
+	.dw	.L74-.L23
+.L74:
+	.db	13
+	.db	"thread_t",0
+	.db	6,44,16,1,11
+	.db	"posix_threadqueue_t",0
+	.db	6,50,9
+	.dw	.L75-.L23
+.L75:
+	.db	8
+	.db	"posix_threadqueue_t",0
+	.db	6,46,17,8,9
+	.db	"head",0
+	.db	4
+	.dw	.L76-.L23
+	.db	2,35,0,9
+	.db	"tail",0
+	.db	4
+	.dw	.L76-.L23
+	.db	2,35,4,0
+.L76:
+	.db	4
+	.dw	960
+	.db	11
+	.db	"pthread_mutex_t",0
+	.db	6,160,1,33
+	.dw	.L77-.L23
+.L77:
+	.db	8
+	.db	"_pthread_mutex_t",0
+	.db	6,162,1,8,32,14
+	.db	"type",0
+	.db	1
+	.dw	524
+	.db	2,0,2,35,0,14
+	.db	"protocol",0
+	.db	1
+	.dw	524
+	.db	2,2,2,35,0,14
+	.db	"prioceiling",0
+	.db	4
+	.dw	348
+	.db	16,4,2,35,0,14
+	.db	"recursive",0
+	.db	2
+	.dw	502
+	.db	8,4,2,35,2,14
+	.db	"preprio",0
+	.db	2
+	.dw	.L78-.L23
+	.db	16,0,2,35,4,9
+	.db	"initi",0
+	.db	4
+	.dw	364
+	.db	2,35,8,9
+	.db	"owner",0
+	.db	4
+	.dw	1056
+	.db	2,35,12,9
+	.db	"nestup",0
+	.db	4
+	.dw	.L79-.L23
+	.db	2,35,16,9
+	.db	"nestdown",0
+	.db	4
+	.dw	.L79-.L23
+	.db	2,35,20,9
+	.db	"queue",0
+	.db	8
+	.dw	1002
+	.db	2,35,24,0
+.L78:
+	.db	6
+	.db	"short int",0
+	.db	2,5
+.L79:
+	.db	4
+	.dw	1086
+	.db	11
+	.db	"clockid_t",0
+	.db	6,183,1,13
+	.dw	364
+	.db	11
+	.db	"_err_t",0
+	.db	3,56,25
+	.dw	591
+	.db	11
+	.db	"_open_flags_t",0
+	.db	3,57,25
+	.dw	502
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L24:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.db	12,0,0,3,5,0,58,15,59,15,57,15,73,19,0,0,4,15,0,73,19,0,0,5,59,0,3,8,0,0,6,36,0,3,8,11,15,62,15,0,0,7
+	.db	38,0,73,19,0,0,8,19,1,3,8,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,11,15,73,19,56,9,0,0,10,5,0,3,8,58,15
+	.db	59,15,57,15,73,19,0,0,11,22,0,3,8,58,15,59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,13,19,0,3,8,58,15,59,15
+	.db	57,15,60,12,0,0,14,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L25:
+	.dw	.L81-.L80
+.L80:
+	.dh	3
+	.dw	.L83-.L82
+.L82:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\io.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\_fopen.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0,0
+.L83:
+.L81:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__fopen')
+.L26:
+	.dw	474
+	.dh	3
+	.dw	.L27
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\_fopen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L29,.L28
+	.db	2
+	.dw	.L22
+	.db	3
+	.db	"_fopen",0
+	.db	1,30,5
+	.dw	.L31
+	.db	1,1,1
+	.dw	.L21,.L32,.L20
+	.db	4
+	.db	"file",0
+	.db	1,30,24
+	.dw	.L33,.L34
+	.db	4
+	.db	"mode",0
+	.db	1,30,42
+	.dw	.L33,.L35
+	.db	4
+	.db	"fp",0
+	.db	1,30,54
+	.dw	.L36,.L37
+	.db	4
+	.db	"fd",0
+	.db	1,30,62
+	.dw	.L31,.L38
+	.db	5
+	.dw	.L21,.L32
+	.db	6
+	.db	"open_flags",0
+	.db	1,32,25
+	.dw	.L39,.L40
+	.db	6
+	.db	"flag",0
+	.db	1,33,25
+	.dw	.L39,.L41
+	.db	6
+	.db	"c",0
+	.db	1,34,25
+	.dw	.L42,.L43
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__fopen')
+.L27:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__fopen')
+.L28:
+	.dw	.L85-.L84
+.L84:
+	.dh	3
+	.dw	.L87-.L86
+.L86:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\_fopen.c",0
+	.db	0,0,0,0
+.L87:
+	.db	5,5,7,0,5,2
+	.dw	.L21
+	.db	3,29,1,5,23,9
+	.dh	.L58-.L21
+	.db	3,6,1,5,29
+	.db	16+9*((.L54-.L58)/4)
+	.db	5,17
+	.db	13+9*((.L88-.L54)/4)
+	.db	17+9*((.L3-.L88)/4)
+	.db	5,46,9
+	.dh	.L7-.L3
+	.db	3,3,1,5,25
+	.db	16+9*((.L56-.L7)/4)
+	.db	5,37
+	.db	13+9*((.L89-.L56)/4)
+	.db	5,66
+	.db	17+9*((.L8-.L89)/4)
+	.db	5,25
+	.db	16+9*((.L90-.L8)/4)
+	.db	5,37
+	.db	13+9*((.L91-.L90)/4)
+	.db	5,67
+	.db	17+9*((.L5-.L91)/4)
+	.db	5,25
+	.db	16+9*((.L92-.L5)/4)
+	.db	5,37
+	.db	13+9*((.L93-.L92)/4)
+	.db	5,25
+	.db	18+9*((.L6-.L93)/4)
+	.db	5,47
+	.db	13+9*((.L94-.L6)/4)
+	.db	5,72,9
+	.dh	.L4-.L94
+	.db	3,8,1,5,45
+	.db	15+9*((.L61-.L4)/4)
+	.db	5,19,9
+	.dh	.L2-.L61
+	.db	3,102,1,5,29
+	.db	14+9*((.L52-.L2)/4)
+	.db	5,26,7
+	.db	14+9*((.L95-.L52)/4)
+	.db	5,9,9
+	.dh	.L96-.L95
+	.db	3,34,1,5,42
+	.db	16+9*((.L60-.L96)/4)
+	.db	5,9
+	.db	17+9*((.L14-.L60)/4)
+	.db	7
+	.db	14+9*((.L97-.L14)/4)
+	.db	5,47
+	.db	16+9*((.L98-.L97)/4)
+	.db	5,43
+	.db	15+9*((.L99-.L98)/4)
+	.db	5,37
+	.db	15+9*((.L100-.L99)/4)
+	.db	5,17
+	.db	16+9*((.L101-.L100)/4)
+	.db	5,29,7
+	.db	13+9*((.L102-.L101)/4)
+	.db	5,50
+	.db	17+9*((.L103-.L102)/4)
+	.db	5,45
+	.db	15+9*((.L104-.L103)/4)
+	.db	5,39
+	.db	18+9*((.L16-.L104)/4)
+	.db	5,42
+	.db	15+9*((.L53-.L16)/4)
+	.db	5,33
+	.db	16+9*((.L105-.L53)/4)
+	.db	5,17
+	.db	15+9*((.L106-.L105)/4)
+	.db	5,9
+	.db	16+9*((.L15-.L106)/4)
+	.db	5,1
+	.db	15+9*((.L18-.L15)/4)
+	.db	9
+	.dh	.L30-.L18
+	.db	0,1,1
+.L85:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__fopen')
+.L29:
+	.dw	-1
+	.dw	.L21
+	.dw	0
+	.dw	.L30-.L21
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__fopen')
+.L38:
+	.dw	-1
+	.dw	.L21,.L51-.L21,.L14-.L21
+	.dh	1
+	.db	82
+	.dw	.L21-.L21,.L51-.L21
+	.dh	1
+	.db	87
+	.dw	.L15-.L21,.L18-.L21
+	.dh	1
+	.db	87
+	.dw	.L14-.L21,.L59-.L21
+	.dh	1
+	.db	87
+	.dw	0,0
+.L35:
+	.dw	-1
+	.dw	.L21,.L21-.L21,.L51-.L21
+	.dh	1
+	.db	85
+	.dw	0,0
+.L41:
+	.dw	-1
+	.dw	.L21,.L15-.L21,.L18-.L21
+	.dh	1
+	.db	97
+	.dw	.L53-.L21,.L15-.L21
+	.dh	1
+	.db	82
+	.dw	.L54-.L21,.L3-.L21
+	.dh	1
+	.db	80
+	.dw	.L57-.L21,.L16-.L21
+	.dh	1
+	.db	82
+	.dw	.L3-.L21,.L57-.L21
+	.dh	1
+	.db	97
+	.dw	.L16-.L21,.L53-.L21
+	.dh	1
+	.db	97
+	.dw	0,0
+.L37:
+	.dw	-1
+	.dw	.L21,.L21-.L21,.L3-.L21
+	.dh	1
+	.db	86
+	.dw	.L58-.L21,.L49-.L21
+	.dh	1
+	.db	96
+	.dw	0,0
+.L40:
+	.dw	-1
+	.dw	.L21,.L54-.L21,.L55-.L21
+	.dh	1
+	.db	82
+	.dw	.L7-.L21,.L56-.L21
+	.dh	1
+	.db	80
+	.dw	.L60-.L21,.L14-.L21
+	.dh	1
+	.db	85
+	.dw	.L61-.L21,.L51-.L21
+	.dh	1
+	.db	82
+	.dw	.L58-.L21,.L54-.L21
+	.dh	1
+	.db	80
+	.dw	0,0
+.L34:
+	.dw	-1
+	.dw	.L21,.L21-.L21,.L51-.L21
+	.dh	1
+	.db	84
+	.dw	0,0
+.L43:
+	.dw	-1
+	.dw	.L21,.L52-.L21,.L51-.L21
+	.dh	1
+	.db	86
+	.dw	.L3-.L21,.L2-.L21
+	.dh	1
+	.db	86
+	.dw	0,0
+.L20:
+	.dw	-1
+	.dw	.L21,.L21-.L21,.L44-.L21
+	.dh	2
+	.db	141,0
+	.dw	.L44-.L21,.L32-.L21
+	.dh	2
+	.db	141,12
+	.dw	.L32-.L21,.L32-.L21
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L107:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__fopen')
+	.dw	76
+	.dw	.L107,.L21,.L32-.L21
+	.db	4
+	.dw	(.L44-.L21)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L45-.L44)/4
+	.db	17,31,116,4
+	.dw	(.L46-.L45)/4
+	.db	17,16,120,4
+	.dw	(.L47-.L46)/4
+	.db	17,17,124,4
+	.dw	(.L48-.L47)/4
+	.db	209,4
+	.dw	(.L49-.L48)/4
+	.db	208,4
+	.dw	(.L50-.L49)/4
+	.db	223,4
+	.dw	(.L32-.L50)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

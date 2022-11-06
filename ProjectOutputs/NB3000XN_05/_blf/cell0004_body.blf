@@ -1,0 +1,561 @@
+.model Configurable_WB_INTERCON_2
+.outputs s0_STB_O
+.outputs s0_CYC_O
+.inputs s0_ACK_I
+.outputs s0_ADR_O<19>
+.outputs s0_ADR_O<18>
+.outputs s0_ADR_O<17>
+.outputs s0_ADR_O<16>
+.outputs s0_ADR_O<15>
+.outputs s0_ADR_O<14>
+.outputs s0_ADR_O<13>
+.outputs s0_ADR_O<12>
+.outputs s0_ADR_O<11>
+.outputs s0_ADR_O<10>
+.outputs s0_ADR_O<9>
+.outputs s0_ADR_O<8>
+.outputs s0_ADR_O<7>
+.outputs s0_ADR_O<6>
+.outputs s0_ADR_O<5>
+.outputs s0_ADR_O<4>
+.outputs s0_ADR_O<3>
+.outputs s0_ADR_O<2>
+.outputs s0_ADR_O<1>
+.outputs s0_ADR_O<0>
+.inputs s0_DAT_I<31>
+.inputs s0_DAT_I<30>
+.inputs s0_DAT_I<29>
+.inputs s0_DAT_I<28>
+.inputs s0_DAT_I<27>
+.inputs s0_DAT_I<26>
+.inputs s0_DAT_I<25>
+.inputs s0_DAT_I<24>
+.inputs s0_DAT_I<23>
+.inputs s0_DAT_I<22>
+.inputs s0_DAT_I<21>
+.inputs s0_DAT_I<20>
+.inputs s0_DAT_I<19>
+.inputs s0_DAT_I<18>
+.inputs s0_DAT_I<17>
+.inputs s0_DAT_I<16>
+.inputs s0_DAT_I<15>
+.inputs s0_DAT_I<14>
+.inputs s0_DAT_I<13>
+.inputs s0_DAT_I<12>
+.inputs s0_DAT_I<11>
+.inputs s0_DAT_I<10>
+.inputs s0_DAT_I<9>
+.inputs s0_DAT_I<8>
+.inputs s0_DAT_I<7>
+.inputs s0_DAT_I<6>
+.inputs s0_DAT_I<5>
+.inputs s0_DAT_I<4>
+.inputs s0_DAT_I<3>
+.inputs s0_DAT_I<2>
+.inputs s0_DAT_I<1>
+.inputs s0_DAT_I<0>
+.outputs s0_DAT_O<31>
+.outputs s0_DAT_O<30>
+.outputs s0_DAT_O<29>
+.outputs s0_DAT_O<28>
+.outputs s0_DAT_O<27>
+.outputs s0_DAT_O<26>
+.outputs s0_DAT_O<25>
+.outputs s0_DAT_O<24>
+.outputs s0_DAT_O<23>
+.outputs s0_DAT_O<22>
+.outputs s0_DAT_O<21>
+.outputs s0_DAT_O<20>
+.outputs s0_DAT_O<19>
+.outputs s0_DAT_O<18>
+.outputs s0_DAT_O<17>
+.outputs s0_DAT_O<16>
+.outputs s0_DAT_O<15>
+.outputs s0_DAT_O<14>
+.outputs s0_DAT_O<13>
+.outputs s0_DAT_O<12>
+.outputs s0_DAT_O<11>
+.outputs s0_DAT_O<10>
+.outputs s0_DAT_O<9>
+.outputs s0_DAT_O<8>
+.outputs s0_DAT_O<7>
+.outputs s0_DAT_O<6>
+.outputs s0_DAT_O<5>
+.outputs s0_DAT_O<4>
+.outputs s0_DAT_O<3>
+.outputs s0_DAT_O<2>
+.outputs s0_DAT_O<1>
+.outputs s0_DAT_O<0>
+.outputs s0_SEL_O<3>
+.outputs s0_SEL_O<2>
+.outputs s0_SEL_O<1>
+.outputs s0_SEL_O<0>
+.outputs s0_WE_O
+.inputs m0_STB_I
+.inputs m0_CYC_I
+.outputs m0_ACK_O
+.inputs m0_ADR_I<31>
+.inputs m0_ADR_I<30>
+.inputs m0_ADR_I<29>
+.inputs m0_ADR_I<28>
+.inputs m0_ADR_I<27>
+.inputs m0_ADR_I<26>
+.inputs m0_ADR_I<25>
+.inputs m0_ADR_I<24>
+.inputs m0_ADR_I<23>
+.inputs m0_ADR_I<22>
+.inputs m0_ADR_I<21>
+.inputs m0_ADR_I<20>
+.inputs m0_ADR_I<19>
+.inputs m0_ADR_I<18>
+.inputs m0_ADR_I<17>
+.inputs m0_ADR_I<16>
+.inputs m0_ADR_I<15>
+.inputs m0_ADR_I<14>
+.inputs m0_ADR_I<13>
+.inputs m0_ADR_I<12>
+.inputs m0_ADR_I<11>
+.inputs m0_ADR_I<10>
+.inputs m0_ADR_I<9>
+.inputs m0_ADR_I<8>
+.inputs m0_ADR_I<7>
+.inputs m0_ADR_I<6>
+.inputs m0_ADR_I<5>
+.inputs m0_ADR_I<4>
+.inputs m0_ADR_I<3>
+.inputs m0_ADR_I<2>
+.inputs m0_ADR_I<1>
+.inputs m0_ADR_I<0>
+.outputs m0_DAT_O<31>
+.outputs m0_DAT_O<30>
+.outputs m0_DAT_O<29>
+.outputs m0_DAT_O<28>
+.outputs m0_DAT_O<27>
+.outputs m0_DAT_O<26>
+.outputs m0_DAT_O<25>
+.outputs m0_DAT_O<24>
+.outputs m0_DAT_O<23>
+.outputs m0_DAT_O<22>
+.outputs m0_DAT_O<21>
+.outputs m0_DAT_O<20>
+.outputs m0_DAT_O<19>
+.outputs m0_DAT_O<18>
+.outputs m0_DAT_O<17>
+.outputs m0_DAT_O<16>
+.outputs m0_DAT_O<15>
+.outputs m0_DAT_O<14>
+.outputs m0_DAT_O<13>
+.outputs m0_DAT_O<12>
+.outputs m0_DAT_O<11>
+.outputs m0_DAT_O<10>
+.outputs m0_DAT_O<9>
+.outputs m0_DAT_O<8>
+.outputs m0_DAT_O<7>
+.outputs m0_DAT_O<6>
+.outputs m0_DAT_O<5>
+.outputs m0_DAT_O<4>
+.outputs m0_DAT_O<3>
+.outputs m0_DAT_O<2>
+.outputs m0_DAT_O<1>
+.outputs m0_DAT_O<0>
+.inputs m0_DAT_I<31>
+.inputs m0_DAT_I<30>
+.inputs m0_DAT_I<29>
+.inputs m0_DAT_I<28>
+.inputs m0_DAT_I<27>
+.inputs m0_DAT_I<26>
+.inputs m0_DAT_I<25>
+.inputs m0_DAT_I<24>
+.inputs m0_DAT_I<23>
+.inputs m0_DAT_I<22>
+.inputs m0_DAT_I<21>
+.inputs m0_DAT_I<20>
+.inputs m0_DAT_I<19>
+.inputs m0_DAT_I<18>
+.inputs m0_DAT_I<17>
+.inputs m0_DAT_I<16>
+.inputs m0_DAT_I<15>
+.inputs m0_DAT_I<14>
+.inputs m0_DAT_I<13>
+.inputs m0_DAT_I<12>
+.inputs m0_DAT_I<11>
+.inputs m0_DAT_I<10>
+.inputs m0_DAT_I<9>
+.inputs m0_DAT_I<8>
+.inputs m0_DAT_I<7>
+.inputs m0_DAT_I<6>
+.inputs m0_DAT_I<5>
+.inputs m0_DAT_I<4>
+.inputs m0_DAT_I<3>
+.inputs m0_DAT_I<2>
+.inputs m0_DAT_I<1>
+.inputs m0_DAT_I<0>
+.inputs m0_SEL_I<3>
+.inputs m0_SEL_I<2>
+.inputs m0_SEL_I<1>
+.inputs m0_SEL_I<0>
+.inputs m0_WE_I
+.inputs m0_CLK_I
+.names n1
+.names n2
+1
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<1>
+.latch m0_ADR_I<25> DecodeAddr<1> re m0_CLK_I 2 n190
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<2>
+.latch m0_ADR_I<26> DecodeAddr<2> re m0_CLK_I 2 n190
+.names m0_ADR_I<24> n4
+0 1
+.names DecodeAddr<4> m0_ADR_I<28> DecodeAddr<5> m0_ADR_I<29> n193
+0000 1
+0011 1
+1100 1
+1111 1
+.names s0_DAT_I<31> s0_Decode s0_DAT<31>
+11 1
+.names m0_ADR_I<19> s0_ADR_O<19>
+1 1
+.names m0_ADR_I<18> s0_ADR_O<18>
+1 1
+.names m0_ADR_I<17> s0_ADR_O<17>
+1 1
+.names m0_ADR_I<16> s0_ADR_O<16>
+1 1
+.names m0_ADR_I<15> s0_ADR_O<15>
+1 1
+.names m0_ADR_I<14> s0_ADR_O<14>
+1 1
+.names m0_ADR_I<13> s0_ADR_O<13>
+1 1
+.names m0_ADR_I<12> s0_ADR_O<12>
+1 1
+.names m0_ADR_I<11> s0_ADR_O<11>
+1 1
+.names m0_ADR_I<10> s0_ADR_O<10>
+1 1
+.names m0_ADR_I<9> s0_ADR_O<9>
+1 1
+.names m0_ADR_I<8> s0_ADR_O<8>
+1 1
+.names m0_ADR_I<7> s0_ADR_O<7>
+1 1
+.names m0_ADR_I<6> s0_ADR_O<6>
+1 1
+.names m0_ADR_I<5> s0_ADR_O<5>
+1 1
+.names m0_ADR_I<4> s0_ADR_O<4>
+1 1
+.names m0_ADR_I<3> s0_ADR_O<3>
+1 1
+.names m0_ADR_I<2> s0_ADR_O<2>
+1 1
+.names m0_ADR_I<1> s0_ADR_O<1>
+1 1
+.names m0_ADR_I<0> s0_ADR_O<0>
+1 1
+.names m0_STB_I s0_Decode n27
+11 1
+.names Bad_Decode n28
+0 1
+.names n27 n28 s0_STB_O
+11 1
+.names m0_CYC_I s0_Decode n30
+11 1
+.names n30 n28 s0_CYC_O
+11 1
+.names m0_DAT_I<31> s0_DAT_O<31>
+1 1
+.names m0_DAT_I<30> s0_DAT_O<30>
+1 1
+.names m0_DAT_I<29> s0_DAT_O<29>
+1 1
+.names m0_DAT_I<28> s0_DAT_O<28>
+1 1
+.names m0_DAT_I<27> s0_DAT_O<27>
+1 1
+.names m0_DAT_I<26> s0_DAT_O<26>
+1 1
+.names m0_DAT_I<25> s0_DAT_O<25>
+1 1
+.names m0_DAT_I<24> s0_DAT_O<24>
+1 1
+.names m0_DAT_I<23> s0_DAT_O<23>
+1 1
+.names m0_DAT_I<22> s0_DAT_O<22>
+1 1
+.names m0_DAT_I<21> s0_DAT_O<21>
+1 1
+.names m0_DAT_I<20> s0_DAT_O<20>
+1 1
+.names m0_DAT_I<19> s0_DAT_O<19>
+1 1
+.names m0_DAT_I<18> s0_DAT_O<18>
+1 1
+.names m0_DAT_I<17> s0_DAT_O<17>
+1 1
+.names m0_DAT_I<16> s0_DAT_O<16>
+1 1
+.names m0_DAT_I<15> s0_DAT_O<15>
+1 1
+.names m0_DAT_I<14> s0_DAT_O<14>
+1 1
+.names m0_DAT_I<13> s0_DAT_O<13>
+1 1
+.names m0_DAT_I<12> s0_DAT_O<12>
+1 1
+.names m0_DAT_I<11> s0_DAT_O<11>
+1 1
+.names m0_DAT_I<10> s0_DAT_O<10>
+1 1
+.names m0_DAT_I<9> s0_DAT_O<9>
+1 1
+.names m0_DAT_I<8> s0_DAT_O<8>
+1 1
+.names m0_DAT_I<7> s0_DAT_O<7>
+1 1
+.names m0_DAT_I<6> s0_DAT_O<6>
+1 1
+.names m0_DAT_I<5> s0_DAT_O<5>
+1 1
+.names m0_DAT_I<4> s0_DAT_O<4>
+1 1
+.names m0_DAT_I<3> s0_DAT_O<3>
+1 1
+.names m0_DAT_I<2> s0_DAT_O<2>
+1 1
+.names m0_DAT_I<1> s0_DAT_O<1>
+1 1
+.names m0_DAT_I<0> s0_DAT_O<0>
+1 1
+.names m0_SEL_I<3> s0_SEL_O<3>
+1 1
+.names m0_SEL_I<2> s0_SEL_O<2>
+1 1
+.names m0_SEL_I<1> s0_SEL_O<1>
+1 1
+.names m0_SEL_I<0> s0_SEL_O<0>
+1 1
+.names m0_WE_I s0_WE_O
+1 1
+.names s0_Decode Any_Decode
+1 1
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<6>
+.latch m0_ADR_I<30> DecodeAddr<6> re m0_CLK_I 2 n190
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<3>
+.latch m0_ADR_I<27> DecodeAddr<3> re m0_CLK_I 2 n190
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<4>
+.latch m0_ADR_I<28> DecodeAddr<4> re m0_CLK_I 2 n190
+.names Any_Decode n190
+0 1
+.names DecodeAddr<6> m0_ADR_I<30> DecodeAddr<7> m0_ADR_I<31> n191
+0000 1
+0011 1
+1100 1
+1111 1
+.subckt MUXCY i208 CI=-i208/CI DI=-i208/DI S=-i208/S O=+n84
+.names n196 i208/CI
+1 1
+.names n2 i208/DI
+1 1
+.names n197 i208/S
+1 1
+.subckt MUXCY i206 CI=-i206/CI DI=-i206/DI S=-i206/S O=+n196
+.names n194 i206/CI
+1 1
+.names n2 i206/DI
+1 1
+.names n195 i206/S
+1 1
+.subckt MUXCY i204 CI=-i204/CI DI=-i204/DI S=-i204/S O=+n194
+.names n192 i204/CI
+1 1
+.names n2 i204/DI
+1 1
+.names n193 i204/S
+1 1
+.names reduce_nor_4/n3 reduce_nor_4/n6 reduce_nor_4/n7
+1- 1
+-1 1
+.names m0_ADR_I<30> m0_ADR_I<31> reduce_nor_4/n5
+1- 1
+-1 1
+.names reduce_nor_4/n1 reduce_nor_4/n2 reduce_nor_4/n3
+1- 1
+-1 1
+.names n4 m0_ADR_I<25> reduce_nor_4/n1
+1- 1
+-1 1
+.names n2 n5 s0_Decode
+11 1
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<5>
+.latch m0_ADR_I<29> DecodeAddr<5> re m0_CLK_I 2 n190
+.names n190 m0_STB_I n86
+11 1
+.names n86 m0_CYC_I n87
+11 1
+.names DecodeAddr<0> m0_ADR_I<24> DecodeAddr<1> m0_ADR_I<25> n197
+0000 1
+0011 1
+1100 1
+1111 1
+.names DecodeAddr<2> m0_ADR_I<26> DecodeAddr<3> m0_ADR_I<27> n195
+0000 1
+0011 1
+1100 1
+1111 1
+.names reduce_nor_4/n7 n5
+0 1
+.names reduce_nor_4/n4 reduce_nor_4/n5 reduce_nor_4/n6
+1- 1
+-1 1
+.names m0_ADR_I<28> m0_ADR_I<29> reduce_nor_4/n4
+1- 1
+-1 1
+.names m0_ADR_I<26> m0_ADR_I<27> reduce_nor_4/n2
+1- 1
+-1 1
+.loc Configurable_WB_INTERCON_2.VHD 70 UseBadDecode
+.latch n84 UseBadDecode re m0_CLK_I 2
+.loc Configurable_WB_INTERCON_2.VHD 70 Bad_Decode
+.latch n87 Bad_Decode re m0_CLK_I 2
+.subckt MUXCY i202 CI=-i202/CI DI=-i202/DI S=-i202/S O=+n192
+.names n1 i202/CI
+1 1
+.names n2 i202/DI
+1 1
+.names n191 i202/S
+1 1
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<0>
+.latch m0_ADR_I<24> DecodeAddr<0> re m0_CLK_I 2 n190
+.names s0_DAT_I<30> s0_Decode s0_DAT<30>
+11 1
+.names s0_DAT_I<29> s0_Decode s0_DAT<29>
+11 1
+.names s0_DAT_I<28> s0_Decode s0_DAT<28>
+11 1
+.names s0_DAT_I<27> s0_Decode s0_DAT<27>
+11 1
+.names s0_DAT_I<26> s0_Decode s0_DAT<26>
+11 1
+.names s0_DAT_I<25> s0_Decode s0_DAT<25>
+11 1
+.names s0_DAT_I<24> s0_Decode s0_DAT<24>
+11 1
+.names s0_DAT_I<23> s0_Decode s0_DAT<23>
+11 1
+.names s0_DAT_I<22> s0_Decode s0_DAT<22>
+11 1
+.names s0_DAT_I<21> s0_Decode s0_DAT<21>
+11 1
+.names s0_DAT_I<20> s0_Decode s0_DAT<20>
+11 1
+.names s0_DAT_I<19> s0_Decode s0_DAT<19>
+11 1
+.names s0_DAT_I<18> s0_Decode s0_DAT<18>
+11 1
+.names s0_DAT_I<17> s0_Decode s0_DAT<17>
+11 1
+.names s0_DAT_I<16> s0_Decode s0_DAT<16>
+11 1
+.names s0_DAT_I<15> s0_Decode s0_DAT<15>
+11 1
+.names s0_DAT_I<14> s0_Decode s0_DAT<14>
+11 1
+.names s0_DAT_I<13> s0_Decode s0_DAT<13>
+11 1
+.names s0_DAT_I<12> s0_Decode s0_DAT<12>
+11 1
+.names s0_DAT_I<11> s0_Decode s0_DAT<11>
+11 1
+.names s0_DAT_I<10> s0_Decode s0_DAT<10>
+11 1
+.names s0_DAT_I<9> s0_Decode s0_DAT<9>
+11 1
+.names s0_DAT_I<8> s0_Decode s0_DAT<8>
+11 1
+.names s0_DAT_I<7> s0_Decode s0_DAT<7>
+11 1
+.names s0_DAT_I<6> s0_Decode s0_DAT<6>
+11 1
+.names s0_DAT_I<5> s0_Decode s0_DAT<5>
+11 1
+.names s0_DAT_I<4> s0_Decode s0_DAT<4>
+11 1
+.names s0_DAT_I<3> s0_Decode s0_DAT<3>
+11 1
+.names s0_DAT_I<2> s0_Decode s0_DAT<2>
+11 1
+.names s0_DAT_I<1> s0_Decode s0_DAT<1>
+11 1
+.names s0_DAT_I<0> s0_Decode s0_DAT<0>
+11 1
+.names Bad_Decode UseBadDecode n130
+11 1
+.names n130 s0_ACK_I m0_ACK_O
+1- 1
+-1 1
+.names s0_DAT<31> m0_DAT_O<31>
+1 1
+.names s0_DAT<30> m0_DAT_O<30>
+1 1
+.names s0_DAT<29> m0_DAT_O<29>
+1 1
+.names s0_DAT<28> m0_DAT_O<28>
+1 1
+.names s0_DAT<27> m0_DAT_O<27>
+1 1
+.names s0_DAT<26> m0_DAT_O<26>
+1 1
+.names s0_DAT<25> m0_DAT_O<25>
+1 1
+.names s0_DAT<24> m0_DAT_O<24>
+1 1
+.names s0_DAT<23> m0_DAT_O<23>
+1 1
+.names s0_DAT<22> m0_DAT_O<22>
+1 1
+.names s0_DAT<21> m0_DAT_O<21>
+1 1
+.names s0_DAT<20> m0_DAT_O<20>
+1 1
+.names s0_DAT<19> m0_DAT_O<19>
+1 1
+.names s0_DAT<18> m0_DAT_O<18>
+1 1
+.names s0_DAT<17> m0_DAT_O<17>
+1 1
+.names s0_DAT<16> m0_DAT_O<16>
+1 1
+.names s0_DAT<15> m0_DAT_O<15>
+1 1
+.names s0_DAT<14> m0_DAT_O<14>
+1 1
+.names s0_DAT<13> m0_DAT_O<13>
+1 1
+.names s0_DAT<12> m0_DAT_O<12>
+1 1
+.names s0_DAT<11> m0_DAT_O<11>
+1 1
+.names s0_DAT<10> m0_DAT_O<10>
+1 1
+.names s0_DAT<9> m0_DAT_O<9>
+1 1
+.names s0_DAT<8> m0_DAT_O<8>
+1 1
+.names s0_DAT<7> m0_DAT_O<7>
+1 1
+.names s0_DAT<6> m0_DAT_O<6>
+1 1
+.names s0_DAT<5> m0_DAT_O<5>
+1 1
+.names s0_DAT<4> m0_DAT_O<4>
+1 1
+.names s0_DAT<3> m0_DAT_O<3>
+1 1
+.names s0_DAT<2> m0_DAT_O<2>
+1 1
+.names s0_DAT<1> m0_DAT_O<1>
+1 1
+.names s0_DAT<0> m0_DAT_O<0>
+1 1
+.loc Configurable_WB_INTERCON_2.VHD 70 DecodeAddr<7>
+.latch m0_ADR_I<31> DecodeAddr<7> re m0_CLK_I 2 n190

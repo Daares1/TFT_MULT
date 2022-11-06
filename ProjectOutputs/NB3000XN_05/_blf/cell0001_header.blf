@@ -1,0 +1,244 @@
+.model TFT_MULTIFUNCIONAL
+.inputs CLK_BRD
+.inputs JTAG_NEXUS_TCK
+.inputs JTAG_NEXUS_TDI
+.outputs JTAG_NEXUS_TDO
+.inputs JTAG_NEXUS_TMS
+.outputs LED_B<7>
+.outputs LED_B<6>
+.outputs LED_B<5>
+.outputs LED_B<4>
+.outputs LED_B<3>
+.outputs LED_B<2>
+.outputs LED_B<1>
+.outputs LED_B<0>
+.outputs LED_G<7>
+.outputs LED_G<6>
+.outputs LED_G<5>
+.outputs LED_G<4>
+.outputs LED_G<3>
+.outputs LED_G<2>
+.outputs LED_G<1>
+.outputs LED_G<0>
+.outputs LED_R<7>
+.outputs LED_R<6>
+.outputs LED_R<5>
+.outputs LED_R<4>
+.outputs LED_R<3>
+.outputs LED_R<2>
+.outputs LED_R<1>
+.outputs LED_R<0>
+.outputs SRAM0_A<17>
+.outputs SRAM0_A<16>
+.outputs SRAM0_A<15>
+.outputs SRAM0_A<14>
+.outputs SRAM0_A<13>
+.outputs SRAM0_A<12>
+.outputs SRAM0_A<11>
+.outputs SRAM0_A<10>
+.outputs SRAM0_A<9>
+.outputs SRAM0_A<8>
+.outputs SRAM0_A<7>
+.outputs SRAM0_A<6>
+.outputs SRAM0_A<5>
+.outputs SRAM0_A<4>
+.outputs SRAM0_A<3>
+.outputs SRAM0_A<2>
+.outputs SRAM0_A<1>
+.outputs SRAM0_A<0>
+.outputs SRAM0_D<15>
+.inputs *SRAM0_D<15>
+.outputs SRAM0_D<14>
+.inputs *SRAM0_D<14>
+.outputs SRAM0_D<13>
+.inputs *SRAM0_D<13>
+.outputs SRAM0_D<12>
+.inputs *SRAM0_D<12>
+.outputs SRAM0_D<11>
+.inputs *SRAM0_D<11>
+.outputs SRAM0_D<10>
+.inputs *SRAM0_D<10>
+.outputs SRAM0_D<9>
+.inputs *SRAM0_D<9>
+.outputs SRAM0_D<8>
+.inputs *SRAM0_D<8>
+.outputs SRAM0_D<7>
+.inputs *SRAM0_D<7>
+.outputs SRAM0_D<6>
+.inputs *SRAM0_D<6>
+.outputs SRAM0_D<5>
+.inputs *SRAM0_D<5>
+.outputs SRAM0_D<4>
+.inputs *SRAM0_D<4>
+.outputs SRAM0_D<3>
+.inputs *SRAM0_D<3>
+.outputs SRAM0_D<2>
+.inputs *SRAM0_D<2>
+.outputs SRAM0_D<1>
+.inputs *SRAM0_D<1>
+.outputs SRAM0_D<0>
+.inputs *SRAM0_D<0>
+.outputs SRAM0_E
+.outputs SRAM0_LB
+.outputs SRAM0_OE
+.outputs SRAM0_UB
+.outputs SRAM0_W
+.outputs SRAM1_A<17>
+.outputs SRAM1_A<16>
+.outputs SRAM1_A<15>
+.outputs SRAM1_A<14>
+.outputs SRAM1_A<13>
+.outputs SRAM1_A<12>
+.outputs SRAM1_A<11>
+.outputs SRAM1_A<10>
+.outputs SRAM1_A<9>
+.outputs SRAM1_A<8>
+.outputs SRAM1_A<7>
+.outputs SRAM1_A<6>
+.outputs SRAM1_A<5>
+.outputs SRAM1_A<4>
+.outputs SRAM1_A<3>
+.outputs SRAM1_A<2>
+.outputs SRAM1_A<1>
+.outputs SRAM1_A<0>
+.outputs SRAM1_D<15>
+.inputs *SRAM1_D<15>
+.outputs SRAM1_D<14>
+.inputs *SRAM1_D<14>
+.outputs SRAM1_D<13>
+.inputs *SRAM1_D<13>
+.outputs SRAM1_D<12>
+.inputs *SRAM1_D<12>
+.outputs SRAM1_D<11>
+.inputs *SRAM1_D<11>
+.outputs SRAM1_D<10>
+.inputs *SRAM1_D<10>
+.outputs SRAM1_D<9>
+.inputs *SRAM1_D<9>
+.outputs SRAM1_D<8>
+.inputs *SRAM1_D<8>
+.outputs SRAM1_D<7>
+.inputs *SRAM1_D<7>
+.outputs SRAM1_D<6>
+.inputs *SRAM1_D<6>
+.outputs SRAM1_D<5>
+.inputs *SRAM1_D<5>
+.outputs SRAM1_D<4>
+.inputs *SRAM1_D<4>
+.outputs SRAM1_D<3>
+.inputs *SRAM1_D<3>
+.outputs SRAM1_D<2>
+.inputs *SRAM1_D<2>
+.outputs SRAM1_D<1>
+.inputs *SRAM1_D<1>
+.outputs SRAM1_D<0>
+.inputs *SRAM1_D<0>
+.outputs SRAM1_E
+.outputs SRAM1_LB
+.outputs SRAM1_OE
+.outputs SRAM1_UB
+.outputs SRAM1_W
+.inputs SW_USER<4>
+.inputs SW_USER<3>
+.inputs SW_USER<2>
+.inputs SW_USER<1>
+.inputs SW_USER<0>
+.inputs TEST_BUTTON
+.outputs TFT_BLIGHT
+.outputs TFT_CS
+.outputs TFT_DB<15>
+.inputs *TFT_DB<15>
+.outputs TFT_DB<14>
+.inputs *TFT_DB<14>
+.outputs TFT_DB<13>
+.inputs *TFT_DB<13>
+.outputs TFT_DB<12>
+.inputs *TFT_DB<12>
+.outputs TFT_DB<11>
+.inputs *TFT_DB<11>
+.outputs TFT_DB<10>
+.inputs *TFT_DB<10>
+.outputs TFT_DB<9>
+.inputs *TFT_DB<9>
+.outputs TFT_DB<8>
+.inputs *TFT_DB<8>
+.outputs TFT_DB<7>
+.inputs *TFT_DB<7>
+.outputs TFT_DB<6>
+.inputs *TFT_DB<6>
+.outputs TFT_DB<5>
+.inputs *TFT_DB<5>
+.outputs TFT_DB<4>
+.inputs *TFT_DB<4>
+.outputs TFT_DB<3>
+.inputs *TFT_DB<3>
+.outputs TFT_DB<2>
+.inputs *TFT_DB<2>
+.outputs TFT_DB<1>
+.inputs *TFT_DB<1>
+.outputs TFT_DB<0>
+.inputs *TFT_DB<0>
+.outputs TFT_RD
+.outputs TFT_RESET
+.outputs TFT_RS
+.inputs TFT_TSC_BUSY
+.outputs TFT_TSC_CLK
+.outputs TFT_TSC_CS_N
+.inputs TFT_TSC_DIN
+.outputs TFT_TSC_DOUT
+.inputs TFT_TSC_IRQ_N
+.outputs TFT_WR
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<7>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<6>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<5>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<4>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<3>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<2>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<1>
+.attrib fpga_slew 1 FAST
+.outputs VGA_BLUE<0>
+.attrib fpga_slew 1 FAST
+.outputs VGA_CLK
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<7>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<6>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<5>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<4>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<3>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<2>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<1>
+.attrib fpga_slew 1 FAST
+.outputs VGA_GREEN<0>
+.attrib fpga_slew 1 FAST
+.outputs VGA_HSYNC
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<7>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<6>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<5>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<4>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<3>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<2>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<1>
+.attrib fpga_slew 1 FAST
+.outputs VGA_RED<0>
+.attrib fpga_slew 1 FAST
+.outputs VGA_VSYNC

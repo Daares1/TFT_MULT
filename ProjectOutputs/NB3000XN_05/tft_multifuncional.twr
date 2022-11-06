@@ -1,0 +1,289 @@
+--------------------------------------------------------------------------------
+Release 12.1 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -l 30 -u 30
+tft_multifuncional.ncd
+C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL_map.pcf
+
+Design file:              tft_multifuncional.ncd
+Physical constraint file: TFT_MULTIFUNCIONAL_map.pcf
+Device,package,speed:     xc3s1400an,fgg676,-4 (PRODUCTION 1.41 2010-04-09)
+Report level:             summary report, limited to 0 items per constraint
+                          unconstrained path report, limited to 30 items
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_BRD
+-------------+------------+------------+------------------+--------+
+             |Max Setup to|Max Hold to |                  | Clock  |
+Source       | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------------+--------+
+SRAM0_D<0>   |    3.022(R)|    0.706(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<1>   |    3.324(R)|    0.406(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<2>   |    3.387(R)|    0.563(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<3>   |    2.144(R)|    0.598(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<4>   |    3.717(R)|    0.579(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<5>   |    3.294(R)|    0.636(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<6>   |    2.591(R)|    0.754(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<7>   |    2.576(R)|    0.445(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<8>   |    3.148(R)|    0.651(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<9>   |    2.650(R)|    0.539(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<10>  |    2.578(R)|    0.822(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<11>  |    2.631(R)|    0.924(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<12>  |    3.622(R)|   -0.712(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<13>  |    2.491(R)|    1.073(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<14>  |    2.280(R)|    1.150(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<15>  |    2.836(R)|    0.787(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<0>   |    2.179(R)|    1.132(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<1>   |    3.127(R)|    0.119(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<2>   |    2.948(R)|    0.250(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<3>   |    2.945(R)|    0.423(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<4>   |    2.325(R)|    1.068(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<5>   |    4.826(R)|    0.579(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<6>   |    2.820(R)|    1.016(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<7>   |    3.196(R)|   -0.697(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<8>   |    2.073(R)|    0.531(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<9>   |    2.073(R)|    0.801(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<10>  |    2.208(R)|    0.953(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<11>  |    2.643(R)|    0.974(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<12>  |    2.159(R)|    0.351(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<13>  |    3.569(R)|    0.273(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<14>  |    2.919(R)|    0.170(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<15>  |    5.339(R)|    0.370(R)|VGA_CLK_int       |   0.000|
+SW_USER<0>   |    6.067(R)|   -2.851(R)|VGA_CLK_int       |   0.000|
+SW_USER<1>   |    8.987(R)|   -4.876(R)|VGA_CLK_int       |   0.000|
+SW_USER<2>   |    8.675(R)|   -4.909(R)|VGA_CLK_int       |   0.000|
+SW_USER<3>   |    8.599(R)|   -4.756(R)|VGA_CLK_int       |   0.000|
+SW_USER<4>   |    8.868(R)|   -5.102(R)|VGA_CLK_int       |   0.000|
+TEST_BUTTON  |   15.109(R)|   -0.410(R)|VGA_CLK_int       |   0.000|
+TFT_TSC_DIN  |    2.097(R)|   -0.688(R)|VGA_CLK_int       |   0.000|
+TFT_TSC_IRQ_N|    2.066(R)|   -0.696(R)|VGA_CLK_int       |   0.000|
+-------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock JTAG_NEXUS_TCK
+--------------+------------+------------+-------------------+--------+
+              |Max Setup to|Max Hold to |                   | Clock  |
+Source        | clk (edge) | clk (edge) |Internal Clock(s)  | Phase  |
+--------------+------------+------------+-------------------+--------+
+JTAG_NEXUS_TDI|    2.343(R)|    0.888(R)|JTAG_NEXUS_TCK_ibuf|   0.000|
+JTAG_NEXUS_TMS|    2.176(R)|    0.367(R)|JTAG_NEXUS_TCK_ibuf|   0.000|
+--------------+------------+------------+-------------------+--------+
+
+Clock CLK_BRD to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+LED_B<0>    |    6.796(R)|VGA_CLK_int       |   0.000|
+LED_B<1>    |    6.781(R)|VGA_CLK_int       |   0.000|
+LED_B<2>    |    6.786(R)|VGA_CLK_int       |   0.000|
+LED_B<3>    |    6.802(R)|VGA_CLK_int       |   0.000|
+LED_B<4>    |    6.752(R)|VGA_CLK_int       |   0.000|
+LED_B<5>    |    6.708(R)|VGA_CLK_int       |   0.000|
+LED_B<6>    |    6.739(R)|VGA_CLK_int       |   0.000|
+LED_B<7>    |    6.756(R)|VGA_CLK_int       |   0.000|
+LED_G<0>    |    6.774(R)|VGA_CLK_int       |   0.000|
+LED_G<1>    |    6.764(R)|VGA_CLK_int       |   0.000|
+LED_G<2>    |    6.773(R)|VGA_CLK_int       |   0.000|
+LED_G<3>    |    6.778(R)|VGA_CLK_int       |   0.000|
+LED_G<4>    |    6.699(R)|VGA_CLK_int       |   0.000|
+LED_G<5>    |    6.747(R)|VGA_CLK_int       |   0.000|
+LED_G<6>    |    6.757(R)|VGA_CLK_int       |   0.000|
+LED_G<7>    |    6.753(R)|VGA_CLK_int       |   0.000|
+LED_R<0>    |    6.800(R)|VGA_CLK_int       |   0.000|
+LED_R<1>    |    6.764(R)|VGA_CLK_int       |   0.000|
+LED_R<2>    |    6.764(R)|VGA_CLK_int       |   0.000|
+LED_R<3>    |    6.772(R)|VGA_CLK_int       |   0.000|
+LED_R<4>    |    6.700(R)|VGA_CLK_int       |   0.000|
+LED_R<5>    |    6.691(R)|VGA_CLK_int       |   0.000|
+LED_R<6>    |    6.770(R)|VGA_CLK_int       |   0.000|
+LED_R<7>    |    6.756(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<0>  |   25.815(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<1>  |   22.764(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<2>  |   23.581(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<3>  |   24.817(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<4>  |   25.133(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<5>  |   24.572(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<6>  |   25.124(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<7>  |   25.195(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<8>  |   24.804(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<9>  |   26.080(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<10> |   24.856(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<11> |   25.248(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<12> |   24.438(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<13> |   24.623(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<14> |   24.042(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<15> |   23.791(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<16> |   24.515(R)|VGA_CLK_int       |   0.000|
+SRAM0_A<17> |   24.308(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<0>  |   30.220(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<1>  |   30.540(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<2>  |   30.239(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<3>  |   28.517(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<4>  |   30.912(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<5>  |   30.913(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<6>  |   31.733(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<7>  |   32.017(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<8>  |   31.135(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<9>  |   31.432(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<10> |   31.965(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<11> |   31.965(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<12> |   31.854(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<13> |   28.758(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<14> |   30.490(R)|VGA_CLK_int       |   0.000|
+SRAM0_D<15> |   31.307(R)|VGA_CLK_int       |   0.000|
+SRAM0_E     |   33.899(R)|VGA_CLK_int       |   0.000|
+SRAM0_LB    |   32.239(R)|VGA_CLK_int       |   0.000|
+SRAM0_OE    |   28.410(R)|VGA_CLK_int       |   0.000|
+SRAM0_UB    |   33.217(R)|VGA_CLK_int       |   0.000|
+SRAM0_W     |    9.618(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<0>  |   25.227(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<1>  |   23.583(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<2>  |   23.615(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<3>  |   25.078(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<4>  |   26.071(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<5>  |   25.652(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<6>  |   24.855(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<7>  |   25.684(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<8>  |   25.613(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<9>  |   25.060(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<10> |   24.587(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<11> |   25.655(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<12> |   25.511(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<13> |   24.079(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<14> |   24.322(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<15> |   24.612(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<16> |   24.648(R)|VGA_CLK_int       |   0.000|
+SRAM1_A<17> |   25.866(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<0>  |   29.941(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<1>  |   31.182(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<2>  |   31.031(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<3>  |   30.486(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<4>  |   29.895(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<5>  |   30.891(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<6>  |   31.971(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<7>  |   31.666(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<8>  |   32.823(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<9>  |   32.521(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<10> |   32.000(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<11> |   31.164(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<12> |   29.087(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<13> |   30.995(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<14> |   30.817(R)|VGA_CLK_int       |   0.000|
+SRAM1_D<15> |   30.825(R)|VGA_CLK_int       |   0.000|
+SRAM1_E     |   34.544(R)|VGA_CLK_int       |   0.000|
+SRAM1_LB    |   32.979(R)|VGA_CLK_int       |   0.000|
+SRAM1_OE    |   29.557(R)|VGA_CLK_int       |   0.000|
+SRAM1_UB    |   33.244(R)|VGA_CLK_int       |   0.000|
+SRAM1_W     |   10.689(R)|VGA_CLK_int       |   0.000|
+TFT_CS      |   14.111(R)|VGA_CLK_int       |   0.000|
+TFT_DB<0>   |   16.238(R)|VGA_CLK_int       |   0.000|
+TFT_DB<1>   |   16.828(R)|VGA_CLK_int       |   0.000|
+TFT_DB<2>   |   17.439(R)|VGA_CLK_int       |   0.000|
+TFT_DB<3>   |   15.707(R)|VGA_CLK_int       |   0.000|
+TFT_DB<4>   |   22.038(R)|VGA_CLK_int       |   0.000|
+TFT_DB<5>   |   18.753(R)|VGA_CLK_int       |   0.000|
+TFT_DB<6>   |   16.569(R)|VGA_CLK_int       |   0.000|
+TFT_DB<7>   |   19.807(R)|VGA_CLK_int       |   0.000|
+TFT_DB<8>   |   18.369(R)|VGA_CLK_int       |   0.000|
+TFT_DB<9>   |   18.811(R)|VGA_CLK_int       |   0.000|
+TFT_DB<10>  |   19.573(R)|VGA_CLK_int       |   0.000|
+TFT_DB<11>  |   20.465(R)|VGA_CLK_int       |   0.000|
+TFT_DB<12>  |   19.651(R)|VGA_CLK_int       |   0.000|
+TFT_DB<13>  |   19.512(R)|VGA_CLK_int       |   0.000|
+TFT_DB<14>  |   20.431(R)|VGA_CLK_int       |   0.000|
+TFT_DB<15>  |   21.310(R)|VGA_CLK_int       |   0.000|
+TFT_RESET   |   11.831(R)|VGA_CLK_int       |   0.000|
+TFT_RS      |   26.703(R)|VGA_CLK_int       |   0.000|
+TFT_TSC_CLK |   12.149(R)|VGA_CLK_int       |   0.000|
+TFT_TSC_CS_N|   10.940(R)|VGA_CLK_int       |   0.000|
+TFT_TSC_DOUT|    9.651(R)|VGA_CLK_int       |   0.000|
+TFT_WR      |   13.834(R)|VGA_CLK_int       |   0.000|
+VGA_BLUE<3> |    5.645(R)|VGA_CLK_int       |   0.000|
+VGA_BLUE<4> |    5.645(R)|VGA_CLK_int       |   0.000|
+VGA_BLUE<5> |    5.631(R)|VGA_CLK_int       |   0.000|
+VGA_BLUE<6> |    5.657(R)|VGA_CLK_int       |   0.000|
+VGA_BLUE<7> |    5.612(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<2>|    5.683(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<3>|    5.620(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<4>|    5.676(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<5>|    5.676(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<6>|    5.642(R)|VGA_CLK_int       |   0.000|
+VGA_GREEN<7>|    5.683(R)|VGA_CLK_int       |   0.000|
+VGA_HSYNC   |    5.645(R)|VGA_CLK_int       |   0.000|
+VGA_RED<3>  |    5.663(R)|VGA_CLK_int       |   0.000|
+VGA_RED<4>  |    5.605(R)|VGA_CLK_int       |   0.000|
+VGA_RED<5>  |    5.676(R)|VGA_CLK_int       |   0.000|
+VGA_RED<6>  |    5.663(R)|VGA_CLK_int       |   0.000|
+VGA_RED<7>  |    5.605(R)|VGA_CLK_int       |   0.000|
+VGA_VSYNC   |    5.623(R)|VGA_CLK_int       |   0.000|
+------------+------------+------------------+--------+
+
+Clock JTAG_NEXUS_TCK to Pad
+--------------+------------+-------------------+--------+
+              | clk (edge) |                   | Clock  |
+Destination   |   to PAD   |Internal Clock(s)  | Phase  |
+--------------+------------+-------------------+--------+
+JTAG_NEXUS_TDO|   13.997(R)|JTAG_NEXUS_TCK_ibuf|   0.000|
+--------------+------------+-------------------+--------+
+
+Clock to Setup on destination clock CLK_BRD
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_BRD        |   26.531|         |         |         |
+JTAG_NEXUS_TCK |   23.360|    3.954|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock JTAG_NEXUS_TCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_BRD        |    5.663|         |         |         |
+JTAG_NEXUS_TCK |   10.044|    4.073|    3.532|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CLK_BRD        |VGA_CLK        |   11.411|
+TEST_BUTTON    |TFT_RESET      |    9.460|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 22 17:43:42 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 301 MB
+
+
+

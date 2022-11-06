@@ -1,0 +1,1457 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc7228a --dep-file=Output\frameout\timing_timing.d --make-target=Output\frameout\timing_timing.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\timing.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c"
+
+	.section	.text.timing.freq_hz ,cluster('$group_freq_hz')
+	.align	4
+	.global	freq_hz
+; Function freq_hz
+.L10:
+freq_hz:	.type	func
+	lui	$v0,0x2fa
+.L155:
+	jr	$ra
+.L156:
+	ori	$v0,$v0,0xf080
+.L84:
+	.size	freq_hz,*-freq_hz
+.L37:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.delay_ns ,cluster('$group_delay_ns')
+	.align	4
+	.global	delay_ns
+; Function delay_ns
+.L12:
+delay_ns:	.type	func
+	j	pal_delay_ns
+.L161:
+	nop
+.L85:
+	.size	delay_ns,*-delay_ns
+.L42:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.delay_us ,cluster('$group_delay_us')
+	.align	4
+	.global	delay_us
+; Function delay_us
+.L14:
+delay_us:	.type	func
+	j	pal_delay_us
+.L166:
+	nop
+.L88:
+	.size	delay_us,*-delay_us
+.L47:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.delay_ms ,cluster('$group_delay_ms')
+	.align	4
+	.global	delay_ms
+; Function delay_ms
+.L16:
+delay_ms:	.type	func
+	j	pal_delay_ms
+.L171:
+	nop
+.L90:
+	.size	delay_ms,*-delay_ms
+.L52:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.clock_ns ,cluster('$group_clock_ns')
+	.align	4
+	.global	clock_ns
+; Function clock_ns
+.L18:
+clock_ns:	.type	func
+	addiu	$sp,$sp,-4
+.L113:
+	sw	$ra,0($sp)
+.L94:
+	jal	clock
+	nop
+	lui	$a0,0x3b9a
+	ori	$a3,$a0,0xca00
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__mul64
+	move	$a1,$v1
+	lui	$a0,0x2fa
+	ori	$a3,$a0,0xf080
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__udiv64
+	move	$a1,$v1
+.L95:
+	lw	$ra,0($sp)
+.L114:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L92:
+	.size	clock_ns,*-clock_ns
+.L57:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.clock_us ,cluster('$group_clock_us')
+	.align	4
+	.global	clock_us
+; Function clock_us
+.L20:
+clock_us:	.type	func
+	addiu	$sp,$sp,-4
+.L115:
+	sw	$ra,0($sp)
+.L99:
+	jal	clock
+	nop
+	lui	$a0,0xf
+	ori	$a3,$a0,0x4240
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__mul64
+	move	$a1,$v1
+	lui	$a0,0x2fa
+	ori	$a3,$a0,0xf080
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__udiv64
+	move	$a1,$v1
+.L100:
+	lw	$ra,0($sp)
+.L116:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L97:
+	.size	clock_us,*-clock_us
+.L62:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.clock_ms ,cluster('$group_clock_ms')
+	.align	4
+	.global	clock_ms
+; Function clock_ms
+.L22:
+clock_ms:	.type	func
+	addiu	$sp,$sp,-4
+.L117:
+	sw	$ra,0($sp)
+.L104:
+	jal	clock
+	nop
+	li	$a3,0x3e8
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__mul64
+	move	$a1,$v1
+	lui	$a0,0x2fa
+	ori	$a3,$a0,0xf080
+	move	$a2,$zero
+	move	$a0,$v0
+	jal	__udiv64
+	move	$a1,$v1
+.L105:
+	lw	$ra,0($sp)
+.L118:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L102:
+	.size	clock_ms,*-clock_ms
+.L67:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.elapsed_time_ns ,cluster('$group_elapsed_time_ns')
+	.align	4
+	.global	elapsed_time_ns
+; Function elapsed_time_ns
+.L24:
+elapsed_time_ns:	.type	func
+	addiu	$sp,$sp,-12
+.L119:
+	sw	$ra,0($sp)
+.L120:
+	sw	$s0,4($sp)
+.L121:
+	sw	$s1,8($sp)
+.L122:
+	move	$s0,$a0
+.L188:
+	jal	clock_ns
+.L189:
+	move	$s1,$a1
+.L126:
+	sltu	$a0,$v1,$s1
+	subu	$v1,$v1,$s1
+	subu	$v0,$v0,$s0
+	subu	$v0,$v0,$a0
+.L190:
+	lw	$s1,8($sp)
+.L123:
+	lw	$s0,4($sp)
+.L124:
+	lw	$ra,0($sp)
+.L125:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L107:
+	.size	elapsed_time_ns,*-elapsed_time_ns
+.L72:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.elapsed_time_us ,cluster('$group_elapsed_time_us')
+	.align	4
+	.global	elapsed_time_us
+; Function elapsed_time_us
+.L26:
+elapsed_time_us:	.type	func
+	addiu	$sp,$sp,-12
+.L127:
+	sw	$ra,0($sp)
+.L128:
+	sw	$s0,4($sp)
+.L129:
+	sw	$s1,8($sp)
+.L130:
+	move	$s0,$a0
+.L195:
+	jal	clock_us
+.L196:
+	move	$s1,$a1
+.L134:
+	sltu	$a0,$v1,$s1
+	subu	$v1,$v1,$s1
+	subu	$v0,$v0,$s0
+	subu	$v0,$v0,$a0
+.L197:
+	lw	$s1,8($sp)
+.L131:
+	lw	$s0,4($sp)
+.L132:
+	lw	$ra,0($sp)
+.L133:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L109:
+	.size	elapsed_time_us,*-elapsed_time_us
+.L77:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timing.elapsed_time_ms ,cluster('$group_elapsed_time_ms')
+	.align	4
+	.global	elapsed_time_ms
+; Function elapsed_time_ms
+.L28:
+elapsed_time_ms:	.type	func
+	addiu	$sp,$sp,-12
+.L135:
+	sw	$ra,0($sp)
+.L136:
+	sw	$s0,4($sp)
+.L137:
+	sw	$s1,8($sp)
+.L138:
+	move	$s0,$a0
+.L202:
+	jal	clock_ms
+.L203:
+	move	$s1,$a1
+.L142:
+	sltu	$a0,$v1,$s1
+	subu	$v1,$v1,$s1
+	subu	$v0,$v0,$s0
+	subu	$v0,$v0,$a0
+.L204:
+	lw	$s1,8($sp)
+.L139:
+	lw	$s0,4($sp)
+.L140:
+	lw	$ra,0($sp)
+.L141:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L111:
+	.size	elapsed_time_ms,*-elapsed_time_ms
+.L82:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'clock_ns','__mul64'
+	.calls	'clock_ns','__udiv64'
+	.calls	'clock_us','__mul64'
+	.calls	'clock_us','__udiv64'
+	.calls	'clock_ms','__mul64'
+	.calls	'clock_ms','__udiv64'
+	.calls	'delay_ns','pal_delay_ns'
+	.calls	'delay_us','pal_delay_us'
+	.calls	'delay_ms','pal_delay_ms'
+	.calls	'clock_ns','clock'
+	.calls	'clock_us','clock'
+	.calls	'clock_ms','clock'
+	.calls	'elapsed_time_ns','clock_ns'
+	.calls	'elapsed_time_us','clock_us'
+	.calls	'elapsed_time_ms','clock_ms'
+	.calls	'freq_hz','',0
+	.calls	'delay_ns','',0
+	.calls	'delay_us','',0
+	.calls	'delay_ms','',0
+	.calls	'clock_ns','',4
+	.calls	'clock_us','',4
+	.calls	'clock_ms','',4
+	.calls	'elapsed_time_ns','',12
+	.calls	'elapsed_time_us','',12
+	.calls	'elapsed_time_ms','',12
+	.extern	clock
+	.extern	pal_delay_ns
+	.extern	pal_delay_us
+	.extern	pal_delay_ms
+	.extern	__mul64
+	.extern	__udiv64
+	.section	.debug_info
+.L30:
+	.dw	937
+	.dh	3
+	.dw	.L31
+	.db	4
+.L29:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L32
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	.L83-.L30
+	.db	3,0
+.L83:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7
+.L93:
+	.db	6
+	.db	"pal_clock_ns",0
+	.db	3,2,65,17
+	.dw	.L86-.L30
+	.db	1,1
+.L96:
+	.db	3,0
+.L86:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7
+.L98:
+	.db	6
+	.db	"pal_clock_us",0
+	.db	3,2,70,17
+	.dw	548
+	.db	1,1
+.L101:
+	.db	3,0
+.L103:
+	.db	6
+	.db	"pal_clock_ms",0
+	.db	3,2,75,17
+	.dw	548
+	.db	1,1
+.L106:
+	.db	3,0,7
+	.dw	312
+	.db	3,0,7
+	.dw	350
+	.db	3,0,7
+	.dw	395
+	.db	3,0,7
+	.dw	441
+	.db	8
+	.dw	488
+	.db	3,0,9
+	.db	"clock",0
+	.db	2,62,17
+	.dw	548
+	.db	1,1,1,1,7
+	.dw	522
+	.db	3,0,7
+	.dw	574
+	.db	3,0,7
+	.dw	600
+	.db	3,0,10
+	.db	"pal_delay_ns",0
+	.db	2,80,17,1,1,1,1,4
+	.db	"ns",0
+	.db	2,80,41
+	.dw	548
+	.db	0,10
+	.db	"pal_delay_us",0
+	.db	2,81,17,1,1,1,1,4
+	.db	"us",0
+	.db	2,81,41
+	.dw	548
+	.db	0,10
+	.db	"pal_delay_ms",0
+	.db	2,82,17,1,1,1,1,4
+	.db	"ms",0
+	.db	2,82,41
+	.dw	548
+	.db	0,11
+	.db	"__wchar_t",0
+	.db	3,1,1
+	.dw	.L143-.L30
+.L143:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,11
+	.db	"__size_t",0
+	.db	3,1,1
+	.dw	506
+	.db	11
+	.db	"__ptrdiff_t",0
+	.db	3,1,1
+	.dw	.L144-.L30
+.L144:
+	.db	5
+	.db	"int",0
+	.db	4,5,11
+	.db	"__codeptr",0
+	.db	3,1,1
+	.dw	.L145-.L30
+.L145:
+	.db	12
+	.dw	.L146-.L30
+.L146:
+	.db	13,1,11
+	.db	"uint32_t",0
+	.db	4,26,33
+	.dw	506
+	.db	11
+	.db	"uint64_t",0
+	.db	4,28,33
+	.dw	548
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L31:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,46,1,3,8,32,13,58,15,59,15,57
+	.db	15,73,19,54,15,39,12,0,0,7,46,1,49,19,0,0,8,5,0,49,19,0,0,9,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39
+	.db	12,63,12,60,12,0,0,10,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,11,22,0,3,8,58,15,59,15,57
+	.db	15,73,19,0,0,12,15,0,73,19,0,0,13,21,0,54,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L32:
+	.dw	.L148-.L147
+.L147:
+	.dh	3
+	.dw	.L150-.L149
+.L149:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L150:
+.L148:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_freq_hz')
+.L33:
+	.dw	359
+	.dh	3
+	.dw	.L34
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L36,.L35
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"freq_hz",0
+	.db	1,20,17
+	.dw	.L83
+	.db	1,1,1
+	.dw	.L10,.L84,.L9
+	.db	4
+	.dw	.L10,.L84
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_freq_hz')
+.L34:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_freq_hz')
+.L35:
+	.dw	.L152-.L151
+.L151:
+	.dh	3
+	.dw	.L154-.L153
+.L153:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L154:
+	.db	5,5,7,0,5,2
+	.dw	.L10
+	.db	3,21,1,5,1
+	.db	15+9*((.L155-.L10)/4)
+	.db	5,5,7
+	.db	13+9*((.L156-.L155)/4)
+	.db	5,1,9
+	.dh	.L37-.L156
+	.db	3,1,0,1,1
+.L152:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_freq_hz')
+.L36:
+	.dw	-1
+	.dw	.L10
+	.dw	0
+	.dw	.L37-.L10
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_delay_ns')
+.L38:
+	.dw	371
+	.dh	3
+	.dw	.L39
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L41,.L40
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"delay_ns",0
+	.db	1,36,15,1,1,1
+	.dw	.L12,.L85,.L11
+	.db	4
+	.db	"ns",0
+	.db	1,36,35
+	.dw	.L86,.L87
+	.db	5
+	.dw	.L12,.L85
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_delay_ns')
+.L39:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_delay_ns')
+.L40:
+	.dw	.L158-.L157
+.L157:
+	.dh	3
+	.dw	.L160-.L159
+.L159:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L160:
+	.db	5,21,7,0,5,2
+	.dw	.L12
+	.db	3,37,1,7
+	.db	14+9*((.L161-.L12)/4)
+	.db	5,1,9
+	.dh	.L42-.L161
+	.db	3,2,0,1,1
+.L158:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_delay_ns')
+.L41:
+	.dw	-1
+	.dw	.L12
+	.dw	0
+	.dw	.L42-.L12
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_delay_us')
+.L43:
+	.dw	371
+	.dh	3
+	.dw	.L44
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L46,.L45
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"delay_us",0
+	.db	1,53,15,1,1,1
+	.dw	.L14,.L88,.L13
+	.db	4
+	.db	"us",0
+	.db	1,53,35
+	.dw	.L86,.L89
+	.db	5
+	.dw	.L14,.L88
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_delay_us')
+.L44:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_delay_us')
+.L45:
+	.dw	.L163-.L162
+.L162:
+	.dh	3
+	.dw	.L165-.L164
+.L164:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L165:
+	.db	5,21,7,0,5,2
+	.dw	.L14
+	.db	3,54,1,7
+	.db	14+9*((.L166-.L14)/4)
+	.db	5,1,9
+	.dh	.L47-.L166
+	.db	3,2,0,1,1
+.L163:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_delay_us')
+.L46:
+	.dw	-1
+	.dw	.L14
+	.dw	0
+	.dw	.L47-.L14
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_delay_ms')
+.L48:
+	.dw	371
+	.dh	3
+	.dw	.L49
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L51,.L50
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"delay_ms",0
+	.db	1,70,15,1,1,1
+	.dw	.L16,.L90,.L15
+	.db	4
+	.db	"ms",0
+	.db	1,70,35
+	.dw	.L86,.L91
+	.db	5
+	.dw	.L16,.L90
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_delay_ms')
+.L49:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_delay_ms')
+.L50:
+	.dw	.L168-.L167
+.L167:
+	.dh	3
+	.dw	.L170-.L169
+.L169:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L170:
+	.db	5,21,7,0,5,2
+	.dw	.L16
+	.db	3,199,0,1,7
+	.db	14+9*((.L171-.L16)/4)
+	.db	5,1,9
+	.dh	.L52-.L171
+	.db	3,2,0,1,1
+.L168:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_delay_ms')
+.L51:
+	.dw	-1
+	.dw	.L16
+	.dw	0
+	.dw	.L52-.L16
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_clock_ns')
+.L53:
+	.dw	388
+	.dh	3
+	.dw	.L54
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L56,.L55
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"clock_ns",0
+	.db	1,84,21
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L18,.L92,.L17
+	.db	4
+	.dw	.L18,.L92
+	.db	5
+	.dw	.L93,.L94,.L95
+	.db	6
+	.dw	.L96,.L94,.L95
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_clock_ns')
+.L54:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,11,0,49,16,17,1
+	.db	18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_clock_ns')
+.L55:
+	.dw	.L173-.L172
+.L172:
+	.dh	3
+	.dw	.L175-.L174
+.L174:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0,0
+.L175:
+	.db	5,21,7,0,5,2
+	.dw	.L18
+	.db	3,211,0,1,4,2,5,5,9
+	.dh	.L94-.L18
+	.db	3,111,1,4,1,5,1,9
+	.dh	.L95-.L94
+	.db	3,20,1,9
+	.dh	.L57-.L95
+	.db	0,1,1
+.L173:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_clock_ns')
+.L56:
+	.dw	-1
+	.dw	.L18
+	.dw	0
+	.dw	.L57-.L18
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_clock_us')
+.L58:
+	.dw	388
+	.dh	3
+	.dw	.L59
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L61,.L60
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"clock_us",0
+	.db	1,97,21
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L20,.L97,.L19
+	.db	4
+	.dw	.L20,.L97
+	.db	5
+	.dw	.L98,.L99,.L100
+	.db	6
+	.dw	.L101,.L99,.L100
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_clock_us')
+.L59:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,11,0,49,16,17,1
+	.db	18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_clock_us')
+.L60:
+	.dw	.L177-.L176
+.L176:
+	.dh	3
+	.dw	.L179-.L178
+.L178:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0,0
+.L179:
+	.db	5,21,7,0,5,2
+	.dw	.L20
+	.db	3,224,0,1,4,2,5,5,9
+	.dh	.L99-.L20
+	.db	3,103,1,4,1,5,1,9
+	.dh	.L100-.L99
+	.db	3,28,1,9
+	.dh	.L62-.L100
+	.db	0,1,1
+.L177:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_clock_us')
+.L61:
+	.dw	-1
+	.dw	.L20
+	.dw	0
+	.dw	.L62-.L20
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_clock_ms')
+.L63:
+	.dw	388
+	.dh	3
+	.dw	.L64
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L66,.L65
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"clock_ms",0
+	.db	1,110,21
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L22,.L102,.L21
+	.db	4
+	.dw	.L22,.L102
+	.db	5
+	.dw	.L103,.L104,.L105
+	.db	6
+	.dw	.L106,.L104,.L105
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_clock_ms')
+.L64:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,11,0,49,16,17,1
+	.db	18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_clock_ms')
+.L65:
+	.dw	.L181-.L180
+.L180:
+	.dh	3
+	.dw	.L183-.L182
+.L182:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0,0
+.L183:
+	.db	5,21,7,0,5,2
+	.dw	.L22
+	.db	3,237,0,1,4,2,5,5,9
+	.dh	.L104-.L22
+	.db	3,95,1,4,1,5,1,9
+	.dh	.L105-.L104
+	.db	3,36,1,9
+	.dh	.L67-.L105
+	.db	0,1,1
+.L181:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_clock_ms')
+.L66:
+	.dw	-1
+	.dw	.L22
+	.dw	0
+	.dw	.L67-.L22
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_elapsed_time_ns')
+.L68:
+	.dw	388
+	.dh	3
+	.dw	.L69
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L71,.L70
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"elapsed_time_ns",0
+	.db	1,127,18
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L24,.L107,.L23
+	.db	4
+	.db	"since_ns",0
+	.db	1,127,45
+	.dw	.L86,.L108
+	.db	5
+	.dw	.L24,.L107
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_elapsed_time_ns')
+.L69:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_elapsed_time_ns')
+.L70:
+	.dw	.L185-.L184
+.L184:
+	.dh	3
+	.dw	.L187-.L186
+.L186:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L187:
+	.db	5,18,7,0,5,2
+	.dw	.L24
+	.db	3,254,0,1,5,5
+	.db	16+9*((.L188-.L24)/4)
+	.db	5,18
+	.db	12+9*((.L189-.L188)/4)
+	.db	5,5
+	.db	16+9*((.L126-.L189)/4)
+	.db	5,1
+	.db	15+9*((.L190-.L126)/4)
+	.db	9
+	.dh	.L72-.L190
+	.db	0,1,1
+.L185:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_elapsed_time_ns')
+.L71:
+	.dw	-1
+	.dw	.L24
+	.dw	0
+	.dw	.L72-.L24
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_elapsed_time_us')
+.L73:
+	.dw	390
+	.dh	3
+	.dw	.L74
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L76,.L75
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"elapsed_time_us",0
+	.db	1,143,1,18
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L26,.L109,.L25
+	.db	4
+	.db	"since_us",0
+	.db	1,143,1,45
+	.dw	.L86,.L110
+	.db	5
+	.dw	.L26,.L109
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_elapsed_time_us')
+.L74:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_elapsed_time_us')
+.L75:
+	.dw	.L192-.L191
+.L191:
+	.dh	3
+	.dw	.L194-.L193
+.L193:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L194:
+	.db	5,18,7,0,5,2
+	.dw	.L26
+	.db	3,142,1,1,5,5
+	.db	16+9*((.L195-.L26)/4)
+	.db	5,18
+	.db	12+9*((.L196-.L195)/4)
+	.db	5,5
+	.db	16+9*((.L134-.L196)/4)
+	.db	5,1
+	.db	15+9*((.L197-.L134)/4)
+	.db	9
+	.dh	.L77-.L197
+	.db	0,1,1
+.L192:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_elapsed_time_us')
+.L76:
+	.dw	-1
+	.dw	.L26
+	.dw	0
+	.dw	.L77-.L26
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_elapsed_time_ms')
+.L78:
+	.dw	390
+	.dh	3
+	.dw	.L79
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L81,.L80
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"elapsed_time_ms",0
+	.db	1,159,1,18
+	.dw	.L86
+	.db	1,1,1
+	.dw	.L28,.L111,.L27
+	.db	4
+	.db	"since_ms",0
+	.db	1,159,1,45
+	.dw	.L86,.L112
+	.db	5
+	.dw	.L28,.L111
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_elapsed_time_ms')
+.L79:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_elapsed_time_ms')
+.L80:
+	.dw	.L199-.L198
+.L198:
+	.dh	3
+	.dw	.L201-.L200
+.L200:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timing.c",0
+	.db	0,0,0,0
+.L201:
+	.db	5,18,7,0,5,2
+	.dw	.L28
+	.db	3,158,1,1,5,5
+	.db	16+9*((.L202-.L28)/4)
+	.db	5,18
+	.db	12+9*((.L203-.L202)/4)
+	.db	5,5
+	.db	16+9*((.L142-.L203)/4)
+	.db	5,1
+	.db	15+9*((.L204-.L142)/4)
+	.db	9
+	.dh	.L82-.L204
+	.db	0,1,1
+.L199:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_elapsed_time_ms')
+.L81:
+	.dw	-1
+	.dw	.L28
+	.dw	0
+	.dw	.L82-.L28
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_elapsed_time_ns')
+.L23:
+	.dw	-1
+	.dw	.L24,.L24-.L24,.L119-.L24
+	.dh	2
+	.db	141,0
+	.dw	.L119-.L24,.L107-.L24
+	.dh	2
+	.db	141,12
+	.dw	.L107-.L24,.L107-.L24
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_ns')
+.L87:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_us')
+.L89:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_ms')
+.L91:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_clock_ns')
+.L17:
+	.dw	-1
+	.dw	.L18,.L18-.L18,.L113-.L18
+	.dh	2
+	.db	141,0
+	.dw	.L113-.L18,.L92-.L18
+	.dh	2
+	.db	141,4
+	.dw	.L92-.L18,.L92-.L18
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_elapsed_time_ns')
+.L108:
+	.dw	-1
+	.dw	.L24,.L24-.L24,.L126-.L24
+	.dh	6
+	.db	84,147,4,85,147,4
+	.dw	.L126-.L24,.L123-.L24
+	.dh	6
+	.db	96,147,4,97,147,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_us')
+.L13:
+	.dw	-1
+	.dw	.L14,.L14-.L14,.L88-.L14
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_ms')
+.L15:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L90-.L16
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_clock_us')
+.L19:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L115-.L20
+	.dh	2
+	.db	141,0
+	.dw	.L115-.L20,.L97-.L20
+	.dh	2
+	.db	141,4
+	.dw	.L97-.L20,.L97-.L20
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_elapsed_time_us')
+.L25:
+	.dw	-1
+	.dw	.L26,.L26-.L26,.L127-.L26
+	.dh	2
+	.db	141,0
+	.dw	.L127-.L26,.L109-.L26
+	.dh	2
+	.db	141,12
+	.dw	.L109-.L26,.L109-.L26
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_clock_ms')
+.L21:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L117-.L22
+	.dh	2
+	.db	141,0
+	.dw	.L117-.L22,.L102-.L22
+	.dh	2
+	.db	141,4
+	.dw	.L102-.L22,.L102-.L22
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_elapsed_time_ms')
+.L27:
+	.dw	-1
+	.dw	.L28,.L28-.L28,.L135-.L28
+	.dh	2
+	.db	141,0
+	.dw	.L135-.L28,.L111-.L28
+	.dh	2
+	.db	141,12
+	.dw	.L111-.L28,.L111-.L28
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L112:
+	.dw	-1
+	.dw	.L28,.L28-.L28,.L142-.L28
+	.dh	6
+	.db	84,147,4,85,147,4
+	.dw	.L142-.L28,.L139-.L28
+	.dh	6
+	.db	96,147,4,97,147,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_freq_hz')
+.L9:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L84-.L10
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_delay_ns')
+.L11:
+	.dw	-1
+	.dw	.L12,.L12-.L12,.L85-.L12
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_elapsed_time_us')
+.L110:
+	.dw	-1
+	.dw	.L26,.L26-.L26,.L134-.L26
+	.dh	6
+	.db	84,147,4,85,147,4
+	.dw	.L134-.L26,.L131-.L26
+	.dh	6
+	.db	96,147,4,97,147,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L205:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_freq_hz')
+	.dw	52
+	.dw	.L205,.L10,.L84-.L10
+	.db	8,3,8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_delay_ns')
+	.dw	12
+	.dw	.L205,.L12,.L85-.L12
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_delay_us')
+	.dw	12
+	.dw	.L205,.L14,.L88-.L14
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_delay_ms')
+	.dw	12
+	.dw	.L205,.L16,.L90-.L16
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_clock_ns')
+	.dw	48
+	.dw	.L205,.L18,.L92-.L18
+	.db	4
+	.dw	(.L113-.L18)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L94-.L113)/4
+	.db	17,31,124,4
+	.dw	(.L114-.L94)/4
+	.db	223,4
+	.dw	(.L92-.L114)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_clock_us')
+	.dw	48
+	.dw	.L205,.L20,.L97-.L20
+	.db	4
+	.dw	(.L115-.L20)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L99-.L115)/4
+	.db	17,31,124,4
+	.dw	(.L116-.L99)/4
+	.db	223,4
+	.dw	(.L97-.L116)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_clock_ms')
+	.dw	48
+	.dw	.L205,.L22,.L102-.L22
+	.db	4
+	.dw	(.L117-.L22)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L104-.L117)/4
+	.db	17,31,124,4
+	.dw	(.L118-.L104)/4
+	.db	223,4
+	.dw	(.L102-.L118)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_elapsed_time_ns')
+	.dw	76
+	.dw	.L205,.L24,.L107-.L24
+	.db	4
+	.dw	(.L119-.L24)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L120-.L119)/4
+	.db	17,31,116,4
+	.dw	(.L121-.L120)/4
+	.db	17,16,120,4
+	.dw	(.L122-.L121)/4
+	.db	17,17,124,4
+	.dw	(.L123-.L122)/4
+	.db	209,4
+	.dw	(.L124-.L123)/4
+	.db	208,4
+	.dw	(.L125-.L124)/4
+	.db	223,4
+	.dw	(.L107-.L125)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_elapsed_time_us')
+	.dw	76
+	.dw	.L205,.L26,.L109-.L26
+	.db	4
+	.dw	(.L127-.L26)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L128-.L127)/4
+	.db	17,31,116,4
+	.dw	(.L129-.L128)/4
+	.db	17,16,120,4
+	.dw	(.L130-.L129)/4
+	.db	17,17,124,4
+	.dw	(.L131-.L130)/4
+	.db	209,4
+	.dw	(.L132-.L131)/4
+	.db	208,4
+	.dw	(.L133-.L132)/4
+	.db	223,4
+	.dw	(.L109-.L133)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_elapsed_time_ms')
+	.dw	76
+	.dw	.L205,.L28,.L111-.L28
+	.db	4
+	.dw	(.L135-.L28)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L136-.L135)/4
+	.db	17,31,116,4
+	.dw	(.L137-.L136)/4
+	.db	17,16,120,4
+	.dw	(.L138-.L137)/4
+	.db	17,17,124,4
+	.dw	(.L139-.L138)/4
+	.db	209,4
+	.dw	(.L140-.L139)/4
+	.db	208,4
+	.dw	(.L141-.L140)/4
+	.db	223,4
+	.dw	(.L111-.L141)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

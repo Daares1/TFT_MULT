@@ -1,0 +1,3557 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc5468a --dep-file=Output\frameout\touchscreen_touchscreen.d --make-target=Output\frameout\touchscreen_touchscreen.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\touchscreen.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c"
+
+	.section	.text.touchscreen.touchscreen_open ,cluster('$group_touchscreen_open')
+	.align	4
+	.global	touchscreen_open
+; Function touchscreen_open
+.L107:
+touchscreen_open:	.type	func
+	addiu	$sp,$sp,-12
+.L243:
+	sw	$ra,0($sp)
+.L244:
+	sw	$s0,4($sp)
+.L187:
+	li	$v0,0x54
+	multu	$v0,$a0,$v0
+	lui	$v1,@hi(drv_table)
+	addiu	$v1,$v1,@lo(drv_table)
+	addu	$s0,$v0,$v1
+.L249:
+	lw	$v0,0($s0)
+.L188:
+	sw	$s1,8($sp)
+.L189:
+	bne	$v0,$zero,.L2
+.L419:
+	nop
+.L192:
+	move	$v0,$a0
+	sll	$v0,$v0,3
+	addu	$v0,$v0,$a0
+	sll	$v0,$v0,2
+	lui	$v1,@hi(touchscreen_instance_table)
+	addiu	$v1,$v1,@lo(touchscreen_instance_table)
+	addu	$s1,$v0,$v1
+.L250:
+	jal	ad7843_open
+	lw	$a0,32($s1)
+.L248:
+	lw	$v1,4($s1)
+.L420:
+	sw	$v0,0($s0)
+.L421:
+	addiu	$v0,$v1,-1
+.L422:
+	lw	$v1,8($s1)
+.L423:
+	sw	$v0,4($s0)
+.L424:
+	addiu	$v0,$v1,-1
+.L425:
+	lw	$v1,12($s1)
+.L426:
+	sw	$v0,8($s0)
+.L427:
+	lw	$v0,16($s1)
+.L428:
+	sw	$v1,12($s0)
+.L429:
+	lw	$v1,20($s1)
+.L430:
+	sw	$v0,16($s0)
+.L431:
+	lw	$v0,24($s1)
+.L432:
+	sw	$v1,20($s0)
+.L433:
+	lw	$v1,0($s1)
+.L434:
+	sw	$v0,24($s0)
+.L435:
+	sw	$v1,28($s0)
+.L2:
+	lw	$v0,0($s0)
+	beq	$v0,$zero,.L3
+	nop
+.L436:
+	j	.L4
+.L437:
+	move	$v0,$s0
+.L3:
+	move	$v0,$zero
+.L4:
+	lw	$s1,8($sp)
+.L245:
+	lw	$s0,4($sp)
+.L246:
+	lw	$ra,0($sp)
+.L247:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L183:
+	.size	touchscreen_open,*-touchscreen_open
+.L134:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_get_raw ,cluster('$group_touchscreen_get_raw')
+	.align	4
+	.global	touchscreen_get_raw
+; Function touchscreen_get_raw
+.L109:
+touchscreen_get_raw:	.type	func
+	addiu	$sp,$sp,-8
+.L251:
+	sw	$ra,0($sp)
+.L252:
+	sw	$s0,4($sp)
+.L253:
+	lw	$a0,0($a0)
+.L256:
+	jal	ad7843_get_raw
+.L458:
+	move	$s0,$zero
+.L257:
+	bne	$v0,$zero,.L6
+.L459:
+	nop
+.L460:
+	li	$s0,0x1
+.L6:
+	move	$v0,$s0
+.L258:
+	lw	$s0,4($sp)
+.L254:
+	lw	$ra,0($sp)
+.L255:
+	jr	$ra
+	addiu	$sp,$sp,8
+.L205:
+	.size	touchscreen_get_raw,*-touchscreen_get_raw
+.L144:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_get_pos ,cluster('$group_touchscreen_get_pos')
+	.align	4
+	.global	touchscreen_get_pos
+; Function touchscreen_get_pos
+.L111:
+touchscreen_get_pos:	.type	func
+	addiu	$sp,$sp,-16
+.L259:
+	sw	$ra,0($sp)
+.L260:
+	sw	$s0,4($sp)
+.L261:
+	sw	$s1,8($sp)
+.L262:
+	sw	$s2,12($sp)
+.L263:
+	move	$s0,$a0
+.L270:
+	move	$s1,$a1
+.L277:
+	lw	$a0,0($s0)
+.L280:
+	move	$a1,$s1
+.L279:
+	jal	ad7843_get_raw
+.L442:
+	move	$s2,$zero
+.L274:
+	bne	$v0,$zero,.L8
+.L443:
+	nop
+.L444:
+	lb	$v0,8($s1)
+	beq	$v0,$zero,.L9
+.L445:
+	li	$s2,0x1
+.L446:
+	lw	$v0,12($s0)
+	lw	$a3,4($s0)
+	lw	$v1,0($s1)
+	subu	$v1,$v1,$v0
+	lw	$a0,16($s0)
+	mult	$v1,$v1,$a3
+	subu	$v0,$a0,$v0
+	div	$v0,$v1,$v0
+.L272:
+	slt	$v1,$v0,$zero
+	beq	$v1,$zero,.L10
+	nop
+.L275:
+	move	$v0,$zero
+.L10:
+	slt	$v1,$a3,$v0
+	beq	$v1,$zero,.L11
+	nop
+	move	$v0,$a3
+.L11:
+	lw	$v1,20($s0)
+	lw	$a0,8($s0)
+	lw	$a1,4($s1)
+	subu	$a1,$a1,$v1
+	lw	$a2,24($s0)
+	mult	$a1,$a1,$a0
+	subu	$v1,$a2,$v1
+	div	$v1,$a1,$v1
+.L268:
+	slt	$a1,$v1,$zero
+	beq	$a1,$zero,.L12
+	nop
+.L271:
+	move	$v1,$zero
+.L12:
+	slt	$a1,$a0,$v1
+	beq	$a1,$zero,.L13
+	nop
+	move	$v1,$a0
+.L13:
+	lw	$a1,28($s0)
+	beq	$a1,$zero,.L14
+	nop
+	li	$a2,0x5a
+	beq	$a1,$a2,.L15
+	nop
+	li	$a2,0xb4
+	beq	$a1,$a2,.L16
+	nop
+	li	$a2,0x10e
+	beq	$a1,$a2,.L17
+	nop
+	j	.L18
+	nop
+.L14:
+	sw	$v0,0($s1)
+.L447:
+	j	.L19
+.L448:
+	sw	$v1,4($s1)
+.L15:
+	sw	$v1,0($s1)
+.L449:
+	lw	$v1,4($s0)
+.L269:
+	j	.L20
+.L450:
+	subu	$v0,$v1,$v0
+.L16:
+	subu	$v0,$a3,$v0
+.L273:
+	sw	$v0,0($s1)
+.L451:
+	lw	$v0,8($s0)
+.L452:
+	j	.L21
+.L453:
+	subu	$v0,$v0,$v1
+.L17:
+	subu	$v1,$a0,$v1
+.L278:
+	sw	$v1,0($s1)
+.L20:
+.L21:
+	sw	$v0,4($s1)
+.L18:
+.L19:
+.L9:
+.L8:
+	move	$v0,$s2
+.L276:
+	lw	$s2,12($sp)
+.L264:
+	lw	$s1,8($sp)
+.L265:
+	lw	$s0,4($sp)
+.L266:
+	lw	$ra,0($sp)
+.L267:
+	jr	$ra
+	addiu	$sp,$sp,16
+.L196:
+	.size	touchscreen_get_pos,*-touchscreen_get_pos
+.L139:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_set_rotation ,cluster('$group_touchscreen_set_rotation')
+	.align	4
+	.global	touchscreen_set_rotation
+; Function touchscreen_set_rotation
+.L113:
+touchscreen_set_rotation:	.type	func
+	lui	$v0,0xb60b
+	ori	$v0,$v0,0x60b7
+	mult	$a1,$v0
+	mfhi	$v0
+	addu	$v0,$v0,$a1
+	sra	$v0,$v0,6
+	slt	$v1,$a1,$zero
+	addu	$v0,$v0,$v1
+	sra	$v1,$v0,31
+	srl	$v1,$v1,30
+	addu	$v0,$v0,$v1
+	andi	$v0,$v0,0x3
+	subu	$v0,$v0,$v1
+.L281:
+	slti	$v1,$v0,0
+	sll	$v1,$v1,2
+	addu	$v0,$v0,$v1
+.L522:
+	li	$v1,0x5a
+	mult	$v0,$v0,$v1
+.L282:
+	jr	$ra
+.L523:
+	sw	$v0,28($a0)
+.L220:
+	.size	touchscreen_set_rotation,*-touchscreen_set_rotation
+.L154:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_get_rotation ,cluster('$group_touchscreen_get_rotation')
+	.align	4
+	.global	touchscreen_get_rotation
+; Function touchscreen_get_rotation
+.L115:
+touchscreen_get_rotation:	.type	func
+	jr	$ra
+.L551:
+	lw	$v0,28($a0)
+.L240:
+	.size	touchscreen_get_rotation,*-touchscreen_get_rotation
+.L179:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_get_calibration_data_pointer ,cluster('$group_touchscreen_get_calibration_data_pointer')
+	.align	4
+	.global	touchscreen_get_calibration_data_pointer
+; Function touchscreen_get_calibration_data_pointer
+.L117:
+touchscreen_get_calibration_data_pointer:	.type	func
+	jr	$ra
+.L534:
+	addiu	$v0,$a0,4
+.L231:
+	.size	touchscreen_get_calibration_data_pointer,*-touchscreen_get_calibration_data_pointer
+.L164:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_get_calibration_data ,cluster('$group_touchscreen_get_calibration_data')
+	.align	4
+	.global	touchscreen_get_calibration_data
+; Function touchscreen_get_calibration_data
+.L119:
+touchscreen_get_calibration_data:	.type	func
+	addiu	$v0,$a0,4
+	addiu	$v1,$a1,0
+	li	$a0,6
+.L25:
+	lw	$a1,0($v0)
+	addiu	$v0,$v0,4
+	sw	$a1,0($v1)
+	addiu	$a0,$a0,-1
+	bgtz	$a0,.L25
+	addiu	$v1,$v1,4
+.L539:
+	jr	$ra
+.L540:
+	nop
+.L233:
+	.size	touchscreen_get_calibration_data,*-touchscreen_get_calibration_data
+.L169:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_set_calibration_data ,cluster('$group_touchscreen_set_calibration_data')
+	.align	4
+	.global	touchscreen_set_calibration_data
+; Function touchscreen_set_calibration_data
+.L121:
+touchscreen_set_calibration_data:	.type	func
+	addiu	$v0,$a1,0
+	addiu	$v1,$a0,4
+	li	$a0,6
+.L26:
+	lw	$a1,0($v0)
+	addiu	$v0,$v0,4
+	sw	$a1,0($v1)
+	addiu	$a0,$a0,-1
+	bgtz	$a0,.L26
+	addiu	$v1,$v1,4
+.L545:
+	jr	$ra
+.L546:
+	nop
+.L237:
+	.size	touchscreen_set_calibration_data,*-touchscreen_set_calibration_data
+.L174:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_set_callback ,cluster('$group_touchscreen_set_callback')
+	.align	4
+	.global	touchscreen_set_callback
+; Function touchscreen_set_callback
+.L123:
+touchscreen_set_callback:	.type	func
+	sw	$a1,32($a0)
+.L528:
+	jr	$ra
+.L529:
+	sw	$a2,36($a0)
+.L224:
+	.size	touchscreen_set_callback,*-touchscreen_set_callback
+.L159:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.touchscreen.touchscreen_calibrate ,cluster('$group_touchscreen_calibrate')
+	.align	4
+	.global	touchscreen_calibrate
+; Function touchscreen_calibrate
+.L125:
+touchscreen_calibrate:	.type	func
+	addiu	$sp,$sp,-36
+.L283:
+	sw	$ra,4($sp)
+.L284:
+	sw	$s0,8($sp)
+.L285:
+	sw	$s1,12($sp)
+.L286:
+	sw	$s2,16($sp)
+.L287:
+	sw	$s3,20($sp)
+.L288:
+	move	$s0,$a0
+.L352:
+	move	$s1,$a1
+.L355:
+	lw	$v0,40($s0)
+.L465:
+	move	$s2,$a2
+.L306:
+	sltiu	$v1,$v0,18
+.L297:
+	beq	$v1,$zero,.L28
+.L466:
+	move	$s3,$zero
+.L298:
+	lui	$v1,@hi(.L27)
+	addiu	$v1,$v1,@lo(.L27)
+	sll	$v0,$v0,2
+	addu	$v0,$v0,$v1
+	lw	$v0,0($v0)
+	jr	$v0
+	nop
+.L307:
+	.endsec	; End of section
+
+	.section	.rodata.touchscreen.touchscreen_calibrate ,cluster('$group_touchscreen_calibrate')
+	.align	4
+.L27:
+	.dw	.L29
+	.dw	.L30
+	.dw	.L31
+	.dw	.L32
+	.dw	.L33
+	.dw	.L34
+	.dw	.L35
+	.dw	.L36
+	.dw	.L37
+	.dw	.L38
+	.dw	.L39
+	.dw	.L40
+	.dw	.L41
+	.dw	.L42
+	.dw	.L43
+	.dw	.L44
+	.dw	.L45
+	.dw	.L46
+	.endsec	; End of section
+
+	.resume	.text.touchscreen.touchscreen_calibrate ,cluster('$group_touchscreen_calibrate')
+.L29:
+	lw	$v0,32($s0)
+.L344:
+	beq	$v0,$zero,.L47
+	nop
+.L329:
+	lw	$v1,36($s0)
+.L330:
+	sw	$v1,0($sp)
+.L361:
+	bgez	$s1,.L48
+	move	$v1,$s1
+.L323:
+	addiu	$v1,$v1,7
+.L48:
+	sra	$a0,$v1,3
+.L299:
+	bgez	$s2,.L49
+	move	$v1,$s2
+.L300:
+	addiu	$v1,$v1,7
+.L49:
+	sra	$a1,$v1,3
+.L370:
+	move	$a2,$s1
+.L342:
+	move	$a3,$s2
+.L356:
+	jalr	$ra,$v0
+	nop
+.L343:
+	j	.L50
+	nop
+.L33:
+	lw	$v0,32($s0)
+	beq	$v0,$zero,.L51
+	nop
+.L467:
+	lw	$v1,36($s0)
+	sw	$v1,0($sp)
+	bgez	$s1,.L52
+	move	$v1,$s1
+.L304:
+	addiu	$v1,$v1,7
+.L52:
+	sra	$v1,$v1,3
+.L305:
+	subu	$a0,$s1,$v1
+.L332:
+	bgez	$s2,.L53
+	move	$v1,$s2
+.L303:
+	addiu	$v1,$v1,7
+.L53:
+	sra	$a1,$v1,3
+.L359:
+	move	$a2,$s1
+.L348:
+	move	$a3,$s2
+.L320:
+	jalr	$ra,$v0
+	nop
+.L321:
+	j	.L54
+	nop
+.L37:
+	lw	$v0,32($s0)
+	beq	$v0,$zero,.L55
+	nop
+.L468:
+	lw	$v1,36($s0)
+	sw	$v1,0($sp)
+	bgez	$s1,.L56
+	move	$v1,$s1
+.L319:
+	addiu	$v1,$v1,7
+.L56:
+	sra	$v1,$v1,3
+.L295:
+	subu	$a0,$s1,$v1
+.L296:
+	bgez	$s2,.L57
+	move	$v1,$s2
+.L357:
+	addiu	$v1,$v1,7
+.L57:
+	sra	$v1,$v1,3
+.L338:
+	subu	$a1,$s2,$v1
+.L339:
+	move	$a2,$s1
+.L315:
+	move	$a3,$s2
+.L318:
+	jalr	$ra,$v0
+	nop
+.L316:
+	j	.L58
+	nop
+.L41:
+	lw	$v0,32($s0)
+	beq	$v0,$zero,.L59
+	nop
+.L469:
+	lw	$v1,36($s0)
+	sw	$v1,0($sp)
+	bgez	$s1,.L60
+	move	$v1,$s1
+.L313:
+	addiu	$v1,$v1,7
+.L60:
+	sra	$a0,$v1,3
+.L369:
+	bgez	$s2,.L61
+	move	$v1,$s2
+.L322:
+	addiu	$v1,$v1,7
+.L61:
+	sra	$v1,$v1,3
+.L308:
+	subu	$a1,$s2,$v1
+.L309:
+	move	$a2,$s1
+.L335:
+	move	$a3,$s2
+.L337:
+	jalr	$ra,$v0
+	nop
+.L336:
+	j	.L62
+	nop
+.L30:
+.L34:
+.L38:
+.L42:
+	addiu	$a1,$sp,24
+.L366:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L314:
+	bne	$v0,$zero,.L63
+	nop
+.L470:
+	lb	$v0,32($sp)
+	bne	$v0,$zero,.L64
+	nop
+.L471:
+	lw	$v0,40($s0)
+	addiu	$v0,$v0,1
+	sw	$v0,40($s0)
+.L65:
+	jal	clock
+	nop
+	lui	$a0,0x98
+	ori	$a0,$a0,0x9680
+	addu	$v1,$v1,$a0
+	sltu	$a0,$v1,$a0
+	addu	$v0,$v0,$zero
+	addu	$v0,$v0,$a0
+	sw	$v0,68($s0)
+.L472:
+	j	.L66
+.L473:
+	sw	$v1,72($s0)
+.L31:
+.L35:
+.L39:
+.L43:
+	addiu	$a1,$sp,24
+.L333:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L302:
+	bne	$v0,$zero,.L67
+	nop
+.L474:
+	lb	$v0,32($sp)
+	beq	$v0,$zero,.L65
+	nop
+.L475:
+	lw	$s1,68($s0)
+.L360:
+	jal	clock
+	lw	$s2,72($s0)
+.L358:
+	bne	$s1,$v0,.L68
+	sltu	$a0,$s1,$v0
+	sltu	$a0,$s2,$v1
+.L68:
+	xori	$a0,$a0,1
+	bne	$a0,$zero,.L69
+	nop
+	j	.L70
+	nop
+.L32:
+	addiu	$a1,$sp,24
+.L363:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L294:
+	bne	$v0,$zero,.L71
+	nop
+.L476:
+	lb	$v0,32($sp)
+	beq	$v0,$zero,.L72
+	nop
+.L477:
+	lw	$v0,24($sp)
+.L478:
+	lw	$v1,28($sp)
+.L479:
+	sw	$v0,44($s0)
+.L480:
+	sw	$v1,56($s0)
+.L70:
+.L62:
+.L59:
+.L58:
+.L55:
+.L54:
+.L51:
+.L50:
+.L47:
+.L73:
+.L74:
+.L75:
+.L76:
+.L77:
+	lw	$v0,40($s0)
+.L334:
+	addiu	$v0,$v0,1
+.L351:
+	j	.L78
+.L481:
+	sw	$v0,40($s0)
+.L36:
+	addiu	$a1,$sp,24
+.L347:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L331:
+	bne	$v0,$zero,.L79
+	nop
+.L482:
+	lb	$v0,32($sp)
+	beq	$v0,$zero,.L80
+	nop
+.L483:
+	lw	$v0,24($sp)
+.L484:
+	lw	$v1,28($sp)
+.L485:
+	sw	$v0,48($s0)
+	j	.L77
+.L486:
+	sw	$v1,60($s0)
+.L40:
+	addiu	$a1,$sp,24
+.L371:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L301:
+	bne	$v0,$zero,.L81
+	nop
+.L487:
+	lb	$v0,32($sp)
+	beq	$v0,$zero,.L82
+	nop
+.L488:
+	lw	$v0,24($sp)
+.L489:
+	lw	$v1,28($sp)
+.L490:
+	sw	$v0,52($s0)
+	j	.L76
+.L491:
+	sw	$v1,64($s0)
+.L44:
+	addiu	$a1,$sp,24
+.L372:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L325:
+	bne	$v0,$zero,.L83
+	nop
+.L492:
+	lb	$v0,32($sp)
+	beq	$v0,$zero,.L84
+	nop
+.L493:
+	lw	$a2,44($s0)
+	lw	$v0,52($s0)
+	lw	$v1,48($s0)
+	lw	$a3,24($sp)
+	addu	$t0,$v1,$v0
+	subu	$a0,$t0,$a3
+	subu	$a0,$a0,$a2
+	lui	$a1,0x6666
+	ori	$a1,$a1,0x6667
+	mult	$a0,$a1
+	mfhi	$a1
+	sra	$a1,$a1,3
+	slt	$a0,$a0,$zero
+	addu	$a0,$a1,$a0
+.L326:
+	sra	$a1,$a0,31
+	xor	$a0,$a1,$a0
+.L327:
+	subu	$a0,$a0,$a1
+.L345:
+	slt	$a1,$a3,$a2
+	beq	$a1,$zero,.L85
+	nop
+.L494:
+	j	.L86
+.L495:
+	subu	$a1,$a2,$a3
+.L85:
+	subu	$a1,$a3,$a2
+.L86:
+	slt	$a1,$a0,$a1
+	bne	$a1,$zero,.L87
+	nop
+.L496:
+	slt	$a1,$v0,$v1
+	beq	$a1,$zero,.L88
+	nop
+.L497:
+	j	.L89
+.L498:
+	subu	$v0,$v1,$v0
+.L88:
+	subu	$v0,$v0,$v1
+.L89:
+	slt	$v0,$a0,$v0
+	bne	$v0,$zero,.L90
+	nop
+.L499:
+	lw	$a0,56($s0)
+.L346:
+	lw	$a1,64($s0)
+	lw	$t1,28($sp)
+	lw	$t2,60($s0)
+	addu	$t3,$t1,$a1
+	subu	$v0,$t3,$t2
+	subu	$v0,$v0,$a0
+	lui	$v1,0x6666
+	ori	$v1,$v1,0x6667
+	mult	$v0,$v1
+	mfhi	$v1
+	sra	$v1,$v1,3
+	slt	$v0,$v0,$zero
+	addu	$v0,$v1,$v0
+.L349:
+	sra	$v1,$v0,31
+	xor	$v0,$v1,$v0
+.L350:
+	subu	$v0,$v0,$v1
+.L310:
+	slt	$v1,$t2,$a0
+	beq	$v1,$zero,.L91
+	nop
+.L500:
+	j	.L92
+.L501:
+	subu	$v1,$a0,$t2
+.L91:
+	subu	$v1,$t2,$a0
+.L92:
+	slt	$v1,$v0,$v1
+	bne	$v1,$zero,.L93
+	nop
+.L502:
+	slt	$v1,$t1,$a1
+	beq	$v1,$zero,.L94
+	nop
+.L503:
+	j	.L95
+.L504:
+	subu	$v1,$a1,$t1
+.L94:
+	subu	$v1,$t1,$a1
+.L95:
+	slt	$v0,$v0,$v1
+.L311:
+	bne	$v0,$zero,.L96
+	nop
+.L505:
+	addu	$v0,$a2,$a3
+	slt	$v1,$v0,$zero
+	addu	$v0,$v0,$v1
+	sra	$v0,$v0,1
+.L367:
+	slt	$v1,$t0,$zero
+	addu	$t0,$t0,$v1
+	sra	$v1,$t0,1
+.L353:
+	subu	$a1,$v1,$v0
+	lui	$a2,0x2aaa
+	ori	$a2,$a2,0xaaab
+	mult	$a1,$a2
+	mfhi	$a3
+	slt	$a1,$a1,$zero
+	addu	$a1,$a3,$a1
+	subu	$v0,$v0,$a1
+.L368:
+	sw	$v0,12($s0)
+.L506:
+	addu	$v0,$v1,$a1
+	sw	$v0,16($s0)
+.L507:
+	addu	$v0,$a0,$t2
+	slt	$v1,$v0,$zero
+.L354:
+	addu	$v0,$v0,$v1
+	sra	$v0,$v0,1
+.L364:
+	slt	$v1,$t3,$zero
+	addu	$t3,$t3,$v1
+	sra	$v1,$t3,1
+.L340:
+	subu	$a0,$v1,$v0
+	mult	$a0,$a2
+	mfhi	$a1
+	slt	$a0,$a0,$zero
+	addu	$a0,$a1,$a0
+	subu	$v0,$v0,$a0
+.L365:
+	sw	$v0,20($s0)
+.L508:
+	addu	$v0,$v1,$a0
+	sw	$v0,24($s0)
+.L509:
+	addiu	$v0,$s2,-1
+	sw	$v0,8($s0)
+	addiu	$v0,$s1,-1
+	j	.L75
+	sw	$v0,4($s0)
+.L82:
+.L80:
+.L72:
+.L84:
+	lw	$v0,40($s0)
+	addiu	$v0,$v0,-2
+.L510:
+	j	.L101
+.L511:
+	sw	$v0,40($s0)
+.L45:
+	lw	$v0,32($s0)
+	beq	$v0,$zero,.L74
+	nop
+.L512:
+	lw	$v1,36($s0)
+	move	$a0,$zero
+.L317:
+	sw	$v1,0($sp)
+	move	$a1,$zero
+.L362:
+	move	$a2,$zero
+.L341:
+	move	$a3,$zero
+	jalr	$ra,$v0
+	nop
+.L513:
+	j	.L73
+	nop
+.L46:
+	addiu	$a1,$sp,24
+.L312:
+	jal	ad7843_get_raw
+	lw	$a0,0($s0)
+.L328:
+	bne	$v0,$zero,.L102
+	nop
+.L514:
+	lb	$v0,32($sp)
+	bne	$v0,$zero,.L103
+	nop
+.L515:
+	sw	$zero,40($s0)
+.L516:
+	j	.L104
+.L517:
+	li	$s3,0x1
+.L28:
+.L96:
+.L93:
+.L90:
+.L87:
+	sw	$zero,40($s0)
+.L103:
+.L102:
+.L83:
+.L81:
+.L79:
+.L78:
+.L71:
+.L69:
+.L67:
+.L64:
+.L63:
+.L104:
+.L101:
+.L66:
+	move	$v0,$s3
+.L324:
+	lw	$s3,20($sp)
+.L289:
+	lw	$s2,16($sp)
+.L290:
+	lw	$s1,12($sp)
+.L291:
+	lw	$s0,8($sp)
+.L292:
+	lw	$ra,4($sp)
+.L293:
+	jr	$ra
+	addiu	$sp,$sp,36
+.L209:
+	.size	touchscreen_calibrate,*-touchscreen_calibrate
+.L149:
+	; End of function
+	.endsec	; End of section
+
+	.section	.bss.touchscreen.drv_table ,cluster('$group_bss')
+	.align	4
+drv_table:	.type	object
+	.size	drv_table,84
+	.ds	84
+	.endsec	; End of section
+
+	.calls	'touchscreen_open','ad7843_open'
+	.calls	'touchscreen_get_raw','ad7843_get_raw'
+	.calls	'touchscreen_get_pos','ad7843_get_raw'
+	.calls	'touchscreen_calibrate','__INDIRECT__'
+	.calls	'touchscreen_calibrate','ad7843_get_raw'
+	.calls	'touchscreen_calibrate','clock'
+	.calls	'touchscreen_open','',12
+	.calls	'touchscreen_get_raw','',8
+	.calls	'touchscreen_get_pos','',16
+	.calls	'touchscreen_set_rotation','',0
+	.calls	'touchscreen_get_rotation','',0
+	.calls	'touchscreen_get_calibration_data_pointer','',0
+	.calls	'touchscreen_get_calibration_data','',0
+	.calls	'touchscreen_set_calibration_data','',0
+	.calls	'touchscreen_set_callback','',0
+	.calls	'touchscreen_calibrate','',36
+	.extern	clock
+	.extern	ad7843_open
+	.extern	ad7843_get_raw
+	.extern	touchscreen_instance_table
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L127:
+	.dw	2927
+	.dh	3
+	.dw	.L128
+	.db	4
+.L126:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L129
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	.L184-.L127
+	.db	3,0
+.L184:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,6
+	.db	"clock",0
+	.db	2,62,17
+	.dw	.L373-.L127
+	.db	1,1,1,1
+.L373:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,7
+	.dw	322
+	.db	3,0,7
+	.dw	360
+	.db	3,0,7
+	.dw	405
+	.db	3,0,7
+	.dw	451
+	.db	8
+	.dw	498
+	.db	3,0,9
+	.db	"ad7843_open",0
+	.db	3,54,19
+	.dw	.L374-.L127
+	.db	1,1,1,1,4
+	.db	"id",0
+	.db	3,54,45
+	.dw	516
+	.db	0
+.L374:
+	.db	10
+	.dw	.L375-.L127
+.L375:
+	.db	11
+	.db	"drv_ad7843_s",0
+	.db	3,38,16,1,9
+	.db	"ad7843_get_raw",0
+	.db	3,56,12
+	.dw	.L202-.L127
+	.db	1,1,1,1,4
+	.db	"drv",0
+	.db	3,56,38
+	.dw	645
+	.db	4
+	.db	"raw",0
+	.db	3,56,57
+	.dw	.L376-.L127
+	.db	0
+.L202:
+	.db	5
+	.db	"int",0
+	.db	4,5
+.L376:
+	.db	10
+	.dw	.L214-.L127
+.L214:
+	.db	12,3,47,9,12,13
+	.db	"x",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"y",0
+	.db	4
+	.dw	720
+	.db	2,35,4,13
+	.db	"pendown",0
+	.db	1
+	.dw	.L195-.L127
+	.db	2,35,8,0
+.L195:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2
+.L182:
+	.db	10
+	.dw	.L377-.L127
+.L377:
+	.db	14
+	.db	"touchscreen_s",0
+	.db	4,43,8,84,13
+	.db	"ad7843",0
+	.db	4
+	.dw	645
+	.db	2,35,0,13
+	.db	"cal_data",0
+	.db	24
+	.dw	.L378-.L127
+	.db	2,35,4,13
+	.db	"rotation",0
+	.db	4
+	.dw	720
+	.db	2,35,28,13
+	.db	"callback",0
+	.db	4
+	.dw	.L226-.L127
+	.db	2,35,32,13
+	.db	"param",0
+	.db	4
+	.dw	.L228-.L127
+	.db	2,35,36,13
+	.db	"calibration_state",0
+	.db	4
+	.dw	720
+	.db	2,35,40,13
+	.db	"cal_x",0
+	.db	12
+	.dw	.L379-.L127
+	.db	2,35,44,13
+	.db	"cal_y",0
+	.db	12
+	.dw	.L379-.L127
+	.db	2,35,56,13
+	.db	"delay",0
+	.db	8
+	.dw	550
+	.db	2,35,68,13
+	.db	"cal_fg_color",0
+	.db	4
+	.dw	516
+	.db	2,35,76,13
+	.db	"cal_bg_color",0
+	.db	4
+	.dw	516
+	.db	2,35,80,0
+.L378:
+	.db	12,5,48,9,24,13
+	.db	"xfs",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"yfs",0
+	.db	4
+	.dw	720
+	.db	2,35,4,13
+	.db	"x0_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,8,13
+	.db	"xfs_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,12,13
+	.db	"y0_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,16,13
+	.db	"yfs_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,20,0,10
+	.dw	.L380-.L127
+.L380:
+	.db	15,1,1,16
+	.dw	720
+	.db	16
+	.dw	720
+	.db	16
+	.dw	720
+	.db	16
+	.dw	720
+	.db	16
+	.dw	.L228-.L127
+	.db	0
+.L228:
+	.db	10
+	.dw	.L381-.L127
+.L381:
+	.db	17
+	.db	"void",0
+.L226:
+	.db	18
+	.db	"touchscreen_callback_t",0
+	.db	5,58,16
+	.dw	.L382-.L127
+.L382:
+	.db	10
+	.dw	1127
+.L379:
+	.db	19,12
+	.dw	720
+	.db	20,2,0
+.L190:
+	.db	21
+	.dw	786
+.L193:
+	.db	21
+	.dw	.L383-.L127
+.L383:
+	.db	10
+	.dw	.L384-.L127
+.L384:
+	.db	22
+	.dw	.L385-.L127
+.L385:
+	.db	12,6,64,9,36,13
+	.db	"rotation",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"x_size",0
+	.db	4
+	.dw	516
+	.db	2,35,4,13
+	.db	"y_size",0
+	.db	4
+	.dw	516
+	.db	2,35,8,13
+	.db	"x0_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,12,13
+	.db	"xfs_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,16,13
+	.db	"y0_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,20,13
+	.db	"yfs_offset",0
+	.db	4
+	.dw	720
+	.db	2,35,24,13
+	.db	"runtime_calibration",0
+	.db	1
+	.dw	777
+	.db	2,35,28,13
+	.db	"drv_ad7843",0
+	.db	4
+	.dw	720
+	.db	2,35,32,0
+.L197:
+	.db	10
+	.dw	.L386-.L127
+.L386:
+	.db	22
+	.dw	791
+.L199:
+	.db	10
+	.dw	.L387-.L127
+.L387:
+	.db	12,5,40,9,12,13
+	.db	"x",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"y",0
+	.db	4
+	.dw	720
+	.db	2,35,4,13
+	.db	"pendown",0
+	.db	1
+	.dw	777
+	.db	2,35,8,0
+.L230:
+	.db	10
+	.dw	.L388-.L127
+.L388:
+	.db	22
+	.dw	1012
+.L235:
+	.db	10
+	.dw	1012
+	.db	23
+	.db	"__INDIRECT__",0
+	.db	4,1,1,1,1,1,18
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	.L389-.L127
+.L389:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,18
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	516
+	.db	18
+	.db	"__ssize_t",0
+	.db	4,1,1
+	.dw	720
+	.db	18
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	720
+	.db	18
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L390-.L127
+.L390:
+	.db	10
+	.dw	.L391-.L127
+.L391:
+	.db	24,1,18
+	.db	"size_t",0
+	.db	7,33,25
+	.dw	516
+	.db	18
+	.db	"_iob_flag_t",0
+	.db	7,92,25
+	.dw	1528
+	.db	18
+	.db	"uint8_t",0
+	.db	8,22,33
+	.dw	.L392-.L127
+.L392:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8,18
+	.db	"uint16_t",0
+	.db	8,24,33
+	.dw	1528
+	.db	18
+	.db	"int32_t",0
+	.db	8,25,33
+	.dw	720
+	.db	18
+	.db	"uint32_t",0
+	.db	8,26,33
+	.dw	516
+	.db	18
+	.db	"uint64_t",0
+	.db	8,28,33
+	.dw	550
+	.db	18
+	.db	"time_t",0
+	.db	9,36,27
+	.dw	.L393-.L127
+.L393:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7,18
+	.db	"posix_thread_t",0
+	.db	9,44,25
+	.dw	.L394-.L127
+.L394:
+	.db	11
+	.db	"thread_t",0
+	.db	9,44,16,1,18
+	.db	"posix_threadqueue_t",0
+	.db	9,50,9
+	.dw	.L395-.L127
+.L395:
+	.db	14
+	.db	"posix_threadqueue_t",0
+	.db	9,46,17,8,13
+	.db	"head",0
+	.db	4
+	.dw	.L396-.L127
+	.db	2,35,0,13
+	.db	"tail",0
+	.db	4
+	.dw	.L396-.L127
+	.db	2,35,4,0
+.L396:
+	.db	10
+	.dw	1824
+	.db	18
+	.db	"pthread_attr_t",0
+	.db	9,107,3
+	.dw	.L397-.L127
+.L397:
+	.db	14
+	.db	"pthread_attr_t",0
+	.db	9,90,16,24,13
+	.db	"stacksize",0
+	.db	4
+	.dw	516
+	.db	2,35,0,13
+	.db	"stackaddr",0
+	.db	4
+	.dw	1156
+	.db	2,35,4,13
+	.db	"guardsize",0
+	.db	4
+	.dw	516
+	.db	2,35,8,13
+	.db	"schedparam",0
+	.db	4
+	.dw	.L398-.L127
+	.db	2,35,12,25
+	.db	"detachstate",0
+	.db	1
+	.dw	1681
+	.db	2,0,2,35,16,25
+	.db	"scope",0
+	.db	1
+	.dw	1681
+	.db	2,2,2,35,16,25
+	.db	"inheritsched",0
+	.db	1
+	.dw	1681
+	.db	2,4,2,35,16,25
+	.db	"schedpolicy",0
+	.db	1
+	.dw	1681
+	.db	2,6,2,35,16,13
+	.db	"init",0
+	.db	4
+	.dw	516
+	.db	2,35,20,0
+.L398:
+	.db	14
+	.db	"sched_param",0
+	.db	9,75,8,4,13
+	.db	"sched_priority",0
+	.db	4
+	.dw	720
+	.db	2,35,0,0,18
+	.db	"pthread_mutex_t",0
+	.db	9,160,1,33
+	.dw	.L399-.L127
+.L399:
+	.db	14
+	.db	"_pthread_mutex_t",0
+	.db	9,162,1,8,32,25
+	.db	"type",0
+	.db	1
+	.dw	1681
+	.db	2,0,2,35,0,25
+	.db	"protocol",0
+	.db	1
+	.dw	1681
+	.db	2,2,2,35,0,25
+	.db	"prioceiling",0
+	.db	4
+	.dw	516
+	.db	16,4,2,35,0,25
+	.db	"recursive",0
+	.db	2
+	.dw	1528
+	.db	8,4,2,35,2,25
+	.db	"preprio",0
+	.db	2
+	.dw	.L400-.L127
+	.db	16,0,2,35,4,13
+	.db	"initi",0
+	.db	4
+	.dw	720
+	.db	2,35,8,13
+	.db	"owner",0
+	.db	4
+	.dw	1920
+	.db	2,35,12,13
+	.db	"nestup",0
+	.db	4
+	.dw	.L401-.L127
+	.db	2,35,16,13
+	.db	"nestdown",0
+	.db	4
+	.dw	.L401-.L127
+	.db	2,35,20,13
+	.db	"queue",0
+	.db	8
+	.dw	1866
+	.db	2,35,24,0
+.L400:
+	.db	5
+	.db	"short int",0
+	.db	2,5
+.L401:
+	.db	10
+	.dw	2214
+	.db	18
+	.db	"clockid_t",0
+	.db	9,183,1,13
+	.dw	720
+	.db	18
+	.db	"clock_t",0
+	.db	10,29,33
+	.dw	550
+	.db	18
+	.db	"pal_arch_atomic_t",0
+	.db	1,49,13
+	.dw	720
+	.db	18
+	.db	"sigset_t",0
+	.db	11,64,26
+	.dw	550
+	.db	18
+	.db	"sa_sighandler_t",0
+	.db	11,103,16
+	.dw	.L402-.L127
+.L402:
+	.db	10
+	.dw	.L403-.L127
+.L403:
+	.db	15,1,1,16
+	.dw	720
+	.db	0,18
+	.db	"sa_siginfoaction_t",0
+	.db	11,104,16
+	.dw	.L404-.L127
+.L404:
+	.db	10
+	.dw	.L405-.L127
+.L405:
+	.db	15,1,1,16
+	.dw	720
+	.db	16
+	.dw	.L406-.L127
+	.db	16
+	.dw	1156
+	.db	0
+.L406:
+	.db	10
+	.dw	.L407-.L127
+.L407:
+	.db	12,11,88,9,12,13
+	.db	"si_signo",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"si_code",0
+	.db	4
+	.dw	720
+	.db	2,35,4,13
+	.db	"si_value",0
+	.db	4
+	.dw	.L408-.L127
+	.db	2,35,8,0
+.L408:
+	.db	26
+	.db	"sigval",0
+	.db	11,66,7,4,13
+	.db	"sival_int",0
+	.db	4
+	.dw	720
+	.db	2,35,0,13
+	.db	"sival_ptr",0
+	.db	4
+	.dw	1156
+	.db	2,35,0,0,18
+	.db	"ad7843_t",0
+	.db	3,38,29
+	.dw	650
+	.db	18
+	.db	"ad7843_raw_t",0
+	.db	3,52,3
+	.dw	732
+	.db	18
+	.db	"touchscreen_t",0
+	.db	5,38,30
+	.dw	791
+	.db	18
+	.db	"touchscreen_data_t",0
+	.db	5,45,3
+	.dw	1430
+	.db	18
+	.db	"touchscreen_calibration_t",0
+	.db	5,56,3
+	.dw	1012
+	.db	18
+	.db	"touchscreen_cfg_instance_t",0
+	.db	6,75,3
+	.dw	1232
+	.db	27
+	.db	"touchscreen_instance_table",0
+	.db	6,77,41
+	.dw	.L409-.L127
+	.db	1,1
+.L409:
+	.db	22
+	.dw	.L410-.L127
+.L410:
+	.db	28
+	.dw	1232
+	.db	29,0
+.L242:
+	.db	19,84
+	.dw	791
+	.db	20,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L128:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,46,0,3,8,58,15,59,15,57,15,73
+	.db	19,54,15,39,12,63,12,60,12,0,0,7,46,1,49,19,0,0,8,5,0,49,19,0,0,9,46,1,3,8,58,15,59,15,57,15,73,19,54
+	.db	15,39,12,63,12,60,12,0,0,10,15,0,73,19,0,0,11,19,0,3,8,58,15,59,15,57,15,60,12,0,0,12,19,1,58,15,59,15
+	.db	57,15,11,15,0,0,13,13,0,3,8,11,15,73,19,56,9,0,0,14,19,1,3,8,58,15,59,15,57,15,11,15,0,0,15,21,1,54,15
+	.db	39,12,0,0,16,5,0,73,19,0,0,17,59,0,3,8,0,0,18,22,0,3,8,58,15,59,15,57,15,73,19,0,0,19,1,1,11,15,73,19
+	.db	0,0,20,33,0,47,15,0,0,21,55,0,73,19,0,0,22,38,0,73,19,0,0,23,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60
+	.db	12,0,0,24,21,0,54,15,0,0,25,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,26,23,1,3,8,58,15,59,15,57,15,11
+	.db	15,0,0,27,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,28,1,1,73,19,0,0,29,33,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L129:
+	.dw	.L412-.L411
+.L411:
+	.dh	3
+	.dw	.L414-.L413
+.L413:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ad7843\\include\\drv_ad7843.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\include\\touchscreen.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\touchscreen_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\time.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\signal.h",0
+	.db	0,0,0,0
+.L414:
+.L412:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_open')
+.L130:
+	.dw	446
+	.dh	3
+	.dw	.L131
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L133,.L132
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_open",0
+	.db	1,79,17
+	.dw	.L182
+	.db	1,1,1
+	.dw	.L107,.L183,.L106
+	.db	4
+	.db	"id",0
+	.db	1,79,48
+	.dw	.L184,.L185
+	.db	5
+	.dw	.L107,.L183
+	.db	6
+	.dw	.L186
+	.db	7
+	.db	"srv",0
+	.db	1,84,30
+	.dw	.L190,.L191
+	.db	5
+	.dw	.L192,.L2
+	.db	7
+	.db	"srv_cfg",0
+	.db	1,87,53
+	.dw	.L193,.L194
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_open')
+.L131:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	11,1,85,6,0,0,7,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_open')
+.L132:
+	.dw	.L416-.L415
+.L415:
+	.dh	3
+	.dw	.L418-.L417
+.L417:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L418:
+	.db	5,17,7,0,5,2
+	.dw	.L107
+	.db	3,206,0,1,5,34,9
+	.dh	.L187-.L107
+	.db	3,5,1,5,10
+	.db	15+9*((.L249-.L187)/4)
+	.db	5,17,9
+	.dh	.L188-.L249
+	.db	3,122,1,5,10,9
+	.dh	.L189-.L188
+	.db	3,6,1,7
+	.db	14+9*((.L419-.L189)/4)
+	.db	5,61
+	.db	16+9*((.L192-.L419)/4)
+	.db	5,57,9
+	.dh	.L250-.L192
+	.db	3,12,1,5,55
+	.db	16+9*((.L248-.L250)/4)
+	.db	5,57
+	.db	12+9*((.L420-.L248)/4)
+	.db	5,55
+	.db	16+9*((.L421-.L420)/4)
+	.db	15+9*((.L422-.L421)/4)
+	.db	13+9*((.L423-.L422)/4)
+	.db	15+9*((.L424-.L423)/4)
+	.db	5,54
+	.db	15+9*((.L425-.L424)/4)
+	.db	5,55
+	.db	13+9*((.L426-.L425)/4)
+	.db	16+9*((.L427-.L426)/4)
+	.db	5,54
+	.db	13+9*((.L428-.L427)/4)
+	.db	16+9*((.L429-.L428)/4)
+	.db	5,55
+	.db	13+9*((.L430-.L429)/4)
+	.db	16+9*((.L431-.L430)/4)
+	.db	5,54
+	.db	13+9*((.L432-.L431)/4)
+	.db	5,53
+	.db	16+9*((.L433-.L432)/4)
+	.db	5,55
+	.db	13+9*((.L434-.L433)/4)
+	.db	5,53
+	.db	15+9*((.L435-.L434)/4)
+	.db	5,12
+	.db	18+9*((.L2-.L435)/4)
+	.db	5,30
+	.db	14+9*((.L436-.L2)/4)
+	.db	5,24
+	.db	14+9*((.L437-.L436)/4)
+	.db	5,1
+	.db	15+9*((.L4-.L437)/4)
+	.db	9
+	.dh	.L134-.L4
+	.db	0,1,1
+.L416:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_open')
+.L133:
+	.dw	-1
+	.dw	.L107
+	.dw	0
+	.dw	.L134-.L107
+	.dw	0,0
+.L186:
+	.dw	-1
+	.dw	.L107,.L187-.L107,.L188-.L107,.L189-.L107,.L183-.L107
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_get_pos')
+.L135:
+	.dw	467
+	.dh	3
+	.dw	.L136
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L138,.L137
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_get_pos",0
+	.db	1,154,1,6
+	.dw	.L195
+	.db	1,1,1
+	.dw	.L111,.L196,.L110
+	.db	4
+	.db	"srv",0
+	.db	1,154,1,47
+	.dw	.L197,.L198
+	.db	4
+	.db	"pos",0
+	.db	1,154,1,72
+	.dw	.L199,.L200
+	.db	5
+	.dw	.L111,.L196
+	.db	6
+	.db	"result",0
+	.db	1,156,1,10
+	.dw	.L195,.L201
+	.db	6
+	.db	"x",0
+	.db	1,157,1,9
+	.dw	.L202,.L203
+	.db	6
+	.db	"y",0
+	.db	1,157,1,12
+	.dw	.L202,.L204
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_get_pos')
+.L136:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_get_pos')
+.L137:
+	.dw	.L439-.L438
+.L438:
+	.dh	3
+	.dw	.L441-.L440
+.L440:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L441:
+	.db	5,6,7,0,5,2
+	.dw	.L111
+	.db	3,153,1,1,5,5,9
+	.dh	.L277-.L111
+	.db	3,4,1,5,17
+	.db	12+9*((.L442-.L277)/4)
+	.db	5,5
+	.db	16+9*((.L274-.L442)/4)
+	.db	7
+	.db	14+9*((.L443-.L274)/4)
+	.db	5,9
+	.db	18+9*((.L444-.L443)/4)
+	.db	5,22
+	.db	12+9*((.L445-.L444)/4)
+	.db	5,126
+	.db	18+9*((.L446-.L445)/4)
+	.db	5,31,9
+	.dh	.L272-.L446
+	.db	3,1,1,5,63
+	.db	15+9*((.L10-.L272)/4)
+	.db	5,126
+	.db	16+9*((.L11-.L10)/4)
+	.db	5,31,9
+	.dh	.L268-.L11
+	.db	3,1,1,5,63
+	.db	15+9*((.L12-.L268)/4)
+	.db	5,13
+	.db	16+9*((.L13-.L12)/4)
+	.db	5,27,9
+	.dh	.L14-.L13
+	.db	3,3,1,5,17
+	.db	16+9*((.L447-.L14)/4)
+	.db	5,27
+	.db	13+9*((.L448-.L447)/4)
+	.db	17+9*((.L15-.L448)/4)
+	.db	5,47
+	.db	15+9*((.L449-.L15)/4)
+	.db	5,17
+	.db	15+9*((.L269-.L449)/4)
+	.db	5,47
+	.db	13+9*((.L450-.L269)/4)
+	.db	17+9*((.L16-.L450)/4)
+	.db	15+9*((.L451-.L16)/4)
+	.db	5,17
+	.db	15+9*((.L452-.L451)/4)
+	.db	5,47
+	.db	13+9*((.L453-.L452)/4)
+	.db	17+9*((.L17-.L453)/4)
+	.db	5,27
+	.db	15+9*((.L21-.L17)/4)
+	.db	5,5,9
+	.dh	.L8-.L21
+	.db	3,6,1,5,1
+	.db	15+9*((.L276-.L8)/4)
+	.db	9
+	.dh	.L139-.L276
+	.db	0,1,1
+.L439:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_get_pos')
+.L138:
+	.dw	-1
+	.dw	.L111
+	.dw	0
+	.dw	.L139-.L111
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_get_raw')
+.L140:
+	.dw	434
+	.dh	3
+	.dw	.L141
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L143,.L142
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_get_raw",0
+	.db	1,126,6
+	.dw	.L195
+	.db	1,1,1
+	.dw	.L109,.L205,.L108
+	.db	4
+	.db	"srv",0
+	.db	1,126,47
+	.dw	.L197,.L206
+	.db	4
+	.db	"raw",0
+	.db	1,126,72
+	.dw	.L199,.L207
+	.db	5
+	.dw	.L109,.L205
+	.db	6
+	.db	"result",0
+	.db	1,128,1,10
+	.dw	.L195,.L208
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_get_raw')
+.L141:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_get_raw')
+.L142:
+	.dw	.L455-.L454
+.L454:
+	.dh	3
+	.dw	.L457-.L456
+.L456:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L457:
+	.db	5,6,7,0,5,2
+	.dw	.L109
+	.db	3,253,0,1,5,5,9
+	.dh	.L253-.L109
+	.db	3,7,1,5,17,9
+	.dh	.L458-.L253
+	.db	3,123,1,5,5,9
+	.dh	.L257-.L458
+	.db	3,5,1,7
+	.db	14+9*((.L459-.L257)/4)
+	.db	5,22
+	.db	16+9*((.L460-.L459)/4)
+	.db	5,5
+	.db	18+9*((.L6-.L460)/4)
+	.db	5,1
+	.db	15+9*((.L258-.L6)/4)
+	.db	9
+	.dh	.L144-.L258
+	.db	0,1,1
+.L455:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_get_raw')
+.L143:
+	.dw	-1
+	.dw	.L109
+	.dw	0
+	.dw	.L144-.L109
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_calibrate')
+.L145:
+	.dw	569
+	.dh	3
+	.dw	.L146
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L148,.L147
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_calibrate",0
+	.db	1,194,2,6
+	.dw	.L195
+	.db	1,1,1
+	.dw	.L125,.L209,.L124
+	.db	4
+	.db	"srv",0
+	.db	1,194,2,43
+	.dw	.L182,.L210
+	.db	4
+	.db	"x_size",0
+	.db	1,194,2,52
+	.dw	.L202,.L211
+	.db	4
+	.db	"y_size",0
+	.db	1,194,2,64
+	.dw	.L202,.L212
+	.db	5
+	.dw	.L125,.L209
+	.db	6
+	.db	"result",0
+	.db	1,196,2,9
+	.dw	.L202,.L213
+	.db	6
+	.db	"raw",0
+	.db	1,197,2,18
+	.dw	.L214,.L215
+	.db	6
+	.db	"limit",0
+	.db	1,198,2,9
+	.dw	.L202,.L216
+	.db	6
+	.db	"error",0
+	.db	1,199,2,9
+	.dw	.L202,.L217
+	.db	6
+	.db	"average_low",0
+	.db	1,200,2,9
+	.dw	.L202,.L218
+	.db	6
+	.db	"average_hight",0
+	.db	1,200,2,22
+	.dw	.L202,.L219
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_calibrate')
+.L146:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_calibrate')
+.L147:
+	.dw	.L462-.L461
+.L461:
+	.dh	3
+	.dw	.L464-.L463
+.L463:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L464:
+	.db	5,6,7,0,5,2
+	.dw	.L125
+	.db	3,193,2,1,5,5,9
+	.dh	.L355-.L125
+	.db	3,8,1,5,6,9
+	.dh	.L465-.L355
+	.db	3,120,1,5,5,9
+	.dh	.L306-.L465
+	.db	3,8,1,5,16,9
+	.dh	.L466-.L306
+	.db	3,122,1,5,5,9
+	.dh	.L298-.L466
+	.db	3,6,1,5,9,9
+	.dh	.L29-.L298
+	.db	3,3,1,5,74
+	.db	16+9*((.L329-.L29)/4)
+	.db	5,9,9
+	.dh	.L343-.L329
+	.db	3,3,1
+	.db	16+9*((.L33-.L343)/4)
+	.db	5,83
+	.db	16+9*((.L467-.L33)/4)
+	.db	5,9,9
+	.dh	.L321-.L467
+	.db	3,3,1
+	.db	16+9*((.L37-.L321)/4)
+	.db	5,92
+	.db	16+9*((.L468-.L37)/4)
+	.db	5,9,9
+	.dh	.L316-.L468
+	.db	3,3,1
+	.db	16+9*((.L41-.L316)/4)
+	.db	5,83
+	.db	16+9*((.L469-.L41)/4)
+	.db	5,9,9
+	.dh	.L336-.L469
+	.db	3,3,1,5,13,9
+	.dh	.L42-.L336
+	.db	3,5,1,5,70
+	.db	14+9*((.L470-.L42)/4)
+	.db	5,37
+	.db	16+9*((.L471-.L470)/4)
+	.db	5,31
+	.db	15+9*((.L65-.L471)/4)
+	.db	5,9,9
+	.dh	.L472-.L65
+	.db	3,2,1,5,31
+	.db	12+9*((.L473-.L472)/4)
+	.db	5,9,9
+	.dh	.L43-.L473
+	.db	3,7,1,5,13
+	.db	16+9*((.L474-.L43)/4)
+	.db	5,17
+	.db	16+9*((.L475-.L474)/4)
+	.db	5,9,9
+	.dh	.L32-.L475
+	.db	3,12,1,5,13
+	.db	16+9*((.L476-.L32)/4)
+	.db	5,38
+	.db	16+9*((.L477-.L476)/4)
+	.db	15+9*((.L478-.L477)/4)
+	.db	13+9*((.L479-.L478)/4)
+	.db	15+9*((.L480-.L479)/4)
+	.db	5,41
+	.db	15+9*((.L77-.L480)/4)
+	.db	5,38
+	.db	12+9*((.L351-.L77)/4)
+	.db	5,41
+	.db	16+9*((.L481-.L351)/4)
+	.db	5,9,9
+	.dh	.L36-.L481
+	.db	3,9,1,5,13
+	.db	16+9*((.L482-.L36)/4)
+	.db	5,38
+	.db	16+9*((.L483-.L482)/4)
+	.db	15+9*((.L484-.L483)/4)
+	.db	13+9*((.L485-.L484)/4)
+	.db	15+9*((.L486-.L485)/4)
+	.db	5,9,9
+	.dh	.L40-.L486
+	.db	3,10,1,5,13
+	.db	16+9*((.L487-.L40)/4)
+	.db	5,38
+	.db	16+9*((.L488-.L487)/4)
+	.db	15+9*((.L489-.L488)/4)
+	.db	13+9*((.L490-.L489)/4)
+	.db	15+9*((.L491-.L490)/4)
+	.db	5,9,9
+	.dh	.L44-.L491
+	.db	3,10,1,5,13
+	.db	16+9*((.L492-.L44)/4)
+	.db	5,85
+	.db	16+9*((.L493-.L492)/4)
+	.db	5,48,9
+	.dh	.L326-.L493
+	.db	3,1,1,5,25
+	.db	15+9*((.L345-.L326)/4)
+	.db	5,71
+	.db	14+9*((.L494-.L345)/4)
+	.db	5,47
+	.db	14+9*((.L495-.L494)/4)
+	.db	5,17
+	.db	15+9*((.L86-.L495)/4)
+	.db	5,25,9
+	.dh	.L496-.L86
+	.db	3,5,1,5,87
+	.db	14+9*((.L497-.L496)/4)
+	.db	5,55
+	.db	14+9*((.L498-.L497)/4)
+	.db	5,17
+	.db	15+9*((.L89-.L498)/4)
+	.db	5,85,9
+	.dh	.L499-.L89
+	.db	3,6,1,5,48,9
+	.dh	.L349-.L499
+	.db	3,1,1,5,25
+	.db	15+9*((.L310-.L349)/4)
+	.db	5,87
+	.db	14+9*((.L500-.L310)/4)
+	.db	5,55
+	.db	14+9*((.L501-.L500)/4)
+	.db	5,17
+	.db	15+9*((.L92-.L501)/4)
+	.db	5,25,9
+	.dh	.L502-.L92
+	.db	3,5,1,5,71
+	.db	14+9*((.L503-.L502)/4)
+	.db	5,47
+	.db	14+9*((.L504-.L503)/4)
+	.db	5,17
+	.db	15+9*((.L95-.L504)/4)
+	.db	5,62,9
+	.dh	.L505-.L95
+	.db	3,7,1,5,70
+	.db	15+9*((.L367-.L505)/4)
+	.db	5,91
+	.db	15+9*((.L353-.L367)/4)
+	.db	5,93,9
+	.dh	.L506-.L353
+	.db	3,1,1,5,70
+	.db	17+9*((.L507-.L506)/4)
+	.db	5,62
+	.db	15+9*((.L364-.L507)/4)
+	.db	5,91
+	.db	15+9*((.L340-.L364)/4)
+	.db	5,93,9
+	.dh	.L508-.L340
+	.db	3,1,1,5,47,9
+	.dh	.L509-.L508
+	.db	3,15,1,5,44,9
+	.dh	.L84-.L509
+	.db	3,6,1,5,9
+	.db	17+9*((.L510-.L84)/4)
+	.db	5,44
+	.db	11+9*((.L511-.L510)/4)
+	.db	5,9,9
+	.dh	.L45-.L511
+	.db	3,5,1,5,50
+	.db	16+9*((.L512-.L45)/4)
+	.db	5,9,9
+	.dh	.L513-.L512
+	.db	3,3,1,5,13
+	.db	16+9*((.L46-.L513)/4)
+	.db	5,70
+	.db	14+9*((.L514-.L46)/4)
+	.db	5,39
+	.db	16+9*((.L515-.L514)/4)
+	.db	5,9
+	.db	17+9*((.L516-.L515)/4)
+	.db	5,26
+	.db	12+9*((.L517-.L516)/4)
+	.db	5,35
+	.db	18+9*((.L87-.L517)/4)
+	.db	5,5
+	.db	18+9*((.L66-.L87)/4)
+	.db	5,1
+	.db	15+9*((.L324-.L66)/4)
+	.db	9
+	.dh	.L149-.L324
+	.db	0,1,1
+.L462:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_calibrate')
+.L148:
+	.dw	-1
+	.dw	.L125
+	.dw	0
+	.dw	.L149-.L125
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_set_rotation')
+.L150:
+	.dw	438
+	.dh	3
+	.dw	.L151
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L153,.L152
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_set_rotation",0
+	.db	1,209,1,6,1,1,1
+	.dw	.L113,.L220,.L112
+	.db	4
+	.db	"srv",0
+	.db	1,209,1,47
+	.dw	.L182,.L221
+	.db	4
+	.db	"rotation",0
+	.db	1,209,1,56
+	.dw	.L202,.L222
+	.db	5
+	.dw	.L113,.L220
+	.db	6
+	.db	"r",0
+	.db	1,211,1,9
+	.dw	.L202,.L223
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_set_rotation')
+.L151:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_set_rotation')
+.L152:
+	.dw	.L519-.L518
+.L518:
+	.dh	3
+	.dw	.L521-.L520
+.L520:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L521:
+	.db	5,11,7,0,5,2
+	.dw	.L113
+	.db	3,210,1,1,5,22,9
+	.dh	.L281-.L113
+	.db	3,1,1,5,27
+	.db	16+9*((.L522-.L281)/4)
+	.db	5,1
+	.db	15+9*((.L282-.L522)/4)
+	.db	5,27,7
+	.db	13+9*((.L523-.L282)/4)
+	.db	5,1,9
+	.dh	.L154-.L523
+	.db	3,1,0,1,1
+.L519:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_set_rotation')
+.L153:
+	.dw	-1
+	.dw	.L113
+	.dw	0
+	.dw	.L154-.L113
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_set_callback')
+.L155:
+	.dw	441
+	.dh	3
+	.dw	.L156
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L158,.L157
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_set_callback",0
+	.db	1,173,2,6,1,1,1
+	.dw	.L123,.L224,.L122
+	.db	4
+	.db	"srv",0
+	.db	1,173,2,47
+	.dw	.L182,.L225
+	.db	4
+	.db	"callback",0
+	.db	1,173,2,75
+	.dw	.L226,.L227
+	.db	4
+	.db	"param",0
+	.db	1,173,2,91
+	.dw	.L228,.L229
+	.db	5
+	.dw	.L123,.L224
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_set_callback')
+.L156:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_set_callback')
+.L157:
+	.dw	.L525-.L524
+.L524:
+	.dh	3
+	.dw	.L527-.L526
+.L526:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L527:
+	.db	5,29,7,0,5,2
+	.dw	.L123
+	.db	3,174,2,1,5,1
+	.db	16+9*((.L528-.L123)/4)
+	.db	5,23,7
+	.db	13+9*((.L529-.L528)/4)
+	.db	5,1,9
+	.dh	.L159-.L529
+	.db	3,1,0,1,1
+.L525:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_set_callback')
+.L158:
+	.dw	-1
+	.dw	.L123
+	.dw	0
+	.dw	.L159-.L123
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L160:
+	.dw	420
+	.dh	3
+	.dw	.L161
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L163,.L162
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_get_calibration_data_pointer",0
+	.db	1,244,1,34
+	.dw	.L230
+	.db	1,1,1
+	.dw	.L117,.L231,.L116
+	.db	4
+	.db	"srv",0
+	.db	1,244,1,97
+	.dw	.L197,.L232
+	.db	5
+	.dw	.L117,.L231
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L161:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L162:
+	.dw	.L531-.L530
+.L530:
+	.dh	3
+	.dw	.L533-.L532
+.L532:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L533:
+	.db	5,1,7,0,5,2
+	.dw	.L117
+	.db	3,246,1,1,5,5,7
+	.db	13+9*((.L534-.L117)/4)
+	.db	5,1,9
+	.dh	.L164-.L534
+	.db	3,1,0,1,1
+.L531:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L163:
+	.dw	-1
+	.dw	.L117
+	.dw	0
+	.dw	.L164-.L117
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_get_calibration_data')
+.L165:
+	.dw	438
+	.dh	3
+	.dw	.L166
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L168,.L167
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_get_calibration_data",0
+	.db	1,133,2,6,1,1,1
+	.dw	.L119,.L233,.L118
+	.db	4
+	.db	"srv",0
+	.db	1,133,2,61
+	.dw	.L197,.L234
+	.db	4
+	.db	"calibration_data",0
+	.db	1,133,2,94
+	.dw	.L235,.L236
+	.db	5
+	.dw	.L119,.L233
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_get_calibration_data')
+.L166:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_get_calibration_data')
+.L167:
+	.dw	.L536-.L535
+.L535:
+	.dh	3
+	.dw	.L538-.L537
+.L537:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L538:
+	.db	5,38,7,0,5,2
+	.dw	.L119
+	.db	3,134,2,1,5,1,9
+	.dh	.L539-.L119
+	.db	3,1,1,7
+	.db	14+9*((.L540-.L539)/4)
+	.db	9
+	.dh	.L169-.L540
+	.db	0,1,1
+.L536:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_get_calibration_data')
+.L168:
+	.dw	-1
+	.dw	.L119
+	.dw	0
+	.dw	.L169-.L119
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_set_calibration_data')
+.L170:
+	.dw	438
+	.dh	3
+	.dw	.L171
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L173,.L172
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_set_calibration_data",0
+	.db	1,150,2,6,1,1,1
+	.dw	.L121,.L237,.L120
+	.db	4
+	.db	"srv",0
+	.db	1,150,2,55
+	.dw	.L182,.L238
+	.db	4
+	.db	"calibration_data",0
+	.db	1,150,2,94
+	.dw	.L230,.L239
+	.db	5
+	.dw	.L121,.L237
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_set_calibration_data')
+.L171:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_set_calibration_data')
+.L172:
+	.dw	.L542-.L541
+.L541:
+	.dh	3
+	.dw	.L544-.L543
+.L543:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L544:
+	.db	5,38,7,0,5,2
+	.dw	.L121
+	.db	3,151,2,1,5,1,9
+	.dh	.L545-.L121
+	.db	3,1,1,7
+	.db	14+9*((.L546-.L545)/4)
+	.db	9
+	.dh	.L174-.L546
+	.db	0,1,1
+.L542:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_set_calibration_data')
+.L173:
+	.dw	-1
+	.dw	.L121
+	.dw	0
+	.dw	.L174-.L121
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_touchscreen_get_rotation')
+.L175:
+	.dw	404
+	.dh	3
+	.dw	.L176
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L178,.L177
+	.db	2
+	.dw	.L126
+	.db	3
+	.db	"touchscreen_get_rotation",0
+	.db	1,228,1,5
+	.dw	.L202
+	.db	1,1,1
+	.dw	.L115,.L240,.L114
+	.db	4
+	.db	"srv",0
+	.db	1,228,1,52
+	.dw	.L197,.L241
+	.db	5
+	.dw	.L115,.L240
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_touchscreen_get_rotation')
+.L176:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_touchscreen_get_rotation')
+.L177:
+	.dw	.L548-.L547
+.L547:
+	.dh	3
+	.dw	.L550-.L549
+.L549:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	0,0,0,0
+.L550:
+	.db	5,1,7,0,5,2
+	.dw	.L115
+	.db	3,230,1,1,5,5,7
+	.db	13+9*((.L551-.L115)/4)
+	.db	5,1,9
+	.dh	.L179-.L551
+	.db	3,1,0,1,1
+.L548:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_touchscreen_get_rotation')
+.L178:
+	.dw	-1
+	.dw	.L115
+	.dw	0
+	.dw	.L179-.L115
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L180:
+	.dw	344
+	.dh	3
+	.dw	.L181
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\touchscreen\\src\\touchscreen.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L126
+	.db	3
+	.db	"drv_table",0
+	.db	4,66,22
+	.dw	.L242
+	.db	5,3
+	.dw	drv_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L181:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L218:
+	.dw	-1
+	.dw	.L125,.L364-.L125,.L365-.L125
+	.dh	1
+	.db	82
+	.dw	.L367-.L125,.L368-.L125
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_pos')
+.L204:
+	.dw	-1
+	.dw	.L111,.L268-.L111,.L269-.L111
+	.dh	1
+	.db	83
+	.dw	.L271-.L111,.L12-.L111
+	.dh	1
+	.db	80
+	.dw	.L16-.L111,.L278-.L111
+	.dh	1
+	.db	83
+	.dw	0,0
+.L203:
+	.dw	-1
+	.dw	.L111,.L272-.L111,.L273-.L111
+	.dh	1
+	.db	82
+	.dw	.L17-.L111,.L8-.L111
+	.dh	1
+	.db	82
+	.dw	.L275-.L111,.L10-.L111
+	.dh	1
+	.db	80
+	.dw	0,0
+.L110:
+	.dw	-1
+	.dw	.L111,.L111-.L111,.L259-.L111
+	.dh	2
+	.db	141,0
+	.dw	.L259-.L111,.L196-.L111
+	.dh	2
+	.db	141,16
+	.dw	.L196-.L111,.L196-.L111
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_calibration_data')
+.L236:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L25-.L119
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_raw')
+.L206:
+	.dw	-1
+	.dw	.L109,.L109-.L109,.L257-.L109
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L116:
+	.dw	-1
+	.dw	.L117,.L117-.L117,.L231-.L117
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_open')
+.L194:
+	.dw	-1
+	.dw	.L107,.L250-.L107,.L2-.L107
+	.dh	1
+	.db	97
+	.dw	0,0
+.L106:
+	.dw	-1
+	.dw	.L107,.L107-.L107,.L243-.L107
+	.dh	2
+	.db	141,0
+	.dw	.L243-.L107,.L183-.L107
+	.dh	2
+	.db	141,12
+	.dw	.L183-.L107,.L183-.L107
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_raw')
+.L208:
+	.dw	-1
+	.dw	.L109,.L256-.L109,.L257-.L109
+	.dh	1
+	.db	80
+	.dw	.L257-.L109,.L254-.L109
+	.dh	1
+	.db	96
+	.dw	.L258-.L109,.L205-.L109
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_callback')
+.L122:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L224-.L123
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_pos')
+.L200:
+	.dw	-1
+	.dw	.L111,.L277-.L111,.L265-.L111
+	.dh	1
+	.db	97
+	.dw	.L111-.L111,.L274-.L111
+	.dh	1
+	.db	85
+	.dw	0,0
+.L198:
+	.dw	-1
+	.dw	.L111,.L270-.L111,.L266-.L111
+	.dh	1
+	.db	96
+	.dw	.L111-.L111,.L280-.L111
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L213:
+	.dw	-1
+	.dw	.L125,.L297-.L125,.L298-.L125
+	.dh	1
+	.db	80
+	.dw	.L324-.L125,.L209-.L125
+	.dh	1
+	.db	82
+	.dw	.L33-.L125,.L77-.L125
+	.dh	1
+	.db	99
+	.dw	.L36-.L125,.L324-.L125
+	.dh	1
+	.db	99
+	.dw	.L298-.L125,.L307-.L125
+	.dh	1
+	.db	99
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_open')
+.L185:
+	.dw	-1
+	.dw	.L107,.L107-.L107,.L248-.L107
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_calibration_data')
+.L239:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L26-.L121
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_callback')
+.L227:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L224-.L123
+	.dh	1
+	.db	85
+	.dw	0,0
+.L225:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L224-.L123
+	.dh	1
+	.db	84
+	.dw	0,0
+.L229:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L224-.L123
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L217:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_rotation')
+.L241:
+	.dw	-1
+	.dw	.L115,.L115-.L115,.L240-.L115
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_calibration_data')
+.L234:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L25-.L119
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_calibration_data_pointer')
+.L232:
+	.dw	-1
+	.dw	.L117,.L117-.L117,.L231-.L117
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_rotation')
+.L223:
+	.dw	-1
+	.dw	.L113,.L281-.L113,.L282-.L113
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_calibration_data')
+.L120:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L237-.L121
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_calibration_data')
+.L118:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L233-.L119
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_rotation')
+.L222:
+	.dw	-1
+	.dw	.L113,.L113-.L113,.L220-.L113
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_raw')
+.L207:
+	.dw	-1
+	.dw	.L109,.L109-.L109,.L257-.L109
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L212:
+	.dw	-1
+	.dw	.L125,.L32-.L125,.L294-.L125
+	.dh	1
+	.db	86
+	.dw	.L36-.L125,.L66-.L125
+	.dh	1
+	.db	98
+	.dw	.L299-.L125,.L300-.L125
+	.dh	1
+	.db	98
+	.dw	.L33-.L125,.L303-.L125
+	.dh	1
+	.db	86
+	.dw	.L306-.L125,.L307-.L125
+	.dh	1
+	.db	98
+	.dw	.L308-.L125,.L309-.L125
+	.dh	1
+	.db	98
+	.dw	.L37-.L125,.L57-.L125
+	.dh	1
+	.db	98
+	.dw	.L40-.L125,.L301-.L125
+	.dh	1
+	.db	86
+	.dw	.L318-.L125,.L316-.L125
+	.dh	1
+	.db	87
+	.dw	.L320-.L125,.L321-.L125
+	.dh	1
+	.db	87
+	.dw	.L322-.L125,.L308-.L125
+	.dh	1
+	.db	83
+	.dw	.L41-.L125,.L322-.L125
+	.dh	1
+	.db	86
+	.dw	.L44-.L125,.L325-.L125
+	.dh	1
+	.db	86
+	.dw	.L32-.L125,.L77-.L125
+	.dh	1
+	.db	98
+	.dw	.L46-.L125,.L328-.L125
+	.dh	1
+	.db	86
+	.dw	.L41-.L125,.L61-.L125
+	.dh	1
+	.db	98
+	.dw	.L337-.L125,.L336-.L125
+	.dh	1
+	.db	87
+	.dw	.L338-.L125,.L339-.L125
+	.dh	1
+	.db	98
+	.dw	.L33-.L125,.L53-.L125
+	.dh	1
+	.db	98
+	.dw	.L45-.L125,.L341-.L125
+	.dh	1
+	.db	86
+	.dw	.L43-.L125,.L302-.L125
+	.dh	1
+	.db	86
+	.dw	.L348-.L125,.L320-.L125
+	.dh	1
+	.db	98
+	.dw	.L125-.L125,.L307-.L125
+	.dh	1
+	.db	86
+	.dw	.L303-.L125,.L320-.L125
+	.dh	1
+	.db	83
+	.dw	.L42-.L125,.L314-.L125
+	.dh	1
+	.db	86
+	.dw	.L342-.L125,.L356-.L125
+	.dh	1
+	.db	98
+	.dw	.L357-.L125,.L338-.L125
+	.dh	1
+	.db	83
+	.dw	.L42-.L125,.L358-.L125
+	.dh	1
+	.db	98
+	.dw	.L356-.L125,.L343-.L125
+	.dh	1
+	.db	87
+	.dw	.L300-.L125,.L356-.L125
+	.dh	1
+	.db	83
+	.dw	.L36-.L125,.L331-.L125
+	.dh	1
+	.db	86
+	.dw	.L315-.L125,.L318-.L125
+	.dh	1
+	.db	98
+	.dw	.L335-.L125,.L337-.L125
+	.dh	1
+	.db	98
+	.dw	.L37-.L125,.L357-.L125
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_open')
+.L191:
+	.dw	-1
+	.dw	.L107,.L249-.L107,.L246-.L107
+	.dh	1
+	.db	96
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L124:
+	.dw	-1
+	.dw	.L125,.L125-.L125,.L283-.L125
+	.dh	2
+	.db	141,0
+	.dw	.L283-.L125,.L209-.L125
+	.dh	2
+	.db	141,36
+	.dw	.L209-.L125,.L209-.L125
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_rotation')
+.L114:
+	.dw	-1
+	.dw	.L115,.L115-.L115,.L240-.L115
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_rotation')
+.L112:
+	.dw	-1
+	.dw	.L113,.L113-.L113,.L220-.L113
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L211:
+	.dw	-1
+	.dw	.L125,.L295-.L125,.L296-.L125
+	.dh	1
+	.db	97
+	.dw	.L304-.L125,.L305-.L125
+	.dh	1
+	.db	83
+	.dw	.L33-.L125,.L304-.L125
+	.dh	1
+	.db	85
+	.dw	.L46-.L125,.L312-.L125
+	.dh	1
+	.db	85
+	.dw	.L41-.L125,.L313-.L125
+	.dh	1
+	.db	85
+	.dw	.L125-.L125,.L307-.L125
+	.dh	1
+	.db	85
+	.dw	.L315-.L125,.L316-.L125
+	.dh	1
+	.db	86
+	.dw	.L37-.L125,.L319-.L125
+	.dh	1
+	.db	85
+	.dw	.L323-.L125,.L300-.L125
+	.dh	1
+	.db	83
+	.dw	.L305-.L125,.L332-.L125
+	.dh	1
+	.db	97
+	.dw	.L43-.L125,.L333-.L125
+	.dh	1
+	.db	85
+	.dw	.L335-.L125,.L336-.L125
+	.dh	1
+	.db	86
+	.dw	.L37-.L125,.L56-.L125
+	.dh	1
+	.db	97
+	.dw	.L342-.L125,.L343-.L125
+	.dh	1
+	.db	86
+	.dw	.L36-.L125,.L347-.L125
+	.dh	1
+	.db	85
+	.dw	.L36-.L125,.L66-.L125
+	.dh	1
+	.db	97
+	.dw	.L355-.L125,.L307-.L125
+	.dh	1
+	.db	97
+	.dw	.L348-.L125,.L321-.L125
+	.dh	1
+	.db	86
+	.dw	.L319-.L125,.L295-.L125
+	.dh	1
+	.db	83
+	.dw	.L313-.L125,.L322-.L125
+	.dh	1
+	.db	83
+	.dw	.L359-.L125,.L348-.L125
+	.dh	1
+	.db	97
+	.dw	.L42-.L125,.L360-.L125
+	.dh	1
+	.db	97
+	.dw	.L33-.L125,.L52-.L125
+	.dh	1
+	.db	97
+	.dw	.L41-.L125,.L60-.L125
+	.dh	1
+	.db	97
+	.dw	.L361-.L125,.L323-.L125
+	.dh	1
+	.db	97
+	.dw	.L45-.L125,.L362-.L125
+	.dh	1
+	.db	85
+	.dw	.L309-.L125,.L335-.L125
+	.dh	1
+	.db	97
+	.dw	.L32-.L125,.L363-.L125
+	.dh	1
+	.db	85
+	.dw	.L32-.L125,.L77-.L125
+	.dh	1
+	.db	97
+	.dw	.L42-.L125,.L366-.L125
+	.dh	1
+	.db	85
+	.dw	.L339-.L125,.L315-.L125
+	.dh	1
+	.db	97
+	.dw	.L370-.L125,.L342-.L125
+	.dh	1
+	.db	97
+	.dw	.L40-.L125,.L371-.L125
+	.dh	1
+	.db	85
+	.dw	.L44-.L125,.L372-.L125
+	.dh	1
+	.db	85
+	.dw	0,0
+.L215:
+	.dw	-1
+	.dw	.L125,.L36-.L125,.L66-.L125
+	.dh	2
+	.db	145,116
+	.dw	.L125-.L125,.L307-.L125
+	.dh	2
+	.db	145,116
+	.dw	.L33-.L125,.L77-.L125
+	.dh	2
+	.db	145,116
+	.dw	0,0
+.L219:
+	.dw	-1
+	.dw	.L125,.L340-.L125,.L84-.L125
+	.dh	1
+	.db	83
+	.dw	.L353-.L125,.L354-.L125
+	.dh	1
+	.db	83
+	.dw	0,0
+.L216:
+	.dw	-1
+	.dw	.L125,.L310-.L125,.L311-.L125
+	.dh	1
+	.db	82
+	.dw	.L326-.L125,.L327-.L125
+	.dh	1
+	.db	84
+	.dw	.L345-.L125,.L346-.L125
+	.dh	1
+	.db	84
+	.dw	.L349-.L125,.L350-.L125
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_pos')
+.L201:
+	.dw	-1
+	.dw	.L111,.L274-.L111,.L264-.L111
+	.dh	1
+	.db	98
+	.dw	.L276-.L111,.L196-.L111
+	.dh	1
+	.db	82
+	.dw	.L279-.L111,.L274-.L111
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_get_raw')
+.L108:
+	.dw	-1
+	.dw	.L109,.L109-.L109,.L251-.L109
+	.dh	2
+	.db	141,0
+	.dw	.L251-.L109,.L205-.L109
+	.dh	2
+	.db	141,8
+	.dw	.L205-.L109,.L205-.L109
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_rotation')
+.L221:
+	.dw	-1
+	.dw	.L113,.L113-.L113,.L220-.L113
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_set_calibration_data')
+.L238:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L26-.L121
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_touchscreen_calibrate')
+.L210:
+	.dw	-1
+	.dw	.L125,.L32-.L125,.L294-.L125
+	.dh	1
+	.db	84
+	.dw	.L40-.L125,.L301-.L125
+	.dh	1
+	.db	84
+	.dw	.L43-.L125,.L302-.L125
+	.dh	1
+	.db	84
+	.dw	.L42-.L125,.L314-.L125
+	.dh	1
+	.db	84
+	.dw	.L45-.L125,.L317-.L125
+	.dh	1
+	.db	84
+	.dw	.L329-.L125,.L330-.L125
+	.dh	1
+	.db	96
+	.dw	.L36-.L125,.L331-.L125
+	.dh	1
+	.db	84
+	.dw	.L33-.L125,.L334-.L125
+	.dh	1
+	.db	96
+	.dw	.L37-.L125,.L296-.L125
+	.dh	1
+	.db	84
+	.dw	.L29-.L125,.L344-.L125
+	.dh	1
+	.db	96
+	.dw	.L125-.L125,.L307-.L125
+	.dh	1
+	.db	84
+	.dw	.L351-.L125,.L66-.L125
+	.dh	1
+	.db	96
+	.dw	.L352-.L125,.L307-.L125
+	.dh	1
+	.db	96
+	.dw	.L44-.L125,.L325-.L125
+	.dh	1
+	.db	84
+	.dw	.L46-.L125,.L328-.L125
+	.dh	1
+	.db	84
+	.dw	.L33-.L125,.L332-.L125
+	.dh	1
+	.db	84
+	.dw	.L41-.L125,.L369-.L125
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L552:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_open')
+	.dw	76
+	.dw	.L552,.L107,.L183-.L107
+	.db	4
+	.dw	(.L243-.L107)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L244-.L243)/4
+	.db	17,31,116,4
+	.dw	(.L187-.L244)/4
+	.db	17,16,120,4
+	.dw	(.L189-.L187)/4
+	.db	17,17,124,4
+	.dw	(.L245-.L189)/4
+	.db	209,4
+	.dw	(.L246-.L245)/4
+	.db	208,4
+	.dw	(.L247-.L246)/4
+	.db	223,4
+	.dw	(.L183-.L247)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_get_raw')
+	.dw	64
+	.dw	.L552,.L109,.L205-.L109
+	.db	4
+	.dw	(.L251-.L109)/4
+	.db	19,8,22,29,3,19,141,8,4
+	.dw	(.L252-.L251)/4
+	.db	17,31,120,4
+	.dw	(.L253-.L252)/4
+	.db	17,16,124,4
+	.dw	(.L254-.L253)/4
+	.db	208,4
+	.dw	(.L255-.L254)/4
+	.db	223,4
+	.dw	(.L205-.L255)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_get_pos')
+	.dw	92
+	.dw	.L552,.L111,.L196-.L111
+	.db	4
+	.dw	(.L259-.L111)/4
+	.db	19,16,22,29,3,19,141,16,4
+	.dw	(.L260-.L259)/4
+	.db	17,31,112,4
+	.dw	(.L261-.L260)/4
+	.db	17,16,116,4
+	.dw	(.L262-.L261)/4
+	.db	17,17,120,4
+	.dw	(.L263-.L262)/4
+	.db	17,18,124,4
+	.dw	(.L264-.L263)/4
+	.db	210,4
+	.dw	(.L265-.L264)/4
+	.db	209,4
+	.dw	(.L266-.L265)/4
+	.db	208,4
+	.dw	(.L267-.L266)/4
+	.db	223,4
+	.dw	(.L196-.L267)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_set_rotation')
+	.dw	40
+	.dw	.L552,.L113,.L220-.L113
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_get_rotation')
+	.dw	48
+	.dw	.L552,.L115,.L240-.L115
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_get_calibration_data_pointer')
+	.dw	48
+	.dw	.L552,.L117,.L231-.L117
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_get_calibration_data')
+	.dw	44
+	.dw	.L552,.L119,.L233-.L119
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_set_calibration_data')
+	.dw	44
+	.dw	.L552,.L121,.L237-.L121
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_set_callback')
+	.dw	48
+	.dw	.L552,.L123,.L224-.L123
+	.db	8,2,8,3,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_touchscreen_calibrate')
+	.dw	104
+	.dw	.L552,.L125,.L209-.L125
+	.db	4
+	.dw	(.L283-.L125)/4
+	.db	19,36,22,29,3,19,141,36,4
+	.dw	(.L284-.L283)/4
+	.db	17,31,96,4
+	.dw	(.L285-.L284)/4
+	.db	17,16,100,4
+	.dw	(.L286-.L285)/4
+	.db	17,17,104,4
+	.dw	(.L287-.L286)/4
+	.db	17,18,108,4
+	.dw	(.L288-.L287)/4
+	.db	17,19,112,4
+	.dw	(.L289-.L288)/4
+	.db	211,4
+	.dw	(.L290-.L289)/4
+	.db	210,4
+	.dw	(.L291-.L290)/4
+	.db	209,4
+	.dw	(.L292-.L291)/4
+	.db	208,4
+	.dw	(.L293-.L292)/4
+	.db	223,4
+	.dw	(.L209-.L293)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

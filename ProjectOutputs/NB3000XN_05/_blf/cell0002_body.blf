@@ -1,0 +1,149 @@
+.model IOBUF16B
+.inputs T
+.inputs I<15>
+.inputs I<14>
+.inputs I<13>
+.inputs I<12>
+.inputs I<11>
+.inputs I<10>
+.inputs I<9>
+.inputs I<8>
+.inputs I<7>
+.inputs I<6>
+.inputs I<5>
+.inputs I<4>
+.inputs I<3>
+.inputs I<2>
+.inputs I<1>
+.inputs I<0>
+.outputs IO<15>
+.inputs *IO<15>
+.outputs IO<14>
+.inputs *IO<14>
+.outputs IO<13>
+.inputs *IO<13>
+.outputs IO<12>
+.inputs *IO<12>
+.outputs IO<11>
+.inputs *IO<11>
+.outputs IO<10>
+.inputs *IO<10>
+.outputs IO<9>
+.inputs *IO<9>
+.outputs IO<8>
+.inputs *IO<8>
+.outputs IO<7>
+.inputs *IO<7>
+.outputs IO<6>
+.inputs *IO<6>
+.outputs IO<5>
+.inputs *IO<5>
+.outputs IO<4>
+.inputs *IO<4>
+.outputs IO<3>
+.inputs *IO<3>
+.outputs IO<2>
+.inputs *IO<2>
+.outputs IO<1>
+.inputs *IO<1>
+.outputs IO<0>
+.inputs *IO<0>
+.outputs O<15>
+.outputs O<14>
+.outputs O<13>
+.outputs O<12>
+.outputs O<11>
+.outputs O<10>
+.outputs O<9>
+.outputs O<8>
+.outputs O<7>
+.outputs O<6>
+.outputs O<5>
+.outputs O<4>
+.outputs O<3>
+.outputs O<2>
+.outputs O<1>
+.outputs O<0>
+.names *IO<15> O<15>
+1 1
+.names *IO<14> O<14>
+1 1
+.names *IO<13> O<13>
+1 1
+.names *IO<12> O<12>
+1 1
+.names *IO<11> O<11>
+1 1
+.names *IO<10> O<10>
+1 1
+.names *IO<9> O<9>
+1 1
+.names *IO<8> O<8>
+1 1
+.names *IO<7> O<7>
+1 1
+.names *IO<6> O<6>
+1 1
+.names *IO<5> O<5>
+1 1
+.names *IO<4> O<4>
+1 1
+.names *IO<3> O<3>
+1 1
+.names *IO<2> O<2>
+1 1
+.names *IO<1> O<1>
+1 1
+.names *IO<0> O<0>
+1 1
+.names T n20
+0 1
+.latch I<15> IO<15> th _N0 2
+.names n20 _N0
+0 1
+.latch I<14> IO<14> th _N1 2
+.names n20 _N1
+0 1
+.latch I<13> IO<13> th _N2 2
+.names n20 _N2
+0 1
+.latch I<12> IO<12> th _N3 2
+.names n20 _N3
+0 1
+.latch I<11> IO<11> th _N4 2
+.names n20 _N4
+0 1
+.latch I<10> IO<10> th _N5 2
+.names n20 _N5
+0 1
+.latch I<9> IO<9> th _N6 2
+.names n20 _N6
+0 1
+.latch I<8> IO<8> th _N7 2
+.names n20 _N7
+0 1
+.latch I<7> IO<7> th _N8 2
+.names n20 _N8
+0 1
+.latch I<6> IO<6> th _N9 2
+.names n20 _N9
+0 1
+.latch I<5> IO<5> th _N10 2
+.names n20 _N10
+0 1
+.latch I<4> IO<4> th _N11 2
+.names n20 _N11
+0 1
+.latch I<3> IO<3> th _N12 2
+.names n20 _N12
+0 1
+.latch I<2> IO<2> th _N13 2
+.names n20 _N13
+0 1
+.latch I<1> IO<1> th _N14 2
+.names n20 _N14
+0 1
+.names n101
+.latch I<0> IO<0> th _N15 2
+.names n20 _N15
+0 1

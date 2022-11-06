@@ -1,0 +1,7 @@
+INFILE=C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\tft_multifuncional.ncd
+OUTFILE=C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\tft_multifuncional_cclk.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s1400an-4fgg676
+WORKINGDIR=C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05
+LICENSE=WebPack
+USER_INFO=210289330_0_0_073

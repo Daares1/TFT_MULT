@@ -1,0 +1,833 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc4160a --dep-file=Output\frameout\posix_devio_strerror.d --make-target=Output\frameout\posix_devio_strerror.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\strerror.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c"
+
+	.section	.text.strerror.strerror ,cluster('$group_strerror')
+	.align	4
+	.global	strerror
+; Function strerror
+.L6:
+strerror:	.type	func
+	bltz	$a0,.L2
+.L37:
+	nop
+.L38:
+	slti	$v0,$a0,83
+	bne	$v0,$zero,.L3
+	nop
+.L2:
+	li	$a0,0x52
+.L3:
+	sll	$v0,$a0,2
+	lui	$v1,@hi(errors)
+	addiu	$v1,$v1,@lo(errors)
+	addu	$v0,$v0,$v1
+.L39:
+	jr	$ra
+.L40:
+	lw	$v0,0($v0)
+.L19:
+	.size	strerror,*-strerror
+.L15:
+	; End of function
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_1_str:	.type	object
+	.size	_1_str,8
+	.db	'Success',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_2_str:	.type	object
+	.size	_2_str,23
+	.db	'Argument list too long',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_3_str:	.type	object
+	.size	_3_str,18
+	.db	'Permission denied',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_4_str:	.type	object
+	.size	_4_str,15
+	.db	'Address in use',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_5_str:	.type	object
+	.size	_5_str,22
+	.db	'Address not available',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_6_str:	.type	object
+	.size	_6_str,29
+	.db	'Address family not supported',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_7_str:	.type	object
+	.size	_7_str,32
+	.db	'Resource unavailable, try again',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_8_str:	.type	object
+	.size	_8_str,31
+	.db	'Connection already in progress',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_9_str:	.type	object
+	.size	_9_str,20
+	.db	'Bad file descriptor',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_10_str:	.type	object
+	.size	_10_str,12
+	.db	'Bad message',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_11_str:	.type	object
+	.size	_11_str,24
+	.db	'Device or resource busy',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_12_str:	.type	object
+	.size	_12_str,19
+	.db	'Operation canceled',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_13_str:	.type	object
+	.size	_13_str,19
+	.db	'No child processes',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_14_str:	.type	object
+	.size	_14_str,19
+	.db	'Connection aborted',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_15_str:	.type	object
+	.size	_15_str,19
+	.db	'Connection refused',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_16_str:	.type	object
+	.size	_16_str,17
+	.db	'Connection reset',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_17_str:	.type	object
+	.size	_17_str,30
+	.db	'Resource deadlock would occur',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_18_str:	.type	object
+	.size	_18_str,29
+	.db	'Destination address required',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_19_str:	.type	object
+	.size	_19_str,47
+	.db	'Mathematics argument out of domain of function',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_20_str:	.type	object
+	.size	_20_str,18
+	.db	'Reserved (EDQUOT)',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_21_str:	.type	object
+	.size	_21_str,12
+	.db	'File exists',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_22_str:	.type	object
+	.size	_22_str,12
+	.db	'Bad address',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_23_str:	.type	object
+	.size	_23_str,15
+	.db	'File too large',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_24_str:	.type	object
+	.size	_24_str,20
+	.db	'Host is unreachable',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_25_str:	.type	object
+	.size	_25_str,19
+	.db	'Identifier removed',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_26_str:	.type	object
+	.size	_26_str,22
+	.db	'Illegal byte sequence',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_27_str:	.type	object
+	.size	_27_str,22
+	.db	'Operation in progress',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_28_str:	.type	object
+	.size	_28_str,21
+	.db	'Interrupted function',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_29_str:	.type	object
+	.size	_29_str,17
+	.db	'Invalid argument',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_30_str:	.type	object
+	.size	_30_str,10
+	.db	'I/O error',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_31_str:	.type	object
+	.size	_31_str,20
+	.db	'Socket is connected',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_32_str:	.type	object
+	.size	_32_str,15
+	.db	'Is a directory',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_33_str:	.type	object
+	.size	_33_str,34
+	.db	'Too many levels of symbolic links',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_34_str:	.type	object
+	.size	_34_str,20
+	.db	'Too many open files',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_35_str:	.type	object
+	.size	_35_str,15
+	.db	'Too many links',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_36_str:	.type	object
+	.size	_36_str,18
+	.db	'Message too large',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_37_str:	.type	object
+	.size	_37_str,21
+	.db	'Reserved (EMULTIHOP)',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_38_str:	.type	object
+	.size	_38_str,18
+	.db	'Filename too long',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_39_str:	.type	object
+	.size	_39_str,16
+	.db	'Network is down',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_40_str:	.type	object
+	.size	_40_str,30
+	.db	'Connection aborted by network',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_41_str:	.type	object
+	.size	_41_str,20
+	.db	'Network unreachable',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_42_str:	.type	object
+	.size	_42_str,30
+	.db	'Too many files open in system',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_43_str:	.type	object
+	.size	_43_str,26
+	.db	'No buffer space available',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_44_str:	.type	object
+	.size	_44_str,54
+	.db	'No message is available on the STREAM head read queue',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_45_str:	.type	object
+	.size	_45_str,15
+	.db	'No such device',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_46_str:	.type	object
+	.size	_46_str,26
+	.db	'No such file or directory',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_47_str:	.type	object
+	.size	_47_str,29
+	.db	'Executable file format error',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_48_str:	.type	object
+	.size	_48_str,19
+	.db	'No locks available',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_49_str:	.type	object
+	.size	_49_str,19
+	.db	'Reserved (ENOLINK)',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_50_str:	.type	object
+	.size	_50_str,17
+	.db	'Not enough space',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_51_str:	.type	object
+	.size	_51_str,31
+	.db	'No message of the desired type',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_52_str:	.type	object
+	.size	_52_str,23
+	.db	'Protocol not available',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_53_str:	.type	object
+	.size	_53_str,24
+	.db	'No space left on device',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_54_str:	.type	object
+	.size	_54_str,20
+	.db	'No STREAM resources',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_55_str:	.type	object
+	.size	_55_str,13
+	.db	'Not a STREAM',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_56_str:	.type	object
+	.size	_56_str,23
+	.db	'Function not supported',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_57_str:	.type	object
+	.size	_57_str,28
+	.db	'The socket is not connected',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_58_str:	.type	object
+	.size	_58_str,16
+	.db	'Not a directory',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_59_str:	.type	object
+	.size	_59_str,20
+	.db	'Directory not empty',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_60_str:	.type	object
+	.size	_60_str,13
+	.db	'Not a socket',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_61_str:	.type	object
+	.size	_61_str,14
+	.db	'Not supported',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_62_str:	.type	object
+	.size	_62_str,36
+	.db	'Inappropriate I/O control operation',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_63_str:	.type	object
+	.size	_63_str,26
+	.db	'No such device or address',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_64_str:	.type	object
+	.size	_64_str,34
+	.db	'Operation not supported on socket',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_65_str:	.type	object
+	.size	_65_str,42
+	.db	'Value too large to be stored in data type',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_66_str:	.type	object
+	.size	_66_str,24
+	.db	'Operation not permitted',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_67_str:	.type	object
+	.size	_67_str,12
+	.db	'Broken pipe',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_68_str:	.type	object
+	.size	_68_str,15
+	.db	'Protocol error',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_69_str:	.type	object
+	.size	_69_str,23
+	.db	'Protocol not supported',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_70_str:	.type	object
+	.size	_70_str,31
+	.db	'Protocol wrong type for socket',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_71_str:	.type	object
+	.size	_71_str,17
+	.db	'Result too large',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_72_str:	.type	object
+	.size	_72_str,22
+	.db	'Read-only file system',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_73_str:	.type	object
+	.size	_73_str,13
+	.db	'Invalid seek',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_74_str:	.type	object
+	.size	_74_str,16
+	.db	'No such process',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_75_str:	.type	object
+	.size	_75_str,18
+	.db	'Reserved (ESTALE)',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_76_str:	.type	object
+	.size	_76_str,23
+	.db	'Stream ioctl() timeout',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_77_str:	.type	object
+	.size	_77_str,21
+	.db	'Connection timed out',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_78_str:	.type	object
+	.size	_78_str,15
+	.db	'Text file busy',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_79_str:	.type	object
+	.size	_79_str,18
+	.db	'Cross-device link',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_80_str:	.type	object
+	.size	_80_str,17
+	.db	'Remote I/O error',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_81_str:	.type	object
+	.size	_81_str,30
+	.db	'Wrong devce i/o configuration',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_82_str:	.type	object
+	.size	_82_str,47
+	.db	'Cannot send after transport endpoint shutdown.',0
+	.endsec	; End of section
+
+	.section	.rodata.strerror.$str ,cluster('$group_rodata')
+	.align	4
+_83_str:	.type	object
+	.size	_83_str,21
+	.db	'Invalid error number',0
+	.endsec	; End of section
+
+	.section	.data.strerror.errors ,cluster('$group_data')
+	.align	4
+errors:	.type	object
+	.size	errors,332
+	.dw	_1_str,_2_str,_3_str,_4_str,_5_str,_6_str,_7_str,_8_str,_9_str,_10_str
+	.dw	_11_str,_12_str,_13_str,_14_str,_15_str,_16_str,_17_str,_18_str,_19_str,_20_str
+	.dw	_21_str,_22_str,_23_str,_24_str,_25_str,_26_str,_27_str,_28_str,_29_str,_30_str
+	.dw	_31_str,_32_str,_33_str,_34_str,_35_str,_36_str,_37_str,_38_str,_39_str,_40_str
+	.dw	_41_str,_42_str,_43_str,_44_str,_45_str,_46_str,_47_str,_48_str,_49_str,_50_str
+	.dw	_51_str,_52_str,_53_str,_54_str,_55_str,_56_str,_57_str,_58_str,_59_str,_60_str
+	.dw	_61_str,_62_str,_63_str,_64_str,_65_str,_66_str,_67_str,_68_str,_69_str,_70_str
+	.dw	_71_str,_72_str,_73_str,_74_str,_75_str,_76_str,_77_str,_78_str,_79_str,_80_str
+	.dw	_81_str,_82_str,_83_str
+	.endsec	; End of section
+
+	.calls	'strerror','',0
+	.section	.debug_info
+.L8:
+	.dw	406
+	.dh	3
+	.dw	.L9
+	.db	4
+.L7:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L10
+.L18:
+	.db	2
+	.dw	.L23-.L8
+.L23:
+	.db	3
+	.db	"char",0
+	.db	1,6
+.L20:
+	.db	3
+	.db	"int",0
+	.db	4,5,4
+	.db	"__size_t",0
+	.db	1,1,1
+	.dw	.L24-.L8
+.L24:
+	.db	3
+	.db	"unsigned int",0
+	.db	4,7,4
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L25-.L8
+.L25:
+	.db	2
+	.dw	.L26-.L8
+.L26:
+	.db	5,1
+.L22:
+	.db	6,204,2
+	.dw	.L27-.L8
+	.db	7,82,0
+.L27:
+	.db	2
+	.dw	.L28-.L8
+.L28:
+	.db	8
+	.dw	316
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,36,0,3,8,11,15,62,15,0,0,4,22,0,3,8,58
+	.db	15,59,15,57,15,73,19,0,0,5,21,0,54,15,0,0,6,1,1,11,15,73,19,0,0,7,33,0,47,15,0,0,8,38,0,73,19,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L10:
+	.dw	.L30-.L29
+.L29:
+	.dh	3
+	.dw	.L32-.L31
+.L31:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c",0
+	.db	0,0,0,0
+.L32:
+.L30:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_strerror')
+.L11:
+	.dw	379
+	.dh	3
+	.dw	.L12
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L14,.L13
+	.db	2
+	.dw	.L7
+	.db	3
+	.db	"strerror",0
+	.db	1,105,1
+	.dw	.L18
+	.db	1,1,1
+	.dw	.L6,.L19,.L5
+	.db	4
+	.db	"errcode",0
+	.db	1,105,16
+	.dw	.L20,.L21
+	.db	5
+	.dw	.L6,.L19
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_strerror')
+.L12:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_strerror')
+.L13:
+	.dw	.L34-.L33
+.L33:
+	.dh	3
+	.dw	.L36-.L35
+.L35:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c",0
+	.db	0,0,0,0
+.L36:
+	.db	5,9,7,0,5,2
+	.dw	.L6
+	.db	3,234,0,1,7
+	.db	14+9*((.L37-.L6)/4)
+	.db	5,32
+	.db	14+9*((.L38-.L37)/4)
+	.db	5,24
+	.db	16+9*((.L2-.L38)/4)
+	.db	5,5
+	.db	17+9*((.L3-.L2)/4)
+	.db	5,1
+	.db	15+9*((.L39-.L3)/4)
+	.db	5,5,7
+	.db	13+9*((.L40-.L39)/4)
+	.db	5,1,9
+	.dh	.L15-.L40
+	.db	3,1,0,1,1
+.L34:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_strerror')
+.L14:
+	.dw	-1
+	.dw	.L6
+	.dw	0
+	.dw	.L15-.L6
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_data')
+.L16:
+	.dw	330
+	.dh	3
+	.dw	.L17
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\libc\\strerror.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L7
+	.db	3
+	.db	"errors",0
+	.db	1,17,14
+	.dw	.L22
+	.db	5,3
+	.dw	errors
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_data')
+.L17:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_strerror')
+.L5:
+	.dw	-1
+	.dw	.L6,.L6-.L6,.L19-.L6
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L21:
+	.dw	-1
+	.dw	.L6,.L6-.L6,.L19-.L6
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L41:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_strerror')
+	.dw	48
+	.dw	.L41,.L6,.L19-.L6
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

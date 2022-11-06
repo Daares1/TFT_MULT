@@ -1,0 +1,7 @@
+   Generated File[TFT_TOUCH.VHD]
+   Generated File[TFT_MULTIFUN.VHD]
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 5:37:31 p. m. On 2/03/2016

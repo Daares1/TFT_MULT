@@ -1,0 +1,901 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc8340a --dep-file=Output\frameout\drv_ioport_drv_ioport.d --make-target=Output\frameout\drv_ioport_drv_ioport.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\drv_ioport.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c"
+
+	.section	.text.drv_ioport.ioport_set_value ,cluster('$group_ioport_set_value')
+	.align	4
+	.global	ioport_set_value
+; Function ioport_set_value
+.L25:
+ioport_set_value:	.type	func
+	lbu	$v0,0($a0)
+	slt	$v0,$a1,$v0
+	beq	$v0,$zero,.L2
+	nop
+.L122:
+	lw	$v0,8($a0)
+	beq	$v0,$zero,.L3
+	nop
+.L123:
+	lw	$v1,4($a0)
+	li	$a0,0x8
+.L73:
+	bne	$v1,$a0,.L4
+	nop
+.L124:
+	addu	$v0,$v0,$a1
+	sb	$a2,0($v0)
+.L125:
+	jr	$ra
+.L126:
+	nop
+.L4:
+	li	$a0,0x10
+	bne	$v1,$a0,.L6
+	nop
+.L127:
+	addu	$v1,$a1,$a1
+	addu	$v0,$v0,$v1
+	sh	$a2,0($v0)
+.L128:
+	jr	$ra
+.L129:
+	nop
+.L6:
+	li	$a0,0x20
+	bne	$v1,$a0,.L8
+	nop
+.L130:
+	sll	$v1,$a1,2
+	addu	$v0,$v0,$v1
+	sw	$a2,0($v0)
+.L8:
+.L3:
+.L2:
+	jr	$ra
+.L131:
+	nop
+.L62:
+	.size	ioport_set_value,*-ioport_set_value
+.L43:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_ioport.ioport_get_value ,cluster('$group_ioport_get_value')
+	.align	4
+	.global	ioport_get_value
+; Function ioport_get_value
+.L27:
+ioport_get_value:	.type	func
+	lbu	$v1,0($a0)
+	slt	$v1,$a1,$v1
+.L78:
+	beq	$v1,$zero,.L9
+.L136:
+	move	$v0,$zero
+.L74:
+	lw	$v1,8($a0)
+	beq	$v1,$zero,.L10
+	nop
+.L137:
+	lw	$a0,4($a0)
+	li	$a2,0x8
+	bne	$a0,$a2,.L11
+	nop
+.L138:
+	addu	$v0,$v1,$a1
+.L75:
+	lbu	$v0,0($v0)
+.L76:
+	jr	$ra
+.L139:
+	nop
+.L11:
+	li	$a2,0x10
+	bne	$a0,$a2,.L13
+	nop
+.L140:
+	addu	$v0,$a1,$a1
+.L77:
+	addu	$v0,$v1,$v0
+	lhu	$v0,0($v0)
+.L79:
+	jr	$ra
+.L141:
+	nop
+.L13:
+	li	$a2,0x20
+	bne	$a0,$a2,.L15
+	nop
+.L142:
+	sll	$v0,$a1,2
+.L80:
+	addu	$v0,$v1,$v0
+	lw	$v0,0($v0)
+.L15:
+.L10:
+.L9:
+	jr	$ra
+.L143:
+	nop
+.L68:
+	.size	ioport_get_value,*-ioport_get_value
+.L48:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_ioport.ioport_open ,cluster('$group_ioport_open')
+	.align	4
+	.global	ioport_open
+; Function ioport_open
+.L29:
+ioport_open:	.type	func
+	move	$v0,$a0
+	sll	$v0,$v0,2
+	subu	$v0,$v0,$a0
+	sll	$v0,$v0,2
+	lui	$v1,@hi(ioport_driver_table)
+	addiu	$v1,$v1,@lo(ioport_driver_table)
+	addu	$v0,$v0,$v1
+.L84:
+	lw	$v1,8($v0)
+	bne	$v1,$zero,.L17
+	nop
+.L57:
+	sll	$v1,$a0,2
+	lui	$a0,@hi(drv_ioport_instance_table)
+.L85:
+	addiu	$a0,$a0,@lo(drv_ioport_instance_table)
+	addu	$v1,$v1,$a0
+.L81:
+	lw	$v1,0($v1)
+	move	$a0,$v1
+	sll	$a0,$a0,2
+	subu	$a0,$a0,$v1
+	sll	$a0,$a0,2
+	lui	$v1,@hi(per_ioport_instance_table)
+.L82:
+	addiu	$v1,$v1,@lo(per_ioport_instance_table)
+	addu	$v1,$a0,$v1
+.L83:
+	lw	$a0,0($v1)
+.L110:
+	lbu	$a1,8($v1)
+.L111:
+	sw	$a0,8($v0)
+.L112:
+	lw	$v1,4($v1)
+	bne	$v1,$zero,.L18
+.L113:
+	sb	$a1,0($v0)
+.L114:
+	j	.L19
+	li	$v1,0x8
+.L18:
+	li	$a0,0x1
+	bne	$v1,$a0,.L20
+	nop
+.L115:
+	j	.L21
+	li	$v1,0x10
+.L20:
+	li	$a0,0x2
+	bne	$v1,$a0,.L22
+	nop
+.L116:
+	li	$v1,0x20
+.L19:
+.L21:
+	sw	$v1,4($v0)
+.L22:
+.L17:
+	jr	$ra
+.L117:
+	nop
+.L52:
+	.size	ioport_open,*-ioport_open
+.L38:
+	; End of function
+	.endsec	; End of section
+
+	.section	.bss.drv_ioport.ioport_driver_table ,cluster('$group_bss')
+	.align	4
+ioport_driver_table:	.type	object
+	.size	ioport_driver_table,12
+	.ds	12
+	.endsec	; End of section
+
+	.calls	'ioport_set_value','',0
+	.calls	'ioport_get_value','',0
+	.calls	'ioport_open','',0
+	.extern	per_ioport_instance_table
+	.extern	drv_ioport_instance_table
+	.section	.debug_info
+.L31:
+	.dw	1104
+	.dh	3
+	.dw	.L32
+	.db	4
+.L30:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L33
+.L51:
+	.db	2
+	.dw	.L86-.L31
+.L86:
+	.db	3
+	.db	"ioport_drv_s",0
+	.db	1,57,16,12,4
+	.db	"port_count",0
+	.db	1
+	.dw	.L64-.L31
+	.db	2,35,0,4
+	.db	"data_width",0
+	.db	4
+	.dw	.L87-.L31
+	.db	2,35,4,4
+	.db	"base_address",0
+	.db	4
+	.dw	.L88-.L31
+	.db	2,35,8,0
+.L64:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8
+.L87:
+	.db	6
+	.db	"ioport_drv_datawidth_e",0
+	.db	1,42,14,4,7
+	.db	"DRV_IOPORT_DATA_WIDTH_8",0
+	.db	8,7
+	.db	"DRV_IOPORT_DATA_WIDTH_16",0
+	.db	16,7
+	.db	"DRV_IOPORT_DATA_WIDTH_32",0
+	.db	32,0
+.L88:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7
+.L53:
+	.db	5
+	.db	"int",0
+	.db	4,5
+.L55:
+	.db	8
+	.dw	320
+.L58:
+	.db	8
+	.dw	.L89-.L31
+.L89:
+	.db	2
+	.dw	.L90-.L31
+.L90:
+	.db	9
+	.dw	.L91-.L31
+.L91:
+	.db	10,2,18,9,4,4
+	.db	"per_ioport",0
+	.db	4
+	.dw	553
+	.db	2,35,0,0
+.L60:
+	.db	8
+	.dw	.L92-.L31
+.L92:
+	.db	2
+	.dw	.L93-.L31
+.L93:
+	.db	9
+	.dw	.L94-.L31
+.L94:
+	.db	10,3,33,9,12,4
+	.db	"baseaddress",0
+	.db	4
+	.dw	.L66-.L31
+	.db	2,35,0,4
+	.db	"buswidth",0
+	.db	4
+	.dw	553
+	.db	2,35,4,4
+	.db	"portcount",0
+	.db	1
+	.dw	406
+	.db	2,35,8,0
+.L66:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,11
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	.L95-.L31
+.L95:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,11
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	685
+	.db	11
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	553
+	.db	11
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L96-.L31
+.L96:
+	.db	2
+	.dw	.L97-.L31
+.L97:
+	.db	12,1,11
+	.db	"_iob_flag_t",0
+	.db	5,92,25
+	.dw	719
+	.db	11
+	.db	"uint8_t",0
+	.db	6,22,33
+	.dw	406
+	.db	11
+	.db	"int32_t",0
+	.db	6,25,33
+	.dw	553
+	.db	11
+	.db	"uint32_t",0
+	.db	6,26,33
+	.dw	685
+	.db	11
+	.db	"uintptr_t",0
+	.db	6,58,33
+	.dw	532
+	.db	11
+	.db	"ioport_datawidth_t",0
+	.db	1,48,1
+	.dw	423
+	.db	11
+	.db	"ioport_t",0
+	.db	1,64,1
+	.dw	325
+	.db	11
+	.db	"per_ioport_cfg_instance_t",0
+	.db	3,38,3
+	.dw	621
+	.db	13
+	.db	"per_ioport_instance_table",0
+	.db	3,40,40
+	.dw	.L98-.L31
+	.db	1,1
+.L98:
+	.db	9
+	.dw	.L99-.L31
+.L99:
+	.db	14
+	.dw	621
+	.db	15,0,11
+	.db	"drv_ioport_cfg_instance_t",0
+	.db	2,21,3
+	.dw	580
+	.db	13
+	.db	"drv_ioport_instance_table",0
+	.db	2,23,40
+	.dw	.L100-.L31
+	.db	1,1
+.L100:
+	.db	9
+	.dw	.L101-.L31
+.L101:
+	.db	14
+	.dw	580
+	.db	15,0
+.L72:
+	.db	16,12
+	.dw	325
+	.db	17,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L32:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,19,1,3,8,58,15,59,15,57,15,11,15,0,0
+	.db	4,13,0,3,8,11,15,73,19,56,9,0,0,5,36,0,3,8,11,15,62,15,0,0,6,4,1,3,8,58,15,59,15,57,15,11,15,0,0,7,40
+	.db	0,3,8,28,13,0,0,8,55,0,73,19,0,0,9,38,0,73,19,0,0,10,19,1,58,15,59,15,57,15,11,15,0,0,11,22,0,3,8,58,15
+	.db	59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,13,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,14,1,1,73
+	.db	19,0,0,15,33,0,0,0,16,1,1,11,15,73,19,0,0,17,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L33:
+	.dw	.L103-.L102
+.L102:
+	.dh	3
+	.dw	.L105-.L104
+.L104:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\include\\drv_ioport.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\drv_ioport_cfg_instance.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\per_ioport_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L105:
+.L103:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ioport_open')
+.L34:
+	.dw	463
+	.dh	3
+	.dw	.L35
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L37,.L36
+	.db	2
+	.dw	.L30
+	.db	3
+	.db	"ioport_open",0
+	.db	1,106,11
+	.dw	.L51
+	.db	1,1,1
+	.dw	.L29,.L52,.L28
+	.db	4
+	.db	"id",0
+	.db	1,106,33
+	.dw	.L53,.L54
+	.db	5
+	.dw	.L29,.L52
+	.db	5
+	.dw	.L29,.L52
+	.db	6
+	.db	"drv",0
+	.db	1,110,24
+	.dw	.L55,.L56
+	.db	5
+	.dw	.L57,.L17
+	.db	6
+	.db	"drv_cfg",0
+	.db	1,115,51
+	.dw	.L58,.L59
+	.db	6
+	.db	"per_cfg",0
+	.db	1,116,51
+	.dw	.L60,.L61
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ioport_open')
+.L35:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ioport_open')
+.L36:
+	.dw	.L107-.L106
+.L106:
+	.dh	3
+	.dw	.L109-.L108
+.L108:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	0,0,0,0
+.L109:
+	.db	5,28,7,0,5,2
+	.dw	.L29
+	.db	3,237,0,1,5,5,9
+	.dh	.L84-.L29
+	.db	3,2,1,5,59
+	.db	17+9*((.L57-.L84)/4)
+	.db	15+9*((.L81-.L57)/4)
+	.db	5,49,9
+	.dh	.L83-.L81
+	.db	3,3,1,5,45
+	.db	15+9*((.L110-.L83)/4)
+	.db	5,49
+	.db	13+9*((.L111-.L110)/4)
+	.db	5,9
+	.db	16+9*((.L112-.L111)/4)
+	.db	5,45
+	.db	13+9*((.L113-.L112)/4)
+	.db	5,54
+	.db	17+9*((.L114-.L113)/4)
+	.db	5,14
+	.db	16+9*((.L18-.L114)/4)
+	.db	5,55
+	.db	16+9*((.L115-.L18)/4)
+	.db	5,14
+	.db	16+9*((.L20-.L115)/4)
+	.db	5,55
+	.db	16+9*((.L116-.L20)/4)
+	.db	5,1,9
+	.dh	.L17-.L116
+	.db	3,7,1,7
+	.db	14+9*((.L117-.L17)/4)
+	.db	9
+	.dh	.L38-.L117
+	.db	0,1,1
+.L107:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ioport_open')
+.L37:
+	.dw	-1
+	.dw	.L29
+	.dw	0
+	.dw	.L38-.L29
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ioport_set_value')
+.L39:
+	.dw	423
+	.dh	3
+	.dw	.L40
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L42,.L41
+	.db	2
+	.dw	.L30
+	.db	3
+	.db	"ioport_set_value",0
+	.db	1,36,6,1,1,1
+	.dw	.L25,.L62,.L24
+	.db	4
+	.db	"drv",0
+	.db	1,36,43
+	.dw	.L51,.L63
+	.db	4
+	.db	"port",0
+	.db	1,36,62
+	.dw	.L64,.L65
+	.db	4
+	.db	"value",0
+	.db	1,36,83
+	.dw	.L66,.L67
+	.db	5
+	.dw	.L25,.L62
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ioport_set_value')
+.L40:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ioport_set_value')
+.L41:
+	.dw	.L119-.L118
+.L118:
+	.dh	3
+	.dw	.L121-.L120
+.L120:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	0,0,0,0
+.L121:
+	.db	5,9,7,0,5,2
+	.dw	.L25
+	.db	3,40,1,5,56
+	.db	14+9*((.L122-.L25)/4)
+	.db	5,10
+	.db	16+9*((.L123-.L122)/4)
+	.db	5,70
+	.db	16+9*((.L124-.L123)/4)
+	.db	5,1,9
+	.dh	.L125-.L124
+	.db	3,11,1,7
+	.db	14+9*((.L126-.L125)/4)
+	.db	5,15,9
+	.dh	.L4-.L126
+	.db	3,119,1,5,72
+	.db	16+9*((.L127-.L4)/4)
+	.db	5,1,9
+	.dh	.L128-.L127
+	.db	3,7,1,7
+	.db	14+9*((.L129-.L128)/4)
+	.db	5,15,9
+	.dh	.L6-.L129
+	.db	3,123,1,5,61
+	.db	16+9*((.L130-.L6)/4)
+	.db	5,1
+	.db	17+9*((.L2-.L130)/4)
+	.db	7
+	.db	14+9*((.L131-.L2)/4)
+	.db	9
+	.dh	.L43-.L131
+	.db	0,1,1
+.L119:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ioport_set_value')
+.L42:
+	.dw	-1
+	.dw	.L25
+	.dw	0
+	.dw	.L43-.L25
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ioport_get_value')
+.L44:
+	.dw	438
+	.dh	3
+	.dw	.L45
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L47,.L46
+	.db	2
+	.dw	.L30
+	.db	3
+	.db	"ioport_get_value",0
+	.db	1,69,10
+	.dw	.L66
+	.db	1,1,1
+	.dw	.L27,.L68,.L26
+	.db	4
+	.db	"drv",0
+	.db	1,69,47
+	.dw	.L51,.L69
+	.db	4
+	.db	"port",0
+	.db	1,69,66
+	.dw	.L64,.L70
+	.db	5
+	.dw	.L27,.L68
+	.db	5
+	.dw	.L27,.L68
+	.db	6
+	.db	"value",0
+	.db	1,73,14
+	.dw	.L66,.L71
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ioport_get_value')
+.L45:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ioport_get_value')
+.L46:
+	.dw	.L133-.L132
+.L132:
+	.dh	3
+	.dw	.L135-.L134
+.L134:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	0,0,0,0
+.L135:
+	.db	5,9,7,0,5,2
+	.dw	.L27
+	.db	3,203,0,1,5,20
+	.db	11+9*((.L136-.L27)/4)
+	.db	5,56
+	.db	17+9*((.L74-.L136)/4)
+	.db	5,10
+	.db	16+9*((.L137-.L74)/4)
+	.db	5,60
+	.db	16+9*((.L138-.L137)/4)
+	.db	5,1,9
+	.dh	.L76-.L138
+	.db	3,13,1,7
+	.db	14+9*((.L139-.L76)/4)
+	.db	5,15,9
+	.dh	.L11-.L139
+	.db	3,117,1,5,61
+	.db	16+9*((.L140-.L11)/4)
+	.db	5,1,9
+	.dh	.L79-.L140
+	.db	3,9,1,7
+	.db	14+9*((.L141-.L79)/4)
+	.db	5,15,9
+	.dh	.L13-.L141
+	.db	3,121,1,5,61
+	.db	16+9*((.L142-.L13)/4)
+	.db	5,1,9
+	.dh	.L9-.L142
+	.db	3,5,1,7
+	.db	14+9*((.L143-.L9)/4)
+	.db	9
+	.dh	.L48-.L143
+	.db	0,1,1
+.L133:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ioport_get_value')
+.L47:
+	.dw	-1
+	.dw	.L27
+	.dw	0
+	.dw	.L48-.L27
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L49:
+	.dw	352
+	.dh	3
+	.dw	.L50
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\src\\drv_ioport.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L30
+	.db	3
+	.db	"ioport_driver_table",0
+	.db	4,19,17
+	.dw	.L72
+	.db	5,3
+	.dw	ioport_driver_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L50:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_set_value')
+.L24:
+	.dw	-1
+	.dw	.L25,.L25-.L25,.L62-.L25
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L65:
+	.dw	-1
+	.dw	.L25,.L25-.L25,.L62-.L25
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_get_value')
+.L70:
+	.dw	-1
+	.dw	.L27,.L27-.L27,.L68-.L27
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_open')
+.L28:
+	.dw	-1
+	.dw	.L29,.L29-.L29,.L52-.L29
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L61:
+	.dw	-1
+	.dw	.L29,.L83-.L29,.L21-.L29
+	.dh	1
+	.db	83
+	.dw	0,0
+.L59:
+	.dw	-1
+	.dw	.L29,.L81-.L29,.L82-.L29
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_set_value')
+.L67:
+	.dw	-1
+	.dw	.L25,.L25-.L25,.L62-.L25
+	.dh	1
+	.db	86
+	.dw	0,0
+.L63:
+	.dw	-1
+	.dw	.L25,.L25-.L25,.L73-.L25
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_get_value')
+.L71:
+	.dw	-1
+	.dw	.L27,.L74-.L27,.L75-.L27
+	.dh	1
+	.db	82
+	.dw	.L9-.L27,.L68-.L27
+	.dh	1
+	.db	82
+	.dw	.L76-.L27,.L77-.L27
+	.dh	1
+	.db	82
+	.dw	.L78-.L27,.L74-.L27
+	.dh	1
+	.db	80
+	.dw	.L79-.L27,.L80-.L27
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_open')
+.L56:
+	.dw	-1
+	.dw	.L29,.L84-.L29,.L52-.L29
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_get_value')
+.L26:
+	.dw	-1
+	.dw	.L27,.L27-.L27,.L68-.L27
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L69:
+	.dw	-1
+	.dw	.L27,.L27-.L27,.L68-.L27
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ioport_open')
+.L54:
+	.dw	-1
+	.dw	.L29,.L29-.L29,.L85-.L29
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L144:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ioport_set_value')
+	.dw	44
+	.dw	.L144,.L25,.L62-.L25
+	.db	8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ioport_get_value')
+	.dw	44
+	.dw	.L144,.L27,.L68-.L27
+	.db	8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ioport_open')
+	.dw	44
+	.dw	.L144,.L29,.L52-.L29
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,4217 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc3964a --dep-file=Output\frameout\ifconfig_swp_ifconfig.d --make-target=Output\frameout\ifconfig_swp_ifconfig.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\swp_ifconfig.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c"
+
+	.section	.text.swp_ifconfig.ifconfig_get_interface ,cluster('$group_ifconfig_get_interface')
+	.align	4
+	.global	ifconfig_get_interface
+; Function ifconfig_get_interface
+.L117:
+ifconfig_get_interface:	.type	func
+	addiu	$sp,$sp,-4
+.L364:
+	beq	$a0,$zero,.L2
+.L495:
+	sw	$ra,0($sp)
+.L365:
+	lw	$v0,0($a0)
+	lui	$v1,0x4245
+	ori	$v1,$v1,0x4e4c
+	bne	$v0,$v1,.L3
+	nop
+.L496:
+	lw	$v0,4($a0)
+	beq	$v0,$zero,.L4
+	nop
+.L497:
+	jalr	$ra,$v0
+	nop
+.L367:
+	j	.L6
+	nop
+.L4:
+	j	.L6
+.L498:
+	move	$v0,$zero
+.L3:
+.L2:
+	move	$v0,$zero
+.L6:
+	lw	$ra,0($sp)
+.L366:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L282:
+	.size	ifconfig_get_interface,*-ifconfig_get_interface
+.L170:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ioctl ,cluster('$group_ifconfig_ioctl')
+	.align	4
+	.global	ifconfig_ioctl
+; Function ifconfig_ioctl
+.L119:
+ifconfig_ioctl:	.type	func
+	addiu	$sp,$sp,-4
+.L368:
+	beq	$a0,$zero,.L8
+.L503:
+	sw	$ra,0($sp)
+.L369:
+	lw	$v0,4($a0)
+	bne	$v0,$zero,.L9
+	nop
+.L8:
+	j	.L10
+	addiu	$v0,$zero,-1
+.L9:
+	jalr	$ra,$v0
+	nop
+.L10:
+	lw	$ra,0($sp)
+.L370:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L287:
+	.size	ifconfig_ioctl,*-ifconfig_ioctl
+.L175:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_link_get_state ,cluster('$group_ifconfig_link_get_state')
+	.align	4
+	.global	ifconfig_link_get_state
+; Function ifconfig_link_get_state
+.L121:
+ifconfig_link_get_state:	.type	func
+	addiu	$sp,$sp,-4
+.L371:
+	beq	$a0,$zero,.L12
+.L508:
+	sw	$ra,0($sp)
+.L372:
+	lw	$v0,12($a0)
+	beq	$v0,$zero,.L13
+	nop
+	lw	$v0,0($v0)
+	bne	$v0,$zero,.L14
+	nop
+.L13:
+.L12:
+	j	.L15
+	addiu	$v0,$zero,-1
+.L14:
+	jalr	$ra,$v0
+	nop
+.L15:
+	lw	$ra,0($sp)
+.L373:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L293:
+	.size	ifconfig_link_get_state,*-ifconfig_link_get_state
+.L180:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_link_start ,cluster('$group_ifconfig_link_start')
+	.align	4
+	.global	ifconfig_link_start
+; Function ifconfig_link_start
+.L123:
+ifconfig_link_start:	.type	func
+	addiu	$sp,$sp,-4
+.L374:
+	beq	$a0,$zero,.L17
+.L513:
+	sw	$ra,0($sp)
+.L375:
+	lw	$v0,12($a0)
+	beq	$v0,$zero,.L18
+	nop
+	lw	$v0,4($v0)
+	bne	$v0,$zero,.L19
+	nop
+.L18:
+.L17:
+	j	.L20
+	addiu	$v0,$zero,-1
+.L19:
+	jalr	$ra,$v0
+	nop
+.L20:
+	lw	$ra,0($sp)
+.L376:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L297:
+	.size	ifconfig_link_start,*-ifconfig_link_start
+.L185:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_link_stop ,cluster('$group_ifconfig_link_stop')
+	.align	4
+	.global	ifconfig_link_stop
+; Function ifconfig_link_stop
+.L125:
+ifconfig_link_stop:	.type	func
+	addiu	$sp,$sp,-4
+.L377:
+	beq	$a0,$zero,.L22
+.L518:
+	sw	$ra,0($sp)
+.L378:
+	lw	$v0,12($a0)
+	beq	$v0,$zero,.L23
+	nop
+	lw	$v0,8($v0)
+	bne	$v0,$zero,.L24
+	nop
+.L23:
+.L22:
+	j	.L25
+	addiu	$v0,$zero,-1
+.L24:
+	jalr	$ra,$v0
+	nop
+.L25:
+	lw	$ra,0($sp)
+.L379:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L299:
+	.size	ifconfig_link_stop,*-ifconfig_link_stop
+.L190:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_link_set_state_callback ,cluster('$group_ifconfig_link_set_state_callback')
+	.align	4
+	.global	ifconfig_link_set_state_callback
+; Function ifconfig_link_set_state_callback
+.L127:
+ifconfig_link_set_state_callback:	.type	func
+	beq	$a0,$zero,.L27
+.L528:
+	nop
+	lw	$v0,12($a0)
+	bne	$v0,$zero,.L28
+	nop
+.L27:
+	jr	$ra
+.L529:
+	addiu	$v0,$zero,-1
+.L28:
+	sw	$a1,12($v0)
+.L530:
+	lw	$v1,12($a0)
+.L531:
+	move	$v0,$zero
+.L532:
+	jr	$ra
+.L533:
+	sw	$a2,16($v1)
+.L304:
+	.size	ifconfig_link_set_state_callback,*-ifconfig_link_set_state_callback
+.L200:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_link_state_callback ,cluster('$group_ifconfig_link_state_callback')
+	.align	4
+	.global	ifconfig_link_state_callback
+; Function ifconfig_link_state_callback
+.L129:
+ifconfig_link_state_callback:	.type	func
+	addiu	$sp,$sp,-4
+.L380:
+	beq	$a0,$zero,.L31
+.L523:
+	sw	$ra,0($sp)
+.L381:
+	lw	$v0,12($a0)
+	beq	$v0,$zero,.L32
+	nop
+	lw	$v1,12($v0)
+	bne	$v1,$zero,.L33
+	nop
+.L32:
+.L31:
+	j	.L34
+	addiu	$v0,$zero,-1
+.L33:
+	lw	$a0,16($v0)
+.L384:
+	jalr	$ra,$v1
+	nop
+.L383:
+	move	$v0,$zero
+.L34:
+	lw	$ra,0($sp)
+.L382:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L301:
+	.size	ifconfig_link_state_callback,*-ifconfig_link_state_callback
+.L195:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_phy_get_state ,cluster('$group_ifconfig_phy_get_state')
+	.align	4
+	.global	ifconfig_phy_get_state
+; Function ifconfig_phy_get_state
+.L131:
+ifconfig_phy_get_state:	.type	func
+	addiu	$sp,$sp,-4
+.L385:
+	beq	$a0,$zero,.L36
+.L538:
+	sw	$ra,0($sp)
+.L386:
+	lw	$v0,8($a0)
+	beq	$v0,$zero,.L37
+	nop
+	lw	$v0,0($v0)
+	bne	$v0,$zero,.L38
+	nop
+.L37:
+.L36:
+	j	.L39
+	addiu	$v0,$zero,-1
+.L38:
+	jalr	$ra,$v0
+	nop
+.L39:
+	lw	$ra,0($sp)
+.L387:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L309:
+	.size	ifconfig_phy_get_state,*-ifconfig_phy_get_state
+.L205:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_state ,cluster('$group_ifconfig_ieee80211_get_state')
+	.align	4
+	.global	ifconfig_ieee80211_get_state
+; Function ifconfig_ieee80211_get_state
+.L133:
+ifconfig_ieee80211_get_state:	.type	func
+	addiu	$sp,$sp,-4
+.L388:
+	beq	$a0,$zero,.L41
+.L543:
+	sw	$ra,0($sp)
+.L389:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L42
+	nop
+	lw	$v0,0($v0)
+	bne	$v0,$zero,.L43
+	nop
+.L42:
+.L41:
+	j	.L44
+	addiu	$v0,$zero,-1
+.L43:
+	jalr	$ra,$v0
+	nop
+.L44:
+	lw	$ra,0($sp)
+.L390:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L312:
+	.size	ifconfig_ieee80211_get_state,*-ifconfig_ieee80211_get_state
+.L210:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_set_mac ,cluster('$group_ifconfig_set_mac')
+	.align	4
+	.global	ifconfig_set_mac
+; Function ifconfig_set_mac
+.L135:
+ifconfig_set_mac:	.type	func
+	addiu	$sp,$sp,-4
+.L391:
+	beq	$a0,$zero,.L46
+.L608:
+	sw	$ra,0($sp)
+.L392:
+	lw	$v0,8($a0)
+	beq	$v0,$zero,.L47
+	nop
+	lw	$v0,4($v0)
+	bne	$v0,$zero,.L48
+	nop
+.L47:
+.L46:
+	j	.L49
+	addiu	$v0,$zero,-1
+.L48:
+	jalr	$ra,$v0
+	nop
+.L49:
+	lw	$ra,0($sp)
+.L393:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L357:
+	.size	ifconfig_set_mac,*-ifconfig_set_mac
+.L275:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_get_mac ,cluster('$group_ifconfig_get_mac')
+	.align	4
+	.global	ifconfig_get_mac
+; Function ifconfig_get_mac
+.L137:
+ifconfig_get_mac:	.type	func
+	addiu	$sp,$sp,-4
+.L394:
+	beq	$a0,$zero,.L51
+.L613:
+	sw	$ra,0($sp)
+.L395:
+	lw	$v0,8($a0)
+	beq	$v0,$zero,.L52
+	nop
+	lw	$v0,8($v0)
+	bne	$v0,$zero,.L53
+	nop
+.L52:
+.L51:
+	j	.L54
+	addiu	$v0,$zero,-1
+.L53:
+	jalr	$ra,$v0
+	nop
+.L54:
+	lw	$ra,0($sp)
+.L396:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L361:
+	.size	ifconfig_get_mac,*-ifconfig_get_mac
+.L280:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_ssid ,cluster('$group_ifconfig_ieee80211_set_ssid')
+	.align	4
+	.global	ifconfig_ieee80211_set_ssid
+; Function ifconfig_ieee80211_set_ssid
+.L139:
+ifconfig_ieee80211_set_ssid:	.type	func
+	addiu	$sp,$sp,-4
+.L397:
+	beq	$a0,$zero,.L56
+.L548:
+	sw	$ra,0($sp)
+.L398:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L57
+	nop
+	lw	$v0,4($v0)
+	bne	$v0,$zero,.L58
+	nop
+.L57:
+.L56:
+	j	.L59
+	addiu	$v0,$zero,-1
+.L58:
+	jalr	$ra,$v0
+	nop
+.L59:
+	lw	$ra,0($sp)
+.L399:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L315:
+	.size	ifconfig_ieee80211_set_ssid,*-ifconfig_ieee80211_set_ssid
+.L215:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_ssid ,cluster('$group_ifconfig_ieee80211_get_ssid')
+	.align	4
+	.global	ifconfig_ieee80211_get_ssid
+; Function ifconfig_ieee80211_get_ssid
+.L141:
+ifconfig_ieee80211_get_ssid:	.type	func
+	addiu	$sp,$sp,-4
+.L400:
+	beq	$a0,$zero,.L61
+.L553:
+	sw	$ra,0($sp)
+.L401:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L62
+	nop
+	lw	$v0,8($v0)
+	bne	$v0,$zero,.L63
+	nop
+.L62:
+.L61:
+	j	.L64
+	addiu	$v0,$zero,-1
+.L63:
+	jalr	$ra,$v0
+	nop
+.L64:
+	lw	$ra,0($sp)
+.L402:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L319:
+	.size	ifconfig_ieee80211_get_ssid,*-ifconfig_ieee80211_get_ssid
+.L220:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_channel ,cluster('$group_ifconfig_ieee80211_set_channel')
+	.align	4
+	.global	ifconfig_ieee80211_set_channel
+; Function ifconfig_ieee80211_set_channel
+.L143:
+ifconfig_ieee80211_set_channel:	.type	func
+	addiu	$sp,$sp,-4
+.L403:
+	beq	$a0,$zero,.L66
+.L558:
+	sw	$ra,0($sp)
+.L404:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L67
+	nop
+	lw	$v0,12($v0)
+	bne	$v0,$zero,.L68
+	nop
+.L67:
+.L66:
+	j	.L69
+	addiu	$v0,$zero,-1
+.L68:
+	jalr	$ra,$v0
+	nop
+.L69:
+	lw	$ra,0($sp)
+.L405:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L323:
+	.size	ifconfig_ieee80211_set_channel,*-ifconfig_ieee80211_set_channel
+.L225:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_channel ,cluster('$group_ifconfig_ieee80211_get_channel')
+	.align	4
+	.global	ifconfig_ieee80211_get_channel
+; Function ifconfig_ieee80211_get_channel
+.L145:
+ifconfig_ieee80211_get_channel:	.type	func
+	addiu	$sp,$sp,-4
+.L406:
+	beq	$a0,$zero,.L71
+.L563:
+	sw	$ra,0($sp)
+.L407:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L72
+	nop
+	lw	$v0,16($v0)
+	bne	$v0,$zero,.L73
+	nop
+.L72:
+.L71:
+	j	.L74
+	addiu	$v0,$zero,-1
+.L73:
+	jalr	$ra,$v0
+	nop
+.L74:
+	lw	$ra,0($sp)
+.L408:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L326:
+	.size	ifconfig_ieee80211_get_channel,*-ifconfig_ieee80211_get_channel
+.L230:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_passphrase ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+	.align	4
+	.global	ifconfig_ieee80211_set_passphrase
+; Function ifconfig_ieee80211_set_passphrase
+.L147:
+ifconfig_ieee80211_set_passphrase:	.type	func
+	addiu	$sp,$sp,-4
+.L409:
+	beq	$a0,$zero,.L76
+.L568:
+	sw	$ra,0($sp)
+.L410:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L77
+	nop
+	lw	$v0,20($v0)
+	bne	$v0,$zero,.L78
+	nop
+.L77:
+.L76:
+	j	.L79
+	addiu	$v0,$zero,-1
+.L78:
+	jalr	$ra,$v0
+	nop
+.L79:
+	lw	$ra,0($sp)
+.L411:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L330:
+	.size	ifconfig_ieee80211_set_passphrase,*-ifconfig_ieee80211_set_passphrase
+.L235:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_passphrase ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+	.align	4
+	.global	ifconfig_ieee80211_get_passphrase
+; Function ifconfig_ieee80211_get_passphrase
+.L149:
+ifconfig_ieee80211_get_passphrase:	.type	func
+	addiu	$sp,$sp,-4
+.L412:
+	beq	$a0,$zero,.L81
+.L573:
+	sw	$ra,0($sp)
+.L413:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L82
+	nop
+	lw	$v0,24($v0)
+	bne	$v0,$zero,.L83
+	nop
+.L82:
+.L81:
+	j	.L84
+	addiu	$v0,$zero,-1
+.L83:
+	jalr	$ra,$v0
+	nop
+.L84:
+	lw	$ra,0($sp)
+.L414:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L333:
+	.size	ifconfig_ieee80211_get_passphrase,*-ifconfig_ieee80211_get_passphrase
+.L240:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_wep_key ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+	.align	4
+	.global	ifconfig_ieee80211_set_wep_key
+; Function ifconfig_ieee80211_set_wep_key
+.L151:
+ifconfig_ieee80211_set_wep_key:	.type	func
+	addiu	$sp,$sp,-4
+.L415:
+	beq	$a0,$zero,.L86
+.L578:
+	sw	$ra,0($sp)
+.L416:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L87
+	nop
+	lw	$v0,28($v0)
+	bne	$v0,$zero,.L88
+	nop
+.L87:
+.L86:
+	j	.L89
+	addiu	$v0,$zero,-1
+.L88:
+	jalr	$ra,$v0
+	nop
+.L89:
+	lw	$ra,0($sp)
+.L417:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L336:
+	.size	ifconfig_ieee80211_set_wep_key,*-ifconfig_ieee80211_set_wep_key
+.L245:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_wep_key ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+	.align	4
+	.global	ifconfig_ieee80211_get_wep_key
+; Function ifconfig_ieee80211_get_wep_key
+.L153:
+ifconfig_ieee80211_get_wep_key:	.type	func
+	addiu	$sp,$sp,-4
+.L418:
+	beq	$a0,$zero,.L91
+.L583:
+	sw	$ra,0($sp)
+.L419:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L92
+	nop
+	lw	$v0,32($v0)
+	bne	$v0,$zero,.L93
+	nop
+.L92:
+.L91:
+	j	.L94
+	addiu	$v0,$zero,-1
+.L93:
+	jalr	$ra,$v0
+	nop
+.L94:
+	lw	$ra,0($sp)
+.L420:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L340:
+	.size	ifconfig_ieee80211_get_wep_key,*-ifconfig_ieee80211_get_wep_key
+.L250:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_wpapsk_key ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+	.align	4
+	.global	ifconfig_ieee80211_set_wpapsk_key
+; Function ifconfig_ieee80211_set_wpapsk_key
+.L155:
+ifconfig_ieee80211_set_wpapsk_key:	.type	func
+	addiu	$sp,$sp,-4
+.L421:
+	beq	$a0,$zero,.L96
+.L588:
+	sw	$ra,0($sp)
+.L422:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L97
+	nop
+	lw	$v0,36($v0)
+	bne	$v0,$zero,.L98
+	nop
+.L97:
+.L96:
+	j	.L99
+	addiu	$v0,$zero,-1
+.L98:
+	jalr	$ra,$v0
+	nop
+.L99:
+	lw	$ra,0($sp)
+.L423:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L344:
+	.size	ifconfig_ieee80211_set_wpapsk_key,*-ifconfig_ieee80211_set_wpapsk_key
+.L255:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_wpapsk_key ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+	.align	4
+	.global	ifconfig_ieee80211_get_wpapsk_key
+; Function ifconfig_ieee80211_get_wpapsk_key
+.L157:
+ifconfig_ieee80211_get_wpapsk_key:	.type	func
+	addiu	$sp,$sp,-4
+.L424:
+	beq	$a0,$zero,.L101
+.L593:
+	sw	$ra,0($sp)
+.L425:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L102
+	nop
+	lw	$v0,40($v0)
+	bne	$v0,$zero,.L103
+	nop
+.L102:
+.L101:
+	j	.L104
+	addiu	$v0,$zero,-1
+.L103:
+	jalr	$ra,$v0
+	nop
+.L104:
+	lw	$ra,0($sp)
+.L426:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L347:
+	.size	ifconfig_ieee80211_get_wpapsk_key,*-ifconfig_ieee80211_get_wpapsk_key
+.L260:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_set_crypt ,cluster('$group_ifconfig_ieee80211_set_crypt')
+	.align	4
+	.global	ifconfig_ieee80211_set_crypt
+; Function ifconfig_ieee80211_set_crypt
+.L159:
+ifconfig_ieee80211_set_crypt:	.type	func
+	addiu	$sp,$sp,-4
+.L427:
+	beq	$a0,$zero,.L106
+.L598:
+	sw	$ra,0($sp)
+.L428:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L107
+	nop
+	lw	$v0,44($v0)
+	bne	$v0,$zero,.L108
+	nop
+.L107:
+.L106:
+	j	.L109
+	addiu	$v0,$zero,-1
+.L108:
+	jalr	$ra,$v0
+	nop
+.L109:
+	lw	$ra,0($sp)
+.L429:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L350:
+	.size	ifconfig_ieee80211_set_crypt,*-ifconfig_ieee80211_set_crypt
+.L265:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.swp_ifconfig.ifconfig_ieee80211_get_crypt ,cluster('$group_ifconfig_ieee80211_get_crypt')
+	.align	4
+	.global	ifconfig_ieee80211_get_crypt
+; Function ifconfig_ieee80211_get_crypt
+.L161:
+ifconfig_ieee80211_get_crypt:	.type	func
+	addiu	$sp,$sp,-4
+.L430:
+	beq	$a0,$zero,.L111
+.L603:
+	sw	$ra,0($sp)
+.L431:
+	lw	$v0,16($a0)
+	beq	$v0,$zero,.L112
+	nop
+	lw	$v0,48($v0)
+	bne	$v0,$zero,.L113
+	nop
+.L112:
+.L111:
+	j	.L114
+	addiu	$v0,$zero,-1
+.L113:
+	jalr	$ra,$v0
+	nop
+.L114:
+	lw	$ra,0($sp)
+.L432:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L354:
+	.size	ifconfig_ieee80211_get_crypt,*-ifconfig_ieee80211_get_crypt
+.L270:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'ifconfig_get_interface','__INDIRECT__'
+	.calls	'ifconfig_ioctl','__INDIRECT__'
+	.calls	'ifconfig_link_get_state','__INDIRECT__'
+	.calls	'ifconfig_link_start','__INDIRECT__'
+	.calls	'ifconfig_link_stop','__INDIRECT__'
+	.calls	'ifconfig_link_state_callback','__INDIRECT__'
+	.calls	'ifconfig_phy_get_state','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_state','__INDIRECT__'
+	.calls	'ifconfig_set_mac','__INDIRECT__'
+	.calls	'ifconfig_get_mac','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_ssid','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_ssid','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_channel','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_channel','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_passphrase','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_passphrase','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_wep_key','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_wep_key','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_wpapsk_key','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_wpapsk_key','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_set_crypt','__INDIRECT__'
+	.calls	'ifconfig_ieee80211_get_crypt','__INDIRECT__'
+	.calls	'ifconfig_get_interface','',4
+	.calls	'ifconfig_ioctl','',4
+	.calls	'ifconfig_link_get_state','',4
+	.calls	'ifconfig_link_start','',4
+	.calls	'ifconfig_link_stop','',4
+	.calls	'ifconfig_link_set_state_callback','',0
+	.calls	'ifconfig_link_state_callback','',4
+	.calls	'ifconfig_phy_get_state','',4
+	.calls	'ifconfig_ieee80211_get_state','',4
+	.calls	'ifconfig_set_mac','',4
+	.calls	'ifconfig_get_mac','',4
+	.calls	'ifconfig_ieee80211_set_ssid','',4
+	.calls	'ifconfig_ieee80211_get_ssid','',4
+	.calls	'ifconfig_ieee80211_set_channel','',4
+	.calls	'ifconfig_ieee80211_get_channel','',4
+	.calls	'ifconfig_ieee80211_set_passphrase','',4
+	.calls	'ifconfig_ieee80211_get_passphrase','',4
+	.calls	'ifconfig_ieee80211_set_wep_key','',4
+	.calls	'ifconfig_ieee80211_get_wep_key','',4
+	.calls	'ifconfig_ieee80211_set_wpapsk_key','',4
+	.calls	'ifconfig_ieee80211_get_wpapsk_key','',4
+	.calls	'ifconfig_ieee80211_set_crypt','',4
+	.calls	'ifconfig_ieee80211_get_crypt','',4
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L163:
+	.dw	1730
+	.dh	3
+	.dw	.L164
+	.db	4
+.L162:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L165
+.L281:
+	.db	2
+	.dw	.L433-.L163
+.L433:
+	.db	3
+	.db	"void",0
+.L284:
+	.db	2
+	.dw	.L434-.L163
+.L434:
+	.db	4
+	.db	"_ifconfig_stub_t",0
+	.db	1,85,16,8,5
+	.db	"signature",0
+	.db	4
+	.dw	.L290-.L163
+	.db	2,35,0,5
+	.db	"get_ifconfig",0
+	.db	4
+	.dw	.L435-.L163
+	.db	2,35,4,0
+.L290:
+	.db	6
+	.db	"unsigned int",0
+	.db	4,7
+.L435:
+	.db	2
+	.dw	.L436-.L163
+.L436:
+	.db	7
+	.dw	309
+	.db	1,1,8
+	.dw	309
+	.db	0
+.L286:
+	.db	6
+	.db	"int",0
+	.db	4,5
+.L288:
+	.db	2
+	.dw	.L437-.L163
+.L437:
+	.db	4
+	.db	"_ifconfig_t",0
+	.db	1,75,16,20,5
+	.db	"priv",0
+	.db	4
+	.dw	309
+	.db	2,35,0,5
+	.db	"ioctl",0
+	.db	4
+	.dw	.L438-.L163
+	.db	2,35,4,5
+	.db	"if_phy",0
+	.db	4
+	.dw	.L439-.L163
+	.db	2,35,8,5
+	.db	"if_link",0
+	.db	4
+	.dw	.L440-.L163
+	.db	2,35,12,5
+	.db	"if_80211",0
+	.db	4
+	.dw	.L441-.L163
+	.db	2,35,16,0
+.L438:
+	.db	2
+	.dw	.L442-.L163
+.L442:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	.L443-.L163
+	.db	8
+	.dw	389
+	.db	8
+	.dw	309
+	.db	0
+.L443:
+	.db	2
+	.dw	435
+.L439:
+	.db	2
+	.dw	.L444-.L163
+.L444:
+	.db	4
+	.db	"_ifconfig_phy_t",0
+	.db	1,52,16,12,5
+	.db	"get_state",0
+	.db	4
+	.dw	.L445-.L163
+	.db	2,35,0,5
+	.db	"set_mac",0
+	.db	4
+	.dw	.L446-.L163
+	.db	2,35,4,5
+	.db	"get_mac",0
+	.db	4
+	.dw	.L447-.L163
+	.db	2,35,8,0
+.L445:
+	.db	2
+	.dw	.L448-.L163
+.L448:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L449-.L163
+	.db	0
+.L449:
+	.db	2
+	.dw	389
+.L446:
+	.db	2
+	.dw	.L450-.L163
+.L450:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L451-.L163
+	.db	0
+.L451:
+	.db	2
+	.dw	.L452-.L163
+.L452:
+	.db	9
+	.dw	.L453-.L163
+.L453:
+	.db	6
+	.db	"unsigned char",0
+	.db	1,8
+.L447:
+	.db	2
+	.dw	.L454-.L163
+.L454:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L455-.L163
+	.db	0
+.L455:
+	.db	2
+	.dw	707
+.L440:
+	.db	2
+	.dw	.L456-.L163
+.L456:
+	.db	4
+	.db	"_ifconfig_link_t",0
+	.db	1,64,16,20,5
+	.db	"get_state",0
+	.db	4
+	.dw	646
+	.db	2,35,0,5
+	.db	"start",0
+	.db	4
+	.dw	.L457-.L163
+	.db	2,35,4,5
+	.db	"stop",0
+	.db	4
+	.dw	.L457-.L163
+	.db	2,35,8,5
+	.db	"state_callback",0
+	.db	4
+	.dw	.L306-.L163
+	.db	2,35,12,5
+	.db	"state_callback_context",0
+	.db	4
+	.dw	309
+	.db	2,35,16,0
+.L457:
+	.db	2
+	.dw	.L458-.L163
+.L458:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	0
+.L306:
+	.db	2
+	.dw	.L459-.L163
+.L459:
+	.db	10,1,1,8
+	.dw	309
+	.db	8
+	.dw	389
+	.db	0
+.L441:
+	.db	2
+	.dw	.L460-.L163
+.L460:
+	.db	4
+	.db	"_ifconfig_80211_t",0
+	.db	1,31,16,52,5
+	.db	"get_state",0
+	.db	4
+	.dw	646
+	.db	2,35,0,5
+	.db	"set_ssid",0
+	.db	4
+	.dw	.L461-.L163
+	.db	2,35,4,5
+	.db	"get_ssid",0
+	.db	4
+	.dw	.L462-.L163
+	.db	2,35,8,5
+	.db	"set_channel",0
+	.db	4
+	.dw	.L463-.L163
+	.db	2,35,12,5
+	.db	"get_channel",0
+	.db	4
+	.dw	.L464-.L163
+	.db	2,35,16,5
+	.db	"set_passphrase",0
+	.db	4
+	.dw	.L461-.L163
+	.db	2,35,20,5
+	.db	"get_passphrase",0
+	.db	4
+	.dw	.L462-.L163
+	.db	2,35,24,5
+	.db	"set_wep_key",0
+	.db	4
+	.dw	.L465-.L163
+	.db	2,35,28,5
+	.db	"get_wep_key",0
+	.db	4
+	.dw	.L466-.L163
+	.db	2,35,32,5
+	.db	"set_wpapsk_key",0
+	.db	4
+	.dw	.L461-.L163
+	.db	2,35,36,5
+	.db	"get_wpapsk_key",0
+	.db	4
+	.dw	.L462-.L163
+	.db	2,35,40,5
+	.db	"set_crypt",0
+	.db	4
+	.dw	.L467-.L163
+	.db	2,35,44,5
+	.db	"get_crypt",0
+	.db	4
+	.dw	646
+	.db	2,35,48,0
+.L461:
+	.db	2
+	.dw	.L468-.L163
+.L468:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L469-.L163
+	.db	0
+.L469:
+	.db	2
+	.dw	.L470-.L163
+.L470:
+	.db	9
+	.dw	.L471-.L163
+.L471:
+	.db	6
+	.db	"char",0
+	.db	1,6
+.L462:
+	.db	2
+	.dw	.L472-.L163
+.L472:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L473-.L163
+	.db	0
+.L473:
+	.db	2
+	.dw	.L474-.L163
+.L474:
+	.db	2
+	.dw	1256
+.L463:
+	.db	2
+	.dw	.L475-.L163
+.L475:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	423
+	.db	0
+.L464:
+	.db	2
+	.dw	.L476-.L163
+.L476:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	.L477-.L163
+	.db	0
+.L477:
+	.db	2
+	.dw	423
+.L465:
+	.db	2
+	.dw	.L478-.L163
+.L478:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	1246
+	.db	8
+	.dw	389
+	.db	0
+.L466:
+	.db	2
+	.dw	.L479-.L163
+.L479:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	1287
+	.db	8
+	.dw	389
+	.db	0
+.L467:
+	.db	2
+	.dw	.L480-.L163
+.L480:
+	.db	7
+	.dw	423
+	.db	1,1,8
+	.dw	561
+	.db	8
+	.dw	389
+	.db	8
+	.dw	389
+	.db	0
+.L295:
+	.db	2
+	.dw	389
+.L317:
+	.db	2
+	.dw	.L481-.L163
+.L481:
+	.db	9
+	.dw	1256
+.L321:
+	.db	2
+	.dw	.L482-.L163
+.L482:
+	.db	2
+	.dw	1256
+.L328:
+	.db	2
+	.dw	423
+.L359:
+	.db	2
+	.dw	.L483-.L163
+.L483:
+	.db	9
+	.dw	314
+	.db	11
+	.db	"__INDIRECT__",0
+	.db	2,1,1,1,1,1,12
+	.db	"__wchar_t",0
+	.db	2,1,1
+	.dw	.L484-.L163
+.L484:
+	.db	6
+	.db	"unsigned short int",0
+	.db	2,7,12
+	.db	"__size_t",0
+	.db	2,1,1
+	.dw	389
+	.db	12
+	.db	"__codeptr",0
+	.db	2,1,1
+	.dw	.L485-.L163
+.L485:
+	.db	2
+	.dw	.L486-.L163
+.L486:
+	.db	13,1,12
+	.db	"_iob_flag_t",0
+	.db	3,92,25
+	.dw	1510
+	.db	12
+	.db	"int8_t",0
+	.db	4,21,33
+	.dw	1256
+	.db	12
+	.db	"int32_t",0
+	.db	4,25,33
+	.dw	423
+	.db	12
+	.db	"uint32_t",0
+	.db	4,26,33
+	.dw	389
+	.db	12
+	.db	"ifconfig_80211_t",0
+	.db	1,46,2
+	.dw	926
+	.db	12
+	.db	"ifconfig_phy_t",0
+	.db	1,56,2
+	.dw	571
+	.db	12
+	.db	"ifconfig_link_t",0
+	.db	1,72,2
+	.dw	757
+	.db	12
+	.db	"ifconfig_t",0
+	.db	1,82,2
+	.dw	435
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L164:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,59,0,3,8,0,0,4,19,1,3,8,58,15,59,15,57
+	.db	15,11,15,0,0,5,13,0,3,8,11,15,73,19,56,9,0,0,6,36,0,3,8,11,15,62,15,0,0,7,21,1,73,19,54,15,39,12,0,0,8
+	.db	5,0,73,19,0,0,9,38,0,73,19,0,0,10,21,1,54,15,39,12,0,0,11,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12
+	.db	0,0,12,22,0,3,8,58,15,59,15,57,15,73,19,0,0,13,21,0,54,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L165:
+	.dw	.L488-.L487
+.L487:
+	.dh	3
+	.dw	.L490-.L489
+.L489:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\include\\swp_ifconfig.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L490:
+.L488:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_get_interface')
+.L166:
+	.dw	412
+	.dh	3
+	.dw	.L167
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L169,.L168
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_get_interface",0
+	.db	1,10,7
+	.dw	.L281
+	.db	1,1,1
+	.dw	.L117,.L282,.L116
+	.db	4
+	.db	"inst",0
+	.db	1,10,36
+	.dw	.L281,.L283
+	.db	5
+	.dw	.L117,.L282
+	.db	6
+	.db	"ifcfg_stub",0
+	.db	1,12,22
+	.dw	.L284,.L285
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_get_interface')
+.L167:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_get_interface')
+.L168:
+	.dw	.L492-.L491
+.L491:
+	.dh	3
+	.dw	.L494-.L493
+.L493:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L494:
+	.db	5,7,7,0,5,2
+	.dw	.L117
+	.db	3,9,1,5,8
+	.db	18+9*((.L364-.L117)/4)
+	.db	5,7,7
+	.db	10+9*((.L495-.L364)/4)
+	.db	5,44
+	.db	18+9*((.L365-.L495)/4)
+	.db	5,16
+	.db	15+9*((.L496-.L365)/4)
+	.db	5,40
+	.db	14+9*((.L497-.L496)/4)
+	.db	5,71
+	.db	14+9*((.L367-.L497)/4)
+	.db	5,9
+	.db	14+9*((.L4-.L367)/4)
+	.db	5,40
+	.db	14+9*((.L498-.L4)/4)
+	.db	5,5
+	.db	17+9*((.L2-.L498)/4)
+	.db	5,1
+	.db	15+9*((.L6-.L2)/4)
+	.db	9
+	.dh	.L170-.L6
+	.db	0,1,1
+.L492:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_get_interface')
+.L169:
+	.dw	-1
+	.dw	.L117
+	.dw	0
+	.dw	.L170-.L117
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ioctl')
+.L171:
+	.dw	414
+	.dh	3
+	.dw	.L172
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L174,.L173
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ioctl",0
+	.db	1,22,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L119,.L287,.L118
+	.db	4
+	.db	"ifcfg",0
+	.db	1,22,32
+	.dw	.L288,.L289
+	.db	4
+	.db	"cmd",0
+	.db	1,22,48
+	.dw	.L290,.L291
+	.db	4
+	.db	"data",0
+	.db	1,22,59
+	.dw	.L281,.L292
+	.db	5
+	.dw	.L119,.L287
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ioctl')
+.L172:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ioctl')
+.L173:
+	.dw	.L500-.L499
+.L499:
+	.dh	3
+	.dw	.L502-.L501
+.L501:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L502:
+	.db	5,5,7,0,5,2
+	.dw	.L119
+	.db	3,21,1
+	.db	16+9*((.L368-.L119)/4)
+	.db	7
+	.db	12+9*((.L503-.L368)/4)
+	.db	16+9*((.L369-.L503)/4)
+	.db	16+9*((.L9-.L369)/4)
+	.db	5,1
+	.db	15+9*((.L10-.L9)/4)
+	.db	9
+	.dh	.L175-.L10
+	.db	0,1,1
+.L500:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ioctl')
+.L174:
+	.dw	-1
+	.dw	.L119
+	.dw	0
+	.dw	.L175-.L119
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_link_get_state')
+.L176:
+	.dw	408
+	.dh	3
+	.dw	.L177
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L179,.L178
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_link_get_state",0
+	.db	1,30,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L121,.L293,.L120
+	.db	4
+	.db	"ifcfg",0
+	.db	1,30,41
+	.dw	.L288,.L294
+	.db	4
+	.db	"state",0
+	.db	1,30,58
+	.dw	.L295,.L296
+	.db	5
+	.dw	.L121,.L293
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_link_get_state')
+.L177:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_link_get_state')
+.L178:
+	.dw	.L505-.L504
+.L504:
+	.dh	3
+	.dw	.L507-.L506
+.L506:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L507:
+	.db	5,5,7,0,5,2
+	.dw	.L121
+	.db	3,29,1
+	.db	16+9*((.L371-.L121)/4)
+	.db	7
+	.db	12+9*((.L508-.L371)/4)
+	.db	16+9*((.L372-.L508)/4)
+	.db	9
+	.dh	.L14-.L372
+	.db	3,2,1,5,1
+	.db	15+9*((.L15-.L14)/4)
+	.db	9
+	.dh	.L180-.L15
+	.db	0,1,1
+.L505:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_link_get_state')
+.L179:
+	.dw	-1
+	.dw	.L121
+	.dw	0
+	.dw	.L180-.L121
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_link_start')
+.L181:
+	.dw	386
+	.dh	3
+	.dw	.L182
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L184,.L183
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_link_start",0
+	.db	1,38,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L123,.L297,.L122
+	.db	4
+	.db	"ifcfg",0
+	.db	1,38,37
+	.dw	.L288,.L298
+	.db	5
+	.dw	.L123,.L297
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_link_start')
+.L182:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_link_start')
+.L183:
+	.dw	.L510-.L509
+.L509:
+	.dh	3
+	.dw	.L512-.L511
+.L511:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L512:
+	.db	5,5,7,0,5,2
+	.dw	.L123
+	.db	3,37,1
+	.db	16+9*((.L374-.L123)/4)
+	.db	7
+	.db	12+9*((.L513-.L374)/4)
+	.db	16+9*((.L375-.L513)/4)
+	.db	9
+	.dh	.L19-.L375
+	.db	3,2,1,5,1
+	.db	15+9*((.L20-.L19)/4)
+	.db	9
+	.dh	.L185-.L20
+	.db	0,1,1
+.L510:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_link_start')
+.L184:
+	.dw	-1
+	.dw	.L123
+	.dw	0
+	.dw	.L185-.L123
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_link_stop')
+.L186:
+	.dw	385
+	.dh	3
+	.dw	.L187
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L189,.L188
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_link_stop",0
+	.db	1,46,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L125,.L299,.L124
+	.db	4
+	.db	"ifcfg",0
+	.db	1,46,36
+	.dw	.L288,.L300
+	.db	5
+	.dw	.L125,.L299
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_link_stop')
+.L187:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_link_stop')
+.L188:
+	.dw	.L515-.L514
+.L514:
+	.dh	3
+	.dw	.L517-.L516
+.L516:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L517:
+	.db	5,5,7,0,5,2
+	.dw	.L125
+	.db	3,45,1
+	.db	16+9*((.L377-.L125)/4)
+	.db	7
+	.db	12+9*((.L518-.L377)/4)
+	.db	16+9*((.L378-.L518)/4)
+	.db	9
+	.dh	.L24-.L378
+	.db	3,2,1,5,1
+	.db	15+9*((.L25-.L24)/4)
+	.db	9
+	.dh	.L190-.L25
+	.db	0,1,1
+.L515:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_link_stop')
+.L189:
+	.dw	-1
+	.dw	.L125
+	.dw	0
+	.dw	.L190-.L125
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_link_state_callback')
+.L191:
+	.dw	413
+	.dh	3
+	.dw	.L192
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L194,.L193
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_link_state_callback",0
+	.db	1,65,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L129,.L301,.L128
+	.db	4
+	.db	"ifcfg",0
+	.db	1,65,46
+	.dw	.L288,.L302
+	.db	4
+	.db	"state",0
+	.db	1,65,62
+	.dw	.L290,.L303
+	.db	5
+	.dw	.L129,.L301
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_link_state_callback')
+.L192:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_link_state_callback')
+.L193:
+	.dw	.L520-.L519
+.L519:
+	.dh	3
+	.dw	.L522-.L521
+.L521:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L522:
+	.db	5,5,7,0,5,2
+	.dw	.L129
+	.db	3,192,0,1
+	.db	16+9*((.L380-.L129)/4)
+	.db	7
+	.db	12+9*((.L523-.L380)/4)
+	.db	16+9*((.L381-.L523)/4)
+	.db	5,82,9
+	.dh	.L33-.L381
+	.db	3,2,1,5,5
+	.db	16+9*((.L383-.L33)/4)
+	.db	5,1
+	.db	15+9*((.L34-.L383)/4)
+	.db	9
+	.dh	.L195-.L34
+	.db	0,1,1
+.L520:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_link_state_callback')
+.L194:
+	.dw	-1
+	.dw	.L129
+	.dw	0
+	.dw	.L195-.L129
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_link_set_state_callback')
+.L196:
+	.dw	461
+	.dh	3
+	.dw	.L197
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L199,.L198
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_link_set_state_callback",0
+	.db	1,54,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L127,.L304,.L126
+	.db	4
+	.db	"ifcfg",0
+	.db	1,54,50
+	.dw	.L288,.L305
+	.db	4
+	.db	"state_callback",0
+	.db	1,54,64
+	.dw	.L306,.L307
+	.db	4
+	.db	"state_callback_context",0
+	.db	1,54,105
+	.dw	.L281,.L308
+	.db	5
+	.dw	.L127,.L304
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_link_set_state_callback')
+.L197:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_link_set_state_callback')
+.L198:
+	.dw	.L525-.L524
+.L524:
+	.dh	3
+	.dw	.L527-.L526
+.L526:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L527:
+	.db	5,5,7,0,5,2
+	.dw	.L127
+	.db	3,55,1,7
+	.db	14+9*((.L528-.L127)/4)
+	.db	5,1,9
+	.dh	.L27-.L528
+	.db	3,6,1,5,5,7,9
+	.dh	.L529-.L27
+	.db	3,122,1,5,61
+	.db	16+9*((.L28-.L529)/4)
+	.db	5,69
+	.db	15+9*((.L530-.L28)/4)
+	.db	5,5
+	.db	16+9*((.L531-.L530)/4)
+	.db	5,1
+	.db	15+9*((.L532-.L531)/4)
+	.db	5,69,7
+	.db	11+9*((.L533-.L532)/4)
+	.db	5,1,9
+	.dh	.L200-.L533
+	.db	3,3,0,1,1
+.L525:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_link_set_state_callback')
+.L199:
+	.dw	-1
+	.dw	.L127
+	.dw	0
+	.dw	.L200-.L127
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_phy_get_state')
+.L201:
+	.dw	407
+	.dh	3
+	.dw	.L202
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L204,.L203
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_phy_get_state",0
+	.db	1,75,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L131,.L309,.L130
+	.db	4
+	.db	"ifcfg",0
+	.db	1,75,40
+	.dw	.L288,.L310
+	.db	4
+	.db	"state",0
+	.db	1,75,57
+	.dw	.L295,.L311
+	.db	5
+	.dw	.L131,.L309
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_phy_get_state')
+.L202:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_phy_get_state')
+.L203:
+	.dw	.L535-.L534
+.L534:
+	.dh	3
+	.dw	.L537-.L536
+.L536:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L537:
+	.db	5,5,7,0,5,2
+	.dw	.L131
+	.db	3,202,0,1
+	.db	16+9*((.L385-.L131)/4)
+	.db	7
+	.db	12+9*((.L538-.L385)/4)
+	.db	16+9*((.L386-.L538)/4)
+	.db	9
+	.dh	.L38-.L386
+	.db	3,2,1,5,1
+	.db	15+9*((.L39-.L38)/4)
+	.db	9
+	.dh	.L205-.L39
+	.db	0,1,1
+.L535:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_phy_get_state')
+.L204:
+	.dw	-1
+	.dw	.L131
+	.dw	0
+	.dw	.L205-.L131
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_state')
+.L206:
+	.dw	413
+	.dh	3
+	.dw	.L207
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L209,.L208
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_state",0
+	.db	1,83,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L133,.L312,.L132
+	.db	4
+	.db	"ifcfg",0
+	.db	1,83,46
+	.dw	.L288,.L313
+	.db	4
+	.db	"state",0
+	.db	1,83,63
+	.dw	.L295,.L314
+	.db	5
+	.dw	.L133,.L312
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_state')
+.L207:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_state')
+.L208:
+	.dw	.L540-.L539
+.L539:
+	.dh	3
+	.dw	.L542-.L541
+.L541:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L542:
+	.db	5,5,7,0,5,2
+	.dw	.L133
+	.db	3,210,0,1
+	.db	16+9*((.L388-.L133)/4)
+	.db	7
+	.db	12+9*((.L543-.L388)/4)
+	.db	16+9*((.L389-.L543)/4)
+	.db	9
+	.dh	.L43-.L389
+	.db	3,2,1,5,1
+	.db	15+9*((.L44-.L43)/4)
+	.db	9
+	.dh	.L210-.L44
+	.db	0,1,1
+.L540:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_state')
+.L209:
+	.dw	-1
+	.dw	.L133
+	.dw	0
+	.dw	.L210-.L133
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L211:
+	.dw	411
+	.dh	3
+	.dw	.L212
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L214,.L213
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_ssid",0
+	.db	1,107,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L139,.L315,.L138
+	.db	4
+	.db	"ifcfg",0
+	.db	1,107,45
+	.dw	.L288,.L316
+	.db	4
+	.db	"ssid",0
+	.db	1,107,66
+	.dw	.L317,.L318
+	.db	5
+	.dw	.L139,.L315
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L212:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L213:
+	.dw	.L545-.L544
+.L544:
+	.dh	3
+	.dw	.L547-.L546
+.L546:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L547:
+	.db	5,5,7,0,5,2
+	.dw	.L139
+	.db	3,234,0,1
+	.db	16+9*((.L397-.L139)/4)
+	.db	7
+	.db	12+9*((.L548-.L397)/4)
+	.db	16+9*((.L398-.L548)/4)
+	.db	9
+	.dh	.L58-.L398
+	.db	3,2,1,5,1
+	.db	15+9*((.L59-.L58)/4)
+	.db	9
+	.dh	.L215-.L59
+	.db	0,1,1
+.L545:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L214:
+	.dw	-1
+	.dw	.L139
+	.dw	0
+	.dw	.L215-.L139
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L216:
+	.dw	411
+	.dh	3
+	.dw	.L217
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L219,.L218
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_ssid",0
+	.db	1,115,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L141,.L319,.L140
+	.db	4
+	.db	"ifcfg",0
+	.db	1,115,45
+	.dw	.L288,.L320
+	.db	4
+	.db	"ssid",0
+	.db	1,115,61
+	.dw	.L321,.L322
+	.db	5
+	.dw	.L141,.L319
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L217:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L218:
+	.dw	.L550-.L549
+.L549:
+	.dh	3
+	.dw	.L552-.L551
+.L551:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L552:
+	.db	5,5,7,0,5,2
+	.dw	.L141
+	.db	3,242,0,1
+	.db	16+9*((.L400-.L141)/4)
+	.db	7
+	.db	12+9*((.L553-.L400)/4)
+	.db	16+9*((.L401-.L553)/4)
+	.db	9
+	.dh	.L63-.L401
+	.db	3,2,1,5,1
+	.db	15+9*((.L64-.L63)/4)
+	.db	9
+	.dh	.L220-.L64
+	.db	0,1,1
+.L550:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L219:
+	.dw	-1
+	.dw	.L141
+	.dw	0
+	.dw	.L220-.L141
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L221:
+	.dw	414
+	.dh	3
+	.dw	.L222
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L224,.L223
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_channel",0
+	.db	1,123,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L143,.L323,.L142
+	.db	4
+	.db	"ifcfg",0
+	.db	1,123,48
+	.dw	.L288,.L324
+	.db	4
+	.db	"chan",0
+	.db	1,123,63
+	.dw	.L286,.L325
+	.db	5
+	.dw	.L143,.L323
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L222:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L223:
+	.dw	.L555-.L554
+.L554:
+	.dh	3
+	.dw	.L557-.L556
+.L556:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L557:
+	.db	5,5,7,0,5,2
+	.dw	.L143
+	.db	3,250,0,1
+	.db	16+9*((.L403-.L143)/4)
+	.db	7
+	.db	12+9*((.L558-.L403)/4)
+	.db	16+9*((.L404-.L558)/4)
+	.db	9
+	.dh	.L68-.L404
+	.db	3,2,1,5,1
+	.db	15+9*((.L69-.L68)/4)
+	.db	9
+	.dh	.L225-.L69
+	.db	0,1,1
+.L555:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L224:
+	.dw	-1
+	.dw	.L143
+	.dw	0
+	.dw	.L225-.L143
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L226:
+	.dw	417
+	.dh	3
+	.dw	.L227
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L229,.L228
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_channel",0
+	.db	1,131,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L145,.L326,.L144
+	.db	4
+	.db	"ifcfg",0
+	.db	1,131,1,48
+	.dw	.L288,.L327
+	.db	4
+	.db	"chan",0
+	.db	1,131,1,64
+	.dw	.L328,.L329
+	.db	5
+	.dw	.L145,.L326
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L227:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L228:
+	.dw	.L560-.L559
+.L559:
+	.dh	3
+	.dw	.L562-.L561
+.L561:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L562:
+	.db	5,5,7,0,5,2
+	.dw	.L145
+	.db	3,130,1,1
+	.db	16+9*((.L406-.L145)/4)
+	.db	7
+	.db	12+9*((.L563-.L406)/4)
+	.db	16+9*((.L407-.L563)/4)
+	.db	9
+	.dh	.L73-.L407
+	.db	3,2,1,5,1
+	.db	15+9*((.L74-.L73)/4)
+	.db	9
+	.dh	.L230-.L74
+	.db	0,1,1
+.L560:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L229:
+	.dw	-1
+	.dw	.L145
+	.dw	0
+	.dw	.L230-.L145
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L231:
+	.dw	426
+	.dh	3
+	.dw	.L232
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L234,.L233
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_passphrase",0
+	.db	1,139,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L147,.L330,.L146
+	.db	4
+	.db	"ifcfg",0
+	.db	1,139,1,51
+	.dw	.L288,.L331
+	.db	4
+	.db	"passphrase",0
+	.db	1,139,1,72
+	.dw	.L317,.L332
+	.db	5
+	.dw	.L147,.L330
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L232:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L233:
+	.dw	.L565-.L564
+.L564:
+	.dh	3
+	.dw	.L567-.L566
+.L566:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L567:
+	.db	5,5,7,0,5,2
+	.dw	.L147
+	.db	3,138,1,1
+	.db	16+9*((.L409-.L147)/4)
+	.db	7
+	.db	12+9*((.L568-.L409)/4)
+	.db	16+9*((.L410-.L568)/4)
+	.db	9
+	.dh	.L78-.L410
+	.db	3,2,1,5,1
+	.db	15+9*((.L79-.L78)/4)
+	.db	9
+	.dh	.L235-.L79
+	.db	0,1,1
+.L565:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L234:
+	.dw	-1
+	.dw	.L147
+	.dw	0
+	.dw	.L235-.L147
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L236:
+	.dw	426
+	.dh	3
+	.dw	.L237
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L239,.L238
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_passphrase",0
+	.db	1,147,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L149,.L333,.L148
+	.db	4
+	.db	"ifcfg",0
+	.db	1,147,1,51
+	.dw	.L288,.L334
+	.db	4
+	.db	"passphrase",0
+	.db	1,147,1,67
+	.dw	.L321,.L335
+	.db	5
+	.dw	.L149,.L333
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L237:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L238:
+	.dw	.L570-.L569
+.L569:
+	.dh	3
+	.dw	.L572-.L571
+.L571:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L572:
+	.db	5,5,7,0,5,2
+	.dw	.L149
+	.db	3,146,1,1
+	.db	16+9*((.L412-.L149)/4)
+	.db	7
+	.db	12+9*((.L573-.L412)/4)
+	.db	16+9*((.L413-.L573)/4)
+	.db	9
+	.dh	.L83-.L413
+	.db	3,2,1,5,1
+	.db	15+9*((.L84-.L83)/4)
+	.db	9
+	.dh	.L240-.L84
+	.db	0,1,1
+.L570:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L239:
+	.dw	-1
+	.dw	.L149
+	.dw	0
+	.dw	.L240-.L149
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L241:
+	.dw	433
+	.dh	3
+	.dw	.L242
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L244,.L243
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_wep_key",0
+	.db	1,155,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L151,.L336,.L150
+	.db	4
+	.db	"ifcfg",0
+	.db	1,155,1,48
+	.dw	.L288,.L337
+	.db	4
+	.db	"key",0
+	.db	1,155,1,69
+	.dw	.L317,.L338
+	.db	4
+	.db	"idx",0
+	.db	1,155,1,83
+	.dw	.L290,.L339
+	.db	5
+	.dw	.L151,.L336
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L242:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L243:
+	.dw	.L575-.L574
+.L574:
+	.dh	3
+	.dw	.L577-.L576
+.L576:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L577:
+	.db	5,5,7,0,5,2
+	.dw	.L151
+	.db	3,154,1,1
+	.db	16+9*((.L415-.L151)/4)
+	.db	7
+	.db	12+9*((.L578-.L415)/4)
+	.db	16+9*((.L416-.L578)/4)
+	.db	9
+	.dh	.L88-.L416
+	.db	3,2,1,5,1
+	.db	15+9*((.L89-.L88)/4)
+	.db	9
+	.dh	.L245-.L89
+	.db	0,1,1
+.L575:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L244:
+	.dw	-1
+	.dw	.L151
+	.dw	0
+	.dw	.L245-.L151
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L246:
+	.dw	433
+	.dh	3
+	.dw	.L247
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L249,.L248
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_wep_key",0
+	.db	1,163,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L153,.L340,.L152
+	.db	4
+	.db	"ifcfg",0
+	.db	1,163,1,48
+	.dw	.L288,.L341
+	.db	4
+	.db	"key",0
+	.db	1,163,1,64
+	.dw	.L321,.L342
+	.db	4
+	.db	"idx",0
+	.db	1,163,1,78
+	.dw	.L290,.L343
+	.db	5
+	.dw	.L153,.L340
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L247:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L248:
+	.dw	.L580-.L579
+.L579:
+	.dh	3
+	.dw	.L582-.L581
+.L581:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L582:
+	.db	5,5,7,0,5,2
+	.dw	.L153
+	.db	3,162,1,1
+	.db	16+9*((.L418-.L153)/4)
+	.db	7
+	.db	12+9*((.L583-.L418)/4)
+	.db	16+9*((.L419-.L583)/4)
+	.db	9
+	.dh	.L93-.L419
+	.db	3,2,1,5,1
+	.db	15+9*((.L94-.L93)/4)
+	.db	9
+	.dh	.L250-.L94
+	.db	0,1,1
+.L580:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L249:
+	.dw	-1
+	.dw	.L153
+	.dw	0
+	.dw	.L250-.L153
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L251:
+	.dw	419
+	.dh	3
+	.dw	.L252
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L254,.L253
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_wpapsk_key",0
+	.db	1,171,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L155,.L344,.L154
+	.db	4
+	.db	"ifcfg",0
+	.db	1,171,1,51
+	.dw	.L288,.L345
+	.db	4
+	.db	"key",0
+	.db	1,171,1,72
+	.dw	.L317,.L346
+	.db	5
+	.dw	.L155,.L344
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L252:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L253:
+	.dw	.L585-.L584
+.L584:
+	.dh	3
+	.dw	.L587-.L586
+.L586:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L587:
+	.db	5,5,7,0,5,2
+	.dw	.L155
+	.db	3,170,1,1
+	.db	16+9*((.L421-.L155)/4)
+	.db	7
+	.db	12+9*((.L588-.L421)/4)
+	.db	16+9*((.L422-.L588)/4)
+	.db	9
+	.dh	.L98-.L422
+	.db	3,2,1,5,1
+	.db	15+9*((.L99-.L98)/4)
+	.db	9
+	.dh	.L255-.L99
+	.db	0,1,1
+.L585:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L254:
+	.dw	-1
+	.dw	.L155
+	.dw	0
+	.dw	.L255-.L155
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L256:
+	.dw	419
+	.dh	3
+	.dw	.L257
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L259,.L258
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_wpapsk_key",0
+	.db	1,179,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L157,.L347,.L156
+	.db	4
+	.db	"ifcfg",0
+	.db	1,179,1,51
+	.dw	.L288,.L348
+	.db	4
+	.db	"key",0
+	.db	1,179,1,67
+	.dw	.L321,.L349
+	.db	5
+	.dw	.L157,.L347
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L257:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L258:
+	.dw	.L590-.L589
+.L589:
+	.dh	3
+	.dw	.L592-.L591
+.L591:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L592:
+	.db	5,5,7,0,5,2
+	.dw	.L157
+	.db	3,178,1,1
+	.db	16+9*((.L424-.L157)/4)
+	.db	7
+	.db	12+9*((.L593-.L424)/4)
+	.db	16+9*((.L425-.L593)/4)
+	.db	9
+	.dh	.L103-.L425
+	.db	3,2,1,5,1
+	.db	15+9*((.L104-.L103)/4)
+	.db	9
+	.dh	.L260-.L104
+	.db	0,1,1
+.L590:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L259:
+	.dw	-1
+	.dw	.L157
+	.dw	0
+	.dw	.L260-.L157
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L261:
+	.dw	437
+	.dh	3
+	.dw	.L262
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L264,.L263
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_set_crypt",0
+	.db	1,187,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L159,.L350,.L158
+	.db	4
+	.db	"ifcfg",0
+	.db	1,187,1,46
+	.dw	.L288,.L351
+	.db	4
+	.db	"crypt",0
+	.db	1,187,1,62
+	.dw	.L290,.L352
+	.db	4
+	.db	"genKeys",0
+	.db	1,187,1,78
+	.dw	.L290,.L353
+	.db	5
+	.dw	.L159,.L350
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L262:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L263:
+	.dw	.L595-.L594
+.L594:
+	.dh	3
+	.dw	.L597-.L596
+.L596:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L597:
+	.db	5,5,7,0,5,2
+	.dw	.L159
+	.db	3,186,1,1
+	.db	16+9*((.L427-.L159)/4)
+	.db	7
+	.db	12+9*((.L598-.L427)/4)
+	.db	16+9*((.L428-.L598)/4)
+	.db	9
+	.dh	.L108-.L428
+	.db	3,2,1,5,1
+	.db	15+9*((.L109-.L108)/4)
+	.db	9
+	.dh	.L265-.L109
+	.db	0,1,1
+.L595:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L264:
+	.dw	-1
+	.dw	.L159
+	.dw	0
+	.dw	.L265-.L159
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L266:
+	.dw	416
+	.dh	3
+	.dw	.L267
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L269,.L268
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_ieee80211_get_crypt",0
+	.db	1,195,1,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L161,.L354,.L160
+	.db	4
+	.db	"ifcfg",0
+	.db	1,195,1,46
+	.dw	.L288,.L355
+	.db	4
+	.db	"crypt",0
+	.db	1,195,1,63
+	.dw	.L295,.L356
+	.db	5
+	.dw	.L161,.L354
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L267:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L268:
+	.dw	.L600-.L599
+.L599:
+	.dh	3
+	.dw	.L602-.L601
+.L601:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L602:
+	.db	5,5,7,0,5,2
+	.dw	.L161
+	.db	3,194,1,1
+	.db	16+9*((.L430-.L161)/4)
+	.db	7
+	.db	12+9*((.L603-.L430)/4)
+	.db	16+9*((.L431-.L603)/4)
+	.db	9
+	.dh	.L113-.L431
+	.db	3,2,1,5,1
+	.db	15+9*((.L114-.L113)/4)
+	.db	9
+	.dh	.L270-.L114
+	.db	0,1,1
+.L600:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L269:
+	.dw	-1
+	.dw	.L161
+	.dw	0
+	.dw	.L270-.L161
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_set_mac')
+.L271:
+	.dw	399
+	.dh	3
+	.dw	.L272
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L274,.L273
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_set_mac",0
+	.db	1,91,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L135,.L357,.L134
+	.db	4
+	.db	"ifcfg",0
+	.db	1,91,34
+	.dw	.L288,.L358
+	.db	4
+	.db	"mac",0
+	.db	1,91,53
+	.dw	.L359,.L360
+	.db	5
+	.dw	.L135,.L357
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_set_mac')
+.L272:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_set_mac')
+.L273:
+	.dw	.L605-.L604
+.L604:
+	.dh	3
+	.dw	.L607-.L606
+.L606:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L607:
+	.db	5,5,7,0,5,2
+	.dw	.L135
+	.db	3,218,0,1
+	.db	16+9*((.L391-.L135)/4)
+	.db	7
+	.db	12+9*((.L608-.L391)/4)
+	.db	16+9*((.L392-.L608)/4)
+	.db	9
+	.dh	.L48-.L392
+	.db	3,2,1,5,1
+	.db	15+9*((.L49-.L48)/4)
+	.db	9
+	.dh	.L275-.L49
+	.db	0,1,1
+.L605:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_set_mac')
+.L274:
+	.dw	-1
+	.dw	.L135
+	.dw	0
+	.dw	.L275-.L135
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ifconfig_get_mac')
+.L276:
+	.dw	399
+	.dh	3
+	.dw	.L277
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L279,.L278
+	.db	2
+	.dw	.L162
+	.db	3
+	.db	"ifconfig_get_mac",0
+	.db	1,99,5
+	.dw	.L286
+	.db	1,1,1
+	.dw	.L137,.L361,.L136
+	.db	4
+	.db	"ifcfg",0
+	.db	1,99,34
+	.dw	.L288,.L362
+	.db	4
+	.db	"mac",0
+	.db	1,99,47
+	.dw	.L281,.L363
+	.db	5
+	.dw	.L137,.L361
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ifconfig_get_mac')
+.L277:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ifconfig_get_mac')
+.L278:
+	.dw	.L610-.L609
+.L609:
+	.dh	3
+	.dw	.L612-.L611
+.L611:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\ifconfig\\src\\swp_ifconfig.c",0
+	.db	0,0,0,0
+.L612:
+	.db	5,5,7,0,5,2
+	.dw	.L137
+	.db	3,226,0,1
+	.db	16+9*((.L394-.L137)/4)
+	.db	7
+	.db	12+9*((.L613-.L394)/4)
+	.db	16+9*((.L395-.L613)/4)
+	.db	9
+	.dh	.L53-.L395
+	.db	3,2,1,5,1
+	.db	15+9*((.L54-.L53)/4)
+	.db	9
+	.dh	.L280-.L54
+	.db	0,1,1
+.L610:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ifconfig_get_mac')
+.L279:
+	.dw	-1
+	.dw	.L137
+	.dw	0
+	.dw	.L280-.L137
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L348:
+	.dw	-1
+	.dw	.L157,.L157-.L157,.L104-.L157
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_get_state')
+.L120:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L371-.L121
+	.dh	2
+	.db	141,0
+	.dw	.L371-.L121,.L293-.L121
+	.dh	2
+	.db	141,4
+	.dw	.L293-.L121,.L293-.L121
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_state')
+.L313:
+	.dw	-1
+	.dw	.L133,.L133-.L133,.L44-.L133
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L160:
+	.dw	-1
+	.dw	.L161,.L161-.L161,.L430-.L161
+	.dh	2
+	.db	141,0
+	.dw	.L430-.L161,.L354-.L161
+	.dh	2
+	.db	141,4
+	.dw	.L354-.L161,.L354-.L161
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L335:
+	.dw	-1
+	.dw	.L149,.L149-.L149,.L84-.L149
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L352:
+	.dw	-1
+	.dw	.L159,.L159-.L159,.L109-.L159
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L345:
+	.dw	-1
+	.dw	.L155,.L155-.L155,.L99-.L155
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_start')
+.L298:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L20-.L123
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L146:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L409-.L147
+	.dh	2
+	.db	141,0
+	.dw	.L409-.L147,.L330-.L147
+	.dh	2
+	.db	141,4
+	.dw	.L330-.L147,.L330-.L147
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L142:
+	.dw	-1
+	.dw	.L143,.L143-.L143,.L403-.L143
+	.dh	2
+	.db	141,0
+	.dw	.L403-.L143,.L323-.L143
+	.dh	2
+	.db	141,4
+	.dw	.L323-.L143,.L323-.L143
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_state_callback')
+.L302:
+	.dw	-1
+	.dw	.L129,.L129-.L129,.L384-.L129
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_interface')
+.L283:
+	.dw	-1
+	.dw	.L117,.L4-.L117,.L6-.L117
+	.dh	1
+	.db	84
+	.dw	.L117-.L117,.L367-.L117
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_set_state_callback')
+.L307:
+	.dw	-1
+	.dw	.L127,.L127-.L127,.L304-.L127
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L329:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L74-.L145
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_set_mac')
+.L358:
+	.dw	-1
+	.dw	.L135,.L135-.L135,.L49-.L135
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L351:
+	.dw	-1
+	.dw	.L159,.L159-.L159,.L109-.L159
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L343:
+	.dw	-1
+	.dw	.L153,.L153-.L153,.L94-.L153
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L349:
+	.dw	-1
+	.dw	.L157,.L157-.L157,.L104-.L157
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_mac')
+.L136:
+	.dw	-1
+	.dw	.L137,.L137-.L137,.L394-.L137
+	.dh	2
+	.db	141,0
+	.dw	.L394-.L137,.L361-.L137
+	.dh	2
+	.db	141,4
+	.dw	.L361-.L137,.L361-.L137
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L138:
+	.dw	-1
+	.dw	.L139,.L139-.L139,.L397-.L139
+	.dh	2
+	.db	141,0
+	.dw	.L397-.L139,.L315-.L139
+	.dh	2
+	.db	141,4
+	.dw	.L315-.L139,.L315-.L139
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+.L156:
+	.dw	-1
+	.dw	.L157,.L157-.L157,.L424-.L157
+	.dh	2
+	.db	141,0
+	.dw	.L424-.L157,.L347-.L157
+	.dh	2
+	.db	141,4
+	.dw	.L347-.L157,.L347-.L157
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L324:
+	.dw	-1
+	.dw	.L143,.L143-.L143,.L69-.L143
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L150:
+	.dw	-1
+	.dw	.L151,.L151-.L151,.L415-.L151
+	.dh	2
+	.db	141,0
+	.dw	.L415-.L151,.L336-.L151
+	.dh	2
+	.db	141,4
+	.dw	.L336-.L151,.L336-.L151
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_set_mac')
+.L360:
+	.dw	-1
+	.dw	.L135,.L135-.L135,.L49-.L135
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_mac')
+.L362:
+	.dw	-1
+	.dw	.L137,.L137-.L137,.L54-.L137
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_set_state_callback')
+.L308:
+	.dw	-1
+	.dw	.L127,.L127-.L127,.L304-.L127
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_state_callback')
+.L303:
+	.dw	-1
+	.dw	.L129,.L129-.L129,.L383-.L129
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ioctl')
+.L291:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L10-.L119
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_get_state')
+.L294:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L15-.L121
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_phy_get_state')
+.L130:
+	.dw	-1
+	.dw	.L131,.L131-.L131,.L385-.L131
+	.dh	2
+	.db	141,0
+	.dw	.L385-.L131,.L309-.L131
+	.dh	2
+	.db	141,4
+	.dw	.L309-.L131,.L309-.L131
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L320:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L64-.L141
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L342:
+	.dw	-1
+	.dw	.L153,.L153-.L153,.L94-.L153
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L327:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L74-.L145
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_state_callback')
+.L128:
+	.dw	-1
+	.dw	.L129,.L129-.L129,.L380-.L129
+	.dh	2
+	.db	141,0
+	.dw	.L380-.L129,.L301-.L129
+	.dh	2
+	.db	141,4
+	.dw	.L301-.L129,.L301-.L129
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L154:
+	.dw	-1
+	.dw	.L155,.L155-.L155,.L421-.L155
+	.dh	2
+	.db	141,0
+	.dw	.L421-.L155,.L344-.L155
+	.dh	2
+	.db	141,4
+	.dw	.L344-.L155,.L344-.L155
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L158:
+	.dw	-1
+	.dw	.L159,.L159-.L159,.L427-.L159
+	.dh	2
+	.db	141,0
+	.dw	.L427-.L159,.L350-.L159
+	.dh	2
+	.db	141,4
+	.dw	.L350-.L159,.L350-.L159
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L318:
+	.dw	-1
+	.dw	.L139,.L139-.L139,.L59-.L139
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_crypt')
+.L353:
+	.dw	-1
+	.dw	.L159,.L159-.L159,.L109-.L159
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_start')
+.L122:
+	.dw	-1
+	.dw	.L123,.L123-.L123,.L374-.L123
+	.dh	2
+	.db	141,0
+	.dw	.L374-.L123,.L297-.L123
+	.dh	2
+	.db	141,4
+	.dw	.L297-.L123,.L297-.L123
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_phy_get_state')
+.L310:
+	.dw	-1
+	.dw	.L131,.L131-.L131,.L39-.L131
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_ssid')
+.L316:
+	.dw	-1
+	.dw	.L139,.L139-.L139,.L59-.L139
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_interface')
+.L285:
+	.dw	-1
+	.dw	.L117,.L117-.L117,.L367-.L117
+	.dh	1
+	.db	84
+	.dw	.L4-.L117,.L6-.L117
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_phy_get_state')
+.L311:
+	.dw	-1
+	.dw	.L131,.L131-.L131,.L39-.L131
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L322:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L64-.L141
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_set_mac')
+.L134:
+	.dw	-1
+	.dw	.L135,.L135-.L135,.L391-.L135
+	.dh	2
+	.db	141,0
+	.dw	.L391-.L135,.L357-.L135
+	.dh	2
+	.db	141,4
+	.dw	.L357-.L135,.L357-.L135
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L148:
+	.dw	-1
+	.dw	.L149,.L149-.L149,.L412-.L149
+	.dh	2
+	.db	141,0
+	.dw	.L412-.L149,.L333-.L149
+	.dh	2
+	.db	141,4
+	.dw	.L333-.L149,.L333-.L149
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ioctl')
+.L289:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L10-.L119
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_set_state_callback')
+.L305:
+	.dw	-1
+	.dw	.L127,.L127-.L127,.L304-.L127
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L339:
+	.dw	-1
+	.dw	.L151,.L151-.L151,.L89-.L151
+	.dh	1
+	.db	86
+	.dw	0,0
+.L337:
+	.dw	-1
+	.dw	.L151,.L151-.L151,.L89-.L151
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L331:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L79-.L147
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_channel')
+.L325:
+	.dw	-1
+	.dw	.L143,.L143-.L143,.L69-.L143
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_channel')
+.L144:
+	.dw	-1
+	.dw	.L145,.L145-.L145,.L406-.L145
+	.dh	2
+	.db	141,0
+	.dw	.L406-.L145,.L326-.L145
+	.dh	2
+	.db	141,4
+	.dw	.L326-.L145,.L326-.L145
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_get_state')
+.L296:
+	.dw	-1
+	.dw	.L121,.L121-.L121,.L15-.L121
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ioctl')
+.L118:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L368-.L119
+	.dh	2
+	.db	141,0
+	.dw	.L368-.L119,.L287-.L119
+	.dh	2
+	.db	141,4
+	.dw	.L287-.L119,.L287-.L119
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L292:
+	.dw	-1
+	.dw	.L119,.L119-.L119,.L10-.L119
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_set_state_callback')
+.L126:
+	.dw	-1
+	.dw	.L127,.L127-.L127,.L304-.L127
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+.L334:
+	.dw	-1
+	.dw	.L149,.L149-.L149,.L84-.L149
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_link_stop')
+.L124:
+	.dw	-1
+	.dw	.L125,.L125-.L125,.L377-.L125
+	.dh	2
+	.db	141,0
+	.dw	.L377-.L125,.L299-.L125
+	.dh	2
+	.db	141,4
+	.dw	.L299-.L125,.L299-.L125
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L300:
+	.dw	-1
+	.dw	.L125,.L125-.L125,.L25-.L125
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_state')
+.L132:
+	.dw	-1
+	.dw	.L133,.L133-.L133,.L388-.L133
+	.dh	2
+	.db	141,0
+	.dw	.L388-.L133,.L312-.L133
+	.dh	2
+	.db	141,4
+	.dw	.L312-.L133,.L312-.L133
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_interface')
+.L116:
+	.dw	-1
+	.dw	.L117,.L117-.L117,.L364-.L117
+	.dh	2
+	.db	141,0
+	.dw	.L364-.L117,.L282-.L117
+	.dh	2
+	.db	141,4
+	.dw	.L282-.L117,.L282-.L117
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_ssid')
+.L140:
+	.dw	-1
+	.dw	.L141,.L141-.L141,.L400-.L141
+	.dh	2
+	.db	141,0
+	.dw	.L400-.L141,.L319-.L141
+	.dh	2
+	.db	141,4
+	.dw	.L319-.L141,.L319-.L141
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_get_mac')
+.L363:
+	.dw	-1
+	.dw	.L137,.L137-.L137,.L54-.L137
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+.L338:
+	.dw	-1
+	.dw	.L151,.L151-.L151,.L89-.L151
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L355:
+	.dw	-1
+	.dw	.L161,.L161-.L161,.L114-.L161
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L152:
+	.dw	-1
+	.dw	.L153,.L153-.L153,.L418-.L153
+	.dh	2
+	.db	141,0
+	.dw	.L418-.L153,.L340-.L153
+	.dh	2
+	.db	141,4
+	.dw	.L340-.L153,.L340-.L153
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_crypt')
+.L356:
+	.dw	-1
+	.dw	.L161,.L161-.L161,.L114-.L161
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+.L346:
+	.dw	-1
+	.dw	.L155,.L155-.L155,.L99-.L155
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_state')
+.L314:
+	.dw	-1
+	.dw	.L133,.L133-.L133,.L44-.L133
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+.L332:
+	.dw	-1
+	.dw	.L147,.L147-.L147,.L79-.L147
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+.L341:
+	.dw	-1
+	.dw	.L153,.L153-.L153,.L94-.L153
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L614:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_get_interface')
+	.dw	48
+	.dw	.L614,.L117,.L282-.L117
+	.db	4
+	.dw	(.L364-.L117)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L365-.L364)/4
+	.db	17,31,124,4
+	.dw	(.L366-.L365)/4
+	.db	223,4
+	.dw	(.L282-.L366)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ioctl')
+	.dw	48
+	.dw	.L614,.L119,.L287-.L119
+	.db	4
+	.dw	(.L368-.L119)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L369-.L368)/4
+	.db	17,31,124,4
+	.dw	(.L370-.L369)/4
+	.db	223,4
+	.dw	(.L287-.L370)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_link_get_state')
+	.dw	48
+	.dw	.L614,.L121,.L293-.L121
+	.db	4
+	.dw	(.L371-.L121)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L372-.L371)/4
+	.db	17,31,124,4
+	.dw	(.L373-.L372)/4
+	.db	223,4
+	.dw	(.L293-.L373)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_link_start')
+	.dw	48
+	.dw	.L614,.L123,.L297-.L123
+	.db	4
+	.dw	(.L374-.L123)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L375-.L374)/4
+	.db	17,31,124,4
+	.dw	(.L376-.L375)/4
+	.db	223,4
+	.dw	(.L297-.L376)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_link_stop')
+	.dw	48
+	.dw	.L614,.L125,.L299-.L125
+	.db	4
+	.dw	(.L377-.L125)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L378-.L377)/4
+	.db	17,31,124,4
+	.dw	(.L379-.L378)/4
+	.db	223,4
+	.dw	(.L299-.L379)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_link_set_state_callback')
+	.dw	44
+	.dw	.L614,.L127,.L304-.L127
+	.db	8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_link_state_callback')
+	.dw	48
+	.dw	.L614,.L129,.L301-.L129
+	.db	4
+	.dw	(.L380-.L129)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L381-.L380)/4
+	.db	17,31,124,4
+	.dw	(.L382-.L381)/4
+	.db	223,4
+	.dw	(.L301-.L382)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_phy_get_state')
+	.dw	48
+	.dw	.L614,.L131,.L309-.L131
+	.db	4
+	.dw	(.L385-.L131)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L386-.L385)/4
+	.db	17,31,124,4
+	.dw	(.L387-.L386)/4
+	.db	223,4
+	.dw	(.L309-.L387)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_state')
+	.dw	48
+	.dw	.L614,.L133,.L312-.L133
+	.db	4
+	.dw	(.L388-.L133)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L389-.L388)/4
+	.db	17,31,124,4
+	.dw	(.L390-.L389)/4
+	.db	223,4
+	.dw	(.L312-.L390)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_set_mac')
+	.dw	48
+	.dw	.L614,.L135,.L357-.L135
+	.db	4
+	.dw	(.L391-.L135)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L392-.L391)/4
+	.db	17,31,124,4
+	.dw	(.L393-.L392)/4
+	.db	223,4
+	.dw	(.L357-.L393)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_get_mac')
+	.dw	48
+	.dw	.L614,.L137,.L361-.L137
+	.db	4
+	.dw	(.L394-.L137)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L395-.L394)/4
+	.db	17,31,124,4
+	.dw	(.L396-.L395)/4
+	.db	223,4
+	.dw	(.L361-.L396)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_ssid')
+	.dw	48
+	.dw	.L614,.L139,.L315-.L139
+	.db	4
+	.dw	(.L397-.L139)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L398-.L397)/4
+	.db	17,31,124,4
+	.dw	(.L399-.L398)/4
+	.db	223,4
+	.dw	(.L315-.L399)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_ssid')
+	.dw	48
+	.dw	.L614,.L141,.L319-.L141
+	.db	4
+	.dw	(.L400-.L141)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L401-.L400)/4
+	.db	17,31,124,4
+	.dw	(.L402-.L401)/4
+	.db	223,4
+	.dw	(.L319-.L402)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_channel')
+	.dw	48
+	.dw	.L614,.L143,.L323-.L143
+	.db	4
+	.dw	(.L403-.L143)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L404-.L403)/4
+	.db	17,31,124,4
+	.dw	(.L405-.L404)/4
+	.db	223,4
+	.dw	(.L323-.L405)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_channel')
+	.dw	48
+	.dw	.L614,.L145,.L326-.L145
+	.db	4
+	.dw	(.L406-.L145)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L407-.L406)/4
+	.db	17,31,124,4
+	.dw	(.L408-.L407)/4
+	.db	223,4
+	.dw	(.L326-.L408)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_passphrase')
+	.dw	48
+	.dw	.L614,.L147,.L330-.L147
+	.db	4
+	.dw	(.L409-.L147)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L410-.L409)/4
+	.db	17,31,124,4
+	.dw	(.L411-.L410)/4
+	.db	223,4
+	.dw	(.L330-.L411)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_passphrase')
+	.dw	48
+	.dw	.L614,.L149,.L333-.L149
+	.db	4
+	.dw	(.L412-.L149)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L413-.L412)/4
+	.db	17,31,124,4
+	.dw	(.L414-.L413)/4
+	.db	223,4
+	.dw	(.L333-.L414)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_wep_key')
+	.dw	48
+	.dw	.L614,.L151,.L336-.L151
+	.db	4
+	.dw	(.L415-.L151)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L416-.L415)/4
+	.db	17,31,124,4
+	.dw	(.L417-.L416)/4
+	.db	223,4
+	.dw	(.L336-.L417)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_wep_key')
+	.dw	48
+	.dw	.L614,.L153,.L340-.L153
+	.db	4
+	.dw	(.L418-.L153)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L419-.L418)/4
+	.db	17,31,124,4
+	.dw	(.L420-.L419)/4
+	.db	223,4
+	.dw	(.L340-.L420)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_wpapsk_key')
+	.dw	48
+	.dw	.L614,.L155,.L344-.L155
+	.db	4
+	.dw	(.L421-.L155)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L422-.L421)/4
+	.db	17,31,124,4
+	.dw	(.L423-.L422)/4
+	.db	223,4
+	.dw	(.L344-.L423)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_wpapsk_key')
+	.dw	48
+	.dw	.L614,.L157,.L347-.L157
+	.db	4
+	.dw	(.L424-.L157)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L425-.L424)/4
+	.db	17,31,124,4
+	.dw	(.L426-.L425)/4
+	.db	223,4
+	.dw	(.L347-.L426)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_set_crypt')
+	.dw	48
+	.dw	.L614,.L159,.L350-.L159
+	.db	4
+	.dw	(.L427-.L159)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L428-.L427)/4
+	.db	17,31,124,4
+	.dw	(.L429-.L428)/4
+	.db	223,4
+	.dw	(.L350-.L429)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ifconfig_ieee80211_get_crypt')
+	.dw	48
+	.dw	.L614,.L161,.L354-.L161
+	.db	4
+	.dw	(.L430-.L161)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L431-.L430)/4
+	.db	17,31,124,4
+	.dw	(.L432-.L431)/4
+	.db	223,4
+	.dw	(.L354-.L432)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

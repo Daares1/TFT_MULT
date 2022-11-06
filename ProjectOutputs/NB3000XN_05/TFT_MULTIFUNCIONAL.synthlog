@@ -1,0 +1,166 @@
+###############################################################################
+### Altium HDL Synthesizer 1.1.0.1
+### Copyright (C) 2005-2009, Altium Limited. All Rights Reserved
+###############################################################################
+### Timestamp: 2/03/2016 5:37:43 p. m.
+###############################################################################
+### Commandline: AltiumSynthesizer.exe "-o" "TFT_MULTIFUNCIONAL.mof" "-p" "TFT_MULTIFUNCIONAL.mpf"
+###
+### Options:
+###
+### Synthesizing TFT_MULTIFUNCIONAL for Spartan3AN
+### Entity                  : TFT_MULTIFUNCIONAL
+### VerilogMode             : 1 (0=Verilog95, 1=Verilog2001, 2=VerilogSystem, 3=Ams)
+### VHDL87                  : False
+### Insert Toplevel Buffers : True
+### Combinational Logic Opt : 3 (1=Low, 3=Normal, 5=High)
+###############################################################################
+### Compilation Report
+###############################################################################
+
+##N|The default vhdl library search path is now "C:/Users/Public/Documents/Altium/AD15/Library/VHDL/VHDL93"
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_dip.VHD
+Restoring VHDL parse-tree ieee.std_logic_1164 from C:/Users/Public/Documents/Altium/AD15/Library/VHDL/VHDL93/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from C:/Users/Public/Documents/Altium/AD15/Library/VHDL/VHDL93/std/standard.vdb
+##N|Configurable_dip.VHD|12|analyzing entity configurable_dip
+##N|Configurable_dip.VHD|29|analyzing architecture wb_prtio
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_led.VHD
+Restoring VHDL parse-tree ieee.std_logic_unsigned from C:/Users/Public/Documents/Altium/AD15/Library/VHDL/VHDL93/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from C:/Users/Public/Documents/Altium/AD15/Library/VHDL/VHDL93/ieee/std_logic_arith.vdb
+##N|Configurable_led.VHD|8|analyzing entity configurable_led
+##N|Configurable_led.VHD|27|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_spi.VHD
+##N|Configurable_spi.VHD|7|analyzing entity configurable_spi
+##N|Configurable_spi.VHD|35|analyzing architecture rtl
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_SRAM.VHD
+##N|Configurable_SRAM.VHD|6|analyzing entity configurable_sram
+##N|Configurable_SRAM.VHD|65|analyzing architecture rtl
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_TSK3000A_1.VHD
+##N|Configurable_TSK3000A_1.VHD|17|analyzing entity configurable_tsk3000a_1
+##N|Configurable_TSK3000A_1.VHD|76|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_U2.VHD
+##N|Configurable_U2.VHD|7|analyzing entity configurable_u2
+##N|Configurable_U2.VHD|20|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_U3.VHD
+##N|Configurable_U3.VHD|7|analyzing entity configurable_u3
+##N|Configurable_U3.VHD|23|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_WB_INTERCON_1.VHD
+##N|Configurable_WB_INTERCON_1.VHD|7|analyzing entity configurable_wb_intercon_1
+##N|Configurable_WB_INTERCON_1.VHD|84|analyzing architecture rtl
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_WB_INTERCON_2.VHD
+##N|Configurable_WB_INTERCON_2.VHD|7|analyzing entity configurable_wb_intercon_2
+##N|Configurable_WB_INTERCON_2.VHD|32|analyzing architecture rtl
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\Configurable_WB_MULTIMASTER_1.VHD
+##N|Configurable_WB_MULTIMASTER_1.VHD|7|analyzing entity configurable_wb_multimaster_1
+##N|Configurable_WB_MULTIMASTER_1.VHD|55|analyzing architecture rtl
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\IOBUF16B.VHD
+##N|IOBUF16B.VHD|16|analyzing entity iobuf16b
+##N|IOBUF16B.VHD|25|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\J16S_16B.VHD
+##N|J16S_16B.VHD|16|analyzing entity j16s_16b
+##N|J16S_16B.VHD|24|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_TOUCH.VHD
+##N|TFT_TOUCH.VHD|16|analyzing entity tft_touch
+##N|TFT_TOUCH.VHD|72|analyzing architecture structure
+Analyzing VHDL file C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUN.VHD
+##N|TFT_MULTIFUN.VHD|16|analyzing entity tft_multifuncional
+##N|TFT_MULTIFUN.VHD|79|analyzing architecture structure
+###############################################################################
+### Elaboration Report
+###############################################################################
+
+executing Configurable_dip(WB_PRTIO)
+executing Configurable_led(structure)
+##I|Configurable_led.VHD|172|-- possible Multiplexer: 32-1 for la_r
+##I|syn_arit.vhd|1623|-- found LessThan: 8<8
+##I|syn_arit.vhd|1697|-- found LessThan: 5<5
+##I|Configurable_led.VHD|311|-- found Adder: 8+8
+##I|Configurable_led.VHD|314|-- found Adder: 5+5
+##I|Configurable_led.VHD|374|-- possible Multiplexer: 32-1 for dat_o
+executing Configurable_spi(RTL)
+executing Configurable_SRAM(RTL)
+##I|Configurable_SRAM.VHD|216|-- possible Multiplexer: 16-1 for outbits_write
+##N|Configurable_SRAM.VHD|293|others clause is never selected
+##I|Configurable_SRAM.VHD|295|-- possible Selector: 6-1 for writeactive_cycle
+##I|Configurable_SRAM.VHD|323|-- found Adder: 5+5
+executing Configurable_TSK3000A_1(Structure)
+executing Configurable_U2(structure)
+executing Configurable_U3(structure)
+executing Configurable_WB_INTERCON_1(RTL)
+##I|Configurable_WB_INTERCON_1.VHD|186|-- found NotEqual: 8!=8
+executing Configurable_WB_INTERCON_2(RTL)
+##I|Configurable_WB_INTERCON_2.VHD|64|-- found NotEqual: 8!=8
+executing Configurable_WB_MULTIMASTER_1(RTL)
+##I|Configurable_WB_MULTIMASTER_1.VHD|200|-- possible Multiplexer: 8-1 for next_state
+executing IOBUF16B(STRUCTURE)
+executing J16S_16B(STRUCTURE)
+executing TFT_TOUCH(Structure)
+executing TFT_MULTIFUNCIONAL(Structure)
+
+###############################################################################
+### Synthesis Report
+###############################################################################
+
+##O|TFT_TOUCH.VHD|855|Dissolving instance TSK3000A_1_LO(J16S_16B)
+##O|TFT_TOUCH.VHD|877|Dissolving instance TSK3000A_1_HI(J16S_16B)
+##O|TFT_TOUCH.VHD|899|Dissolving instance TSK3000A_1(Configurable_TSK3000A_1)
+##O|TFT_TOUCH.VHD|1050|Dissolving instance spi(Configurable_spi)
+##O|TFT_MULTIFUN.VHD|230|Dissolving instance U_TFT_TOUCH(TFT_TOUCH)
+##O|TFT_MULTIFUN.VHD|315|Dissolving instance U3(Configurable_U3)
+##O|TFT_MULTIFUN.VHD|329|Dissolving instance U2(Configurable_U2)
+###############################################################################
+### Optimization Report
+###  command: mmHDLtoEDIF -f xilinx -n spartan3an -p spartan3 -z 3 -o "C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL.edf" -b "C:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL.bfl" -e TFT_MULTIFUNCIONAL -L "C:\Users\Public\Documents\Altium\AD15\Library/" 
+
+INFO LibDir:  "C:\Users\Public\Documents\Altium\AD15\Library/"
+
+INFO ConstraintsMap:  "C:\Users\Public\Documents\Altium\AD15\Library/vhdl_lib/VendorConstraints.map"
+
+optimizing "_blf/cell0001"
+optimizing "_blf/cell0002"
+optimizing "_blf/cell0003"
+optimizing "_blf/cell0004"
+optimizing "_blf/cell0005"
+optimizing "_blf/cell0006"
+optimizing "_blf/cell0007"
+optimizing "_blf/cell0008"
+ 
+###############################################################################
+### Design Statistics
+###############################################################################
+ 
+Tristates                                                 : 48
+                                                          
+Flipflops:                                                : 271
+    Flipflops with RESET                    (Synchronous) : 12
+    Flipflops with PRESET                   (Synchronous) : 2
+    Flipflops                                             : 28
+    Flipflops with RESET and ENABLE         (Synchronous) : 205
+    Flipflops with ENABLE                                 : 24
+                                                          
+MacroCells:                                               
+    WB_SPI32                                              : 1
+    TSK3000A_Shift_Barrel                                 : 1
+    VGA32_16BPP                                           : 1
+    TSK3000A_OCDS                                         : 1
+    TSK3000A_MDU                                          : 1
+    INV                                                   : 1
+    TERMINAL                                              : 1
+    Memory_TSK3000A_1                                     : 1
+    MUXCY                                                 : 212
+    WB_TSPENDOWN                                          : 1
+    WB_ILI9320                                            : 1
+    XORCY                                                 : 15
+    TSK3000A_MCU                                          : 1
+                                                          
+Area Estimates:                                           
+    Area Estimate (2 Input Gate Count)                    : 2475
+    Area Estimate (LUT Count)                             : 1533
+ 
+###############################################################################
+ 
+formating EDIF....                            
+
+###############################################################################
+Synthesis successful
+###############################################################################

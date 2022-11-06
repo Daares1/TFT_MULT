@@ -1,0 +1,1874 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc7228a --dep-file=Output\frameout\pal_arch_3000_pal_c3000_interrupts.d --make-target=Output\frameout\pal_arch_3000_pal_c3000_interrupts.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\pal_c3000_interrupts.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c"
+
+	.section .text.intvec_0000
+	.align 4
+	.global _text_intvec_0000
+_text_intvec_0000: .type func
+	j _text_intvec_0000
+	nop
+	.endsec ; End of section
+
+	.section .text.intvec_0028
+	.align 4
+	.global _text_intvec_0028
+_text_intvec_0028: .type func
+	j _text_intvec_0028
+	nop
+	.endsec ; End of section
+
+	.section .text.intvec_0030
+	.align 4
+	.global _text_intvec_0030
+_text_intvec_0030: .type func
+	j _text_intvec_0030
+	nop
+	.endsec ; End of section
+
+	.section .text.intvec_0038
+	.align 4
+	.global _text_intvec_0038
+_text_intvec_0038: .type func
+	j _text_intvec_0038
+	nop
+	.endsec ; End of section
+
+	.section .text.intvec_0040
+	.align 4
+	.global _text_intvec_0040
+_text_intvec_0040: .type func
+	j _text_intvec_0040
+	nop
+	.endsec ; End of section
+
+	.section .text.intvec_0048
+	.align 4
+	.global _text_intvec_0048
+_text_intvec_0048: .type func
+	j _text_intvec_0048
+	nop
+	.endsec ; End of section
+
+	.section	.text.pal_c3000_interrupts.interrupt_handler ,cluster('$group_interrupt_handler')
+	.align	4
+; Function interrupt_handler
+.L14:
+interrupt_handler:	.type	func
+	addiu	$sp,$sp,-80
+.L128:
+	sw	$ra,0($sp)
+.L130:
+	sw	$at,4($sp)
+.L131:
+	sw	$v0,8($sp)
+.L132:
+	sw	$v1,12($sp)
+.L133:
+	sw	$a0,16($sp)
+.L134:
+	sw	$a1,20($sp)
+.L135:
+	sw	$a2,24($sp)
+.L136:
+	sw	$a3,28($sp)
+.L137:
+	sw	$t0,32($sp)
+.L138:
+	sw	$t1,36($sp)
+.L139:
+	sw	$t2,40($sp)
+.L140:
+	sw	$t3,44($sp)
+.L141:
+	sw	$t4,48($sp)
+.L142:
+	sw	$t5,52($sp)
+.L143:
+	sw	$t6,56($sp)
+.L144:
+	sw	$t7,60($sp)
+.L145:
+	sw	$t8,64($sp)
+.L146:
+	sw	$t9,68($sp)
+.L147:
+	mfhi	$at
+	sw	$at,72($sp)
+.L148:
+	mflo	$at
+	sw	$at,76($sp)
+.L149:
+	ori $a0,$k1,0
+.L170:
+	jal	interrupts_common_handler
+	nop
+.L171:
+	lw	$at,76($sp)
+.L150:
+	lw	$t9,68($sp)
+.L151:
+	mtlo	$at
+	lw	$at,72($sp)
+.L152:
+	lw	$t8,64($sp)
+.L153:
+	mthi	$at
+	lw	$t7,60($sp)
+.L154:
+	lw	$t6,56($sp)
+.L155:
+	lw	$t5,52($sp)
+.L156:
+	lw	$t4,48($sp)
+.L157:
+	lw	$t3,44($sp)
+.L158:
+	lw	$t2,40($sp)
+.L159:
+	lw	$t1,36($sp)
+.L160:
+	lw	$t0,32($sp)
+.L161:
+	lw	$a3,28($sp)
+.L162:
+	lw	$a2,24($sp)
+.L163:
+	lw	$a1,20($sp)
+.L164:
+	lw	$a0,16($sp)
+.L165:
+	lw	$v1,12($sp)
+.L166:
+	lw	$v0,8($sp)
+.L167:
+	lw	$at,4($sp)
+.L168:
+	lw	$ra,0($sp)
+.L169:
+	addiu	$sp,$sp,80
+.L129:
+	mfc0	$kt0,$7
+	jr	$kt0
+	rfe
+.L120:
+	.size	interrupt_handler,*-interrupt_handler
+.L62:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.pal_interrupt_clock_handler ,cluster('$group_pal_interrupt_clock_handler')
+	.align	4
+; Function pal_interrupt_clock_handler
+.L16:
+pal_interrupt_clock_handler:	.type	func
+	addiu	$sp,$sp,-80
+.L172:
+	sw	$ra,0($sp)
+.L174:
+	sw	$at,4($sp)
+.L175:
+	sw	$v0,8($sp)
+.L176:
+	sw	$v1,12($sp)
+.L177:
+	sw	$a0,16($sp)
+.L178:
+	sw	$a1,20($sp)
+.L179:
+	sw	$a2,24($sp)
+.L180:
+	sw	$a3,28($sp)
+.L181:
+	sw	$t0,32($sp)
+.L182:
+	sw	$t1,36($sp)
+.L183:
+	sw	$t2,40($sp)
+.L184:
+	sw	$t3,44($sp)
+.L185:
+	sw	$t4,48($sp)
+.L186:
+	sw	$t5,52($sp)
+.L187:
+	sw	$t6,56($sp)
+.L188:
+	sw	$t7,60($sp)
+.L189:
+	sw	$t8,64($sp)
+.L190:
+	sw	$t9,68($sp)
+.L191:
+	mfhi	$at
+	sw	$at,72($sp)
+.L192:
+	mflo	$at
+.L294:
+	jal	pal_timers_common_handler
+.L295:
+	sw	$at,76($sp)
+.L193:
+	lw	$at,76($sp)
+.L194:
+	lw	$t9,68($sp)
+.L195:
+	mtlo	$at
+	lw	$at,72($sp)
+.L196:
+	lw	$t8,64($sp)
+.L197:
+	mthi	$at
+	lw	$t7,60($sp)
+.L198:
+	lw	$t6,56($sp)
+.L199:
+	lw	$t5,52($sp)
+.L200:
+	lw	$t4,48($sp)
+.L201:
+	lw	$t3,44($sp)
+.L202:
+	lw	$t2,40($sp)
+.L203:
+	lw	$t1,36($sp)
+.L204:
+	lw	$t0,32($sp)
+.L205:
+	lw	$a3,28($sp)
+.L206:
+	lw	$a2,24($sp)
+.L207:
+	lw	$a1,20($sp)
+.L208:
+	lw	$a0,16($sp)
+.L209:
+	lw	$v1,12($sp)
+.L210:
+	lw	$v0,8($sp)
+.L211:
+	lw	$at,4($sp)
+.L212:
+	lw	$ra,0($sp)
+.L213:
+	addiu	$sp,$sp,80
+.L173:
+	mfc0	$kt0,$7
+	jr	$kt0
+	rfe
+.L122:
+	.size	pal_interrupt_clock_handler,*-pal_interrupt_clock_handler
+.L67:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.tsk3000_extract_vector_table ,cluster('$group_tsk3000_extract_vector_table')
+	.align	4
+	.global	tsk3000_extract_vector_table
+; Function tsk3000_extract_vector_table
+.L18:
+tsk3000_extract_vector_table:	.type	func
+	jr	$ra
+.L243:
+	nop
+.L73:
+	.size	tsk3000_extract_vector_table,*-tsk3000_extract_vector_table
+.L37:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.tsk3000_architecture_set_native_handler ,cluster('$group_tsk3000_architecture_set_native_handler')
+	.align	4
+	.global	tsk3000_architecture_set_native_handler
+; Function tsk3000_architecture_set_native_handler
+.L20:
+tsk3000_architecture_set_native_handler:	.type	func
+	sll	$v0,$a0,3
+	mfc0	$v1,$8
+	addu	$v0,$v0,$v1
+.L214:
+	srl	$v1,$a1,2
+	lui	$a1,0x800
+.L215:
+	or	$v1,$v1,$a1
+	sw	$v1,0($v0)
+.L300:
+	lui	$v1,0x341b
+	or	$v1,$a0,$v1
+.L301:
+	jr	$ra
+.L302:
+	sw	$v1,4($v0)
+.L123:
+	.size	tsk3000_architecture_set_native_handler,*-tsk3000_architecture_set_native_handler
+.L72:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.pal_architecture_set_native_handler ,cluster('$group_pal_architecture_set_native_handler')
+	.align	4
+	.global	pal_architecture_set_native_handler
+; Function pal_architecture_set_native_handler
+.L22:
+pal_architecture_set_native_handler:	.type	func
+	addiu	$sp,$sp,-4
+.L216:
+	li	$v0,0x1
+	sllv	$v0,$v0,$a0
+	andi	$v0,$v0,0x3e0
+	beq	$v0,$zero,.L2
+.L258:
+	sw	$ra,0($sp)
+.L217:
+	lui	$v0,0xf000
+	and	$v0,$a1,$v0
+	bne	$v0,$zero,.L3
+	nop
+.L259:
+	jal	tsk3000_architecture_set_native_handler
+	nop
+.L219:
+	j	.L4
+	li	$v0,0x1
+.L3:
+.L2:
+	move	$v0,$zero
+.L4:
+	lw	$ra,0($sp)
+.L218:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L80:
+	.size	pal_architecture_set_native_handler,*-pal_architecture_set_native_handler
+.L47:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.tsk3000_patch_vector_table ,cluster('$group_tsk3000_patch_vector_table')
+	.align	4
+	.global	tsk3000_patch_vector_table
+; Function tsk3000_patch_vector_table
+.L24:
+tsk3000_patch_vector_table:	.type	func
+	addiu	$sp,$sp,-4
+.L220:
+	sw	$ra,0($sp)
+.L75:
+	move	$a2,$zero
+.L6:
+	li	$v0,0x1
+	sllv	$v0,$v0,$a2
+	andi	$v0,$v0,0x3e0
+	beq	$v0,$zero,.L7
+	nop
+.L248:
+	beq	$a2,$zero,.L8
+.L249:
+	nop
+.L250:
+	lui	$v0,@hi(interrupt_handler)
+	addiu	$a1,$v0,@lo(interrupt_handler)
+.L222:
+	jal	tsk3000_architecture_set_native_handler
+	move	$a0,$a2
+.L8:
+.L7:
+	addiu	$a2,$a2,1
+.L251:
+	slti	$v0,$a2,32
+	bne	$v0,$zero,.L6
+	nop
+.L76:
+	lui	$v0,@hi(pal_interrupt_clock_handler)
+	addiu	$a1,$v0,@lo(pal_interrupt_clock_handler)
+	move	$a0,$zero
+.L252:
+	lw	$ra,0($sp)
+.L221:
+	j	tsk3000_architecture_set_native_handler
+.L253:
+	addiu	$sp,$sp,4
+.L74:
+	.size	tsk3000_patch_vector_table,*-tsk3000_patch_vector_table
+.L42:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.pal_architecture_interrupt_enable ,cluster('$group_pal_architecture_interrupt_enable')
+	.align	4
+	.global	pal_architecture_interrupt_enable
+; Function pal_architecture_interrupt_enable
+.L26:
+pal_architecture_interrupt_enable:	.type	func
+	mfc0	$v0,$0
+.L224:
+	li	$v1,0x1
+.L264:
+	andi	$v0,$v0,0x1
+.L225:
+	beq	$v0,$zero,.L9
+.L265:
+	sllv	$v1,$v1,$a0
+.L89:
+	mfc0	$v0,$0
+	addiu	$a0,$zero,-2
+.L223:
+	and	$v0,$v0,$a0
+.L266:
+	mtc0	$v0,$0
+.L267:
+	nop
+.L268:
+	nop
+.L269:
+	nop
+.L90:
+	mfc0	$v0,$1
+.L93:
+	or	$v0,$v0,$v1
+.L96:
+	mtc0	$v0,$1
+.L97:
+	mfc0	$v0,$0
+	ori	$v0,$v0,0x1
+.L270:
+	mtc0	$v0,$0
+.L102:
+	jr	$ra
+.L271:
+	nop
+.L9:
+	mfc0	$v0,$1
+.L104:
+	or	$v0,$v0,$v1
+.L105:
+	mtc0	$v0,$1
+.L106:
+	jr	$ra
+.L272:
+	nop
+.L85:
+	.size	pal_architecture_interrupt_enable,*-pal_architecture_interrupt_enable
+.L52:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pal_c3000_interrupts.pal_architecture_interrupt_disable ,cluster('$group_pal_architecture_interrupt_disable')
+	.align	4
+	.global	pal_architecture_interrupt_disable
+; Function pal_architecture_interrupt_disable
+.L28:
+pal_architecture_interrupt_disable:	.type	func
+	mfc0	$v0,$0
+.L226:
+	li	$v1,0x1
+	sllv	$v1,$v1,$a0
+.L277:
+	andi	$v0,$v0,0x1
+.L227:
+	beq	$v0,$zero,.L11
+.L278:
+	nor	$v1,$v1,$v1
+.L110:
+	mfc0	$v0,$0
+	addiu	$a0,$zero,-2
+.L228:
+	and	$v0,$v0,$a0
+.L279:
+	mtc0	$v0,$0
+.L280:
+	nop
+.L281:
+	nop
+.L282:
+	nop
+.L111:
+	mfc0	$v0,$1
+.L112:
+	and	$v0,$v0,$v1
+.L113:
+	mtc0	$v0,$1
+.L114:
+	mfc0	$v0,$0
+	ori	$v0,$v0,0x1
+.L283:
+	mtc0	$v0,$0
+.L116:
+	jr	$ra
+.L284:
+	nop
+.L11:
+	mfc0	$v0,$1
+.L117:
+	and	$v0,$v0,$v1
+.L118:
+	mtc0	$v0,$1
+.L119:
+	jr	$ra
+.L285:
+	nop
+.L107:
+	.size	pal_architecture_interrupt_disable,*-pal_architecture_interrupt_disable
+.L57:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'__INDIRECT__','interrupt_handler'
+	.calls	'__INDIRECT__','pal_interrupt_clock_handler'
+	.calls	'interrupt_handler','interrupts_common_handler'
+	.calls	'pal_interrupt_clock_handler','pal_timers_common_handler'
+	.calls	'pal_architecture_set_native_handler','tsk3000_architecture_set_native_handler'
+	.calls	'tsk3000_patch_vector_table','tsk3000_architecture_set_native_handler'
+	.calls	'interrupt_handler','',80
+	.calls	'pal_interrupt_clock_handler','',80
+	.calls	'tsk3000_extract_vector_table','',0
+	.calls	'tsk3000_architecture_set_native_handler','',0
+	.calls	'pal_architecture_set_native_handler','',4
+	.calls	'tsk3000_patch_vector_table','',4
+	.calls	'pal_architecture_interrupt_enable','',0
+	.calls	'pal_architecture_interrupt_disable','',0
+	.extern	interrupts_common_handler
+	.extern	pal_timers_common_handler
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L30:
+	.dw	1056
+	.dh	3
+	.dw	.L31
+	.db	4
+.L29:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L32
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0
+.L101:
+	.db	2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1
+.L103:
+	.db	3,0
+.L88:
+	.db	2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1
+.L91:
+	.db	3,0
+.L95:
+	.db	2
+	.db	"pal_architecture_interrupts_set_mask",0
+	.db	3,1,141,1,17,1,1
+.L98:
+	.db	4
+	.db	"mask",0
+	.db	1,141,1,63
+	.dw	.L81-.L30
+.L100:
+	.db	3,0
+.L81:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7
+.L92:
+	.db	6
+	.db	"pal_architecture_interrupts_get_mask",0
+	.db	3,1,146,1,17
+	.dw	522
+	.db	1,1
+.L94:
+	.db	3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	522
+	.db	3,0,7
+	.db	"__mtc0",0
+	.db	1,1,1,1,8
+	.db	"val",0
+	.dw	.L77-.L30
+	.db	8
+	.db	"spr",0
+	.dw	.L77-.L30
+	.db	0
+.L77:
+	.db	5
+	.db	"int",0
+	.db	4,5,9
+	.db	"__mfc0",0
+	.dw	.L229-.L30
+	.db	1,1,1,1,8
+	.db	"spr",0
+	.dw	685
+	.db	0
+.L229:
+	.db	10
+	.dw	685
+	.db	11
+	.dw	332
+	.db	3,0
+.L79:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2
+.L83:
+	.db	12
+	.dw	.L230-.L30
+.L230:
+	.db	13
+	.db	"void",0
+	.db	11
+	.dw	370
+	.db	3,0,11
+	.dw	415
+	.db	3,0,11
+	.dw	461
+	.db	14
+	.dw	506
+	.db	3,0,11
+	.dw	538
+	.db	3,0,11
+	.dw	589
+	.db	14
+	.dw	636
+	.db	3,0,15
+	.db	"interrupts_common_handler",0
+	.db	2,25,25,1,1,1,1,16,2,25,52
+	.dw	522
+	.db	0,17
+	.db	"pal_timers_common_handler",0
+	.db	2,50,14,1,1,1,1
+.L126:
+	.db	12
+	.dw	522
+	.db	18
+	.db	"__INDIRECT__",0
+	.db	3,1,1,1,1,1,19
+	.db	"__wchar_t",0
+	.db	3,1,1
+	.dw	.L231-.L30
+.L231:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,19
+	.db	"__size_t",0
+	.db	3,1,1
+	.dw	522
+	.db	19
+	.db	"__ptrdiff_t",0
+	.db	3,1,1
+	.dw	685
+	.db	19
+	.db	"__codeptr",0
+	.db	3,1,1
+	.dw	.L232-.L30
+.L232:
+	.db	12
+	.dw	.L233-.L30
+.L233:
+	.db	20,1,19
+	.db	"uint32_t",0
+	.db	4,26,33
+	.dw	522
+	.db	19
+	.db	"uint64_t",0
+	.db	4,28,33
+	.dw	.L234-.L30
+.L234:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L31:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,46,1,3,8,32,13,58,15,59,15,57
+	.db	15,73,19,54,15,39,12,0,0,7,46,1,3,8,54,15,39,12,63,12,60,12,0,0,8,5,0,3,8,73,19,0,0,9,46,1,3,8,73,19,54
+	.db	15,39,12,63,12,60,12,0,0,10,53,0,73,19,0,0,11,46,1,49,19,0,0,12,15,0,73,19,0,0,13,59,0,3,8,0,0,14,5,0
+	.db	49,19,0,0,15,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,16,5,0,58,15,59,15,57,15,73,19,0,0
+	.db	17,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,18,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60
+	.db	12,0,0,19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,21,0,54,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L32:
+	.dw	.L236-.L235
+.L235:
+	.dh	3
+	.dw	.L238-.L237
+.L237:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L238:
+.L236:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_tsk3000_extract_vector_table')
+.L33:
+	.dw	397
+	.dh	3
+	.dw	.L34
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L36,.L35
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"tsk3000_extract_vector_table",0
+	.db	1,137,1,6,1,1,1
+	.dw	.L18,.L73,.L17
+	.db	4
+	.dw	.L18,.L73
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_tsk3000_extract_vector_table')
+.L34:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_tsk3000_extract_vector_table')
+.L35:
+	.dw	.L240-.L239
+.L239:
+	.dh	3
+	.dw	.L242-.L241
+.L241:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L242:
+	.db	5,51,7,0,5,2
+	.dw	.L18
+	.db	3,136,1,1,7
+	.db	14+9*((.L243-.L18)/4)
+	.db	9
+	.dh	.L37-.L243
+	.db	0,1,1
+.L240:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_tsk3000_extract_vector_table')
+.L36:
+	.dw	-1
+	.dw	.L18
+	.dw	0
+	.dw	.L37-.L18
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_tsk3000_patch_vector_table')
+.L38:
+	.dw	421
+	.dh	3
+	.dw	.L39
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L41,.L40
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"tsk3000_patch_vector_table",0
+	.db	1,164,1,6,1,1,1
+	.dw	.L24,.L74,.L23
+	.db	4
+	.dw	.L24,.L74
+	.db	4
+	.dw	.L75,.L76
+	.db	5
+	.db	"i",0
+	.db	1,166,1,14
+	.dw	.L77,.L78
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_tsk3000_patch_vector_table')
+.L39:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_tsk3000_patch_vector_table')
+.L40:
+	.dw	.L245-.L244
+.L244:
+	.dh	3
+	.dw	.L247-.L246
+.L246:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L247:
+	.db	5,6,7,0,5,2
+	.dw	.L24
+	.db	3,163,1,1,5,15
+	.db	16+9*((.L75-.L24)/4)
+	.db	5,13
+	.db	16+9*((.L6-.L75)/4)
+	.db	5,52
+	.db	14+9*((.L248-.L6)/4)
+	.db	7
+	.db	14+9*((.L249-.L248)/4)
+	.db	5,73
+	.db	17+9*((.L250-.L249)/4)
+	.db	5,30,9
+	.dh	.L7-.L250
+	.db	3,123,1,5,25
+	.db	14+9*((.L251-.L7)/4)
+	.db	5,82,9
+	.dh	.L76-.L251
+	.db	3,15,1,5,1,9
+	.dh	.L252-.L76
+	.db	3,6,1,5,82,9
+	.dh	.L221-.L252
+	.db	3,122,1,7
+	.db	14+9*((.L253-.L221)/4)
+	.db	5,1,9
+	.dh	.L42-.L253
+	.db	3,6,0,1,1
+.L245:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_tsk3000_patch_vector_table')
+.L41:
+	.dw	-1
+	.dw	.L24
+	.dw	0
+	.dw	.L42-.L24
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pal_architecture_set_native_handler')
+.L43:
+	.dw	449
+	.dh	3
+	.dw	.L44
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L46,.L45
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"pal_architecture_set_native_handler",0
+	.db	1,154,1,6
+	.dw	.L79
+	.db	1,1,1
+	.dw	.L22,.L80,.L21
+	.db	4
+	.db	"number",0
+	.db	1,154,1,51
+	.dw	.L81,.L82
+	.db	4
+	.db	"handler",0
+	.db	1,154,1,65
+	.dw	.L83,.L84
+	.db	5
+	.dw	.L22,.L80
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pal_architecture_set_native_handler')
+.L44:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pal_architecture_set_native_handler')
+.L45:
+	.dw	.L255-.L254
+.L254:
+	.dh	3
+	.dw	.L257-.L256
+.L256:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L257:
+	.db	5,6,7,0,5,2
+	.dw	.L22
+	.db	3,153,1,1,5,9
+	.db	16+9*((.L216-.L22)/4)
+	.db	5,6
+	.db	12+9*((.L258-.L216)/4)
+	.db	5,44
+	.db	16+9*((.L217-.L258)/4)
+	.db	5,65
+	.db	16+9*((.L259-.L217)/4)
+	.db	5,9
+	.db	15+9*((.L219-.L259)/4)
+	.db	5,5
+	.db	16+9*((.L2-.L219)/4)
+	.db	5,1
+	.db	15+9*((.L4-.L2)/4)
+	.db	9
+	.dh	.L47-.L4
+	.db	0,1,1
+.L255:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pal_architecture_set_native_handler')
+.L46:
+	.dw	-1
+	.dw	.L22
+	.dw	0
+	.dw	.L47-.L22
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pal_architecture_interrupt_enable')
+.L48:
+	.dw	623
+	.dh	3
+	.dw	.L49
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L51,.L50
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"pal_architecture_interrupt_enable",0
+	.db	1,189,1,6,1,1,1
+	.dw	.L26,.L85,.L25
+	.db	4
+	.db	"number",0
+	.db	1,189,1,49
+	.dw	.L81,.L86
+	.db	5
+	.dw	.L26,.L85
+	.db	6
+	.db	"status",0
+	.db	1,191,1,14
+	.dw	.L81,.L87
+	.db	7
+	.dw	.L88,.L89,.L90
+	.db	8
+	.dw	.L91,.L89,.L90
+	.db	0,7
+	.dw	.L92,.L90,.L93
+	.db	8
+	.dw	.L94,.L90,.L93
+	.db	0,7
+	.dw	.L95,.L96,.L97
+	.db	9
+	.dw	.L98,.L99
+	.db	8
+	.dw	.L100,.L96,.L97
+	.db	0,7
+	.dw	.L101,.L97,.L102
+	.db	8
+	.dw	.L103,.L97,.L102
+	.db	0,7
+	.dw	.L92,.L9,.L104
+	.db	8
+	.dw	.L94,.L9,.L104
+	.db	0,7
+	.dw	.L95,.L105,.L106
+	.db	9
+	.dw	.L98,.L99
+	.db	8
+	.dw	.L100,.L105,.L106
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pal_architecture_interrupt_enable')
+.L49:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,11,0,49,16,17,1,18,1,0,0,9,5,0,49,16,2
+	.db	6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pal_architecture_interrupt_enable')
+.L50:
+	.dw	.L261-.L260
+.L260:
+	.dh	3
+	.dw	.L263-.L262
+.L262:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0,0
+.L263:
+	.db	5,40,7,0,5,2
+	.dw	.L26
+	.db	3,192,1,1,5,5
+	.db	15+9*((.L264-.L26)/4)
+	.db	5,40
+	.db	13+9*((.L265-.L264)/4)
+	.db	4,2,9
+	.dh	.L89-.L265
+	.db	3,70,1,5,95
+	.db	14+9*((.L266-.L89)/4)
+	.db	5,5
+	.db	15+9*((.L267-.L266)/4)
+	.db	9
+	.dh	.L268-.L267
+	.db	3,1,1,9
+	.dh	.L269-.L268
+	.db	3,1,1,9
+	.dh	.L90-.L269
+	.db	3,10,1,4,1,5,85,9
+	.dh	.L93-.L90
+	.db	3,49,1,4,2,5,45,9
+	.dh	.L96-.L93
+	.db	3,74,1,5,40,9
+	.dh	.L97-.L96
+	.db	3,115,1,5,93
+	.db	14+9*((.L270-.L97)/4)
+	.db	4,1,5,1,9
+	.dh	.L102-.L270
+	.db	3,203,0,1,7
+	.db	14+9*((.L271-.L102)/4)
+	.db	4,2,5,5,9
+	.dh	.L9-.L271
+	.db	3,71,1,4,1,5,85,9
+	.dh	.L104-.L9
+	.db	3,54,1,4,2,5,45,9
+	.dh	.L105-.L104
+	.db	3,69,1,4,1,5,1,9
+	.dh	.L106-.L105
+	.db	3,62,1,7
+	.db	14+9*((.L272-.L106)/4)
+	.db	9
+	.dh	.L52-.L272
+	.db	0,1,1
+.L261:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pal_architecture_interrupt_enable')
+.L51:
+	.dw	-1
+	.dw	.L26
+	.dw	0
+	.dw	.L52-.L26
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pal_architecture_interrupt_disable')
+.L53:
+	.dw	624
+	.dh	3
+	.dw	.L54
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L56,.L55
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"pal_architecture_interrupt_disable",0
+	.db	1,207,1,6,1,1,1
+	.dw	.L28,.L107,.L27
+	.db	4
+	.db	"number",0
+	.db	1,207,1,50
+	.dw	.L81,.L108
+	.db	5
+	.dw	.L28,.L107
+	.db	6
+	.db	"status",0
+	.db	1,209,1,14
+	.dw	.L81,.L109
+	.db	7
+	.dw	.L88,.L110,.L111
+	.db	8
+	.dw	.L91,.L110,.L111
+	.db	0,7
+	.dw	.L92,.L111,.L112
+	.db	8
+	.dw	.L94,.L111,.L112
+	.db	0,7
+	.dw	.L95,.L113,.L114
+	.db	9
+	.dw	.L98,.L115
+	.db	8
+	.dw	.L100,.L113,.L114
+	.db	0,7
+	.dw	.L101,.L114,.L116
+	.db	8
+	.dw	.L103,.L114,.L116
+	.db	0,7
+	.dw	.L92,.L11,.L117
+	.db	8
+	.dw	.L94,.L11,.L117
+	.db	0,7
+	.dw	.L95,.L118,.L119
+	.db	9
+	.dw	.L98,.L115
+	.db	8
+	.dw	.L100,.L118,.L119
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pal_architecture_interrupt_disable')
+.L54:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,11,0,49,16,17,1,18,1,0,0,9,5,0,49,16,2
+	.db	6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pal_architecture_interrupt_disable')
+.L55:
+	.dw	.L274-.L273
+.L273:
+	.dh	3
+	.dw	.L276-.L275
+.L275:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0,0
+.L276:
+	.db	5,40,7,0,5,2
+	.dw	.L28
+	.db	3,210,1,1,5,5
+	.db	15+9*((.L277-.L28)/4)
+	.db	5,40
+	.db	13+9*((.L278-.L277)/4)
+	.db	4,2,9
+	.dh	.L110-.L278
+	.db	3,180,127,1,5,95
+	.db	14+9*((.L279-.L110)/4)
+	.db	5,5
+	.db	15+9*((.L280-.L279)/4)
+	.db	9
+	.dh	.L281-.L280
+	.db	3,1,1,9
+	.dh	.L282-.L281
+	.db	3,1,1,9
+	.dh	.L111-.L282
+	.db	3,10,1,4,1,5,85,9
+	.dh	.L112-.L111
+	.db	3,195,0,1,4,2,5,45,9
+	.dh	.L113-.L112
+	.db	3,184,127,1,5,40,9
+	.dh	.L114-.L113
+	.db	3,115,1,5,93
+	.db	14+9*((.L283-.L114)/4)
+	.db	4,1,5,1,9
+	.dh	.L116-.L283
+	.db	3,221,0,1,7
+	.db	14+9*((.L284-.L116)/4)
+	.db	4,2,5,5,9
+	.dh	.L11-.L284
+	.db	3,181,127,1,4,1,5,85,9
+	.dh	.L117-.L11
+	.db	3,200,0,1,4,2,5,45,9
+	.dh	.L118-.L117
+	.db	3,179,127,1,4,1,5,1,9
+	.dh	.L119-.L118
+	.db	3,208,0,1,7
+	.db	14+9*((.L285-.L119)/4)
+	.db	9
+	.dh	.L57-.L285
+	.db	0,1,1
+.L274:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pal_architecture_interrupt_disable')
+.L56:
+	.dw	-1
+	.dw	.L28
+	.dw	0
+	.dw	.L57-.L28
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_interrupt_handler')
+.L58:
+	.dw	404
+	.dh	3
+	.dw	.L59
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L61,.L60
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"interrupt_handler",0
+	.db	1,122,28,1,1
+	.dw	.L14,.L120,.L13
+	.db	4
+	.dw	.L14,.L120
+	.db	5
+	.db	"number",0
+	.db	1,124,14
+	.dw	.L81,.L121
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_interrupt_handler')
+.L59:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_interrupt_handler')
+.L60:
+	.dw	.L287-.L286
+.L286:
+	.dh	3
+	.dw	.L289-.L288
+.L288:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L289:
+	.db	5,28,7,0,5,2
+	.dw	.L14
+	.db	3,249,0,1,5,5,9
+	.dh	.L149-.L14
+	.db	3,3,1,5,38,9
+	.dh	.L170-.L149
+	.db	3,1,1,5,1
+	.db	15+9*((.L171-.L170)/4)
+	.db	9
+	.dh	.L62-.L171
+	.db	0,1,1
+.L287:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_interrupt_handler')
+.L61:
+	.dw	-1
+	.dw	.L14
+	.dw	0
+	.dw	.L62-.L14
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pal_interrupt_clock_handler')
+.L63:
+	.dw	395
+	.dh	3
+	.dw	.L64
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L66,.L65
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"pal_interrupt_clock_handler",0
+	.db	1,130,1,27,1,1
+	.dw	.L16,.L122,.L15
+	.db	4
+	.dw	.L16,.L122
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pal_interrupt_clock_handler')
+.L64:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pal_interrupt_clock_handler')
+.L65:
+	.dw	.L291-.L290
+.L290:
+	.dh	3
+	.dw	.L293-.L292
+.L292:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L293:
+	.db	5,27,7,0,5,2
+	.dw	.L16
+	.db	3,129,1,1,5,32,9
+	.dh	.L294-.L16
+	.db	3,2,1,5,27
+	.db	12+9*((.L295-.L294)/4)
+	.db	5,1
+	.db	17+9*((.L193-.L295)/4)
+	.db	9
+	.dh	.L67-.L193
+	.db	0,1,1
+.L291:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pal_interrupt_clock_handler')
+.L66:
+	.dw	-1
+	.dw	.L16
+	.dw	0
+	.dw	.L67-.L16
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L68:
+	.dw	474
+	.dh	3
+	.dw	.L69
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L71,.L70
+	.db	2
+	.dw	.L29
+	.db	3
+	.db	"tsk3000_architecture_set_native_handler",0
+	.db	1,144,1,6,1,1,1
+	.dw	.L20,.L123,.L19
+	.db	4
+	.db	"number",0
+	.db	1,144,1,55
+	.dw	.L81,.L124
+	.db	4
+	.db	"handler",0
+	.db	1,144,1,69
+	.dw	.L83,.L125
+	.db	5
+	.dw	.L20,.L123
+	.db	6
+	.db	"vecaddress",0
+	.db	1,146,1,16
+	.dw	.L126,.L127
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L69:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L70:
+	.dw	.L297-.L296
+.L296:
+	.dh	3
+	.dw	.L299-.L298
+.L298:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\src\\pal_c3000_interrupts.c",0
+	.db	0,0,0,0
+.L299:
+	.db	5,27,7,0,5,2
+	.dw	.L20
+	.db	3,145,1,1,5,53
+	.db	16+9*((.L214-.L20)/4)
+	.db	5,57
+	.db	17+9*((.L300-.L214)/4)
+	.db	5,1
+	.db	15+9*((.L301-.L300)/4)
+	.db	5,57,7
+	.db	13+9*((.L302-.L301)/4)
+	.db	5,1,9
+	.dh	.L72-.L302
+	.db	3,1,0,1,1
+.L297:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L71:
+	.dw	-1
+	.dw	.L20
+	.dw	0
+	.dw	.L72-.L20
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_disable')
+.L115:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_patch_vector_table')
+.L23:
+	.dw	-1
+	.dw	.L24,.L24-.L24,.L220-.L24
+	.dh	2
+	.db	141,0
+	.dw	.L220-.L24,.L74-.L24
+	.dh	2
+	.db	141,4
+	.dw	.L74-.L24,.L74-.L24
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_disable')
+.L108:
+	.dw	-1
+	.dw	.L28,.L11-.L28,.L107-.L28
+	.dh	1
+	.db	84
+	.dw	.L28-.L28,.L228-.L28
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_set_native_handler')
+.L82:
+	.dw	-1
+	.dw	.L22,.L2-.L22,.L4-.L22
+	.dh	1
+	.db	84
+	.dw	.L22-.L22,.L219-.L22
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L125:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L215-.L20
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_enable')
+.L87:
+	.dw	-1
+	.dw	.L26,.L224-.L26,.L225-.L26
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_patch_vector_table')
+.L78:
+	.dw	-1
+	.dw	.L24,.L6-.L24,.L74-.L24
+	.dh	1
+	.db	86
+	.dw	.L222-.L24,.L7-.L24
+	.dh	1
+	.db	84
+	.dw	.L75-.L24,.L6-.L24
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_enable')
+.L99:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L127:
+	.dw	-1
+	.dw	.L20,.L214-.L20,.L123-.L20
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_enable')
+.L86:
+	.dw	-1
+	.dw	.L26,.L9-.L26,.L85-.L26
+	.dh	1
+	.db	84
+	.dw	.L26-.L26,.L223-.L26
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_set_native_handler')
+.L21:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L216-.L22
+	.dh	2
+	.db	141,0
+	.dw	.L216-.L22,.L80-.L22
+	.dh	2
+	.db	141,4
+	.dw	.L80-.L22,.L80-.L22
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_disable')
+.L109:
+	.dw	-1
+	.dw	.L28,.L226-.L28,.L227-.L28
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_enable')
+.L25:
+	.dw	-1
+	.dw	.L26,.L26-.L26,.L85-.L26
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_interrupt_handler')
+.L121:
+	.dw	-1
+	.dw	.L14,.L170-.L14,.L171-.L14
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_interrupt_clock_handler')
+.L15:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L172-.L16
+	.dh	2
+	.db	141,0
+	.dw	.L172-.L16,.L173-.L16
+	.dh	3
+	.db	141,208,0
+	.dw	.L173-.L16,.L122-.L16
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_interrupt_handler')
+.L13:
+	.dw	-1
+	.dw	.L14,.L14-.L14,.L128-.L14
+	.dh	2
+	.db	141,0
+	.dw	.L128-.L14,.L129-.L14
+	.dh	3
+	.db	141,208,0
+	.dw	.L129-.L14,.L120-.L14
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_set_native_handler')
+.L84:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L219-.L22
+	.dh	1
+	.db	85
+	.dw	.L2-.L22,.L4-.L22
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_extract_vector_table')
+.L17:
+	.dw	-1
+	.dw	.L18,.L18-.L18,.L73-.L18
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_architecture_interrupt_disable')
+.L27:
+	.dw	-1
+	.dw	.L28,.L28-.L28,.L107-.L28
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_tsk3000_architecture_set_native_handler')
+.L124:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L123-.L20
+	.dh	1
+	.db	84
+	.dw	0,0
+.L19:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L123-.L20
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L303:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_interrupt_handler')
+	.dw	320
+	.dw	.L303,.L14,.L120-.L14
+	.db	4
+	.dw	(.L128-.L14)/4
+	.db	19,208,0,22,29,4,19,141,208,0,4
+	.dw	(.L130-.L128)/4
+	.db	17,31,176,127,4
+	.dw	(.L131-.L130)/4
+	.db	17,1,180,127,4
+	.dw	(.L132-.L131)/4
+	.db	17,2,184,127,4
+	.dw	(.L133-.L132)/4
+	.db	17,3,188,127,4
+	.dw	(.L134-.L133)/4
+	.db	17,4,64,4
+	.dw	(.L135-.L134)/4
+	.db	17,5,68,4
+	.dw	(.L136-.L135)/4
+	.db	17,6,72,4
+	.dw	(.L137-.L136)/4
+	.db	17,7,76,4
+	.dw	(.L138-.L137)/4
+	.db	17,8,80,4
+	.dw	(.L139-.L138)/4
+	.db	17,9,84,4
+	.dw	(.L140-.L139)/4
+	.db	17,10,88,4
+	.dw	(.L141-.L140)/4
+	.db	17,11,92,4
+	.dw	(.L142-.L141)/4
+	.db	17,12,96,4
+	.dw	(.L143-.L142)/4
+	.db	17,13,100,4
+	.dw	(.L144-.L143)/4
+	.db	17,14,104,4
+	.dw	(.L145-.L144)/4
+	.db	17,15,108,4
+	.dw	(.L146-.L145)/4
+	.db	17,24,112,4
+	.dw	(.L147-.L146)/4
+	.db	17,25,116,4
+	.dw	(.L148-.L147)/4
+	.db	17,33,120,4
+	.dw	(.L149-.L148)/4
+	.db	17,34,124,4
+	.dw	(.L150-.L149)/4
+	.db	226,4
+	.dw	(.L151-.L150)/4
+	.db	217,4
+	.dw	(.L152-.L151)/4
+	.db	225,4
+	.dw	(.L153-.L152)/4
+	.db	216,4
+	.dw	(.L154-.L153)/4
+	.db	207,4
+	.dw	(.L155-.L154)/4
+	.db	206,4
+	.dw	(.L156-.L155)/4
+	.db	205,4
+	.dw	(.L157-.L156)/4
+	.db	204,4
+	.dw	(.L158-.L157)/4
+	.db	203,4
+	.dw	(.L159-.L158)/4
+	.db	202,4
+	.dw	(.L160-.L159)/4
+	.db	201,4
+	.dw	(.L161-.L160)/4
+	.db	200,4
+	.dw	(.L162-.L161)/4
+	.db	199,4
+	.dw	(.L163-.L162)/4
+	.db	198,4
+	.dw	(.L164-.L163)/4
+	.db	197,4
+	.dw	(.L165-.L164)/4
+	.db	196,4
+	.dw	(.L166-.L165)/4
+	.db	195,4
+	.dw	(.L167-.L166)/4
+	.db	194,4
+	.dw	(.L168-.L167)/4
+	.db	193,4
+	.dw	(.L169-.L168)/4
+	.db	223,4
+	.dw	(.L129-.L169)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pal_interrupt_clock_handler')
+	.dw	320
+	.dw	.L303,.L16,.L122-.L16
+	.db	4
+	.dw	(.L172-.L16)/4
+	.db	19,208,0,22,29,4,19,141,208,0,4
+	.dw	(.L174-.L172)/4
+	.db	17,31,176,127,4
+	.dw	(.L175-.L174)/4
+	.db	17,1,180,127,4
+	.dw	(.L176-.L175)/4
+	.db	17,2,184,127,4
+	.dw	(.L177-.L176)/4
+	.db	17,3,188,127,4
+	.dw	(.L178-.L177)/4
+	.db	17,4,64,4
+	.dw	(.L179-.L178)/4
+	.db	17,5,68,4
+	.dw	(.L180-.L179)/4
+	.db	17,6,72,4
+	.dw	(.L181-.L180)/4
+	.db	17,7,76,4
+	.dw	(.L182-.L181)/4
+	.db	17,8,80,4
+	.dw	(.L183-.L182)/4
+	.db	17,9,84,4
+	.dw	(.L184-.L183)/4
+	.db	17,10,88,4
+	.dw	(.L185-.L184)/4
+	.db	17,11,92,4
+	.dw	(.L186-.L185)/4
+	.db	17,12,96,4
+	.dw	(.L187-.L186)/4
+	.db	17,13,100,4
+	.dw	(.L188-.L187)/4
+	.db	17,14,104,4
+	.dw	(.L189-.L188)/4
+	.db	17,15,108,4
+	.dw	(.L190-.L189)/4
+	.db	17,24,112,4
+	.dw	(.L191-.L190)/4
+	.db	17,25,116,4
+	.dw	(.L192-.L191)/4
+	.db	17,33,120,4
+	.dw	(.L193-.L192)/4
+	.db	17,34,124,4
+	.dw	(.L194-.L193)/4
+	.db	226,4
+	.dw	(.L195-.L194)/4
+	.db	217,4
+	.dw	(.L196-.L195)/4
+	.db	225,4
+	.dw	(.L197-.L196)/4
+	.db	216,4
+	.dw	(.L198-.L197)/4
+	.db	207,4
+	.dw	(.L199-.L198)/4
+	.db	206,4
+	.dw	(.L200-.L199)/4
+	.db	205,4
+	.dw	(.L201-.L200)/4
+	.db	204,4
+	.dw	(.L202-.L201)/4
+	.db	203,4
+	.dw	(.L203-.L202)/4
+	.db	202,4
+	.dw	(.L204-.L203)/4
+	.db	201,4
+	.dw	(.L205-.L204)/4
+	.db	200,4
+	.dw	(.L206-.L205)/4
+	.db	199,4
+	.dw	(.L207-.L206)/4
+	.db	198,4
+	.dw	(.L208-.L207)/4
+	.db	197,4
+	.dw	(.L209-.L208)/4
+	.db	196,4
+	.dw	(.L210-.L209)/4
+	.db	195,4
+	.dw	(.L211-.L210)/4
+	.db	194,4
+	.dw	(.L212-.L211)/4
+	.db	193,4
+	.dw	(.L213-.L212)/4
+	.db	223,4
+	.dw	(.L173-.L213)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_tsk3000_extract_vector_table')
+	.dw	52
+	.dw	.L303,.L18,.L73-.L18
+	.db	8,2,8,3,8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_tsk3000_architecture_set_native_handler')
+	.dw	44
+	.dw	.L303,.L20,.L123-.L20
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pal_architecture_set_native_handler')
+	.dw	80
+	.dw	.L303,.L22,.L80-.L22
+	.db	8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,4
+	.dw	(.L216-.L22)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L217-.L216)/4
+	.db	17,31,124,4
+	.dw	(.L218-.L217)/4
+	.db	223,4
+	.dw	(.L80-.L218)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_tsk3000_patch_vector_table')
+	.dw	48
+	.dw	.L303,.L24,.L74-.L24
+	.db	4
+	.dw	(.L220-.L24)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L75-.L220)/4
+	.db	17,31,124,4
+	.dw	(.L221-.L75)/4
+	.db	223,4
+	.dw	(.L74-.L221)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pal_architecture_interrupt_enable')
+	.dw	48
+	.dw	.L303,.L26,.L85-.L26
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pal_architecture_interrupt_disable')
+	.dw	48
+	.dw	.L303,.L28,.L107-.L28
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,1836 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc5676a --dep-file=Output\frameout\terminal_to_serial_terminal_to_serial.d --make-target=Output\frameout\terminal_to_serial_terminal_to_serial.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\terminal_to_serial.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c"
+
+	.section	.text.terminal_to_serial.terminal_to_serial_mmap ,cluster('$group_terminal_to_serial_mmap')
+	.align	4
+; Function terminal_to_serial_mmap
+.L10:
+terminal_to_serial_mmap:	.type	func
+	jr	$ra
+.L221:
+	li	$v0,0x1c
+.L85:
+	.size	terminal_to_serial_mmap,*-terminal_to_serial_mmap
+.L49:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.terminal_to_serial.terminal_to_serial_init ,cluster('$group_terminal_to_serial_init')
+	.align	4
+	.global	terminal_to_serial_init
+; Function terminal_to_serial_init
+.L12:
+terminal_to_serial_init:	.type	func
+	lui	$v0,@hi(terminal_to_serial_iofuncs)
+	addiu	$v0,$v0,@lo(terminal_to_serial_iofuncs)
+	lui	$v1,@hi(terminal_to_serial_open)
+	addiu	$v1,$v1,@lo(terminal_to_serial_open)
+	sw	$v1,0($v0)
+.L226:
+	lui	$v1,@hi(terminal_to_serial_write)
+	addiu	$v1,$v1,@lo(terminal_to_serial_write)
+	sw	$v1,4($v0)
+.L227:
+	lui	$v1,@hi(terminal_to_serial_read)
+	addiu	$v1,$v1,@lo(terminal_to_serial_read)
+	sw	$v1,8($v0)
+.L228:
+	lui	$v1,@hi(terminal_to_serial_ctl)
+	addiu	$v1,$v1,@lo(terminal_to_serial_ctl)
+	sw	$v1,12($v0)
+.L229:
+	sw	$zero,16($v0)
+.L96:
+	lui	$v1,@hi(terminal_to_serial_instance_table)
+	addiu	$v1,$v1,@lo(terminal_to_serial_instance_table)
+	lui	$a0,@hi(terminal_to_serial_table)
+	lw	$a1,0($v1)
+	addiu	$a0,$a0,@lo(terminal_to_serial_table)
+	sll	$a1,$a1,3
+	lui	$a2,@hi(serial_instance_table)
+	addiu	$a2,$a2,@lo(serial_instance_table)
+	addu	$a1,$a1,$a2
+	lw	$a1,0($a1)
+	sw	$a1,0($a0)
+.L230:
+	sw	$v0,4($a0)
+.L231:
+	lw	$v0,4($v1)
+.L113:
+	j	devio_install
+.L232:
+	sw	$v0,8($a0)
+.L94:
+	.size	terminal_to_serial_init,*-terminal_to_serial_init
+.L54:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.terminal_to_serial.terminal_to_serial_open ,cluster('$group_terminal_to_serial_open')
+	.align	4
+; Function terminal_to_serial_open
+.L14:
+terminal_to_serial_open:	.type	func
+	addiu	$sp,$sp,-8
+.L125:
+	sw	$ra,0($sp)
+.L126:
+	sw	$s0,4($sp)
+.L127:
+	move	$s0,$a0
+.L131:
+	jal	terminal_open
+.L196:
+	lw	$a0,8($s0)
+.L130:
+	beq	$v0,$zero,.L3
+.L197:
+	nop
+.L198:
+	sw	$v0,12($s0)
+.L199:
+	j	.L4
+	move	$v0,$zero
+.L3:
+	li	$v0,0x50
+.L4:
+	lw	$s0,4($sp)
+.L128:
+	lw	$ra,0($sp)
+.L129:
+	jr	$ra
+	addiu	$sp,$sp,8
+.L60:
+	.size	terminal_to_serial_open,*-terminal_to_serial_open
+.L29:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.terminal_to_serial.terminal_to_serial_write ,cluster('$group_terminal_to_serial_write')
+	.align	4
+; Function terminal_to_serial_write
+.L16:
+terminal_to_serial_write:	.type	func
+	addiu	$sp,$sp,-8
+.L132:
+	sw	$ra,0($sp)
+.L133:
+	sw	$s0,4($sp)
+.L134:
+	move	$s0,$a1
+.L139:
+	lw	$a0,12($a0)
+	lw	$a1,0($s0)
+.L137:
+	jal	terminal_write
+	lw	$a2,4($s0)
+.L138:
+	sw	$v0,8($s0)
+.L204:
+	move	$v0,$zero
+.L205:
+	lw	$s0,4($sp)
+.L135:
+	lw	$ra,0($sp)
+.L136:
+	jr	$ra
+	addiu	$sp,$sp,8
+.L69:
+	.size	terminal_to_serial_write,*-terminal_to_serial_write
+.L34:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.terminal_to_serial.terminal_to_serial_read ,cluster('$group_terminal_to_serial_read')
+	.align	4
+; Function terminal_to_serial_read
+.L18:
+terminal_to_serial_read:	.type	func
+	addiu	$sp,$sp,-8
+.L140:
+	sw	$ra,0($sp)
+.L141:
+	sw	$s0,4($sp)
+.L142:
+	move	$s0,$a1
+.L147:
+	lw	$a0,12($a0)
+	lw	$a1,0($s0)
+.L145:
+	jal	terminal_read
+	lw	$a2,4($s0)
+.L146:
+	sw	$v0,8($s0)
+.L210:
+	move	$v0,$zero
+.L211:
+	lw	$s0,4($sp)
+.L143:
+	lw	$ra,0($sp)
+.L144:
+	jr	$ra
+	addiu	$sp,$sp,8
+.L73:
+	.size	terminal_to_serial_read,*-terminal_to_serial_read
+.L39:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.terminal_to_serial.terminal_to_serial_ctl ,cluster('$group_terminal_to_serial_ctl')
+	.align	4
+; Function terminal_to_serial_ctl
+.L20:
+terminal_to_serial_ctl:	.type	func
+	jr	$ra
+.L216:
+	move	$v0,$zero
+.L76:
+	.size	terminal_to_serial_ctl,*-terminal_to_serial_ctl
+.L44:
+	; End of function
+	.endsec	; End of section
+
+	.section	.bss.terminal_to_serial.terminal_to_serial_iofuncs ,cluster('$group_bss')
+	.align	4
+terminal_to_serial_iofuncs:	.type	object
+	.size	terminal_to_serial_iofuncs,20
+	.ds	20
+	.endsec	; End of section
+
+	.section	.bss.terminal_to_serial.terminal_to_serial_table ,cluster('$group_bss')
+	.align	4
+terminal_to_serial_table:	.type	object
+	.size	terminal_to_serial_table,16
+	.ds	16
+	.endsec	; End of section
+
+	.calls	'__INDIRECT__','terminal_to_serial_open'
+	.calls	'__INDIRECT__','terminal_to_serial_write'
+	.calls	'__INDIRECT__','terminal_to_serial_read'
+	.calls	'__INDIRECT__','terminal_to_serial_ctl'
+	.calls	'terminal_to_serial_init','devio_install'
+	.calls	'terminal_to_serial_open','terminal_open'
+	.calls	'terminal_to_serial_write','terminal_write'
+	.calls	'terminal_to_serial_read','terminal_read'
+	.calls	'terminal_to_serial_mmap','',0
+	.calls	'terminal_to_serial_init','',0
+	.calls	'terminal_to_serial_open','',8
+	.calls	'terminal_to_serial_write','',8
+	.calls	'terminal_to_serial_read','',8
+	.calls	'terminal_to_serial_ctl','',0
+	.extern	devio_install
+	.extern	terminal_write
+	.extern	terminal_read
+	.extern	terminal_open
+	.extern	terminal_to_serial_instance_table
+	.extern	serial_instance_table
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L22:
+	.dw	2620
+	.dh	3
+	.dw	.L23
+	.db	4
+.L21:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L24
+.L95:
+	.db	2
+	.db	"DEV_IOFUNS_CREATE",0
+	.db	3,1,55,13,1,1
+.L97:
+	.db	3
+	.db	"iofuns",0
+	.db	1,55,48
+	.dw	.L148-.L22
+.L99:
+	.db	3
+	.db	"init",0
+	.db	1,56,38
+	.dw	.L149-.L22
+.L101:
+	.db	3
+	.db	"write",0
+	.db	1,57,38
+	.dw	.L150-.L22
+.L103:
+	.db	3
+	.db	"read",0
+	.db	1,58,38
+	.dw	.L150-.L22
+.L105:
+	.db	3
+	.db	"ctl",0
+	.db	1,59,38
+	.dw	.L151-.L22
+.L107:
+	.db	3
+	.db	"mmap",0
+	.db	1,60,38
+	.dw	.L152-.L22
+.L109:
+	.db	3
+	.db	"flush",0
+	.db	1,61,38
+	.dw	.L149-.L22
+.L111:
+	.db	4,0
+.L148:
+	.db	5
+	.dw	.L123-.L22
+.L123:
+	.db	6
+	.db	"devio_iofuns_s",0
+	.db	1,35,8,20,7
+	.db	"init",0
+	.db	4
+	.dw	.L149-.L22
+	.db	2,35,0,7
+	.db	"write",0
+	.db	4
+	.dw	.L150-.L22
+	.db	2,35,4,7
+	.db	"read",0
+	.db	4
+	.dw	.L150-.L22
+	.db	2,35,8,7
+	.db	"ctl",0
+	.db	4
+	.dw	.L151-.L22
+	.db	2,35,12,7
+	.db	"flush",0
+	.db	4
+	.dw	.L149-.L22
+	.db	2,35,16,0
+.L149:
+	.db	5
+	.dw	.L153-.L22
+.L153:
+	.db	8
+	.dw	.L59-.L22
+	.db	1,1,9
+	.dw	.L154-.L22
+	.db	9
+	.dw	.L59-.L22
+	.db	0
+.L59:
+	.db	10
+	.db	"int",0
+	.db	4,5
+.L154:
+	.db	5
+	.dw	.L155-.L22
+.L155:
+	.db	6
+	.db	"devio_s",0
+	.db	1,21,8,12,7
+	.db	"name",0
+	.db	4
+	.dw	.L156-.L22
+	.db	2,35,0,7
+	.db	"iofuns",0
+	.db	4
+	.dw	466
+	.db	2,35,4,7
+	.db	"device",0
+	.db	4
+	.dw	.L79-.L22
+	.db	2,35,8,0
+.L156:
+	.db	5
+	.dw	.L157-.L22
+.L157:
+	.db	11
+	.dw	.L158-.L22
+.L158:
+	.db	10
+	.db	"char",0
+	.db	1,6
+.L79:
+	.db	5
+	.dw	.L159-.L22
+.L159:
+	.db	12
+	.db	"void",0
+.L150:
+	.db	5
+	.dw	.L160-.L22
+.L160:
+	.db	8
+	.dw	586
+	.db	1,1,9
+	.dw	593
+	.db	9
+	.dw	.L161-.L22
+	.db	0
+.L161:
+	.db	5
+	.dw	.L162-.L22
+.L162:
+	.db	13,2,12,9,16,7
+	.db	"buf",0
+	.db	4
+	.dw	.L163-.L22
+	.db	2,35,0,7
+	.db	"len",0
+	.db	4
+	.dw	586
+	.db	2,35,4,7
+	.db	"cnt",0
+	.db	4
+	.dw	586
+	.db	2,35,8,7
+	.db	"offset",0
+	.db	4
+	.dw	586
+	.db	2,35,12,0
+.L163:
+	.db	5
+	.dw	.L164-.L22
+.L164:
+	.db	10
+	.db	"unsigned char",0
+	.db	1,8
+.L151:
+	.db	5
+	.dw	.L165-.L22
+.L165:
+	.db	8
+	.dw	586
+	.db	1,1,9
+	.dw	593
+	.db	9
+	.dw	586
+	.db	9
+	.dw	676
+	.db	9
+	.dw	.L81-.L22
+	.db	9
+	.dw	.L83-.L22
+	.db	0
+.L81:
+	.db	10
+	.db	"unsigned int",0
+	.db	4,7
+.L83:
+	.db	5
+	.dw	586
+.L152:
+	.db	5
+	.dw	.L166-.L22
+.L166:
+	.db	8
+	.dw	586
+	.db	1,1,9
+	.dw	593
+	.db	9
+	.dw	676
+	.db	9
+	.dw	836
+	.db	9
+	.dw	586
+	.db	9
+	.dw	.L90-.L22
+	.db	9
+	.dw	.L92-.L22
+	.db	0
+.L90:
+	.db	10
+	.db	"long int",0
+	.db	4,5
+.L92:
+	.db	5
+	.dw	676
+.L112:
+	.db	2
+	.db	"DEV_CREATE",0
+	.db	3,1,77,13,1,1
+.L114:
+	.db	3
+	.db	"dev",0
+	.db	1,77,35
+	.dw	.L61-.L22
+.L116:
+	.db	3
+	.db	"name",0
+	.db	1,78,38
+	.dw	658
+.L118:
+	.db	3
+	.db	"iofuns",0
+	.db	1,79,41
+	.dw	466
+.L120:
+	.db	3
+	.db	"device",0
+	.db	1,80,31
+	.dw	676
+.L122:
+	.db	4,0
+.L61:
+	.db	5
+	.dw	598
+	.db	14
+	.dw	345
+	.db	15
+	.dw	370
+	.db	15
+	.dw	385
+	.db	15
+	.dw	398
+	.db	15
+	.dw	412
+	.db	15
+	.dw	425
+	.db	15
+	.dw	437
+	.db	15
+	.dw	450
+	.db	4,0,14
+	.dw	917
+	.db	15
+	.dw	935
+	.db	15
+	.dw	947
+	.db	15
+	.dw	960
+	.db	15
+	.dw	975
+	.db	4,0,16
+	.db	"devio_install",0
+	.db	1,97,13,1,1,1,1,3
+	.db	"device",0
+	.db	1,97,37
+	.dw	992
+	.db	0,17
+	.db	"terminal_write",0
+	.db	3,36,15
+	.dw	836
+	.db	1,1,1,1,3
+	.db	"drv",0
+	.db	3,36,52
+	.dw	.L67-.L22
+	.db	3
+	.db	"buf",0
+	.db	3,36,69
+	.dw	658
+	.db	3
+	.db	"size",0
+	.db	3,36,81
+	.dw	836
+	.db	0
+.L67:
+	.db	5
+	.dw	.L167-.L22
+.L167:
+	.db	18
+	.db	"terminal_drv_s",0
+	.db	3,31,16,1,17
+	.db	"terminal_read",0
+	.db	3,37,15
+	.dw	836
+	.db	1,1,1,1,3
+	.db	"drv",0
+	.db	3,37,51
+	.dw	1169
+	.db	3
+	.db	"buf",0
+	.db	3,37,62
+	.dw	.L168-.L22
+	.db	3
+	.db	"size",0
+	.db	3,37,74
+	.dw	836
+	.db	0
+.L168:
+	.db	5
+	.dw	668
+	.db	17
+	.db	"terminal_open",0
+	.db	3,39,13
+	.dw	1169
+	.db	1,1,1,1,3
+	.db	"id",0
+	.db	3,39,31
+	.dw	586
+	.db	0
+.L65:
+	.db	5
+	.dw	.L169-.L22
+.L169:
+	.db	13,4,35,9,16,7
+	.db	"dev",0
+	.db	12
+	.dw	598
+	.db	2,35,0,7
+	.db	"terminal",0
+	.db	4
+	.dw	1169
+	.db	2,35,12,0
+.L71:
+	.db	5
+	.dw	715
+	.db	19
+	.db	"__INDIRECT__",0
+	.db	4,1,1,1,1,1,20
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	.L170-.L22
+.L170:
+	.db	10
+	.db	"unsigned short int",0
+	.db	2,7,20
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	836
+	.db	20
+	.db	"__ssize_t",0
+	.db	4,1,1
+	.dw	586
+	.db	20
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	586
+	.db	20
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L171-.L22
+.L171:
+	.db	5
+	.dw	.L172-.L22
+.L172:
+	.db	21,1,20
+	.db	"size_t",0
+	.db	5,20,25
+	.dw	836
+	.db	20
+	.db	"uint8_t",0
+	.db	6,22,33
+	.dw	781
+	.db	20
+	.db	"uint16_t",0
+	.db	6,24,33
+	.dw	1386
+	.db	20
+	.db	"int32_t",0
+	.db	6,25,33
+	.dw	586
+	.db	20
+	.db	"uint32_t",0
+	.db	6,26,33
+	.dw	836
+	.db	20
+	.db	"int_least8_t",0
+	.db	6,33,33
+	.dw	.L173-.L22
+.L173:
+	.db	10
+	.db	"char",0
+	.db	1,6,20
+	.db	"uint_least8_t",0
+	.db	6,34,33
+	.dw	781
+	.db	20
+	.db	"uint_least16_t",0
+	.db	6,36,33
+	.dw	1386
+	.db	20
+	.db	"off_t",0
+	.db	7,18,25
+	.dw	900
+	.db	20
+	.db	"ssize_t",0
+	.db	7,28,25
+	.dw	586
+	.db	20
+	.db	"pid_t",0
+	.db	7,34,13
+	.dw	586
+	.db	20
+	.db	"time_t",0
+	.db	7,36,27
+	.dw	.L174-.L22
+.L174:
+	.db	10
+	.db	"unsigned long int",0
+	.db	4,7,20
+	.db	"posix_thread_t",0
+	.db	7,44,25
+	.dw	.L175-.L22
+.L175:
+	.db	18
+	.db	"thread_t",0
+	.db	7,44,16,1,20
+	.db	"posix_threadqueue_t",0
+	.db	7,50,9
+	.dw	.L176-.L22
+.L176:
+	.db	6
+	.db	"posix_threadqueue_t",0
+	.db	7,46,17,8,7
+	.db	"head",0
+	.db	4
+	.dw	.L177-.L22
+	.db	2,35,0,7
+	.db	"tail",0
+	.db	4
+	.dw	.L177-.L22
+	.db	2,35,4,0
+.L177:
+	.db	5
+	.dw	1746
+	.db	20
+	.db	"pthread_mutex_t",0
+	.db	7,160,1,33
+	.dw	.L178-.L22
+.L178:
+	.db	6
+	.db	"_pthread_mutex_t",0
+	.db	7,162,1,8,32,22
+	.db	"type",0
+	.db	1
+	.dw	781
+	.db	2,0,2,35,0,22
+	.db	"protocol",0
+	.db	1
+	.dw	781
+	.db	2,2,2,35,0,22
+	.db	"prioceiling",0
+	.db	4
+	.dw	836
+	.db	16,4,2,35,0,22
+	.db	"recursive",0
+	.db	2
+	.dw	1386
+	.db	8,4,2,35,2,22
+	.db	"preprio",0
+	.db	2
+	.dw	.L179-.L22
+	.db	16,0,2,35,4,7
+	.db	"initi",0
+	.db	4
+	.dw	586
+	.db	2,35,8,7
+	.db	"owner",0
+	.db	4
+	.dw	1842
+	.db	2,35,12,7
+	.db	"nestup",0
+	.db	4
+	.dw	.L180-.L22
+	.db	2,35,16,7
+	.db	"nestdown",0
+	.db	4
+	.dw	.L180-.L22
+	.db	2,35,20,7
+	.db	"queue",0
+	.db	8
+	.dw	1788
+	.db	2,35,24,0
+.L179:
+	.db	10
+	.db	"short int",0
+	.db	2,5
+.L180:
+	.db	5
+	.dw	1872
+	.db	20
+	.db	"clockid_t",0
+	.db	7,183,1,13
+	.dw	586
+	.db	20
+	.db	"ioreq_t",0
+	.db	2,18,3
+	.dw	715
+	.db	20
+	.db	"devio_iofuns_t",0
+	.db	1,17,31
+	.dw	471
+	.db	20
+	.db	"devio_t",0
+	.db	1,18,31
+	.dw	598
+	.db	20
+	.db	"_iob_flag_t",0
+	.db	8,92,25
+	.dw	1386
+	.db	20
+	.db	"FILE",0
+	.db	8,105,25
+	.dw	.L181-.L22
+.L181:
+	.db	6
+	.db	"_iobuf",0
+	.db	8,94,8,20,7
+	.db	"_ptr",0
+	.db	4
+	.dw	1258
+	.db	2,35,0,7
+	.db	"_base",0
+	.db	4
+	.dw	1258
+	.db	2,35,4,7
+	.db	"_cnt",0
+	.db	4
+	.dw	586
+	.db	2,35,8,7
+	.db	"_bufsiz",0
+	.db	4
+	.dw	586
+	.db	2,35,12,7
+	.db	"_flag",0
+	.db	2
+	.dw	1386
+	.db	2,35,16,7
+	.db	"_file",0
+	.db	1
+	.dw	781
+	.db	2,35,18,0,20
+	.db	"terminal_t",0
+	.db	3,31,31
+	.dw	1174
+	.db	20
+	.db	"terminal_to_serial_cfg_instance_t",0
+	.db	9,22,3
+	.dw	.L182-.L22
+.L182:
+	.db	13,9,18,9,8,7
+	.db	"serial_adaptor",0
+	.db	4
+	.dw	586
+	.db	2,35,0,7
+	.db	"drv_terminal",0
+	.db	4
+	.dw	586
+	.db	2,35,4,0,23
+	.db	"terminal_to_serial_instance_table",0
+	.db	9,24,48
+	.dw	.L183-.L22
+	.db	1,1
+.L183:
+	.db	11
+	.dw	.L184-.L22
+.L184:
+	.db	24
+	.dw	2363
+	.db	25,0,20
+	.db	"serial_cfg_instance_t",0
+	.db	10,22,3
+	.dw	.L185-.L22
+.L185:
+	.db	13,10,18,9,8,7
+	.db	"name",0
+	.db	4
+	.dw	658
+	.db	2,35,0,7
+	.db	"serial_adaptor",0
+	.db	4
+	.dw	586
+	.db	2,35,4,0,23
+	.db	"serial_instance_table",0
+	.db	10,24,36
+	.dw	.L186-.L22
+	.db	1,1
+.L186:
+	.db	11
+	.dw	.L187-.L22
+.L187:
+	.db	24
+	.dw	2501
+	.db	25,0,20
+	.db	"terminal_devio_t",0
+	.db	4,39,3
+	.dw	1306
+.L124:
+	.db	26,16
+	.dw	1306
+	.db	27,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L23:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,5,0
+	.db	3,8,58,15,59,15,57,15,73,19,0,0,4,11,0,0,0,5,15,0,73,19,0,0,6,19,1,3,8,58,15,59,15,57,15,11,15,0,0,7,13
+	.db	0,3,8,11,15,73,19,56,9,0,0,8,21,1,73,19,54,15,39,12,0,0,9,5,0,73,19,0,0,10,36,0,3,8,11,15,62,15,0,0,11
+	.db	38,0,73,19,0,0,12,59,0,3,8,0,0,13,19,1,58,15,59,15,57,15,11,15,0,0,14,46,1,49,19,0,0,15,5,0,49,19,0,0
+	.db	16,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39
+	.db	12,63,12,60,12,0,0,18,19,0,3,8,58,15,59,15,57,15,60,12,0,0,19,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60
+	.db	12,0,0,20,22,0,3,8,58,15,59,15,57,15,73,19,0,0,21,21,0,54,15,0,0,22,13,0,3,8,11,15,73,19,13,15,12,15,56
+	.db	9,0,0,23,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,24,1,1,73,19,0,0,25,33,0,0,0,26,1,1,11,15,73
+	.db	19,0,0,27,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L24:
+	.dw	.L189-.L188
+.L188:
+	.dh	3
+	.dw	.L191-.L190
+.L190:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\internal\\devio_adaptor.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\internal\\ioreq.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\terminal\\include\\drv_terminal.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\terminal_to_serial_cfg_instance.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\serial_cfg_instance.h",0
+	.db	0,0,0,0
+.L191:
+.L189:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_open')
+.L25:
+	.dw	503
+	.dh	3
+	.dw	.L26
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L28,.L27
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_open",0
+	.db	1,89,12
+	.dw	.L59
+	.db	1,1
+	.dw	.L14,.L60,.L13
+	.db	4
+	.db	"dev",0
+	.db	1,89,45
+	.dw	.L61,.L62
+	.db	4
+	.db	"flags",0
+	.db	1,89,54
+	.dw	.L59,.L63
+	.db	5
+	.dw	.L14,.L60
+	.db	6
+	.db	"id",0
+	.db	1,91,9
+	.dw	.L59,.L64
+	.db	6
+	.db	"terminal_dev",0
+	.db	1,92,23
+	.dw	.L65,.L66
+	.db	6
+	.db	"terminal",0
+	.db	1,93,17
+	.dw	.L67,.L68
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_open')
+.L26:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_open')
+.L27:
+	.dw	.L193-.L192
+.L192:
+	.dh	3
+	.dw	.L195-.L194
+.L194:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0,0
+.L195:
+	.db	5,12,7,0,5,2
+	.dw	.L14
+	.db	3,216,0,1,5,33,9
+	.dh	.L131-.L14
+	.db	3,6,1,5,12
+	.db	10+9*((.L196-.L131)/4)
+	.db	5,5,9
+	.dh	.L130-.L196
+	.db	3,5,1,7
+	.db	14+9*((.L197-.L130)/4)
+	.db	5,42
+	.db	16+9*((.L198-.L197)/4)
+	.db	5,9
+	.db	15+9*((.L199-.L198)/4)
+	.db	5,5
+	.db	17+9*((.L3-.L199)/4)
+	.db	5,1
+	.db	15+9*((.L4-.L3)/4)
+	.db	9
+	.dh	.L29-.L4
+	.db	0,1,1
+.L193:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_open')
+.L28:
+	.dw	-1
+	.dw	.L14
+	.dw	0
+	.dw	.L29-.L14
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_write')
+.L30:
+	.dw	441
+	.dh	3
+	.dw	.L31
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L33,.L32
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_write",0
+	.db	1,116,16
+	.dw	.L59
+	.db	1,1
+	.dw	.L16,.L69,.L15
+	.db	4
+	.db	"dev",0
+	.db	1,116,50
+	.dw	.L61,.L70
+	.db	4
+	.db	"iotx",0
+	.db	1,116,64
+	.dw	.L71,.L72
+	.db	5
+	.dw	.L16,.L69
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_write')
+.L31:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_write')
+.L32:
+	.dw	.L201-.L200
+.L200:
+	.dh	3
+	.dw	.L203-.L202
+.L202:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0,0
+.L203:
+	.db	5,16,7,0,5,2
+	.dw	.L16
+	.db	3,243,0,1,5,91
+	.db	18+9*((.L139-.L16)/4)
+	.db	5,5
+	.db	16+9*((.L204-.L139)/4)
+	.db	5,1
+	.db	15+9*((.L205-.L204)/4)
+	.db	9
+	.dh	.L34-.L205
+	.db	0,1,1
+.L201:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_write')
+.L33:
+	.dw	-1
+	.dw	.L16
+	.dw	0
+	.dw	.L34-.L16
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_read')
+.L35:
+	.dw	443
+	.dh	3
+	.dw	.L36
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L38,.L37
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_read",0
+	.db	1,136,1,16
+	.dw	.L59
+	.db	1,1
+	.dw	.L18,.L73,.L17
+	.db	4
+	.db	"dev",0
+	.db	1,136,1,49
+	.dw	.L61,.L74
+	.db	4
+	.db	"iorx",0
+	.db	1,136,1,63
+	.dw	.L71,.L75
+	.db	5
+	.dw	.L18,.L73
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_read')
+.L36:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_read')
+.L37:
+	.dw	.L207-.L206
+.L206:
+	.dh	3
+	.dw	.L209-.L208
+.L208:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0,0
+.L209:
+	.db	5,16,7,0,5,2
+	.dw	.L18
+	.db	3,135,1,1,5,84
+	.db	18+9*((.L147-.L18)/4)
+	.db	5,5
+	.db	16+9*((.L210-.L147)/4)
+	.db	5,1
+	.db	15+9*((.L211-.L210)/4)
+	.db	9
+	.dh	.L39-.L211
+	.db	0,1,1
+.L207:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_read')
+.L38:
+	.dw	-1
+	.dw	.L18
+	.dw	0
+	.dw	.L39-.L18
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_ctl')
+.L40:
+	.dw	493
+	.dh	3
+	.dw	.L41
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L43,.L42
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_ctl",0
+	.db	1,159,1,12
+	.dw	.L59
+	.db	1,1
+	.dw	.L20,.L76,.L19
+	.db	4
+	.db	"dev",0
+	.db	1,159,1,44
+	.dw	.L61,.L77
+	.db	4
+	.db	"cmd",0
+	.db	1,159,1,53
+	.dw	.L59,.L78
+	.db	4
+	.db	"buf",0
+	.db	1,159,1,64
+	.dw	.L79,.L80
+	.db	4
+	.db	"size",0
+	.db	1,159,1,76
+	.dw	.L81,.L82
+	.db	4
+	.db	"res",0
+	.db	1,159,1,87
+	.dw	.L83,.L84
+	.db	5
+	.dw	.L20,.L76
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_ctl')
+.L41:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_ctl')
+.L42:
+	.dw	.L213-.L212
+.L212:
+	.dh	3
+	.dw	.L215-.L214
+.L214:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0,0
+.L215:
+	.db	5,1,7,0,5,2
+	.dw	.L20
+	.db	3,169,1,1,5,5,7
+	.db	13+9*((.L216-.L20)/4)
+	.db	5,1,9
+	.dh	.L44-.L216
+	.db	3,1,0,1,1
+.L213:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_ctl')
+.L43:
+	.dw	-1
+	.dw	.L20
+	.dw	0
+	.dw	.L44-.L20
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_mmap')
+.L45:
+	.dw	505
+	.dh	3
+	.dw	.L46
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L48,.L47
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_mmap",0
+	.db	1,30,12
+	.dw	.L59
+	.db	1,1
+	.dw	.L10,.L85,.L9
+	.db	4
+	.db	"dev",0
+	.db	1,30,45
+	.dw	.L61,.L86
+	.db	4
+	.db	"addr",0
+	.db	1,30,56
+	.dw	.L79,.L87
+	.db	4
+	.db	"len",0
+	.db	1,30,69
+	.dw	.L81,.L88
+	.db	4
+	.db	"flag",0
+	.db	1,30,78
+	.dw	.L59,.L89
+	.db	4
+	.db	"off",0
+	.db	1,30,90
+	.dw	.L90,.L91
+	.db	4
+	.db	"ret",0
+	.db	1,30,102
+	.dw	.L92,.L93
+	.db	5
+	.dw	.L10,.L85
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_mmap')
+.L46:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_mmap')
+.L47:
+	.dw	.L218-.L217
+.L217:
+	.dh	3
+	.dw	.L220-.L219
+.L219:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0,0
+.L220:
+	.db	5,1,7,0,5,2
+	.dw	.L10
+	.db	3,32,1,5,5,7
+	.db	13+9*((.L221-.L10)/4)
+	.db	5,1,9
+	.dh	.L49-.L221
+	.db	3,1,0,1,1
+.L218:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_mmap')
+.L48:
+	.dw	-1
+	.dw	.L10
+	.dw	0
+	.dw	.L49-.L10
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_terminal_to_serial_init')
+.L50:
+	.dw	568
+	.dh	3
+	.dw	.L51
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L53,.L52
+	.db	2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_init",0
+	.db	1,51,13,1,1,1
+	.dw	.L12,.L94,.L11
+	.db	4
+	.dw	.L12,.L94
+	.db	5
+	.dw	.L95,.L12,.L96
+	.db	6
+	.dw	.L97,.L98
+	.db	6
+	.dw	.L99,.L100
+	.db	6
+	.dw	.L101,.L102
+	.db	6
+	.dw	.L103,.L104
+	.db	6
+	.dw	.L105,.L106
+	.db	6
+	.dw	.L107,.L108
+	.db	6
+	.dw	.L109,.L110
+	.db	7
+	.dw	.L111,.L12,.L96
+	.db	0,4
+	.dw	.L96,.L94
+	.db	5
+	.dw	.L112,.L96,.L113
+	.db	6
+	.dw	.L114,.L115
+	.db	6
+	.dw	.L116,.L117
+	.db	6
+	.dw	.L118,.L119
+	.db	6
+	.dw	.L120,.L121
+	.db	7
+	.dw	.L122,.L96,.L113
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_terminal_to_serial_init')
+.L51:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,5,0,49,16,2,6,0,0,7,11
+	.db	0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_terminal_to_serial_init')
+.L52:
+	.dw	.L223-.L222
+.L222:
+	.dh	3
+	.dw	.L225-.L224
+.L224:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\internal\\devio_adaptor.h",0
+	.db	0,0,0,0
+.L225:
+	.db	4,2,5,31,7,0,5,2
+	.dw	.L12
+	.db	3,62,1,5,32
+	.db	15+9*((.L226-.L12)/4)
+	.db	5,31
+	.db	15+9*((.L227-.L226)/4)
+	.db	5,30
+	.db	15+9*((.L228-.L227)/4)
+	.db	5,32,9
+	.dh	.L229-.L228
+	.db	3,6,1,5,31,9
+	.dh	.L96-.L229
+	.db	3,10,1,5,33,9
+	.dh	.L230-.L96
+	.db	3,1,1
+	.db	15+9*((.L231-.L230)/4)
+	.db	4,1,5,40,9
+	.dh	.L113-.L231
+	.db	3,118,1,4,2,5,33,7,9
+	.dh	.L232-.L113
+	.db	3,10,1,4,1,5,1,9
+	.dh	.L54-.L232
+	.db	3,120,0,1,1
+.L223:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_terminal_to_serial_init')
+.L53:
+	.dw	-1
+	.dw	.L12
+	.dw	0
+	.dw	.L54-.L12
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L55:
+	.dw	384
+	.dh	3
+	.dw	.L56
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_iofuncs",0
+	.db	4,41,23
+	.dw	.L123
+	.db	5,3
+	.dw	terminal_to_serial_iofuncs
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L56:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L57:
+	.dw	382
+	.dh	3
+	.dw	.L58
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\serial\\adaptors\\terminal\\src\\terminal_to_serial.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L21
+	.db	3
+	.db	"terminal_to_serial_table",0
+	.db	4,42,25
+	.dw	.L124
+	.db	5,3
+	.dw	terminal_to_serial_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L58:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L102:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_write')
+.L70:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L138-.L16
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L87:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_ctl')
+.L19:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L100:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_read')
+.L75:
+	.dw	-1
+	.dw	.L18,.L18-.L18,.L145-.L18
+	.dh	1
+	.db	85
+	.dw	.L147-.L18,.L143-.L18
+	.dh	1
+	.db	96
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_write')
+.L72:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L137-.L16
+	.dh	1
+	.db	85
+	.dw	.L139-.L16,.L135-.L16
+	.dh	1
+	.db	96
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L119:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_read')
+.L74:
+	.dw	-1
+	.dw	.L18,.L18-.L18,.L146-.L18
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L115:
+	.dw	0,0
+.L104:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L93:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	2
+	.db	145,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_read')
+.L17:
+	.dw	-1
+	.dw	.L18,.L18-.L18,.L140-.L18
+	.dh	2
+	.db	141,0
+	.dw	.L140-.L18,.L73-.L18
+	.dh	2
+	.db	141,8
+	.dw	.L73-.L18,.L73-.L18
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L86:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L106:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_write')
+.L15:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L132-.L16
+	.dh	2
+	.db	141,0
+	.dw	.L132-.L16,.L69-.L16
+	.dh	2
+	.db	141,8
+	.dw	.L69-.L16,.L69-.L16
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_open')
+.L13:
+	.dw	-1
+	.dw	.L14,.L14-.L14,.L125-.L14
+	.dh	2
+	.db	141,0
+	.dw	.L125-.L14,.L60-.L14
+	.dh	2
+	.db	141,8
+	.dw	.L60-.L14,.L60-.L14
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_ctl')
+.L82:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L9:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L11:
+	.dw	-1
+	.dw	.L12,.L12-.L12,.L94-.L12
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_open')
+.L64:
+	.dw	-1
+	.dw	.L14,.L131-.L14,.L60-.L14
+	.dh	1
+	.db	84
+	.dw	0,0
+.L66:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_ctl')
+.L80:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	1
+	.db	86
+	.dw	0,0
+.L77:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L88:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_open')
+.L62:
+	.dw	-1
+	.dw	.L14,.L14-.L14,.L130-.L14
+	.dh	1
+	.db	84
+	.dw	.L131-.L14,.L128-.L14
+	.dh	1
+	.db	96
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L89:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_ctl')
+.L78:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	1
+	.db	85
+	.dw	0,0
+.L84:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L76-.L20
+	.dh	2
+	.db	145,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L98:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_open')
+.L63:
+	.dw	-1
+	.dw	.L14,.L14-.L14,.L130-.L14
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_mmap')
+.L91:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L85-.L10
+	.dh	2
+	.db	145,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L108:
+	.dw	0,0
+.L117:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_open')
+.L68:
+	.dw	-1
+	.dw	.L14,.L130-.L14,.L4-.L14
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_terminal_to_serial_init')
+.L121:
+	.dw	0,0
+.L110:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L233:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_mmap')
+	.dw	52
+	.dw	.L233,.L10,.L85-.L10
+	.db	8,3,8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_init')
+	.dw	12
+	.dw	.L233,.L12,.L94-.L12
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_open')
+	.dw	64
+	.dw	.L233,.L14,.L60-.L14
+	.db	4
+	.dw	(.L125-.L14)/4
+	.db	19,8,22,29,3,19,141,8,4
+	.dw	(.L126-.L125)/4
+	.db	17,31,120,4
+	.dw	(.L127-.L126)/4
+	.db	17,16,124,4
+	.dw	(.L128-.L127)/4
+	.db	208,4
+	.dw	(.L129-.L128)/4
+	.db	223,4
+	.dw	(.L60-.L129)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_write')
+	.dw	64
+	.dw	.L233,.L16,.L69-.L16
+	.db	4
+	.dw	(.L132-.L16)/4
+	.db	19,8,22,29,3,19,141,8,4
+	.dw	(.L133-.L132)/4
+	.db	17,31,120,4
+	.dw	(.L134-.L133)/4
+	.db	17,16,124,4
+	.dw	(.L135-.L134)/4
+	.db	208,4
+	.dw	(.L136-.L135)/4
+	.db	223,4
+	.dw	(.L69-.L136)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_read')
+	.dw	64
+	.dw	.L233,.L18,.L73-.L18
+	.db	4
+	.dw	(.L140-.L18)/4
+	.db	19,8,22,29,3,19,141,8,4
+	.dw	(.L141-.L140)/4
+	.db	17,31,120,4
+	.dw	(.L142-.L141)/4
+	.db	17,16,124,4
+	.dw	(.L143-.L142)/4
+	.db	208,4
+	.dw	(.L144-.L143)/4
+	.db	223,4
+	.dw	(.L73-.L144)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_terminal_to_serial_ctl')
+	.dw	52
+	.dw	.L233,.L20,.L76-.L20
+	.db	8,3,8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

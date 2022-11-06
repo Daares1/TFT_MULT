@@ -1,0 +1,618 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc2480a --dep-file=Output\frameout\graphics_BitstreamVeraSansMono8.d --make-target=Output\frameout\graphics_BitstreamVeraSansMono8.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\BitstreamVeraSansMono8.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\BitstreamVeraSansMono8.c"
+
+	.section	.rodata.BitstreamVeraSansMono8.bitstreamverasansmono8_data ,cluster('$group_rodata')
+	.global	bitstreamverasansmono8_data
+	.align	4
+bitstreamverasansmono8_data:	.type	object
+	.size	bitstreamverasansmono8_data,2632
+	.dh	7
+	.bs	4,0
+	.dh	768,768,768,768,768,768
+	.bs	2,0
+	.dh	768
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	3264,3264,3264
+	.bs	16,0
+	.dh	7
+	.bs	4,0
+	.dh	544,1312,16380,3136,2176,65520,8512,8704
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	768,8176,13056,13056,7040,880,816,16336,768,768
+	.bs	2,0
+	.dh	7
+	.bs	4,0
+	.dh	29696,52224,29776,256,2048,20944,816,464
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	1984,3072,2048,2560,8780,12504,9332,2968
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	768,768,768
+	.bs	16,0
+	.dh	7
+	.bs	2,0
+	.dh	512,1280,1024,2048,3072,3072,2048,1024,1280,512
+	.bs	4,0
+	.dh	7
+	.bs	2,0
+	.dh	2048,1280,256,512,768,768,512,256,1280,2048
+	.bs	4,0
+	.dh	7
+	.bs	4,0
+	.dh	768,4880,2944,2944,4880,768
+	.bs	10,0
+	.dh	7
+	.bs	8,0
+	.dh	768,768,16368,768,768
+	.bs	8,0
+	.dh	7
+	.bs	16,0
+	.dh	768,512,2048
+	.bs	4,0
+	.dh	7
+	.bs	12,0
+	.dh	4032
+	.bs	12,0
+	.dh	7
+	.bs	16,0
+	.dh	768,768
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	32,80,128,320,512,1280,2048,5120,8192
+	.bs	4,0
+	.dh	7
+	.bs	4,0
+	.dh	2000,6180,8200,12428,12300,8200,6180,2000
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16128,768,768,768,768,768,768,16368
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	7136,9240,12,20,96,576,6400,16380
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	3040,9244,24,4064,24,12,8216,7136
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	176,432,816,2352,9264,16380,48,48
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16368,12288,12288,16336,24,12,24,16336
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	1788,7424,9216,14304,13336,8204,5144,2016
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16380,20,48,144,128,576,512,2304
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	7140,12300,8200,3040,9240,12300,9240,3040
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	3024,9236,12296,9244,3036,24,116,16272
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	768,768
+	.bs	4,0
+	.dh	768,768
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	768,768
+	.bs	4,0
+	.dh	768,512,2048
+	.bs	4,0
+	.dh	7
+	.bs	8,0
+	.dh	24,1680,14336,1680,24
+	.bs	8,0
+	.dh	7
+	.bs	10,0
+	.dh	65520
+	.bs	2,0
+	.dh	65520
+	.bs	10,0
+	.dh	7
+	.bs	8,0
+	.dh	9216,1680,44,1680,9216
+	.bs	8,0
+	.dh	7
+	.bs	4,0
+	.dh	4048,48,96,384,768,768
+	.bs	2,0
+	.dh	768
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	736,2068,5132,8684,13068,13068,8684,5120,3328,736
+	.bs	2,0
+	.dh	7
+	.bs	4,0
+	.dh	640,960,1680,2400,3120,4080,5140,8200
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16356,12300,12296,16368,12312,12300,12312,16352
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	1780,6148,8192,12288,12288,8192,6148,1780
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16272,12388,12296,12300,12300,12296,12388,16272
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16380,12288,12288,16380,12288,12288,12288,16380
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16380,12288,12288,16380,12288,12288,12288,12288
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	1780,6148,8192,12288,12348,8204,6156,1764
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	12300,12300,12300,16380,12300,12300,12300,12300
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16368,768,768,768,768,768,768,16368
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	1008,48,48,48,48,48,8288,7040
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	12320,12496,12864,14592,14144,12480,12400,12312
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	12288,12288,12288,12288,12288,12288,12288,16380
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	13340,14380,13660,12940,12620,12300,12300,12300
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	13324,14348,13836,12812,12428,12444,12332,12316
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	2000,5140,8200,12300,12300,8200,5140,2000
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16352,12312,12300,12312,16352,12288,12288,12288
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	2000,5140,8200,12300,12300,8200,5140,2016,32
+	.bs	4,0
+	.dh	7
+	.bs	4,0
+	.dh	16352,12312,12300,12312,16352,12324,12296,12294
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	3044,9224,12288,7744,356,12,8216,7136
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	65532,768,768,768,768,768,768,768
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	12300,12300,12300,12300,12300,12300,9240,3040
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	8200,5140,6180,3120,2400,1360,960,640
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	49164,33544,34632,22916,23700,10352,13424,12336
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	9240,2080,2384,640,640,1360,2080,9240
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	36888,12336,6288,1600,768,768,768,768
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	16380,36,96,192,768,2304,6144,16380
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	3840,3072,3072,3072,3072,3072,3072,3072,3072,3840
+	.bs	4,0
+	.dh	7
+	.bs	4,0
+	.dh	8192,5120,2048,1280,512,320,128,80,32
+	.bs	4,0
+	.dh	7
+	.bs	2,0
+	.dh	3840,768,768,768,768,768,768,768,768,3840
+	.bs	4,0
+	.dh	7
+	.bs	4,0
+	.dh	2560,9600,20560
+	.bs	16,0
+	.dh	7
+	.bs	24,0
+	.dh	65520,7
+	.bs	2,0
+	.dh	1280,320
+	.bs	20,0
+	.dh	7
+	.bs	8,0
+	.dh	16272,48,7152,12336,12400,8048
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	12288,12288,12288,14208,13408,12336,12336,13408,14208
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	2032,5120,12288,12288,5120,2032
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	48,48,48,2928,9328,12336,12336,9328,2928
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	2944,9248,16368,12288,9216,3056
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	496,768,768,16368,768,768,768,768,768
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	2928,9328,12336,12336,9328,2928,96,3968
+	.bs	2,0
+	.dh	7
+	.bs	2,0
+	.dh	12288,12288,12288,14288,13408,12336,12336,12336,12336
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	768
+	.bs	4,0
+	.dh	16128,768,768,768,768,16368
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	768
+	.bs	4,0
+	.dh	16128,768,768,768,768,768,768,15616
+	.bs	2,0
+	.dh	7
+	.bs	2,0
+	.dh	12288,12288,12288,12432,12864,14592,13824,12416,12368
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	64512,3072,3072,3072,3072,3072,3072,3072,1984
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	14800,13104,13104,13104,13104,13104
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	14288,13408,12336,12336,12336,12336
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	2944,9312,12336,12336,9312,2944
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	14208,13408,12336,12336,13408,14208,12288,12288
+	.bs	2,0
+	.dh	7
+	.bs	8,0
+	.dh	2928,9328,12336,12336,9328,2928,48,48
+	.bs	2,0
+	.dh	7
+	.bs	8,0
+	.dh	3552,3344,3072,3072,3072,3072
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	7152,12288,10560,416,48,16272
+	.bs	6,0
+	.dh	7
+	.bs	4,0
+	.dh	3072,3072,65472,3072,3072,3072,3072,1984
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	12336,12336,12336,12336,9328,8048
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	8224,5200,2176,2176,1600,768
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	49164,20500,8992,10080,7632,3264
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	9312,2432,768,1856,3520,9312
+	.bs	6,0
+	.dh	7
+	.bs	8,0
+	.dh	12320,9296,6336,3392,1792,512,2304,14336
+	.bs	2,0
+	.dh	7
+	.bs	8,0
+	.dh	16368,144,576,1536,6144,16368
+	.bs	6,0
+	.dh	7
+	.bs	2,0
+	.dh	496,768,768,768,15616,1792,768,768,768,496
+	.bs	4,0
+	.dh	7
+	.bs	2,0
+	.dh	768,768,768,768,768,768,768,768,768,768
+	.dh	768
+	.bs	2,0
+	.dh	7
+	.bs	2,0
+	.dh	15616,768,768,768,496,832,768,768,768,15616
+	.bs	4,0
+	.dh	7
+	.bs	12,0
+	.dh	7684,4276
+	.bs	10,0
+	.endsec	; End of section
+
+	.section	.rodata.BitstreamVeraSansMono8.bitstreamverasansmono8 ,cluster('$group_rodata')
+	.global	bitstreamverasansmono8
+	.align	4
+bitstreamverasansmono8:	.type	object
+	.size	bitstreamverasansmono8,16
+	.dh	2,1,13,10
+	.db	33,94
+	.dh	7
+	.dw	bitstreamverasansmono8_data
+	.endsec	; End of section
+
+	.section	.debug_info
+.L3:
+	.dw	721
+	.dh	3
+	.dw	.L4
+	.db	4
+.L2:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\BitstreamVeraSansMono8.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L5
+	.db	2
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L12-.L3
+.L12:
+	.db	3
+	.dw	.L13-.L3
+.L13:
+	.db	4,1,2
+	.db	"uint8_t",0
+	.db	2,22,33
+	.dw	.L14-.L3
+.L14:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8,2
+	.db	"uint16_t",0
+	.db	2,24,33
+	.dw	.L15-.L3
+.L15:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,2
+	.db	"uint32_t",0
+	.db	2,26,33
+	.dw	.L16-.L3
+.L16:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"font_t",0
+	.db	4,82,24
+	.dw	.L17-.L3
+.L17:
+	.db	6
+	.db	"_font_s",0
+	.db	3,11,8,16,7
+	.db	"bits_per_pixel",0
+	.db	2
+	.dw	.L18-.L3
+	.db	2,35,0,7
+	.db	"values_per_line",0
+	.db	2
+	.dw	.L19-.L3
+	.db	2,35,2,7
+	.db	"height",0
+	.db	2
+	.dw	.L20-.L3
+	.db	2,35,4,7
+	.db	"centreheight",0
+	.db	2
+	.dw	.L21-.L3
+	.db	2,35,6,7
+	.db	"first_char",0
+	.db	1
+	.dw	.L22-.L3
+	.db	2,35,8,7
+	.db	"number_of_chars",0
+	.db	1
+	.dw	.L23-.L3
+	.db	2,35,9,7
+	.db	"space",0
+	.db	2
+	.dw	.L24-.L3
+	.db	2,35,10,7
+	.db	"data",0
+	.db	4
+	.dw	.L25-.L3
+	.db	2,35,12,0
+.L18:
+	.db	8
+	.dw	405
+.L19:
+	.db	8
+	.dw	405
+.L20:
+	.db	8
+	.dw	405
+.L21:
+	.db	8
+	.dw	405
+.L22:
+	.db	8
+	.dw	371
+.L23:
+	.db	8
+	.dw	371
+.L24:
+	.db	8
+	.dw	405
+.L25:
+	.db	3
+	.dw	.L26-.L3
+.L26:
+	.db	8
+	.dw	405
+.L10:
+	.db	8
+	.dw	475
+.L11:
+	.db	8
+	.dw	.L27-.L3
+.L27:
+	.db	9,200,20
+	.dw	.L28-.L3
+	.db	10,93,0
+.L28:
+	.db	9,28
+	.dw	405
+	.db	10,13,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L4:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,22,0,3,8,58,15,59,15,57,15,73,19,0,0,3,15,0,73,19,0,0
+	.db	4,21,0,54,15,0,0,5,36,0,3,8,11,15,62,15,0,0,6,19,1,3,8,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,11,15,73
+	.db	19,56,9,0,0,8,38,0,73,19,0,0,9,1,1,11,15,73,19,0,0,10,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L5:
+	.dw	.L30-.L29
+.L29:
+	.dh	3
+	.dw	.L32-.L31
+.L31:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\BitstreamVeraSansMono8.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\font.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0,0
+.L32:
+.L30:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_rodata')
+.L6:
+	.dw	366
+	.dh	3
+	.dw	.L7
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\BitstreamVeraSansMono8.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"bitstreamverasansmono8",0
+	.db	1,110,14
+	.dw	.L10
+	.db	1,5,3
+	.dw	bitstreamverasansmono8
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_rodata')
+.L7:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_rodata')
+.L8:
+	.dw	371
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\BitstreamVeraSansMono8.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"bitstreamverasansmono8_data",0
+	.db	1,12,16
+	.dw	.L11
+	.db	1,5,3
+	.dw	bitstreamverasansmono8_data
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_rodata')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

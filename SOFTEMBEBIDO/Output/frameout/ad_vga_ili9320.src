@@ -1,0 +1,835 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc6184a --dep-file=Output\frameout\ad_vga_ili9320_ad_vga_ili9320.d --make-target=Output\frameout\ad_vga_ili9320_ad_vga_ili9320.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\ad_vga_ili9320.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\adaptors\\vga_ili9320\\src\\ad_vga_ili9320.c"
+
+	.section	.text.ad_vga_ili9320.ad_vga_ili9320_init ,cluster('$group_ad_vga_ili9320_init')
+	.align	4
+	.global	ad_vga_ili9320_init
+; Function ad_vga_ili9320_init
+.L3:
+ad_vga_ili9320_init:	.type	func
+	lui	$v0,@hi(ad_vga_ili9320_instance_table)
+	lw	$v0,@lo(ad_vga_ili9320_instance_table)($v0)
+.L17:
+	li	$v1,0x19c
+	mult	$v0,$v0,$v1
+.L18:
+	lui	$v1,@hi(graphics_table)
+	addiu	$v1,$v1,@lo(graphics_table)
+	addu	$v0,$v0,$v1
+	sw	$zero,4($v0)
+.L85:
+	lui	$v1,@hi(vga_ili9320_open)
+	addiu	$v1,$v1,@lo(vga_ili9320_open)
+	sw	$v1,8($v0)
+.L86:
+	lui	$v1,@hi(vga_ili9320_screen_set)
+	addiu	$v1,$v1,@lo(vga_ili9320_screen_set)
+	sw	$v1,20($v0)
+.L87:
+	lui	$v1,@hi(vga_ili9320_set_screen)
+	addiu	$v1,$v1,@lo(vga_ili9320_set_screen)
+	sw	$v1,24($v0)
+.L88:
+	lui	$v1,@hi(vga_ili9320_get_screen)
+	addiu	$v1,$v1,@lo(vga_ili9320_get_screen)
+.L16:
+	jr	$ra
+.L89:
+	sw	$v1,28($v0)
+.L13:
+	.size	ad_vga_ili9320_init,*-ad_vga_ili9320_init
+.L12:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'__INDIRECT__','vga_ili9320_open'
+	.calls	'__INDIRECT__','vga_ili9320_set_screen'
+	.calls	'__INDIRECT__','vga_ili9320_screen_set'
+	.calls	'__INDIRECT__','vga_ili9320_get_screen'
+	.calls	'ad_vga_ili9320_init','',0
+	.extern	ad_vga_ili9320_instance_table
+	.extern	graphics_table
+	.extern	vga_ili9320_open
+	.extern	vga_ili9320_set_screen
+	.extern	vga_ili9320_screen_set
+	.extern	vga_ili9320_get_screen
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L5:
+	.dw	2991
+	.dh	3
+	.dw	.L6
+	.db	4
+.L4:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\adaptors\\vga_ili9320\\src\\ad_vga_ili9320.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L7
+	.db	2
+	.db	"vga_ili9320_open",0
+	.db	1,35,23
+	.dw	.L19-.L5
+	.db	1,1,1,1,3
+	.db	"id",0
+	.db	1,35,53
+	.dw	.L20-.L5
+	.db	0
+.L19:
+	.db	4
+	.dw	.L21-.L5
+.L21:
+	.db	5
+	.db	"_vga_ili9320_s",0
+	.db	1,33,16,1
+.L20:
+	.db	6
+	.db	"unsigned int",0
+	.db	4,7,7
+	.db	"vga_ili9320_set_screen",0
+	.db	1,36,13,1,1,1,1,3
+	.db	"drv",0
+	.db	1,36,61
+	.dw	384
+	.db	3
+	.db	"screen",0
+	.db	1,36,76
+	.dw	.L22-.L5
+	.db	0
+.L22:
+	.db	6
+	.db	"unsigned long int",0
+	.db	4,7,2
+	.db	"vga_ili9320_screen_set",0
+	.db	1,37,13
+	.dw	.L23-.L5
+	.db	1,1,1,1,3
+	.db	"drv",0
+	.db	1,37,61
+	.dw	384
+	.db	0
+.L23:
+	.db	6
+	.db	"_Bool",0
+	.db	1,2,2
+	.db	"vga_ili9320_get_screen",0
+	.db	1,38,18
+	.dw	484
+	.db	1,1,1,1,3
+	.db	"drv",0
+	.db	1,38,72
+	.dw	.L24-.L5
+	.db	0
+.L24:
+	.db	4
+	.dw	.L25-.L5
+.L25:
+	.db	8
+	.dw	389
+.L14:
+	.db	6
+	.db	"int",0
+	.db	4,5,9
+	.db	"__INDIRECT__",0
+	.db	2,1,1,1,1,1,10
+	.db	"__wchar_t",0
+	.db	2,1,1
+	.dw	.L26-.L5
+.L26:
+	.db	6
+	.db	"unsigned short int",0
+	.db	2,7,10
+	.db	"__size_t",0
+	.db	2,1,1
+	.dw	409
+	.db	10
+	.db	"__ptrdiff_t",0
+	.db	2,1,1
+	.dw	620
+	.db	10
+	.db	"__codeptr",0
+	.db	2,1,1
+	.dw	.L27-.L5
+.L27:
+	.db	4
+	.dw	.L28-.L5
+.L28:
+	.db	11,1,10
+	.db	"int8_t",0
+	.db	3,21,33
+	.dw	.L29-.L5
+.L29:
+	.db	6
+	.db	"char",0
+	.db	1,6,10
+	.db	"uint8_t",0
+	.db	3,22,33
+	.dw	.L30-.L5
+.L30:
+	.db	6
+	.db	"unsigned char",0
+	.db	1,8,10
+	.db	"uint16_t",0
+	.db	3,24,33
+	.dw	665
+	.db	10
+	.db	"int32_t",0
+	.db	3,25,33
+	.dw	620
+	.db	10
+	.db	"uint32_t",0
+	.db	3,26,33
+	.dw	409
+	.db	10
+	.db	"uintptr_t",0
+	.db	3,58,33
+	.dw	484
+	.db	10
+	.db	"size_t",0
+	.db	4,20,25
+	.dw	409
+	.db	10
+	.db	"ad_vga_ili9320_cfg_instance_t",0
+	.db	5,22,3
+	.dw	.L31-.L5
+.L31:
+	.db	12,5,18,9,8,13
+	.db	"ad_graphics",0
+	.db	4
+	.dw	620
+	.db	2,35,0,13
+	.db	"drv_vga_ili9320",0
+	.db	4
+	.dw	620
+	.db	2,35,4,0,14
+	.db	"ad_vga_ili9320_instance_table",0
+	.db	5,24,44
+	.dw	.L32-.L5
+	.db	1,1
+.L32:
+	.db	8
+	.dw	.L33-.L5
+.L33:
+	.db	15
+	.dw	926
+	.db	16,0,10
+	.db	"color_t",0
+	.db	6,29,25
+	.dw	409
+	.db	10
+	.db	"color_format_t",0
+	.db	6,79,3
+	.dw	.L34-.L5
+.L34:
+	.db	17,6,64,9,4,18
+	.db	"COLOR_INVALID",0
+	.db	0,18
+	.db	"COLOR_PALETTE1",0
+	.db	1,18
+	.db	"COLOR_PALETTE2",0
+	.db	2,18
+	.db	"COLOR_PALETTE4",0
+	.db	4,18
+	.db	"COLOR_PALETTE8",0
+	.db	8,18
+	.db	"COLOR_RGB565",0
+	.db	16,18
+	.db	"COLOR_RGB888",0
+	.db	24,18
+	.db	"COLOR_NO_BUFFER",0
+	.db	25,18
+	.db	"COLOR_NO_BUFFER_BGR565",0
+	.db	26,18
+	.db	"COLOR_NO_BUFFER_BW",0
+	.db	27,18
+	.db	"COLOR_NO_BUFFER_MONO2",0
+	.db	28,18
+	.db	"COLOR_NO_BUFFER_MONO4",0
+	.db	29,18
+	.db	"COLOR_NO_BUFFER_MONO8",0
+	.db	30,0,10
+	.db	"font_t",0
+	.db	6,82,24
+	.dw	.L35-.L5
+.L35:
+	.db	5
+	.db	"_font_s",0
+	.db	6,82,16,1,10
+	.db	"canvas_t",0
+	.db	8,14,26
+	.dw	.L36-.L5
+.L36:
+	.db	19
+	.db	"_canvas_s",0
+	.db	7,8,8,88,13
+	.db	"buffer",0
+	.db	4
+	.dw	484
+	.db	2,35,0,13
+	.db	"draw_pixel",0
+	.db	4
+	.dw	.L37-.L5
+	.db	2,35,4,13
+	.db	"draw_pixel_alpha",0
+	.db	4
+	.dw	.L38-.L5
+	.db	2,35,8,13
+	.db	"get_pixel",0
+	.db	4
+	.dw	.L39-.L5
+	.db	2,35,12,13
+	.db	"draw_horizontal",0
+	.db	4
+	.dw	.L40-.L5
+	.db	2,35,16,13
+	.db	"draw_vertical",0
+	.db	4
+	.dw	.L40-.L5
+	.db	2,35,20,13
+	.db	"convert_color_to_native",0
+	.db	4
+	.dw	.L41-.L5
+	.db	2,35,24,13
+	.db	"convert_color_from_native",0
+	.db	4
+	.dw	.L41-.L5
+	.db	2,35,28,13
+	.db	"drv",0
+	.db	4
+	.dw	.L42-.L5
+	.db	2,35,32,13
+	.db	"buffer_width",0
+	.db	4
+	.dw	620
+	.db	2,35,36,13
+	.db	"buffer_height",0
+	.db	4
+	.dw	620
+	.db	2,35,40,13
+	.db	"canvas_left",0
+	.db	4
+	.dw	620
+	.db	2,35,44,13
+	.db	"canvas_top",0
+	.db	4
+	.dw	620
+	.db	2,35,48,13
+	.db	"canvas_width",0
+	.db	4
+	.dw	620
+	.db	2,35,52,13
+	.db	"canvas_height",0
+	.db	4
+	.dw	620
+	.db	2,35,56,13
+	.db	"pane_left",0
+	.db	4
+	.dw	620
+	.db	2,35,60,13
+	.db	"pane_top",0
+	.db	4
+	.dw	620
+	.db	2,35,64,13
+	.db	"pane_right",0
+	.db	4
+	.dw	620
+	.db	2,35,68,13
+	.db	"pane_bottom",0
+	.db	4
+	.dw	620
+	.db	2,35,72,13
+	.db	"default_font",0
+	.db	4
+	.dw	.L43-.L5
+	.db	2,35,76,13
+	.db	"color_format",0
+	.db	4
+	.dw	1069
+	.db	2,35,80,13
+	.db	"rotation",0
+	.db	2
+	.dw	665
+	.db	2,35,84,13
+	.db	"allocation_type",0
+	.db	1
+	.dw	788
+	.db	2,35,86,13
+	.db	"locked",0
+	.db	1
+	.dw	553
+	.db	2,35,87,0
+.L37:
+	.db	4
+	.dw	.L44-.L5
+.L44:
+	.db	20,1,1,21
+	.dw	.L45-.L5
+	.db	21
+	.dw	620
+	.db	21
+	.dw	620
+	.db	21
+	.dw	409
+	.db	0
+.L45:
+	.db	4
+	.dw	.L46-.L5
+.L46:
+	.db	8
+	.dw	1370
+.L38:
+	.db	4
+	.dw	.L47-.L5
+.L47:
+	.db	20,1,1,21
+	.dw	1937
+	.db	21
+	.dw	620
+	.db	21
+	.dw	620
+	.db	21
+	.dw	409
+	.db	21
+	.dw	788
+	.db	0
+.L39:
+	.db	4
+	.dw	.L48-.L5
+.L48:
+	.db	22
+	.dw	409
+	.db	1,1,21
+	.dw	1937
+	.db	21
+	.dw	620
+	.db	21
+	.dw	620
+	.db	0
+.L40:
+	.db	4
+	.dw	.L49-.L5
+.L49:
+	.db	20,1,1,21
+	.dw	1937
+	.db	21
+	.dw	620
+	.db	21
+	.dw	620
+	.db	21
+	.dw	620
+	.db	21
+	.dw	409
+	.db	0
+.L41:
+	.db	4
+	.dw	.L50-.L5
+.L50:
+	.db	22
+	.dw	409
+	.db	1,1,21
+	.dw	409
+	.db	0
+.L42:
+	.db	4
+	.dw	.L51-.L5
+.L51:
+	.db	23
+	.db	"void",0
+.L43:
+	.db	4
+	.dw	.L52-.L5
+.L52:
+	.db	8
+	.dw	1340
+	.db	10
+	.db	"graphics_t",0
+	.db	6,86,28
+	.dw	.L53-.L5
+.L53:
+	.db	19
+	.db	"_graphics_s",0
+	.db	9,40,8,156,3,13
+	.db	"drv",0
+	.db	4
+	.dw	2061
+	.db	2,35,0,13
+	.db	"drv_id",0
+	.db	4
+	.dw	620
+	.db	2,35,4,13
+	.db	"drv_open",0
+	.db	4
+	.dw	.L54-.L5
+	.db	2,35,8,13
+	.db	"load_palette",0
+	.db	4
+	.dw	.L55-.L5
+	.db	2,35,12,13
+	.db	"default_font",0
+	.db	4
+	.dw	2072
+	.db	2,35,16,13
+	.db	"screen_is_set",0
+	.db	4
+	.dw	.L56-.L5
+	.db	2,35,20,13
+	.db	"set_screen",0
+	.db	4
+	.dw	.L57-.L5
+	.db	2,35,24,13
+	.db	"get_screen",0
+	.db	4
+	.dw	.L58-.L5
+	.db	2,35,28,13
+	.db	"width",0
+	.db	4
+	.dw	409
+	.db	2,35,32,13
+	.db	"height",0
+	.db	4
+	.dw	409
+	.db	2,35,36,13
+	.db	"visible_canvas",0
+	.db	4
+	.dw	.L59-.L5
+	.db	2,35,40,13
+	.db	"canvases",0
+	.db	224,2
+	.dw	.L60-.L5
+	.db	2,35,44,13
+	.db	"rotation",0
+	.db	4
+	.dw	620
+	.db	3,35,140,3,13
+	.db	"color_format",0
+	.db	4
+	.dw	1069
+	.db	3,35,144,3,13
+	.db	"canvas_count",0
+	.db	1
+	.dw	788
+	.db	3,35,148,3,13
+	.db	"initialized",0
+	.db	1
+	.dw	553
+	.db	3,35,149,3,13
+	.db	"set_color_routines",0
+	.db	4
+	.dw	.L61-.L5
+	.db	3,35,152,3,0
+.L54:
+	.db	4
+	.dw	.L62-.L5
+.L62:
+	.db	22
+	.dw	2061
+	.db	1,1,21
+	.dw	409
+	.db	0
+.L55:
+	.db	4
+	.dw	.L63-.L5
+.L63:
+	.db	20,1,1,21
+	.dw	2061
+	.db	21
+	.dw	.L64-.L5
+	.db	0
+.L64:
+	.db	4
+	.dw	409
+.L56:
+	.db	4
+	.dw	.L65-.L5
+.L65:
+	.db	22
+	.dw	553
+	.db	1,1,21
+	.dw	2061
+	.db	0
+.L57:
+	.db	4
+	.dw	.L66-.L5
+.L66:
+	.db	20,1,1,21
+	.dw	2061
+	.db	21
+	.dw	484
+	.db	0
+.L58:
+	.db	4
+	.dw	.L67-.L5
+.L67:
+	.db	22
+	.dw	484
+	.db	1,1,21
+	.dw	2061
+	.db	0
+.L59:
+	.db	4
+	.dw	1370
+.L60:
+	.db	24,224,2
+	.dw	1370
+	.db	25,3,0
+.L61:
+	.db	4
+	.dw	.L68-.L5
+.L68:
+	.db	20,1,1,21
+	.dw	.L69-.L5
+	.db	0
+.L69:
+	.db	4
+	.dw	1370
+	.db	14
+	.db	"graphics_table",0
+	.db	9,62,19
+	.dw	.L70-.L5
+	.db	1,1
+.L70:
+	.db	15
+	.dw	2101
+	.db	16,0,10
+	.db	"bmfileheader_t",0
+	.db	9,77,3
+	.dw	.L71-.L5
+.L71:
+	.db	12,9,71,9,14,13
+	.db	"type",0
+	.db	2
+	.dw	.L72-.L5
+	.db	2,35,0,13
+	.db	"size",0
+	.db	4
+	.dw	.L73-.L5
+	.db	2,35,2,13
+	.db	"reserved",0
+	.db	4
+	.dw	.L73-.L5
+	.db	2,35,6,13
+	.db	"offset",0
+	.db	4
+	.dw	.L73-.L5
+	.db	2,35,10,0
+.L72:
+	.db	24,2
+	.dw	.L74-.L5
+	.db	25,1,0
+.L74:
+	.db	6
+	.db	"char",0
+	.db	1,6
+.L73:
+	.db	24,4
+	.dw	788
+	.db	25,3,0,10
+	.db	"bminfoheader_t",0
+	.db	9,100,3
+	.dw	.L75-.L5
+.L75:
+	.db	12,9,87,9,40,13
+	.db	"size",0
+	.db	4
+	.dw	2735
+	.db	2,35,0,13
+	.db	"width",0
+	.db	4
+	.dw	2735
+	.db	2,35,4,13
+	.db	"height",0
+	.db	4
+	.dw	2735
+	.db	2,35,8,13
+	.db	"planes",0
+	.db	2
+	.dw	.L76-.L5
+	.db	2,35,12,13
+	.db	"bitcount",0
+	.db	2
+	.dw	.L76-.L5
+	.db	2,35,14,13
+	.db	"compression",0
+	.db	4
+	.dw	2735
+	.db	2,35,16,13
+	.db	"imagesize",0
+	.db	4
+	.dw	2735
+	.db	2,35,20,13
+	.db	"xppm",0
+	.db	4
+	.dw	2735
+	.db	2,35,24,13
+	.db	"yppm",0
+	.db	4
+	.dw	2735
+	.db	2,35,28,13
+	.db	"colorused",0
+	.db	4
+	.dw	2735
+	.db	2,35,32,13
+	.db	"colorimportant",0
+	.db	4
+	.dw	2735
+	.db	2,35,36,0
+.L76:
+	.db	24,2
+	.dw	788
+	.db	25,1,0,10
+	.db	"vga_ili9320_t",0
+	.db	1,33,31
+	.dw	389
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L6:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.db	12,0,0,3,5,0,3,8,58,15,59,15,57,15,73,19,0,0,4,15,0,73,19,0,0,5,19,0,3,8,58,15,59,15,57,15,60,12,0,0,6
+	.db	36,0,3,8,11,15,62,15,0,0,7,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,8,38,0,73,19,0,0,9,46
+	.db	0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,21,0,54,15,0
+	.db	0,12,19,1,58,15,59,15,57,15,11,15,0,0,13,13,0,3,8,11,15,73,19,56,9,0,0,14,52,0,3,8,58,15,59,15,57,15,73
+	.db	19,63,12,60,12,0,0,15,1,1,73,19,0,0,16,33,0,0,0,17,4,1,58,15,59,15,57,15,11,15,0,0,18,40,0,3,8,28,13,0
+	.db	0,19,19,1,3,8,58,15,59,15,57,15,11,15,0,0,20,21,1,54,15,39,12,0,0,21,5,0,73,19,0,0,22,21,1,73,19,54,15
+	.db	39,12,0,0,23,59,0,3,8,0,0,24,1,1,11,15,73,19,0,0,25,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L7:
+	.dw	.L78-.L77
+.L77:
+	.dh	3
+	.dw	.L80-.L79
+.L79:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_ili9320\\include\\drv_vga_ili9320.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\adaptors\\vga_ili9320\\src\\ad_vga_ili9320.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\ad_vga_ili9320_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\canvas_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\canvas.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\graphics_i.h",0
+	.db	0,0,0,0
+.L80:
+.L78:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_ad_vga_ili9320_init')
+.L8:
+	.dw	423
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\adaptors\\vga_ili9320\\src\\ad_vga_ili9320.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L11,.L10
+	.db	2
+	.dw	.L4
+	.db	3
+	.db	"ad_vga_ili9320_init",0
+	.db	1,11,6,1,1,1
+	.dw	.L3,.L13,.L2
+	.db	4
+	.dw	.L3,.L13
+	.db	5
+	.db	"id",0
+	.db	1,13,9
+	.dw	.L14,.L15
+	.db	6
+	.dw	.L3,.L16
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_ad_vga_ili9320_init')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,11,0
+	.db	17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_ad_vga_ili9320_init')
+.L10:
+	.dw	.L82-.L81
+.L81:
+	.dh	3
+	.dw	.L84-.L83
+.L83:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\adaptors\\vga_ili9320\\src\\ad_vga_ili9320.c",0
+	.db	0,0,0,0
+.L84:
+	.db	5,63,7,0,5,2
+	.dw	.L3
+	.db	3,16,1,5,55
+	.db	16+9*((.L17-.L3)/4)
+	.db	5,72
+	.db	15+9*((.L85-.L17)/4)
+	.db	5,78
+	.db	15+9*((.L86-.L85)/4)
+	.db	15+9*((.L87-.L86)/4)
+	.db	15+9*((.L88-.L87)/4)
+	.db	5,1
+	.db	16+9*((.L16-.L88)/4)
+	.db	5,78,7
+	.db	12+9*((.L89-.L16)/4)
+	.db	5,1,9
+	.dh	.L12-.L89
+	.db	3,2,0,1,1
+.L82:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_ad_vga_ili9320_init')
+.L11:
+	.dw	-1
+	.dw	.L3
+	.dw	0
+	.dw	.L12-.L3
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_ad_vga_ili9320_init')
+.L2:
+	.dw	-1
+	.dw	.L3,.L3-.L3,.L13-.L3
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L15:
+	.dw	-1
+	.dw	.L3,.L17-.L3,.L18-.L3
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L90:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_ad_vga_ili9320_init')
+	.dw	44
+	.dw	.L90,.L3,.L13-.L3
+	.db	8,4,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27
+	.endsec	; End of section
+
+	; Module end
+	.end

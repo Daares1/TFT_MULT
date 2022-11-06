@@ -1,0 +1,385 @@
+.model TFT_MULTIFUNCIONAL
+.attrib fpga_pinnum 1 AE13
+.inputs CLK_BRD
+.attrib fpga_pinnum 1 AF14
+.inputs JTAG_NEXUS_TCK
+.attrib fpga_pinnum 1 AA19
+.inputs JTAG_NEXUS_TDI
+.attrib fpga_pinnum 1 AC20
+.outputs JTAG_NEXUS_TDO
+.attrib fpga_pinnum 1 AB20
+.inputs JTAG_NEXUS_TMS
+.attrib fpga_pinnum 1 P2
+.outputs LED_B<7>
+.attrib fpga_pinnum 1 P8
+.outputs LED_B<6>
+.attrib fpga_pinnum 1 AA10
+.outputs LED_B<5>
+.attrib fpga_pinnum 1 AC11
+.outputs LED_B<4>
+.attrib fpga_pinnum 1 AA23
+.outputs LED_B<3>
+.attrib fpga_pinnum 1 AC26
+.outputs LED_B<2>
+.attrib fpga_pinnum 1 W23
+.outputs LED_B<1>
+.attrib fpga_pinnum 1 AB24
+.outputs LED_B<0>
+.attrib fpga_pinnum 1 R1
+.outputs LED_G<7>
+.attrib fpga_pinnum 1 P3
+.outputs LED_G<6>
+.attrib fpga_pinnum 1 AE10
+.outputs LED_G<5>
+.attrib fpga_pinnum 1 W12
+.outputs LED_G<4>
+.attrib fpga_pinnum 1 AC25
+.outputs LED_G<3>
+.attrib fpga_pinnum 1 W21
+.outputs LED_G<2>
+.attrib fpga_pinnum 1 Y23
+.outputs LED_G<1>
+.attrib fpga_pinnum 1 Y24
+.outputs LED_G<0>
+.attrib fpga_pinnum 1 P1
+.outputs LED_R<7>
+.attrib fpga_pinnum 1 R9
+.outputs LED_R<6>
+.attrib fpga_pinnum 1 AC9
+.outputs LED_R<5>
+.attrib fpga_pinnum 1 V11
+.outputs LED_R<4>
+.attrib fpga_pinnum 1 Y21
+.outputs LED_R<3>
+.attrib fpga_pinnum 1 Y22
+.outputs LED_R<2>
+.attrib fpga_pinnum 1 V21
+.outputs LED_R<1>
+.attrib fpga_pinnum 1 V19
+.outputs LED_R<0>
+.attrib fpga_pinnum 1 F12
+.outputs SRAM0_A<17>
+.attrib fpga_pinnum 1 G12
+.outputs SRAM0_A<16>
+.attrib fpga_pinnum 1 B15
+.outputs SRAM0_A<15>
+.attrib fpga_pinnum 1 J19
+.outputs SRAM0_A<14>
+.attrib fpga_pinnum 1 J23
+.outputs SRAM0_A<13>
+.attrib fpga_pinnum 1 L17
+.outputs SRAM0_A<12>
+.attrib fpga_pinnum 1 L18
+.outputs SRAM0_A<11>
+.attrib fpga_pinnum 1 M20
+.outputs SRAM0_A<10>
+.attrib fpga_pinnum 1 N9
+.outputs SRAM0_A<9>
+.attrib fpga_pinnum 1 M18
+.outputs SRAM0_A<8>
+.attrib fpga_pinnum 1 L9
+.outputs SRAM0_A<7>
+.attrib fpga_pinnum 1 K23
+.outputs SRAM0_A<6>
+.attrib fpga_pinnum 1 K21
+.outputs SRAM0_A<5>
+.attrib fpga_pinnum 1 B19
+.outputs SRAM0_A<4>
+.attrib fpga_pinnum 1 G17
+.outputs SRAM0_A<3>
+.attrib fpga_pinnum 1 F15
+.outputs SRAM0_A<2>
+.attrib fpga_pinnum 1 F14
+.outputs SRAM0_A<1>
+.attrib fpga_pinnum 1 J12
+.outputs SRAM0_A<0>
+.attrib fpga_pinnum 1 F19
+.outputs SRAM0_D<15>
+.inputs *SRAM0_D<15>
+.attrib fpga_pinnum 1 E21
+.outputs SRAM0_D<14>
+.inputs *SRAM0_D<14>
+.attrib fpga_pinnum 1 B18
+.outputs SRAM0_D<13>
+.inputs *SRAM0_D<13>
+.attrib fpga_pinnum 1 H10
+.outputs SRAM0_D<12>
+.inputs *SRAM0_D<12>
+.attrib fpga_pinnum 1 D24
+.outputs SRAM0_D<11>
+.inputs *SRAM0_D<11>
+.attrib fpga_pinnum 1 D26
+.outputs SRAM0_D<10>
+.inputs *SRAM0_D<10>
+.attrib fpga_pinnum 1 E26
+.outputs SRAM0_D<9>
+.inputs *SRAM0_D<9>
+.attrib fpga_pinnum 1 G21
+.outputs SRAM0_D<8>
+.inputs *SRAM0_D<8>
+.attrib fpga_pinnum 1 G22
+.outputs SRAM0_D<7>
+.inputs *SRAM0_D<7>
+.attrib fpga_pinnum 1 F22
+.outputs SRAM0_D<6>
+.inputs *SRAM0_D<6>
+.attrib fpga_pinnum 1 G20
+.outputs SRAM0_D<5>
+.inputs *SRAM0_D<5>
+.attrib fpga_pinnum 1 C26
+.outputs SRAM0_D<4>
+.inputs *SRAM0_D<4>
+.attrib fpga_pinnum 1 D17
+.outputs SRAM0_D<3>
+.inputs *SRAM0_D<3>
+.attrib fpga_pinnum 1 C21
+.outputs SRAM0_D<2>
+.inputs *SRAM0_D<2>
+.attrib fpga_pinnum 1 B23
+.outputs SRAM0_D<1>
+.inputs *SRAM0_D<1>
+.attrib fpga_pinnum 1 D21
+.outputs SRAM0_D<0>
+.inputs *SRAM0_D<0>
+.attrib fpga_pinnum 1 C20
+.outputs SRAM0_E
+.attrib fpga_pinnum 1 E17
+.outputs SRAM0_LB
+.attrib fpga_pinnum 1 E14
+.outputs SRAM0_OE
+.attrib fpga_pinnum 1 G15
+.outputs SRAM0_UB
+.attrib fpga_pinnum 1 J20
+.outputs SRAM0_W
+.attrib fpga_pinnum 1 E15
+.outputs SRAM1_A<17>
+.attrib fpga_pinnum 1 H15
+.outputs SRAM1_A<16>
+.attrib fpga_pinnum 1 F17
+.outputs SRAM1_A<15>
+.attrib fpga_pinnum 1 K22
+.outputs SRAM1_A<14>
+.attrib fpga_pinnum 1 L20
+.outputs SRAM1_A<13>
+.attrib fpga_pinnum 1 M21
+.outputs SRAM1_A<12>
+.attrib fpga_pinnum 1 M23
+.outputs SRAM1_A<11>
+.attrib fpga_pinnum 1 N20
+.outputs SRAM1_A<10>
+.attrib fpga_pinnum 1 N18
+.outputs SRAM1_A<9>
+.attrib fpga_pinnum 1 N17
+.outputs SRAM1_A<8>
+.attrib fpga_pinnum 1 N19
+.outputs SRAM1_A<7>
+.attrib fpga_pinnum 1 M22
+.outputs SRAM1_A<6>
+.attrib fpga_pinnum 1 K18
+.outputs SRAM1_A<5>
+.attrib fpga_pinnum 1 F20
+.outputs SRAM1_A<4>
+.attrib fpga_pinnum 1 D20
+.outputs SRAM1_A<3>
+.attrib fpga_pinnum 1 A20
+.outputs SRAM1_A<2>
+.attrib fpga_pinnum 1 D18
+.outputs SRAM1_A<1>
+.attrib fpga_pinnum 1 D16
+.outputs SRAM1_A<0>
+.attrib fpga_pinnum 1 D22
+.outputs SRAM1_D<15>
+.inputs *SRAM1_D<15>
+.attrib fpga_pinnum 1 D23
+.outputs SRAM1_D<14>
+.inputs *SRAM1_D<14>
+.attrib fpga_pinnum 1 C22
+.outputs SRAM1_D<13>
+.inputs *SRAM1_D<13>
+.attrib fpga_pinnum 1 A18
+.outputs SRAM1_D<12>
+.inputs *SRAM1_D<12>
+.attrib fpga_pinnum 1 D25
+.outputs SRAM1_D<11>
+.inputs *SRAM1_D<11>
+.attrib fpga_pinnum 1 E24
+.outputs SRAM1_D<10>
+.inputs *SRAM1_D<10>
+.attrib fpga_pinnum 1 F24
+.outputs SRAM1_D<9>
+.inputs *SRAM1_D<9>
+.attrib fpga_pinnum 1 G23
+.outputs SRAM1_D<8>
+.inputs *SRAM1_D<8>
+.attrib fpga_pinnum 1 K9
+.outputs SRAM1_D<7>
+.inputs *SRAM1_D<7>
+.attrib fpga_pinnum 1 F23
+.outputs SRAM1_D<6>
+.inputs *SRAM1_D<6>
+.attrib fpga_pinnum 1 H20
+.outputs SRAM1_D<5>
+.inputs *SRAM1_D<5>
+.attrib fpga_pinnum 1 K16
+.outputs SRAM1_D<4>
+.inputs *SRAM1_D<4>
+.attrib fpga_pinnum 1 H17
+.outputs SRAM1_D<3>
+.inputs *SRAM1_D<3>
+.attrib fpga_pinnum 1 C23
+.outputs SRAM1_D<2>
+.inputs *SRAM1_D<2>
+.attrib fpga_pinnum 1 G19
+.outputs SRAM1_D<1>
+.inputs *SRAM1_D<1>
+.attrib fpga_pinnum 1 J16
+.outputs SRAM1_D<0>
+.inputs *SRAM1_D<0>
+.attrib fpga_pinnum 1 K11
+.outputs SRAM1_E
+.attrib fpga_pinnum 1 B21
+.outputs SRAM1_LB
+.attrib fpga_pinnum 1 A19
+.outputs SRAM1_OE
+.attrib fpga_pinnum 1 B20
+.outputs SRAM1_UB
+.attrib fpga_pinnum 1 K20
+.outputs SRAM1_W
+.attrib fpga_pinnum 1 W1
+.inputs SW_USER<4>
+.attrib fpga_pinnum 1 V4
+.inputs SW_USER<3>
+.attrib fpga_pinnum 1 W2
+.inputs SW_USER<2>
+.attrib fpga_pinnum 1 U3
+.inputs SW_USER<1>
+.attrib fpga_pinnum 1 K1
+.inputs SW_USER<0>
+.attrib fpga_pinnum 1 AD12
+.inputs TEST_BUTTON
+.attrib fpga_pinnum 1 AC23
+.outputs TFT_BLIGHT
+.attrib fpga_pinnum 1 AC16
+.outputs TFT_CS
+.attrib fpga_pinnum 1 W15
+.outputs TFT_DB<15>
+.inputs *TFT_DB<15>
+.attrib fpga_pinnum 1 AB16
+.outputs TFT_DB<14>
+.inputs *TFT_DB<14>
+.attrib fpga_pinnum 1 W17
+.outputs TFT_DB<13>
+.inputs *TFT_DB<13>
+.attrib fpga_pinnum 1 AD19
+.outputs TFT_DB<12>
+.inputs *TFT_DB<12>
+.attrib fpga_pinnum 1 Y17
+.outputs TFT_DB<11>
+.inputs *TFT_DB<11>
+.attrib fpga_pinnum 1 AC19
+.outputs TFT_DB<10>
+.inputs *TFT_DB<10>
+.attrib fpga_pinnum 1 AD22
+.outputs TFT_DB<9>
+.inputs *TFT_DB<9>
+.attrib fpga_pinnum 1 AC21
+.outputs TFT_DB<8>
+.inputs *TFT_DB<8>
+.attrib fpga_pinnum 1 AC12
+.outputs TFT_DB<7>
+.inputs *TFT_DB<7>
+.attrib fpga_pinnum 1 AC14
+.outputs TFT_DB<6>
+.inputs *TFT_DB<6>
+.attrib fpga_pinnum 1 AC15
+.outputs TFT_DB<5>
+.inputs *TFT_DB<5>
+.attrib fpga_pinnum 1 AF23
+.outputs TFT_DB<4>
+.inputs *TFT_DB<4>
+.attrib fpga_pinnum 1 AE15
+.outputs TFT_DB<3>
+.inputs *TFT_DB<3>
+.attrib fpga_pinnum 1 AE12
+.outputs TFT_DB<2>
+.inputs *TFT_DB<2>
+.attrib fpga_pinnum 1 AB15
+.outputs TFT_DB<1>
+.inputs *TFT_DB<1>
+.attrib fpga_pinnum 1 AD14
+.outputs TFT_DB<0>
+.inputs *TFT_DB<0>
+.attrib fpga_pinnum 1 AD20
+.outputs TFT_RD
+.attrib fpga_pinnum 1 V15
+.outputs TFT_RESET
+.attrib fpga_pinnum 1 AF18
+.outputs TFT_RS
+.attrib fpga_pinnum 1 W26
+.inputs TFT_TSC_BUSY
+.attrib fpga_pinnum 1 Y13
+.outputs TFT_TSC_CLK
+.attrib fpga_pinnum 1 AB26
+.outputs TFT_TSC_CS_N
+.attrib fpga_pinnum 1 W25
+.inputs TFT_TSC_DIN
+.attrib fpga_pinnum 1 AD26
+.outputs TFT_TSC_DOUT
+.attrib fpga_pinnum 1 AE25
+.inputs TFT_TSC_IRQ_N
+.attrib fpga_pinnum 1 AE18
+.outputs TFT_WR
+.attrib fpga_pinnum 1 E10
+.outputs VGA_BLUE<7>
+.attrib fpga_pinnum 1 G10
+.outputs VGA_BLUE<6>
+.attrib fpga_pinnum 1 D10
+.outputs VGA_BLUE<5>
+.attrib fpga_pinnum 1 B10
+.outputs VGA_BLUE<4>
+.attrib fpga_pinnum 1 A10
+.outputs VGA_BLUE<3>
+.attrib fpga_pinnum 1 J11
+.outputs VGA_BLUE<2>
+.attrib fpga_pinnum 1 D11
+.outputs VGA_BLUE<1>
+.attrib fpga_pinnum 1 K12
+.outputs VGA_BLUE<0>
+.attrib fpga_pinnum 1 C5
+.outputs VGA_CLK
+.attrib fpga_pinnum 1 G8
+.outputs VGA_GREEN<7>
+.attrib fpga_pinnum 1 D6
+.outputs VGA_GREEN<6>
+.attrib fpga_pinnum 1 F7
+.outputs VGA_GREEN<5>
+.attrib fpga_pinnum 1 E7
+.outputs VGA_GREEN<4>
+.attrib fpga_pinnum 1 B7
+.outputs VGA_GREEN<3>
+.attrib fpga_pinnum 1 F8
+.outputs VGA_GREEN<2>
+.attrib fpga_pinnum 1 C8
+.outputs VGA_GREEN<1>
+.attrib fpga_pinnum 1 D8
+.outputs VGA_GREEN<0>
+.attrib fpga_pinnum 1 C11
+.outputs VGA_HSYNC
+.attrib fpga_pinnum 1 B8
+.outputs VGA_RED<7>
+.attrib fpga_pinnum 1 H9
+.outputs VGA_RED<6>
+.attrib fpga_pinnum 1 J9
+.outputs VGA_RED<5>
+.attrib fpga_pinnum 1 A8
+.outputs VGA_RED<4>
+.attrib fpga_pinnum 1 G9
+.outputs VGA_RED<3>
+.attrib fpga_pinnum 1 D9
+.outputs VGA_RED<2>
+.attrib fpga_pinnum 1 B9
+.outputs VGA_RED<1>
+.attrib fpga_pinnum 1 A9
+.outputs VGA_RED<0>
+.attrib fpga_pinnum 1 H12
+.outputs VGA_VSYNC

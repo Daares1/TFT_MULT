@@ -1,0 +1,1500 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc4692a --dep-file=Output\frameout\devfs_minimal_write.d --make-target=Output\frameout\devfs_minimal_write.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\write.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\write.c"
+
+	.section	.text.write.write ,cluster('$group_write')
+	.align	4
+	.global	write
+; Function write
+.L16:
+write:	.type	func
+	addiu	$sp,$sp,-24
+.L38:
+	sw	$ra,0($sp)
+.L39:
+	sw	$s0,4($sp)
+.L40:
+	sw	$a1,8($sp)
+.L71:
+	sw	$a2,12($sp)
+.L72:
+	sw	$zero,16($sp)
+.L73:
+	li	$v0,0x7fff
+	sltu	$v0,$v0,$a2
+	beq	$v0,$zero,.L2
+.L74:
+	addiu	$s0,$sp,8
+.L75:
+	li	$v0,0x46
+	lui	$v1,@hi(errno)
+	sw	$v0,@lo(errno)($v1)
+.L76:
+	j	.L3
+	addiu	$v0,$zero,-1
+.L2:
+	bne	$a1,$zero,.L4
+.L77:
+	nop
+.L78:
+	li	$v0,0x1c
+	lui	$v1,@hi(errno)
+	sw	$v0,@lo(errno)($v1)
+.L79:
+	j	.L5
+	addiu	$v0,$zero,-1
+.L4:
+	bne	$a2,$zero,.L6
+.L80:
+	nop
+.L81:
+	j	.L7
+	move	$v0,$zero
+.L6:
+	bltz	$a0,.L8
+.L82:
+	nop
+.L83:
+	slti	$v0,$a0,8
+	beq	$v0,$zero,.L9
+	nop
+.L84:
+	jal	devio_getdev
+	nop
+.L44:
+	bne	$v0,$zero,.L10
+.L85:
+	nop
+.L9:
+.L8:
+	j	.L11
+	li	$v0,0x8
+.L10:
+	li	$a2,0x1
+	move	$a0,$v0
+.L43:
+	jal	devio_readwrite
+	move	$a1,$s0
+.L11:
+	beq	$v0,$zero,.L12
+.L86:
+	nop
+.L87:
+	lui	$v1,@hi(errno)
+	sw	$v0,@lo(errno)($v1)
+.L88:
+	j	.L13
+	addiu	$v0,$zero,-1
+.L12:
+	lw	$v0,8($s0)
+.L13:
+.L7:
+.L5:
+.L3:
+	lw	$s0,4($sp)
+.L41:
+	lw	$ra,0($sp)
+.L42:
+	jr	$ra
+	addiu	$sp,$sp,24
+.L27:
+	.size	write,*-write
+.L25:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'write','devio_getdev'
+	.calls	'write','devio_readwrite'
+	.calls	'write','',24
+	.extern	errno
+	.extern	devio_getdev
+	.extern	devio_readwrite
+_write	.equ	write
+	.global	_write
+	.section	.debug_info
+.L18:
+	.dw	4401
+	.dh	3
+	.dw	.L19
+	.db	4
+.L17:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\write.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L20
+	.db	2
+	.db	"little16",0
+	.db	3,1,54,24
+	.dw	.L45-.L18
+	.db	1,1,3
+	.db	"val",0
+	.db	1,54,43
+	.dw	.L45-.L18
+	.db	4,0
+.L45:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,2
+	.db	"little32",0
+	.db	3,1,64,24
+	.dw	.L31-.L18
+	.db	1,1,3
+	.db	"val",0
+	.db	1,64,43
+	.dw	.L31-.L18
+	.db	6,4,4,0,0
+.L31:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"big16",0
+	.db	3,1,94,24
+	.dw	355
+	.db	1,1,3
+	.db	"val",0
+	.db	1,94,40
+	.dw	355
+	.db	4,0,2
+	.db	"big32",0
+	.db	3,1,104,24
+	.dw	414
+	.db	1,1,3
+	.db	"val",0
+	.db	1,104,40
+	.dw	414
+	.db	4,0,2
+	.db	"read_little8from8",0
+	.db	3,1,128,1,23
+	.dw	.L46-.L18
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,128,1,55
+	.dw	.L29-.L18
+	.db	4,0
+.L46:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8
+.L29:
+	.db	7
+	.dw	.L47-.L18
+.L47:
+	.db	8
+	.dw	.L48-.L18
+.L48:
+	.db	9
+	.db	"void",0
+	.db	2
+	.db	"read_little16from8",0
+	.db	3,1,134,1,24
+	.dw	355
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,134,1,57
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_little32from8",0
+	.db	3,1,140,1,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,140,1,57
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_little16from16",0
+	.db	3,1,162,1,24
+	.dw	355
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,162,1,58
+	.dw	554
+	.db	6,4,0,0,2
+	.db	"read_little32from16",0
+	.db	3,1,168,1,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,168,1,58
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_little32from32",0
+	.db	3,1,196,1,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,196,1,58
+	.dw	554
+	.db	6,4,0,0,2
+	.db	"read_big8from8",0
+	.db	3,1,212,1,23
+	.dw	537
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,212,1,52
+	.dw	554
+	.db	4,0,2
+	.db	"read_big16from8",0
+	.db	3,1,218,1,24
+	.dw	355
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,218,1,54
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_big32from8",0
+	.db	3,1,224,1,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,224,1,54
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_big16from16",0
+	.db	3,1,246,1,24
+	.dw	355
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,246,1,55
+	.dw	554
+	.db	6,4,0,0,2
+	.db	"read_big32from16",0
+	.db	3,1,252,1,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,252,1,55
+	.dw	554
+	.db	6,4,4,0,0,2
+	.db	"read_big32from32",0
+	.db	3,1,152,2,24
+	.dw	414
+	.db	1,1,3
+	.db	"ptr",0
+	.db	1,152,2,55
+	.dw	554
+	.db	6,4,0,0,10
+	.db	"write_little8to8",0
+	.db	3,1,167,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,167,2,45
+	.dw	.L34-.L18
+	.db	3
+	.db	"val",0
+	.db	1,167,2,58
+	.dw	537
+	.db	4,0
+.L34:
+	.db	7
+	.dw	564
+	.db	10
+	.db	"write_little16to8",0
+	.db	3,1,173,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,173,2,46
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,173,2,60
+	.dw	355
+	.db	6,4,4,0,0,10
+	.db	"write_little32to8",0
+	.db	3,1,180,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,180,2,46
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,180,2,60
+	.dw	414
+	.db	6,4,4,0,0,10
+	.db	"write_little16to16",0
+	.db	3,1,204,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,204,2,47
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,204,2,61
+	.dw	355
+	.db	6,4,0,0,10
+	.db	"write_little32to16",0
+	.db	3,1,210,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,210,2,47
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,210,2,61
+	.dw	414
+	.db	6,4,4,0,0,10
+	.db	"write_little32to32",0
+	.db	3,1,240,2,20,1,1,3
+	.db	"ptr",0
+	.db	1,240,2,47
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,240,2,61
+	.dw	414
+	.db	6,4,0,0,10
+	.db	"write_big8to8",0
+	.db	3,1,129,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,129,3,42
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,129,3,55
+	.dw	537
+	.db	4,0,10
+	.db	"write_big16to8",0
+	.db	3,1,135,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,135,3,43
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,135,3,57
+	.dw	355
+	.db	6,4,4,0,0,10
+	.db	"write_big32to8",0
+	.db	3,1,142,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,142,3,43
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,142,3,57
+	.dw	414
+	.db	6,4,4,0,0,10
+	.db	"write_big16to16",0
+	.db	3,1,166,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,166,3,44
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,166,3,58
+	.dw	355
+	.db	6,4,0,0,10
+	.db	"write_big32to16",0
+	.db	3,1,172,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,172,3,44
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,172,3,58
+	.dw	414
+	.db	6,4,4,0,0,10
+	.db	"write_big32to32",0
+	.db	3,1,202,3,20,1,1,3
+	.db	"ptr",0
+	.db	1,202,3,44
+	.dw	1142
+	.db	3
+	.db	"val",0
+	.db	1,202,3,58
+	.dw	414
+	.db	6,4,0,0
+.L26:
+	.db	5
+	.db	"int",0
+	.db	4,5
+.L36:
+	.db	11,2,12,9,16,12
+	.db	"buf",0
+	.db	4
+	.dw	.L49-.L18
+	.db	2,35,0,12
+	.db	"len",0
+	.db	4
+	.dw	1754
+	.db	2,35,4,12
+	.db	"cnt",0
+	.db	4
+	.dw	1754
+	.db	2,35,8,12
+	.db	"offset",0
+	.db	4
+	.dw	1754
+	.db	2,35,12,0
+.L49:
+	.db	7
+	.dw	537
+	.db	13
+	.db	"devio_getdev",0
+	.db	3,15,17
+	.dw	1142
+	.db	1,1,1,1,3
+	.db	"fildes",0
+	.db	3,15,47
+	.dw	1754
+	.db	0,13
+	.db	"devio_readwrite",0
+	.db	3,19,17
+	.dw	1754
+	.db	1,1,1,1,3
+	.db	"dptr",0
+	.db	3,19,49
+	.dw	1142
+	.db	3
+	.db	"io",0
+	.db	3,20,52
+	.dw	.L50-.L18
+	.db	3
+	.db	"write",0
+	.db	3,21,48
+	.dw	.L51-.L18
+	.db	0
+.L50:
+	.db	7
+	.dw	1761
+.L51:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2,14
+	.dw	321
+	.db	15
+	.dw	341
+	.db	4,0,14
+	.dw	377
+	.db	15
+	.dw	397
+	.db	6,16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,4,16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,4,0,0,14
+	.dw	430
+	.db	15
+	.dw	447
+	.db	4,0,14
+	.dw	461
+	.db	15
+	.dw	478
+	.db	4,0,14
+	.dw	492
+	.db	15
+	.dw	522
+	.db	4,0,14
+	.dw	570
+	.db	15
+	.dw	601
+	.db	6,16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,4,16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,4,0,0,14
+	.dw	619
+	.db	15
+	.dw	650
+	.db	6,16
+	.dw	570
+	.db	15
+	.dw	601
+	.db	18
+	.dw	614
+	.db	16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,17
+	.dw	615
+	.db	16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,17
+	.dw	616
+	.db	0,0,4,16
+	.dw	570
+	.db	15
+	.dw	601
+	.db	18
+	.dw	614
+	.db	16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,17
+	.dw	615
+	.db	16
+	.dw	492
+	.db	15
+	.dw	522
+	.db	17
+	.dw	535
+	.db	0,17
+	.dw	616
+	.db	0,0,4,0,0,14
+	.dw	668
+	.db	15
+	.dw	700
+	.db	6,16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,4,0,0,14
+	.dw	717
+	.db	15
+	.dw	749
+	.db	6,16
+	.dw	668
+	.db	15
+	.dw	700
+	.db	18
+	.dw	713
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	714
+	.db	0,0,4,16
+	.dw	668
+	.db	15
+	.dw	700
+	.db	18
+	.dw	713
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	714
+	.db	0,0,4,0,0,14
+	.dw	767
+	.db	15
+	.dw	799
+	.db	6,16
+	.dw	377
+	.db	15
+	.dw	397
+	.db	18
+	.dw	409
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	410
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	411
+	.db	0,0,4,0,0,14
+	.dw	816
+	.db	15
+	.dw	843
+	.db	4,0,14
+	.dw	858
+	.db	15
+	.dw	886
+	.db	6,16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,4,16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,4,0,0,14
+	.dw	904
+	.db	15
+	.dw	932
+	.db	6,16
+	.dw	858
+	.db	15
+	.dw	886
+	.db	18
+	.dw	899
+	.db	16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,17
+	.dw	900
+	.db	16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,17
+	.dw	901
+	.db	0,0,4,16
+	.dw	858
+	.db	15
+	.dw	886
+	.db	18
+	.dw	899
+	.db	16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,17
+	.dw	900
+	.db	16
+	.dw	816
+	.db	15
+	.dw	843
+	.db	17
+	.dw	856
+	.db	0,17
+	.dw	901
+	.db	0,0,4,0,0,14
+	.dw	950
+	.db	15
+	.dw	979
+	.db	6,16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,4,0,0,14
+	.dw	996
+	.db	15
+	.dw	1025
+	.db	6,16
+	.dw	950
+	.db	15
+	.dw	979
+	.db	18
+	.dw	992
+	.db	16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,17
+	.dw	993
+	.db	0,0,4,16
+	.dw	950
+	.db	15
+	.dw	979
+	.db	18
+	.dw	992
+	.db	16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,17
+	.dw	993
+	.db	0,0,4,0,0,14
+	.dw	1043
+	.db	15
+	.dw	1072
+	.db	6,16
+	.dw	461
+	.db	15
+	.dw	478
+	.db	17
+	.dw	490
+	.db	0,4,0,0,14
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	4,0,14
+	.dw	1147
+	.db	15
+	.dw	1173
+	.db	15
+	.dw	1186
+	.db	6,16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,4,16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,4,0,0,14
+	.dw	1204
+	.db	15
+	.dw	1230
+	.db	15
+	.dw	1243
+	.db	6,16
+	.dw	1147
+	.db	15
+	.dw	1173
+	.db	15
+	.dw	1186
+	.db	18
+	.dw	1199
+	.db	16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,17
+	.dw	1200
+	.db	16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,17
+	.dw	1201
+	.db	0,0,4,16
+	.dw	1147
+	.db	15
+	.dw	1173
+	.db	15
+	.dw	1186
+	.db	18
+	.dw	1199
+	.db	16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,17
+	.dw	1200
+	.db	16
+	.dw	1089
+	.db	15
+	.dw	1114
+	.db	15
+	.dw	1127
+	.db	17
+	.dw	1140
+	.db	0,17
+	.dw	1201
+	.db	0,0,4,0,0,14
+	.dw	1261
+	.db	15
+	.dw	1288
+	.db	15
+	.dw	1301
+	.db	6,16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,4,0,0,14
+	.dw	1318
+	.db	15
+	.dw	1345
+	.db	15
+	.dw	1358
+	.db	6,16
+	.dw	1261
+	.db	15
+	.dw	1288
+	.db	15
+	.dw	1301
+	.db	18
+	.dw	1314
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	1315
+	.db	0,0,4,16
+	.dw	1261
+	.db	15
+	.dw	1288
+	.db	15
+	.dw	1301
+	.db	18
+	.dw	1314
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	1315
+	.db	0,0,4,0,0,14
+	.dw	1376
+	.db	15
+	.dw	1403
+	.db	15
+	.dw	1416
+	.db	6,16
+	.dw	377
+	.db	15
+	.dw	397
+	.db	18
+	.dw	409
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	410
+	.db	16
+	.dw	321
+	.db	15
+	.dw	341
+	.db	17
+	.dw	353
+	.db	0,17
+	.dw	411
+	.db	0,0,4,0,0,14
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	4,0,14
+	.dw	1483
+	.db	15
+	.dw	1506
+	.db	15
+	.dw	1519
+	.db	6,16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,4,16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,4,0,0,14
+	.dw	1537
+	.db	15
+	.dw	1560
+	.db	15
+	.dw	1573
+	.db	6,16
+	.dw	1483
+	.db	15
+	.dw	1506
+	.db	15
+	.dw	1519
+	.db	18
+	.dw	1532
+	.db	16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,17
+	.dw	1533
+	.db	16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,17
+	.dw	1534
+	.db	0,0,4,16
+	.dw	1483
+	.db	15
+	.dw	1506
+	.db	15
+	.dw	1519
+	.db	18
+	.dw	1532
+	.db	16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,17
+	.dw	1533
+	.db	16
+	.dw	1433
+	.db	15
+	.dw	1455
+	.db	15
+	.dw	1468
+	.db	17
+	.dw	1481
+	.db	0,17
+	.dw	1534
+	.db	0,0,4,0,0,14
+	.dw	1591
+	.db	15
+	.dw	1615
+	.db	15
+	.dw	1628
+	.db	6,16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,4,0,0,14
+	.dw	1645
+	.db	15
+	.dw	1669
+	.db	15
+	.dw	1682
+	.db	6,16
+	.dw	1591
+	.db	15
+	.dw	1615
+	.db	15
+	.dw	1628
+	.db	18
+	.dw	1641
+	.db	16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,17
+	.dw	1642
+	.db	0,0,4,16
+	.dw	1591
+	.db	15
+	.dw	1615
+	.db	15
+	.dw	1628
+	.db	18
+	.dw	1641
+	.db	16
+	.dw	430
+	.db	15
+	.dw	447
+	.db	17
+	.dw	459
+	.db	0,17
+	.dw	1642
+	.db	0,0,4,0,0,14
+	.dw	1700
+	.db	15
+	.dw	1724
+	.db	15
+	.dw	1737
+	.db	6,16
+	.dw	461
+	.db	15
+	.dw	478
+	.db	17
+	.dw	490
+	.db	0,4,0,0,19
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	355
+	.db	19
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	414
+	.db	19
+	.db	"__ssize_t",0
+	.db	4,1,1
+	.dw	1754
+	.db	19
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	1754
+	.db	19
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L52-.L18
+.L52:
+	.db	7
+	.dw	.L53-.L18
+.L53:
+	.db	20,1,19
+	.db	"uint8_t",0
+	.db	5,22,33
+	.dw	537
+	.db	19
+	.db	"uint16_t",0
+	.db	5,24,33
+	.dw	355
+	.db	19
+	.db	"int32_t",0
+	.db	5,25,33
+	.dw	1754
+	.db	19
+	.db	"uint32_t",0
+	.db	5,26,33
+	.dw	414
+	.db	19
+	.db	"uint64_t",0
+	.db	5,28,33
+	.dw	.L54-.L18
+.L54:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,19
+	.db	"size_t",0
+	.db	6,15,25
+	.dw	414
+	.db	19
+	.db	"off_t",0
+	.db	7,18,25
+	.dw	.L55-.L18
+.L55:
+	.db	5
+	.db	"long int",0
+	.db	4,5,19
+	.db	"ssize_t",0
+	.db	7,28,25
+	.dw	1754
+	.db	19
+	.db	"pid_t",0
+	.db	7,34,13
+	.dw	1754
+	.db	19
+	.db	"time_t",0
+	.db	7,36,27
+	.dw	.L56-.L18
+.L56:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7,19
+	.db	"posix_thread_t",0
+	.db	7,44,25
+	.dw	.L57-.L18
+.L57:
+	.db	21
+	.db	"thread_t",0
+	.db	7,44,16,1,19
+	.db	"posix_threadqueue_t",0
+	.db	7,50,9
+	.dw	.L58-.L18
+.L58:
+	.db	22
+	.db	"posix_threadqueue_t",0
+	.db	7,46,17,8,12
+	.db	"head",0
+	.db	4
+	.dw	.L59-.L18
+	.db	2,35,0,12
+	.db	"tail",0
+	.db	4
+	.dw	.L59-.L18
+	.db	2,35,4,0
+.L59:
+	.db	7
+	.dw	3987
+	.db	19
+	.db	"pthread_mutex_t",0
+	.db	7,160,1,33
+	.dw	.L60-.L18
+.L60:
+	.db	22
+	.db	"_pthread_mutex_t",0
+	.db	7,162,1,8,32,23
+	.db	"type",0
+	.db	1
+	.dw	537
+	.db	2,0,2,35,0,23
+	.db	"protocol",0
+	.db	1
+	.dw	537
+	.db	2,2,2,35,0,23
+	.db	"prioceiling",0
+	.db	4
+	.dw	414
+	.db	16,4,2,35,0,23
+	.db	"recursive",0
+	.db	2
+	.dw	355
+	.db	8,4,2,35,2,23
+	.db	"preprio",0
+	.db	2
+	.dw	.L61-.L18
+	.db	16,0,2,35,4,12
+	.db	"initi",0
+	.db	4
+	.dw	1754
+	.db	2,35,8,12
+	.db	"owner",0
+	.db	4
+	.dw	4083
+	.db	2,35,12,12
+	.db	"nestup",0
+	.db	4
+	.dw	.L62-.L18
+	.db	2,35,16,12
+	.db	"nestdown",0
+	.db	4
+	.dw	.L62-.L18
+	.db	2,35,20,12
+	.db	"queue",0
+	.db	8
+	.dw	4029
+	.db	2,35,24,0
+.L61:
+	.db	5
+	.db	"short int",0
+	.db	2,5
+.L62:
+	.db	7
+	.dw	4113
+	.db	19
+	.db	"clockid_t",0
+	.db	7,183,1,13
+	.dw	1754
+	.db	24
+	.db	"errno",0
+	.db	8,15,24
+	.dw	1754
+	.db	1,1,19
+	.db	"ioreq_t",0
+	.db	2,18,3
+	.dw	1761
+	.db	19
+	.db	"_iob_flag_t",0
+	.db	9,92,25
+	.dw	355
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L19:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0
+	.db	3,5,0,3,8,58,15,59,15,57,15,73,19,0,0,4,11,0,0,0,5,36,0,3,8,11,15,62,15,0,0,6,11,1,0,0,7,15,0,73,19,0
+	.db	0,8,38,0,73,19,0,0,9,59,0,3,8,0,0,10,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,11,19,1,58,15,59
+	.db	15,57,15,11,15,0,0,12,13,0,3,8,11,15,73,19,56,9,0,0,13,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63
+	.db	12,60,12,0,0,14,46,1,49,19,0,0,15,5,0,49,19,0,0,16,29,1,49,19,0,0,17,11,0,49,19,0,0,18,11,1,49,19,0,0
+	.db	19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,21,0,54,15,0,0,21,19,0,3,8,58,15,59,15,57,15,60,12,0,0,22,19
+	.db	1,3,8,58,15,59,15,57,15,11,15,0,0,23,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,24,52,0,3,8,58,15,59,15
+	.db	57,15,73,19,63,12,60,12,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L20:
+	.dw	.L64-.L63
+.L63:
+	.dh	3
+	.dw	.L66-.L65
+.L65:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\system\\sysutils\\include\\util_endian.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\internal\\ioreq.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\internal\\devio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\write.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stddef.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\errno.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0,0
+.L66:
+.L64:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_write')
+.L21:
+	.dw	468
+	.dh	3
+	.dw	.L22
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\write.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L24,.L23
+	.db	2
+	.dw	.L17
+	.db	3
+	.db	"write",0
+	.db	1,18,16
+	.dw	.L26
+	.db	1,1,1
+	.dw	.L16,.L27,.L15
+	.db	4
+	.db	"fildes",0
+	.db	1,18,27
+	.dw	.L26,.L28
+	.db	4
+	.db	"buf",0
+	.db	1,18,47
+	.dw	.L29,.L30
+	.db	4
+	.db	"nbyte",0
+	.db	1,18,59
+	.dw	.L31,.L32
+	.db	5
+	.dw	.L16,.L27
+	.db	6
+	.db	"ret",0
+	.db	1,20,17
+	.dw	.L26,.L33
+	.db	6
+	.db	"dptr",0
+	.db	1,21,17
+	.dw	.L34,.L35
+	.db	6
+	.db	"io",0
+	.db	1,23,17
+	.dw	.L36,.L37
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_write')
+.L22:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_write')
+.L23:
+	.dw	.L68-.L67
+.L67:
+	.dh	3
+	.dw	.L70-.L69
+.L69:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\write.c",0
+	.db	0,0,0,0
+.L70:
+	.db	5,16,7,0,5,2
+	.dw	.L16
+	.db	3,17,1,5,29,9
+	.dh	.L40-.L16
+	.db	3,6,1,5,24
+	.db	15+9*((.L71-.L40)/4)
+	.db	5,20
+	.db	15+9*((.L72-.L71)/4)
+	.db	5,9
+	.db	18+9*((.L73-.L72)/4)
+	.db	5,29,9
+	.dh	.L74-.L73
+	.db	3,122,1,5,31,9
+	.dh	.L75-.L74
+	.db	3,8,1,5,33
+	.db	14+9*((.L76-.L75)/4)
+	.db	5,14
+	.db	16+9*((.L2-.L76)/4)
+	.db	7
+	.db	14+9*((.L77-.L2)/4)
+	.db	5,27
+	.db	16+9*((.L78-.L77)/4)
+	.db	5,29
+	.db	14+9*((.L79-.L78)/4)
+	.db	5,14
+	.db	16+9*((.L4-.L79)/4)
+	.db	7
+	.db	14+9*((.L80-.L4)/4)
+	.db	5,17
+	.db	16+9*((.L81-.L80)/4)
+	.db	5,14
+	.db	17+9*((.L6-.L81)/4)
+	.db	7
+	.db	14+9*((.L82-.L6)/4)
+	.db	5,35
+	.db	14+9*((.L83-.L82)/4)
+	.db	5,55
+	.db	14+9*((.L84-.L83)/4)
+	.db	5,79
+	.db	14+9*((.L44-.L84)/4)
+	.db	7
+	.db	14+9*((.L85-.L44)/4)
+	.db	5,24
+	.db	16+9*((.L8-.L85)/4)
+	.db	5,58
+	.db	18+9*((.L10-.L8)/4)
+	.db	5,9,9
+	.dh	.L11-.L10
+	.db	3,6,1,7
+	.db	14+9*((.L86-.L11)/4)
+	.db	5,28
+	.db	16+9*((.L87-.L86)/4)
+	.db	5,30
+	.db	14+9*((.L88-.L87)/4)
+	.db	5,9
+	.db	17+9*((.L12-.L88)/4)
+	.db	5,1
+	.db	15+9*((.L3-.L12)/4)
+	.db	9
+	.dh	.L25-.L3
+	.db	0,1,1
+.L68:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_write')
+.L24:
+	.dw	-1
+	.dw	.L16
+	.dw	0
+	.dw	.L25-.L16
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_write')
+.L15:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L38-.L16
+	.dh	2
+	.db	141,0
+	.dw	.L38-.L16,.L27-.L16
+	.dh	2
+	.db	141,24
+	.dw	.L27-.L16,.L27-.L16
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L37:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L27-.L16
+	.dh	2
+	.db	145,112
+	.dw	0,0
+.L33:
+	.dw	-1
+	.dw	.L16,.L11-.L16,.L3-.L16
+	.dh	1
+	.db	82
+	.dw	0,0
+.L35:
+	.dw	-1
+	.dw	.L16,.L10-.L16,.L11-.L16
+	.dh	1
+	.db	82
+	.dw	.L43-.L16,.L11-.L16
+	.dh	1
+	.db	84
+	.dw	.L44-.L16,.L8-.L16
+	.dh	1
+	.db	82
+	.dw	0,0
+.L30:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L44-.L16
+	.dh	1
+	.db	85
+	.dw	0,0
+.L32:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L44-.L16
+	.dh	1
+	.db	86
+	.dw	0,0
+.L28:
+	.dw	-1
+	.dw	.L16,.L16-.L16,.L44-.L16
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L89:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_write')
+	.dw	64
+	.dw	.L89,.L16,.L27-.L16
+	.db	4
+	.dw	(.L38-.L16)/4
+	.db	19,24,22,29,3,19,141,24,4
+	.dw	(.L39-.L38)/4
+	.db	17,31,104,4
+	.dw	(.L40-.L39)/4
+	.db	17,16,108,4
+	.dw	(.L41-.L40)/4
+	.db	208,4
+	.dw	(.L42-.L41)/4
+	.db	223,4
+	.dw	(.L27-.L42)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

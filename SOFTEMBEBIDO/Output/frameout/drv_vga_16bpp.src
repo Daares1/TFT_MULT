@@ -1,0 +1,3155 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc208a --dep-file=Output\frameout\drv_vga_16bpp_drv_vga_16bpp.d --make-target=Output\frameout\drv_vga_16bpp_drv_vga_16bpp.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\drv_vga_16bpp.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c"
+
+	.section	.text.drv_vga_16bpp._vga_16bpp_set_resolution ,cluster('$group__vga_16bpp_set_resolution')
+	.align	4
+; Function _vga_16bpp_set_resolution
+.L38:
+_vga_16bpp_set_resolution:	.type	func
+	move	$t1,$a0
+.L229:
+	move	$t0,$a1
+.L233:
+	lw	$t2,0($sp)
+.L232:
+	lw	$t3,4($sp)
+.L230:
+	lw	$t4,8($sp)
+.L235:
+	sw	$a1,12($t1)
+.L413:
+	sw	$a2,16($t1)
+.L414:
+	lui	$v0,0x2fa
+	ori	$v0,$v0,0xf080
+	div	$v0,$v0,$a3
+.L225:
+	sra	$v1,$a1,2
+	addu	$a0,$a1,$a1
+.L227:
+	addu	$v1,$v1,$a0
+	slt	$a0,$v1,$v0
+	beq	$a0,$zero,.L2
+.L415:
+	li	$t5,0x1
+.L3:
+	addiu	$t5,$t5,1
+.L416:
+	div	$a0,$v0,$t5
+	slt	$a1,$v1,$a0
+	bne	$a1,$zero,.L3
+	nop
+.L2:
+	div	$a1,$v0,$t5
+.L226:
+	li	$v0,0x64
+	div	$v0,$v0,$t5
+	subu	$v1,$a1,$v0
+	subu	$v1,$v1,$t0
+	bgez	$v1,.L4
+	nop
+	addiu	$v1,$v1,3
+.L4:
+	sra	$t6,$v1,2
+.L219:
+	li	$v1,0xff
+	slt	$a0,$v1,$t6
+	beq	$a0,$zero,.L5
+	nop
+	move	$t6,$v1
+.L5:
+	li	$v1,0x32
+	div	$v1,$v1,$t5
+	subu	$a0,$a1,$t6
+	subu	$a0,$a0,$t0
+	subu	$v0,$a0,$v0
+	mult	$v0,$v0,$t3
+	lui	$a0,0x6666
+	ori	$a0,$a0,0x6667
+	mult	$v0,$a0
+	mfhi	$a0
+	sra	$a0,$a0,2
+	slt	$v0,$v0,$zero
+	addu	$v0,$a0,$v0
+	addu	$v0,$v1,$v0
+.L220:
+	li	$v1,0xff
+	slt	$a0,$v1,$v0
+	beq	$a0,$zero,.L6
+	nop
+	move	$v0,$v1
+.L6:
+	lw	$v1,0($t1)
+	sll	$a0,$t6,24
+	lui	$t3,0x100
+.L231:
+	subu	$a0,$a0,$t3
+	sll	$v0,$v0,16
+.L221:
+	lui	$t3,0x1
+	subu	$v0,$v0,$t3
+	or	$v0,$a0,$v0
+	addiu	$a0,$t0,-1
+	or	$v0,$v0,$a0
+	sw	$v0,8($v1)
+.L417:
+	div	$t0,$a3,$t2
+.L234:
+	subu	$v0,$t0,$a2
+	addiu	$v0,$v0,-10
+	mult	$v0,$v0,$t4
+	lui	$v1,0x6666
+	ori	$v1,$v1,0x6667
+	mult	$v0,$v1
+	mfhi	$v1
+	sra	$v1,$v1,2
+	slt	$v0,$v0,$zero
+	addu	$v0,$v1,$v0
+	addiu	$v0,$v0,2
+.L223:
+	li	$v1,0xff
+	slt	$a0,$v1,$v0
+	beq	$a0,$zero,.L7
+	nop
+	move	$v0,$v1
+.L7:
+	lw	$v1,0($t1)
+	sll	$v0,$v0,16
+.L224:
+	lui	$a0,0x1
+	subu	$v0,$v0,$a0
+	lui	$a3,0x500
+.L228:
+	or	$v0,$v0,$a3
+	addiu	$a2,$a2,-1
+.L222:
+	or	$v0,$v0,$a2
+	sw	$v0,12($v1)
+.L418:
+	lw	$v0,0($t1)
+	sll	$v1,$a1,16
+	subu	$v1,$v1,$a0
+	addiu	$a0,$t0,-1
+	or	$v1,$v1,$a0
+	sw	$v1,16($v0)
+.L419:
+	lw	$v0,0($t1)
+	addiu	$v1,$t5,-1
+	sw	$v1,24($v0)
+.L420:
+	lw	$v0,0($t1)
+	lw	$v1,8($t1)
+	sw	$v1,20($v0)
+.L421:
+	lw	$v0,0($t1)
+	lw	$v1,8($t1)
+	sltu	$v1,$zero,$v1
+	addiu	$v1,$v1,4864
+	sw	$v1,0($v0)
+.L422:
+	jr	$ra
+.L423:
+	nop
+.L183:
+	.size	_vga_16bpp_set_resolution,*-_vga_16bpp_set_resolution
+.L109:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_vsync_interrupt ,cluster('$group_vga_16bpp_vsync_interrupt')
+	.align	4
+	.global	vga_16bpp_vsync_interrupt
+; Function vga_16bpp_vsync_interrupt
+.L40:
+vga_16bpp_vsync_interrupt:	.type	func
+	addiu	$sp,$sp,-80
+.L236:
+	sw	$ra,0($sp)
+.L238:
+	sw	$at,4($sp)
+.L239:
+	sw	$v0,8($sp)
+.L240:
+	sw	$v1,12($sp)
+.L241:
+	sw	$a0,16($sp)
+.L242:
+	sw	$a1,20($sp)
+.L243:
+	sw	$a2,24($sp)
+.L244:
+	sw	$a3,28($sp)
+.L245:
+	sw	$t0,32($sp)
+.L246:
+	sw	$t1,36($sp)
+.L247:
+	sw	$t2,40($sp)
+.L248:
+	sw	$t3,44($sp)
+.L249:
+	sw	$t4,48($sp)
+.L250:
+	sw	$t5,52($sp)
+.L251:
+	sw	$t6,56($sp)
+.L252:
+	sw	$t7,60($sp)
+.L253:
+	sw	$t8,64($sp)
+.L254:
+	sw	$t9,68($sp)
+.L255:
+	mfhi	$at
+	sw	$at,72($sp)
+.L256:
+	mflo	$at
+	sw	$at,76($sp)
+.L199:
+	addi $a0, $k1, 0
+.L277:
+	sll	$v0,$a0,3
+.L200:
+	lui	$v1,@hi(interrupt_table)
+	addiu	$v1,$v1,@lo(interrupt_table)
+	addu	$v0,$v0,$v1
+	lw	$v0,0($v0)
+	li	$v1,0x1
+	sb	$v1,24($v0)
+.L205:
+	sllv	$v0,$v1,$a0
+	mtc0	$v0,$2
+.L206:
+	jal	pal_architecture_interrupt_disable
+	nop
+.L210:
+	lw	$at,76($sp)
+.L257:
+	lw	$t9,68($sp)
+.L258:
+	mtlo	$at
+	lw	$at,72($sp)
+.L259:
+	lw	$t8,64($sp)
+.L260:
+	mthi	$at
+	lw	$t7,60($sp)
+.L261:
+	lw	$t6,56($sp)
+.L262:
+	lw	$t5,52($sp)
+.L263:
+	lw	$t4,48($sp)
+.L264:
+	lw	$t3,44($sp)
+.L265:
+	lw	$t2,40($sp)
+.L266:
+	lw	$t1,36($sp)
+.L267:
+	lw	$t0,32($sp)
+.L268:
+	lw	$a3,28($sp)
+.L269:
+	lw	$a2,24($sp)
+.L270:
+	lw	$a1,20($sp)
+.L271:
+	lw	$a0,16($sp)
+.L272:
+	lw	$v1,12($sp)
+.L273:
+	lw	$v0,8($sp)
+.L274:
+	lw	$at,4($sp)
+.L275:
+	lw	$ra,0($sp)
+.L276:
+	addiu	$sp,$sp,80
+.L237:
+	mfc0	$kt0,$7
+	jr	$kt0
+	rfe
+.L196:
+	.size	vga_16bpp_vsync_interrupt,*-vga_16bpp_vsync_interrupt
+.L114:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_open ,cluster('$group_vga_16bpp_open')
+	.align	4
+	.global	vga_16bpp_open
+; Function vga_16bpp_open
+.L42:
+vga_16bpp_open:	.type	func
+	addiu	$sp,$sp,-8
+.L278:
+	sw	$ra,0($sp)
+.L279:
+	sw	$s0,4($sp)
+.L131:
+	move	$v0,$a0
+	sll	$v0,$v0,3
+	subu	$v0,$v0,$a0
+	sll	$v0,$v0,2
+	lui	$v1,@hi(vga_16bpp_table)
+	addiu	$v1,$v1,@lo(vga_16bpp_table)
+.L343:
+	move	$a1,$a0
+	sll	$a1,$a1,2
+	addu	$a1,$a1,$a0
+	sll	$a1,$a1,2
+	lui	$a0,@hi(drv_vga_16bpp_instance_table)
+.L282:
+	addiu	$a0,$a0,@lo(drv_vga_16bpp_instance_table)
+	addu	$a0,$a1,$a0
+.L288:
+	lw	$a1,16($a0)
+.L344:
+	addu	$s0,$v0,$v1
+.L289:
+	sll	$v0,$a1,3
+	lui	$v1,@hi(per_vga32_16bpp_instance_table)
+.L345:
+	lw	$a1,0($s0)
+.L346:
+	addiu	$v1,$v1,@lo(per_vga32_16bpp_instance_table)
+.L347:
+	bne	$a1,$zero,.L9
+.L348:
+	addu	$t7,$v0,$v1
+.L284:
+	lw	$v0,0($t7)
+.L349:
+	lbu	$a1,0($a0)
+.L350:
+	sw	$v0,0($s0)
+.L351:
+	sw	$a1,20($s0)
+.L352:
+	move	$a0,$s0
+.L286:
+	jal	vga_16bpp_set_resolution
+.L353:
+	sw	$zero,8($s0)
+.L287:
+	lb	$a0,4($t7)
+.L354:
+	addiu	$v0,$zero,-1
+	beq	$a0,$v0,.L10
+.L355:
+	sw	$a0,4($s0)
+.L356:
+	lui	$v0,@hi(vga_16bpp_vsync_interrupt)
+	addiu	$a2,$v0,@lo(vga_16bpp_vsync_interrupt)
+.L283:
+	jal	interrupt_register_native
+	move	$a1,$s0
+.L285:
+	lw	$a0,4($s0)
+	jal	interrupt_configure
+	move	$a1,$zero
+.L139:
+	lw	$a0,4($s0)
+	li	$v0,0x1
+	sllv	$v0,$v0,$a0
+	mtc0	$v0,$2
+.L140:
+	jal	pal_architecture_interrupt_enable
+	nop
+.L10:
+.L9:
+	move	$v0,$s0
+.L290:
+	lw	$s0,4($sp)
+.L280:
+	lw	$ra,0($sp)
+.L281:
+	jr	$ra
+	addiu	$sp,$sp,8
+.L128:
+	.size	vga_16bpp_open,*-vga_16bpp_open
+.L69:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_enable ,cluster('$group_vga_16bpp_enable')
+	.align	4
+	.global	vga_16bpp_enable
+; Function vga_16bpp_enable
+.L44:
+vga_16bpp_enable:	.type	func
+	lw	$v0,8($a0)
+	beq	$v0,$zero,.L12
+	nop
+.L432:
+	lw	$v0,0($a0)
+	li	$v1,0x1301
+	sw	$v1,0($v0)
+.L433:
+	jr	$ra
+.L434:
+	li	$v0,0x1
+.L12:
+	jr	$ra
+.L435:
+	move	$v0,$zero
+.L214:
+	.size	vga_16bpp_enable,*-vga_16bpp_enable
+.L119:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_disable ,cluster('$group_vga_16bpp_disable')
+	.align	4
+	.global	vga_16bpp_disable
+; Function vga_16bpp_disable
+.L46:
+vga_16bpp_disable:	.type	func
+	lw	$v0,0($a0)
+	li	$v1,0x1300
+	sw	$v1,0($v0)
+.L440:
+	jr	$ra
+.L441:
+	nop
+.L216:
+	.size	vga_16bpp_disable,*-vga_16bpp_disable
+.L124:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_set_screen ,cluster('$group_vga_16bpp_set_screen')
+	.align	4
+	.global	vga_16bpp_set_screen
+; Function vga_16bpp_set_screen
+.L48:
+vga_16bpp_set_screen:	.type	func
+	addiu	$sp,$sp,-4
+.L291:
+	sw	$ra,0($sp)
+.L292:
+	sw	$a1,8($a0)
+.L361:
+	lw	$v0,0($a0)
+.L362:
+	sltu	$v1,$zero,$a1
+.L363:
+	sw	$a1,20($v0)
+.L364:
+	lw	$v0,0($a0)
+	addiu	$v1,$v1,4864
+	sw	$v1,0($v0)
+.L365:
+	sb	$zero,24($a0)
+.L366:
+	lw	$v0,4($a0)
+	addiu	$v1,$zero,-1
+	beq	$v0,$v1,.L16
+	nop
+.L156:
+	li	$v1,0x1
+	sllv	$v0,$v1,$v0
+	mtc0	$v0,$2
+.L157:
+	jal	pal_architecture_interrupt_enable
+	lw	$a0,4($a0)
+.L16:
+	lw	$ra,0($sp)
+.L293:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L152:
+	.size	vga_16bpp_set_screen,*-vga_16bpp_set_screen
+.L74:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_get_screen ,cluster('$group_vga_16bpp_get_screen')
+	.align	4
+	.global	vga_16bpp_get_screen
+; Function vga_16bpp_get_screen
+.L50:
+vga_16bpp_get_screen:	.type	func
+	jr	$ra
+.L371:
+	lw	$v0,8($a0)
+.L161:
+	.size	vga_16bpp_get_screen,*-vga_16bpp_get_screen
+.L79:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_watch_for_vsync ,cluster('$group_vga_16bpp_watch_for_vsync')
+	.align	4
+	.global	vga_16bpp_watch_for_vsync
+; Function vga_16bpp_watch_for_vsync
+.L52:
+vga_16bpp_watch_for_vsync:	.type	func
+	addiu	$sp,$sp,-4
+.L294:
+	sw	$ra,0($sp)
+.L295:
+	sb	$zero,24($a0)
+.L376:
+	lw	$v0,4($a0)
+	addiu	$v1,$zero,-1
+	beq	$v0,$v1,.L18
+	nop
+.L166:
+	li	$v1,0x1
+	sllv	$v0,$v1,$v0
+	mtc0	$v0,$2
+.L167:
+	jal	pal_architecture_interrupt_enable
+	lw	$a0,4($a0)
+.L18:
+	lw	$ra,0($sp)
+.L296:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L164:
+	.size	vga_16bpp_watch_for_vsync,*-vga_16bpp_watch_for_vsync
+.L84:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_vsync_passed ,cluster('$group_vga_16bpp_vsync_passed')
+	.align	4
+	.global	vga_16bpp_vsync_passed
+; Function vga_16bpp_vsync_passed
+.L54:
+vga_16bpp_vsync_passed:	.type	func
+	jr	$ra
+.L381:
+	lb	$v0,24($a0)
+.L172:
+	.size	vga_16bpp_vsync_passed,*-vga_16bpp_vsync_passed
+.L89:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_get_width ,cluster('$group_vga_16bpp_get_width')
+	.align	4
+	.global	vga_16bpp_get_width
+; Function vga_16bpp_get_width
+.L56:
+vga_16bpp_get_width:	.type	func
+	jr	$ra
+.L403:
+	lw	$v0,12($a0)
+.L179:
+	.size	vga_16bpp_get_width,*-vga_16bpp_get_width
+.L99:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_get_height ,cluster('$group_vga_16bpp_get_height')
+	.align	4
+	.global	vga_16bpp_get_height
+; Function vga_16bpp_get_height
+.L58:
+vga_16bpp_get_height:	.type	func
+	jr	$ra
+.L408:
+	lw	$v0,16($a0)
+.L181:
+	.size	vga_16bpp_get_height,*-vga_16bpp_get_height
+.L104:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.drv_vga_16bpp.vga_16bpp_set_resolution ,cluster('$group_vga_16bpp_set_resolution')
+	.align	4
+	.global	vga_16bpp_set_resolution
+; Function vga_16bpp_set_resolution
+.L60:
+vga_16bpp_set_resolution:	.type	func
+	addiu	$sp,$sp,-16
+.L297:
+	sw	$ra,12($sp)
+.L298:
+	sltiu	$v0,$a1,7
+	beq	$v0,$zero,.L23
+.L386:
+	sw	$a1,20($a0)
+.L387:
+	lui	$v0,@hi(.L22)
+	addiu	$v0,$v0,@lo(.L22)
+	sll	$v1,$a1,2
+	addu	$v1,$v1,$v0
+	lw	$v0,0($v1)
+	jr	$v0
+	nop
+.L303:
+	.endsec	; End of section
+
+	.section	.rodata.drv_vga_16bpp.vga_16bpp_set_resolution ,cluster('$group_vga_16bpp_set_resolution')
+	.align	4
+.L22:
+	.dw	.L24
+	.dw	.L25
+	.dw	.L26
+	.dw	.L27
+	.dw	.L28
+	.dw	.L29
+	.dw	.L30
+	.endsec	; End of section
+
+	.resume	.text.drv_vga_16bpp.vga_16bpp_set_resolution ,cluster('$group_vga_16bpp_set_resolution')
+.L24:
+	lui	$v0,@hi(drv_vga_16bpp_instance_table)
+	addiu	$v0,$v0,@lo(drv_vga_16bpp_instance_table)
+	lbu	$v1,12($v0)
+	sw	$v1,0($sp)
+	lbu	$v1,13($v0)
+	sw	$v1,4($sp)
+	lbu	$v1,14($v0)
+	sw	$v1,8($sp)
+	lhu	$a1,2($v0)
+	lhu	$a2,4($v0)
+.L388:
+	j	.L31
+.L389:
+	lw	$a3,8($v0)
+.L25:
+	li	$v0,0x46
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x140
+.L306:
+	li	$a2,0xf0
+.L390:
+	j	.L32
+.L391:
+	li	$a3,0x7530
+.L26:
+	li	$v0,0x3c
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x280
+.L302:
+	li	$a2,0x1e0
+.L392:
+	j	.L33
+.L393:
+	li	$a3,0x7b0c
+.L27:
+	li	$v0,0x3c
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x320
+.L301:
+	li	$a2,0x258
+.L394:
+	j	.L34
+.L395:
+	li	$a3,0xafc8
+.L28:
+	li	$v0,0x3c
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x400
+.L305:
+	li	$a2,0x300
+.L396:
+	j	.L35
+.L397:
+	li	$a3,0xbb80
+.L29:
+	li	$v0,0x32
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x2d0
+.L300:
+	j	.L36
+.L398:
+	li	$a2,0x120
+.L30:
+	li	$v0,0x3c
+	sw	$v0,0($sp)
+	li	$v0,0x5
+	sw	$v0,4($sp)
+	sw	$v0,8($sp)
+	li	$a1,0x2d0
+.L304:
+	li	$a2,0xf0
+.L36:
+	li	$a3,0x3d09
+.L31:
+.L32:
+.L33:
+.L34:
+.L35:
+	jal	_vga_16bpp_set_resolution
+	nop
+.L23:
+	lw	$ra,12($sp)
+.L299:
+	jr	$ra
+	addiu	$sp,$sp,16
+.L174:
+	.size	vga_16bpp_set_resolution,*-vga_16bpp_set_resolution
+.L94:
+	; End of function
+	.endsec	; End of section
+
+	.section	.bss.drv_vga_16bpp.vga_16bpp_table ,cluster('$group_bss')
+	.align	4
+vga_16bpp_table:	.type	object
+	.size	vga_16bpp_table,28
+	.ds	28
+	.endsec	; End of section
+
+	.calls	'__INDIRECT__','vga_16bpp_vsync_interrupt'
+	.calls	'vga_16bpp_vsync_interrupt','pal_architecture_interrupt_disable'
+	.calls	'vga_16bpp_open','vga_16bpp_set_resolution'
+	.calls	'vga_16bpp_open','interrupt_register_native'
+	.calls	'vga_16bpp_open','interrupt_configure'
+	.calls	'vga_16bpp_open','pal_architecture_interrupt_enable'
+	.calls	'vga_16bpp_set_screen','pal_architecture_interrupt_enable'
+	.calls	'vga_16bpp_watch_for_vsync','pal_architecture_interrupt_enable'
+	.calls	'vga_16bpp_set_resolution','_vga_16bpp_set_resolution'
+	.calls	'_vga_16bpp_set_resolution','',0
+	.calls	'vga_16bpp_vsync_interrupt','',80
+	.calls	'vga_16bpp_open','',8
+	.calls	'vga_16bpp_enable','',0
+	.calls	'vga_16bpp_disable','',0
+	.calls	'vga_16bpp_set_screen','',4
+	.calls	'vga_16bpp_get_screen','',0
+	.calls	'vga_16bpp_watch_for_vsync','',4
+	.calls	'vga_16bpp_vsync_passed','',0
+	.calls	'vga_16bpp_get_width','',0
+	.calls	'vga_16bpp_get_height','',0
+	.calls	'vga_16bpp_set_resolution','',16
+	.extern	pal_architecture_interrupt_enable
+	.extern	pal_architecture_interrupt_disable
+	.extern	interrupt_register_native
+	.extern	interrupt_configure
+	.extern	interrupt_table
+	.extern	per_vga32_16bpp_instance_table
+	.extern	drv_vga_16bpp_instance_table
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L62:
+	.dw	3012
+	.dh	3
+	.dw	.L63
+	.db	4
+.L61:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L64
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0
+.L202:
+	.db	4
+	.db	"pal_architecture_current_interrupt",0
+	.db	3,1,121,17
+	.dw	.L129-.L62
+	.db	1,1
+.L203:
+	.db	3,0
+.L129:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_set_mask",0
+	.db	3,1,141,1,17,1,1,6
+	.db	"mask",0
+	.db	1,141,1,63
+	.dw	412
+	.db	3,0,4
+	.db	"pal_architecture_interrupts_get_mask",0
+	.db	3,1,146,1,17
+	.dw	412
+	.db	1,1,3,0,4
+	.db	"pal_architecture_interrupts_mask_levels_below",0
+	.db	3,1,151,1,19
+	.dw	412
+	.db	1,1,6
+	.db	"level",0
+	.db	1,151,1,75
+	.dw	412
+	.db	7,3,3,0,0
+.L144:
+	.db	2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1
+.L145:
+	.db	6
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	412
+.L147:
+	.db	3,0
+.L148:
+	.db	2
+	.db	"interrupt_enable",0
+	.db	3,2,218,1,13,1,1
+.L149:
+	.db	6
+	.db	"number",0
+	.db	2,218,1,39
+	.dw	412
+.L151:
+	.db	3,0
+.L209:
+	.db	2
+	.db	"interrupt_disable",0
+	.db	3,2,239,1,13,1,1
+.L211:
+	.db	6
+	.db	"number",0
+	.db	2,239,1,40
+	.dw	412
+.L213:
+	.db	3,0
+.L138:
+	.db	2
+	.db	"interrupt_acknowledge",0
+	.db	3,2,176,2,13,1,1
+.L141:
+	.db	6
+	.db	"number",0
+	.db	2,176,2,44
+	.dw	412
+.L143:
+	.db	7,3,0,0,4
+	.db	"interrupt_native_context",0
+	.db	3,2,193,2,14
+	.dw	.L307-.L62
+	.db	1,1,6
+	.db	"number",0
+	.db	2,193,2,48
+	.dw	412
+	.db	3,0
+.L307:
+	.db	8
+	.dw	.L308-.L62
+.L308:
+	.db	9
+	.db	"void",0
+.L198:
+	.db	4
+	.db	"interrupt_get_current",0
+	.db	3,2,209,2,17
+	.dw	412
+	.db	1,1
+.L201:
+	.db	7,3,0,0,10
+	.db	"__mtc0",0
+	.db	1,1,1,1,11
+	.db	"val",0
+	.dw	.L178-.L62
+	.db	11
+	.db	"spr",0
+	.dw	.L178-.L62
+	.db	0
+.L178:
+	.db	5
+	.db	"int",0
+	.db	4,5,12
+	.dw	326
+	.db	3,0,12
+	.dw	364
+	.db	3,0,12
+	.dw	428
+	.db	3,0,12
+	.dw	473
+	.db	3,0,12
+	.dw	519
+	.db	13
+	.dw	564
+	.db	3,0,12
+	.dw	580
+	.db	3,0,12
+	.dw	631
+	.db	13
+	.dw	689
+	.db	7,14
+	.dw	428
+	.db	15
+	.dw	471
+	.db	0,3,14
+	.dw	473
+	.db	15
+	.dw	517
+	.db	0,3,0,0,16
+	.db	"pal_architecture_interrupt_enable",0
+	.db	1,238,1,13,1,1,1,1,6
+	.db	"number",0
+	.db	1,238,1,56
+	.dw	412
+	.db	0,16
+	.db	"pal_architecture_interrupt_disable",0
+	.db	1,239,1,13,1,1,1,1,6
+	.db	"number",0
+	.db	1,239,1,57
+	.dw	412
+	.db	0,12
+	.dw	709
+	.db	13
+	.dw	756
+	.db	3,0,12
+	.dw	774
+	.db	13
+	.dw	799
+	.db	3,0,12
+	.dw	817
+	.db	13
+	.dw	843
+	.db	3,0,17
+	.db	"interrupt_register_native",0
+	.db	2,135,1,17
+	.dw	.L171-.L62
+	.db	1,1,1,1,6
+	.db	"number",0
+	.db	2,135,1,52
+	.dw	412
+	.db	6
+	.db	"context",0
+	.db	2,135,1,66
+	.dw	966
+	.db	6
+	.db	"handler",0
+	.db	2,135,1,102
+	.dw	.L309-.L62
+	.db	0
+.L171:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2,8
+	.dw	.L310-.L62
+.L310:
+	.db	18,1,1
+.L309:
+	.db	19
+	.db	"interrupt_native_handler_t",0
+	.db	2,86,16
+	.dw	.L311-.L62
+.L311:
+	.db	8
+	.dw	1398
+	.db	17
+	.db	"interrupt_configure",0
+	.db	2,138,1,17
+	.dw	1384
+	.db	1,1,1,1,6
+	.db	"number",0
+	.db	2,138,1,46
+	.dw	412
+	.db	6
+	.db	"cfg",0
+	.db	2,138,1,70
+	.dw	.L312-.L62
+	.db	0
+.L312:
+	.db	20,2,77,9,4,21
+	.db	"EDGE_RISING",0
+	.db	0,21
+	.db	"EDGE_FALLING",0
+	.db	1,21
+	.db	"LEVEL_HIGH",0
+	.db	2,21
+	.db	"LEVEL_LOW",0
+	.db	3,0,12
+	.dw	861
+	.db	13
+	.dw	891
+	.db	7,14
+	.dw	709
+	.db	13
+	.dw	756
+	.db	15
+	.dw	772
+	.db	0,3,0,0,12
+	.dw	911
+	.db	13
+	.dw	948
+	.db	3,0,12
+	.dw	977
+	.db	7,14
+	.dw	364
+	.db	15
+	.dw	410
+	.db	0,3,0,0
+.L127:
+	.db	8
+	.dw	.L313-.L62
+.L313:
+	.db	22
+	.db	"_vga_16bpp_s",0
+	.db	3,38,8,28,23
+	.db	"baseaddress",0
+	.db	4
+	.dw	.L154-.L62
+	.db	2,35,0,23
+	.db	"vsync_int",0
+	.db	4
+	.dw	1046
+	.db	2,35,4,23
+	.db	"screen",0
+	.db	4
+	.dw	.L154-.L62
+	.db	2,35,8,23
+	.db	"width",0
+	.db	4
+	.dw	1046
+	.db	2,35,12,23
+	.db	"height",0
+	.db	4
+	.dw	1046
+	.db	2,35,16,23
+	.db	"resolution",0
+	.db	4
+	.dw	1046
+	.db	2,35,20,23
+	.db	"vsync_passed",0
+	.db	1
+	.dw	1384
+	.db	2,35,24,0
+.L154:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7
+.L132:
+	.db	24
+	.dw	1626
+.L134:
+	.db	24
+	.dw	.L314-.L62
+.L314:
+	.db	8
+	.dw	.L315-.L62
+.L315:
+	.db	25
+	.dw	.L316-.L62
+.L316:
+	.db	26,4,64,9,20,23
+	.db	"resolution",0
+	.db	1
+	.dw	.L317-.L62
+	.db	2,35,0,23
+	.db	"hor_res",0
+	.db	2
+	.dw	.L318-.L62
+	.db	2,35,2,23
+	.db	"vert_res",0
+	.db	2
+	.dw	.L318-.L62
+	.db	2,35,4,23
+	.db	"hor_freq",0
+	.db	4
+	.dw	412
+	.db	2,35,8,23
+	.db	"vert_freq",0
+	.db	1
+	.dw	.L317-.L62
+	.db	2,35,12,23
+	.db	"back_porch",0
+	.db	1
+	.dw	.L317-.L62
+	.db	2,35,13,23
+	.db	"vert_back_porch",0
+	.db	1
+	.dw	.L317-.L62
+	.db	2,35,14,23
+	.db	"per_vga32_16bpp",0
+	.db	4
+	.dw	1046
+	.db	2,35,16,0
+.L317:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8
+.L318:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7
+.L136:
+	.db	24
+	.dw	.L319-.L62
+.L319:
+	.db	8
+	.dw	.L320-.L62
+.L320:
+	.db	25
+	.dw	.L321-.L62
+.L321:
+	.db	26,5,19,9,8,23
+	.db	"baseaddress",0
+	.db	4
+	.dw	1779
+	.db	2,35,0,23
+	.db	"vsync_interrupt",0
+	.db	1
+	.dw	.L322-.L62
+	.db	2,35,4,23
+	.db	"hsync_interrupt",0
+	.db	1
+	.dw	.L322-.L62
+	.db	2,35,5,23
+	.db	"blank_interrupt",0
+	.db	1
+	.dw	.L322-.L62
+	.db	2,35,6,0
+.L322:
+	.db	5
+	.db	"char",0
+	.db	1,6
+.L162:
+	.db	8
+	.dw	.L323-.L62
+.L323:
+	.db	25
+	.dw	1631
+.L176:
+	.db	20,6,36,9,4,21
+	.db	"VGA_16BPP_RES_CUSTOM",0
+	.db	0,21
+	.db	"VGA_16BPP_RES_320X240",0
+	.db	1,21
+	.db	"VGA_16BPP_RES_640X480",0
+	.db	2,21
+	.db	"VGA_16BPP_RES_800X600",0
+	.db	3,21
+	.db	"VGA_16BPP_RES_1024X768",0
+	.db	4,21
+	.db	"VGA_16BPP_RES_PAL720X288",0
+	.db	5,21
+	.db	"VGA_16BPP_RES_NTSC720X240",0
+	.db	6,0,27
+	.db	"__INDIRECT__",0
+	.db	3,1,1,1,1,1,19
+	.db	"__wchar_t",0
+	.db	3,1,1
+	.dw	2005
+	.db	19
+	.db	"__size_t",0
+	.db	3,1,1
+	.dw	412
+	.db	19
+	.db	"__ptrdiff_t",0
+	.db	3,1,1
+	.dw	1046
+	.db	19
+	.db	"__codeptr",0
+	.db	3,1,1
+	.dw	.L324-.L62
+.L324:
+	.db	8
+	.dw	.L325-.L62
+.L325:
+	.db	28,1,19
+	.db	"_iob_flag_t",0
+	.db	7,92,25
+	.dw	2005
+	.db	19
+	.db	"int8_t",0
+	.db	8,21,33
+	.dw	2144
+	.db	19
+	.db	"uint8_t",0
+	.db	8,22,33
+	.dw	1988
+	.db	19
+	.db	"uint16_t",0
+	.db	8,24,33
+	.dw	2005
+	.db	19
+	.db	"uint32_t",0
+	.db	8,26,33
+	.dw	412
+	.db	19
+	.db	"uint64_t",0
+	.db	8,28,33
+	.dw	.L326-.L62
+.L326:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,19
+	.db	"uintptr_t",0
+	.db	8,58,33
+	.dw	1779
+	.db	19
+	.db	"interrupt_cfg_t",0
+	.db	2,83,3
+	.dw	1504
+	.db	19
+	.db	"interrupt_handler_t",0
+	.db	2,89,20
+	.dw	.L327-.L62
+.L327:
+	.db	8
+	.dw	.L328-.L62
+.L328:
+	.db	29
+	.dw	412
+	.db	1,1,30
+	.dw	412
+	.db	30
+	.dw	966
+	.db	0,19
+	.db	"interrupt_t",0
+	.db	2,106,29
+	.dw	.L329-.L62
+.L329:
+	.db	22
+	.db	"interrupt_s",0
+	.db	2,108,8,8,23
+	.db	"context",0
+	.db	4
+	.dw	966
+	.db	2,35,0,23
+	.db	"handler",0
+	.db	4
+	.dw	2613
+	.db	2,35,4,0,8
+	.dw	2646
+	.db	31
+	.db	"interrupt_table",0
+	.db	2,159,1,21
+	.dw	.L330-.L62
+	.db	1,1
+.L330:
+	.db	32
+	.dw	2684
+	.db	33,0,19
+	.db	"per_vga32_16bpp_cfg_instance_t",0
+	.db	5,25,3
+	.dw	2042
+	.db	31
+	.db	"per_vga32_16bpp_instance_table",0
+	.db	5,27,45
+	.dw	.L331-.L62
+	.db	1,1
+.L331:
+	.db	25
+	.dw	.L332-.L62
+.L332:
+	.db	32
+	.dw	2042
+	.db	33,0,19
+	.db	"vga_16bpp_resolution_t",0
+	.db	6,45,3
+	.dw	2162
+	.db	19
+	.db	"vga_16bpp_t",0
+	.db	6,47,29
+	.dw	1631
+	.db	19
+	.db	"drv_vga_16bpp_cfg_instance_t",0
+	.db	4,74,3
+	.dw	1820
+	.db	31
+	.db	"drv_vga_16bpp_instance_table",0
+	.db	4,76,43
+	.dw	.L333-.L62
+	.db	1,1
+.L333:
+	.db	25
+	.dw	.L334-.L62
+.L334:
+	.db	32
+	.dw	1820
+	.db	33,0
+.L218:
+	.db	34,28
+	.dw	1631
+	.db	35,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L63:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,5,36,0,3,8,11,15,62,15,0,0,6,5,0,3,8,58
+	.db	15,59,15,57,15,73,19,0,0,7,11,1,0,0,8,15,0,73,19,0,0,9,59,0,3,8,0,0,10,46,1,3,8,54,15,39,12,63,12,60,12
+	.db	0,0,11,5,0,3,8,73,19,0,0,12,46,1,49,19,0,0,13,5,0,49,19,0,0,14,29,1,49,19,0,0,15,11,0,49,19,0,0,16,46
+	.db	1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,17,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63
+	.db	12,60,12,0,0,18,21,0,54,15,39,12,0,0,19,22,0,3,8,58,15,59,15,57,15,73,19,0,0,20,4,1,58,15,59,15,57,15
+	.db	11,15,0,0,21,40,0,3,8,28,13,0,0,22,19,1,3,8,58,15,59,15,57,15,11,15,0,0,23,13,0,3,8,11,15,73,19,56,9,0
+	.db	0,24,55,0,73,19,0,0,25,38,0,73,19,0,0,26,19,1,58,15,59,15,57,15,11,15,0,0,27,46,0,3,8,58,15,59,15,57,15
+	.db	54,15,63,12,60,12,0,0,28,21,0,54,15,0,0,29,21,1,73,19,54,15,39,12,0,0,30,5,0,73,19,0,0,31,52,0,3,8,58
+	.db	15,59,15,57,15,73,19,63,12,60,12,0,0,32,1,1,73,19,0,0,33,33,0,0,0,34,1,1,11,15,73,19,0,0,35,33,0,47,15
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L64:
+	.dw	.L336-.L335
+.L335:
+	.dh	3
+	.dw	.L338-.L337
+.L337:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\drv_vga_16bpp_cfg_instance.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\per_vga32_16bpp_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\include\\drv_vga_16bpp.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L338:
+.L336:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_open')
+.L65:
+	.dw	574
+	.dh	3
+	.dw	.L66
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L68,.L67
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_open",0
+	.db	1,127,14
+	.dw	.L127
+	.db	1,1,1
+	.dw	.L42,.L128,.L41
+	.db	4
+	.db	"id",0
+	.db	1,127,42
+	.dw	.L129,.L130
+	.db	5
+	.dw	.L42,.L128
+	.db	5
+	.dw	.L131,.L128
+	.db	6
+	.db	"drv",0
+	.db	1,131,1,28
+	.dw	.L132,.L133
+	.db	6
+	.db	"drv_cfg",0
+	.db	1,133,1,51
+	.dw	.L134,.L135
+	.db	6
+	.db	"per_cfg",0
+	.db	1,135,1,53
+	.dw	.L136,.L137
+	.db	7
+	.dw	.L138,.L139,.L140
+	.db	8
+	.dw	.L141,.L142
+	.db	9
+	.dw	.L143,.L139,.L140
+	.db	7
+	.dw	.L144,.L139,.L140
+	.db	8
+	.dw	.L145,.L146
+	.db	10
+	.dw	.L147,.L139,.L140
+	.db	0,0,0,7
+	.dw	.L148,.L140,.L9
+	.db	8
+	.dw	.L149,.L150
+	.db	10
+	.dw	.L151,.L140,.L9
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_open')
+.L66:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,1,49,16,17
+	.db	1,18,1,0,0,10,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_open')
+.L67:
+	.dw	.L340-.L339
+.L339:
+	.dh	3
+	.dw	.L342-.L341
+.L341:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0,0
+.L342:
+	.db	5,14,7,0,5,2
+	.dw	.L42
+	.db	3,254,0,1,5,32
+	.db	18+9*((.L131-.L42)/4)
+	.db	5,59
+	.db	16+9*((.L343-.L131)/4)
+	.db	5,61,9
+	.dh	.L288-.L343
+	.db	3,2,1,5,32
+	.db	10+9*((.L344-.L288)/4)
+	.db	5,61
+	.db	18+9*((.L289-.L344)/4)
+	.db	5,5
+	.db	17+9*((.L345-.L289)/4)
+	.db	5,61
+	.db	11+9*((.L346-.L345)/4)
+	.db	5,5
+	.db	17+9*((.L347-.L346)/4)
+	.db	5,61,7
+	.db	11+9*((.L348-.L347)/4)
+	.db	5,48,9
+	.dh	.L284-.L348
+	.db	3,6,1,5,47
+	.db	15+9*((.L349-.L284)/4)
+	.db	5,48
+	.db	13+9*((.L350-.L349)/4)
+	.db	5,47
+	.db	15+9*((.L351-.L350)/4)
+	.db	5,59
+	.db	18+9*((.L352-.L351)/4)
+	.db	5,29
+	.db	11+9*((.L353-.L352)/4)
+	.db	5,50,9
+	.dh	.L287-.L353
+	.db	3,5,1,5,9
+	.db	15+9*((.L354-.L287)/4)
+	.db	5,50
+	.db	13+9*((.L355-.L354)/4)
+	.db	5,94
+	.db	17+9*((.L356-.L355)/4)
+	.db	5,61
+	.db	15+9*((.L285-.L356)/4)
+	.db	4,2,5,55,9
+	.dh	.L139-.L285
+	.db	3,218,0,1,4,3,5,46,9
+	.dh	.L140-.L139
+	.db	3,106,1,4,1,5,5,9
+	.dh	.L9-.L140
+	.db	3,66,1,5,1
+	.db	15+9*((.L290-.L9)/4)
+	.db	9
+	.dh	.L69-.L290
+	.db	0,1,1
+.L340:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_open')
+.L68:
+	.dw	-1
+	.dw	.L42
+	.dw	0
+	.dw	.L69-.L42
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_set_screen')
+.L70:
+	.dw	530
+	.dh	3
+	.dw	.L71
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L73,.L72
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_set_screen",0
+	.db	1,215,1,6,1,1,1
+	.dw	.L48,.L152,.L47
+	.db	4
+	.db	"drv",0
+	.db	1,215,1,50
+	.dw	.L127,.L153
+	.db	4
+	.db	"screen",0
+	.db	1,215,1,65
+	.dw	.L154,.L155
+	.db	5
+	.dw	.L48,.L152
+	.db	6
+	.dw	.L138,.L156,.L157
+	.db	7
+	.dw	.L141,.L158
+	.db	8
+	.dw	.L143,.L156,.L157
+	.db	6
+	.dw	.L144,.L156,.L157
+	.db	7
+	.dw	.L145,.L159
+	.db	9
+	.dw	.L147,.L156,.L157
+	.db	0,0,0,6
+	.dw	.L148,.L157,.L16
+	.db	7
+	.dw	.L149,.L160
+	.db	9
+	.dw	.L151,.L157,.L16
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_set_screen')
+.L71:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.db	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,17,1,18,1,0,0,9,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_set_screen')
+.L72:
+	.dw	.L358-.L357
+.L357:
+	.dh	3
+	.dw	.L360-.L359
+.L359:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0,0
+.L360:
+	.db	5,6,7,0,5,2
+	.dw	.L48
+	.db	3,214,1,1,5,58
+	.db	16+9*((.L292-.L48)/4)
+	.db	5,66
+	.db	14+9*((.L361-.L292)/4)
+	.db	5,81
+	.db	15+9*((.L362-.L361)/4)
+	.db	5,66
+	.db	13+9*((.L363-.L362)/4)
+	.db	5,81
+	.db	15+9*((.L364-.L363)/4)
+	.db	5,30
+	.db	15+9*((.L365-.L364)/4)
+	.db	5,5
+	.db	15+9*((.L366-.L365)/4)
+	.db	4,2,5,55,9
+	.dh	.L156-.L366
+	.db	3,22,1,4,3,5,46,9
+	.dh	.L157-.L156
+	.db	3,106,1,4,1,5,1,9
+	.dh	.L16-.L157
+	.db	3,5,1,9
+	.dh	.L74-.L16
+	.db	0,1,1
+.L358:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_set_screen')
+.L73:
+	.dw	-1
+	.dw	.L48
+	.dw	0
+	.dw	.L74-.L48
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_get_screen')
+.L75:
+	.dw	404
+	.dh	3
+	.dw	.L76
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L78,.L77
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_get_screen",0
+	.db	1,238,1,11
+	.dw	.L154
+	.db	1,1,1
+	.dw	.L50,.L161,.L49
+	.db	4
+	.db	"drv",0
+	.db	1,238,1,61
+	.dw	.L162,.L163
+	.db	5
+	.dw	.L50,.L161
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_get_screen')
+.L76:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_get_screen')
+.L77:
+	.dw	.L368-.L367
+.L367:
+	.dh	3
+	.dw	.L370-.L369
+.L369:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L370:
+	.db	5,1,7,0,5,2
+	.dw	.L50
+	.db	3,240,1,1,5,5,7
+	.db	13+9*((.L371-.L50)/4)
+	.db	5,1,9
+	.dh	.L79-.L371
+	.db	3,1,0,1,1
+.L368:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_get_screen')
+.L78:
+	.dw	-1
+	.dw	.L50
+	.dw	0
+	.dw	.L79-.L50
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L80:
+	.dw	515
+	.dh	3
+	.dw	.L81
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L83,.L82
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_watch_for_vsync",0
+	.db	1,131,2,6,1,1,1
+	.dw	.L52,.L164,.L51
+	.db	4
+	.db	"drv",0
+	.db	1,131,2,55
+	.dw	.L127,.L165
+	.db	5
+	.dw	.L52,.L164
+	.db	6
+	.dw	.L138,.L166,.L167
+	.db	7
+	.dw	.L141,.L168
+	.db	8
+	.dw	.L143,.L166,.L167
+	.db	6
+	.dw	.L144,.L166,.L167
+	.db	7
+	.dw	.L145,.L169
+	.db	9
+	.dw	.L147,.L166,.L167
+	.db	0,0,0,6
+	.dw	.L148,.L167,.L18
+	.db	7
+	.dw	.L149,.L170
+	.db	9
+	.dw	.L151,.L167,.L18
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L81:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,29,1,49
+	.db	16,17,1,18,1,0,0,7,5,0,49,16,2,6,0,0,8,11,1,49,16,17,1,18,1,0,0,9,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L82:
+	.dw	.L373-.L372
+.L372:
+	.dh	3
+	.dw	.L375-.L374
+.L374:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0,0
+.L375:
+	.db	5,6,7,0,5,2
+	.dw	.L52
+	.db	3,130,2,1,5,30
+	.db	16+9*((.L295-.L52)/4)
+	.db	5,5
+	.db	15+9*((.L376-.L295)/4)
+	.db	4,2,5,55,9
+	.dh	.L166-.L376
+	.db	3,108,1,4,3,5,46,9
+	.dh	.L167-.L166
+	.db	3,106,1,4,1,5,1,9
+	.dh	.L18-.L167
+	.db	3,47,1,9
+	.dh	.L84-.L18
+	.db	0,1,1
+.L373:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L83:
+	.dw	-1
+	.dw	.L52
+	.dw	0
+	.dw	.L84-.L52
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_vsync_passed')
+.L85:
+	.dw	406
+	.dh	3
+	.dw	.L86
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L88,.L87
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_vsync_passed",0
+	.db	1,155,2,6
+	.dw	.L171
+	.db	1,1,1
+	.dw	.L54,.L172,.L53
+	.db	4
+	.db	"drv",0
+	.db	1,155,2,52
+	.dw	.L127,.L173
+	.db	5
+	.dw	.L54,.L172
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_vsync_passed')
+.L86:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_vsync_passed')
+.L87:
+	.dw	.L378-.L377
+.L377:
+	.dh	3
+	.dw	.L380-.L379
+.L379:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L380:
+	.db	5,1,7,0,5,2
+	.dw	.L54
+	.db	3,157,2,1,5,5,7
+	.db	13+9*((.L381-.L54)/4)
+	.db	5,1,9
+	.dh	.L89-.L381
+	.db	3,1,0,1,1
+.L378:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_vsync_passed')
+.L88:
+	.dw	-1
+	.dw	.L54
+	.dw	0
+	.dw	.L89-.L54
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_set_resolution')
+.L90:
+	.dw	428
+	.dh	3
+	.dw	.L91
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L93,.L92
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_set_resolution",0
+	.db	1,204,2,6,1,1,1
+	.dw	.L60,.L174,.L59
+	.db	4
+	.db	"drv",0
+	.db	1,204,2,54
+	.dw	.L127,.L175
+	.db	4
+	.db	"resolution",0
+	.db	1,204,2,82
+	.dw	.L176,.L177
+	.db	5
+	.dw	.L60,.L174
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_set_resolution')
+.L91:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_set_resolution')
+.L92:
+	.dw	.L383-.L382
+.L382:
+	.dh	3
+	.dw	.L385-.L384
+.L384:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L385:
+	.db	5,6,7,0,5,2
+	.dw	.L60
+	.db	3,203,2,1,5,5,9
+	.dh	.L298-.L60
+	.db	3,5,1,5,33
+	.db	13+9*((.L386-.L298)/4)
+	.db	5,5
+	.db	15+9*((.L387-.L386)/4)
+	.db	5,81,9
+	.dh	.L24-.L387
+	.db	3,4,1,5,9,9
+	.dh	.L388-.L24
+	.db	3,1,1,5,81
+	.db	13+9*((.L389-.L388)/4)
+	.db	5,91
+	.db	18+9*((.L25-.L389)/4)
+	.db	5,9,9
+	.dh	.L390-.L25
+	.db	3,1,1,5,91
+	.db	13+9*((.L391-.L390)/4)
+	.db	18+9*((.L26-.L391)/4)
+	.db	5,9,9
+	.dh	.L392-.L26
+	.db	3,1,1,5,91
+	.db	13+9*((.L393-.L392)/4)
+	.db	18+9*((.L27-.L393)/4)
+	.db	5,9,9
+	.dh	.L394-.L27
+	.db	3,1,1,5,91
+	.db	13+9*((.L395-.L394)/4)
+	.db	5,93
+	.db	18+9*((.L28-.L395)/4)
+	.db	5,9,9
+	.dh	.L396-.L28
+	.db	3,1,1,5,93
+	.db	13+9*((.L397-.L396)/4)
+	.db	5,97
+	.db	18+9*((.L29-.L397)/4)
+	.db	5,9
+	.db	15+9*((.L300-.L29)/4)
+	.db	5,97
+	.db	13+9*((.L398-.L300)/4)
+	.db	5,99
+	.db	18+9*((.L30-.L398)/4)
+	.db	5,1,9
+	.dh	.L23-.L30
+	.db	3,5,1,9
+	.dh	.L94-.L23
+	.db	0,1,1
+.L383:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_set_resolution')
+.L93:
+	.dw	-1
+	.dw	.L60
+	.dw	0
+	.dw	.L94-.L60
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_get_width')
+.L95:
+	.dw	403
+	.dh	3
+	.dw	.L96
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L98,.L97
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_get_width",0
+	.db	1,171,2,5
+	.dw	.L178
+	.db	1,1,1
+	.dw	.L56,.L179,.L55
+	.db	4
+	.db	"drv",0
+	.db	1,171,2,54
+	.dw	.L162,.L180
+	.db	5
+	.dw	.L56,.L179
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_get_width')
+.L96:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_get_width')
+.L97:
+	.dw	.L400-.L399
+.L399:
+	.dh	3
+	.dw	.L402-.L401
+.L401:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L402:
+	.db	5,1,7,0,5,2
+	.dw	.L56
+	.db	3,173,2,1,5,5,7
+	.db	13+9*((.L403-.L56)/4)
+	.db	5,1,9
+	.dh	.L99-.L403
+	.db	3,1,0,1,1
+.L400:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_get_width')
+.L98:
+	.dw	-1
+	.dw	.L56
+	.dw	0
+	.dw	.L99-.L56
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_get_height')
+.L100:
+	.dw	404
+	.dh	3
+	.dw	.L101
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L103,.L102
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_get_height",0
+	.db	1,187,2,5
+	.dw	.L178
+	.db	1,1,1
+	.dw	.L58,.L181,.L57
+	.db	4
+	.db	"drv",0
+	.db	1,187,2,55
+	.dw	.L162,.L182
+	.db	5
+	.dw	.L58,.L181
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_get_height')
+.L101:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_get_height')
+.L102:
+	.dw	.L405-.L404
+.L404:
+	.dh	3
+	.dw	.L407-.L406
+.L406:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L407:
+	.db	5,1,7,0,5,2
+	.dw	.L58
+	.db	3,189,2,1,5,5,7
+	.db	13+9*((.L408-.L58)/4)
+	.db	5,1,9
+	.dh	.L104-.L408
+	.db	3,1,0,1,1
+.L405:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_get_height')
+.L103:
+	.dw	-1
+	.dw	.L58
+	.dw	0
+	.dw	.L104-.L58
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__vga_16bpp_set_resolution')
+.L105:
+	.dw	633
+	.dh	3
+	.dw	.L106
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L108,.L107
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"_vga_16bpp_set_resolution",0
+	.db	1,50,13,1,1
+	.dw	.L38,.L183,.L37
+	.db	4
+	.db	"drv",0
+	.db	1,50,62
+	.dw	.L127,.L184
+	.db	4
+	.db	"width",0
+	.db	1,50,71
+	.dw	.L178,.L185
+	.db	4
+	.db	"height",0
+	.db	1,50,82
+	.dw	.L178,.L186
+	.db	4
+	.db	"hor_freq",0
+	.db	1,50,94
+	.dw	.L178,.L187
+	.db	4
+	.db	"vert_freq",0
+	.db	1,50,108
+	.dw	.L178,.L188
+	.db	4
+	.db	"hor_back_porch",0
+	.db	1,50,123
+	.dw	.L178,.L189
+	.db	4
+	.db	"vert_back_porch",0
+	.db	1,50,143,1
+	.dw	.L178,.L190
+	.db	5
+	.dw	.L38,.L183
+	.db	6
+	.db	"back_porch",0
+	.db	1,52,9
+	.dw	.L178,.L191
+	.db	6
+	.db	"sync",0
+	.db	1,53,9
+	.dw	.L178,.L192
+	.db	6
+	.db	"h_len",0
+	.db	1,54,9
+	.dw	.L178,.L193
+	.db	6
+	.db	"v_len",0
+	.db	1,54,16
+	.dw	.L178,.L194
+	.db	6
+	.db	"cldiv",0
+	.db	1,55,9
+	.dw	.L178,.L195
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__vga_16bpp_set_resolution')
+.L106:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.db	15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__vga_16bpp_set_resolution')
+.L107:
+	.dw	.L410-.L409
+.L409:
+	.dh	3
+	.dw	.L412-.L411
+.L411:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L412:
+	.db	5,13,7,0,5,2
+	.dw	.L38
+	.db	3,49,1,5,24,9
+	.dh	.L235-.L38
+	.db	3,7,1,5,25
+	.db	15+9*((.L413-.L235)/4)
+	.db	5,35
+	.db	18+9*((.L414-.L413)/4)
+	.db	5,57
+	.db	15+9*((.L225-.L414)/4)
+	.db	5,14
+	.db	12+9*((.L415-.L225)/4)
+	.db	5,16
+	.db	18+9*((.L3-.L415)/4)
+	.db	5,57
+	.db	12+9*((.L416-.L3)/4)
+	.db	5,19,9
+	.dh	.L2-.L416
+	.db	3,6,1,5,64
+	.db	17+9*((.L226-.L2)/4)
+	.db	5,19,9
+	.dh	.L219-.L226
+	.db	3,3,1,5,133,1
+	.db	16+9*((.L5-.L219)/4)
+	.db	5,25,9
+	.dh	.L220-.L5
+	.db	3,3,1,5,105
+	.db	16+9*((.L6-.L220)/4)
+	.db	5,33,9
+	.dh	.L417-.L6
+	.db	3,3,1,5,74
+	.db	17+9*((.L234-.L417)/4)
+	.db	5,25,9
+	.dh	.L223-.L234
+	.db	3,3,1,5,107
+	.db	16+9*((.L7-.L223)/4)
+	.db	5,80,9
+	.dh	.L418-.L7
+	.db	3,2,1,5,57
+	.db	15+9*((.L419-.L418)/4)
+	.db	5,58
+	.db	15+9*((.L420-.L419)/4)
+	.db	5,87
+	.db	15+9*((.L421-.L420)/4)
+	.db	5,1
+	.db	15+9*((.L422-.L421)/4)
+	.db	7
+	.db	14+9*((.L423-.L422)/4)
+	.db	9
+	.dh	.L109-.L423
+	.db	0,1,1
+.L410:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__vga_16bpp_set_resolution')
+.L108:
+	.dw	-1
+	.dw	.L38
+	.dw	0
+	.dw	.L109-.L38
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L110:
+	.dw	588
+	.dh	3
+	.dw	.L111
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L113,.L112
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_vsync_interrupt",0
+	.db	1,103,25,1,1,1
+	.dw	.L40,.L196,.L39
+	.db	4
+	.dw	.L40,.L196
+	.db	5
+	.db	"num",0
+	.db	1,105,9
+	.dw	.L178,.L197
+	.db	6
+	.dw	.L198,.L199,.L200
+	.db	7
+	.dw	.L201,.L199,.L200
+	.db	6
+	.dw	.L202,.L199,.L200
+	.db	7
+	.dw	.L203,.L199,.L200
+	.db	5
+	.db	"number",0
+	.db	2,123,14
+	.dw	.L129,.L204
+	.db	0,0,0,0,6
+	.dw	.L138,.L205,.L206
+	.db	8
+	.dw	.L141,.L207
+	.db	7
+	.dw	.L143,.L205,.L206
+	.db	6
+	.dw	.L144,.L205,.L206
+	.db	8
+	.dw	.L145,.L208
+	.db	9
+	.dw	.L147,.L205,.L206
+	.db	0,0,0,6
+	.dw	.L209,.L206,.L210
+	.db	8
+	.dw	.L211,.L212
+	.db	9
+	.dw	.L213,.L206,.L210
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L111:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,6,29,1
+	.db	49,16,17,1,18,1,0,0,7,11,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L112:
+	.dw	.L425-.L424
+.L424:
+	.dh	3
+	.dw	.L427-.L426
+.L426:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0,0
+.L427:
+	.db	5,25,7,0,5,2
+	.dw	.L40
+	.db	3,230,0,1,4,2,5,5,9
+	.dh	.L199-.L40
+	.db	3,21,1,4,1,5,29,9
+	.dh	.L277-.L199
+	.db	3,112,1,4,2,5,55,9
+	.dh	.L205-.L277
+	.db	3,134,1,1,4,3,5,47
+	.db	13+9*((.L206-.L205)/4)
+	.db	4,1,5,1,9
+	.dh	.L210-.L206
+	.db	3,128,127,1,9
+	.dh	.L114-.L210
+	.db	0,1,1
+.L425:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L113:
+	.dw	-1
+	.dw	.L40
+	.dw	0
+	.dw	.L114-.L40
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_enable')
+.L115:
+	.dw	400
+	.dh	3
+	.dw	.L116
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L118,.L117
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_enable",0
+	.db	1,173,1,6
+	.dw	.L171
+	.db	1,1,1
+	.dw	.L44,.L214,.L43
+	.db	4
+	.db	"drv",0
+	.db	1,173,1,46
+	.dw	.L127,.L215
+	.db	5
+	.dw	.L44,.L214
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_enable')
+.L116:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_enable')
+.L117:
+	.dw	.L429-.L428
+.L428:
+	.dh	3
+	.dw	.L431-.L430
+.L430:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L431:
+	.db	5,5,7,0,5,2
+	.dw	.L44
+	.db	3,174,1,1,5,61
+	.db	16+9*((.L432-.L44)/4)
+	.db	5,1
+	.db	18+9*((.L433-.L432)/4)
+	.db	5,9,7
+	.db	11+9*((.L434-.L433)/4)
+	.db	5,1
+	.db	17+9*((.L12-.L434)/4)
+	.db	5,5,7
+	.db	13+9*((.L435-.L12)/4)
+	.db	5,1,9
+	.dh	.L119-.L435
+	.db	3,1,0,1,1
+.L429:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_enable')
+.L118:
+	.dw	-1
+	.dw	.L44
+	.dw	0
+	.dw	.L119-.L44
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_vga_16bpp_disable')
+.L120:
+	.dw	397
+	.dh	3
+	.dw	.L121
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L123,.L122
+	.db	2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_disable",0
+	.db	1,194,1,6,1,1,1
+	.dw	.L46,.L216,.L45
+	.db	4
+	.db	"drv",0
+	.db	1,194,1,47
+	.dw	.L127,.L217
+	.db	5
+	.dw	.L46,.L216
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_vga_16bpp_disable')
+.L121:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_vga_16bpp_disable')
+.L122:
+	.dw	.L437-.L436
+.L436:
+	.dh	3
+	.dw	.L439-.L438
+.L438:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	0,0,0,0
+.L439:
+	.db	5,58,7,0,5,2
+	.dw	.L46
+	.db	3,195,1,1,5,1
+	.db	15+9*((.L440-.L46)/4)
+	.db	7
+	.db	14+9*((.L441-.L440)/4)
+	.db	9
+	.dh	.L124-.L441
+	.db	0,1,1
+.L437:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_vga_16bpp_disable')
+.L123:
+	.dw	-1
+	.dw	.L46
+	.dw	0
+	.dw	.L124-.L46
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L125:
+	.dw	354
+	.dh	3
+	.dw	.L126
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\src\\drv_vga_16bpp.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L61
+	.db	3
+	.db	"vga_16bpp_table",0
+	.db	3,35,20
+	.dw	.L218
+	.db	5,3
+	.dw	vga_16bpp_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L126:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L208:
+	.dw	0,0
+.L197:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L146:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_screen')
+.L160:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_resolution')
+.L175:
+	.dw	-1
+	.dw	.L60,.L60-.L60,.L303-.L60
+	.dh	1
+	.db	84
+	.dw	.L25-.L60,.L23-.L60
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L191:
+	.dw	-1
+	.dw	.L38,.L220-.L38,.L221-.L38
+	.dh	1
+	.db	82
+	.dw	.L223-.L38,.L224-.L38
+	.dh	1
+	.db	82
+	.dw	0,0
+.L188:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,0
+	.dw	.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,0
+	.dw	.L232-.L38,.L183-.L38
+	.dh	1
+	.db	90
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_height')
+.L182:
+	.dw	-1
+	.dw	.L58,.L58-.L58,.L181-.L58
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L130:
+	.dw	-1
+	.dw	.L42,.L42-.L42,.L282-.L42
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L184:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L227-.L38
+	.dh	1
+	.db	84
+	.dw	.L229-.L38,.L183-.L38
+	.dh	1
+	.db	89
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L133:
+	.dw	-1
+	.dw	.L42,.L283-.L42,.L139-.L42
+	.dh	1
+	.db	85
+	.dw	.L286-.L42,.L287-.L42
+	.dh	1
+	.db	84
+	.dw	.L289-.L42,.L280-.L42
+	.dh	1
+	.db	96
+	.dw	.L290-.L42,.L128-.L42
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L187:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L228-.L38
+	.dh	1
+	.db	87
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L169:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_screen')
+.L49:
+	.dw	-1
+	.dw	.L50,.L50-.L50,.L161-.L50
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_screen')
+.L158:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L51:
+	.dw	-1
+	.dw	.L52,.L52-.L52,.L294-.L52
+	.dh	2
+	.db	141,0
+	.dw	.L294-.L52,.L164-.L52
+	.dh	2
+	.db	141,4
+	.dw	.L164-.L52,.L164-.L52
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_screen')
+.L153:
+	.dw	-1
+	.dw	.L48,.L48-.L48,.L16-.L48
+	.dh	1
+	.db	84
+	.dw	0,0
+.L159:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L135:
+	.dw	-1
+	.dw	.L42,.L288-.L42,.L286-.L42
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_passed')
+.L173:
+	.dw	-1
+	.dw	.L54,.L54-.L54,.L172-.L54
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_resolution')
+.L177:
+	.dw	-1
+	.dw	.L60,.L29-.L60,.L300-.L60
+	.dh	1
+	.db	85
+	.dw	.L27-.L60,.L301-.L60
+	.dh	1
+	.db	85
+	.dw	.L26-.L60,.L302-.L60
+	.dh	1
+	.db	85
+	.dw	.L30-.L60,.L304-.L60
+	.dh	1
+	.db	85
+	.dw	.L28-.L60,.L305-.L60
+	.dh	1
+	.db	85
+	.dw	.L60-.L60,.L303-.L60
+	.dh	1
+	.db	85
+	.dw	.L25-.L60,.L306-.L60
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L193:
+	.dw	-1
+	.dw	.L38,.L225-.L38,.L226-.L38
+	.dh	1
+	.db	82
+	.dw	.L226-.L38,.L183-.L38
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L137:
+	.dw	-1
+	.dw	.L42,.L284-.L42,.L285-.L42
+	.dh	1
+	.db	95
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_width')
+.L180:
+	.dw	-1
+	.dw	.L56,.L56-.L56,.L179-.L56
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_enable')
+.L43:
+	.dw	-1
+	.dw	.L44,.L44-.L44,.L214-.L44
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L207:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_disable')
+.L217:
+	.dw	-1
+	.dw	.L46,.L46-.L46,.L216-.L46
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L170:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L142:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L165:
+	.dw	-1
+	.dw	.L52,.L52-.L52,.L18-.L52
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L186:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L222-.L38
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_screen')
+.L47:
+	.dw	-1
+	.dw	.L48,.L48-.L48,.L291-.L48
+	.dh	2
+	.db	141,0
+	.dw	.L291-.L48,.L152-.L48
+	.dh	2
+	.db	141,4
+	.dw	.L152-.L48,.L152-.L48
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_watch_for_vsync')
+.L168:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_passed')
+.L53:
+	.dw	-1
+	.dw	.L54,.L54-.L54,.L172-.L54
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_screen')
+.L155:
+	.dw	-1
+	.dw	.L48,.L48-.L48,.L16-.L48
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L195:
+	.dw	-1
+	.dw	.L38,.L3-.L38,.L183-.L38
+	.dh	1
+	.db	93
+	.dw	0,0
+.L192:
+	.dw	-1
+	.dw	.L38,.L219-.L38,.L183-.L38
+	.dh	1
+	.db	94
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_screen')
+.L163:
+	.dw	-1
+	.dw	.L50,.L50-.L50,.L161-.L50
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L39:
+	.dw	-1
+	.dw	.L40,.L40-.L40,.L236-.L40
+	.dh	2
+	.db	141,0
+	.dw	.L236-.L40,.L237-.L40
+	.dh	3
+	.db	141,208,0
+	.dw	.L237-.L40,.L196-.L40
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_height')
+.L57:
+	.dw	-1
+	.dw	.L58,.L58-.L58,.L181-.L58
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L37:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L183-.L38
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_enable')
+.L215:
+	.dw	-1
+	.dw	.L44,.L44-.L44,.L214-.L44
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L190:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,8
+	.dw	.L235-.L38,.L183-.L38
+	.dh	1
+	.db	92
+	.dw	.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,8
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_set_resolution')
+.L59:
+	.dw	-1
+	.dw	.L60,.L60-.L60,.L297-.L60
+	.dh	2
+	.db	141,0
+	.dw	.L297-.L60,.L174-.L60
+	.dh	2
+	.db	141,16
+	.dw	.L174-.L60,.L174-.L60
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L212:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L150:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_get_width')
+.L55:
+	.dw	-1
+	.dw	.L56,.L56-.L56,.L179-.L56
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_disable')
+.L45:
+	.dw	-1
+	.dw	.L46,.L46-.L46,.L216-.L46
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L185:
+	.dw	-1
+	.dw	.L38,.L233-.L38,.L234-.L38
+	.dh	1
+	.db	88
+	.dw	.L38-.L38,.L3-.L38
+	.dh	1
+	.db	85
+	.dw	0,0
+.L189:
+	.dw	-1
+	.dw	.L38,.L230-.L38,.L231-.L38
+	.dh	1
+	.db	91
+	.dw	.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,4
+	.dw	.L38-.L38,.L183-.L38
+	.dh	2
+	.db	145,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_vsync_interrupt')
+.L204:
+	.dw	-1
+	.dw	.L40,.L277-.L40,.L210-.L40
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__vga_16bpp_set_resolution')
+.L194:
+	.dw	-1
+	.dw	.L38,.L234-.L38,.L183-.L38
+	.dh	1
+	.db	88
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_vga_16bpp_open')
+.L41:
+	.dw	-1
+	.dw	.L42,.L42-.L42,.L278-.L42
+	.dh	2
+	.db	141,0
+	.dw	.L278-.L42,.L128-.L42
+	.dh	2
+	.db	141,8
+	.dw	.L128-.L42,.L128-.L42
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L442:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__vga_16bpp_set_resolution')
+	.dw	24
+	.dw	.L442,.L38,.L183-.L38
+	.db	8,15,8,24,8,25,8,26,8,27,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_vsync_interrupt')
+	.dw	320
+	.dw	.L442,.L40,.L196-.L40
+	.db	4
+	.dw	(.L236-.L40)/4
+	.db	19,208,0,22,29,4,19,141,208,0,4
+	.dw	(.L238-.L236)/4
+	.db	17,31,176,127,4
+	.dw	(.L239-.L238)/4
+	.db	17,1,180,127,4
+	.dw	(.L240-.L239)/4
+	.db	17,2,184,127,4
+	.dw	(.L241-.L240)/4
+	.db	17,3,188,127,4
+	.dw	(.L242-.L241)/4
+	.db	17,4,64,4
+	.dw	(.L243-.L242)/4
+	.db	17,5,68,4
+	.dw	(.L244-.L243)/4
+	.db	17,6,72,4
+	.dw	(.L245-.L244)/4
+	.db	17,7,76,4
+	.dw	(.L246-.L245)/4
+	.db	17,8,80,4
+	.dw	(.L247-.L246)/4
+	.db	17,9,84,4
+	.dw	(.L248-.L247)/4
+	.db	17,10,88,4
+	.dw	(.L249-.L248)/4
+	.db	17,11,92,4
+	.dw	(.L250-.L249)/4
+	.db	17,12,96,4
+	.dw	(.L251-.L250)/4
+	.db	17,13,100,4
+	.dw	(.L252-.L251)/4
+	.db	17,14,104,4
+	.dw	(.L253-.L252)/4
+	.db	17,15,108,4
+	.dw	(.L254-.L253)/4
+	.db	17,24,112,4
+	.dw	(.L255-.L254)/4
+	.db	17,25,116,4
+	.dw	(.L256-.L255)/4
+	.db	17,33,120,4
+	.dw	(.L199-.L256)/4
+	.db	17,34,124,4
+	.dw	(.L257-.L199)/4
+	.db	226,4
+	.dw	(.L258-.L257)/4
+	.db	217,4
+	.dw	(.L259-.L258)/4
+	.db	225,4
+	.dw	(.L260-.L259)/4
+	.db	216,4
+	.dw	(.L261-.L260)/4
+	.db	207,4
+	.dw	(.L262-.L261)/4
+	.db	206,4
+	.dw	(.L263-.L262)/4
+	.db	205,4
+	.dw	(.L264-.L263)/4
+	.db	204,4
+	.dw	(.L265-.L264)/4
+	.db	203,4
+	.dw	(.L266-.L265)/4
+	.db	202,4
+	.dw	(.L267-.L266)/4
+	.db	201,4
+	.dw	(.L268-.L267)/4
+	.db	200,4
+	.dw	(.L269-.L268)/4
+	.db	199,4
+	.dw	(.L270-.L269)/4
+	.db	198,4
+	.dw	(.L271-.L270)/4
+	.db	197,4
+	.dw	(.L272-.L271)/4
+	.db	196,4
+	.dw	(.L273-.L272)/4
+	.db	195,4
+	.dw	(.L274-.L273)/4
+	.db	194,4
+	.dw	(.L275-.L274)/4
+	.db	193,4
+	.dw	(.L276-.L275)/4
+	.db	223,4
+	.dw	(.L237-.L276)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_open')
+	.dw	64
+	.dw	.L442,.L42,.L128-.L42
+	.db	4
+	.dw	(.L278-.L42)/4
+	.db	19,8,22,29,3,19,141,8,4
+	.dw	(.L279-.L278)/4
+	.db	17,31,120,4
+	.dw	(.L131-.L279)/4
+	.db	17,16,124,4
+	.dw	(.L280-.L131)/4
+	.db	208,4
+	.dw	(.L281-.L280)/4
+	.db	223,4
+	.dw	(.L128-.L281)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_enable')
+	.dw	48
+	.dw	.L442,.L44,.L214-.L44
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_disable')
+	.dw	48
+	.dw	.L442,.L46,.L216-.L46
+	.db	8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_set_screen')
+	.dw	48
+	.dw	.L442,.L48,.L152-.L48
+	.db	4
+	.dw	(.L291-.L48)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L292-.L291)/4
+	.db	17,31,124,4
+	.dw	(.L293-.L292)/4
+	.db	223,4
+	.dw	(.L152-.L293)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_get_screen')
+	.dw	48
+	.dw	.L442,.L50,.L161-.L50
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_watch_for_vsync')
+	.dw	48
+	.dw	.L442,.L52,.L164-.L52
+	.db	4
+	.dw	(.L294-.L52)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L295-.L294)/4
+	.db	17,31,124,4
+	.dw	(.L296-.L295)/4
+	.db	223,4
+	.dw	(.L164-.L296)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_vsync_passed')
+	.dw	48
+	.dw	.L442,.L54,.L172-.L54
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_get_width')
+	.dw	48
+	.dw	.L442,.L56,.L179-.L56
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_get_height')
+	.dw	48
+	.dw	.L442,.L58,.L181-.L58
+	.db	8,3,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_vga_16bpp_set_resolution')
+	.dw	60
+	.dw	.L442,.L60,.L174-.L60
+	.db	8,15,8,24,8,25,8,26,8,27,4
+	.dw	(.L297-.L60)/4
+	.db	19,16,22,29,3,19,141,16,4
+	.dw	(.L298-.L297)/4
+	.db	17,31,124,4
+	.dw	(.L299-.L298)/4
+	.db	223,4
+	.dw	(.L174-.L299)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

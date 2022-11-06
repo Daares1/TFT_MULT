@@ -1,0 +1,429 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc2220a --dep-file=Output\frameout\graphics_graphics_cfg_instance.d --make-target=Output\frameout\graphics_graphics_cfg_instance.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\graphics_cfg_instance.src
+	; Module start
+	.source "Output\\framecfg\\graphics_cfg_instance.c"
+
+	.section	.sbss.graphics_cfg_instance.graphics_instance0_ad_graphics ,cluster('$group_sbss')
+	.global	graphics_instance0_ad_graphics
+	.align	4
+graphics_instance0_ad_graphics:	.type	object
+	.size	graphics_instance0_ad_graphics,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.bss.graphics_instance0_canvasbuffer1_section ,cluster('$group_bss')
+	.align	4
+graphics_instance0_canvasbuffer1:	.type	object
+	.size	graphics_instance0_canvasbuffer1,153600
+	.ds	153600
+	.endsec	; End of section
+
+	.section	.bss.graphics_instance0_canvasbuffer2_section ,cluster('$group_bss')
+	.align	4
+graphics_instance0_canvasbuffer2:	.type	object
+	.size	graphics_instance0_canvasbuffer2,153600
+	.ds	153600
+	.endsec	; End of section
+
+	.section	.bss.graphics_cfg_instance.graphics_instance0_canvasbuffer3 ,cluster('$group_bss')
+	.align	4
+graphics_instance0_canvasbuffer3:	.type	object
+	.size	graphics_instance0_canvasbuffer3,153600
+	.ds	153600
+	.endsec	; End of section
+
+	.section	.rodata.graphics_cfg_instance.graphics_instance_table ,cluster('$group_rodata')
+	.global	graphics_instance_table
+	.align	4
+graphics_instance_table:	.type	object
+	.size	graphics_instance_table,84
+	.dw	320,240,16
+	.bs	4,0
+	.dw	bpmono8
+	.bs	4,0
+	.dw	3,graphics_instance0_canvasbuffer1,153600
+	.bs	4,0
+	.dw	graphics_instance0_canvasbuffer2,153600
+	.bs	4,0
+	.dw	graphics_instance0_canvasbuffer3,153600
+	.bs	16,0
+	.dw	graphics_instance0_ad_graphics,1
+	.endsec	; End of section
+
+	.extern	bpmono8
+	.section	.debug_info
+.L3:
+	.dw	1140
+	.dh	3
+	.dw	.L4
+	.db	4
+.L2:
+	.db	1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L5
+	.db	2
+	.db	"__wchar_t",0
+	.db	1,1,1
+	.dw	.L19-.L3
+.L19:
+	.db	3
+	.db	"unsigned short int",0
+	.db	2,7,2
+	.db	"__size_t",0
+	.db	1,1,1
+	.dw	.L20-.L3
+.L20:
+	.db	3
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"__ptrdiff_t",0
+	.db	1,1,1
+	.dw	.L21-.L3
+.L21:
+	.db	3
+	.db	"int",0
+	.db	4,5,2
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L22-.L3
+.L22:
+	.db	4
+	.dw	.L23-.L3
+.L23:
+	.db	5,1,2
+	.db	"int8_t",0
+	.db	2,21,33
+	.dw	.L24-.L3
+.L24:
+	.db	3
+	.db	"char",0
+	.db	1,6,2
+	.db	"uint8_t",0
+	.db	2,22,33
+	.dw	.L25-.L3
+.L25:
+	.db	3
+	.db	"unsigned char",0
+	.db	1,8,2
+	.db	"int32_t",0
+	.db	2,25,33
+	.dw	280
+	.db	2
+	.db	"uint32_t",0
+	.db	2,26,33
+	.dw	244
+	.db	2
+	.db	"uintptr_t",0
+	.db	2,58,33
+	.dw	.L26-.L3
+.L26:
+	.db	3
+	.db	"unsigned long int",0
+	.db	4,7,2
+	.db	"size_t",0
+	.db	3,20,25
+	.dw	244
+	.db	2
+	.db	"font_t",0
+	.db	4,82,24
+	.dw	.L27-.L3
+.L27:
+	.db	6
+	.db	"_font_s",0
+	.db	4,82,16,1,7
+	.db	"bpmono8",0
+	.db	4,96,21
+	.dw	.L28-.L3
+	.db	1,1
+.L28:
+	.db	8
+	.dw	470
+	.db	2
+	.db	"graphics_cfg_instance_t",0
+	.db	5,141,1,3
+	.dw	.L29-.L3
+.L29:
+	.db	9,5,118,9,84,10
+	.db	"canvas_width",0
+	.db	4
+	.dw	244
+	.db	2,35,0,10
+	.db	"canvas_height",0
+	.db	4
+	.dw	244
+	.db	2,35,4,10
+	.db	"color_format",0
+	.db	4
+	.dw	280
+	.db	2,35,8,10
+	.db	"rotation",0
+	.db	4
+	.dw	280
+	.db	2,35,12,10
+	.db	"default_font",0
+	.db	4
+	.dw	.L30-.L3
+	.db	2,35,16,10
+	.db	"user_supplied",0
+	.db	4
+	.dw	.L30-.L3
+	.db	2,35,20,10
+	.db	"canvascount",0
+	.db	4
+	.dw	280
+	.db	2,35,24,10
+	.db	"canvasbuffer1",0
+	.db	4
+	.dw	.L31-.L3
+	.db	2,35,28,10
+	.db	"canvasbuffer1_size",0
+	.db	4
+	.dw	244
+	.db	2,35,32,10
+	.db	"canvasbuffer1_double",0
+	.db	1
+	.dw	.L32-.L3
+	.db	2,35,36,10
+	.db	"canvasbuffer2",0
+	.db	4
+	.dw	.L31-.L3
+	.db	2,35,40,10
+	.db	"canvasbuffer2_size",0
+	.db	4
+	.dw	244
+	.db	2,35,44,10
+	.db	"canvasbuffer2_double",0
+	.db	1
+	.dw	.L32-.L3
+	.db	2,35,48,10
+	.db	"canvasbuffer3",0
+	.db	4
+	.dw	.L31-.L3
+	.db	2,35,52,10
+	.db	"canvasbuffer3_size",0
+	.db	4
+	.dw	244
+	.db	2,35,56,10
+	.db	"canvasbuffer3_double",0
+	.db	1
+	.dw	.L32-.L3
+	.db	2,35,60,10
+	.db	"canvasbuffer4",0
+	.db	4
+	.dw	.L31-.L3
+	.db	2,35,64,10
+	.db	"canvasbuffer4_size",0
+	.db	4
+	.dw	244
+	.db	2,35,68,10
+	.db	"canvasbuffer4_double",0
+	.db	1
+	.dw	.L32-.L3
+	.db	2,35,72,10
+	.db	"ad_graphics",0
+	.db	4
+	.dw	.L33-.L3
+	.db	2,35,76,10
+	.db	"ad_graphics_size",0
+	.db	4
+	.dw	280
+	.db	2,35,80,0
+.L30:
+	.db	4
+	.dw	.L34-.L3
+.L34:
+	.db	8
+	.dw	470
+.L31:
+	.db	4
+	.dw	351
+.L32:
+	.db	3
+	.db	"_Bool",0
+	.db	1,2
+.L33:
+	.db	4
+	.dw	280
+.L16:
+	.db	8
+	.dw	.L35-.L3
+.L35:
+	.db	11,84
+	.dw	539
+	.db	12,0,0
+.L17:
+	.db	11,4
+	.dw	280
+	.db	12,0,0
+.L18:
+	.db	11,128,176,9
+	.dw	.L36-.L3
+	.db	12,0,0
+.L36:
+	.db	11,128,176,9
+	.dw	351
+	.db	12,255,175,9,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L4:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,22,0,3,8,58,15,59,15,57,15,73,19,0,0,3,36,0,3,8,11,15
+	.db	62,15,0,0,4,15,0,73,19,0,0,5,21,0,54,15,0,0,6,19,0,3,8,58,15,59,15,57,15,60,12,0,0,7,52,0,3,8,58,15,59
+	.db	15,57,15,73,19,63,12,60,12,0,0,8,38,0,73,19,0,0,9,19,1,58,15,59,15,57,15,11,15,0,0,10,13,0,3,8,11,15,73
+	.db	19,56,9,0,0,11,1,1,11,15,73,19,0,0,12,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L5:
+	.dw	.L38-.L37
+.L37:
+	.dh	3
+	.dw	.L40-.L39
+.L39:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\graphics_cfg_instance.h",0
+	.db	0,0,0,0
+.L40:
+.L38:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_rodata')
+.L6:
+	.dw	224
+	.dh	3
+	.dw	.L7
+	.db	4,1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"graphics_instance_table",0
+	.db	1,17,31
+	.dw	.L16
+	.db	1,5,3
+	.dw	graphics_instance_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_rodata')
+.L7:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L8:
+	.dw	231
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"graphics_instance0_ad_graphics",0
+	.db	1,8,5
+	.dw	.L17
+	.db	1,5,3
+	.dw	graphics_instance0_ad_graphics
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L10:
+	.dw	232
+	.dh	3
+	.dw	.L11
+	.db	4,1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"graphics_instance0_canvasbuffer1",0
+	.db	1,10,31
+	.dw	.L18
+	.db	5,3
+	.dw	graphics_instance0_canvasbuffer1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L11:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L12:
+	.dw	232
+	.dh	3
+	.dw	.L13
+	.db	4,1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"graphics_instance0_canvasbuffer2",0
+	.db	1,13,31
+	.dw	.L18
+	.db	5,3
+	.dw	graphics_instance0_canvasbuffer2
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L13:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L14:
+	.dw	232
+	.dh	3
+	.dw	.L15
+	.db	4,1
+	.db	"Output\\framecfg\\graphics_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"graphics_instance0_canvasbuffer3",0
+	.db	1,15,31
+	.dw	.L18
+	.db	5,3
+	.dw	graphics_instance0_canvasbuffer3
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L15:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

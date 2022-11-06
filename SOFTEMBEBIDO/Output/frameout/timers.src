@@ -1,0 +1,506 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc4712a --dep-file=Output\frameout\timing_timers.d --make-target=Output\frameout\timing_timers.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\timers.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c"
+
+	.section	.text.timers.timer_register_handler ,cluster('$group_timer_register_handler')
+	.align	4
+	.global	timer_register_handler
+; Function timer_register_handler
+.L8:
+timer_register_handler:	.type	func
+	addiu	$sp,$sp,-12
+.L36:
+	sw	$ra,0($sp)
+.L37:
+	sw	$s0,4($sp)
+.L38:
+	sw	$s1,8($sp)
+.L39:
+	move	$s0,$a0
+.L44:
+	move	$a0,$a1
+.L50:
+	move	$a1,$a2
+.L47:
+	move	$s1,$a3
+.L51:
+	li	$a3,0x3e8
+.L43:
+	jal	__div64
+	move	$a2,$zero
+.L45:
+	or	$a0,$v0,$v1
+.L46:
+	bne	$a0,$zero,.L3
+	nop
+.L70:
+	j	.L4
+	move	$v0,$zero
+.L3:
+	move	$a0,$s0
+.L48:
+	move	$a1,$v0
+	move	$a2,$v1
+.L49:
+	jal	pal_timer_register_handler
+	move	$a3,$s1
+.L4:
+	lw	$s1,8($sp)
+.L40:
+	lw	$s0,4($sp)
+.L41:
+	lw	$ra,0($sp)
+.L42:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L26:
+	.size	timer_register_handler,*-timer_register_handler
+.L19:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.timers.timer_deregister_handler ,cluster('$group_timer_deregister_handler')
+	.align	4
+	.global	timer_deregister_handler
+; Function timer_deregister_handler
+.L10:
+timer_deregister_handler:	.type	func
+	j	pal_timer_deregister_handler
+.L75:
+	nop
+.L34:
+	.size	timer_deregister_handler,*-timer_deregister_handler
+.L24:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'timer_register_handler','__div64'
+	.calls	'timer_register_handler','pal_timer_register_handler'
+	.calls	'timer_deregister_handler','pal_timer_deregister_handler'
+	.calls	'timer_register_handler','',12
+	.calls	'timer_deregister_handler','',0
+	.extern	pal_timer_register_handler
+	.extern	pal_timer_deregister_handler
+	.extern	__div64
+	.section	.debug_info
+.L12:
+	.dw	964
+	.dh	3
+	.dw	.L13
+	.db	4
+.L11:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L14
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	.L52-.L12
+	.db	3,0
+.L52:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7
+.L25:
+	.db	6
+	.dw	.L53-.L12
+.L53:
+	.db	7
+	.db	"void",0
+.L28:
+	.db	5
+	.db	"long long int",0
+	.db	8,5,6
+	.dw	.L54-.L12
+.L54:
+	.db	8,1,1,9
+	.dw	522
+	.db	0
+.L30:
+	.db	10
+	.db	"timer_handler_t",0
+	.db	2,27,16
+	.dw	.L55-.L12
+.L55:
+	.db	6
+	.dw	555
+.L33:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2,11
+	.dw	312
+	.db	3,0,11
+	.dw	350
+	.db	3,0,11
+	.dw	395
+	.db	3,0,11
+	.dw	441
+	.db	12
+	.dw	488
+	.db	3,0,13
+	.db	"pal_timer_register_handler",0
+	.db	3,48,14
+	.dw	522
+	.db	1,1,1,1,14,3,48,48
+	.dw	522
+	.db	14,3,48,51
+	.dw	533
+	.db	14,3,48,60
+	.dw	.L56-.L12
+	.db	0,6
+	.dw	555
+.L56:
+	.db	10
+	.db	"pal_timer_handler_t",0
+	.db	3,46,16
+	.dw	588
+	.db	13
+	.db	"pal_timer_deregister_handler",0
+	.db	3,49,14
+	.dw	593
+	.db	1,1,1,1,14,3,49,48
+	.dw	522
+	.db	0,10
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	.L57-.L12
+.L57:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,10
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	506
+	.db	10
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	.L58-.L12
+.L58:
+	.db	5
+	.db	"int",0
+	.db	4,5,10
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L59-.L12
+.L59:
+	.db	6
+	.dw	.L60-.L12
+.L60:
+	.db	15,1,10
+	.db	"uint32_t",0
+	.db	5,26,33
+	.dw	506
+	.db	10
+	.db	"int64_t",0
+	.db	5,27,33
+	.dw	533
+	.db	10
+	.db	"uint64_t",0
+	.db	5,28,33
+	.dw	.L61-.L12
+.L61:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L13:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,15,0,73,19,0,0,7,59,0,3,8,0,0
+	.db	8,21,1,54,15,39,12,0,0,9,5,0,73,19,0,0,10,22,0,3,8,58,15,59,15,57,15,73,19,0,0,11,46,1,49,19,0,0,12,5
+	.db	0,49,19,0,0,13,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,14,5,0,58,15,59,15,57,15,73
+	.db	19,0,0,15,21,0,54,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L14:
+	.dw	.L63-.L62
+.L62:
+	.dh	3
+	.dw	.L65-.L64
+.L64:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\include\\timers.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\include\\pal.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L65:
+.L63:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_timer_register_handler')
+.L15:
+	.dw	450
+	.dh	3
+	.dw	.L16
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L18,.L17
+	.db	2
+	.dw	.L11
+	.db	3
+	.db	"timer_register_handler",0
+	.db	1,46,17
+	.dw	.L25
+	.db	1,1,1
+	.dw	.L8,.L26,.L7
+	.db	4
+	.db	"context",0
+	.db	1,46,49
+	.dw	.L25,.L27
+	.db	4
+	.db	"freq",0
+	.db	1,46,66
+	.dw	.L28,.L29
+	.db	4
+	.db	"handler",0
+	.db	1,46,88
+	.dw	.L30,.L31
+	.db	5
+	.dw	.L8,.L26
+	.db	6
+	.db	"ofreq",0
+	.db	1,48,13
+	.dw	.L28,.L32
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_timer_register_handler')
+.L16:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_timer_register_handler')
+.L17:
+	.dw	.L67-.L66
+.L66:
+	.dh	3
+	.dw	.L69-.L68
+.L68:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	0,0,0,0
+.L69:
+	.db	5,17,7,0,5,2
+	.dw	.L8
+	.db	3,45,1,5,34,9
+	.dh	.L51-.L8
+	.db	3,6,1,5,5,9
+	.dh	.L45-.L51
+	.db	3,5,1,5,23
+	.db	14+9*((.L70-.L45)/4)
+	.db	5,5
+	.db	15+9*((.L3-.L70)/4)
+	.db	5,1
+	.db	15+9*((.L4-.L3)/4)
+	.db	9
+	.dh	.L19-.L4
+	.db	0,1,1
+.L67:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_timer_register_handler')
+.L18:
+	.dw	-1
+	.dw	.L8
+	.dw	0
+	.dw	.L19-.L8
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_timer_deregister_handler')
+.L20:
+	.dw	391
+	.dh	3
+	.dw	.L21
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L23,.L22
+	.db	2
+	.dw	.L11
+	.db	3
+	.db	"timer_deregister_handler",0
+	.db	1,71,17
+	.dw	.L33
+	.db	1,1,1
+	.dw	.L10,.L34,.L9
+	.db	4
+	.db	"id",0
+	.db	1,71,49
+	.dw	.L25,.L35
+	.db	5
+	.dw	.L10,.L34
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_timer_deregister_handler')
+.L21:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_timer_deregister_handler')
+.L22:
+	.dw	.L72-.L71
+.L71:
+	.dh	3
+	.dw	.L74-.L73
+.L73:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\timing\\src\\timers.c",0
+	.db	0,0,0,0
+.L74:
+	.db	5,5,7,0,5,2
+	.dw	.L10
+	.db	3,200,0,1,7
+	.db	14+9*((.L75-.L10)/4)
+	.db	5,1,9
+	.dh	.L24-.L75
+	.db	3,1,0,1,1
+.L72:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_timer_deregister_handler')
+.L23:
+	.dw	-1
+	.dw	.L10
+	.dw	0
+	.dw	.L24-.L10
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_timer_register_handler')
+.L32:
+	.dw	-1
+	.dw	.L8,.L45-.L8,.L46-.L8
+	.dh	6
+	.db	82,147,4,83,147,4
+	.dw	0,0
+.L31:
+	.dw	-1
+	.dw	.L8,.L8-.L8,.L43-.L8
+	.dh	1
+	.db	87
+	.dw	.L49-.L8,.L4-.L8
+	.dh	1
+	.db	87
+	.dw	.L51-.L8,.L40-.L8
+	.dh	1
+	.db	97
+	.dw	0,0
+.L7:
+	.dw	-1
+	.dw	.L8,.L8-.L8,.L36-.L8
+	.dh	2
+	.db	141,0
+	.dw	.L36-.L8,.L26-.L8
+	.dh	2
+	.db	141,12
+	.dw	.L26-.L8,.L26-.L8
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_timer_deregister_handler')
+.L9:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L34-.L10
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L35:
+	.dw	-1
+	.dw	.L10,.L10-.L10,.L34-.L10
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_timer_register_handler')
+.L27:
+	.dw	-1
+	.dw	.L8,.L44-.L8,.L41-.L8
+	.dh	1
+	.db	96
+	.dw	.L48-.L8,.L4-.L8
+	.dh	1
+	.db	84
+	.dw	.L8-.L8,.L50-.L8
+	.dh	1
+	.db	84
+	.dw	0,0
+.L29:
+	.dw	-1
+	.dw	.L8,.L47-.L8,.L45-.L8
+	.dh	6
+	.db	84,147,4,85,147,4
+	.dw	.L8-.L8,.L47-.L8
+	.dh	6
+	.db	85,147,4,86,147,4
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L76:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_timer_register_handler')
+	.dw	76
+	.dw	.L76,.L8,.L26-.L8
+	.db	4
+	.dw	(.L36-.L8)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L37-.L36)/4
+	.db	17,31,116,4
+	.dw	(.L38-.L37)/4
+	.db	17,16,120,4
+	.dw	(.L39-.L38)/4
+	.db	17,17,124,4
+	.dw	(.L40-.L39)/4
+	.db	209,4
+	.dw	(.L41-.L40)/4
+	.db	208,4
+	.dw	(.L42-.L41)/4
+	.db	223,4
+	.dw	(.L26-.L42)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_timer_deregister_handler')
+	.dw	12
+	.dw	.L76,.L10,.L34-.L10
+	.endsec	; End of section
+
+	; Module end
+	.end

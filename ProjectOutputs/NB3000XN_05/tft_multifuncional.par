@@ -1,0 +1,339 @@
+Release 12.1 par M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+DAARES1-VAIO::  Tue Apr 22 17:38:03 2014
+
+par -w -t 1 tft_multifuncional_map.ncd tft_multifuncional.ncd
+C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutpu
+ts\NB3000XN_05\TFT_MULTIFUNCIONAL_map.pcf 
+
+
+Constraints file:
+C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL_map.pc
+f.
+Loading device for application Rf_Device from file '3s1400a.nph' in environment C:\Xilinx\12.1\ISE_DS\ISE.
+   "TFT_MULTIFUNCIONAL" is an NCD, version 3.2, device xc3s1400an, package fgg676, speed -4
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s1400an' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.41 2010-04-09".
+
+
+Design Summary Report:
+
+ Number of External IOBs                         168 out of 502    33%
+
+   Number of External Input IOBs                 13
+
+      Number of External Input IBUFs             13
+        Number of LOCed External Input IBUFs     13 out of 13    100%
+
+
+   Number of External Output IOBs               107
+
+      Number of External Output IOBs            107
+        Number of LOCed External Output IOBs    107 out of 107   100%
+
+
+   Number of External Bidir IOBs                 48
+
+      Number of External Bidir IOBs              48
+        Number of LOCed External Bidir IOBs      48 out of 48    100%
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of MULT18X18SIOs                   2 out of 32      6%
+   Number of RAMB16BWEs                     17 out of 32     53%
+   Number of Slices                       4117 out of 11264  36%
+      Number of SLICEMs                    180 out of 5632    3%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 18 secs 
+Finished initial Timing Analysis.  REAL time: 18 secs 
+
+WARNING:Par:288 - The signal U_TFT_TOUCH_VGA/INT_O(2) has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_VGA/INT_O(0) has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TFT/IO_INT_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(6) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(7) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_WB_MULTIMASTER_1_M0_S0_SRAM_ADR_1 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_8 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_9 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal TFT_TSC_BUSY_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_10 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_12 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_13 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_14 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal PinSignal_U1_O_15 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TERMINAL_1/TDOENABLE has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/RUNNING has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_WB_MULTIMASTER_1_M0_S0_SRAM_ADR_0 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(10) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_20 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_23 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_22 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TERMINAL_1/INT_O(0) has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_VGA/CSYNC has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_VGA/BLANK has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_dip/pao_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TERMINAL_1/INT_O(1) has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(13) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(11) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(12) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(21) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(20) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(15) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(14) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(23) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(22) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(31) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(30) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(17) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(16) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(25) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(24) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(19) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(18) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(27) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(26) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(29) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(28) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(1) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(0) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(3) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(2) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(5) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(4) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_NamedSignal_TSK3000A_1_M1_S0_WB_INTERCON_2_ADR_21 has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(9) has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal U_TFT_TOUCH_TSK3000A_1_SubPart_MCU/SP(8) has no load.  PAR will not attempt to route this
+   signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 17 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:81e2c47b) REAL time: 29 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:81e2c47b) REAL time: 29 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:81e2c47b) REAL time: 29 secs 
+
+WARNING:Place:414 - The input design contains local clock signal(s). To get a better result, we recommend users run map
+   with the "-timing" option set before starting the placement.
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:9735aef3) REAL time: 49 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:9735aef3) REAL time: 49 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:9735aef3) REAL time: 49 secs 
+
+Phase 7.8  Global Placement
+..........................
+...........................
+.......................
+..........................................................................................................
+..........................................................
+...............................................................................
+Phase 7.8  Global Placement (Checksum:27d95ff1) REAL time: 1 mins 41 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:27d95ff1) REAL time: 1 mins 41 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:1326a5dd) REAL time: 2 mins 51 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:1326a5dd) REAL time: 2 mins 51 secs 
+
+Total REAL time to Placer completion: 2 mins 52 secs 
+Total CPU  time to Placer completion: 2 mins 45 secs 
+Writing design to file tft_multifuncional.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 30097 unrouted;      REAL time: 3 mins 25 secs 
+
+Phase  2  : 27964 unrouted;      REAL time: 3 mins 27 secs 
+
+Phase  3  : 7393 unrouted;      REAL time: 3 mins 40 secs 
+
+Phase  4  : 7712 unrouted; (Par is working to improve performance)     REAL time: 3 mins 53 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 24 secs 
+
+Updating file: tft_multifuncional.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 37 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 38 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 40 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 42 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 mins 49 secs 
+WARNING:Route:455 - CLK Net:VGA_CLK_int may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:JTAG_NEXUS_TCK_ibuf may have excessive skew because 
+      47 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 4 mins 49 secs 
+Total CPU time to Router completion: 4 mins 38 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|         VGA_CLK_int |  BUFGMUX_X1Y0| No   | 1893 |  0.287     |  1.271      |
++---------------------+--------------+------+------+------------+-------------+
+| JTAG_NEXUS_TCK_ibuf |         Local|      |  191 |  4.035     |  5.951      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net VGA | SETUP       |         N/A|    26.531ns|     N/A|           0
+  _CLK_int                                  | HOLD        |     0.689ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net JTA | SETUP       |         N/A|    10.044ns|     N/A|           0
+  G_NEXUS_TCK_ibuf                          | HOLD        |     0.201ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 72 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 5 mins 3 secs 
+Total CPU time to PAR completion: 4 mins 52 secs 
+
+Peak Memory Usage:  437 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 77
+Number of info messages: 1
+
+Writing design to file tft_multifuncional.ncd
+
+
+
+PAR done!

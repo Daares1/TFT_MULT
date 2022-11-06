@@ -1,0 +1,569 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc6220a --dep-file=Output\frameout\devfs_minimal_posix_devctl.d --make-target=Output\frameout\devfs_minimal_posix_devctl.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\posix_devctl.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\posix_devctl.c"
+
+	.section	.text.posix_devctl.posix_devctl ,cluster('$group_posix_devctl')
+	.align	4
+	.global	posix_devctl
+; Function posix_devctl
+.L11:
+posix_devctl:	.type	func
+	addiu	$sp,$sp,-24
+.L32:
+	sw	$ra,4($sp)
+.L33:
+	sw	$s0,8($sp)
+.L34:
+	sw	$s1,12($sp)
+.L35:
+	sw	$s2,16($sp)
+.L36:
+	sw	$s3,20($sp)
+.L37:
+	move	$s0,$a1
+.L45:
+	move	$s1,$a2
+.L49:
+	move	$s2,$a3
+.L50:
+	bne	$a2,$zero,.L2
+.L72:
+	lw	$s3,24($sp)
+.L43:
+	beq	$s2,$zero,.L3
+.L73:
+	nop
+.L74:
+	j	.L4
+	li	$v0,0x1c
+.L3:
+.L2:
+	bltz	$a0,.L5
+.L75:
+	nop
+.L76:
+	slti	$v0,$a0,8
+	beq	$v0,$zero,.L6
+	nop
+.L77:
+	jal	devio_getdev
+	nop
+.L44:
+	bne	$v0,$zero,.L7
+.L78:
+	nop
+.L6:
+.L5:
+	j	.L8
+	li	$v0,0x8
+.L7:
+	move	$a0,$v0
+.L47:
+	move	$a1,$s0
+.L46:
+	move	$a2,$s1
+.L51:
+	move	$a3,$s2
+.L48:
+	jal	devio_posix_devctl
+	sw	$s3,0($sp)
+.L8:
+.L4:
+	lw	$s3,20($sp)
+.L38:
+	lw	$s2,16($sp)
+.L39:
+	lw	$s1,12($sp)
+.L40:
+	lw	$s0,8($sp)
+.L41:
+	lw	$ra,4($sp)
+.L42:
+	jr	$ra
+	addiu	$sp,$sp,24
+.L22:
+	.size	posix_devctl,*-posix_devctl
+.L20:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'posix_devctl','devio_getdev'
+	.calls	'posix_devctl','devio_posix_devctl'
+	.calls	'posix_devctl','',24
+	.extern	devio_getdev
+	.extern	devio_posix_devctl
+	.section	.debug_info
+.L13:
+	.dw	1177
+	.dh	3
+	.dw	.L14
+	.db	4
+.L12:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\posix_devctl.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L15
+	.db	2
+	.db	"devio_getdev",0
+	.db	1,15,17
+	.dw	.L25-.L13
+	.db	1,1,1,1,3
+	.db	"fildes",0
+	.db	1,15,47
+	.dw	.L21-.L13
+	.db	0
+.L25:
+	.db	4
+	.dw	.L52-.L13
+.L52:
+	.db	5
+	.db	"void",0
+.L21:
+	.db	6
+	.db	"int",0
+	.db	4,5,2
+	.db	"devio_posix_devctl",0
+	.db	1,28,17
+	.dw	380
+	.db	1,1,1,1,3
+	.db	"dptr",0
+	.db	1,28,49
+	.dw	369
+	.db	3
+	.db	"dcmd",0
+	.db	1,29,47
+	.dw	380
+	.db	3
+	.db	"dev_data_ptr",0
+	.db	1,30,49
+	.dw	369
+	.db	3
+	.db	"nbyte",0
+	.db	1,31,50
+	.dw	.L27-.L13
+	.db	3
+	.db	"dev_info_ptr",0
+	.db	1,32,48
+	.dw	.L29-.L13
+	.db	0
+.L27:
+	.db	6
+	.db	"unsigned int",0
+	.db	4,7
+.L29:
+	.db	4
+	.dw	380
+	.db	7
+	.db	"__wchar_t",0
+	.db	2,1,1
+	.dw	.L53-.L13
+.L53:
+	.db	6
+	.db	"unsigned short int",0
+	.db	2,7,7
+	.db	"__size_t",0
+	.db	2,1,1
+	.dw	501
+	.db	7
+	.db	"__ssize_t",0
+	.db	2,1,1
+	.dw	380
+	.db	7
+	.db	"__ptrdiff_t",0
+	.db	2,1,1
+	.dw	380
+	.db	7
+	.db	"__codeptr",0
+	.db	2,1,1
+	.dw	.L54-.L13
+.L54:
+	.db	4
+	.dw	.L55-.L13
+.L55:
+	.db	8,1,7
+	.db	"uint8_t",0
+	.db	3,22,33
+	.dw	.L56-.L13
+.L56:
+	.db	6
+	.db	"unsigned char",0
+	.db	1,8,7
+	.db	"uint16_t",0
+	.db	3,24,33
+	.dw	540
+	.db	7
+	.db	"int32_t",0
+	.db	3,25,33
+	.dw	380
+	.db	7
+	.db	"uint32_t",0
+	.db	3,26,33
+	.dw	501
+	.db	7
+	.db	"size_t",0
+	.db	4,15,25
+	.dw	501
+	.db	7
+	.db	"ssize_t",0
+	.db	5,28,25
+	.dw	380
+	.db	7
+	.db	"time_t",0
+	.db	5,36,27
+	.dw	.L57-.L13
+.L57:
+	.db	6
+	.db	"unsigned long int",0
+	.db	4,7,7
+	.db	"posix_thread_t",0
+	.db	5,44,25
+	.dw	.L58-.L13
+.L58:
+	.db	9
+	.db	"thread_t",0
+	.db	5,44,16,1,7
+	.db	"posix_threadqueue_t",0
+	.db	5,50,9
+	.dw	.L59-.L13
+.L59:
+	.db	10
+	.db	"posix_threadqueue_t",0
+	.db	5,46,17,8,11
+	.db	"head",0
+	.db	4
+	.dw	.L60-.L13
+	.db	2,35,0,11
+	.db	"tail",0
+	.db	4
+	.dw	.L60-.L13
+	.db	2,35,4,0
+.L60:
+	.db	4
+	.dw	815
+	.db	7
+	.db	"pthread_mutex_t",0
+	.db	5,160,1,33
+	.dw	.L61-.L13
+.L61:
+	.db	10
+	.db	"_pthread_mutex_t",0
+	.db	5,162,1,8,32,12
+	.db	"type",0
+	.db	1
+	.dw	658
+	.db	2,0,2,35,0,12
+	.db	"protocol",0
+	.db	1
+	.dw	658
+	.db	2,2,2,35,0,12
+	.db	"prioceiling",0
+	.db	4
+	.dw	501
+	.db	16,4,2,35,0,12
+	.db	"recursive",0
+	.db	2
+	.dw	540
+	.db	8,4,2,35,2,12
+	.db	"preprio",0
+	.db	2
+	.dw	.L62-.L13
+	.db	16,0,2,35,4,11
+	.db	"initi",0
+	.db	4
+	.dw	380
+	.db	2,35,8,11
+	.db	"owner",0
+	.db	4
+	.dw	911
+	.db	2,35,12,11
+	.db	"nestup",0
+	.db	4
+	.dw	.L63-.L13
+	.db	2,35,16,11
+	.db	"nestdown",0
+	.db	4
+	.dw	.L63-.L13
+	.db	2,35,20,11
+	.db	"queue",0
+	.db	8
+	.dw	857
+	.db	2,35,24,0
+.L62:
+	.db	6
+	.db	"short int",0
+	.db	2,5
+.L63:
+	.db	4
+	.dw	941
+	.db	7
+	.db	"clockid_t",0
+	.db	5,183,1,13
+	.dw	380
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L14:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60
+	.db	12,0,0,3,5,0,3,8,58,15,59,15,57,15,73,19,0,0,4,15,0,73,19,0,0,5,59,0,3,8,0,0,6,36,0,3,8,11,15,62,15,0
+	.db	0,7,22,0,3,8,58,15,59,15,57,15,73,19,0,0,8,21,0,54,15,0,0,9,19,0,3,8,58,15,59,15,57,15,60,12,0,0,10,19
+	.db	1,3,8,58,15,59,15,57,15,11,15,0,0,11,13,0,3,8,11,15,73,19,56,9,0,0,12,13,0,3,8,11,15,73,19,13,15,12,15
+	.db	56,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L15:
+	.dw	.L65-.L64
+.L64:
+	.dh	3
+	.dw	.L67-.L66
+.L66:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\internal\\devio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\posix_devctl.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stddef.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0,0
+.L67:
+.L65:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_posix_devctl')
+.L16:
+	.dw	502
+	.dh	3
+	.dw	.L17
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\posix_devctl.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L19,.L18
+	.db	2
+	.dw	.L12
+	.db	3
+	.db	"posix_devctl",0
+	.db	1,58,12
+	.dw	.L21
+	.db	1,1,1
+	.dw	.L11,.L22,.L10
+	.db	4
+	.db	"fildes",0
+	.db	1,58,35
+	.dw	.L21,.L23
+	.db	4
+	.db	"dcmd",0
+	.db	1,59,35
+	.dw	.L21,.L24
+	.db	4
+	.db	"dev_data_ptr",0
+	.db	1,60,37
+	.dw	.L25,.L26
+	.db	4
+	.db	"nbyte",0
+	.db	1,61,38
+	.dw	.L27,.L28
+	.db	4
+	.db	"dev_info_ptr",0
+	.db	1,62,36
+	.dw	.L29,.L30
+	.db	5
+	.dw	.L11,.L22
+	.db	6
+	.db	"dptr",0
+	.db	1,65,15
+	.dw	.L25,.L31
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_posix_devctl')
+.L17:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_posix_devctl')
+.L18:
+	.dw	.L69-.L68
+.L68:
+	.dh	3
+	.dw	.L71-.L70
+.L70:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\devio\\devfs_minimal\\src\\posix_devctl.c",0
+	.db	0,0,0,0
+.L71:
+	.db	5,12,7,0,5,2
+	.dw	.L11
+	.db	3,57,1,5,15,9
+	.dh	.L50-.L11
+	.db	3,9,1,5,12,7,9
+	.dh	.L72-.L50
+	.db	3,119,1,5,39,9
+	.dh	.L43-.L72
+	.db	3,9,1,7
+	.db	14+9*((.L73-.L43)/4)
+	.db	5,17
+	.db	16+9*((.L74-.L73)/4)
+	.db	5,14
+	.db	17+9*((.L2-.L74)/4)
+	.db	7
+	.db	14+9*((.L75-.L2)/4)
+	.db	5,35
+	.db	14+9*((.L76-.L75)/4)
+	.db	5,55
+	.db	14+9*((.L77-.L76)/4)
+	.db	5,79
+	.db	14+9*((.L44-.L77)/4)
+	.db	7
+	.db	14+9*((.L78-.L44)/4)
+	.db	5,17
+	.db	16+9*((.L5-.L78)/4)
+	.db	5,9
+	.db	17+9*((.L7-.L5)/4)
+	.db	5,1
+	.db	15+9*((.L4-.L7)/4)
+	.db	9
+	.dh	.L20-.L4
+	.db	0,1,1
+.L69:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_posix_devctl')
+.L19:
+	.dw	-1
+	.dw	.L11
+	.dw	0
+	.dw	.L20-.L11
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_posix_devctl')
+.L26:
+	.dw	-1
+	.dw	.L11,.L11-.L11,.L44-.L11
+	.dh	1
+	.db	86
+	.dw	.L49-.L11,.L40-.L11
+	.dh	1
+	.db	97
+	.dw	.L51-.L11,.L4-.L11
+	.dh	1
+	.db	86
+	.dw	0,0
+.L31:
+	.dw	-1
+	.dw	.L11,.L44-.L11,.L5-.L11
+	.dh	1
+	.db	82
+	.dw	.L47-.L11,.L4-.L11
+	.dh	1
+	.db	84
+	.dw	.L7-.L11,.L4-.L11
+	.dh	1
+	.db	82
+	.dw	0,0
+.L23:
+	.dw	-1
+	.dw	.L11,.L11-.L11,.L44-.L11
+	.dh	1
+	.db	84
+	.dw	0,0
+.L24:
+	.dw	-1
+	.dw	.L11,.L11-.L11,.L44-.L11
+	.dh	1
+	.db	85
+	.dw	.L45-.L11,.L41-.L11
+	.dh	1
+	.db	96
+	.dw	.L46-.L11,.L4-.L11
+	.dh	1
+	.db	85
+	.dw	0,0
+.L10:
+	.dw	-1
+	.dw	.L11,.L11-.L11,.L32-.L11
+	.dh	2
+	.db	141,0
+	.dw	.L32-.L11,.L22-.L11
+	.dh	2
+	.db	141,24
+	.dw	.L22-.L11,.L22-.L11
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L28:
+	.dw	-1
+	.dw	.L11,.L11-.L11,.L44-.L11
+	.dh	1
+	.db	87
+	.dw	.L48-.L11,.L4-.L11
+	.dh	1
+	.db	87
+	.dw	.L50-.L11,.L39-.L11
+	.dh	1
+	.db	98
+	.dw	0,0
+.L30:
+	.dw	-1
+	.dw	.L11,.L43-.L11,.L38-.L11
+	.dh	1
+	.db	99
+	.dw	.L11-.L11,.L22-.L11
+	.dh	2
+	.db	145,0
+	.dw	.L11-.L11,.L22-.L11
+	.dh	2
+	.db	145,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L79:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_posix_devctl')
+	.dw	104
+	.dw	.L79,.L11,.L22-.L11
+	.db	4
+	.dw	(.L32-.L11)/4
+	.db	19,24,22,29,3,19,141,24,4
+	.dw	(.L33-.L32)/4
+	.db	17,31,108,4
+	.dw	(.L34-.L33)/4
+	.db	17,16,112,4
+	.dw	(.L35-.L34)/4
+	.db	17,17,116,4
+	.dw	(.L36-.L35)/4
+	.db	17,18,120,4
+	.dw	(.L37-.L36)/4
+	.db	17,19,124,4
+	.dw	(.L38-.L37)/4
+	.db	211,4
+	.dw	(.L39-.L38)/4
+	.db	210,4
+	.dw	(.L40-.L39)/4
+	.db	209,4
+	.dw	(.L41-.L40)/4
+	.db	208,4
+	.dw	(.L42-.L41)/4
+	.db	223,4
+	.dw	(.L22-.L42)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

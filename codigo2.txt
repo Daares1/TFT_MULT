@@ -1,0 +1,130 @@
+#include <canvas.h>
+#include <touchscreen.h>
+#include <pointer.h>
+#include <stdbool.h>
+#include <drv_led.h>
+#include <led_info.h>
+
+#define WIDTH 320
+#define HEIGHT 240
+
+graphics_t * display;   //DECLARACION DEL PUNTERO display.
+canvas_t * canvas;
+canvas_t * canvas1;
+canvas_t * canvas2;
+ioport_t* dip;
+terminal_t* term;
+pointer_state_t * pointer_state;
+pointer_t* punt;
+color_t  color;
+led_t * leds;
+touchscreen_t* touch;
+touchscreen_callback_t callback;
+
+static void draw_mark(int x, int y, int width, int height, void *vp);
+
+char *cal1 = "Touch screen at marker";
+char *cal2 = "Calibration done";
+
+
+extern __no_sdata graphics_bitmap_t _lc_ub_bar_bmp; //Imagen
+extern __no_sdata graphics_bitmap_t _lc_ue_bar_bmp;
+graphics_bitmap_t * bmp = &_lc_ub_bar_bmp;
+
+
+void main(void){
+
+touch= touchscreen_open(TOUCHSCREEN_1);
+display = graphics_open(GRAPHICS_1); //  Devuelte el puntero del servicio en caso de ser inicializado
+canvas = graphics_get_visible_canvas(display);
+canvas2 = graphics_get_visible_canvas(display);
+canvas1 = graphics_get_visible_canvas(display);
+
+ leds = led_open(DRV_LED_1);
+
+punt= pointer_open(POINTER_1);
+term= terminal_open(DRV_TERMINAL_1);
+dip= ioport_open(DIP);
+ int a=0,b=0;
+ int *ptr;
+touchscreen_set_callback(touch, draw_mark, canvas);
+while(!touchscreen_calibrate(touch, WIDTH, HEIGHT));
+graphics_fill_canvas(canvas, 0x080008);
+
+graphics_fill_circle(canvas, 160, 120, 400, WHITE);
+graphics_set_visible_canvas(display, canvas);
+
+while(1){
+    col:
+
+
+if( ioport_get_value(dip, 0)==30){
+  canvas1=canvas;
+
+graphics_draw_bitmap(canvas2, bmp, 0, 0, 320, 240, 0);
+graphics_set_visible_canvas(display, canvas2);
+
+}
+
+
+if (pointer_update(punt, pointer_state)) {
+
+color=graphics_get_pixel(canvas2, pointer_state->x, pointer_state->y);
+
+}
+
+
+
+while( color!=NULL  ){
+        if(a==0){
+
+      graphics_fill_circle(canvas, 160, 120, 400, WHITE);
+graphics_set_visible_canvas(display, canvas);
+       a=a+1;
+        }
+
+
+
+
+    if (pointer_update(punt, pointer_state))  {
+ if(pointer_state->x>0 && pointer_state->x<320 && pointer_state->y>40 && pointer_state->y<240){
+graphics_fill_circle( canvas, pointer_state->x, pointer_state->y,5, color);
+graphics_set_visible_canvas(display, canvas);
+
+
+
+ }
+    }
+   canvas=canvas1;
+
+if( ioport_get_value(dip, 0)==29){
+    color=0x00000000;
+    //a=0;
+     b=1;
+    graphics_set_visible_canvas(display, canvas);
+
+goto col;
+
+}
+
+
+
+}
+
+
+
+
+}
+
+}
+
+
+
+static void draw_mark(int x, int y, int width, int height, void *vp)
+{
+     graphics_draw_circle(canvas, x, y, 10, 0xff00ff);
+     graphics_draw_line(canvas, x - 15, y, x + 15, y, 0x00ffff);
+     graphics_draw_line(canvas, x, y - 15, x, y + 15, 0x00ffff);
+     graphics_draw_string(canvas, 50, 50, cal1, NULL, 0xffffff, 0);
+     graphics_set_visible_canvas(display, canvas);
+}

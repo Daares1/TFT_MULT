@@ -1,0 +1,1697 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc6564a --dep-file=Output\frameout\pointer_pointer.d --make-target=Output\frameout\pointer_pointer.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\pointer.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c"
+
+	.section	.text.pointer.pointer_button_events ,cluster('$group_pointer_button_events')
+	.align	4
+; Function pointer_button_events
+.L32:
+pointer_button_events:	.type	func
+	sll	$v0,$a1,2
+	lui	$v1,@hi(button_table)
+	addiu	$v1,$v1,@lo(button_table)
+	addu	$v0,$v0,$v1
+	lw	$v1,0($v0)
+.L110:
+	lw	$a1,0($a0)
+.L115:
+	beq	$a1,$v1,.L2
+.L254:
+	move	$v0,$zero
+.L112:
+	andi	$v0,$v1,0x1
+.L113:
+	andi	$a2,$a1,0x1
+	xor	$a2,$a2,$v0
+	sltu	$a2,$zero,$a2
+	addu	$a2,$a2,$a2
+.L255:
+	or	$v0,$a2,$v0
+.L111:
+	andi	$a2,$v1,0x4
+	andi	$a3,$a1,0x4
+	xor	$a3,$a3,$a2
+	sltu	$a3,$zero,$a3
+	sll	$a3,$a3,3
+.L256:
+	or	$v0,$v0,$a3
+.L257:
+	or	$v0,$v0,$a2
+.L258:
+	andi	$v1,$v1,0x10
+.L114:
+	andi	$a1,$a1,0x10
+	xor	$a1,$a1,$v1
+	sltu	$a1,$zero,$a1
+	sll	$a1,$a1,5
+.L259:
+	or	$v0,$v0,$a1
+.L260:
+	or	$v0,$v0,$v1
+.L261:
+	sw	$v0,0($a0)
+.L262:
+	li	$v0,0x1
+.L2:
+	jr	$ra
+.L263:
+	nop
+.L101:
+	.size	pointer_button_events,*-pointer_button_events
+.L62:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pointer.pointer_open ,cluster('$group_pointer_open')
+	.align	4
+	.global	pointer_open
+; Function pointer_open
+.L34:
+pointer_open:	.type	func
+	addiu	$sp,$sp,-20
+.L116:
+	sw	$ra,0($sp)
+.L117:
+	sw	$s0,4($sp)
+.L118:
+	sw	$s1,8($sp)
+.L119:
+	sw	$s2,12($sp)
+.L120:
+	sw	$s3,16($sp)
+.L71:
+	move	$v0,$a0
+	sll	$v0,$v0,3
+	move	$v1,$a0
+.L129:
+	sll	$v1,$v1,2
+	subu	$v1,$v1,$a0
+.L133:
+	addu	$v0,$v0,$v1
+	sll	$v0,$v0,3
+	lui	$v1,@hi(pointer_table)
+.L130:
+	addiu	$v1,$v1,@lo(pointer_table)
+	addu	$s2,$v0,$v1
+.L131:
+	move	$v0,$a0
+.L132:
+	sll	$v0,$v0,2
+.L127:
+	subu	$v0,$v0,$a0
+.L128:
+	sll	$v0,$v0,3
+	lui	$v1,@hi(pointer_instance_table)
+.L198:
+	lw	$a0,4($s2)
+.L199:
+	addiu	$v1,$v1,@lo(pointer_instance_table)
+.L200:
+	bne	$a0,$zero,.L7
+.L201:
+	addu	$s3,$v0,$v1
+.L76:
+	move	$s0,$s2
+.L202:
+	li	$s1,3
+.L8:
+	lw	$v0,4($s0)
+	bne	$v0,$zero,.L9
+	nop
+.L203:
+	lw	$v0,8($s0)
+	beq	$v0,$zero,.L10
+	nop
+.L204:
+	lw	$a0,0($s0)
+	jalr	$ra,$v0
+	nop
+	sw	$v0,4($s0)
+.L10:
+.L9:
+	addiu	$s1,$s1,-1
+	bgtz	$s1,.L8
+.L205:
+	addiu	$s0,$s0,20
+.L77:
+	lw	$v0,0($s3)
+.L206:
+	lw	$v1,4($s3)
+.L207:
+	sw	$v0,72($s2)
+.L208:
+	lw	$v0,8($s3)
+.L209:
+	sw	$v1,76($s2)
+.L210:
+	lw	$v1,12($s3)
+.L211:
+	sw	$v0,80($s2)
+.L212:
+	sw	$v1,84($s2)
+.L213:
+	lw	$v0,72($s2)
+	lw	$v1,76($s2)
+	addu	$v0,$v0,$v1
+	slt	$v1,$v0,$zero
+	addu	$v0,$v0,$v1
+	sra	$v0,$v0,1
+	sw	$v0,60($s2)
+.L214:
+	lw	$v0,80($s2)
+	lw	$v1,84($s2)
+	addu	$v0,$v0,$v1
+	slt	$v1,$v0,$zero
+	addu	$v0,$v0,$v1
+	sra	$v0,$v0,1
+	sw	$v0,64($s2)
+.L7:
+	move	$v0,$s2
+.L126:
+	lw	$s3,16($sp)
+.L121:
+	lw	$s2,12($sp)
+.L122:
+	lw	$s1,8($sp)
+.L123:
+	lw	$s0,4($sp)
+.L124:
+	lw	$ra,0($sp)
+.L125:
+	jr	$ra
+	addiu	$sp,$sp,20
+.L68:
+	.size	pointer_open,*-pointer_open
+.L47:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pointer.pointer_update ,cluster('$group_pointer_update')
+	.align	4
+	.global	pointer_update
+; Function pointer_update
+.L36:
+pointer_update:	.type	func
+	addiu	$sp,$sp,-60
+.L134:
+	sw	$ra,0($sp)
+.L135:
+	sw	$s0,4($sp)
+.L136:
+	sw	$s1,8($sp)
+.L137:
+	sw	$s2,12($sp)
+.L138:
+	sw	$s3,16($sp)
+.L139:
+	sw	$s4,20($sp)
+.L140:
+	sw	$s5,24($sp)
+.L141:
+	sw	$s6,28($sp)
+.L142:
+	sw	$s7,32($sp)
+.L143:
+	sw	$s8,36($sp)
+.L144:
+	move	$s6,$a0
+.L160:
+	move	$s8,$a1
+.L167:
+	move	$s7,$zero
+.L158:
+	move	$s5,$zero
+.L159:
+	lw	$s4,60($s6)
+.L165:
+	lw	$s3,64($s6)
+.L162:
+	move	$s2,$zero
+.L161:
+	addiu	$v0,$s6,68
+	sw	$v0,56($sp)
+	lw	$v0,68($s6)
+	addiu	$v1,$zero,-43
+	and	$v0,$v0,$v1
+	sw	$v0,68($s6)
+.L98:
+	move	$s1,$s6
+.L228:
+	li	$s0,3
+.L14:
+	lw	$v0,12($s1)
+	beq	$v0,$zero,.L15
+	nop
+.L229:
+	addiu	$a1,$sp,40
+	lw	$a0,4($s1)
+	jalr	$ra,$v0
+	nop
+	beq	$v0,$zero,.L16
+	nop
+.L230:
+	lb	$v1,52($sp)
+	lw	$v0,40($sp)
+	beq	$v1,$zero,.L17
+	lw	$a0,44($sp)
+.L231:
+	addu	$s4,$s4,$v0
+	j	.L18
+.L232:
+	addu	$s3,$s3,$a0
+.L17:
+	move	$s4,$v0
+.L233:
+	move	$s3,$a0
+.L18:
+	lw	$v0,48($sp)
+.L234:
+	li	$s5,0x1
+.L235:
+	sw	$v0,16($s1)
+.L16:
+.L15:
+	lw	$v0,16($s1)
+.L236:
+	addiu	$s0,$s0,-1
+.L237:
+	or	$s2,$s2,$v0
+.L238:
+	bgtz	$s0,.L14
+.L239:
+	addiu	$s1,$s1,20
+.L99:
+	beq	$s5,$zero,.L19
+.L240:
+	nop
+.L241:
+	move	$a0,$s6
+.L166:
+	move	$a1,$s4
+.L155:
+	jal	pointer_set_position
+	move	$a2,$s3
+.L156:
+	move	$t0,$v0
+.L164:
+	lw	$a0,56($sp)
+.L157:
+	jal	pointer_button_events
+	move	$a1,$s2
+.L163:
+	bne	$t0,$zero,.L20
+.L242:
+	move	$s7,$zero
+.L243:
+	beq	$v0,$zero,.L21
+.L244:
+	nop
+.L20:
+	li	$s7,0x1
+.L21:
+.L19:
+	lw	$v1,60($s6)
+.L245:
+	move	$v0,$s7
+.L246:
+	sw	$v1,0($s8)
+.L247:
+	lw	$v1,64($s6)
+	sw	$v1,4($s8)
+.L248:
+	lw	$v1,68($s6)
+	sw	$v1,8($s8)
+.L249:
+	lw	$s8,36($sp)
+.L145:
+	lw	$s7,32($sp)
+.L146:
+	lw	$s6,28($sp)
+.L147:
+	lw	$s5,24($sp)
+.L148:
+	lw	$s4,20($sp)
+.L149:
+	lw	$s3,16($sp)
+.L150:
+	lw	$s2,12($sp)
+.L151:
+	lw	$s1,8($sp)
+.L152:
+	lw	$s0,4($sp)
+.L153:
+	lw	$ra,0($sp)
+.L154:
+	jr	$ra
+	addiu	$sp,$sp,60
+.L85:
+	.size	pointer_update,*-pointer_update
+.L57:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.pointer.pointer_set_position ,cluster('$group_pointer_set_position')
+	.align	4
+	.global	pointer_set_position
+; Function pointer_set_position
+.L38:
+pointer_set_position:	.type	func
+	lw	$v0,60($a0)
+	bne	$a1,$v0,.L23
+	nop
+.L219:
+	lw	$v0,64($a0)
+	beq	$a2,$v0,.L24
+	nop
+.L23:
+	lw	$v0,72($a0)
+	slt	$v1,$a1,$v0
+	beq	$v1,$zero,.L25
+	nop
+	move	$a1,$v0
+.L25:
+	lw	$v0,76($a0)
+	slt	$v1,$v0,$a1
+	beq	$v1,$zero,.L26
+	nop
+	move	$a1,$v0
+.L26:
+	lw	$v0,80($a0)
+	slt	$v1,$a2,$v0
+	beq	$v1,$zero,.L27
+	nop
+	move	$a2,$v0
+.L27:
+	lw	$v0,84($a0)
+	slt	$v1,$v0,$a2
+	beq	$v1,$zero,.L28
+	nop
+	move	$a2,$v0
+.L28:
+	sw	$a1,60($a0)
+.L220:
+	li	$v0,0x1
+.L221:
+	jr	$ra
+.L222:
+	sw	$a2,64($a0)
+.L24:
+	jr	$ra
+.L223:
+	move	$v0,$zero
+.L81:
+	.size	pointer_set_position,*-pointer_set_position
+.L52:
+	; End of function
+	.endsec	; End of section
+
+	.section	.rodata.pointer.button_table ,cluster('$group_rodata')
+	.align	4
+button_table:	.type	object
+	.size	button_table,32
+	.bs	4,0
+	.dw	1,4,5,16,17,20,21
+	.endsec	; End of section
+
+	.section	.bss.pointer.pointer_table ,cluster('$group_bss')
+	.global	pointer_table
+	.align	4
+pointer_table:	.type	object
+	.size	pointer_table,88
+	.ds	88
+	.endsec	; End of section
+
+	.calls	'pointer_open','__INDIRECT__'
+	.calls	'pointer_update','__INDIRECT__'
+	.calls	'pointer_update','pointer_set_position'
+	.calls	'pointer_update','pointer_button_events'
+	.calls	'pointer_button_events','',0
+	.calls	'pointer_open','',20
+	.calls	'pointer_update','',60
+	.calls	'pointer_set_position','',0
+	.extern	pointer_instance_table
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L40:
+	.dw	1442
+	.dh	3
+	.dw	.L41
+	.db	4
+.L39:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L42
+.L67:
+	.db	2
+	.dw	.L168-.L40
+.L168:
+	.db	3
+	.db	"_pointer_s",0
+	.db	1,37,8,88,4
+	.db	"input",0
+	.db	60
+	.dw	.L169-.L40
+	.db	2,35,0,4
+	.db	"x",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,60,4
+	.db	"y",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,64,4
+	.db	"buttons",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,68,4
+	.db	"boundary_left",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,72,4
+	.db	"boundary_right",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,76,4
+	.db	"boundary_top",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,80,4
+	.db	"boundary_bottom",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,84,0
+.L169:
+	.db	5,60
+	.dw	.L170-.L40
+	.db	6,2,0
+.L170:
+	.db	7,1,28,9,20,4
+	.db	"id",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,0,4
+	.db	"device",0
+	.db	4
+	.dw	.L171-.L40
+	.db	2,35,4,4
+	.db	"open",0
+	.db	4
+	.dw	.L172-.L40
+	.db	2,35,8,4
+	.db	"get_input",0
+	.db	4
+	.dw	.L173-.L40
+	.db	2,35,12,4
+	.db	"last_buttons",0
+	.db	4
+	.dw	.L78-.L40
+	.db	2,35,16,0
+.L78:
+	.db	8
+	.db	"int",0
+	.db	4,5
+.L171:
+	.db	2
+	.dw	.L174-.L40
+.L174:
+	.db	9
+	.db	"void",0
+.L172:
+	.db	2
+	.dw	.L175-.L40
+.L175:
+	.db	10
+	.dw	589
+	.db	1,1,11
+	.dw	582
+	.db	0
+.L173:
+	.db	2
+	.dw	.L176-.L40
+.L176:
+	.db	10
+	.dw	.L80-.L40
+	.db	1,1,11
+	.dw	589
+	.db	11
+	.dw	.L177-.L40
+	.db	0
+.L80:
+	.db	8
+	.db	"_Bool",0
+	.db	1,2
+.L177:
+	.db	2
+	.dw	.L91-.L40
+.L91:
+	.db	7,1,20,9,16,4
+	.db	"x",0
+	.db	4
+	.dw	582
+	.db	2,35,0,4
+	.db	"y",0
+	.db	4
+	.dw	582
+	.db	2,35,4,4
+	.db	"buttons",0
+	.db	4
+	.dw	.L178-.L40
+	.db	2,35,8,4
+	.db	"relative",0
+	.db	1
+	.dw	641
+	.db	2,35,12,0
+.L178:
+	.db	12,2,36,9,4,13
+	.db	"BUTTON_NONE",0
+	.db	0,13
+	.db	"BUTTON_LEFT",0
+	.db	1,13
+	.db	"BUTTON_LEFT_EVENT",0
+	.db	2,13
+	.db	"BUTTON_RIGHT",0
+	.db	4,13
+	.db	"BUTTON_RIGHT_EVENT",0
+	.db	8,13
+	.db	"BUTTON_MIDDLE",0
+	.db	16,13
+	.db	"BUTTON_MIDDLE_EVENT",0
+	.db	32,0
+.L69:
+	.db	8
+	.db	"unsigned int",0
+	.db	4,7
+.L72:
+	.db	14
+	.dw	314
+.L74:
+	.db	14
+	.dw	.L179-.L40
+.L179:
+	.db	2
+	.dw	.L180-.L40
+.L180:
+	.db	15
+	.dw	.L181-.L40
+.L181:
+	.db	7,3,30,9,24,4
+	.db	"left",0
+	.db	4
+	.dw	846
+	.db	2,35,0,4
+	.db	"right",0
+	.db	4
+	.dw	846
+	.db	2,35,4,4
+	.db	"top",0
+	.db	4
+	.dw	846
+	.db	2,35,8,4
+	.db	"bottom",0
+	.db	4
+	.dw	846
+	.db	2,35,12,4
+	.db	"ad_pointer",0
+	.db	4
+	.dw	.L102-.L40
+	.db	2,35,16,4
+	.db	"ad_pointer_size",0
+	.db	4
+	.dw	582
+	.db	2,35,20,0
+.L102:
+	.db	2
+	.dw	582
+.L87:
+	.db	2
+	.dw	.L182-.L40
+.L182:
+	.db	7,2,56,9,12,4
+	.db	"x",0
+	.db	4
+	.dw	582
+	.db	2,35,0,4
+	.db	"y",0
+	.db	4
+	.dw	582
+	.db	2,35,4,4
+	.db	"buttons",0
+	.db	4
+	.dw	718
+	.db	2,35,8,0,16
+	.db	"__INDIRECT__",0
+	.db	4,1,1,1,1,1,17
+	.db	"__wchar_t",0
+	.db	4,1,1
+	.dw	.L183-.L40
+.L183:
+	.db	8
+	.db	"unsigned short int",0
+	.db	2,7,17
+	.db	"__size_t",0
+	.db	4,1,1
+	.dw	846
+	.db	17
+	.db	"__ptrdiff_t",0
+	.db	4,1,1
+	.dw	582
+	.db	17
+	.db	"__codeptr",0
+	.db	4,1,1
+	.dw	.L184-.L40
+.L184:
+	.db	2
+	.dw	.L185-.L40
+.L185:
+	.db	18,1,17
+	.db	"_iob_flag_t",0
+	.db	5,92,25
+	.dw	1084
+	.db	17
+	.db	"uint8_t",0
+	.db	6,22,33
+	.dw	.L186-.L40
+.L186:
+	.db	8
+	.db	"unsigned char",0
+	.db	1,8,17
+	.db	"int32_t",0
+	.db	6,25,33
+	.dw	582
+	.db	17
+	.db	"uint32_t",0
+	.db	6,26,33
+	.dw	846
+	.db	17
+	.db	"pointer_buttons_t",0
+	.db	2,45,3
+	.dw	718
+	.db	17
+	.db	"pointer_t",0
+	.db	2,47,27
+	.dw	319
+	.db	17
+	.db	"pointer_state_t",0
+	.db	2,61,3
+	.dw	1001
+	.db	17
+	.db	"pointer_input_t",0
+	.db	1,35,3
+	.dw	493
+.L108:
+	.db	5,88
+	.dw	319
+	.db	6,0,0,17
+	.db	"pointer_cfg_instance_t",0
+	.db	3,38,3
+	.dw	882
+	.db	19
+	.db	"pointer_instance_table",0
+	.db	3,40,37
+	.dw	.L187-.L40
+	.db	1,1
+.L187:
+	.db	15
+	.dw	.L188-.L40
+.L188:
+	.db	20
+	.dw	882
+	.db	21,0
+.L109:
+	.db	15
+	.dw	.L189-.L40
+.L189:
+	.db	5,32
+	.dw	582
+	.db	6,7,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L41:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,19,1,3,8,58,15,59,15,57,15,11,15,0,0
+	.db	4,13,0,3,8,11,15,73,19,56,9,0,0,5,1,1,11,15,73,19,0,0,6,33,0,47,15,0,0,7,19,1,58,15,59,15,57,15,11,15
+	.db	0,0,8,36,0,3,8,11,15,62,15,0,0,9,59,0,3,8,0,0,10,21,1,73,19,54,15,39,12,0,0,11,5,0,73,19,0,0,12,4,1,58
+	.db	15,59,15,57,15,11,15,0,0,13,40,0,3,8,28,13,0,0,14,55,0,73,19,0,0,15,38,0,73,19,0,0,16,46,0,3,8,58,15,59
+	.db	15,57,15,54,15,63,12,60,12,0,0,17,22,0,3,8,58,15,59,15,57,15,73,19,0,0,18,21,0,54,15,0,0,19,52,0,3,8,58
+	.db	15,59,15,57,15,73,19,63,12,60,12,0,0,20,1,1,73,19,0,0,21,33,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L42:
+	.dw	.L191-.L190
+.L190:
+	.dh	3
+	.dw	.L193-.L192
+.L192:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\internal\\pointer_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\include\\pointer.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\pointer_cfg_instance.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0,0
+.L193:
+.L191:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pointer_open')
+.L43:
+	.dw	452
+	.dh	3
+	.dw	.L44
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L46,.L45
+	.db	2
+	.dw	.L39
+	.db	3
+	.db	"pointer_open",0
+	.db	1,75,13
+	.dw	.L67
+	.db	1,1,1
+	.dw	.L34,.L68,.L33
+	.db	4
+	.db	"id",0
+	.db	1,75,39
+	.dw	.L69,.L70
+	.db	5
+	.dw	.L34,.L68
+	.db	5
+	.dw	.L71,.L68
+	.db	6
+	.db	"srv",0
+	.db	1,79,26
+	.dw	.L72,.L73
+	.db	6
+	.db	"srv_cfg",0
+	.db	1,81,45
+	.dw	.L74,.L75
+	.db	5
+	.dw	.L76,.L77
+	.db	6
+	.db	"i",0
+	.db	1,85,18
+	.dw	.L78,.L79
+	.db	0,0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pointer_open')
+.L44:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pointer_open')
+.L45:
+	.dw	.L195-.L194
+.L194:
+	.dh	3
+	.dw	.L197-.L196
+.L196:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	0,0,0,0
+.L197:
+	.db	5,13,7,0,5,2
+	.dw	.L34
+	.db	3,202,0,1,5,30
+	.db	18+9*((.L71-.L34)/4)
+	.db	5,53,9
+	.dh	.L131-.L71
+	.db	3,2,1,5,10
+	.db	16+9*((.L198-.L131)/4)
+	.db	5,53
+	.db	12+9*((.L199-.L198)/4)
+	.db	5,10
+	.db	16+9*((.L200-.L199)/4)
+	.db	5,53,7
+	.db	12+9*((.L201-.L200)/4)
+	.db	5,52
+	.db	18+9*((.L76-.L201)/4)
+	.db	5,47
+	.db	14+9*((.L202-.L76)/4)
+	.db	5,18
+	.db	16+9*((.L8-.L202)/4)
+	.db	5,55
+	.db	14+9*((.L203-.L8)/4)
+	.db	5,76
+	.db	16+9*((.L204-.L203)/4)
+	.db	5,47
+	.db	10+9*((.L9-.L204)/4)
+	.db	5,50
+	.db	14+9*((.L205-.L9)/4)
+	.db	5,45,9
+	.dh	.L77-.L205
+	.db	3,7,1,5,46
+	.db	15+9*((.L206-.L77)/4)
+	.db	5,45
+	.db	13+9*((.L207-.L206)/4)
+	.db	5,44
+	.db	16+9*((.L208-.L207)/4)
+	.db	5,46
+	.db	13+9*((.L209-.L208)/4)
+	.db	5,47
+	.db	16+9*((.L210-.L209)/4)
+	.db	5,44
+	.db	13+9*((.L211-.L210)/4)
+	.db	5,47
+	.db	15+9*((.L212-.L211)/4)
+	.db	5,78
+	.db	15+9*((.L213-.L212)/4)
+	.db	9
+	.dh	.L214-.L213
+	.db	3,1,1,5,5,9
+	.dh	.L7-.L214
+	.db	3,3,1,5,1
+	.db	15+9*((.L126-.L7)/4)
+	.db	9
+	.dh	.L47-.L126
+	.db	0,1,1
+.L195:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pointer_open')
+.L46:
+	.dw	-1
+	.dw	.L34
+	.dw	0
+	.dw	.L47-.L34
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pointer_set_position')
+.L48:
+	.dw	422
+	.dh	3
+	.dw	.L49
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L51,.L50
+	.db	2
+	.dw	.L39
+	.db	3
+	.db	"pointer_set_position",0
+	.db	1,179,1,6
+	.dw	.L80
+	.db	1,1,1
+	.dw	.L38,.L81,.L37
+	.db	4
+	.db	"srv",0
+	.db	1,179,1,38
+	.dw	.L67,.L82
+	.db	4
+	.db	"x",0
+	.db	1,179,1,47
+	.dw	.L78,.L83
+	.db	4
+	.db	"y",0
+	.db	1,179,1,54
+	.dw	.L78,.L84
+	.db	5
+	.dw	.L38,.L81
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pointer_set_position')
+.L49:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pointer_set_position')
+.L50:
+	.dw	.L216-.L215
+.L215:
+	.dh	3
+	.dw	.L218-.L217
+.L217:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	0,0,0,0
+.L218:
+	.db	5,9,7,0,5,2
+	.dw	.L38
+	.db	3,180,1,1,5,29
+	.db	14+9*((.L219-.L38)/4)
+	.db	5,63
+	.db	16+9*((.L23-.L219)/4)
+	.db	5,64
+	.db	15+9*((.L25-.L23)/4)
+	.db	5,62
+	.db	15+9*((.L26-.L25)/4)
+	.db	5,65
+	.db	15+9*((.L27-.L26)/4)
+	.db	5,19
+	.db	15+9*((.L28-.L27)/4)
+	.db	5,9
+	.db	17+9*((.L220-.L28)/4)
+	.db	5,1
+	.db	17+9*((.L221-.L220)/4)
+	.db	5,19,7,9
+	.dh	.L222-.L221
+	.db	3,123,1,5,1,9
+	.dh	.L24-.L222
+	.db	3,5,1,5,5,7
+	.db	13+9*((.L223-.L24)/4)
+	.db	5,1,9
+	.dh	.L52-.L223
+	.db	3,1,0,1,1
+.L216:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pointer_set_position')
+.L51:
+	.dw	-1
+	.dw	.L38
+	.dw	0
+	.dw	.L52-.L38
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pointer_update')
+.L53:
+	.dw	576
+	.dh	3
+	.dw	.L54
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L56,.L55
+	.db	2
+	.dw	.L39
+	.db	3
+	.db	"pointer_update",0
+	.db	1,115,6
+	.dw	.L80
+	.db	1,1,1
+	.dw	.L36,.L85,.L35
+	.db	4
+	.db	"srv",0
+	.db	1,115,32
+	.dw	.L67,.L86
+	.db	4
+	.db	"state",0
+	.db	1,115,54
+	.dw	.L87,.L88
+	.db	5
+	.dw	.L36,.L85
+	.db	6
+	.db	"result",0
+	.db	1,117,10
+	.dw	.L80,.L89
+	.db	6
+	.db	"valid_input",0
+	.db	1,118,10
+	.dw	.L80,.L90
+	.db	6
+	.db	"ps",0
+	.db	1,119,23
+	.dw	.L91,.L92
+	.db	6
+	.db	"x",0
+	.db	1,120,9
+	.dw	.L78,.L93
+	.db	6
+	.db	"y",0
+	.db	1,121,9
+	.dw	.L78,.L94
+	.db	6
+	.db	"buttons",0
+	.db	1,122,9
+	.dw	.L78,.L95
+	.db	6
+	.db	"result_1",0
+	.db	1,123,10
+	.dw	.L80,.L96
+	.db	6
+	.db	"result_2",0
+	.db	1,124,10
+	.dw	.L80,.L97
+	.db	5
+	.dw	.L98,.L99
+	.db	6
+	.db	"i",0
+	.db	1,129,1,14
+	.dw	.L78,.L100
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pointer_update')
+.L54:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.db	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pointer_update')
+.L55:
+	.dw	.L225-.L224
+.L224:
+	.dh	3
+	.dw	.L227-.L226
+.L226:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	0,0,0,0
+.L227:
+	.db	5,6,7,0,5,2
+	.dw	.L36
+	.db	3,242,0,1,5,17,9
+	.dh	.L167-.L36
+	.db	3,2,1,5,22
+	.db	15+9*((.L158-.L167)/4)
+	.db	5,11
+	.db	16+9*((.L159-.L158)/4)
+	.db	15+9*((.L165-.L159)/4)
+	.db	5,17
+	.db	15+9*((.L162-.L165)/4)
+	.db	5,84,9
+	.dh	.L161-.L162
+	.db	3,5,1,5,48
+	.db	16+9*((.L98-.L161)/4)
+	.db	5,43
+	.db	14+9*((.L228-.L98)/4)
+	.db	5,13
+	.db	16+9*((.L14-.L228)/4)
+	.db	5,63
+	.db	14+9*((.L229-.L14)/4)
+	.db	5,13
+	.db	16+9*((.L230-.L229)/4)
+	.db	5,26
+	.db	17+9*((.L231-.L230)/4)
+	.db	15+9*((.L232-.L231)/4)
+	.db	5,25,9
+	.dh	.L17-.L232
+	.db	3,5,1
+	.db	15+9*((.L233-.L17)/4)
+	.db	5,52
+	.db	16+9*((.L18-.L233)/4)
+	.db	5,31
+	.db	15+9*((.L234-.L18)/4)
+	.db	5,52
+	.db	13+9*((.L235-.L234)/4)
+	.db	5,46
+	.db	17+9*((.L15-.L235)/4)
+	.db	5,43,9
+	.dh	.L236-.L15
+	.db	3,109,1,5,46,9
+	.dh	.L237-.L236
+	.db	3,19,1,5,43,9
+	.dh	.L238-.L237
+	.db	3,109,1,5,46,7
+	.db	14+9*((.L239-.L238)/4)
+	.db	5,5,9
+	.dh	.L99-.L239
+	.db	3,22,1,7
+	.db	14+9*((.L240-.L99)/4)
+	.db	5,53
+	.db	16+9*((.L241-.L240)/4)
+	.db	5,68
+	.db	15+9*((.L164-.L241)/4)
+	.db	5,18
+	.db	15+9*((.L163-.L164)/4)
+	.db	5,27,7
+	.db	14+9*((.L242-.L163)/4)
+	.db	5,30
+	.db	14+9*((.L243-.L242)/4)
+	.db	7
+	.db	14+9*((.L244-.L243)/4)
+	.db	5,27
+	.db	14+9*((.L20-.L244)/4)
+	.db	5,22
+	.db	17+9*((.L19-.L20)/4)
+	.db	5,5
+	.db	18+9*((.L245-.L19)/4)
+	.db	5,22
+	.db	10+9*((.L246-.L245)/4)
+	.db	15+9*((.L247-.L246)/4)
+	.db	5,34
+	.db	15+9*((.L248-.L247)/4)
+	.db	5,1
+	.db	17+9*((.L249-.L248)/4)
+	.db	9
+	.dh	.L57-.L249
+	.db	0,1,1
+.L225:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pointer_update')
+.L56:
+	.dw	-1
+	.dw	.L36
+	.dw	0
+	.dw	.L57-.L36
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pointer_button_events')
+.L58:
+	.dw	490
+	.dh	3
+	.dw	.L59
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L61,.L60
+	.db	2
+	.dw	.L39
+	.db	3
+	.db	"pointer_button_events",0
+	.db	1,37,13
+	.dw	.L80
+	.db	1,1
+	.dw	.L32,.L101,.L31
+	.db	4
+	.db	"pointer_buttons",0
+	.db	1,37,40
+	.dw	.L102,.L103
+	.db	4
+	.db	"buttons",0
+	.db	1,37,61
+	.dw	.L78,.L104
+	.db	5
+	.dw	.L32,.L101
+	.db	6
+	.db	"result",0
+	.db	1,39,10
+	.dw	.L80,.L105
+	.db	6
+	.db	"old_buttons",0
+	.db	1,40,9
+	.dw	.L78,.L106
+	.db	6
+	.db	"new_buttons",0
+	.db	1,41,9
+	.dw	.L78,.L107
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pointer_button_events')
+.L59:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.db	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.db	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pointer_button_events')
+.L60:
+	.dw	.L251-.L250
+.L250:
+	.dh	3
+	.dw	.L253-.L252
+.L252:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	0,0,0,0
+.L253:
+	.db	5,36,7,0,5,2
+	.dw	.L32
+	.db	3,42,1,5,5
+	.db	16+9*((.L110-.L32)/4)
+	.db	5,17,9
+	.dh	.L254-.L110
+	.db	3,122,1,5,82,9
+	.dh	.L112-.L254
+	.db	3,10,1,5,47
+	.db	15+9*((.L255-.L112)/4)
+	.db	5,82
+	.db	15+9*((.L111-.L255)/4)
+	.db	5,107
+	.db	14+9*((.L256-.L111)/4)
+	.db	5,48
+	.db	15+9*((.L257-.L256)/4)
+	.db	5,82
+	.db	15+9*((.L258-.L257)/4)
+	.db	5,107
+	.db	14+9*((.L259-.L258)/4)
+	.db	5,49
+	.db	15+9*((.L260-.L259)/4)
+	.db	5,39
+	.db	16+9*((.L261-.L260)/4)
+	.db	5,22
+	.db	15+9*((.L262-.L261)/4)
+	.db	5,1
+	.db	18+9*((.L2-.L262)/4)
+	.db	7
+	.db	14+9*((.L263-.L2)/4)
+	.db	9
+	.dh	.L62-.L263
+	.db	0,1,1
+.L251:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pointer_button_events')
+.L61:
+	.dw	-1
+	.dw	.L32
+	.dw	0
+	.dw	.L62-.L32
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_bss')
+.L63:
+	.dw	341
+	.dh	3
+	.dw	.L64
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L39
+	.db	3
+	.db	"pointer_table",0
+	.db	4,34,11
+	.dw	.L108
+	.db	1,5,3
+	.dw	pointer_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_bss')
+.L64:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_rodata')
+.L65:
+	.dw	339
+	.dh	3
+	.dw	.L66
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\src\\pointer.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L39
+	.db	3
+	.db	"button_table",0
+	.db	4,21,18
+	.dw	.L109
+	.db	5,3
+	.dw	button_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_rodata')
+.L66:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_set_position')
+.L84:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L81-.L38
+	.dh	1
+	.db	86
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_open')
+.L33:
+	.dw	-1
+	.dw	.L34,.L34-.L34,.L116-.L34
+	.dh	2
+	.db	141,0
+	.dw	.L116-.L34,.L68-.L34
+	.dh	2
+	.db	141,20
+	.dw	.L68-.L34,.L68-.L34
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L93:
+	.dw	-1
+	.dw	.L36,.L155-.L36,.L156-.L36
+	.dh	1
+	.db	85
+	.dw	.L165-.L36,.L149-.L36
+	.dh	1
+	.db	100
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_open')
+.L75:
+	.dw	-1
+	.dw	.L34,.L76-.L34,.L121-.L34
+	.dh	1
+	.db	99
+	.dw	0,0
+.L70:
+	.dw	-1
+	.dw	.L34,.L127-.L34,.L128-.L34
+	.dh	1
+	.db	84
+	.dw	.L129-.L34,.L130-.L34
+	.dh	1
+	.db	83
+	.dw	.L131-.L34,.L132-.L34
+	.dh	1
+	.db	84
+	.dw	.L34-.L34,.L133-.L34
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_button_events')
+.L104:
+	.dw	-1
+	.dw	.L32,.L32-.L32,.L110-.L32
+	.dh	1
+	.db	85
+	.dw	.L110-.L32,.L114-.L32
+	.dh	1
+	.db	83
+	.dw	0,0
+.L31:
+	.dw	-1
+	.dw	.L32,.L32-.L32,.L101-.L32
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L90:
+	.dw	-1
+	.dw	.L36,.L158-.L36,.L159-.L36
+	.dh	1
+	.db	80
+	.dw	.L159-.L36,.L148-.L36
+	.dh	1
+	.db	101
+	.dw	0,0
+.L97:
+	.dw	-1
+	.dw	.L36,.L163-.L36,.L19-.L36
+	.dh	1
+	.db	82
+	.dw	0,0
+.L86:
+	.dw	-1
+	.dw	.L36,.L160-.L36,.L147-.L36
+	.dh	1
+	.db	102
+	.dw	.L166-.L36,.L156-.L36
+	.dh	1
+	.db	84
+	.dw	.L36-.L36,.L14-.L36
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_button_events')
+.L105:
+	.dw	-1
+	.dw	.L32,.L112-.L32,.L113-.L32
+	.dh	1
+	.db	82
+	.dw	.L115-.L32,.L112-.L32
+	.dh	1
+	.db	80
+	.dw	.L2-.L32,.L101-.L32
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L96:
+	.dw	-1
+	.dw	.L36,.L164-.L36,.L19-.L36
+	.dh	1
+	.db	88
+	.dw	.L156-.L36,.L163-.L36
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_button_events')
+.L107:
+	.dw	-1
+	.dw	.L32,.L111-.L32,.L2-.L32
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L88:
+	.dw	-1
+	.dw	.L36,.L36-.L36,.L14-.L36
+	.dh	1
+	.db	85
+	.dw	.L167-.L36,.L145-.L36
+	.dh	1
+	.db	110
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_set_position')
+.L37:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L81-.L38
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L35:
+	.dw	-1
+	.dw	.L36,.L36-.L36,.L134-.L36
+	.dh	2
+	.db	141,0
+	.dw	.L134-.L36,.L85-.L36
+	.dh	2
+	.db	141,60
+	.dw	.L85-.L36,.L85-.L36
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L100:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_open')
+.L79:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L95:
+	.dw	-1
+	.dw	.L36,.L157-.L36,.L19-.L36
+	.dh	1
+	.db	85
+	.dw	.L161-.L36,.L151-.L36
+	.dh	1
+	.db	98
+	.dw	.L162-.L36,.L161-.L36
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_button_events')
+.L103:
+	.dw	-1
+	.dw	.L32,.L32-.L32,.L101-.L32
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_open')
+.L73:
+	.dw	-1
+	.dw	.L34,.L126-.L34,.L68-.L34
+	.dh	1
+	.db	82
+	.dw	.L131-.L34,.L122-.L34
+	.dh	1
+	.db	98
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L92:
+	.dw	-1
+	.dw	.L36,.L36-.L36,.L85-.L36
+	.dh	2
+	.db	145,108
+	.dw	0,0
+.L94:
+	.dw	-1
+	.dw	.L36,.L155-.L36,.L163-.L36
+	.dh	1
+	.db	86
+	.dw	.L162-.L36,.L150-.L36
+	.dh	1
+	.db	99
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_set_position')
+.L82:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L81-.L38
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_button_events')
+.L106:
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_update')
+.L89:
+	.dw	-1
+	.dw	.L36,.L158-.L36,.L146-.L36
+	.dh	1
+	.db	103
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pointer_set_position')
+.L83:
+	.dw	-1
+	.dw	.L38,.L38-.L38,.L81-.L38
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L264:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pointer_button_events')
+	.dw	40
+	.dw	.L264,.L32,.L101-.L32
+	.db	8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pointer_open')
+	.dw	104
+	.dw	.L264,.L34,.L68-.L34
+	.db	4
+	.dw	(.L116-.L34)/4
+	.db	19,20,22,29,3,19,141,20,4
+	.dw	(.L117-.L116)/4
+	.db	17,31,108,4
+	.dw	(.L118-.L117)/4
+	.db	17,16,112,4
+	.dw	(.L119-.L118)/4
+	.db	17,17,116,4
+	.dw	(.L120-.L119)/4
+	.db	17,18,120,4
+	.dw	(.L71-.L120)/4
+	.db	17,19,124,4
+	.dw	(.L121-.L71)/4
+	.db	211,4
+	.dw	(.L122-.L121)/4
+	.db	210,4
+	.dw	(.L123-.L122)/4
+	.db	209,4
+	.dw	(.L124-.L123)/4
+	.db	208,4
+	.dw	(.L125-.L124)/4
+	.db	223,4
+	.dw	(.L68-.L125)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pointer_update')
+	.dw	176
+	.dw	.L264,.L36,.L85-.L36
+	.db	4
+	.dw	(.L134-.L36)/4
+	.db	19,60,22,29,3,19,141,60,4
+	.dw	(.L135-.L134)/4
+	.db	17,31,68,4
+	.dw	(.L136-.L135)/4
+	.db	17,16,72,4
+	.dw	(.L137-.L136)/4
+	.db	17,17,76,4
+	.dw	(.L138-.L137)/4
+	.db	17,18,80,4
+	.dw	(.L139-.L138)/4
+	.db	17,19,84,4
+	.dw	(.L140-.L139)/4
+	.db	17,20,88,4
+	.dw	(.L141-.L140)/4
+	.db	17,21,92,4
+	.dw	(.L142-.L141)/4
+	.db	17,22,96,4
+	.dw	(.L143-.L142)/4
+	.db	17,23,100,4
+	.dw	(.L144-.L143)/4
+	.db	17,30,104,4
+	.dw	(.L145-.L144)/4
+	.db	222,4
+	.dw	(.L146-.L145)/4
+	.db	215,4
+	.dw	(.L147-.L146)/4
+	.db	214,4
+	.dw	(.L148-.L147)/4
+	.db	213,4
+	.dw	(.L149-.L148)/4
+	.db	212,4
+	.dw	(.L150-.L149)/4
+	.db	211,4
+	.dw	(.L151-.L150)/4
+	.db	210,4
+	.dw	(.L152-.L151)/4
+	.db	209,4
+	.dw	(.L153-.L152)/4
+	.db	208,4
+	.dw	(.L154-.L153)/4
+	.db	223,4
+	.dw	(.L85-.L154)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pointer_set_position')
+	.dw	44
+	.dw	.L264,.L38,.L81-.L38
+	.db	8,7,8,8,8,9,8,10,8,11,8,12,8,13,8,14,8,15,8,24,8,25,8,26,8,27,8,33,8,34,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

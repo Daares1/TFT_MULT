@@ -1,0 +1,91 @@
+.model Configurable_dip
+.inputs clk_i
+.inputs rst_i
+.inputs we_i
+.inputs dat_i<7>
+.inputs dat_i<6>
+.inputs dat_i<5>
+.inputs dat_i<4>
+.inputs dat_i<3>
+.inputs dat_i<2>
+.inputs dat_i<1>
+.inputs dat_i<0>
+.outputs dat_o<7>
+.outputs dat_o<6>
+.outputs dat_o<5>
+.outputs dat_o<4>
+.outputs dat_o<3>
+.outputs dat_o<2>
+.outputs dat_o<1>
+.outputs dat_o<0>
+.inputs cyc_i
+.inputs stb_i
+.outputs ack_o
+.outputs pao<7>
+.outputs pao<6>
+.outputs pao<5>
+.outputs pao<4>
+.outputs pao<3>
+.outputs pao<2>
+.outputs pao<1>
+.outputs pao<0>
+.inputs pai<7>
+.inputs pai<6>
+.inputs pai<5>
+.inputs pai<4>
+.inputs pai<3>
+.inputs pai<2>
+.inputs pai<1>
+.inputs pai<0>
+.loc Configurable_dip.VHD 65 pao0<3>
+.latch dat_i<3> pao0<3> re clk_i 0 rst_i en
+.loc Configurable_dip.VHD 65 pao0<4>
+.latch dat_i<4> pao0<4> re clk_i 0 rst_i en
+.loc Configurable_dip.VHD 65 pao0<5>
+.latch dat_i<5> pao0<5> re clk_i 0 rst_i en
+.names ack_o we_i en
+11 1
+.names cyc_i stb_i ack_o
+11 1
+.loc Configurable_dip.VHD 65 pao0<6>
+.latch dat_i<6> pao0<6> re clk_i 0 rst_i en
+.loc Configurable_dip.VHD 65 pao0<2>
+.latch dat_i<2> pao0<2> re clk_i 0 rst_i en
+.names pai<7> dat_o<7>
+1 1
+.names pai<6> dat_o<6>
+1 1
+.names pai<5> dat_o<5>
+1 1
+.names pai<4> dat_o<4>
+1 1
+.names pai<3> dat_o<3>
+1 1
+.names pai<2> dat_o<2>
+1 1
+.names pai<1> dat_o<1>
+1 1
+.names pai<0> dat_o<0>
+1 1
+.names pao0<7> pao<7>
+1 1
+.names pao0<6> pao<6>
+1 1
+.names pao0<5> pao<5>
+1 1
+.names pao0<4> pao<4>
+1 1
+.names pao0<3> pao<3>
+1 1
+.names pao0<2> pao<2>
+1 1
+.names pao0<1> pao<1>
+1 1
+.names pao0<0> pao<0>
+1 1
+.loc Configurable_dip.VHD 65 pao0<1>
+.latch dat_i<1> pao0<1> re clk_i 0 rst_i en
+.loc Configurable_dip.VHD 65 pao0<0>
+.latch dat_i<0> pao0<0> re clk_i 0 rst_i en
+.loc Configurable_dip.VHD 65 pao0<7>
+.latch dat_i<7> pao0<7> re clk_i 0 rst_i en

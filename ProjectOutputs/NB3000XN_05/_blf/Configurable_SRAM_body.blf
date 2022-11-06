@@ -1,0 +1,828 @@
+.model Configurable_SRAM
+.outputs SRAM0_D<15>
+.inputs *SRAM0_D<15>
+.outputs SRAM0_D<14>
+.inputs *SRAM0_D<14>
+.outputs SRAM0_D<13>
+.inputs *SRAM0_D<13>
+.outputs SRAM0_D<12>
+.inputs *SRAM0_D<12>
+.outputs SRAM0_D<11>
+.inputs *SRAM0_D<11>
+.outputs SRAM0_D<10>
+.inputs *SRAM0_D<10>
+.outputs SRAM0_D<9>
+.inputs *SRAM0_D<9>
+.outputs SRAM0_D<8>
+.inputs *SRAM0_D<8>
+.outputs SRAM0_D<7>
+.inputs *SRAM0_D<7>
+.outputs SRAM0_D<6>
+.inputs *SRAM0_D<6>
+.outputs SRAM0_D<5>
+.inputs *SRAM0_D<5>
+.outputs SRAM0_D<4>
+.inputs *SRAM0_D<4>
+.outputs SRAM0_D<3>
+.inputs *SRAM0_D<3>
+.outputs SRAM0_D<2>
+.inputs *SRAM0_D<2>
+.outputs SRAM0_D<1>
+.inputs *SRAM0_D<1>
+.outputs SRAM0_D<0>
+.inputs *SRAM0_D<0>
+.outputs SRAM0_A<17>
+.outputs SRAM0_A<16>
+.outputs SRAM0_A<15>
+.outputs SRAM0_A<14>
+.outputs SRAM0_A<13>
+.outputs SRAM0_A<12>
+.outputs SRAM0_A<11>
+.outputs SRAM0_A<10>
+.outputs SRAM0_A<9>
+.outputs SRAM0_A<8>
+.outputs SRAM0_A<7>
+.outputs SRAM0_A<6>
+.outputs SRAM0_A<5>
+.outputs SRAM0_A<4>
+.outputs SRAM0_A<3>
+.outputs SRAM0_A<2>
+.outputs SRAM0_A<1>
+.outputs SRAM0_A<0>
+.outputs SRAM0_OE
+.outputs SRAM0_WE
+.outputs SRAM0_CE
+.outputs SRAM0_LB
+.outputs SRAM0_UB
+.outputs SRAM1_D<15>
+.inputs *SRAM1_D<15>
+.outputs SRAM1_D<14>
+.inputs *SRAM1_D<14>
+.outputs SRAM1_D<13>
+.inputs *SRAM1_D<13>
+.outputs SRAM1_D<12>
+.inputs *SRAM1_D<12>
+.outputs SRAM1_D<11>
+.inputs *SRAM1_D<11>
+.outputs SRAM1_D<10>
+.inputs *SRAM1_D<10>
+.outputs SRAM1_D<9>
+.inputs *SRAM1_D<9>
+.outputs SRAM1_D<8>
+.inputs *SRAM1_D<8>
+.outputs SRAM1_D<7>
+.inputs *SRAM1_D<7>
+.outputs SRAM1_D<6>
+.inputs *SRAM1_D<6>
+.outputs SRAM1_D<5>
+.inputs *SRAM1_D<5>
+.outputs SRAM1_D<4>
+.inputs *SRAM1_D<4>
+.outputs SRAM1_D<3>
+.inputs *SRAM1_D<3>
+.outputs SRAM1_D<2>
+.inputs *SRAM1_D<2>
+.outputs SRAM1_D<1>
+.inputs *SRAM1_D<1>
+.outputs SRAM1_D<0>
+.inputs *SRAM1_D<0>
+.outputs SRAM1_A<17>
+.outputs SRAM1_A<16>
+.outputs SRAM1_A<15>
+.outputs SRAM1_A<14>
+.outputs SRAM1_A<13>
+.outputs SRAM1_A<12>
+.outputs SRAM1_A<11>
+.outputs SRAM1_A<10>
+.outputs SRAM1_A<9>
+.outputs SRAM1_A<8>
+.outputs SRAM1_A<7>
+.outputs SRAM1_A<6>
+.outputs SRAM1_A<5>
+.outputs SRAM1_A<4>
+.outputs SRAM1_A<3>
+.outputs SRAM1_A<2>
+.outputs SRAM1_A<1>
+.outputs SRAM1_A<0>
+.outputs SRAM1_OE
+.outputs SRAM1_WE
+.outputs SRAM1_CE
+.outputs SRAM1_LB
+.outputs SRAM1_UB
+.inputs CLK_I
+.inputs RST_I
+.inputs CYC_I
+.inputs STB_I
+.outputs ACK_O
+.inputs ADR_I<19>
+.inputs ADR_I<18>
+.inputs ADR_I<17>
+.inputs ADR_I<16>
+.inputs ADR_I<15>
+.inputs ADR_I<14>
+.inputs ADR_I<13>
+.inputs ADR_I<12>
+.inputs ADR_I<11>
+.inputs ADR_I<10>
+.inputs ADR_I<9>
+.inputs ADR_I<8>
+.inputs ADR_I<7>
+.inputs ADR_I<6>
+.inputs ADR_I<5>
+.inputs ADR_I<4>
+.inputs ADR_I<3>
+.inputs ADR_I<2>
+.inputs ADR_I<1>
+.inputs ADR_I<0>
+.inputs DAT_I<31>
+.inputs DAT_I<30>
+.inputs DAT_I<29>
+.inputs DAT_I<28>
+.inputs DAT_I<27>
+.inputs DAT_I<26>
+.inputs DAT_I<25>
+.inputs DAT_I<24>
+.inputs DAT_I<23>
+.inputs DAT_I<22>
+.inputs DAT_I<21>
+.inputs DAT_I<20>
+.inputs DAT_I<19>
+.inputs DAT_I<18>
+.inputs DAT_I<17>
+.inputs DAT_I<16>
+.inputs DAT_I<15>
+.inputs DAT_I<14>
+.inputs DAT_I<13>
+.inputs DAT_I<12>
+.inputs DAT_I<11>
+.inputs DAT_I<10>
+.inputs DAT_I<9>
+.inputs DAT_I<8>
+.inputs DAT_I<7>
+.inputs DAT_I<6>
+.inputs DAT_I<5>
+.inputs DAT_I<4>
+.inputs DAT_I<3>
+.inputs DAT_I<2>
+.inputs DAT_I<1>
+.inputs DAT_I<0>
+.outputs DAT_O<31>
+.outputs DAT_O<30>
+.outputs DAT_O<29>
+.outputs DAT_O<28>
+.outputs DAT_O<27>
+.outputs DAT_O<26>
+.outputs DAT_O<25>
+.outputs DAT_O<24>
+.outputs DAT_O<23>
+.outputs DAT_O<22>
+.outputs DAT_O<21>
+.outputs DAT_O<20>
+.outputs DAT_O<19>
+.outputs DAT_O<18>
+.outputs DAT_O<17>
+.outputs DAT_O<16>
+.outputs DAT_O<15>
+.outputs DAT_O<14>
+.outputs DAT_O<13>
+.outputs DAT_O<12>
+.outputs DAT_O<11>
+.outputs DAT_O<10>
+.outputs DAT_O<9>
+.outputs DAT_O<8>
+.outputs DAT_O<7>
+.outputs DAT_O<6>
+.outputs DAT_O<5>
+.outputs DAT_O<4>
+.outputs DAT_O<3>
+.outputs DAT_O<2>
+.outputs DAT_O<1>
+.outputs DAT_O<0>
+.inputs WE_I
+.inputs SEL_I<3>
+.inputs SEL_I<2>
+.inputs SEL_I<1>
+.inputs SEL_I<0>
+.names SRAM1_A<17> SRAM0_A<17>
+1 1
+.names SRAM1_A<16> SRAM0_A<16>
+1 1
+.names SRAM1_A<15> SRAM0_A<15>
+1 1
+.names SRAM1_A<14> SRAM0_A<14>
+1 1
+.names SRAM1_A<13> SRAM0_A<13>
+1 1
+.names SRAM1_A<12> SRAM0_A<12>
+1 1
+.names SRAM1_A<11> SRAM0_A<11>
+1 1
+.names SRAM1_A<10> SRAM0_A<10>
+1 1
+.names SRAM1_A<9> SRAM0_A<9>
+1 1
+.names SRAM1_A<8> SRAM0_A<8>
+1 1
+.names SRAM1_A<7> SRAM0_A<7>
+1 1
+.names SRAM1_A<6> SRAM0_A<6>
+1 1
+.names SRAM1_A<5> SRAM0_A<5>
+1 1
+.names SRAM1_A<4> SRAM0_A<4>
+1 1
+.names SRAM1_A<3> SRAM0_A<3>
+1 1
+.names SRAM1_A<2> SRAM0_A<2>
+1 1
+.names SRAM1_A<1> SRAM0_A<1>
+1 1
+.names SRAM1_A<0> SRAM0_A<0>
+1 1
+.names SRAM1_OE SRAM0_OE
+1 1
+.names SRAM1_WE SRAM0_WE
+1 1
+.names ADR_I<19> SRAM1_A<17>
+1 1
+.names ADR_I<18> SRAM1_A<16>
+1 1
+.names ADR_I<17> SRAM1_A<15>
+1 1
+.names ADR_I<16> SRAM1_A<14>
+1 1
+.names ADR_I<15> SRAM1_A<13>
+1 1
+.names ADR_I<14> SRAM1_A<12>
+1 1
+.names ADR_I<13> SRAM1_A<11>
+1 1
+.names ADR_I<12> SRAM1_A<10>
+1 1
+.names ADR_I<11> SRAM1_A<9>
+1 1
+.names ADR_I<10> SRAM1_A<8>
+1 1
+.names ADR_I<9> SRAM1_A<7>
+1 1
+.names ADR_I<8> SRAM1_A<6>
+1 1
+.names ADR_I<7> SRAM1_A<5>
+1 1
+.names ADR_I<6> SRAM1_A<4>
+1 1
+.names ADR_I<5> SRAM1_A<3>
+1 1
+.names ADR_I<4> SRAM1_A<2>
+1 1
+.names ADR_I<3> SRAM1_A<1>
+1 1
+.names ADR_I<2> SRAM1_A<0>
+1 1
+.names *SRAM1_D<15> DAT_O<31>
+1 1
+.names *SRAM1_D<14> DAT_O<30>
+1 1
+.names *SRAM1_D<13> DAT_O<29>
+1 1
+.names *SRAM1_D<12> DAT_O<28>
+1 1
+.names *SRAM1_D<11> DAT_O<27>
+1 1
+.names *SRAM1_D<10> DAT_O<26>
+1 1
+.names *SRAM1_D<9> DAT_O<25>
+1 1
+.names *SRAM1_D<8> DAT_O<24>
+1 1
+.names *SRAM1_D<7> DAT_O<23>
+1 1
+.names *SRAM1_D<6> DAT_O<22>
+1 1
+.names *SRAM1_D<5> DAT_O<21>
+1 1
+.names *SRAM1_D<4> DAT_O<20>
+1 1
+.names *SRAM1_D<3> DAT_O<19>
+1 1
+.names *SRAM1_D<2> DAT_O<18>
+1 1
+.names *SRAM1_D<1> DAT_O<17>
+1 1
+.names *SRAM1_D<0> DAT_O<16>
+1 1
+.names *SRAM0_D<15> DAT_O<15>
+1 1
+.names *SRAM0_D<14> DAT_O<14>
+1 1
+.names *SRAM0_D<13> DAT_O<13>
+1 1
+.names *SRAM0_D<12> DAT_O<12>
+1 1
+.names *SRAM0_D<11> DAT_O<11>
+1 1
+.names *SRAM0_D<10> DAT_O<10>
+1 1
+.names *SRAM0_D<9> DAT_O<9>
+1 1
+.names *SRAM0_D<8> DAT_O<8>
+1 1
+.names *SRAM0_D<7> DAT_O<7>
+1 1
+.names *SRAM0_D<6> DAT_O<6>
+1 1
+.names *SRAM0_D<5> DAT_O<5>
+1 1
+.names *SRAM0_D<4> DAT_O<4>
+1 1
+.names *SRAM0_D<3> DAT_O<3>
+1 1
+.names *SRAM0_D<2> DAT_O<2>
+1 1
+.names *SRAM0_D<1> DAT_O<1>
+1 1
+.names *SRAM0_D<0> DAT_O<0>
+1 1
+.names LoadTimer_WriteHold
+.names n2
+1
+.names Request n26
+0 1
+.names OutBits<1> n26 SRAM0_CE
+1- 1
+-1 1
+.names OutBits<0> n26 SRAM1_CE
+1- 1
+-1 1
+.names WE_I n101
+0 1
+.names Request n101 RequestRead
+11 1
+.names STB_I CYC_I Request
+11 1
+.names Request WE_I RequestWrite
+11 1
+.names OutBits_Write<4> SRAM1_OE SRAM0_UB
+11 1
+.names OutBits_Write<3> SRAM1_OE SRAM1_LB
+11 1
+.names OutBits_Write<2> SRAM1_OE SRAM1_UB
+11 1
+.names OutBits_Write<1> SRAM1_OE OutBits<1>
+11 1
+.names OutBits_Write<0> SRAM1_OE OutBits<0>
+11 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt XORCY i495 CI=-i495/CI LI=-i495/LI O=+n366
+.names add_362/n2 i495/CI
+1 1
+.names n484 i495/LI
+1 1
+.names State_state_write_pulse SRAM1_WE
+0 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_147/muxtemp0
+1110 1
+1101 1
+1011 1
+1010 1
+1001 1
+0110 1
+0101 1
+0010 1
+0000 1
+.names Mux_147/muxtemp0 OutBits_Write<5>
+1 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_148/muxtemp0
+1101 1
+1011 1
+1010 1
+1001 1
+0101 1
+0001 1
+0000 1
+.names Mux_148/muxtemp0 OutBits_Write<4>
+1 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_149/muxtemp0
+1101 1
+1011 1
+1010 1
+1001 1
+1000 1
+0101 1
+0000 1
+.names Mux_149/muxtemp0 OutBits_Write<3>
+1 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_150/muxtemp0
+1101 1
+1011 1
+1010 1
+1001 1
+0111 1
+0110 1
+0101 1
+0100 1
+0000 1
+.names Mux_150/muxtemp0 OutBits_Write<2>
+1 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_151/muxtemp0
+1101 1
+1100 1
+1011 1
+1010 1
+1001 1
+1000 1
+0101 1
+0100 1
+0000 1
+.names Mux_151/muxtemp0 OutBits_Write<1>
+1 1
+.names SEL_I<3> SEL_I<2> SEL_I<1> SEL_I<0> Mux_152/muxtemp0
+1101 1
+1011 1
+1010 1
+1001 1
+0101 1
+0011 1
+0010 1
+0001 1
+0000 1
+.names Mux_152/muxtemp0 OutBits_Write<0>
+1 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<15>
+.latch DAT_I<15> SRAM0_D<15> th _N16 2
+.names SRAM1_OE _N16
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<14>
+.latch DAT_I<14> SRAM0_D<14> th _N17 2
+.names SRAM1_OE _N17
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<13>
+.latch DAT_I<13> SRAM0_D<13> th _N18 2
+.names SRAM1_OE _N18
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<12>
+.latch DAT_I<12> SRAM0_D<12> th _N19 2
+.names SRAM1_OE _N19
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<11>
+.latch DAT_I<11> SRAM0_D<11> th _N20 2
+.names SRAM1_OE _N20
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<10>
+.latch DAT_I<10> SRAM0_D<10> th _N21 2
+.names SRAM1_OE _N21
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<9>
+.latch DAT_I<9> SRAM0_D<9> th _N22 2
+.names SRAM1_OE _N22
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<8>
+.latch DAT_I<8> SRAM0_D<8> th _N23 2
+.names SRAM1_OE _N23
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<7>
+.latch DAT_I<7> SRAM0_D<7> th _N24 2
+.names SRAM1_OE _N24
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<6>
+.latch DAT_I<6> SRAM0_D<6> th _N25 2
+.names SRAM1_OE _N25
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<5>
+.latch DAT_I<5> SRAM0_D<5> th _N26 2
+.names SRAM1_OE _N26
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<4>
+.latch DAT_I<4> SRAM0_D<4> th _N27 2
+.names SRAM1_OE _N27
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<3>
+.latch DAT_I<3> SRAM0_D<3> th _N28 2
+.names SRAM1_OE _N28
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<2>
+.latch DAT_I<2> SRAM0_D<2> th _N29 2
+.names SRAM1_OE _N29
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<1>
+.latch DAT_I<1> SRAM0_D<1> th _N30 2
+.names SRAM1_OE _N30
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM0_D<0>
+.latch DAT_I<0> SRAM0_D<0> th _N31 2
+.names SRAM1_OE _N31
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<15>
+.latch DAT_I<31> SRAM1_D<15> th _N32 2
+.names SRAM1_OE _N32
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<14>
+.latch DAT_I<30> SRAM1_D<14> th _N33 2
+.names SRAM1_OE _N33
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<13>
+.latch DAT_I<29> SRAM1_D<13> th _N34 2
+.names SRAM1_OE _N34
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<12>
+.latch DAT_I<28> SRAM1_D<12> th _N35 2
+.names SRAM1_OE _N35
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<11>
+.latch DAT_I<27> SRAM1_D<11> th _N36 2
+.names SRAM1_OE _N36
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<10>
+.latch DAT_I<26> SRAM1_D<10> th _N37 2
+.names SRAM1_OE _N37
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<9>
+.latch DAT_I<25> SRAM1_D<9> th _N38 2
+.names SRAM1_OE _N38
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<8>
+.latch DAT_I<24> SRAM1_D<8> th _N39 2
+.names SRAM1_OE _N39
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<7>
+.latch DAT_I<23> SRAM1_D<7> th _N40 2
+.names SRAM1_OE _N40
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<6>
+.latch DAT_I<22> SRAM1_D<6> th _N41 2
+.names SRAM1_OE _N41
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<5>
+.latch DAT_I<21> SRAM1_D<5> th _N42 2
+.names SRAM1_OE _N42
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<4>
+.latch DAT_I<20> SRAM1_D<4> th _N43 2
+.names SRAM1_OE _N43
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<3>
+.latch DAT_I<19> SRAM1_D<3> th _N44 2
+.names SRAM1_OE _N44
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<2>
+.latch DAT_I<18> SRAM1_D<2> th _N45 2
+.names SRAM1_OE _N45
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<1>
+.latch DAT_I<17> SRAM1_D<1> th _N46 2
+.names SRAM1_OE _N46
+0 1
+.loc Configurable_SRAM.VHD 217 SRAM1_D<0>
+.latch DAT_I<16> SRAM1_D<0> th _N47 2
+.names SRAM1_OE _N47
+0 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt XORCY i500 CI=-i500/CI LI=-i500/LI O=+n364
+.names add_362/n6 i500/CI
+1 1
+.names n486 i500/LI
+1 1
+.names RequestRead n453
+0 1
+.names State_state_read_ack RequestRead n288
+1- 1
+-1 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt MUXCY i494 CI=-i494/CI DI=-i494/DI S=-i494/S O=+add_362/n4
+.names add_362/n2 i494/CI
+1 1
+.names Timer<2> i494/DI
+1 1
+.names n484 i494/S
+1 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt XORCY i498 CI=-i498/CI LI=-i498/LI O=+n365
+.names add_362/n4 i498/CI
+1 1
+.names n485 i498/LI
+1 1
+.names n285 RequestWrite n291
+1- 1
+-1 1
+.names RequestWrite n463
+0 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt XORCY i492 CI=-i492/CI LI=-i492/LI O=+n367
+.names Timer<0> i492/CI
+1 1
+.names n483 i492/LI
+1 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt MUXCY i497 CI=-i497/CI DI=-i497/DI S=-i497/S O=+add_362/n6
+.names add_362/n4 i497/CI
+1 1
+.names Timer<3> i497/DI
+1 1
+.names n485 i497/S
+1 1
+.names State_state_write_pulse TimerIsZero n297
+1- 1
+-1 1
+.loc ../vhdl_packages/syn_unsi.vhd 154
+.subckt MUXCY i491 CI=-i491/CI DI=-i491/DI S=-i491/S O=+add_362/n2
+.names Timer<0> i491/CI
+1 1
+.names Timer<1> i491/DI
+1 1
+.names n483 i491/S
+1 1
+.names Timer<1> n483
+0 1
+.names State_state_write_setup n438 n296
+11 1
+.names State_state_write_ack TimerIsZero n305
+1- 1
+-1 1
+.loc Configurable_SRAM.VHD 326 Timer<2>
+.latch n366 Timer<2> re CLK_I 0 RST_I n438
+.names reduce_nor_399/n1 reduce_nor_399/n3 n438
+1- 1
+-1 1
+.names State_state_write_ack State_state_write_pulse reduce_or_322/n1
+1- 1
+-1 1
+.names State_state_addresssetup RequestWrite Select_319/temp_select_0
+11 1
+.names n319 n2 Select_319/temp_select_1
+11 1
+.names State_state_read_ack LoadTimer_WriteHold Select_319/temp_select_2
+11 1
+.names Select_319/temp_select_0 Select_319/temp_select_1 Select_319/temp_select_2 SRAM1_OE
+1-- 1
+-1- 1
+--1 1
+.names State_state_write_pulse State_state_write_setup reduce_or_318/n2
+1- 1
+-1 1
+.names State_state_addresssetup n289 Select_321/temp_select_0
+11 1
+.names State_state_write_setup n295 Select_321/temp_select_1
+11 1
+.names State_state_write_pulse LoadTimer_WriteHold Select_321/temp_select_2
+11 1
+.names State_state_write_hold n295 Select_321/temp_select_3
+11 1
+.names ACK_O n2 Select_321/temp_select_4
+11 1
+.names Select_321/temp_select_0 Select_321/temp_select_1 Select_321/temp_select_2 Select_321/temp_select_3 Select_321/temp_select_4 State_Next_state_addresssetup
+1---- 1
+-1--- 1
+--1-- 1
+---1- 1
+----1 1
+.names Timer<2> n484
+0 1
+.names State_state_addresssetup n290 Select_323/temp_select_0
+11 1
+.names State_state_write_setup n296 Select_323/temp_select_1
+11 1
+.names n323 LoadTimer_WriteHold Select_323/temp_select_2
+11 1
+.names State_state_write_hold n296 Select_323/temp_select_3
+11 1
+.names Select_323/temp_select_0 Select_323/temp_select_1 Select_323/temp_select_2 Select_323/temp_select_3 State_Next_state_write_setup
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.loc Configurable_SRAM.VHD 326 Timer<0>
+.latch n361 Timer<0> re CLK_I 0 RST_I n438
+.names State_state_addresssetup n291 Select_325/temp_select_0
+11 1
+.names State_state_write_setup n297 Select_325/temp_select_1
+11 1
+.names n323 LoadTimer_WriteHold Select_325/temp_select_2
+11 1
+.names State_state_write_hold n303 Select_325/temp_select_3
+11 1
+.names Select_325/temp_select_0 Select_325/temp_select_1 Select_325/temp_select_2 Select_325/temp_select_3 State_Next_state_write_pulse
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.loc Configurable_SRAM.VHD 326 Timer<1>
+.latch n367 Timer<1> re CLK_I 0 RST_I n438
+.names State_state_addresssetup n292 Select_327/temp_select_0
+11 1
+.names State_state_write_setup n298 Select_327/temp_select_1
+11 1
+.names n323 LoadTimer_WriteHold Select_327/temp_select_2
+11 1
+.names State_state_write_hold n298 Select_327/temp_select_3
+11 1
+.names Select_327/temp_select_0 Select_327/temp_select_1 Select_327/temp_select_2 Select_327/temp_select_3 State_Next_state_write_hold
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.loc Configurable_SRAM.VHD 326 Timer<3>
+.latch n365 Timer<3> re CLK_I 0 RST_I n438
+.names State_state_addresssetup n293 Select_329/temp_select_0
+11 1
+.names State_state_write_setup n299 Select_329/temp_select_1
+11 1
+.names State_state_write_pulse n2 Select_329/temp_select_2
+11 1
+.names State_state_write_hold n305 Select_329/temp_select_3
+11 1
+.names ACK_O LoadTimer_WriteHold Select_329/temp_select_4
+11 1
+.names Select_329/temp_select_0 Select_329/temp_select_1 Select_329/temp_select_2 Select_329/temp_select_3 Select_329/temp_select_4 State_Next_state_write_ack
+1---- 1
+-1--- 1
+--1-- 1
+---1- 1
+----1 1
+.loc Configurable_SRAM.VHD 326 Timer<4>
+.latch n364 Timer<4> re CLK_I 0 RST_I n438
+.names State_state_addresssetup n294 Select_331/temp_select_0
+11 1
+.names State_state_write_setup n300 Select_331/temp_select_1
+11 1
+.names n323 LoadTimer_WriteHold Select_331/temp_select_2
+11 1
+.names State_state_write_hold n300 Select_331/temp_select_3
+11 1
+.names Select_331/temp_select_0 Select_331/temp_select_1 Select_331/temp_select_2 Select_331/temp_select_3 State_Next_state_read_ack
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names State_state_write_pulse n438 n303
+11 1
+.names State_state_write_ack State_state_read_ack ACK_O
+1- 1
+-1 1
+.names State_state_read_ack n438 n300
+11 1
+.loc Configurable_SRAM.VHD 309 State_state_addresssetup
+.latch State_Next_state_addresssetup State_state_addresssetup re CLK_I 1 RST_I
+.loc Configurable_SRAM.VHD 309 State_state_write_setup
+.latch State_Next_state_write_setup State_state_write_setup re CLK_I 0 RST_I
+.loc Configurable_SRAM.VHD 309 State_state_write_pulse
+.latch State_Next_state_write_pulse State_state_write_pulse re CLK_I 0 RST_I
+.loc Configurable_SRAM.VHD 309 State_state_write_hold
+.latch State_Next_state_write_hold State_state_write_hold re CLK_I 0 RST_I
+.loc Configurable_SRAM.VHD 309 State_state_write_ack
+.latch State_Next_state_write_ack State_state_write_ack re CLK_I 0 RST_I
+.loc Configurable_SRAM.VHD 309 State_state_read_ack
+.latch State_Next_state_read_ack State_state_read_ack re CLK_I 0 RST_I
+.names Timer<3> n485
+0 1
+.names Timer<4> n486
+0 1
+.names reduce_or_318/n1 reduce_or_318/n2 n319
+1- 1
+-1 1
+.names State_state_read_ack reduce_or_322/n1 n323
+1- 1
+-1 1
+.names n438 TimerIsZero
+0 1
+.names n288 n463 n294
+11 1
+.names State_state_addresssetup n438 n295
+11 1
+.names Timer<0> n361
+0 1
+.names Timer<2> reduce_nor_399/n2 reduce_nor_399/n3
+1- 1
+-1 1
+.names n286 n463 n292
+11 1
+.names State_state_write_ack n453 n287
+11 1
+.names State_state_write_setup n453 n284
+11 1
+.names OutBits_Write<5> SRAM1_OE SRAM0_LB
+11 1
+.names State_state_write_ack n438 n299
+11 1
+.names n287 n463 n293
+11 1
+.names n283 n463 n289
+11 1
+.names State_state_write_pulse n453 n285
+11 1
+.names Timer<3> Timer<4> reduce_nor_399/n2
+1- 1
+-1 1
+.names n284 n463 n290
+11 1
+.names State_state_write_hold n453 n286
+11 1
+.names Timer<0> Timer<1> reduce_nor_399/n1
+1- 1
+-1 1
+.names State_state_write_ack State_state_write_hold reduce_or_318/n1
+1- 1
+-1 1
+.names State_state_addresssetup n453 n283
+11 1
+.names State_state_write_hold n438 n298
+11 1

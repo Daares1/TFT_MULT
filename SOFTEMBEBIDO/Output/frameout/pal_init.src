@@ -1,0 +1,576 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc2032a --dep-file=Output\frameout\pal_pal_init.d --make-target=Output\frameout\pal_pal_init.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\pal_init.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\src\\pal_init.c"
+
+	.section	.text.pal_init.pal_init ,cluster('$group_pal_init')
+	.align	4
+	.global	pal_init
+; Function pal_init
+.L3:
+pal_init:	.type	func
+	addiu	$sp,$sp,-4
+.L18:
+	sw	$ra,0($sp)
+.L19:
+	lui	$v0,0x2fa
+	ori	$v0,$v0,0xf080
+	lui	$v1,@hi(__clocks_per_sec)
+	sw	$zero,@lo(__clocks_per_sec)($v1)
+	lui	$v1,@hi(__clocks_per_sec+4)
+.L56:
+	jal	pal_architecture_processor_init
+.L57:
+	sw	$v0,@lo(__clocks_per_sec+4)($v1)
+.L58:
+	jal	pal_architecture_interrupts_init
+	nop
+.L59:
+	jal	pal_architecture_timer_interrupt_init
+	nop
+.L60:
+	jal	pal_architecture_clock_init
+	nop
+.L15:
+	mfc0	$v0,$0
+	ori	$v0,$v0,0x1
+.L61:
+	mtc0	$v0,$0
+.L16:
+	lw	$ra,0($sp)
+.L20:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L13:
+	.size	pal_init,*-pal_init
+.L12:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'pal_init','pal_architecture_processor_init'
+	.calls	'pal_init','pal_architecture_interrupts_init'
+	.calls	'pal_init','pal_architecture_timer_interrupt_init'
+	.calls	'pal_init','pal_architecture_clock_init'
+	.calls	'pal_init','',4
+	.extern	__clocks_per_sec
+	.extern	pal_architecture_interrupts_init
+	.extern	pal_architecture_timer_interrupt_init
+	.extern	pal_architecture_processor_init
+	.extern	pal_architecture_clock_init
+	.section	.debug_info
+.L5:
+	.dw	2053
+	.dh	3
+	.dw	.L6
+	.db	4
+.L4:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\src\\pal_init.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L7
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0
+.L14:
+	.db	2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1
+.L17:
+	.db	3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,4
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	.L21-.L5
+	.db	3,0
+.L21:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,6
+	.db	"__mtc0",0
+	.db	1,1,1,1,7
+	.db	"val",0
+	.dw	.L22-.L5
+	.db	7
+	.db	"spr",0
+	.dw	.L22-.L5
+	.db	0
+.L22:
+	.db	5
+	.db	"int",0
+	.db	4,5,8
+	.db	"__mfc0",0
+	.dw	.L23-.L5
+	.db	1,1,1,1,7
+	.db	"spr",0
+	.dw	559
+	.db	0
+.L23:
+	.db	9
+	.dw	559
+	.db	10
+	.dw	318
+	.db	3,0,10
+	.dw	356
+	.db	3,0,10
+	.dw	401
+	.db	3,0,10
+	.dw	447
+	.db	11
+	.dw	494
+	.db	3,0,12
+	.db	"pal_architecture_interrupts_init",0
+	.db	1,146,2,17
+	.dw	.L24-.L5
+	.db	1,1,1,1
+.L24:
+	.db	5
+	.db	"_Bool",0
+	.db	1,2,12
+	.db	"pal_architecture_timer_interrupt_init",0
+	.db	1,147,2,17
+	.dw	676
+	.db	1,1,1,1,12
+	.db	"pal_architecture_processor_init",0
+	.db	1,148,2,17
+	.dw	676
+	.db	1,1,1,1,12
+	.db	"pal_architecture_clock_init",0
+	.db	1,149,2,17
+	.dw	676
+	.db	1,1,1,1,13
+	.db	"__wchar_t",0
+	.db	2,1,1
+	.dw	.L25-.L5
+.L25:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,13
+	.db	"__size_t",0
+	.db	2,1,1
+	.dw	512
+	.db	13
+	.db	"__ssize_t",0
+	.db	2,1,1
+	.dw	559
+	.db	13
+	.db	"__ptrdiff_t",0
+	.db	2,1,1
+	.dw	559
+	.db	13
+	.db	"__codeptr",0
+	.db	2,1,1
+	.dw	.L26-.L5
+.L26:
+	.db	14
+	.dw	.L27-.L5
+.L27:
+	.db	15,1,13
+	.db	"uint16_t",0
+	.db	3,24,33
+	.dw	840
+	.db	13
+	.db	"int32_t",0
+	.db	3,25,33
+	.dw	559
+	.db	13
+	.db	"uint32_t",0
+	.db	3,26,33
+	.dw	512
+	.db	13
+	.db	"uint64_t",0
+	.db	3,28,33
+	.dw	.L28-.L5
+.L28:
+	.db	5
+	.db	"unsigned long long int",0
+	.db	8,7,13
+	.db	"size_t",0
+	.db	4,15,25
+	.dw	512
+	.db	13
+	.db	"time_t",0
+	.db	5,36,27
+	.dw	.L29-.L5
+.L29:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7,13
+	.db	"posix_thread_t",0
+	.db	5,44,25
+	.dw	.L30-.L5
+.L30:
+	.db	16
+	.db	"thread_t",0
+	.db	5,44,16,1,13
+	.db	"posix_threadqueue_t",0
+	.db	5,50,9
+	.dw	.L31-.L5
+.L31:
+	.db	17
+	.db	"posix_threadqueue_t",0
+	.db	5,46,17,8,18
+	.db	"head",0
+	.db	4
+	.dw	.L32-.L5
+	.db	2,35,0,18
+	.db	"tail",0
+	.db	4
+	.dw	.L32-.L5
+	.db	2,35,4,0
+.L32:
+	.db	14
+	.dw	1109
+	.db	13
+	.db	"pthread_attr_t",0
+	.db	5,107,3
+	.dw	.L33-.L5
+.L33:
+	.db	17
+	.db	"pthread_attr_t",0
+	.db	5,90,16,24,18
+	.db	"stacksize",0
+	.db	4
+	.dw	512
+	.db	2,35,0,18
+	.db	"stackaddr",0
+	.db	4
+	.dw	.L34-.L5
+	.db	2,35,4,18
+	.db	"guardsize",0
+	.db	4
+	.dw	512
+	.db	2,35,8,18
+	.db	"schedparam",0
+	.db	4
+	.dw	.L35-.L5
+	.db	2,35,12,19
+	.db	"detachstate",0
+	.db	1
+	.dw	.L36-.L5
+	.db	2,0,2,35,16,19
+	.db	"scope",0
+	.db	1
+	.dw	.L36-.L5
+	.db	2,2,2,35,16,19
+	.db	"inheritsched",0
+	.db	1
+	.dw	.L36-.L5
+	.db	2,4,2,35,16,19
+	.db	"schedpolicy",0
+	.db	1
+	.dw	.L36-.L5
+	.db	2,6,2,35,16,18
+	.db	"init",0
+	.db	4
+	.dw	512
+	.db	2,35,20,0
+.L34:
+	.db	14
+	.dw	.L37-.L5
+.L37:
+	.db	20
+	.db	"void",0
+.L35:
+	.db	17
+	.db	"sched_param",0
+	.db	5,75,8,4,18
+	.db	"sched_priority",0
+	.db	4
+	.dw	559
+	.db	2,35,0,0
+.L36:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8,13
+	.db	"pthread_mutex_t",0
+	.db	5,160,1,33
+	.dw	.L38-.L5
+.L38:
+	.db	17
+	.db	"_pthread_mutex_t",0
+	.db	5,162,1,8,32,19
+	.db	"type",0
+	.db	1
+	.dw	1485
+	.db	2,0,2,35,0,19
+	.db	"protocol",0
+	.db	1
+	.dw	1485
+	.db	2,2,2,35,0,19
+	.db	"prioceiling",0
+	.db	4
+	.dw	512
+	.db	16,4,2,35,0,19
+	.db	"recursive",0
+	.db	2
+	.dw	840
+	.db	8,4,2,35,2,19
+	.db	"preprio",0
+	.db	2
+	.dw	.L39-.L5
+	.db	16,0,2,35,4,18
+	.db	"initi",0
+	.db	4
+	.dw	559
+	.db	2,35,8,18
+	.db	"owner",0
+	.db	4
+	.dw	1205
+	.db	2,35,12,18
+	.db	"nestup",0
+	.db	4
+	.dw	.L40-.L5
+	.db	2,35,16,18
+	.db	"nestdown",0
+	.db	4
+	.dw	.L40-.L5
+	.db	2,35,20,18
+	.db	"queue",0
+	.db	8
+	.dw	1151
+	.db	2,35,24,0
+.L39:
+	.db	5
+	.db	"short int",0
+	.db	2,5
+.L40:
+	.db	14
+	.dw	1527
+	.db	13
+	.db	"clockid_t",0
+	.db	5,183,1,13
+	.dw	559
+	.db	13
+	.db	"clock_t",0
+	.db	6,29,33
+	.dw	1009
+	.db	21
+	.db	"__clocks_per_sec",0
+	.db	6,44,25
+	.dw	1009
+	.db	1,1,13
+	.db	"pal_arch_atomic_t",0
+	.db	1,49,13
+	.dw	559
+	.db	13
+	.db	"sigset_t",0
+	.db	7,64,26
+	.dw	1009
+	.db	13
+	.db	"sa_sighandler_t",0
+	.db	7,103,16
+	.dw	.L41-.L5
+.L41:
+	.db	14
+	.dw	.L42-.L5
+.L42:
+	.db	22,1,1,23
+	.dw	559
+	.db	0,13
+	.db	"sa_siginfoaction_t",0
+	.db	7,104,16
+	.dw	.L43-.L5
+.L43:
+	.db	14
+	.dw	.L44-.L5
+.L44:
+	.db	22,1,1,23
+	.dw	559
+	.db	23
+	.dw	.L45-.L5
+	.db	23
+	.dw	1432
+	.db	0
+.L45:
+	.db	14
+	.dw	.L46-.L5
+.L46:
+	.db	24,7,88,9,12,18
+	.db	"si_signo",0
+	.db	4
+	.dw	559
+	.db	2,35,0,18
+	.db	"si_code",0
+	.db	4
+	.dw	559
+	.db	2,35,4,18
+	.db	"si_value",0
+	.db	4
+	.dw	.L47-.L5
+	.db	2,35,8,0
+.L47:
+	.db	25
+	.db	"sigval",0
+	.db	7,66,7,4,18
+	.db	"sival_int",0
+	.db	4
+	.dw	559
+	.db	2,35,0,18
+	.db	"sival_ptr",0
+	.db	4
+	.dw	1432
+	.db	2,35,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L6:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,36,0,3,8,11,15,62,15,0,0,6,46,1,3,8,54,15,39,12,63,12,60
+	.db	12,0,0,7,5,0,3,8,73,19,0,0,8,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,9,53,0,73,19,0,0,10,46,1,49,19
+	.db	0,0,11,5,0,49,19,0,0,12,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,13,22,0,3,8,58,15
+	.db	59,15,57,15,73,19,0,0,14,15,0,73,19,0,0,15,21,0,54,15,0,0,16,19,0,3,8,58,15,59,15,57,15,60,12,0,0,17,19
+	.db	1,3,8,58,15,59,15,57,15,11,15,0,0,18,13,0,3,8,11,15,73,19,56,9,0,0,19,13,0,3,8,11,15,73,19,13,15,12,15
+	.db	56,9,0,0,20,59,0,3,8,0,0,21,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,22,21,1,54,15,39,12,0,0,23
+	.db	5,0,73,19,0,0,24,19,1,58,15,59,15,57,15,11,15,0,0,25,23,1,3,8,58,15,59,15,57,15,11,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L7:
+	.dw	.L49-.L48
+.L48:
+	.dh	3
+	.dw	.L51-.L50
+.L50:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\src\\pal_init.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stddef.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\time.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\signal.h",0
+	.db	0,0,0,0
+.L51:
+.L49:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_pal_init')
+.L8:
+	.dw	390
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\src\\pal_init.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L11,.L10
+	.db	2
+	.dw	.L4
+	.db	3
+	.db	"pal_init",0
+	.db	1,17,6,1,1,1
+	.dw	.L3,.L13,.L2
+	.db	4
+	.dw	.L3,.L13
+	.db	5
+	.dw	.L14,.L15,.L16
+	.db	6
+	.dw	.L17,.L15,.L16
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_pal_init')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,29,1,49,16,17,1,18,1,0,0,6,11,0,49,16,17,1,18,1
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_pal_init')
+.L10:
+	.dw	.L53-.L52
+.L52:
+	.dh	3
+	.dw	.L55-.L54
+.L54:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\pal\\src\\pal_init.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0,0
+.L55:
+	.db	5,6,7,0,5,2
+	.dw	.L3
+	.db	3,16,1,5,35
+	.db	17+9*((.L19-.L3)/4)
+	.db	5,38
+	.db	16+9*((.L56-.L19)/4)
+	.db	5,35
+	.db	12+9*((.L57-.L56)/4)
+	.db	5,39
+	.db	18+9*((.L58-.L57)/4)
+	.db	5,44
+	.db	17+9*((.L59-.L58)/4)
+	.db	5,34
+	.db	17+9*((.L60-.L59)/4)
+	.db	4,2,5,40,9
+	.dh	.L15-.L60
+	.db	3,228,0,1,5,93
+	.db	14+9*((.L61-.L15)/4)
+	.db	4,1,5,1,9
+	.dh	.L16-.L61
+	.db	3,161,127,1,9
+	.dh	.L12-.L16
+	.db	0,1,1
+.L53:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_pal_init')
+.L11:
+	.dw	-1
+	.dw	.L3
+	.dw	0
+	.dw	.L12-.L3
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_pal_init')
+.L2:
+	.dw	-1
+	.dw	.L3,.L3-.L3,.L18-.L3
+	.dh	2
+	.db	141,0
+	.dw	.L18-.L3,.L13-.L3
+	.dh	2
+	.db	141,4
+	.dw	.L13-.L3,.L13-.L3
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L62:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_pal_init')
+	.dw	48
+	.dw	.L62,.L3,.L13-.L3
+	.db	4
+	.dw	(.L18-.L3)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L19-.L18)/4
+	.db	17,31,124,4
+	.dw	(.L20-.L19)/4
+	.db	223,4
+	.dw	(.L13-.L20)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

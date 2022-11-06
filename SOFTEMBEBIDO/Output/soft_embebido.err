@@ -1,0 +1,40 @@
+Compiling MAIN.c
+Compiling swplatform.c
+Building Software Platform
+Building drv_ad7843 plugin
+c3000 W523: ["MAIN.c" 92/55] pointers to different types at argument #1
+0 errors, 1 warnings
+Building drv_ioport plugin
+Building drv_led plugin
+Building drv_spi plugin
+Building drv_terminal plugin
+Building drv_vga_16bpp plugin
+Building drv_vga_ili9320 plugin
+Building per_ioport plugin
+Building per_led plugin
+Building per_spi plugin
+Building per_terminal plugin
+Building per_tspen plugin
+Building per_vga32_16bpp plugin
+Building per_vga32_ili9320 plugin
+Building pal_arch_3000 plugin
+Building pal plugin
+Building ad_vga_ili9320 plugin
+Building graphics plugin
+Building interrupts plugin
+Building ad_touchscreen_to_pointer plugin
+Building pointer plugin
+Building timing plugin
+Building touchscreen plugin
+Building devfs_minimal plugin
+Building posix_devio plugin
+Building terminal_to_serial plugin
+Building serial plugin
+Building ifconfig plugin
+Building init plugin
+Building sysutils plugin
+Assembling MAIN.src
+Assembling swplatform.src
+Software platform built
+Linking and Locating SOFT_EMBEBIDO.abs
+

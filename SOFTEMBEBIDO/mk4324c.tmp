@@ -1,0 +1,3 @@
+"Output\\main.obj"
+"Output\\frameout\\__framework.lib"
+  -d"Output\framecfg\ssas.lsl" -Wl-c"Output\soft_embebido:IHEX" -d"Output\soft_embebido_mem.lsl" -Wl-L"C:\PROGRAM FILES\ALTIUM DESIGNER SUMMER 09\System\Tasking\c3000\lib" --use-hardware=md -Wl-O1 -Wl-M -Wl-mcfklmoQrSuDIN -Wl-w159 --import-object="color.bmp" -Wl--map-file="Output\soft_embebido.mapxml":XML

@@ -1,0 +1,5 @@
+"-Wa-IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO"
+"-Wa-gs"
+"-Wa-il"
+"--use-hardware=md"
+"Output\MAIN.src"

@@ -1,0 +1,102 @@
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "devices.h"
+#include "generic_devices.h"
+#include <string.h>
+#include <graphics.h>
+#include <drv_ioport.h>
+#include <drv_terminal.h>
+#include <canvas.h>
+#include <touchscreen.h>
+#include <pointer.h>
+#include <stdbool.h>
+#include <drv_led.h>
+#include <led_info.h>
+
+graphics_t * display;   //DECLARACION DEL PUNTERO display.
+canvas_t * canvas;
+ioport_t* dip;
+terminal_t* term;
+pointer_state_t * pointer_state;
+pointer_t* punt;
+color_t  color;
+led_t * leds;
+touchscreen_t* touch;
+extern __no_sdata graphics_bitmap_t _lc_ub_palette_bmp; //Imagen
+extern __no_sdata graphics_bitmap_t _lc_ue_palette_bmp;
+graphics_bitmap_t * bmp = &_lc_ub_palette_bmp;
+void set_all_leds (uint32_t value);
+
+void main(void){
+
+touch= touchscreen_open(TOUCHSCREEN_1);
+display = graphics_open(GRAPHICS_1); //  Devuelte el puntero del servicio en caso de ser inicializado
+canvas = graphics_get_visible_canvas(display);
+ leds = led_open(DRV_LED_1);
+
+punt= pointer_open(POINTER_1);
+term= terminal_open(DRV_TERMINAL_1);
+dip= ioport_open(DIP);
+
+  
+
+
+while(1){
+    line:
+  if (pointer_update(punt, pointer_state))  {
+
+ while( ioport_get_value(dip, 0)==29){
+graphics_draw_bitmap(canvas, bmp, 0, 0, 320, 240, 0);
+graphics_set_visible_canvas(display, canvas);
+if (pointer_update(punt, pointer_state)) {
+color=graphics_get_pixel(canvas, pointer_state->x, pointer_state->y);
+ printf("el color es %p n\ ",color);
+}
+
+ }
+
+   graphics_fill_circle(canvas, 160, 120, 400, WHITE);
+ graphics_set_visible_canvas(display, canvas);
+
+
+while( color!=NULL  ){
+
+            if  ( ioport_get_value(dip, 0)==29) {
+
+            goto line;
+            }
+
+
+
+
+                  if (pointer_update(punt, pointer_state))  {
+
+                  graphics_fill_circle( canvas, pointer_state->x, pointer_state->y,5, color);
+                  graphics_set_visible_canvas(display, canvas);
+                  }
+
+}
+}
+
+
+
+
+
+
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+

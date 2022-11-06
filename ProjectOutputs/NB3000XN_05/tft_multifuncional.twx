@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE twReport [
+<!ELEMENT twReport (twHead?, (twWarn | twDebug | twInfo)*, twBody, twSum?,
+					twDebug*, twFoot?, twClientInfo?)>
+<!ATTLIST twReport version CDATA "10,4">
+<!ELEMENT twHead (twExecVer?, twCopyright, twCmdLine?, twDesign?, twPCF?, twDevInfo, twRptInfo, twEnvVar*)>
+<!ELEMENT twExecVer (#PCDATA)>
+<!ELEMENT twCopyright (#PCDATA)>
+<!ELEMENT twCmdLine (#PCDATA)>
+<!ELEMENT twDesign (#PCDATA)>
+<!ELEMENT twPCF (#PCDATA)>
+<!ELEMENT twDevInfo (twDevName, twSpeedGrade, twSpeedVer?)>
+<!ELEMENT twDevName (#PCDATA)>
+<!ATTLIST twDevInfo arch CDATA #IMPLIED pkg CDATA #IMPLIED>
+<!ELEMENT twSpeedGrade (#PCDATA)>
+<!ELEMENT twSpeedVer (#PCDATA)>
+<!ELEMENT twRptInfo (twItemLimit?, (twUnconst, twUnconstLimit?)?)>
+<!ATTLIST twRptInfo twRptLvl (twErr | twVerbose | twTerseErr | twSum | twTimeGrp) #REQUIRED>
+<!ATTLIST twRptInfo twAdvRpt  (TRUE | FALSE) "FALSE">
+<!ATTLIST twRptInfo twTimeUnits (twPsec | twNsec | twUsec | twMsec | twSec) "twNsec">
+<!ATTLIST twRptInfo twFreqUnits (twGHz | twMHz | twHz) "twMHz">
+<!ATTLIST twRptInfo twReportMinPaths CDATA #IMPLIED>
+<!ELEMENT twItemLimit (#PCDATA)>
+<!ELEMENT twUnconst EMPTY>
+<!ELEMENT twUnconstLimit (#PCDATA)>
+<!ELEMENT twEnvVar EMPTY>
+<!ATTLIST twEnvVar name CDATA #REQUIRED>
+<!ATTLIST twEnvVar description CDATA #REQUIRED>
+<!ELEMENT twWarn (#PCDATA)>
+<!ELEMENT twInfo (#PCDATA)>
+<!ELEMENT twDebug (#PCDATA)>
+<!ELEMENT twBody (twDerating?, (twSumRpt | twVerboseRpt | twErrRpt | twTerseErrRpt | twTimeGrpRpt), twNonDedClks?)>
+<!ATTLIST twBody twFastPaths CDATA #IMPLIED>
+<!ELEMENT twDerating (twProc?, twTemp?, twVolt?)>
+<!ELEMENT twProc (#PCDATA)>
+<!ELEMENT twTemp (#PCDATA)>
+<!ELEMENT twVolt (#PCDATA)>
+<!ELEMENT twSumRpt (twConstRollupTable*, twConstList?, twConstSummaryTable?, twUnmetConstCnt?, (twWarn | twInfo | twDebug)*, twDataSheet?)>
+<!ELEMENT twErrRpt (twCycles?, (twConst | twTIG |  twConstRollupTable)*, twUnmetConstCnt?, (twWarn | twInfo | twDebug)*, twDataSheet?, twTimeGrp*)>
+<!ELEMENT twTerseErrRpt (twConstList, twUnmetConstCnt?, twDataSheet?)>
+<!ELEMENT twVerboseRpt (twCycles?, (twConst | twTIG | twConstRollupTable)*, twUnmetConstCnt?, (twWarn | twInfo | twDebug)*, twDataSheet?, twTimeGrp*)> 
+<!ELEMENT twCycles (twSigConn+)>
+<!ATTLIST twCycles twNum CDATA #REQUIRED>
+<!ELEMENT twSigConn (twSig, twDriver, twLoad)>
+<!ELEMENT twSig (#PCDATA)>
+<!ELEMENT twDriver (#PCDATA)>
+<!ELEMENT twLoad (#PCDATA)> 
+<!ELEMENT twConst (twConstHead, ((twPathRpt?,twRacePathRpt?, twPathRptBanner?)* |  (twPathRpt*, twRacePathRpt?) |  twNetRpt* | twClkSkewLimit*))>
+<!ATTLIST twConst twConstType (NET | 
+							   NETDELAY | 
+							   NETSKEW | 
+							   PATH |
+							   DEFPERIOD |
+							   UNCONSTPATH |
+							   DEFPATH | 
+							   PATH2SETUP |
+							   UNCONSTPATH2SETUP | 
+							   PATHCLASS | 
+							   PATHDELAY | 
+							   PERIOD |
+							   FREQUENCY |
+							   PATHBLOCK |
+							   OFFSET |
+							   OFFSETIN |
+							   OFFSETINCLOCK | 
+							   UNCONSTOFFSETINCLOCK |
+							   OFFSETINDELAY |
+							   OFFSETINMOD |
+							   OFFSETOUT |
+							   OFFSETOUTCLOCK |
+							   UNCONSTOFFSETOUTCLOCK | 
+							   OFFSETOUTDELAY |
+							   OFFSETOUTMOD| CLOCK_SKEW_LIMITS) #IMPLIED> 
+<!ELEMENT twConstHead (twConstName, twItemCnt, twErrCntSetup, twErrCntEndPt?, twErrCntHold,
+					   twEndPtCnt?,
+					   twPathErrCnt?, (twMinPer| twMaxDel| twMaxFreq| twMaxNetDel| twMaxNetSkew| twMinOff| twMaxOff)*)>
+<!ELEMENT twConstName (#PCDATA)>
+<!ATTLIST twConstName UCFConstName CDATA #IMPLIED>
+<!ATTLIST twConstHead uID CDATA #IMPLIED>
+<!ELEMENT twItemCnt (#PCDATA)>
+<!ELEMENT twErrCnt (#PCDATA)>
+<!ELEMENT twErrCntEndPt (#PCDATA)>
+<!ELEMENT twErrCntSetup (#PCDATA)>
+<!ELEMENT twErrCntHold (#PCDATA)>
+<!ATTLIST twErrCntHold twRaceChecked (TRUE | FALSE) "FALSE">
+<!ELEMENT twEndPtCnt (#PCDATA)>
+<!ELEMENT twPathErrCnt (#PCDATA)>
+<!ELEMENT twMinPer (#PCDATA) >
+<!ELEMENT twFootnote EMPTY>
+<!ATTLIST twFootnote number CDATA #REQUIRED>
+<!ELEMENT twMaxDel (#PCDATA)>
+<!ELEMENT twMaxFreq (#PCDATA)>
+<!ELEMENT twMinOff (#PCDATA)>
+<!ELEMENT twMaxOff (#PCDATA)>
+<!ELEMENT twTIG (twTIGHead, (twPathRpt*,twRacePathRpt?))>
+<!ELEMENT twTIGHead (twTIGName, twInstantiated, twBlocked)>
+<!ELEMENT twTIGName (#PCDATA)>
+<!ELEMENT twInstantiated (#PCDATA)>
+<!ELEMENT twBlocked (#PCDATA)>
+<!ELEMENT twRacePathRpt (twRacePath+)>
+<!ELEMENT twPathRpt (twUnconstPath | twConstPath | twUnconstOffIn | twConstOffIn | twUnconstOffOut | twConstOffOut | twModOffOut)>
+<!ELEMENT twUnconstPath (twTotDel, twSrc, twDest,  (twDel, twSUTime)?, twTotPathDel?, twClkSkew?, tw2Phase?, twClkUncert?, twDetPath?)>
+<!ATTLIST twUnconstPath twDataPathType CDATA #IMPLIED
+						twSimpleMinPath CDATA #IMPLIED>
+<!ELEMENT twTotDel (#PCDATA)>
+<!ELEMENT twSrc (#PCDATA)>
+<!ATTLIST twSrc BELType CDATA #IMPLIED>
+<!ELEMENT twDest (#PCDATA)>
+<!ATTLIST twDest BELType CDATA #IMPLIED>
+<!ELEMENT twDel (#PCDATA)>
+<!ELEMENT twSUTime (#PCDATA)>
+<!ELEMENT twTotPathDel (#PCDATA)>
+<!ELEMENT twClkSkew (#PCDATA)>
+<!ATTLIST twClkSkew dest CDATA #IMPLIED src CDATA #IMPLIED>
+<!ELEMENT twConstPath (twSlack, twSrc, twDest, twTotPathDel?, twClkSkew?, twDelConst, tw2Phase?, twClkUncert?, twDetPath?)>
+<!ATTLIST twConstPath twDataPathType CDATA "twDataPathMaxDelay">
+<!ATTLIST twConstPath constType (period | fromto | unknown) "unknown">
+<!ELEMENT twSlack (#PCDATA)>
+<!ELEMENT twDelConst (#PCDATA)>
+<!ELEMENT tw2Phase EMPTY>
+<!ELEMENT twClkUncert (#PCDATA)>
+<!ATTLIST twClkUncert fSysJit CDATA #IMPLIED  fInputJit CDATA #IMPLIED
+					  fDCMJit CDATA #IMPLIED
+					  fPhaseErr CDATA #IMPLIED
+					  sEqu CDATA #IMPLIED>
+<!ELEMENT twRacePath (twSlack, twSrc, twDest, twClkSkew, twDelConst?, twClkUncert?, twDetPath)>
+<!ELEMENT twPathRptBanner (#PCDATA)>
+<!ATTLIST twPathRptBanner sType CDATA #IMPLIED iPaths CDATA #IMPLIED iCriticalPaths CDATA #IMPLIED>
+<!ELEMENT twUnconstOffIn (twOff, twSrc, twDest, twGuaranteed?, twClkUncert?, (twDataPath, twClkPath)?)>
+<!ATTLIST twUnconstOffIn twDataPathType CDATA #IMPLIED>
+<!ELEMENT twOff (#PCDATA)>
+<!ELEMENT twGuaranteed EMPTY>
+<!ELEMENT twConstOffIn (twSlack, twSrc, twDest, ((twClkDel, twClkSrc, twClkDest) | twGuarInSetup), twOff, twOffSrc, twOffDest, twClkUncert?, (twDataPath, twClkPath)?)>
+<!ATTLIST twConstOffIn twDataPathType CDATA "twDataPathMaxDelay">
+<!ATTLIST twConstOffIn twDurationNotSpecified CDATA #IMPLIED>
+<!ELEMENT twClkDel (#PCDATA)>
+<!ELEMENT twClkSrc (#PCDATA)>
+<!ELEMENT twClkDest (#PCDATA)>
+<!ELEMENT twGuarInSetup (#PCDATA)>
+<!ELEMENT twOffSrc (#PCDATA)>
+<!ELEMENT twOffDest (#PCDATA)>
+<!ELEMENT twUnconstOffOut (twOff, twSrc, twDest, twClkUncert?, (twClkPath, twDataPath)?)>
+<!ATTLIST twUnconstOffOut twDataPathType CDATA #IMPLIED>
+<!ELEMENT twConstOffOut (twSlack, twSrc, twDest, twClkDel, twClkSrc, twClkDest, twDataDel, twDataSrc, twDataDest, twOff, twOffSrc, twOffDest, twClkUncert?, (twClkPath, twDataPath)?)>
+<!ATTLIST twConstOffOut twDataPathType CDATA "twDataPathMaxDelay">
+<!ELEMENT twDataDel (#PCDATA)>
+<!ELEMENT twDataSrc (#PCDATA)>
+<!ELEMENT twDataDest (#PCDATA)>
+<!ELEMENT twModOffOut (twSlack, twDest, twDataDel, twDataSrc, twDataDest, twClkUncert?, twDataPath?)>
+<!ELEMENT twDetPath (twSrc, twDest, twLogLvls, twSrcSite, twSrcClk?, twPathDel*, (twLogDel, twRouteDel, twTotDel)?, twDestClk?, (twPctLog, twPctRoute)?)>
+<!ATTLIST twDetPath maxSiteLen CDATA #IMPLIED>
+<!ELEMENT twDataPath (twSrc, twDest, twLogLvls, twSrcSite, twSrcClk?, twPathDel*, (twLogDel, twRouteDel, twTotDel)?, twDestClk?, (twPctLog, twPctRoute)?)>
+<!ATTLIST twDataPath maxSiteLen CDATA #IMPLIED>
+<!ELEMENT twClkPath (twSrc, twDest, twLogLvls, twSrcSite, twSrcClk?, twPathDel*, (twLogDel, twRouteDel, twTotDel)?, twDestClk?, (twPctLog, twPctRoute)?)>
+<!ATTLIST twClkPath maxSiteLen CDATA #IMPLIED>
+<!ELEMENT twLogLvls (#PCDATA)>
+<!ELEMENT twSrcSite (#PCDATA)>
+<!ELEMENT twSrcClk (#PCDATA)>
+<!ATTLIST twSrcClk twEdge (twRising | twFalling) "twRising">
+<!ATTLIST twSrcClk twArriveTime CDATA #IMPLIED>
+<!ATTLIST twSrcClk twClkRes CDATA #IMPLIED>
+<!ELEMENT twPathDel (twSite, twDelType, twFanCnt?, twDelInfo?, twComp, twNet?, twBEL*)>
+<!ATTLIST twPathDel twHoldTime (TRUE | FALSE) "FALSE">
+<!ELEMENT twDelInfo (#PCDATA)>
+<!ATTLIST twDelInfo twEdge (twRising | twFalling | twIndet) #REQUIRED>
+<!ATTLIST twDelInfo twAcc (twRouted | twEst | twApprox) "twRouted">
+<!ELEMENT twSite (#PCDATA)>
+<!ELEMENT twDelType (#PCDATA)>
+<!ELEMENT twFanCnt (#PCDATA)>
+<!ELEMENT twComp (#PCDATA)>
+<!ELEMENT twNet (#PCDATA)>
+<!ELEMENT twBEL (#PCDATA)>
+<!ELEMENT twLogDel (#PCDATA)>
+<!ELEMENT twRouteDel (#PCDATA)>
+<!ELEMENT twDestClk (#PCDATA)>
+<!ATTLIST twDestClk twEdge (twRising | twFalling) "twRising">
+<!ATTLIST twDestClk twArriveTime CDATA #IMPLIED>
+<!ATTLIST twDestClk twClkRes CDATA #IMPLIED>
+<!ELEMENT twPctLog (#PCDATA)>
+<!ELEMENT twPctRoute (#PCDATA)>
+<!ELEMENT twNetRpt (twDelNet | twSlackNet | twSkewNet)>
+<!ELEMENT twDelNet (twDel, twNet, twDetNet?)>
+<!ELEMENT twSlackNet (twSlack, twNet, twDel, twNotMet?, twTimeConst, twAbsSlack, twDetNet?)>
+<!ELEMENT twTimeConst (#PCDATA)>
+<!ELEMENT twAbsSlack (#PCDATA)>
+<!ELEMENT twSkewNet (twSlack, twNet, twSkew, twNotMet?, twTimeConst, twAbsSlack, twDetSkewNet?)>
+<!ELEMENT twSkew (#PCDATA)>
+<!ELEMENT twDetNet (twNetDel*)>
+<!ELEMENT twNetDel (twSrc, twDest, twNetDelInfo)>
+<!ELEMENT twNetDelInfo (#PCDATA)>
+<!ATTLIST twNetDelInfo twAcc (twRouted | twEst | twApprox) "twRouted">
+<!ELEMENT twDetSkewNet (twNetSkew*)>
+<!ELEMENT twNetSkew (twSrc, twDest, twNetDelInfo, twSkew)>
+<!ELEMENT twClkSkewLimit  EMPTY>
+<!ATTLIST twClkSkewLimit slack CDATA #IMPLIED skew CDATA #IMPLIED arrv1name CDATA #IMPLIED                      arrv1 CDATA #IMPLIED
+		         arrv2name CDATA #IMPLIED arrv2 CDATA #IMPLIED uncert CDATA #IMPLIED>
+<!ELEMENT twConstRollupTable (twConstRollup*)>
+<!ATTLIST twConstRollupTable uID CDATA #IMPLIED>
+<!ELEMENT twConstRollup  EMPTY>
+<!ATTLIST twConstRollup name CDATA #IMPLIED fullName CDATA #IMPLIED type CDATA #IMPLIED                      requirement CDATA #IMPLIED prefType CDATA #IMPLIED actual CDATA #IMPLIED>
+<!ATTLIST twConstRollup  actualRollup CDATA #IMPLIED                      errors CDATA #IMPLIED errorRollup CDATA #IMPLIED items CDATA #IMPLIED                      itemsRollup CDATA #IMPLIED>
+<!ELEMENT twConstList (twConstListItem)*>
+<!ELEMENT twConstListItem (twConstName, twNotMet?, twReqVal?, twActVal?, twLogLvls?)> 
+<!ATTLIST twConstListItem twUnits (twTime | twFreq) "twTime">
+<!ELEMENT twNotMet EMPTY>
+<!ELEMENT twReqVal (#PCDATA)>
+<!ELEMENT twActVal (#PCDATA)>
+<!ELEMENT twConstSummaryTable (twConstStats|twConstSummary)*>
+<!ATTLIST twConstSummaryTable twEmptyConstraints CDATA #IMPLIED>
+<!ELEMENT twConstStats (twConstName)>
+<!ATTLIST twConstStats twUnits (twTime | twFreq) "twTime">
+<!ATTLIST twConstStats twRequired CDATA #IMPLIED>
+<!ATTLIST twConstStats twActual CDATA #IMPLIED>
+<!ATTLIST twConstStats twSlack CDATA #IMPLIED>
+<!ATTLIST twConstStats twLogLvls CDATA #IMPLIED>
+<!ATTLIST twConstStats twErrors CDATA #IMPLIED>
+<!ATTLIST twConstStats twPCFIndex CDATA #IMPLIED>
+<!ATTLIST twConstStats twAbsSlackIndex CDATA #IMPLIED>
+<!ATTLIST twConstStats twTCType CDATA #IMPLIED>
+<!ELEMENT twConstSummary (twConstName, twConstData?, twConstData*)>
+<!ATTLIST twConstSummary PCFIndex CDATA #IMPLIED  slackIndex CDATA #IMPLIED>
+<!ELEMENT twConstData EMPTY>
+<!ATTLIST twConstData type CDATA #IMPLIED  units (MHz | ns) "ns" slack CDATA #IMPLIED
+					  best CDATA #IMPLIED requested CDATA #IMPLIED
+					  errors CDATA #IMPLIED
+					  score CDATA #IMPLIED>
+<!ELEMENT twTimeGrpRpt (twTimeGrp)*>
+<!ELEMENT twTimeGrp (twTimeGrpName, twCompList?, twBELList?, twMacList?, twBlockList?, twSigList?, twPinList?)>
+<!ELEMENT twTimeGrpName (#PCDATA)>
+<!ELEMENT twCompList (twCompName+)>
+<!ELEMENT twCompName (#PCDATA)>
+<!ELEMENT twSigList (twSigName+)>
+<!ELEMENT twSigName (#PCDATA)>
+<!ELEMENT twBELList (twBELName+)>
+<!ELEMENT twBELName (#PCDATA)>
+<!ELEMENT twBlockList (twBlockName+)>
+<!ELEMENT twBlockName (#PCDATA)>
+<!ELEMENT twMacList (twMacName+)>
+<!ELEMENT twMacName (#PCDATA)>
+<!ELEMENT twPinList (twPinName+)>
+<!ELEMENT twPinName (#PCDATA)>
+<!ELEMENT twUnmetConstCnt (#PCDATA)>
+<!ELEMENT twDataSheet (twSUH2ClkList*, (twClk2PadList|twClk2OutList)*, twClk2SUList*, twPad2PadList?, twOffsetTables?)>
+<!ATTLIST twDataSheet twNameLen CDATA #REQUIRED>
+<!ELEMENT twSUH2ClkList (twDest, twSUH2Clk+)>
+<!ATTLIST twSUH2ClkList twDestWidth CDATA #IMPLIED>
+<!ATTLIST twSUH2ClkList twPhaseWidth CDATA #IMPLIED>
+<!ELEMENT twSUH2Clk (twSrc, twSUHTime, twSUHTime?)> 
+<!ELEMENT twSUHTime (twSU2ClkTime?,twH2ClkTime?)>
+<!ATTLIST twSUHTime twInternalClk CDATA #IMPLIED>
+<!ATTLIST twSUHTime twClkPhase CDATA #IMPLIED>
+<!ELEMENT twSU2ClkTime (#PCDATA)>
+<!ATTLIST twSU2ClkTime twEdge (twRising | twFalling | twIndet) #REQUIRED>
+<!ELEMENT twH2ClkTime (#PCDATA)>
+<!ATTLIST twH2ClkTime twEdge (twRising | twFalling | twIndet) #REQUIRED>
+<!ELEMENT twClk2PadList (twSrc, twClk2Pad+)>
+<!ELEMENT twClk2Pad (twDest, twTime)>
+<!ELEMENT twTime (#PCDATA)>
+<!ATTLIST twTime twEdge (twRising | twFalling | twIndet) #REQUIRED>
+<!ELEMENT twClk2OutList (twSrc, twClk2Out+)>
+<!ATTLIST twClk2OutList twDestWidth CDATA #REQUIRED>
+<!ATTLIST twClk2OutList twPhaseWidth CDATA #REQUIRED>
+<!ELEMENT twClk2Out EMPTY>
+<!ATTLIST twClk2Out twOutPad CDATA #REQUIRED>
+<!ATTLIST twClk2Out twMinTime CDATA #REQUIRED>
+<!ATTLIST twClk2Out twMinEdge CDATA #REQUIRED>
+<!ATTLIST twClk2Out twMaxTime CDATA #REQUIRED>
+<!ATTLIST twClk2Out twMaxEdge CDATA #REQUIRED>
+<!ATTLIST twClk2Out twInternalClk CDATA #REQUIRED>
+<!ATTLIST twClk2Out twClkPhase CDATA #REQUIRED>
+<!ELEMENT twClk2SUList (twDest, twClk2SU+)>
+<!ATTLIST twClk2SUList twDestWidth CDATA #IMPLIED>
+<!ELEMENT twClk2SU (twSrc, twRiseRise?, twFallRise?, twRiseFall?, twFallFall?)>
+<!ELEMENT twRiseRise (#PCDATA)>
+<!ELEMENT twFallRise (#PCDATA)>
+<!ELEMENT twRiseFall (#PCDATA)>
+<!ELEMENT twFallFall (#PCDATA)>
+<!ELEMENT twPad2PadList (twPad2Pad+)>
+<!ATTLIST twPad2PadList twSrcWidth CDATA #IMPLIED>
+<!ATTLIST twPad2PadList twDestWidth CDATA #IMPLIED>
+<!ELEMENT twPad2Pad (twSrc, twDest, twDel)>
+<!ELEMENT twOffsetTables (twOffsetInTable*,twOffsetOutTable*)>
+<!ELEMENT twOffsetInTable (twConstName, twOffInTblRow*)>
+<!ATTLIST twOffsetInTable twDestWidth CDATA #IMPLIED>
+<!ATTLIST twOffsetInTable twWorstWindow CDATA #IMPLIED>
+<!ATTLIST twOffsetInTable twWorstSetup CDATA #IMPLIED>
+<!ATTLIST twOffsetInTable twWorstHold CDATA #IMPLIED>
+<!ATTLIST twOffsetInTable twWorstSetupSlack CDATA #IMPLIED>
+<!ATTLIST twOffsetInTable twWorstHoldSlack CDATA #IMPLIED>
+<!ELEMENT twOffsetOutTable (twConstName, twOffOutTblRow*)>
+<!ATTLIST twOffsetOutTable twDestWidth CDATA #IMPLIED>
+<!ATTLIST twOffsetOutTable twMinSlack CDATA #IMPLIED>
+<!ATTLIST twOffsetOutTable twMaxSlack CDATA #IMPLIED>
+<!ATTLIST twOffsetOutTable twRelSkew CDATA #IMPLIED>
+<!ELEMENT twOffInTblRow (twSrc, twSUHSlackTime*)>       
+<!ELEMENT twSUHSlackTime (twSU2ClkTime?,twH2ClkTime?)>
+<!ATTLIST twSUHSlackTime twSetupSlack CDATA #IMPLIED  twHoldSlack CDATA #IMPLIED>
+<!ELEMENT twOffOutTblRow EMPTY>
+<!ATTLIST twOffOutTblRow twOutPad CDATA #IMPLIED>
+<!ATTLIST twOffOutTblRow twSlack CDATA #IMPLIED>
+<!ATTLIST twOffOutTblRow twRelSkew CDATA #IMPLIED>
+<!ELEMENT twNonDedClks ((twWarn | twInfo), twNonDedClk+)>
+<!ELEMENT twNonDedClk (#PCDATA)>
+<!ELEMENT twSum ( twErrCnt, twScore, twConstCov, twStats)>
+<!ELEMENT twScore (#PCDATA)>
+<!ELEMENT twConstCov (twPathCnt, twNetCnt, twConnCnt, twPct?)>
+<!ELEMENT twPathCnt (#PCDATA)>
+<!ELEMENT twNetCnt (#PCDATA)>
+<!ELEMENT twConnCnt (#PCDATA)>
+<!ELEMENT twPct (#PCDATA)>
+<!ELEMENT twStats ( twMinPer?, twFootnote?, twMaxFreq?, twMaxCombDel?, twMaxFromToDel?, twMaxNetDel?, twMaxNetSkew?, twMaxInAfterClk?, twMinInBeforeClk?, twMaxOutBeforeClk?, twMinOutAfterClk?, (twInfo | twWarn)*)>
+<!ELEMENT twMaxCombDel (#PCDATA)>
+<!ELEMENT twMaxFromToDel (#PCDATA)>
+<!ELEMENT twMaxNetDel (#PCDATA)>
+<!ELEMENT twMaxNetSkew (#PCDATA)>
+<!ELEMENT twMaxInAfterClk (#PCDATA)>
+<!ELEMENT twMinInBeforeClk (#PCDATA)>
+<!ELEMENT twMaxOutBeforeClk (#PCDATA)>
+<!ELEMENT twMinOutAfterClk (#PCDATA)>
+<!ELEMENT twFoot (twFootnoteExplanation*, twTimestamp)>
+<!ELEMENT twTimestamp (#PCDATA)>
+<!ELEMENT twFootnoteExplanation EMPTY>
+<!ATTLIST twFootnoteExplanation number CDATA #REQUIRED>
+<!ATTLIST twFootnoteExplanation text CDATA #REQUIRED>
+<!ELEMENT twClientInfo (twClientName, twAttrList?)>
+<!ELEMENT twClientName (#PCDATA)>
+<!ELEMENT twAttrList (twAttrListItem)*>
+<!ELEMENT twAttrListItem (twName, twValue*)>
+<!ELEMENT twName (#PCDATA)>
+<!ELEMENT twValue (#PCDATA)>
+]>
+<twReport><twHead anchorID="1"><twExecVer>Release 12.1 Trace  (nt64)</twExecVer><twCopyright>Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.</twCopyright><twCmdLine>C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -l 30 -u 30
+tft_multifuncional.ncd
+C:\Users\Daares1\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\ProjectOutputs\NB3000XN_05\TFT_MULTIFUNCIONAL_map.pcf
+
+</twCmdLine><twDesign>tft_multifuncional.ncd</twDesign><twDesignPath>tft_multifuncional.ncd</twDesignPath><twPCF>TFT_MULTIFUNCIONAL_map.pcf</twPCF><twPcfPath>C:/Users/Daares1/Dropbox/P_DIGITALES/NB3000/NB3000_Project/TFT_MULT/ProjectOutputs/NB3000XN_05/TFT_MULTIFUNCIONAL_map.pcf</twPcfPath><twDevInfo arch="spartan3a" pkg="fgg676"><twDevName>xc3s1400an</twDevName><twSpeedGrade>-4</twSpeedGrade><twSpeedVer>PRODUCTION 1.41 2010-04-09</twSpeedVer></twDevInfo><twRptInfo twRptLvl="twSum" dlyHyperLnks="t" ><twItemLimit>0</twItemLimit><twUnconst></twUnconst><twUnconstLimit>30</twUnconstLimit></twRptInfo><twEnvVar name="NONE" description="No environment variables were set" /></twHead><twInfo anchorID="2">INFO:Timing:2698 - No timing constraints found, doing default enumeration.</twInfo><twInfo anchorID="3">INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</twInfo><twInfo anchorID="4">INFO:Timing:3390 - This architecture does not support a default System Jitter value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock Uncertainty calculation.</twInfo><twInfo anchorID="5">INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 'Phase Error' calculations, these terms will be zero in the Clock Uncertainty calculation.  Please make appropriate modification to SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase Error.</twInfo><twBody><twSumRpt><twDataSheet anchorID="6" twNameLen="15"><twSUH2ClkList anchorID="7" twDestWidth="13" twPhaseWidth="11"><twDest>CLK_BRD</twDest><twSUH2Clk ><twSrc>SRAM0_D&lt;0&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.022</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.706</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;1&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.324</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.406</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;2&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.387</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.563</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;3&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.144</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.598</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;4&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.717</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.579</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;5&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.294</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.636</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;6&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.591</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.754</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;7&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.576</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.445</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;8&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.148</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.651</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;9&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.650</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.539</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;10&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.578</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.822</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;11&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.631</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.924</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;12&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.622</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-0.712</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;13&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.491</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">1.073</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;14&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.280</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">1.150</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM0_D&lt;15&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.836</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.787</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;0&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.179</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">1.132</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;1&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.127</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.119</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;2&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.948</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.250</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;3&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.945</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.423</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;4&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.325</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">1.068</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;5&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">4.826</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.579</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;6&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.820</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">1.016</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;7&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.196</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-0.697</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;8&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.073</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.531</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;9&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.073</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.801</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;10&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.208</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.953</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;11&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.643</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.974</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;12&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.159</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.351</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;13&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">3.569</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.273</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;14&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.919</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.170</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SRAM1_D&lt;15&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">5.339</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.370</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SW_USER&lt;0&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">6.067</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-2.851</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SW_USER&lt;1&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">8.987</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-4.876</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SW_USER&lt;2&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">8.675</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-4.909</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SW_USER&lt;3&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">8.599</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-4.756</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>SW_USER&lt;4&gt;</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">8.868</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-5.102</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>TEST_BUTTON</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">15.109</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-0.410</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>TFT_TSC_DIN</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.097</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-0.688</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>TFT_TSC_IRQ_N</twSrc><twSUHTime twInternalClk ="VGA_CLK_int" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.066</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">-0.696</twH2ClkTime></twSUHTime></twSUH2Clk></twSUH2ClkList><twSUH2ClkList anchorID="8" twDestWidth="14" twPhaseWidth="19"><twDest>JTAG_NEXUS_TCK</twDest><twSUH2Clk ><twSrc>JTAG_NEXUS_TDI</twSrc><twSUHTime twInternalClk ="JTAG_NEXUS_TCK_ibuf" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.343</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.888</twH2ClkTime></twSUHTime></twSUH2Clk><twSUH2Clk ><twSrc>JTAG_NEXUS_TMS</twSrc><twSUHTime twInternalClk ="JTAG_NEXUS_TCK_ibuf" twClkPhase ="0.000" ><twSU2ClkTime twEdge="twRising" twCrnrFst="f">2.176</twSU2ClkTime><twH2ClkTime twEdge="twRising" twCrnrFst="f">0.367</twH2ClkTime></twSUHTime></twSUH2Clk></twSUH2ClkList><twClk2OutList anchorID="9" twDestWidth="12" twPhaseWidth="11"><twSrc>CLK_BRD</twSrc><twClk2Out  twOutPad = "LED_B&lt;0&gt;" twMinTime = "5.736" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.796" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;1&gt;" twMinTime = "5.723" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.781" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;2&gt;" twMinTime = "5.727" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.786" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;3&gt;" twMinTime = "5.741" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.802" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;4&gt;" twMinTime = "5.698" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.752" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;5&gt;" twMinTime = "5.661" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.708" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;6&gt;" twMinTime = "5.687" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.739" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_B&lt;7&gt;" twMinTime = "5.702" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.756" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;0&gt;" twMinTime = "5.717" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.774" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;1&gt;" twMinTime = "5.708" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.764" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;2&gt;" twMinTime = "5.716" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.773" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;3&gt;" twMinTime = "5.720" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.778" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;4&gt;" twMinTime = "5.653" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.699" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;5&gt;" twMinTime = "5.694" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.747" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;6&gt;" twMinTime = "5.702" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.757" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_G&lt;7&gt;" twMinTime = "5.699" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.753" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;0&gt;" twMinTime = "5.739" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.800" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;1&gt;" twMinTime = "5.709" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.764" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;2&gt;" twMinTime = "5.708" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.764" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;3&gt;" twMinTime = "5.715" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.772" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;4&gt;" twMinTime = "5.654" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.700" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;5&gt;" twMinTime = "5.646" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.691" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;6&gt;" twMinTime = "5.713" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.770" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "LED_R&lt;7&gt;" twMinTime = "5.702" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "6.756" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;0&gt;" twMinTime = "9.880" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.815" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;1&gt;" twMinTime = "7.621" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "22.764" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;2&gt;" twMinTime = "8.531" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "23.581" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;3&gt;" twMinTime = "8.961" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.817" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;4&gt;" twMinTime = "8.996" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.133" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;5&gt;" twMinTime = "8.672" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.572" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;6&gt;" twMinTime = "9.083" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.124" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;7&gt;" twMinTime = "9.177" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.195" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;8&gt;" twMinTime = "8.878" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.804" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;9&gt;" twMinTime = "10.115" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "26.080" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;10&gt;" twMinTime = "9.472" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.856" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;11&gt;" twMinTime = "8.900" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.248" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;12&gt;" twMinTime = "8.653" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.438" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;13&gt;" twMinTime = "9.191" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.623" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;14&gt;" twMinTime = "8.877" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.042" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;15&gt;" twMinTime = "8.612" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "23.791" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;16&gt;" twMinTime = "8.557" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.515" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_A&lt;17&gt;" twMinTime = "8.608" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.308" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;0&gt;" twMinTime = "9.896" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.220" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;1&gt;" twMinTime = "10.006" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.540" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;2&gt;" twMinTime = "9.762" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.239" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;3&gt;" twMinTime = "8.533" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "28.517" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;4&gt;" twMinTime = "10.453" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.912" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;5&gt;" twMinTime = "10.181" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.913" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;6&gt;" twMinTime = "9.769" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.733" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;7&gt;" twMinTime = "10.393" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.017" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;8&gt;" twMinTime = "10.227" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.135" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;9&gt;" twMinTime = "10.084" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.432" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;10&gt;" twMinTime = "10.045" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.965" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;11&gt;" twMinTime = "10.360" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.965" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;12&gt;" twMinTime = "10.434" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.854" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;13&gt;" twMinTime = "8.764" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "28.758" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;14&gt;" twMinTime = "10.106" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.490" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_D&lt;15&gt;" twMinTime = "9.685" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.307" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_E" twMinTime = "10.969" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "33.899" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_LB" twMinTime = "10.908" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.239" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_OE" twMinTime = "8.486" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "28.410" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_UB" twMinTime = "11.474" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "33.217" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM0_W" twMinTime = "7.992" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "9.618" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;0&gt;" twMinTime = "9.409" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.227" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;1&gt;" twMinTime = "8.276" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "23.583" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;2&gt;" twMinTime = "8.558" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "23.615" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;3&gt;" twMinTime = "9.170" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.078" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;4&gt;" twMinTime = "9.746" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "26.071" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;5&gt;" twMinTime = "9.536" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.652" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;6&gt;" twMinTime = "8.868" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.855" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;7&gt;" twMinTime = "9.568" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.684" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;8&gt;" twMinTime = "9.524" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.613" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;9&gt;" twMinTime = "9.298" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.060" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;10&gt;" twMinTime = "9.256" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.587" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;11&gt;" twMinTime = "9.226" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.655" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;12&gt;" twMinTime = "9.511" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.511" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;13&gt;" twMinTime = "8.756" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.079" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;14&gt;" twMinTime = "9.100" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.322" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;15&gt;" twMinTime = "9.269" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.612" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;16&gt;" twMinTime = "8.664" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "24.648" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_A&lt;17&gt;" twMinTime = "9.854" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "25.866" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;0&gt;" twMinTime = "9.678" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "29.941" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;1&gt;" twMinTime = "10.307" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.182" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;2&gt;" twMinTime = "10.230" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.031" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;3&gt;" twMinTime = "10.141" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.486" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;4&gt;" twMinTime = "9.673" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "29.895" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;5&gt;" twMinTime = "9.800" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.891" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;6&gt;" twMinTime = "10.290" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.971" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;7&gt;" twMinTime = "10.004" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.666" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;8&gt;" twMinTime = "10.312" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.823" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;9&gt;" twMinTime = "10.189" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.521" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;10&gt;" twMinTime = "10.045" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.000" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;11&gt;" twMinTime = "10.033" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "31.164" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;12&gt;" twMinTime = "8.986" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "29.087" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;13&gt;" twMinTime = "10.256" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.995" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;14&gt;" twMinTime = "10.379" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.817" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_D&lt;15&gt;" twMinTime = "10.383" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "30.825" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_E" twMinTime = "11.373" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "34.544" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_LB" twMinTime = "11.136" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "32.979" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_OE" twMinTime = "9.404" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "29.557" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_UB" twMinTime = "11.196" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "33.244" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "SRAM1_W" twMinTime = "8.849" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "10.689" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_CS" twMinTime = "10.030" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "14.111" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;0&gt;" twMinTime = "9.988" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "16.238" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;1&gt;" twMinTime = "10.360" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "16.828" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;2&gt;" twMinTime = "10.445" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "17.439" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;3&gt;" twMinTime = "10.359" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "15.707" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;4&gt;" twMinTime = "12.397" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "22.038" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;5&gt;" twMinTime = "10.200" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "18.753" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;6&gt;" twMinTime = "10.364" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "16.569" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;7&gt;" twMinTime = "10.882" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "19.807" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;8&gt;" twMinTime = "10.189" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "18.369" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;9&gt;" twMinTime = "10.439" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "18.811" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;10&gt;" twMinTime = "10.851" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "19.573" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;11&gt;" twMinTime = "10.886" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "20.465" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;12&gt;" twMinTime = "11.284" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "19.651" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;13&gt;" twMinTime = "11.488" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "19.512" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;14&gt;" twMinTime = "11.036" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "20.431" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_DB&lt;15&gt;" twMinTime = "10.133" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "21.310" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_RESET" twMinTime = "9.763" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "11.831" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_RS" twMinTime = "9.664" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "26.703" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_TSC_CLK" twMinTime = "10.017" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "12.149" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_TSC_CS_N" twMinTime = "9.046" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "10.940" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_TSC_DOUT" twMinTime = "8.021" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "9.651" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "TFT_WR" twMinTime = "9.808" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "13.834" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_BLUE&lt;3&gt;" twMinTime = "4.593" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.645" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_BLUE&lt;4&gt;" twMinTime = "4.593" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.645" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_BLUE&lt;5&gt;" twMinTime = "4.581" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.631" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_BLUE&lt;6&gt;" twMinTime = "4.603" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.657" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_BLUE&lt;7&gt;" twMinTime = "4.565" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.612" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;2&gt;" twMinTime = "4.625" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.683" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;3&gt;" twMinTime = "4.571" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.620" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;4&gt;" twMinTime = "4.619" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.676" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;5&gt;" twMinTime = "4.619" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.676" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;6&gt;" twMinTime = "4.590" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.642" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_GREEN&lt;7&gt;" twMinTime = "4.625" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.683" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_HSYNC" twMinTime = "4.593" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.645" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_RED&lt;3&gt;" twMinTime = "4.608" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.663" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_RED&lt;4&gt;" twMinTime = "4.559" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.605" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_RED&lt;5&gt;" twMinTime = "4.619" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.676" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_RED&lt;6&gt;" twMinTime = "4.608" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.663" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_RED&lt;7&gt;" twMinTime = "4.559" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.605" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out><twClk2Out  twOutPad = "VGA_VSYNC" twMinTime = "4.574" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "5.623" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="VGA_CLK_int" twClkPhase="0.000" ></twClk2Out></twClk2OutList><twClk2OutList anchorID="10" twDestWidth="14" twPhaseWidth="19"><twSrc>JTAG_NEXUS_TCK</twSrc><twClk2Out  twOutPad = "JTAG_NEXUS_TDO" twMinTime = "8.767" twMinCrnr="f" twMinEdge ="twRising" twMaxTime = "13.997" twMaxCrnr="f" twMaxEdge ="twRising" twInternalClk="JTAG_NEXUS_TCK_ibuf" twClkPhase="0.000" ></twClk2Out></twClk2OutList><twClk2SUList anchorID="11" twDestWidth="14"><twDest>CLK_BRD</twDest><twClk2SU><twSrc>CLK_BRD</twSrc><twRiseRise>26.531</twRiseRise></twClk2SU><twClk2SU><twSrc>JTAG_NEXUS_TCK</twSrc><twRiseRise>23.360</twRiseRise><twFallRise>3.954</twFallRise></twClk2SU></twClk2SUList><twClk2SUList anchorID="12" twDestWidth="14"><twDest>JTAG_NEXUS_TCK</twDest><twClk2SU><twSrc>CLK_BRD</twSrc><twRiseRise>5.663</twRiseRise></twClk2SU><twClk2SU><twSrc>JTAG_NEXUS_TCK</twSrc><twRiseRise>10.044</twRiseRise><twFallRise>4.073</twFallRise><twRiseFall>3.532</twRiseFall></twClk2SU></twClk2SUList><twPad2PadList anchorID="13" twSrcWidth="11" twDestWidth="9"><twPad2Pad><twSrc>CLK_BRD</twSrc><twDest>VGA_CLK</twDest><twDel>11.411</twDel></twPad2Pad><twPad2Pad><twSrc>TEST_BUTTON</twSrc><twDest>TFT_RESET</twDest><twDel>9.460</twDel></twPad2Pad></twPad2PadList><twOffsetTables></twOffsetTables></twDataSheet></twSumRpt></twBody><twFoot><twTimestamp>Tue Apr 22 17:43:42 2014 </twTimestamp></twFoot><twClientInfo anchorID="14"><twClientName>Trace</twClientName><twAttrList><twAttrListItem><twName>Trace Settings</twName><twValue>
+
+Peak Memory Usage: 301 MB
+</twValue></twAttrListItem></twAttrList></twClientInfo></twReport>

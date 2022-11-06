@@ -1,0 +1,2070 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapfile>
+
+<mapfile>
+	<part>
+		<name>Used Resources</name>
+		<part>
+			<name>Memory usage in bytes</name>
+			<table>
+				<column>
+					<name>Memory</name>
+				</column>
+				<column>
+					<name>Code</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Data</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Reserved</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Free</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Total</name>
+					<alignment>right</alignment>
+				</column>
+				<row>system:RAM_XRAM;0x0;0x071409;0x010002;0x017bf4;0x098fff</row>
+				<row>system:ROM_XMEN;0x002dd4;0x0384a6;0x0;0x02bd86;0x067000</row>
+				<row>system:TSK3000_1;0x005664;0x00298b;0x000001;0x000010;0x008000</row>
+				<row>Total;0x008438;0x0ac23a;0x010003;0x04398a;0x107fff</row>
+			</table>
+		</part>
+		<part>
+			<name>Space usage in bytes</name>
+			<table>
+				<column>
+					<name>Space</name>
+				</column>
+				<column>
+					<name>Native used Rom</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Native used Ram</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Foreign used</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name> Reserved</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Free Rom</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name> Free Ram</name>
+					<alignment>right</alignment>
+				</column>
+				<column>
+					<name>Total</name>
+					<alignment>right</alignment>
+				</column>
+				<row>system:sw:main;0x043269;0x071409;0x0;0x010003;0x02bd96;0x017bf4;0x107fff</row>
+				<row>Total;0x043269;0x071409;-;-;-;-;-</row>
+				<row>Largest gap;-;-;-;-;0x02bd86;0x017bf3;-</row>
+			</table>
+			<footNote>Multiple address spaces may be mapped at the same (physical) memory address ranges. Physical memory allocated (i.e. used) for sections in the given space are called "Native used Rom" and "Native used Ram" whereas memory allocated by other spaces is called "Foreign used" memory.</footNote>
+		</part>
+		<part>
+			<name>Estimated stack usage</name>
+			<table>
+				<column>
+					<name>Stack Name</name>
+				</column>
+				<column>
+					<name>Used</name>
+				</column>
+				<row>stack;0x000003d0</row>
+				<row>recursive ;yes</row>
+			</table>
+		</part>
+	</part>
+	<part>
+		<name>Processed Files</name>
+		<table>
+			<column>
+				<name>File</name>
+			</column>
+			<column>
+				<name>From archive</name>
+			</column>
+			<column>
+				<name>Symbol causing the extraction</name>
+			</column>
+			<row>MAIN.obj;;</row>
+			<row>_Exit.obj;c3000md.lib;_Exit</row>
+			<row>_filbuf.obj;c3000md.lib;_filbuf</row>
+			<row>_flsbuf.obj;c3000md.lib;_flsbuf</row>
+			<row>_sbrk.obj;c3000md.lib;_sbrk</row>
+			<row>ad_touchscreen_to_pointer_ad_touchscreen_to_pointer_cfg_instance.obj;__framework.lib;ad_touchscreen_to_pointer_instance_table</row>
+			<row>ad_touchscreen_to_pointer_touchscreen_to_pointer.obj;__framework.lib;touchscreen_to_pointer_init</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320.obj;__framework.lib;ad_vga_ili9320_init</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320_cfg_instance.obj;__framework.lib;ad_vga_ili9320_instance_table</row>
+			<row>clock.obj;c3000md.lib;clock</row>
+			<row>clockspersec.obj;c3000md.lib;__clocks_per_sec</row>
+			<row>color.bmp;;</row>
+			<row>cspf2ul.obj;fp3000md.lib;_f_ftou</row>
+			<row>cstart.obj;__framework.lib;_START</row>
+			<row>cul2spf.obj;fp3000md.lib;_f_utof</row>
+			<row>devfs_minimal_close.obj;__framework.lib;close</row>
+			<row>devfs_minimal_lseek.obj;__framework.lib;_lseek</row>
+			<row>devfs_minimal_open.obj;__framework.lib;open</row>
+			<row>devfs_minimal_read.obj;__framework.lib;read</row>
+			<row>devfs_minimal_write.obj;__framework.lib;write</row>
+			<row>div_spf.obj;fp3000md.lib;_f_div</row>
+			<row>divmod64.obj;c3000md.lib;__udiv64</row>
+			<row>drv_ad7843_drv_ad7843.obj;__framework.lib;ad7843_open</row>
+			<row>drv_ad7843_drv_ad7843_cfg_instance.obj;__framework.lib;drv_ad7843_instance_table</row>
+			<row>drv_ioport_drv_ioport.obj;__framework.lib;ioport_get_value</row>
+			<row>drv_ioport_drv_ioport_cfg_instance.obj;__framework.lib;drv_ioport_instance_table</row>
+			<row>drv_led_drv_led.obj;__framework.lib;led_turn_all_off</row>
+			<row>drv_led_drv_led_cfg_instance.obj;__framework.lib;drv_led_instance_table</row>
+			<row>drv_spi_drv_spi.obj;__framework.lib;spi_open</row>
+			<row>drv_spi_drv_spi_cfg_instance.obj;__framework.lib;drv_spi_instance_table</row>
+			<row>drv_terminal_drv_terminal.obj;__framework.lib;terminal_open</row>
+			<row>drv_terminal_drv_terminal_cfg_instance.obj;__framework.lib;drv_terminal_instance_table</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;__framework.lib;vga_16bpp_open</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp_cfg_instance.obj;__framework.lib;drv_vga_16bpp_instance_table</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;__framework.lib;vga_ili9320_open</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320_cfg_instance.obj;__framework.lib;drv_vga_ili9320_instance_table</row>
+			<row>errno.obj;c3000md.lib;errno</row>
+			<row>exit.obj;__framework.lib;exit</row>
+			<row>fgetc.obj;c3000md.lib;fgetc</row>
+			<row>fputc.obj;c3000md.lib;fputc</row>
+			<row>graphics_BitstreamVeraSans10.obj;__framework.lib;bitstreamverasans10</row>
+			<row>graphics_bpmono8.obj;__framework.lib;bpmono8</row>
+			<row>graphics_canvas.obj;__framework.lib;canvas_set_rotation</row>
+			<row>graphics_graphics.obj;__framework.lib;graphics_open</row>
+			<row>graphics_graphics_cfg_instance.obj;__framework.lib;graphics_instance_table</row>
+			<row>graphics_graphics_draw_circle.obj;__framework.lib;graphics_draw_circle</row>
+			<row>graphics_graphics_draw_line.obj;__framework.lib;graphics_draw_line</row>
+			<row>graphics_graphics_draw_text.obj;__framework.lib;graphics_draw_char</row>
+			<row>graphics_graphics_fill_circle.obj;__framework.lib;graphics_fill_circle</row>
+			<row>graphics_graphics_fill_rect.obj;__framework.lib;graphics_fill_rect</row>
+			<row>graphics_graphics_fill_triangle.obj;__framework.lib;graphics_fill_triangle</row>
+			<row>graphics_graphics_pixel_common.obj;__framework.lib;graphics_draw_pixel</row>
+			<row>graphics_svg_palette.obj;__framework.lib;svg_colors</row>
+			<row>init___framework_init.obj;__framework.lib;framework_init</row>
+			<row>interrupts_interrupts.obj;__framework.lib;interrupt_register_native</row>
+			<row>malloc.obj;c3000md.lib;malloc</row>
+			<row>memmove.obj;c3000md.lib;memmove</row>
+			<row>misc_spf.obj;fp3000md.lib;sp_round8_and_normalize</row>
+			<row>mul64.obj;c3000md.lib;__mul64</row>
+			<row>mul_spf.obj;fp3000md.lib;_f_mul</row>
+			<row>pal_arch_3000_pal_c3000.obj;__framework.lib;pal_architecture_interrupt_configure</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;__framework.lib;pal_architecture_interrupt_enable</row>
+			<row>pal_pal_init.obj;__framework.lib;pal_init</row>
+			<row>pal_pal_timers.obj;__framework.lib;pal_timers_common_handler</row>
+			<row>pal_pal_timing.obj;__framework.lib;pal_delay_ns</row>
+			<row>per_ioport_per_ioport_cfg_instance.obj;__framework.lib;per_ioport_instance_table</row>
+			<row>per_led_per_led_cfg_instance.obj;__framework.lib;per_led_instance_table</row>
+			<row>per_spi_per_spi_cfg_instance.obj;__framework.lib;per_spi_instance_table</row>
+			<row>per_terminal_per_terminal_cfg_instance.obj;__framework.lib;per_terminal_instance_table</row>
+			<row>per_tspen_per_tspen_cfg_instance.obj;__framework.lib;per_tspen_instance_table</row>
+			<row>per_vga32_16bpp_per_vga32_16bpp_cfg_instance.obj;__framework.lib;per_vga32_16bpp_instance_table</row>
+			<row>per_vga32_ili9320_per_vga32_ili9320_cfg_instance.obj;__framework.lib;per_vga32_ili9320_instance_table</row>
+			<row>pointer_pointer.obj;__framework.lib;pointer_open</row>
+			<row>pointer_pointer_cfg_instance.obj;__framework.lib;pointer_instance_table</row>
+			<row>posix_devio__fopen.obj;__framework.lib;_fopen</row>
+			<row>posix_devio__iob.obj;__framework.lib;_iob</row>
+			<row>posix_devio_devio.obj;__framework.lib;devio_lookup</row>
+			<row>posix_devio_devio_init.obj;__framework.lib;posix_devio_init</row>
+			<row>posix_devio_fclose.obj;__framework.lib;fclose</row>
+			<row>posix_devio_fflush.obj;__framework.lib;_fflush</row>
+			<row>posix_devio_freopen.obj;__framework.lib;freopen</row>
+			<row>serial_serial_cfg_instance.obj;__framework.lib;serial_instance_table</row>
+			<row>setvbuf.obj;c3000md.lib;setvbuf</row>
+			<row>strcmp.obj;c3000md.lib;strcmp</row>
+			<row>strncmp.obj;c3000md.lib;strncmp</row>
+			<row>swplatform.obj;;</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;__framework.lib;terminal_to_serial_init</row>
+			<row>terminal_to_serial_terminal_to_serial_cfg_instance.obj;__framework.lib;terminal_to_serial_instance_table</row>
+			<row>timing_timing.obj;__framework.lib;delay_ms</row>
+			<row>touchscreen_touchscreen.obj;__framework.lib;touchscreen_open</row>
+			<row>touchscreen_touchscreen_cfg_instance.obj;__framework.lib;touchscreen_instance_table</row>
+			<row>ungetc.obj;c3000md.lib;ungetc</row>
+			<row>weakstub.obj;c3000md.lib;_weakstub</row>
+		</table>
+	</part>
+	<part>
+		<name>Link Result</name>
+		<table>
+			<column>
+				<name>[in] File</name>
+			</column>
+			<column>
+				<name>[in] Section</name>
+			</column>
+			<column>
+				<name>[in] Size (MAU)</name>
+			</column>
+			<column>
+				<name>[out] Offset</name>
+			</column>
+			<column>
+				<name>[out] Section</name>
+			</column>
+			<column>
+				<name>[out] Size (MAU)</name>
+			</column>
+			<row>graphics_canvas.obj;.bss.canvas.color_cache_p1 (2192);0x00000008;0x0;.bss.canvas.color_cache_p1 (2192);0x00000008</row>
+			<row>graphics_canvas.obj;.bss.canvas.color_cache_p2 (2193);0x00000008;0x0;.bss.canvas.color_cache_p2 (2193);0x00000008</row>
+			<row>graphics_canvas.obj;.bss.canvas.color_cache_p4 (2194);0x00000008;0x0;.bss.canvas.color_cache_p4 (2194);0x00000008</row>
+			<row>graphics_canvas.obj;.bss.canvas.color_cache_p8 (2195);0x00000008;0x0;.bss.canvas.color_cache_p8 (2195);0x00000008</row>
+			<row>posix_devio_devio.obj;.bss.devio.devio_table (1616);0x00000040;0x0;.bss.devio.devio_table (1616);0x00000040</row>
+			<row>drv_ad7843_drv_ad7843.obj;.bss.drv_ad7843.drv_table (1705);0x00000024;0x0;.bss.drv_ad7843.drv_table (1705);0x00000024</row>
+			<row>drv_ioport_drv_ioport.obj;.bss.drv_ioport.ioport_driver_table (118);0x0000000c;0x0;.bss.drv_ioport.ioport_driver_table (118);0x0000000c</row>
+			<row>drv_led_drv_led.obj;.bss.drv_led.drv_table (162);0x00000020;0x0;.bss.drv_led.drv_table (162);0x00000020</row>
+			<row>drv_spi_drv_spi.obj;.bss.drv_spi.drv_table (1760);0x000000c0;0x0;.bss.drv_spi.drv_table (1760);0x000000c0</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.bss.drv_vga_16bpp.vga_16bpp_table (333);0x0000001c;0x0;.bss.drv_vga_16bpp.vga_16bpp_table (333);0x0000001c</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.bss.drv_vga_ili9320.ili9320_table (468);0x00000018;0x0;.bss.drv_vga_ili9320.ili9320_table (468);0x00000018</row>
+			<row>graphics_graphics.obj;.bss.graphics.graphics_table (767);0x0000019c;0x0;.bss.graphics.graphics_table (767);0x0000019c</row>
+			<row>graphics_graphics_cfg_instance.obj;.bss.graphics_cfg_instance.graphics_instance0_canvasbuffer3 (1279);0x00025800;0x0;.bss.graphics_cfg_instance.graphics_instance0_canvasbuffer3 (1279);0x00025800</row>
+			<row>graphics_graphics_cfg_instance.obj;.bss.graphics_instance0_canvasbuffer1_section (1277);0x00025800;0x0;.bss.graphics_instance0_canvasbuffer1_section (1277);0x00025800</row>
+			<row>graphics_graphics_cfg_instance.obj;.bss.graphics_instance0_canvasbuffer2_section (1278);0x00025800;0x0;.bss.graphics_instance0_canvasbuffer2_section (1278);0x00025800</row>
+			<row>interrupts_interrupts.obj;.bss.interrupts.interrupt_table (1299);0x00000100;0x0;.bss.interrupts.interrupt_table (1299);0x00000100</row>
+			<row>malloc.obj;.bss.libc (3253);0x00000004;0x0;.bss.libc (3253);0x00000004</row>
+			<row>malloc.obj;.bss.libc (3254);0x00000004;0x0;.bss.libc (3254);0x00000004</row>
+			<row>errno.obj;.bss.libc (3328);0x00000004;0x0;.bss.libc (3328);0x00000004</row>
+			<row>pal_pal_timers.obj;.bss.pal_timers._pal_timer_handlers (706);0x00000060;0x0;.bss.pal_timers._pal_timer_handlers (706);0x00000060</row>
+			<row>pointer_pointer.obj;.bss.pointer.pointer_table (1351);0x00000058;0x0;.bss.pointer.pointer_table (1351);0x00000058</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.bss.terminal_to_serial.terminal_to_serial_iofuncs (3016);0x00000014;0x0;.bss.terminal_to_serial.terminal_to_serial_iofuncs (3016);0x00000014</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.bss.terminal_to_serial.terminal_to_serial_table (3017);0x00000010;0x0;.bss.terminal_to_serial.terminal_to_serial_table (3017);0x00000010</row>
+			<row>touchscreen_touchscreen.obj;.bss.touchscreen.drv_table (1500);0x00000054;0x0;.bss.touchscreen.drv_table (1500);0x00000054</row>
+			<row>posix_devio__iob.obj;.data._iob._iob (2975);0x000000c8;0x0;.data._iob._iob (2975);0x000000c8</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.data.drv_vga_ili9320.init_ili9320 (467);0x0000014a;0x0;.data.drv_vga_ili9320.init_ili9320 (467);0x0000014a</row>
+			<row>clockspersec.obj;.data.libc (3236);0x00000008;0x0;.data.libc (3236);0x00000008</row>
+			<row>_sbrk.obj;.data.libc (3272);0x00000004;0x0;.data.libc (3272);0x00000004</row>
+			<row>graphics_svg_palette.obj;.data.svg_palette.svg_colors (1270);0x00000400;0x0;.data.svg_palette.svg_colors (1270);0x00000400</row>
+			<row>graphics_BitstreamVeraSans10.obj;.rodata.BitstreamVeraSans10.bitstreamverasans10 (740);0x00000010;0x0;.rodata.BitstreamVeraSans10.bitstreamverasans10 (740);0x00000010</row>
+			<row>graphics_BitstreamVeraSans10.obj;.rodata.BitstreamVeraSans10.bitstreamverasans10_data (739);0x000016c4;0x0;.rodata.BitstreamVeraSans10.bitstreamverasans10_data (739);0x000016c4</row>
+			<row>MAIN.obj;.rodata.MAIN.$str (22);0x00000017;0x0;.rodata.MAIN.$str (22);0x00000017</row>
+			<row>ad_touchscreen_to_pointer_ad_touchscreen_to_pointer_cfg_instance.obj;.rodata.ad_touchscreen_to_pointer_cfg_instance.ad_touchscreen_to_pointer_instance_table (2949);0x00000008;0x0;.rodata.ad_touchscreen_to_pointer_cfg_instance.ad_touchscreen_to_pointer_instance_table (2949);0x00000008</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320_cfg_instance.obj;.rodata.ad_vga_ili9320_cfg_instance.ad_vga_ili9320_instance_table (2924);0x00000008;0x0;.rodata.ad_vga_ili9320_cfg_instance.ad_vga_ili9320_instance_table (2924);0x00000008</row>
+			<row>graphics_bpmono8.obj;.rodata.bpmono8.bpmono8 (2115);0x00000010;0x0;.rodata.bpmono8.bpmono8 (2115);0x00000010</row>
+			<row>graphics_bpmono8.obj;.rodata.bpmono8.bpmono8_data (2114);0x00000a48;0x0;.rodata.bpmono8.bpmono8_data (2114);0x00000a48</row>
+			<row>graphics_canvas.obj;.rodata.canvas._graphics_draw_pixel_alpha_rgb565 (2161);0x0000003c;0x0;.rodata.canvas._graphics_draw_pixel_alpha_rgb565 (2161);0x0000003c</row>
+			<row>posix_devio_devio.obj;.rodata.devio.$str (1617);0x00000006;0x0;.rodata.devio.$str (1617);0x00000006</row>
+			<row>drv_ad7843_drv_ad7843_cfg_instance.obj;.rodata.drv_ad7843_cfg_instance.drv_ad7843_instance_table (1727);0x0000000c;0x0;.rodata.drv_ad7843_cfg_instance.drv_ad7843_instance_table (1727);0x0000000c</row>
+			<row>drv_led_drv_led_cfg_instance.obj;.rodata.drv_led_cfg_instance.drv_led_instance_table (236);0x00000008;0x0;.rodata.drv_led_cfg_instance.drv_led_instance_table (236);0x00000008</row>
+			<row>drv_spi_drv_spi_cfg_instance.obj;.rodata.drv_spi_cfg_instance.drv_spi_instance_table (2014);0x00000010;0x0;.rodata.drv_spi_cfg_instance.drv_spi_instance_table (2014);0x00000010</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.rodata.drv_vga_16bpp.vga_16bpp_set_resolution (332);0x0000001c;0x0;.rodata.drv_vga_16bpp.vga_16bpp_set_resolution (332);0x0000001c</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp_cfg_instance.obj;.rodata.drv_vga_16bpp_cfg_instance.drv_vga_16bpp_instance_table (448);0x00000014;0x0;.rodata.drv_vga_16bpp_cfg_instance.drv_vga_16bpp_instance_table (448);0x00000014</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320_cfg_instance.obj;.rodata.drv_vga_ili9320_cfg_instance.drv_vga_ili9320_instance_table (589);0x00000028;0x0;.rodata.drv_vga_ili9320_cfg_instance.drv_vga_ili9320_instance_table (589);0x00000028</row>
+			<row>graphics_graphics_cfg_instance.obj;.rodata.graphics_cfg_instance.graphics_instance_table (1280);0x00000054;0x0;.rodata.graphics_cfg_instance.graphics_instance_table (1280);0x00000054</row>
+			<row>per_ioport_per_ioport_cfg_instance.obj;.rodata.per_ioport_cfg_instance.per_ioport_instance_table (595);0x0000000c;0x0;.rodata.per_ioport_cfg_instance.per_ioport_instance_table (595);0x0000000c</row>
+			<row>per_led_per_led_cfg_instance.obj;.rodata.per_led_cfg_instance.per_led_instance_table (601);0x00000008;0x0;.rodata.per_led_cfg_instance.per_led_instance_table (601);0x00000008</row>
+			<row>per_spi_per_spi_cfg_instance.obj;.rodata.per_spi_cfg_instance.per_spi_instance_table (2020);0x00000010;0x0;.rodata.per_spi_cfg_instance.per_spi_instance_table (2020);0x00000010</row>
+			<row>per_vga32_16bpp_per_vga32_16bpp_cfg_instance.obj;.rodata.per_vga32_16bpp_cfg_instance.per_vga32_16bpp_instance_table (613);0x00000008;0x0;.rodata.per_vga32_16bpp_cfg_instance.per_vga32_16bpp_instance_table (613);0x00000008</row>
+			<row>per_vga32_ili9320_per_vga32_ili9320_cfg_instance.obj;.rodata.per_vga32_ili9320_cfg_instance.per_vga32_ili9320_instance_table (619);0x00000008;0x0;.rodata.per_vga32_ili9320_cfg_instance.per_vga32_ili9320_instance_table (619);0x00000008</row>
+			<row>pointer_pointer.obj;.rodata.pointer.button_table (1350);0x00000020;0x0;.rodata.pointer.button_table (1350);0x00000020</row>
+			<row>pointer_pointer_cfg_instance.obj;.rodata.pointer_cfg_instance.pointer_instance_table (1402);0x00000018;0x0;.rodata.pointer_cfg_instance.pointer_instance_table (1402);0x00000018</row>
+			<row>serial_serial_cfg_instance.obj;.rodata.serial_cfg_instance.$str (3093);0x00000009;0x0;.rodata.serial_cfg_instance.$str (3093);0x00000009</row>
+			<row>serial_serial_cfg_instance.obj;.rodata.serial_cfg_instance.serial_instance_table (3094);0x00000008;0x0;.rodata.serial_cfg_instance.serial_instance_table (3094);0x00000008</row>
+			<row>terminal_to_serial_terminal_to_serial_cfg_instance.obj;.rodata.terminal_to_serial_cfg_instance.terminal_to_serial_instance_table (3087);0x00000008;0x0;.rodata.terminal_to_serial_cfg_instance.terminal_to_serial_instance_table (3087);0x00000008</row>
+			<row>touchscreen_touchscreen.obj;.rodata.touchscreen.touchscreen_calibrate (1499);0x00000048;0x0;.rodata.touchscreen.touchscreen_calibrate (1499);0x00000048</row>
+			<row>touchscreen_touchscreen_cfg_instance.obj;.rodata.touchscreen_cfg_instance.touchscreen_instance_table (1590);0x00000024;0x0;.rodata.touchscreen_cfg_instance.touchscreen_instance_table (1590);0x00000024</row>
+			<row>MAIN.obj;.sbss.MAIN.callback (18);0x00000004;0x0;.sbss.MAIN.callback (18);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.canvas (5);0x00000004;0x0;.sbss.MAIN.canvas (5);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.color (12);0x00000004;0x0;.sbss.MAIN.color (12);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.colorcua1 (13);0x00000004;0x0;.sbss.MAIN.colorcua1 (13);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.colorcua2 (14);0x00000004;0x0;.sbss.MAIN.colorcua2 (14);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.colorcua3 (15);0x00000004;0x0;.sbss.MAIN.colorcua3 (15);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.dip (8);0x00000004;0x0;.sbss.MAIN.dip (8);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.display (4);0x00000004;0x0;.sbss.MAIN.display (4);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.figure (20);0x00000004;0x0;.sbss.MAIN.figure (20);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.leds (16);0x00000004;0x0;.sbss.MAIN.leds (16);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.pointer_state (10);0x00000004;0x0;.sbss.MAIN.pointer_state (10);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.punt (11);0x00000004;0x0;.sbss.MAIN.punt (11);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.term (9);0x00000004;0x0;.sbss.MAIN.term (9);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.touch (17);0x00000004;0x0;.sbss.MAIN.touch (17);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.vga (6);0x00000004;0x0;.sbss.MAIN.vga (6);0x00000004</row>
+			<row>MAIN.obj;.sbss.MAIN.vga1 (7);0x00000004;0x0;.sbss.MAIN.vga1 (7);0x00000004</row>
+			<row>drv_ioport_drv_ioport_cfg_instance.obj;.sbss.drv_ioport_cfg_instance.drv_ioport_instance_table (148);0x00000004;0x0;.sbss.drv_ioport_cfg_instance.drv_ioport_instance_table (148);0x00000004</row>
+			<row>drv_terminal_drv_terminal.obj;.sbss.drv_terminal.drv_table (249);0x00000004;0x0;.sbss.drv_terminal.drv_table (249);0x00000004</row>
+			<row>drv_terminal_drv_terminal_cfg_instance.obj;.sbss.drv_terminal_cfg_instance.drv_terminal_instance_table (314);0x00000004;0x0;.sbss.drv_terminal_cfg_instance.drv_terminal_instance_table (314);0x00000004</row>
+			<row>graphics_graphics_cfg_instance.obj;.sbss.graphics_cfg_instance.graphics_instance0_ad_graphics (1276);0x00000004;0x0;.sbss.graphics_cfg_instance.graphics_instance0_ad_graphics (1276);0x00000004</row>
+			<row>pal_pal_timers.obj;.sbss.pal_timers._pal_timers_registrations (707);0x00000004;0x0;.sbss.pal_timers._pal_timers_registrations (707);0x00000004</row>
+			<row>pointer_pointer_cfg_instance.obj;.sbss.pointer_cfg_instance.pointer_instance0_ad_pointer (1401);0x00000004;0x0;.sbss.pointer_cfg_instance.pointer_instance0_ad_pointer (1401);0x00000004</row>
+			<row>MAIN.obj;.sdata.MAIN.b (19);0x00000004;0x0;.sdata.MAIN.b (19);0x00000004</row>
+			<row>MAIN.obj;.sdata.MAIN.c (21);0x00000004;0x0;.sdata.MAIN.c (21);0x00000004</row>
+			<row>MAIN.obj;.sdata.MAIN.cal1 (23);0x00000004;0x0;.sdata.MAIN.cal1 (23);0x00000004</row>
+			<row>posix_devio_devio_init.obj;.sdata.devio_init.$str (2957);0x00000003;0x0;.sdata.devio_init.$str (2957);0x00000003</row>
+			<row>per_terminal_per_terminal_cfg_instance.obj;.sdata.per_terminal_cfg_instance.per_terminal_instance_table (607);0x00000004;0x0;.sdata.per_terminal_cfg_instance.per_terminal_instance_table (607);0x00000004</row>
+			<row>per_tspen_per_tspen_cfg_instance.obj;.sdata.per_tspen_cfg_instance.per_tspen_instance_table (2026);0x00000004;0x0;.sdata.per_tspen_cfg_instance.per_tspen_instance_table (2026);0x00000004</row>
+			<row>cstart.obj;.start (1701);0x00000008;0x0;.start (1701);0x00000008</row>
+			<row>MAIN.obj;.text.MAIN.draw_mark (2);0x000000c4;0x0;.text.MAIN.draw_mark (2);0x000000c4</row>
+			<row>MAIN.obj;.text.MAIN.main (1);0x000008c0;0x0;.text.MAIN.main (1);0x000008c0</row>
+			<row>MAIN.obj;.text.MAIN.set_all_leds (3);0x000000a4;0x0;.text.MAIN.set_all_leds (3);0x000000a4</row>
+			<row>init___framework_init.obj;.text.__framework_init.framework_init (2891);0x00000034;0x0;.text.__framework_init.framework_init (2891);0x00000034</row>
+			<row>posix_devio__fopen.obj;.text._fopen._fopen (3144);0x00000120;0x0;.text._fopen._fopen (3144);0x00000120</row>
+			<row>posix_devio__iob.obj;.text._iob._doclose (2974);0x00000050;0x0;.text._iob._doclose (2974);0x00000050</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320.obj;.text.ad_vga_ili9320.ad_vga_ili9320_init (2913);0x00000054;0x0;.text.ad_vga_ili9320.ad_vga_ili9320_init (2913);0x00000054</row>
+			<row>graphics_canvas.obj;.text.canvas._canvas_set_rotation (2175);0x00000144;0x0;.text.canvas._canvas_set_rotation (2175);0x00000144</row>
+			<row>graphics_canvas.obj;.text.canvas._canvas_unset_rotation (2174);0x000000c8;0x0;.text.canvas._canvas_unset_rotation (2174);0x000000c8</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_p1 (2128);0x0000001c;0x0;.text.canvas._graphics_convert_color_from_p1 (2128);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_p2 (2135);0x0000001c;0x0;.text.canvas._graphics_convert_color_from_p2 (2135);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_p4 (2142);0x0000001c;0x0;.text.canvas._graphics_convert_color_from_p4 (2142);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_p8 (2149);0x0000001c;0x0;.text.canvas._graphics_convert_color_from_p8 (2149);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_rgb565 (2158);0x0000002c;0x0;.text.canvas._graphics_convert_color_from_rgb565 (2158);0x0000002c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_from_rgb888 (2167);0x00000008;0x0;.text.canvas._graphics_convert_color_from_rgb888 (2167);0x00000008</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_p1 (2127);0x00000038;0x0;.text.canvas._graphics_convert_color_to_p1 (2127);0x00000038</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_p2 (2134);0x00000038;0x0;.text.canvas._graphics_convert_color_to_p2 (2134);0x00000038</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_p4 (2141);0x00000038;0x0;.text.canvas._graphics_convert_color_to_p4 (2141);0x00000038</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_p8 (2148);0x00000038;0x0;.text.canvas._graphics_convert_color_to_p8 (2148);0x00000038</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_palette (2123);0x000000fc;0x0;.text.canvas._graphics_convert_color_to_palette (2123);0x000000fc</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_rgb565 (2157);0x00000024;0x0;.text.canvas._graphics_convert_color_to_rgb565 (2157);0x00000024</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_convert_color_to_rgb888 (2166);0x00000008;0x0;.text.canvas._graphics_convert_color_to_rgb888 (2166);0x00000008</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_p1 (2132);0x00000134;0x0;.text.canvas._graphics_draw_horizontal_p1 (2132);0x00000134</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_p2 (2139);0x00000160;0x0;.text.canvas._graphics_draw_horizontal_p2 (2139);0x00000160</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_p4 (2146);0x00000148;0x0;.text.canvas._graphics_draw_horizontal_p4 (2146);0x00000148</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_p8 (2153);0x000000dc;0x0;.text.canvas._graphics_draw_horizontal_p8 (2153);0x000000dc</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_rgb565 (2163);0x000000bc;0x0;.text.canvas._graphics_draw_horizontal_rgb565 (2163);0x000000bc</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_horizontal_rgb888 (2171);0x00000040;0x0;.text.canvas._graphics_draw_horizontal_rgb888 (2171);0x00000040</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_p1 (2130);0x0000002c;0x0;.text.canvas._graphics_draw_pixel_alpha_p1 (2130);0x0000002c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_p2 (2137);0x0000002c;0x0;.text.canvas._graphics_draw_pixel_alpha_p2 (2137);0x0000002c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_p4 (2144);0x0000002c;0x0;.text.canvas._graphics_draw_pixel_alpha_p4 (2144);0x0000002c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_p8 (2151);0x00000030;0x0;.text.canvas._graphics_draw_pixel_alpha_p8 (2151);0x00000030</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_rgb565 (2160);0x00000200;0x0;.text.canvas._graphics_draw_pixel_alpha_rgb565 (2160);0x00000200</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_alpha_rgb888 (2169);0x00000030;0x0;.text.canvas._graphics_draw_pixel_alpha_rgb888 (2169);0x00000030</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_p1 (2129);0x0000006c;0x0;.text.canvas._graphics_draw_pixel_p1 (2129);0x0000006c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_p2 (2136);0x0000006c;0x0;.text.canvas._graphics_draw_pixel_p2 (2136);0x0000006c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_p4 (2143);0x00000068;0x0;.text.canvas._graphics_draw_pixel_p4 (2143);0x00000068</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_p8 (2150);0x0000001c;0x0;.text.canvas._graphics_draw_pixel_p8 (2150);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_rgb565 (2159);0x00000020;0x0;.text.canvas._graphics_draw_pixel_rgb565 (2159);0x00000020</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_pixel_rgb888 (2168);0x00000020;0x0;.text.canvas._graphics_draw_pixel_rgb888 (2168);0x00000020</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_p1 (2133);0x000000dc;0x0;.text.canvas._graphics_draw_vertical_p1 (2133);0x000000dc</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_p2 (2140);0x000000ac;0x0;.text.canvas._graphics_draw_vertical_p2 (2140);0x000000ac</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_p4 (2147);0x00000098;0x0;.text.canvas._graphics_draw_vertical_p4 (2147);0x00000098</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_p8 (2154);0x0000003c;0x0;.text.canvas._graphics_draw_vertical_p8 (2154);0x0000003c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_rgb565 (2164);0x00000048;0x0;.text.canvas._graphics_draw_vertical_rgb565 (2164);0x00000048</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_draw_vertical_rgb888 (2172);0x00000048;0x0;.text.canvas._graphics_draw_vertical_rgb888 (2172);0x00000048</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_p1 (2131);0x00000050;0x0;.text.canvas._graphics_get_pixel_p1 (2131);0x00000050</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_p2 (2138);0x0000004c;0x0;.text.canvas._graphics_get_pixel_p2 (2138);0x0000004c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_p4 (2145);0x00000044;0x0;.text.canvas._graphics_get_pixel_p4 (2145);0x00000044</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_p8 (2152);0x0000001c;0x0;.text.canvas._graphics_get_pixel_p8 (2152);0x0000001c</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_rgb565 (2162);0x00000020;0x0;.text.canvas._graphics_get_pixel_rgb565 (2162);0x00000020</row>
+			<row>graphics_canvas.obj;.text.canvas._graphics_get_pixel_rgb888 (2170);0x00000020;0x0;.text.canvas._graphics_get_pixel_rgb888 (2170);0x00000020</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_initialize (2183);0x00000390;0x0;.text.canvas.canvas_initialize (2183);0x00000390</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_initialize_extern (2184);0x0000010c;0x0;.text.canvas.canvas_initialize_extern (2184);0x0000010c</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_set_rotation (2176);0x00000008;0x0;.text.canvas.canvas_set_rotation (2176);0x00000008</row>
+			<row>devfs_minimal_close.obj;.text.close.close (3111);0x00000054;0x0;.text.close.close (3111);0x00000054</row>
+			<row>cstart.obj;.text.cstart (1702);0x000000b0;0x0;.text.cstart (1702);0x000000b0</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_close (1612);0x00000008;0x0;.text.devio.devio_close (1612);0x00000008</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_getdev (1610);0x00000034;0x0;.text.devio.devio_getdev (1610);0x00000034</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_install (1607);0x000000b4;0x0;.text.devio.devio_install (1607);0x000000b4</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_lookup (1609);0x00000098;0x0;.text.devio.devio_lookup (1609);0x00000098</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_open (1611);0x00000040;0x0;.text.devio.devio_open (1611);0x00000040</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_readwrite (1614);0x0000004c;0x0;.text.devio.devio_readwrite (1614);0x0000004c</row>
+			<row>posix_devio_devio_init.obj;.text.devio_init.posix_devio_init (2955);0x00000008;0x0;.text.devio_init.posix_devio_init (2955);0x00000008</row>
+			<row>posix_devio_devio_init.obj;.text.devio_init.stdio_init (2956);0x00000054;0x0;.text.devio_init.stdio_init (2956);0x00000054</row>
+			<row>drv_ad7843_drv_ad7843.obj;.text.drv_ad7843.ad7843_get_raw (1704);0x00000214;0x0;.text.drv_ad7843.ad7843_get_raw (1704);0x00000214</row>
+			<row>drv_ad7843_drv_ad7843.obj;.text.drv_ad7843.ad7843_open (1703);0x00000134;0x0;.text.drv_ad7843.ad7843_open (1703);0x00000134</row>
+			<row>drv_ioport_drv_ioport.obj;.text.drv_ioport.ioport_get_value (116);0x0000007c;0x0;.text.drv_ioport.ioport_get_value (116);0x0000007c</row>
+			<row>drv_ioport_drv_ioport.obj;.text.drv_ioport.ioport_open (117);0x000000a8;0x0;.text.drv_ioport.ioport_open (117);0x000000a8</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_open (161);0x000000a4;0x0;.text.drv_led.led_open (161);0x000000a4</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_set_intensity (160);0x00000014;0x0;.text.drv_led.led_set_intensity (160);0x00000014</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_turn_all_off (157);0x00000034;0x0;.text.drv_led.led_turn_all_off (157);0x00000034</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_cs_hi (1739);0x00000018;0x0;.text.drv_spi.spi_cs_hi (1739);0x00000018</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_cs_lo (1738);0x0000001c;0x0;.text.drv_spi.spi_cs_lo (1738);0x0000001c</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_get_bus (1750);0x00000194;0x0;.text.drv_spi.spi_get_bus (1750);0x00000194</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_open (1733);0x000000e8;0x0;.text.drv_spi.spi_open (1733);0x000000e8</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_release_bus (1751);0x000000e8;0x0;.text.drv_spi.spi_release_bus (1751);0x000000e8</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_set_baudrate (1734);0x00000040;0x0;.text.drv_spi.spi_set_baudrate (1734);0x00000040</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_transceive8 (1741);0x00000070;0x0;.text.drv_spi.spi_transceive8 (1741);0x00000070</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_getchar_internal (244);0x00000028;0x0;.text.drv_terminal.terminal_getchar_internal (244);0x00000028</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_open (248);0x00000038;0x0;.text.drv_terminal.terminal_open (248);0x00000038</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_putchar_internal (242);0x00000028;0x0;.text.drv_terminal.terminal_putchar_internal (242);0x00000028</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_read (247);0x00000064;0x0;.text.drv_terminal.terminal_read (247);0x00000064</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_write (246);0x0000004c;0x0;.text.drv_terminal.terminal_write (246);0x0000004c</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp._vga_16bpp_set_resolution (320);0x000001b8;0x0;.text.drv_vga_16bpp._vga_16bpp_set_resolution (320);0x000001b8</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_get_screen (326);0x00000008;0x0;.text.drv_vga_16bpp.vga_16bpp_get_screen (326);0x00000008</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_open (322);0x000000d4;0x0;.text.drv_vga_16bpp.vga_16bpp_open (322);0x000000d4</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_set_resolution (331);0x00000144;0x0;.text.drv_vga_16bpp.vga_16bpp_set_resolution (331);0x00000144</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_set_screen (325);0x00000058;0x0;.text.drv_vga_16bpp.vga_16bpp_set_screen (325);0x00000058</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_vsync_interrupt (321);0x000000f4;0x0;.text.drv_vga_16bpp.vga_16bpp_vsync_interrupt (321);0x000000f4</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320._ili9320_init (455);0x00000064;0x0;.text.drv_vga_ili9320._ili9320_init (455);0x00000064</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320._ili9320_write (454);0x00000018;0x0;.text.drv_vga_ili9320._ili9320_write (454);0x00000018</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_get_screen (465);0x00000008;0x0;.text.drv_vga_ili9320.vga_ili9320_get_screen (465);0x00000008</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_open (457);0x00000524;0x0;.text.drv_vga_ili9320.vga_ili9320_open (457);0x00000524</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_screen_set (463);0x00000030;0x0;.text.drv_vga_ili9320.vga_ili9320_screen_set (463);0x00000030</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_set_screen (464);0x0000014c;0x0;.text.drv_vga_ili9320.vga_ili9320_set_screen (464);0x0000014c</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_sync_interrupt (456);0x00000158;0x0;.text.drv_vga_ili9320.vga_ili9320_sync_interrupt (456);0x00000158</row>
+			<row>exit.obj;.text.exit.exit (3100);0x00000030;0x0;.text.exit.exit (3100);0x00000030</row>
+			<row>posix_devio_fclose.obj;.text.fclose.fclose (2999);0x00000068;0x0;.text.fclose.fclose (2999);0x00000068</row>
+			<row>posix_devio_fflush.obj;.text.fflush._fflush (3155);0x000000fc;0x0;.text.fflush._fflush (3155);0x000000fc</row>
+			<row>posix_devio_freopen.obj;.text.freopen.freopen (2988);0x00000080;0x0;.text.freopen.freopen (2988);0x00000080</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_fill_canvas (766);0x00000030;0x0;.text.graphics.graphics_fill_canvas (766);0x00000030</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_get_visible_canvas (753);0x00000008;0x0;.text.graphics.graphics_get_visible_canvas (753);0x00000008</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_open (749);0x0000022c;0x0;.text.graphics.graphics_open (749);0x0000022c</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_set_visible_canvas (752);0x00000064;0x0;.text.graphics.graphics_set_visible_canvas (752);0x00000064</row>
+			<row>graphics_graphics_draw_circle.obj;.text.graphics_draw_circle._graphics_draw_circle (935);0x00000340;0x0;.text.graphics_draw_circle._graphics_draw_circle (935);0x00000340</row>
+			<row>graphics_graphics_draw_circle.obj;.text.graphics_draw_circle.graphics_draw_circle (934);0x000000b4;0x0;.text.graphics_draw_circle.graphics_draw_circle (934);0x000000b4</row>
+			<row>graphics_graphics_draw_line.obj;.text.graphics_draw_line._graphics_draw_line (957);0x0000046c;0x0;.text.graphics_draw_line._graphics_draw_line (957);0x0000046c</row>
+			<row>graphics_graphics_draw_line.obj;.text.graphics_draw_line.graphics_draw_line (956);0x000000e8;0x0;.text.graphics_draw_line.graphics_draw_line (956);0x000000e8</row>
+			<row>graphics_graphics_draw_text.obj;.text.graphics_draw_text._graphics_draw_glyph (981);0x000002fc;0x0;.text.graphics_draw_text._graphics_draw_glyph (981);0x000002fc</row>
+			<row>graphics_graphics_draw_text.obj;.text.graphics_draw_text.graphics_draw_char (982);0x000000e4;0x0;.text.graphics_draw_text.graphics_draw_char (982);0x000000e4</row>
+			<row>graphics_graphics_draw_text.obj;.text.graphics_draw_text.graphics_draw_string (983);0x000000b8;0x0;.text.graphics_draw_text.graphics_draw_string (983);0x000000b8</row>
+			<row>graphics_graphics_fill_circle.obj;.text.graphics_fill_circle._graphics_fill_circle (1095);0x00000254;0x0;.text.graphics_fill_circle._graphics_fill_circle (1095);0x00000254</row>
+			<row>graphics_graphics_fill_circle.obj;.text.graphics_fill_circle.graphics_fill_circle (1094);0x000000b4;0x0;.text.graphics_fill_circle.graphics_fill_circle (1094);0x000000b4</row>
+			<row>graphics_graphics_fill_rect.obj;.text.graphics_fill_rect._graphics_fill_rect (1119);0x00000190;0x0;.text.graphics_fill_rect._graphics_fill_rect (1119);0x00000190</row>
+			<row>graphics_graphics_fill_rect.obj;.text.graphics_fill_rect.graphics_fill_rect (1118);0x000000f8;0x0;.text.graphics_fill_rect.graphics_fill_rect (1118);0x000000f8</row>
+			<row>graphics_graphics_fill_triangle.obj;.text.graphics_fill_triangle._get_next_x (1147);0x000000c0;0x0;.text.graphics_fill_triangle._get_next_x (1147);0x000000c0</row>
+			<row>graphics_graphics_fill_triangle.obj;.text.graphics_fill_triangle._graphics_fill_triangle (1146);0x000005b4;0x0;.text.graphics_fill_triangle._graphics_fill_triangle (1146);0x000005b4</row>
+			<row>graphics_graphics_fill_triangle.obj;.text.graphics_fill_triangle._init_struct (1148);0x00000088;0x0;.text.graphics_fill_triangle._init_struct (1148);0x00000088</row>
+			<row>graphics_graphics_fill_triangle.obj;.text.graphics_fill_triangle.graphics_fill_triangle (1145);0x0000013c;0x0;.text.graphics_fill_triangle.graphics_fill_triangle (1145);0x0000013c</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_draw_pixel (1195);0x00000120;0x0;.text.graphics_pixel_common.graphics_draw_pixel (1195);0x00000120</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_draw_pixel_alpha (1197);0x00000130;0x0;.text.graphics_pixel_common.graphics_draw_pixel_alpha (1197);0x00000130</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_get_pixel (1199);0x000000d4;0x0;.text.graphics_pixel_common.graphics_get_pixel (1199);0x000000d4</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupt_configure (1297);0x00000098;0x0;.text.interrupts.interrupt_configure (1297);0x00000098</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupt_register_native (1294);0x00000068;0x0;.text.interrupts.interrupt_register_native (1294);0x00000068</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupts_common_handler (1298);0x00000034;0x0;.text.interrupts.interrupts_common_handler (1298);0x00000034</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0000 (625);0x00000008;0x0;.text.intvec_0000 (625);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0028 (626);0x00000008;0x0;.text.intvec_0028 (626);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0030 (627);0x00000008;0x0;.text.intvec_0030 (627);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0038 (628);0x00000008;0x0;.text.intvec_0038 (628);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0040 (629);0x00000008;0x0;.text.intvec_0040 (629);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.intvec_0048 (630);0x00000008;0x0;.text.intvec_0048 (630);0x00000008</row>
+			<row>divmod64.obj;.text.libc (3199);0x000000d0;0x0;.text.libc (3199);0x000000d0</row>
+			<row>clock.obj;.text.libc (3222);0x0000000c;0x0;.text.libc (3222);0x0000000c</row>
+			<row>clock.obj;.text.libc (3223);0x0000001c;0x0;.text.libc (3223);0x0000001c</row>
+			<row>setvbuf.obj;.text.libc (3242);0x000000f4;0x0;.text.libc (3242);0x000000f4</row>
+			<row>malloc.obj;.text.libc (3251);0x0000020c;0x0;.text.libc (3251);0x0000020c</row>
+			<row>malloc.obj;.text.libc (3252);0x000000e8;0x0;.text.libc (3252);0x000000e8</row>
+			<row>_sbrk.obj;.text.libc (3271);0x00000048;0x0;.text.libc (3271);0x00000048</row>
+			<row>strcmp.obj;.text.libc (3345);0x00000024;0x0;.text.libc (3345);0x00000024</row>
+			<row>strncmp.obj;.text.libc (3354);0x00000040;0x0;.text.libc (3354);0x00000040</row>
+			<row>weakstub.obj;.text.libc (3363);0x00000008;0x0;.text.libc (3363);0x00000008</row>
+			<row>_Exit.obj;.text.libc (3372);0x00000008;0x0;.text.libc (3372);0x00000008</row>
+			<row>mul64.obj;.text.libc (3381);0x0000002c;0x0;.text.libc (3381);0x0000002c</row>
+			<row>cul2spf.obj;.text.libfp (3382);0x00000124;0x0;.text.libfp (3382);0x00000124</row>
+			<row>cspf2ul.obj;.text.libfp (3391);0x00000058;0x0;.text.libfp (3391);0x00000058</row>
+			<row>mul_spf.obj;.text.libfp (3400);0x00000180;0x0;.text.libfp (3400);0x00000180</row>
+			<row>div_spf.obj;.text.libfp (3409);0x00000138;0x0;.text.libfp (3409);0x00000138</row>
+			<row>misc_spf.obj;.text.libfp (3418);0x00000060;0x0;.text.libfp (3418);0x00000060</row>
+			<row>devfs_minimal_lseek.obj;.text.lseek._lseek (3176);0x00000008;0x0;.text.lseek._lseek (3176);0x00000008</row>
+			<row>devfs_minimal_open.obj;.text.open.open (1596);0x00000084;0x0;.text.open.open (1596);0x00000084</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_clock_init (2036);0x00000008;0x0;.text.pal_c3000.pal_architecture_clock_init (2036);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_interrupt_configure (2035);0x00000028;0x0;.text.pal_c3000.pal_architecture_interrupt_configure (2035);0x00000028</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_interrupts_init (2032);0x00000050;0x0;.text.pal_c3000.pal_architecture_interrupts_init (2032);0x00000050</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_processor_init (2034);0x00000008;0x0;.text.pal_c3000.pal_architecture_processor_init (2034);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_timer_interrupt_init (2033);0x0000004c;0x0;.text.pal_c3000.pal_architecture_timer_interrupt_init (2033);0x0000004c</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.tsk3000_set_interval_timer (2037);0x00000058;0x0;.text.pal_c3000.tsk3000_set_interval_timer (2037);0x00000058</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.interrupt_handler (631);0x000000d0;0x0;.text.pal_c3000_interrupts.interrupt_handler (631);0x000000d0</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_interrupt_disable (638);0x00000068;0x0;.text.pal_c3000_interrupts.pal_architecture_interrupt_disable (638);0x00000068</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_interrupt_enable (637);0x00000064;0x0;.text.pal_c3000_interrupts.pal_architecture_interrupt_enable (637);0x00000064</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_set_native_handler (635);0x00000048;0x0;.text.pal_c3000_interrupts.pal_architecture_set_native_handler (635);0x00000048</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_interrupt_clock_handler (632);0x000000c8;0x0;.text.pal_c3000_interrupts.pal_interrupt_clock_handler (632);0x000000c8</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.tsk3000_architecture_set_native_handler (634);0x0000002c;0x0;.text.pal_c3000_interrupts.tsk3000_architecture_set_native_handler (634);0x0000002c</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.tsk3000_extract_vector_table (633);0x00000008;0x0;.text.pal_c3000_interrupts.tsk3000_extract_vector_table (633);0x00000008</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.tsk3000_patch_vector_table (636);0x00000060;0x0;.text.pal_c3000_interrupts.tsk3000_patch_vector_table (636);0x00000060</row>
+			<row>pal_pal_init.obj;.text.pal_init.pal_init (2902);0x00000054;0x0;.text.pal_init.pal_init (2902);0x00000054</row>
+			<row>pal_pal_timers.obj;.text.pal_timers.pal_timers_common_handler (703);0x000000f0;0x0;.text.pal_timers.pal_timers_common_handler (703);0x000000f0</row>
+			<row>pal_pal_timing.obj;.text.pal_timing.pal_delay_ms (2083);0x00000080;0x0;.text.pal_timing.pal_delay_ms (2083);0x00000080</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_button_events (1346);0x00000080;0x0;.text.pointer.pointer_button_events (1346);0x00000080</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_open (1347);0x00000118;0x0;.text.pointer.pointer_open (1347);0x00000118</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_set_position (1349);0x00000080;0x0;.text.pointer.pointer_set_position (1349);0x00000080</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_update (1348);0x00000158;0x0;.text.pointer.pointer_update (1348);0x00000158</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_ctl (3015);0x00000008;0x0;.text.terminal_to_serial.terminal_to_serial_ctl (3015);0x00000008</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_init (3011);0x00000078;0x0;.text.terminal_to_serial.terminal_to_serial_init (3011);0x00000078</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_open (3012);0x00000040;0x0;.text.terminal_to_serial.terminal_to_serial_open (3012);0x00000040</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_read (3014);0x00000038;0x0;.text.terminal_to_serial.terminal_to_serial_read (3014);0x00000038</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_write (3013);0x00000038;0x0;.text.terminal_to_serial.terminal_to_serial_write (3013);0x00000038</row>
+			<row>timing_timing.obj;.text.timing.delay_ms (1413);0x00000008;0x0;.text.timing.delay_ms (1413);0x00000008</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_calibrate (1498);0x00000544;0x0;.text.touchscreen.touchscreen_calibrate (1498);0x00000544</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_get_pos (1491);0x00000150;0x0;.text.touchscreen.touchscreen_get_pos (1491);0x00000150</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_open (1489);0x000000c4;0x0;.text.touchscreen.touchscreen_open (1489);0x000000c4</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_set_callback (1497);0x0000000c;0x0;.text.touchscreen.touchscreen_set_callback (1497);0x0000000c</row>
+			<row>ad_touchscreen_to_pointer_touchscreen_to_pointer.obj;.text.touchscreen_to_pointer.touchscreen_to_pointer_get_state (2930);0x0000007c;0x0;.text.touchscreen_to_pointer.touchscreen_to_pointer_get_state (2930);0x0000007c</row>
+			<row>ad_touchscreen_to_pointer_touchscreen_to_pointer.obj;.text.touchscreen_to_pointer.touchscreen_to_pointer_init (2931);0x000000f0;0x0;.text.touchscreen_to_pointer.touchscreen_to_pointer_init (2931);0x000000f0</row>
+			<row>devfs_minimal_write.obj;.text.write.write (3133);0x000000d0;0x0;.text.write.write (3133);0x000000d0</row>
+			<row>color.bmp;color_bmp (3427);0x00038436;0x0;color_bmp (3427);0x00038436</row>
+		</table>
+	</part>
+	<part>
+		<name>Cross References</name>
+		<table>
+			<column>
+				<name>Definition file</name>
+			</column>
+			<column>
+				<name>Definition section</name>
+			</column>
+			<column>
+				<name>Symbol</name>
+			</column>
+			<column>
+				<name>Referenced in</name>
+			</column>
+			<row>MAIN.obj;.text.MAIN.main (1);main;cstart.obj</row>
+			<row>_Exit.obj;.text.libc (3372);_Exit;cstart.obj, exit.obj</row>
+			<row>_sbrk.obj;.text.libc (3271);_sbrk;malloc.obj</row>
+			<row>ad_touchscreen_to_pointer_ad_touchscreen_to_pointer_cfg_instance.obj;.rodata.ad_touchscreen_to_pointer_cfg_instance.ad_touchscreen_to_pointer_instance_table (2949);ad_touchscreen_to_pointer_instance_table;ad_touchscreen_to_pointer_touchscreen_to_pointer.obj</row>
+			<row>ad_touchscreen_to_pointer_touchscreen_to_pointer.obj;.text.touchscreen_to_pointer.touchscreen_to_pointer_init (2931);touchscreen_to_pointer_init;init___framework_init.obj</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320.obj;.text.ad_vga_ili9320.ad_vga_ili9320_init (2913);ad_vga_ili9320_init;init___framework_init.obj</row>
+			<row>ad_vga_ili9320_ad_vga_ili9320_cfg_instance.obj;.rodata.ad_vga_ili9320_cfg_instance.ad_vga_ili9320_instance_table (2924);ad_vga_ili9320_instance_table;ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>clock.obj;.text.libc (3222);clock;timing_timing.obj, touchscreen_touchscreen.obj, drv_ad7843_drv_ad7843.obj, pal_pal_timing.obj</row>
+			<row>clockspersec.obj;.data.libc (3236);__clocks_per_sec;pal_pal_init.obj</row>
+			<row>cspf2ul.obj;.text.libfp (3391);_f_ftou;pal_arch_3000_pal_c3000.obj</row>
+			<row>cstart.obj;.start (1701);_START;MAIN.obj</row>
+			<row>cul2spf.obj;.text.libfp (3382);_f_utof;pal_arch_3000_pal_c3000.obj</row>
+			<row>devfs_minimal_close.obj;.text.close.close (3111);_close;posix_devio_fclose.obj</row>
+			<row>devfs_minimal_close.obj;.text.close.close (3111);close;posix_devio_devio_init.obj</row>
+			<row>devfs_minimal_lseek.obj;.text.lseek._lseek (3176);_lseek;posix_devio_fflush.obj</row>
+			<row>devfs_minimal_open.obj;.text.open.open (1596);_open;posix_devio__fopen.obj</row>
+			<row>devfs_minimal_open.obj;.text.open.open (1596);open;swplatform.obj, posix_devio_devio_init.obj</row>
+			<row>devfs_minimal_write.obj;.text.write.write (3133);_write;posix_devio_fflush.obj, _flsbuf.obj</row>
+			<row>devfs_minimal_write.obj;.text.write.write (3133);write;posix_devio_devio_init.obj</row>
+			<row>div_spf.obj;.text.libfp (3409);_f_div;pal_arch_3000_pal_c3000.obj</row>
+			<row>divmod64.obj;.text.libc (3199);__udiv64;timing_timing.obj, pal_pal_timing.obj</row>
+			<row>drv_ad7843_drv_ad7843.obj;.text.drv_ad7843.ad7843_get_raw (1704);ad7843_get_raw;touchscreen_touchscreen.obj</row>
+			<row>drv_ad7843_drv_ad7843.obj;.text.drv_ad7843.ad7843_open (1703);ad7843_open;touchscreen_touchscreen.obj</row>
+			<row>drv_ad7843_drv_ad7843_cfg_instance.obj;.rodata.drv_ad7843_cfg_instance.drv_ad7843_instance_table (1727);drv_ad7843_instance_table;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_ioport_drv_ioport.obj;.text.drv_ioport.ioport_get_value (116);ioport_get_value;MAIN.obj</row>
+			<row>drv_ioport_drv_ioport.obj;.text.drv_ioport.ioport_open (117);ioport_open;MAIN.obj, swplatform.obj</row>
+			<row>drv_ioport_drv_ioport_cfg_instance.obj;.sbss.drv_ioport_cfg_instance.drv_ioport_instance_table (148);drv_ioport_instance_table;drv_ioport_drv_ioport.obj</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_open (161);led_open;MAIN.obj, swplatform.obj</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_set_intensity (160);led_set_intensity;MAIN.obj</row>
+			<row>drv_led_drv_led.obj;.text.drv_led.led_turn_all_off (157);led_turn_all_off;MAIN.obj</row>
+			<row>drv_led_drv_led_cfg_instance.obj;.rodata.drv_led_cfg_instance.drv_led_instance_table (236);drv_led_instance_table;drv_led_drv_led.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_cs_hi (1739);spi_cs_hi;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_cs_lo (1738);spi_cs_lo;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_get_bus (1750);spi_get_bus;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_open (1733);spi_open;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_release_bus (1751);spi_release_bus;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi.obj;.text.drv_spi.spi_transceive8 (1741);spi_transceive8;drv_ad7843_drv_ad7843.obj</row>
+			<row>drv_spi_drv_spi_cfg_instance.obj;.rodata.drv_spi_cfg_instance.drv_spi_instance_table (2014);drv_spi_instance_table;drv_spi_drv_spi.obj</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_open (248);terminal_open;MAIN.obj, terminal_to_serial_terminal_to_serial.obj</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_read (247);terminal_read;terminal_to_serial_terminal_to_serial.obj</row>
+			<row>drv_terminal_drv_terminal.obj;.text.drv_terminal.terminal_write (246);terminal_write;terminal_to_serial_terminal_to_serial.obj</row>
+			<row>drv_terminal_drv_terminal_cfg_instance.obj;.sbss.drv_terminal_cfg_instance.drv_terminal_instance_table (314);drv_terminal_instance_table;drv_terminal_drv_terminal.obj</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_get_screen (326);vga_16bpp_get_screen;MAIN.obj</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_open (322);vga_16bpp_open;MAIN.obj, swplatform.obj</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_set_resolution (331);vga_16bpp_set_resolution;MAIN.obj</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp.obj;.text.drv_vga_16bpp.vga_16bpp_set_screen (325);vga_16bpp_set_screen;MAIN.obj</row>
+			<row>drv_vga_16bpp_drv_vga_16bpp_cfg_instance.obj;.rodata.drv_vga_16bpp_cfg_instance.drv_vga_16bpp_instance_table (448);drv_vga_16bpp_instance_table;drv_vga_16bpp_drv_vga_16bpp.obj</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_get_screen (465);vga_ili9320_get_screen;ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_open (457);vga_ili9320_open;MAIN.obj, ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_screen_set (463);vga_ili9320_screen_set;ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320.obj;.text.drv_vga_ili9320.vga_ili9320_set_screen (464);vga_ili9320_set_screen;ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>drv_vga_ili9320_drv_vga_ili9320_cfg_instance.obj;.rodata.drv_vga_ili9320_cfg_instance.drv_vga_ili9320_instance_table (589);drv_vga_ili9320_instance_table;drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>errno.obj;.bss.libc (3328);errno;devfs_minimal_open.obj, posix_devio_devio.obj, devfs_minimal_close.obj, devfs_minimal_read.obj, devfs_minimal_write.obj</row>
+			<row>exit.obj;.text.exit.exit (3100);exit;cstart.obj, posix_devio__iob.obj</row>
+			<row>graphics_BitstreamVeraSans10.obj;.rodata.BitstreamVeraSans10.bitstreamverasans10 (740);bitstreamverasans10;MAIN.obj</row>
+			<row>graphics_bpmono8.obj;.rodata.bpmono8.bpmono8 (2115);bpmono8;graphics_graphics_cfg_instance.obj</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_initialize (2183);canvas_initialize;graphics_graphics.obj</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_initialize_extern (2184);canvas_initialize_extern;graphics_graphics.obj</row>
+			<row>graphics_canvas.obj;.text.canvas.canvas_set_rotation (2176);canvas_set_rotation;graphics_graphics.obj</row>
+			<row>graphics_graphics.obj;.bss.graphics.graphics_table (767);graphics_table;ad_vga_ili9320_ad_vga_ili9320.obj</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_fill_canvas (766);graphics_fill_canvas;MAIN.obj</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_get_visible_canvas (753);graphics_get_visible_canvas;MAIN.obj</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_open (749);graphics_open;MAIN.obj, swplatform.obj</row>
+			<row>graphics_graphics.obj;.text.graphics.graphics_set_visible_canvas (752);graphics_set_visible_canvas;MAIN.obj</row>
+			<row>graphics_graphics_cfg_instance.obj;.rodata.graphics_cfg_instance.graphics_instance_table (1280);graphics_instance_table;graphics_graphics.obj</row>
+			<row>graphics_graphics_draw_circle.obj;.text.graphics_draw_circle.graphics_draw_circle (934);graphics_draw_circle;MAIN.obj</row>
+			<row>graphics_graphics_draw_line.obj;.text.graphics_draw_line.graphics_draw_line (956);graphics_draw_line;MAIN.obj</row>
+			<row>graphics_graphics_draw_text.obj;.text.graphics_draw_text.graphics_draw_char (982);graphics_draw_char;MAIN.obj</row>
+			<row>graphics_graphics_draw_text.obj;.text.graphics_draw_text.graphics_draw_string (983);graphics_draw_string;MAIN.obj</row>
+			<row>graphics_graphics_fill_circle.obj;.text.graphics_fill_circle.graphics_fill_circle (1094);graphics_fill_circle;MAIN.obj</row>
+			<row>graphics_graphics_fill_rect.obj;.text.graphics_fill_rect.graphics_fill_rect (1118);graphics_fill_rect;MAIN.obj, graphics_graphics.obj</row>
+			<row>graphics_graphics_fill_triangle.obj;.text.graphics_fill_triangle.graphics_fill_triangle (1145);graphics_fill_triangle;MAIN.obj</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_draw_pixel (1195);graphics_draw_pixel;graphics_graphics_draw_text.obj</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_draw_pixel_alpha (1197);graphics_draw_pixel_alpha;graphics_graphics_draw_text.obj</row>
+			<row>graphics_graphics_pixel_common.obj;.text.graphics_pixel_common.graphics_get_pixel (1199);graphics_get_pixel;MAIN.obj</row>
+			<row>graphics_svg_palette.obj;.data.svg_palette.svg_colors (1270);svg_colors;graphics_graphics.obj, graphics_canvas.obj</row>
+			<row>init___framework_init.obj;.text.__framework_init.framework_init (2891);framework_init;cstart.obj</row>
+			<row>interrupts_interrupts.obj;.bss.interrupts.interrupt_table (1299);interrupt_table;drv_vga_16bpp_drv_vga_16bpp.obj, drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupt_configure (1297);interrupt_configure;drv_vga_16bpp_drv_vga_16bpp.obj, drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupt_register_native (1294);interrupt_register_native;drv_vga_16bpp_drv_vga_16bpp.obj, drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>interrupts_interrupts.obj;.text.interrupts.interrupts_common_handler (1298);interrupts_common_handler;pal_arch_3000_pal_c3000_interrupts.obj</row>
+			<row>malloc.obj;.text.libc (3251);malloc;graphics_canvas.obj, posix_devio__fopen.obj, setvbuf.obj</row>
+			<row>malloc.obj;.text.libc (3252);_dofree;posix_devio_fclose.obj</row>
+			<row>malloc.obj;.text.libc (3252);free;graphics_canvas.obj, posix_devio__fopen.obj, setvbuf.obj</row>
+			<row>misc_spf.obj;.text.libfp (3418);sp_round8_and_normalize;cul2spf.obj</row>
+			<row>mul64.obj;.text.libc (3381);__mul64;timing_timing.obj, pal_pal_timing.obj</row>
+			<row>mul_spf.obj;.text.libfp (3400);_f_mul;pal_arch_3000_pal_c3000.obj</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_clock_init (2036);pal_architecture_clock_init;pal_pal_init.obj</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_interrupt_configure (2035);pal_architecture_interrupt_configure;interrupts_interrupts.obj</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_interrupts_init (2032);pal_architecture_interrupts_init;pal_pal_init.obj</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_processor_init (2034);pal_architecture_processor_init;pal_pal_init.obj</row>
+			<row>pal_arch_3000_pal_c3000.obj;.text.pal_c3000.pal_architecture_timer_interrupt_init (2033);pal_architecture_timer_interrupt_init;pal_pal_init.obj</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_interrupt_disable (638);pal_architecture_interrupt_disable;drv_vga_16bpp_drv_vga_16bpp.obj, drv_vga_ili9320_drv_vga_ili9320.obj, pal_pal_timers.obj</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_interrupt_enable (637);pal_architecture_interrupt_enable;drv_vga_16bpp_drv_vga_16bpp.obj, drv_vga_ili9320_drv_vga_ili9320.obj, pal_pal_timers.obj</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.pal_architecture_set_native_handler (635);pal_architecture_set_native_handler;interrupts_interrupts.obj</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.tsk3000_extract_vector_table (633);tsk3000_extract_vector_table;pal_arch_3000_pal_c3000.obj</row>
+			<row>pal_arch_3000_pal_c3000_interrupts.obj;.text.pal_c3000_interrupts.tsk3000_patch_vector_table (636);tsk3000_patch_vector_table;pal_arch_3000_pal_c3000.obj</row>
+			<row>pal_pal_init.obj;.text.pal_init.pal_init (2902);pal_init;init___framework_init.obj</row>
+			<row>pal_pal_timers.obj;.text.pal_timers.pal_timers_common_handler (703);pal_timers_common_handler;pal_arch_3000_pal_c3000_interrupts.obj</row>
+			<row>pal_pal_timing.obj;.text.pal_timing.pal_delay_ms (2083);pal_delay_ms;timing_timing.obj</row>
+			<row>per_ioport_per_ioport_cfg_instance.obj;.rodata.per_ioport_cfg_instance.per_ioport_instance_table (595);per_ioport_instance_table;drv_ioport_drv_ioport.obj</row>
+			<row>per_led_per_led_cfg_instance.obj;.rodata.per_led_cfg_instance.per_led_instance_table (601);per_led_instance_table;drv_led_drv_led.obj</row>
+			<row>per_spi_per_spi_cfg_instance.obj;.rodata.per_spi_cfg_instance.per_spi_instance_table (2020);per_spi_instance_table;drv_spi_drv_spi.obj</row>
+			<row>per_terminal_per_terminal_cfg_instance.obj;.sdata.per_terminal_cfg_instance.per_terminal_instance_table (607);per_terminal_instance_table;drv_terminal_drv_terminal.obj</row>
+			<row>per_tspen_per_tspen_cfg_instance.obj;.sdata.per_tspen_cfg_instance.per_tspen_instance_table (2026);per_tspen_instance_table;drv_ad7843_drv_ad7843.obj</row>
+			<row>per_vga32_16bpp_per_vga32_16bpp_cfg_instance.obj;.rodata.per_vga32_16bpp_cfg_instance.per_vga32_16bpp_instance_table (613);per_vga32_16bpp_instance_table;drv_vga_16bpp_drv_vga_16bpp.obj</row>
+			<row>per_vga32_ili9320_per_vga32_ili9320_cfg_instance.obj;.rodata.per_vga32_ili9320_cfg_instance.per_vga32_ili9320_instance_table (619);per_vga32_ili9320_instance_table;drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>pointer_pointer.obj;.bss.pointer.pointer_table (1351);pointer_table;ad_touchscreen_to_pointer_touchscreen_to_pointer.obj</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_open (1347);pointer_open;MAIN.obj, swplatform.obj</row>
+			<row>pointer_pointer.obj;.text.pointer.pointer_update (1348);pointer_update;MAIN.obj</row>
+			<row>pointer_pointer_cfg_instance.obj;.rodata.pointer_cfg_instance.pointer_instance_table (1402);pointer_instance_table;pointer_pointer.obj</row>
+			<row>posix_devio__fopen.obj;.text._fopen._fopen (3144);_fopen;posix_devio_freopen.obj</row>
+			<row>posix_devio__iob.obj;.data._iob._iob (2975);_iob;posix_devio_devio_init.obj, posix_devio_fflush.obj, _filbuf.obj</row>
+			<row>posix_devio__iob.obj;.text._iob._doclose (2974);_doclose;exit.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_close (1612);devio_close;devfs_minimal_close.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_getdev (1610);devio_getdev;devfs_minimal_open.obj, devfs_minimal_close.obj, devfs_minimal_read.obj, devfs_minimal_write.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_install (1607);devio_install;terminal_to_serial_terminal_to_serial.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_lookup (1609);devio_lookup;devfs_minimal_open.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_open (1611);devio_open;devfs_minimal_open.obj</row>
+			<row>posix_devio_devio.obj;.text.devio.devio_readwrite (1614);devio_readwrite;devfs_minimal_read.obj, devfs_minimal_write.obj</row>
+			<row>posix_devio_devio_init.obj;.text.devio_init.posix_devio_init (2955);posix_devio_init;init___framework_init.obj</row>
+			<row>posix_devio_fclose.obj;.text.fclose.fclose (2999);fclose;posix_devio__iob.obj, posix_devio_freopen.obj</row>
+			<row>posix_devio_fflush.obj;.text.fflush._fflush (3155);_fflush;posix_devio_fclose.obj, ungetc.obj, _filbuf.obj, _flsbuf.obj</row>
+			<row>posix_devio_freopen.obj;.text.freopen.freopen (2988);freopen;posix_devio_devio_init.obj</row>
+			<row>serial_serial_cfg_instance.obj;.rodata.serial_cfg_instance.serial_instance_table (3094);serial_instance_table;posix_devio_devio_init.obj, terminal_to_serial_terminal_to_serial.obj</row>
+			<row>setvbuf.obj;.text.libc (3242);setvbuf;posix_devio_devio_init.obj</row>
+			<row>strcmp.obj;.text.libc (3345);strcmp;posix_devio_devio.obj</row>
+			<row>strncmp.obj;.text.libc (3354);strncmp;posix_devio_devio.obj</row>
+			<row>terminal_to_serial_terminal_to_serial.obj;.text.terminal_to_serial.terminal_to_serial_init (3011);terminal_to_serial_init;init___framework_init.obj</row>
+			<row>terminal_to_serial_terminal_to_serial_cfg_instance.obj;.rodata.terminal_to_serial_cfg_instance.terminal_to_serial_instance_table (3087);terminal_to_serial_instance_table;terminal_to_serial_terminal_to_serial.obj</row>
+			<row>timing_timing.obj;.text.timing.delay_ms (1413);delay_ms;MAIN.obj, drv_vga_ili9320_drv_vga_ili9320.obj</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_calibrate (1498);touchscreen_calibrate;MAIN.obj</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_get_pos (1491);touchscreen_get_pos;ad_touchscreen_to_pointer_touchscreen_to_pointer.obj</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_open (1489);touchscreen_open;MAIN.obj, ad_touchscreen_to_pointer_touchscreen_to_pointer.obj</row>
+			<row>touchscreen_touchscreen.obj;.text.touchscreen.touchscreen_set_callback (1497);touchscreen_set_callback;MAIN.obj</row>
+			<row>touchscreen_touchscreen_cfg_instance.obj;.rodata.touchscreen_cfg_instance.touchscreen_instance_table (1590);touchscreen_instance_table;touchscreen_touchscreen.obj</row>
+			<row>weakstub.obj;.text.libc (3363);_doexit;exit.obj</row>
+			<row>weakstub.obj;.text.libc (3363);_weakstub;posix_devio_fclose.obj, exit.obj</row>
+		</table>
+	</part>
+	<part>
+		<name>Call Graph</name>
+		<tree>
+			<name>_weakstub [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>write [s0:(24,240)]</name>
+			<child>
+				<name>devio_readwrite [s0:(4,216)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+			<child>
+				<name>devio_getdev *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* devio_getdev [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* __INDIRECT__ [s0:(0,212)]</name>
+			<child>
+				<name>MAIN.c:draw_mark [s0:(28,212)]</name>
+				<child>
+					<name>graphics_set_visible_canvas *</name>
+				</child>
+				<child>
+					<name>graphics_draw_circle [s0:(8,64)]</name>
+					<child>
+						<name>graphics_draw_circle.c:_graphics_draw_circle [s0:(56,56)]</name>
+						<child>
+							<name>__INDIRECT__ *</name>
+						</child>
+					</child>
+				</child>
+				<child>
+					<name>graphics_draw_line *</name>
+				</child>
+				<child>
+					<name>graphics_draw_string [s0:(44,184)]</name>
+					<child>
+						<name>graphics_draw_char *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>vga_16bpp_vsync_interrupt [s0:(80,80)]</name>
+				<child>
+					<name>pal_architecture_interrupt_disable *</name>
+				</child>
+			</child>
+			<child>
+				<name>vga_ili9320_sync_interrupt [s0:(84,84)]</name>
+				<child>
+					<name>pal_architecture_interrupt_enable *</name>
+				</child>
+				<child>
+					<name>pal_architecture_interrupt_disable *</name>
+				</child>
+			</child>
+			<child>
+				<name>vga_ili9320_open *</name>
+			</child>
+			<child>
+				<name>vga_ili9320_set_screen [s0:(12,12)]</name>
+				<child>
+					<name>pal_architecture_interrupt_enable *</name>
+				</child>
+				<child>
+					<name>pal_architecture_interrupt_disable *</name>
+				</child>
+			</child>
+			<child>
+				<name>vga_ili9320_screen_set [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>vga_ili9320_get_screen [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>pal_c3000_interrupts.c:interrupt_handler [s0:(80,84)]</name>
+				<child>
+					<name>interrupts_common_handler [s0:(4,4)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>pal_c3000_interrupts.c:pal_interrupt_clock_handler [s0:(80,96)]</name>
+				<child>
+					<name>pal_timers_common_handler [s0:(16,16)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>touchscreen_open *</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_p1 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_convert_color_to_palette *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_p1 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_p1 *</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_alpha_p1 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p1 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_get_pixel_p1 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_horizontal_p1 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p1 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_vertical_p1 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_p2 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_convert_color_to_palette *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_p2 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_p2 *</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_alpha_p2 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p2 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_get_pixel_p2 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_horizontal_p2 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p2 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_vertical_p2 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_p4 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_convert_color_to_palette *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_p4 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_p4 *</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_alpha_p4 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p4 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_get_pixel_p4 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_horizontal_p4 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_draw_pixel_p4 *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_vertical_p4 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_p8 [s0:(4,4)]</name>
+				<child>
+					<name>canvas.c:_graphics_convert_color_to_palette *</name>
+				</child>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_alpha_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_get_pixel_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_horizontal_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_vertical_p8 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_to_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_convert_color_from_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_pixel_alpha_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_get_pixel_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_horizontal_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>canvas.c:_graphics_draw_vertical_rgb888 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_graphics_draw_pixel_alpha_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_graphics_get_pixel_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_graphics_draw_horizontal_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_graphics_draw_vertical_rgb565 [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>touchscreen_to_pointer.c:touchscreen_to_pointer_get_state [s0:(20,64)]</name>
+				<child>
+					<name>touchscreen_get_pos [s0:(16,44)]</name>
+					<child>
+						<name>ad7843_get_raw *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>terminal_to_serial.c:terminal_to_serial_open [s0:(8,8)]</name>
+				<child>
+					<name>terminal_open *</name>
+				</child>
+			</child>
+			<child>
+				<name>terminal_to_serial.c:terminal_to_serial_write [s0:(8,12)]</name>
+				<child>
+					<name>terminal_write [s0:(4,4)]</name>
+					<child>
+						<name>drv_terminal.c:terminal_putchar_internal [s0:(0,0)]</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>terminal_to_serial.c:terminal_to_serial_read [s0:(8,12)]</name>
+				<child>
+					<name>terminal_read [s0:(4,4)]</name>
+					<child>
+						<name>drv_terminal.c:terminal_getchar_internal [s0:(0,0)]</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>terminal_to_serial.c:terminal_to_serial_ctl [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* terminal_open [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* ad7843_get_raw [s0:(28,28)]</name>
+			<child>
+				<name>spi_cs_lo *</name>
+			</child>
+			<child>
+				<name>spi_cs_hi *</name>
+			</child>
+			<child>
+				<name>spi_transceive8 *</name>
+			</child>
+			<child>
+				<name>spi_get_bus *</name>
+			</child>
+			<child>
+				<name>spi_release_bus *</name>
+			</child>
+			<child>
+				<name>clock *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* clock [s0:(0,0)]</name>
+			<child>
+				<name>_clock [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* spi_release_bus [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* spi_get_bus [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* spi_transceive8 [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* spi_cs_hi [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* spi_cs_lo [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* canvas.c:_graphics_draw_pixel_p4 [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* canvas.c:_graphics_draw_pixel_p2 [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* canvas.c:_graphics_draw_pixel_p1 [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* canvas.c:_graphics_convert_color_to_palette [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* touchscreen_open [s0:(12,28)]</name>
+			<child>
+				<name>ad7843_open [s0:(12,16)]</name>
+				<child>
+					<name>spi_open [s0:(4,4)]</name>
+					<child>
+						<name>spi_set_baudrate [s0:(0,0)]</name>
+					</child>
+				</child>
+				<child>
+					<name>spi_cs_lo *</name>
+				</child>
+				<child>
+					<name>spi_cs_hi *</name>
+				</child>
+				<child>
+					<name>spi_transceive8 *</name>
+				</child>
+				<child>
+					<name>spi_get_bus *</name>
+				</child>
+				<child>
+					<name>spi_release_bus *</name>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* vga_ili9320_open [s0:(16,44)]</name>
+			<child>
+				<name>drv_vga_ili9320.c:_ili9320_init [s0:(16,28)]</name>
+				<child>
+					<name>drv_vga_ili9320.c:_ili9320_write *</name>
+				</child>
+				<child>
+					<name>delay_ms *</name>
+				</child>
+			</child>
+			<child>
+				<name>drv_vga_ili9320.c:_ili9320_write *</name>
+			</child>
+			<child>
+				<name>interrupt_register_native *</name>
+			</child>
+			<child>
+				<name>interrupt_configure *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* interrupt_configure [s0:(4,4)]</name>
+			<child>
+				<name>pal_architecture_interrupt_configure [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* interrupt_register_native [s0:(12,16)]</name>
+			<child>
+				<name>pal_architecture_set_native_handler [s0:(4,4)]</name>
+				<child>
+					<name>tsk3000_architecture_set_native_handler *</name>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* tsk3000_architecture_set_native_handler [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* delay_ms [s0:(0,12)]</name>
+			<child>
+				<name>pal_delay_ms [s0:(12,12)]</name>
+				<child>
+					<name>__udiv64 [s0:(0,0)]</name>
+				</child>
+				<child>
+					<name>clock *</name>
+				</child>
+				<child>
+					<name>__mul64 [s0:(0,0)]</name>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* drv_vga_ili9320.c:_ili9320_write [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* pal_architecture_interrupt_enable [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* pal_architecture_interrupt_disable [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* graphics_draw_char [s0:(36,140)]</name>
+			<child>
+				<name>graphics_draw_text.c:_graphics_draw_glyph [s0:(80,104)]</name>
+				<child>
+					<name>graphics_draw_pixel [s0:(16,16)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+				</child>
+				<child>
+					<name>graphics_draw_pixel_alpha [s0:(24,24)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* graphics_draw_line [s0:(12,76)]</name>
+			<child>
+				<name>graphics_draw_line.c:_graphics_draw_line [s0:(64,64)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* graphics_set_visible_canvas [s0:(4,4)]</name>
+			<child>
+				<name>__INDIRECT__ *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>close [s0:(4,4)]</name>
+			<child>
+				<name>devio_getdev *</name>
+			</child>
+			<child>
+				<name>devio_close [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>exit [s0:(8,56)]</name>
+			<child>
+				<name>_doclose [s0:(12,48)]</name>
+				<child>
+					<name>fclose *</name>
+				</child>
+			</child>
+			<child>
+				<name>_doexit [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_Exit [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* fclose [s0:(12,36)]</name>
+			<child>
+				<name>_close [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>_fflush [s0:(24,24)]</name>
+				<child>
+					<name>_write [s0:(0,0)]</name>
+				</child>
+				<child>
+					<name>_lseek [s0:(0,0)]</name>
+				</child>
+			</child>
+			<child>
+				<name>_dofree [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>framework_init [s0:(4,68)]</name>
+			<child>
+				<name>pal_init [s0:(4,16)]</name>
+				<child>
+					<name>pal_architecture_interrupts_init [s0:(4,8)]</name>
+					<child>
+						<name>tsk3000_patch_vector_table [s0:(4,4)]</name>
+						<child>
+							<name>tsk3000_architecture_set_native_handler *</name>
+						</child>
+					</child>
+					<child>
+						<name>tsk3000_extract_vector_table [s0:(0,0)]</name>
+					</child>
+				</child>
+				<child>
+					<name>pal_architecture_timer_interrupt_init [s0:(4,12)]</name>
+					<child>
+						<name>tsk3000_set_interval_timer [s0:(4,8)]</name>
+						<child>
+							<name>_f_utof [s0:(4,4)]</name>
+							<child>
+								<name>sp_round8_and_normalize [s0:(0,0)]</name>
+							</child>
+						</child>
+						<child>
+							<name>_f_ftou [s0:(0,0)]</name>
+						</child>
+						<child>
+							<name>_f_mul [s0:(0,0)]</name>
+						</child>
+						<child>
+							<name>_f_div [s0:(0,0)]</name>
+						</child>
+					</child>
+				</child>
+				<child>
+					<name>pal_architecture_processor_init [s0:(0,0)]</name>
+				</child>
+				<child>
+					<name>pal_architecture_clock_init [s0:(0,0)]</name>
+				</child>
+			</child>
+			<child>
+				<name>ad_vga_ili9320_init [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>touchscreen_to_pointer_init [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>posix_devio_init [s0:(0,64)]</name>
+				<child>
+					<name>devio_init.c:stdio_init [s0:(8,64)]</name>
+					<child>
+						<name>freopen [s0:(20,56)]</name>
+						<child>
+							<name>fclose *</name>
+						</child>
+						<child>
+							<name>_fopen [s0:(12,32)]</name>
+							<child>
+								<name>_open [s0:(0,0)]</name>
+							</child>
+							<child>
+								<name>malloc *</name>
+							</child>
+						</child>
+					</child>
+					<child>
+						<name>setvbuf [s0:(24,44)]</name>
+						<child>
+							<name>malloc *</name>
+						</child>
+						<child>
+							<name>free [s0:(16,16)]</name>
+							<child>
+								<name>_sbrk *</name>
+							</child>
+						</child>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>terminal_to_serial_init [s0:(0,24)]</name>
+				<child>
+					<name>devio_install [s0:(24,24)]</name>
+					<child>
+						<name>strcmp *</name>
+					</child>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* strcmp [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* _sbrk [s0:(0,0)]</name>
+		</tree>
+		<tree>
+			<name>* malloc [s0:(20,20)]</name>
+			<child>
+				<name>_sbrk *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>open [s0:(20,236)]</name>
+			<child>
+				<name>devio_lookup [s0:(16,16)]</name>
+				<child>
+					<name>strcmp *</name>
+				</child>
+				<child>
+					<name>strncmp [s0:(0,0)]</name>
+				</child>
+			</child>
+			<child>
+				<name>devio_open [s0:(4,216)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+			<child>
+				<name>devio_getdev *</name>
+			</child>
+		</tree>
+		<tree>
+			<name>main [s0:(28,372)]</name>
+			<child>
+				<name>set_all_leds [s0:(28,28)]</name>
+				<child>
+					<name>led_set_intensity [s0:(0,0)]</name>
+				</child>
+			</child>
+			<child>
+				<name>ioport_get_value [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>ioport_open [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>led_turn_all_off [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>led_open [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>terminal_open *</name>
+			</child>
+			<child>
+				<name>vga_16bpp_open [s0:(8,24)]</name>
+				<child>
+					<name>vga_16bpp_set_resolution *</name>
+				</child>
+				<child>
+					<name>pal_architecture_interrupt_enable *</name>
+				</child>
+				<child>
+					<name>interrupt_register_native *</name>
+				</child>
+				<child>
+					<name>interrupt_configure *</name>
+				</child>
+			</child>
+			<child>
+				<name>vga_16bpp_set_resolution *</name>
+			</child>
+			<child>
+				<name>vga_16bpp_set_screen [s0:(4,4)]</name>
+				<child>
+					<name>pal_architecture_interrupt_enable *</name>
+				</child>
+			</child>
+			<child>
+				<name>vga_16bpp_get_screen [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>vga_ili9320_open *</name>
+			</child>
+			<child>
+				<name>graphics_open [s0:(32,276)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+				<child>
+					<name>canvas_set_rotation [s0:(0,4)]</name>
+					<child>
+						<name>canvas.c:_canvas_set_rotation *</name>
+					</child>
+				</child>
+				<child>
+					<name>canvas_initialize [s0:(4,8)]</name>
+					<child>
+						<name>canvas.c:_canvas_set_rotation *</name>
+					</child>
+				</child>
+				<child>
+					<name>canvas_initialize_extern [s0:(32,244)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+					<child>
+						<name>canvas.c:_canvas_set_rotation *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>graphics_set_visible_canvas *</name>
+			</child>
+			<child>
+				<name>graphics_fill_canvas [s0:(12,288)]</name>
+				<child>
+					<name>graphics_fill_rect *</name>
+				</child>
+			</child>
+			<child>
+				<name>graphics_get_visible_canvas [s0:(0,0)]</name>
+			</child>
+			<child>
+				<name>graphics_draw_line *</name>
+			</child>
+			<child>
+				<name>graphics_draw_char *</name>
+			</child>
+			<child>
+				<name>graphics_fill_circle [s0:(8,280)]</name>
+				<child>
+					<name>graphics_fill_circle.c:_graphics_fill_circle [s0:(60,272)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>graphics_fill_rect *</name>
+			</child>
+			<child>
+				<name>graphics_fill_triangle [s0:(20,344)]</name>
+				<child>
+					<name>graphics_fill_triangle.c:_graphics_fill_triangle [s0:(112,324)]</name>
+					<child>
+						<name>__INDIRECT__ *</name>
+					</child>
+					<child>
+						<name>graphics_fill_triangle.c:_init_struct [s0:(0,0)]</name>
+					</child>
+					<child>
+						<name>graphics_fill_triangle.c:_get_next_x [s0:(0,0)]</name>
+					</child>
+				</child>
+			</child>
+			<child>
+				<name>graphics_get_pixel [s0:(8,220)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+			<child>
+				<name>pointer_open [s0:(20,232)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+			<child>
+				<name>pointer_update [s0:(60,272)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+				<child>
+					<name>pointer.c:pointer_button_events [s0:(0,0)]</name>
+				</child>
+				<child>
+					<name>pointer_set_position [s0:(0,0)]</name>
+				</child>
+			</child>
+			<child>
+				<name>delay_ms *</name>
+			</child>
+			<child>
+				<name>touchscreen_open *</name>
+			</child>
+			<child>
+				<name>touchscreen_calibrate [s0:(36,248)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+				<child>
+					<name>ad7843_get_raw *</name>
+				</child>
+				<child>
+					<name>clock *</name>
+				</child>
+			</child>
+			<child>
+				<name>touchscreen_set_callback [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* graphics_fill_rect [s0:(12,276)]</name>
+			<child>
+				<name>graphics_fill_rect.c:_graphics_fill_rect [s0:(52,264)]</name>
+				<child>
+					<name>__INDIRECT__ *</name>
+				</child>
+			</child>
+		</tree>
+		<tree>
+			<name>* canvas.c:_canvas_set_rotation [s0:(4,4)]</name>
+			<child>
+				<name>_canvas_unset_rotation [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<tree>
+			<name>* vga_16bpp_set_resolution [s0:(16,16)]</name>
+			<child>
+				<name>drv_vga_16bpp.c:_vga_16bpp_set_resolution [s0:(0,0)]</name>
+			</child>
+		</tree>
+		<footNote></footNote>
+		<table>
+			<row>*;the function has a separate tree since it has 2 or more callers</row>
+			<row>[s&lt;n&gt;:(&lt;s&gt;,&lt;a&gt;), ...];for stack &lt;n&gt; : (stack usage by the function itself, stack usage by the function and all its callees)</row>
+		</table>
+	</part>
+	<part>
+		<name>Overlay</name>
+	</part>
+	<part>
+		<name>Locate Result</name>
+		<part>
+			<name>Task entry address</name>
+			<table>
+				<row>symbol;_START</row>
+				<row>absolute address;0x0</row>
+			</table>
+		</part>
+		<part>
+			<name>Sections</name>
+			<table>
+				<name>Space system:sw:main (MAU = 8bit)</name>
+				<column>
+					<name>Chip</name>
+				</column>
+				<column>
+					<name>Group</name>
+				</column>
+				<column>
+					<name>Section</name>
+				</column>
+				<column>
+					<name>Size (MAU)</name>
+				</column>
+				<column>
+					<name>Space addr</name>
+				</column>
+				<column>
+					<name>Chip addr</name>
+				</column>
+				<column>
+					<name>Alignment</name>
+				</column>
+				<row>system:TSK3000_1;;.start (1701);0x00000008;0x0;0x0;0x00000004</row>
+				<row>system:TSK3000_1;;[.sdata.MAIN.b] (3437);0x00000004;0x00000008;0x00000008;0x00000004</row>
+				<row>system:TSK3000_1;;[.sdata.MAIN.c] (3438);0x00000004;0x0000000c;0x0000000c;0x00000004</row>
+				<row>system:TSK3000_1;;[.sdata.MAIN.cal1] (3439);0x00000004;0x00000010;0x00000010;0x00000004</row>
+				<row>system:TSK3000_1;;[.sdata.devio_init.$str] (3444);0x00000003;0x00000014;0x00000014;0x00000004</row>
+				<row>system:TSK3000_1;;.alignment_protection (3449);0x00000001;0x00000017;0x00000017;0x00000001</row>
+				<row>system:TSK3000_1;;[.sdata.per_terminal_cfg_instance.per_terminal_instance_table] (3441);0x00000004;0x00000018;0x00000018;0x00000004</row>
+				<row>system:TSK3000_1;;[.sdata.per_tspen_cfg_instance.per_tspen_instance_table] (3443);0x00000004;0x0000001c;0x0000001c;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.BitstreamVeraSans10.bitstreamverasans10 (740);0x00000010;0x00000020;0x00000020;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.MAIN.$str (22);0x00000017;0x00000030;0x00000030;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.ad_touchscreen_to_pointer_cfg_instance.ad_touchscreen_to_pointer_instance_table (2949);0x00000008;0x00000048;0x00000048;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.ad_vga_ili9320_cfg_instance.ad_vga_ili9320_instance_table (2924);0x00000008;0x00000050;0x00000050;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.bpmono8.bpmono8 (2115);0x00000010;0x00000058;0x00000058;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.canvas._graphics_draw_pixel_alpha_rgb565 (2161);0x0000003c;0x00000068;0x00000068;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.devio.$str (1617);0x00000006;0x000000a4;0x000000a4;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_ad7843_cfg_instance.drv_ad7843_instance_table (1727);0x0000000c;0x000000ac;0x000000ac;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_led_cfg_instance.drv_led_instance_table (236);0x00000008;0x000000b8;0x000000b8;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_spi_cfg_instance.drv_spi_instance_table (2014);0x00000010;0x000000c0;0x000000c0;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_vga_16bpp.vga_16bpp_set_resolution (332);0x0000001c;0x000000d0;0x000000d0;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_vga_16bpp_cfg_instance.drv_vga_16bpp_instance_table (448);0x00000014;0x000000ec;0x000000ec;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0000 (625);0x00000008;0x00000100;0x00000100;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.per_ioport_cfg_instance.per_ioport_instance_table (595);0x0000000c;0x00000108;0x00000108;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.per_led_cfg_instance.per_led_instance_table (601);0x00000008;0x00000114;0x00000114;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.per_vga32_16bpp_cfg_instance.per_vga32_16bpp_instance_table (613);0x00000008;0x0000011c;0x0000011c;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0028 (626);0x00000008;0x00000128;0x00000128;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0030 (627);0x00000008;0x00000130;0x00000130;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0038 (628);0x00000008;0x00000138;0x00000138;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0040 (629);0x00000008;0x00000140;0x00000140;0x00000004</row>
+				<row>system:TSK3000_1;intvec;.text.intvec_0048 (630);0x00000008;0x00000148;0x00000148;0x00000004</row>
+				<row>system:TSK3000_1;;[.data._iob._iob] (3445);0x000000c8;0x00000150;0x00000150;0x00000004</row>
+				<row>system:TSK3000_1;;[.data.drv_vga_ili9320.init_ili9320] (3440);0x0000014a;0x00000218;0x00000218;0x00000004</row>
+				<row>system:TSK3000_1;;[.data.libc] (3447);0x00000004;0x00000364;0x00000364;0x00000004</row>
+				<row>system:TSK3000_1;;[.data.libc] (3446);0x00000008;0x00000368;0x00000368;0x00000004</row>
+				<row>system:TSK3000_1;;[.data.svg_palette.svg_colors] (3442);0x00000400;0x00000370;0x00000370;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.BitstreamVeraSans10.bitstreamverasans10_data (739);0x000016c4;0x00000770;0x00000770;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.bpmono8.bpmono8_data (2114);0x00000a48;0x00001e34;0x00001e34;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.drv_vga_ili9320_cfg_instance.drv_vga_ili9320_instance_table (589);0x00000028;0x0000287c;0x0000287c;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.graphics_cfg_instance.graphics_instance_table (1280);0x00000054;0x000028a4;0x000028a4;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.per_spi_cfg_instance.per_spi_instance_table (2020);0x00000010;0x000028f8;0x000028f8;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.per_vga32_ili9320_cfg_instance.per_vga32_ili9320_instance_table (619);0x00000008;0x00002908;0x00002908;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.pointer.button_table (1350);0x00000020;0x00002910;0x00002910;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.pointer_cfg_instance.pointer_instance_table (1402);0x00000018;0x00002930;0x00002930;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.serial_cfg_instance.$str (3093);0x00000009;0x00002948;0x00002948;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.serial_cfg_instance.serial_instance_table (3094);0x00000008;0x00002954;0x00002954;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.terminal_to_serial_cfg_instance.terminal_to_serial_instance_table (3087);0x00000008;0x0000295c;0x0000295c;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.touchscreen.touchscreen_calibrate (1499);0x00000048;0x00002964;0x00002964;0x00000004</row>
+				<row>system:TSK3000_1;;.rodata.touchscreen_cfg_instance.touchscreen_instance_table (1590);0x00000024;0x000029ac;0x000029ac;0x00000004</row>
+				<row>system:TSK3000_1;;.text.MAIN.draw_mark (2);0x000000c4;0x000029d0;0x000029d0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.MAIN.main (1);0x000008c0;0x00002a94;0x00002a94;0x00000004</row>
+				<row>system:TSK3000_1;;.text.MAIN.set_all_leds (3);0x000000a4;0x00003354;0x00003354;0x00000004</row>
+				<row>system:TSK3000_1;;.text.__framework_init.framework_init (2891);0x00000034;0x000033f8;0x000033f8;0x00000004</row>
+				<row>system:TSK3000_1;;.text._fopen._fopen (3144);0x00000120;0x0000342c;0x0000342c;0x00000004</row>
+				<row>system:TSK3000_1;;.text._iob._doclose (2974);0x00000050;0x0000354c;0x0000354c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.ad_vga_ili9320.ad_vga_ili9320_init (2913);0x00000054;0x0000359c;0x0000359c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._canvas_set_rotation (2175);0x00000144;0x000035f0;0x000035f0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._canvas_unset_rotation (2174);0x000000c8;0x00003734;0x00003734;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_p1 (2128);0x0000001c;0x000037fc;0x000037fc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_p2 (2135);0x0000001c;0x00003818;0x00003818;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_p4 (2142);0x0000001c;0x00003834;0x00003834;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_p8 (2149);0x0000001c;0x00003850;0x00003850;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_rgb565 (2158);0x0000002c;0x0000386c;0x0000386c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_from_rgb888 (2167);0x00000008;0x00003898;0x00003898;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_p1 (2127);0x00000038;0x000038a0;0x000038a0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_p2 (2134);0x00000038;0x000038d8;0x000038d8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_p4 (2141);0x00000038;0x00003910;0x00003910;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_p8 (2148);0x00000038;0x00003948;0x00003948;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_palette (2123);0x000000fc;0x00003980;0x00003980;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_rgb565 (2157);0x00000024;0x00003a7c;0x00003a7c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_convert_color_to_rgb888 (2166);0x00000008;0x00003aa0;0x00003aa0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_p1 (2132);0x00000134;0x00003aa8;0x00003aa8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_p2 (2139);0x00000160;0x00003bdc;0x00003bdc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_p4 (2146);0x00000148;0x00003d3c;0x00003d3c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_p8 (2153);0x000000dc;0x00003e84;0x00003e84;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_rgb565 (2163);0x000000bc;0x00003f60;0x00003f60;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_horizontal_rgb888 (2171);0x00000040;0x0000401c;0x0000401c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_p1 (2130);0x0000002c;0x0000405c;0x0000405c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_p2 (2137);0x0000002c;0x00004088;0x00004088;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_p4 (2144);0x0000002c;0x000040b4;0x000040b4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_p8 (2151);0x00000030;0x000040e0;0x000040e0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_rgb565 (2160);0x00000200;0x00004110;0x00004110;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_alpha_rgb888 (2169);0x00000030;0x00004310;0x00004310;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_p1 (2129);0x0000006c;0x00004340;0x00004340;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_p2 (2136);0x0000006c;0x000043ac;0x000043ac;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_p4 (2143);0x00000068;0x00004418;0x00004418;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_p8 (2150);0x0000001c;0x00004480;0x00004480;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_rgb565 (2159);0x00000020;0x0000449c;0x0000449c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_pixel_rgb888 (2168);0x00000020;0x000044bc;0x000044bc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_p1 (2133);0x000000dc;0x000044dc;0x000044dc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_p2 (2140);0x000000ac;0x000045b8;0x000045b8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_p4 (2147);0x00000098;0x00004664;0x00004664;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_p8 (2154);0x0000003c;0x000046fc;0x000046fc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_rgb565 (2164);0x00000048;0x00004738;0x00004738;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_draw_vertical_rgb888 (2172);0x00000048;0x00004780;0x00004780;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_p1 (2131);0x00000050;0x000047c8;0x000047c8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_p2 (2138);0x0000004c;0x00004818;0x00004818;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_p4 (2145);0x00000044;0x00004864;0x00004864;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_p8 (2152);0x0000001c;0x000048a8;0x000048a8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_rgb565 (2162);0x00000020;0x000048c4;0x000048c4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas._graphics_get_pixel_rgb888 (2170);0x00000020;0x000048e4;0x000048e4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas.canvas_initialize (2183);0x00000390;0x00004904;0x00004904;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas.canvas_initialize_extern (2184);0x0000010c;0x00004c94;0x00004c94;0x00000004</row>
+				<row>system:TSK3000_1;;.text.canvas.canvas_set_rotation (2176);0x00000008;0x00004da0;0x00004da0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.close.close (3111);0x00000054;0x00004da8;0x00004da8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.cstart (1702);0x000000b0;0x00004dfc;0x00004dfc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_close (1612);0x00000008;0x00004eac;0x00004eac;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_getdev (1610);0x00000034;0x00004eb4;0x00004eb4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_install (1607);0x000000b4;0x00004ee8;0x00004ee8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_lookup (1609);0x00000098;0x00004f9c;0x00004f9c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_open (1611);0x00000040;0x00005034;0x00005034;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio.devio_readwrite (1614);0x0000004c;0x00005074;0x00005074;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio_init.posix_devio_init (2955);0x00000008;0x000050c0;0x000050c0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.devio_init.stdio_init (2956);0x00000054;0x000050c8;0x000050c8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_ad7843.ad7843_get_raw (1704);0x00000214;0x0000511c;0x0000511c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_ad7843.ad7843_open (1703);0x00000134;0x00005330;0x00005330;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_ioport.ioport_get_value (116);0x0000007c;0x00005464;0x00005464;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_ioport.ioport_open (117);0x000000a8;0x000054e0;0x000054e0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_led.led_open (161);0x000000a4;0x00005588;0x00005588;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_led.led_set_intensity (160);0x00000014;0x0000562c;0x0000562c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_led.led_turn_all_off (157);0x00000034;0x00005640;0x00005640;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_cs_hi (1739);0x00000018;0x00005674;0x00005674;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_cs_lo (1738);0x0000001c;0x0000568c;0x0000568c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_get_bus (1750);0x00000194;0x000056a8;0x000056a8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_open (1733);0x000000e8;0x0000583c;0x0000583c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_release_bus (1751);0x000000e8;0x00005924;0x00005924;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_set_baudrate (1734);0x00000040;0x00005a0c;0x00005a0c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_spi.spi_transceive8 (1741);0x00000070;0x00005a4c;0x00005a4c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_terminal.terminal_getchar_internal (244);0x00000028;0x00005abc;0x00005abc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_terminal.terminal_open (248);0x00000038;0x00005ae4;0x00005ae4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_terminal.terminal_putchar_internal (242);0x00000028;0x00005b1c;0x00005b1c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_terminal.terminal_read (247);0x00000064;0x00005b44;0x00005b44;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_terminal.terminal_write (246);0x0000004c;0x00005ba8;0x00005ba8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp._vga_16bpp_set_resolution (320);0x000001b8;0x00005bf4;0x00005bf4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp.vga_16bpp_get_screen (326);0x00000008;0x00005dac;0x00005dac;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp.vga_16bpp_open (322);0x000000d4;0x00005db4;0x00005db4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp.vga_16bpp_set_resolution (331);0x00000144;0x00005e88;0x00005e88;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp.vga_16bpp_set_screen (325);0x00000058;0x00005fcc;0x00005fcc;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_16bpp.vga_16bpp_vsync_interrupt (321);0x000000f4;0x00006024;0x00006024;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320._ili9320_init (455);0x00000064;0x00006118;0x00006118;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320._ili9320_write (454);0x00000018;0x0000617c;0x0000617c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320.vga_ili9320_get_screen (465);0x00000008;0x00006194;0x00006194;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320.vga_ili9320_open (457);0x00000524;0x0000619c;0x0000619c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320.vga_ili9320_screen_set (463);0x00000030;0x000066c0;0x000066c0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320.vga_ili9320_set_screen (464);0x0000014c;0x000066f0;0x000066f0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.drv_vga_ili9320.vga_ili9320_sync_interrupt (456);0x00000158;0x0000683c;0x0000683c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.exit.exit (3100);0x00000030;0x00006994;0x00006994;0x00000004</row>
+				<row>system:TSK3000_1;;.text.fclose.fclose (2999);0x00000068;0x000069c4;0x000069c4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.fflush._fflush (3155);0x000000fc;0x00006a2c;0x00006a2c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.freopen.freopen (2988);0x00000080;0x00006b28;0x00006b28;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics.graphics_fill_canvas (766);0x00000030;0x00006ba8;0x00006ba8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics.graphics_get_visible_canvas (753);0x00000008;0x00006bd8;0x00006bd8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics.graphics_open (749);0x0000022c;0x00006be0;0x00006be0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics.graphics_set_visible_canvas (752);0x00000064;0x00006e0c;0x00006e0c;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_circle._graphics_draw_circle (935);0x00000340;0x00006e70;0x00006e70;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_circle.graphics_draw_circle (934);0x000000b4;0x000071b0;0x000071b0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_line._graphics_draw_line (957);0x0000046c;0x00007264;0x00007264;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_line.graphics_draw_line (956);0x000000e8;0x000076d0;0x000076d0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_text._graphics_draw_glyph (981);0x000002fc;0x000077b8;0x000077b8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_text.graphics_draw_char (982);0x000000e4;0x00007ab4;0x00007ab4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_draw_text.graphics_draw_string (983);0x000000b8;0x00007b98;0x00007b98;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_fill_circle._graphics_fill_circle (1095);0x00000254;0x00007c50;0x00007c50;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_fill_circle.graphics_fill_circle (1094);0x000000b4;0x00007ea4;0x00007ea4;0x00000004</row>
+				<row>system:TSK3000_1;;.text.graphics_fill_triangle._init_struct (1148);0x00000088;0x00007f58;0x00007f58;0x00000004</row>
+				<row>system:TSK3000_1;;.text.libc (3372);0x00000008;0x00007fe0;0x00007fe0;0x00000004</row>
+				<row>system:TSK3000_1;;.text.libc (3363);0x00000008;0x00007fe8;0x00007fe8;0x00000004</row>
+				<row>system:TSK3000_1;;.text.libc (3222);0x0000000c;0x00007ff0;0x00007ff0;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_fill_rect._graphics_fill_rect (1119);0x00000190;0x01000000;0x0;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_fill_rect.graphics_fill_rect (1118);0x000000f8;0x01000190;0x00000190;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_fill_triangle._get_next_x (1147);0x000000c0;0x01000288;0x00000288;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_fill_triangle._graphics_fill_triangle (1146);0x000005b4;0x01000348;0x00000348;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_fill_triangle.graphics_fill_triangle (1145);0x0000013c;0x010008fc;0x000008fc;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_pixel_common.graphics_draw_pixel (1195);0x00000120;0x01000a38;0x00000a38;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_pixel_common.graphics_draw_pixel_alpha (1197);0x00000130;0x01000b58;0x00000b58;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.graphics_pixel_common.graphics_get_pixel (1199);0x000000d4;0x01000c88;0x00000c88;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.interrupts.interrupt_configure (1297);0x00000098;0x01000d5c;0x00000d5c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.interrupts.interrupt_register_native (1294);0x00000068;0x01000df4;0x00000df4;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.interrupts.interrupts_common_handler (1298);0x00000034;0x01000e5c;0x00000e5c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3223);0x0000001c;0x01000e90;0x00000e90;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3345);0x00000024;0x01000eac;0x00000eac;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3381);0x0000002c;0x01000ed0;0x00000ed0;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3354);0x00000040;0x01000efc;0x00000efc;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3271);0x00000048;0x01000f3c;0x00000f3c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3199);0x000000d0;0x01000f84;0x00000f84;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3252);0x000000e8;0x01001054;0x00001054;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3242);0x000000f4;0x0100113c;0x0000113c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libc (3251);0x0000020c;0x01001230;0x00001230;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libfp (3391);0x00000058;0x0100143c;0x0000143c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libfp (3418);0x00000060;0x01001494;0x00001494;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libfp (3382);0x00000124;0x010014f4;0x000014f4;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libfp (3409);0x00000138;0x01001618;0x00001618;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.libfp (3400);0x00000180;0x01001750;0x00001750;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.lseek._lseek (3176);0x00000008;0x010018d0;0x000018d0;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.open.open (1596);0x00000084;0x010018d8;0x000018d8;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.pal_architecture_clock_init (2036);0x00000008;0x0100195c;0x0000195c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.pal_architecture_interrupt_configure (2035);0x00000028;0x01001964;0x00001964;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.pal_architecture_interrupts_init (2032);0x00000050;0x0100198c;0x0000198c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.pal_architecture_processor_init (2034);0x00000008;0x010019dc;0x000019dc;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.pal_architecture_timer_interrupt_init (2033);0x0000004c;0x010019e4;0x000019e4;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000.tsk3000_set_interval_timer (2037);0x00000058;0x01001a30;0x00001a30;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.interrupt_handler (631);0x000000d0;0x01001a88;0x00001a88;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.pal_architecture_interrupt_disable (638);0x00000068;0x01001b58;0x00001b58;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.pal_architecture_interrupt_enable (637);0x00000064;0x01001bc0;0x00001bc0;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.pal_architecture_set_native_handler (635);0x00000048;0x01001c24;0x00001c24;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.pal_interrupt_clock_handler (632);0x000000c8;0x01001c6c;0x00001c6c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.tsk3000_architecture_set_native_handler (634);0x0000002c;0x01001d34;0x00001d34;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.tsk3000_extract_vector_table (633);0x00000008;0x01001d60;0x00001d60;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_c3000_interrupts.tsk3000_patch_vector_table (636);0x00000060;0x01001d68;0x00001d68;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_init.pal_init (2902);0x00000054;0x01001dc8;0x00001dc8;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_timers.pal_timers_common_handler (703);0x000000f0;0x01001e1c;0x00001e1c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pal_timing.pal_delay_ms (2083);0x00000080;0x01001f0c;0x00001f0c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pointer.pointer_button_events (1346);0x00000080;0x01001f8c;0x00001f8c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pointer.pointer_open (1347);0x00000118;0x0100200c;0x0000200c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pointer.pointer_set_position (1349);0x00000080;0x01002124;0x00002124;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.pointer.pointer_update (1348);0x00000158;0x010021a4;0x000021a4;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.terminal_to_serial.terminal_to_serial_ctl (3015);0x00000008;0x010022fc;0x000022fc;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.terminal_to_serial.terminal_to_serial_init (3011);0x00000078;0x01002304;0x00002304;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.terminal_to_serial.terminal_to_serial_open (3012);0x00000040;0x0100237c;0x0000237c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.terminal_to_serial.terminal_to_serial_read (3014);0x00000038;0x010023bc;0x000023bc;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.terminal_to_serial.terminal_to_serial_write (3013);0x00000038;0x010023f4;0x000023f4;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.timing.delay_ms (1413);0x00000008;0x0100242c;0x0000242c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen.touchscreen_calibrate (1498);0x00000544;0x01002434;0x00002434;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen.touchscreen_get_pos (1491);0x00000150;0x01002978;0x00002978;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen.touchscreen_open (1489);0x000000c4;0x01002ac8;0x00002ac8;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen.touchscreen_set_callback (1497);0x0000000c;0x01002b8c;0x00002b8c;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen_to_pointer.touchscreen_to_pointer_get_state (2930);0x0000007c;0x01002b98;0x00002b98;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.touchscreen_to_pointer.touchscreen_to_pointer_init (2931);0x000000f0;0x01002c14;0x00002c14;0x00000004</row>
+				<row>system:ROM_XMEN;;.text.write.write (3133);0x000000d0;0x01002d04;0x00002d04;0x00000004</row>
+				<row>system:ROM_XMEN;;table (3436);0x00000070;0x01002dd4;0x00002dd4;0x00000004</row>
+				<row>system:ROM_XMEN;;color_bmp (3427);0x00038436;0x01002e44;0x00002e44;0x00000001</row>
+				<row>system:RAM_XRAM;;.bss.graphics_instance0_canvasbuffer1_section (1277);0x00025800;0x01067000;0x0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.graphics_instance0_canvasbuffer2_section (1278);0x00025800;0x0108c800;0x00025800;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.callback (18);0x00000004;0x010b2000;0x0004b000;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.canvas (5);0x00000004;0x010b2004;0x0004b004;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.color (12);0x00000004;0x010b2008;0x0004b008;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.colorcua1 (13);0x00000004;0x010b200c;0x0004b00c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.colorcua2 (14);0x00000004;0x010b2010;0x0004b010;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.colorcua3 (15);0x00000004;0x010b2014;0x0004b014;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.dip (8);0x00000004;0x010b2018;0x0004b018;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.display (4);0x00000004;0x010b201c;0x0004b01c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.figure (20);0x00000004;0x010b2020;0x0004b020;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.leds (16);0x00000004;0x010b2024;0x0004b024;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.pointer_state (10);0x00000004;0x010b2028;0x0004b028;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.punt (11);0x00000004;0x010b202c;0x0004b02c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.term (9);0x00000004;0x010b2030;0x0004b030;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.touch (17);0x00000004;0x010b2034;0x0004b034;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.vga (6);0x00000004;0x010b2038;0x0004b038;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.MAIN.vga1 (7);0x00000004;0x010b203c;0x0004b03c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.drv_ioport_cfg_instance.drv_ioport_instance_table (148);0x00000004;0x010b2040;0x0004b040;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.drv_terminal.drv_table (249);0x00000004;0x010b2044;0x0004b044;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.drv_terminal_cfg_instance.drv_terminal_instance_table (314);0x00000004;0x010b2048;0x0004b048;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.graphics_cfg_instance.graphics_instance0_ad_graphics (1276);0x00000004;0x010b204c;0x0004b04c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.pal_timers._pal_timers_registrations (707);0x00000004;0x010b2050;0x0004b050;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sbss.pointer_cfg_instance.pointer_instance0_ad_pointer (1401);0x00000004;0x010b2054;0x0004b054;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.MAIN.b (19);0x00000004;0x010b2058;0x0004b058;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.MAIN.c (21);0x00000004;0x010b205c;0x0004b05c;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.MAIN.cal1 (23);0x00000004;0x010b2060;0x0004b060;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.devio_init.$str (2957);0x00000003;0x010b2064;0x0004b064;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.per_terminal_cfg_instance.per_terminal_instance_table (607);0x00000004;0x010b2068;0x0004b068;0x00000004</row>
+				<row>system:RAM_XRAM;sda;.sdata.per_tspen_cfg_instance.per_tspen_instance_table (2026);0x00000004;0x010b206c;0x0004b06c;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.canvas.color_cache_p1 (2192);0x00000008;0x010b2070;0x0004b070;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.canvas.color_cache_p2 (2193);0x00000008;0x010b2078;0x0004b078;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.canvas.color_cache_p4 (2194);0x00000008;0x010b2080;0x0004b080;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.canvas.color_cache_p8 (2195);0x00000008;0x010b2088;0x0004b088;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.devio.devio_table (1616);0x00000040;0x010b2090;0x0004b090;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_ad7843.drv_table (1705);0x00000024;0x010b20d0;0x0004b0d0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_ioport.ioport_driver_table (118);0x0000000c;0x010b20f4;0x0004b0f4;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_led.drv_table (162);0x00000020;0x010b2100;0x0004b100;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_spi.drv_table (1760);0x000000c0;0x010b2120;0x0004b120;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_vga_16bpp.vga_16bpp_table (333);0x0000001c;0x010b21e0;0x0004b1e0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.drv_vga_ili9320.ili9320_table (468);0x00000018;0x010b21fc;0x0004b1fc;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.graphics.graphics_table (767);0x0000019c;0x010b2214;0x0004b214;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.graphics_cfg_instance.graphics_instance0_canvasbuffer3 (1279);0x00025800;0x010b23b0;0x0004b3b0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.interrupts.interrupt_table (1299);0x00000100;0x010d7bb0;0x00070bb0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.libc (3253);0x00000004;0x010d7cb0;0x00070cb0;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.libc (3254);0x00000004;0x010d7cb4;0x00070cb4;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.libc (3328);0x00000004;0x010d7cb8;0x00070cb8;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.pal_timers._pal_timer_handlers (706);0x00000060;0x010d7cbc;0x00070cbc;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.pointer.pointer_table (1351);0x00000058;0x010d7d1c;0x00070d1c;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.terminal_to_serial.terminal_to_serial_iofuncs (3016);0x00000014;0x010d7d74;0x00070d74;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.terminal_to_serial.terminal_to_serial_table (3017);0x00000010;0x010d7d88;0x00070d88;0x00000004</row>
+				<row>system:RAM_XRAM;;.bss.touchscreen.drv_table (1500);0x00000054;0x010d7d98;0x00070d98;0x00000004</row>
+				<row>system:RAM_XRAM;;.data._iob._iob (2975);0x000000c8;0x010d7dec;0x00070dec;0x00000004</row>
+				<row>system:RAM_XRAM;;.data.drv_vga_ili9320.init_ili9320 (467);0x0000014a;0x010d7eb4;0x00070eb4;0x00000004</row>
+				<row>system:RAM_XRAM;;.alignment_protection (3448);0x00000002;0x010d7ffe;0x00070ffe;0x00000001</row>
+				<row>system:RAM_XRAM;;.data.libc (3272);0x00000004;0x010d8000;0x00071000;0x00000004</row>
+				<row>system:RAM_XRAM;;.data.libc (3236);0x00000008;0x010d8004;0x00071004;0x00000004</row>
+				<row>system:RAM_XRAM;;.data.svg_palette.svg_colors (1270);0x00000400;0x010d800c;0x0007100c;0x00000004</row>
+				<row>system:RAM_XRAM;;stack (3434);0x00008000;0x010d840c;0x0007140c;0x00000004</row>
+				<row>system:RAM_XRAM;;heap (3435);0x00008000;0x010e040c;0x0007940c;0x00000004</row>
+			</table>
+		</part>
+		<part>
+			<name>Symbols</name>
+			<table>
+				<column>
+					<name>Space addr</name>
+				</column>
+				<column>
+					<name>Name</name>
+				</column>
+				<column>
+					<name>Space</name>
+				</column>
+				<row>0x0;__INDIRECT__;-</row>
+				<row>0x0;__libc_references;-</row>
+				<row>0x0;_START;system:sw:main</row>
+				<row>0x00000020;bitstreamverasans10;system:sw:main</row>
+				<row>0x00000048;ad_touchscreen_to_pointer_instance_table;system:sw:main</row>
+				<row>0x00000050;ad_vga_ili9320_instance_table;system:sw:main</row>
+				<row>0x00000058;bpmono8;system:sw:main</row>
+				<row>0x000000ac;drv_ad7843_instance_table;system:sw:main</row>
+				<row>0x000000b8;drv_led_instance_table;system:sw:main</row>
+				<row>0x000000c0;drv_spi_instance_table;system:sw:main</row>
+				<row>0x000000ec;drv_vga_16bpp_instance_table;system:sw:main</row>
+				<row>0x00000100;_text_intvec_0000;system:sw:main</row>
+				<row>0x00000100;_EXCEPTION_BASE_;system:sw:main</row>
+				<row>0x00000100;_lc_gb_intvec;system:sw:main</row>
+				<row>0x00000108;per_ioport_instance_table;system:sw:main</row>
+				<row>0x00000114;per_led_instance_table;system:sw:main</row>
+				<row>0x0000011c;per_vga32_16bpp_instance_table;system:sw:main</row>
+				<row>0x00000128;_text_intvec_0028;system:sw:main</row>
+				<row>0x00000130;_text_intvec_0030;system:sw:main</row>
+				<row>0x00000138;_text_intvec_0038;system:sw:main</row>
+				<row>0x00000140;_text_intvec_0040;system:sw:main</row>
+				<row>0x00000148;_text_intvec_0048;system:sw:main</row>
+				<row>0x00000150;_lc_ge_intvec;system:sw:main</row>
+				<row>0x00000200;_VECTORED_INTERRUPTS_;system:sw:main</row>
+				<row>0x00000770;bitstreamverasans10_data;system:sw:main</row>
+				<row>0x00001e34;bpmono8_data;system:sw:main</row>
+				<row>0x0000287c;drv_vga_ili9320_instance_table;system:sw:main</row>
+				<row>0x000028a4;graphics_instance_table;system:sw:main</row>
+				<row>0x000028f8;per_spi_instance_table;system:sw:main</row>
+				<row>0x00002908;per_vga32_ili9320_instance_table;system:sw:main</row>
+				<row>0x00002930;pointer_instance_table;system:sw:main</row>
+				<row>0x00002954;serial_instance_table;system:sw:main</row>
+				<row>0x0000295c;terminal_to_serial_instance_table;system:sw:main</row>
+				<row>0x000029ac;touchscreen_instance_table;system:sw:main</row>
+				<row>0x00002a94;main;system:sw:main</row>
+				<row>0x00003354;set_all_leds;system:sw:main</row>
+				<row>0x000033f8;framework_init;system:sw:main</row>
+				<row>0x0000342c;_fopen;system:sw:main</row>
+				<row>0x0000354c;_doclose;system:sw:main</row>
+				<row>0x0000359c;ad_vga_ili9320_init;system:sw:main</row>
+				<row>0x00003734;_canvas_unset_rotation;system:sw:main</row>
+				<row>0x00003f60;_graphics_draw_horizontal_rgb565;system:sw:main</row>
+				<row>0x00004110;_graphics_draw_pixel_alpha_rgb565;system:sw:main</row>
+				<row>0x00004738;_graphics_draw_vertical_rgb565;system:sw:main</row>
+				<row>0x000048c4;_graphics_get_pixel_rgb565;system:sw:main</row>
+				<row>0x00004904;canvas_initialize;system:sw:main</row>
+				<row>0x00004c94;canvas_initialize_extern;system:sw:main</row>
+				<row>0x00004da0;canvas_set_rotation;system:sw:main</row>
+				<row>0x00004da8;close;system:sw:main</row>
+				<row>0x00004da8;_close;system:sw:main</row>
+				<row>0x00004dfc;__cstart;system:sw:main</row>
+				<row>0x00004eac;devio_close;system:sw:main</row>
+				<row>0x00004eb4;devio_getdev;system:sw:main</row>
+				<row>0x00004ee8;devio_install;system:sw:main</row>
+				<row>0x00004f9c;devio_lookup;system:sw:main</row>
+				<row>0x00005034;devio_open;system:sw:main</row>
+				<row>0x00005074;devio_readwrite;system:sw:main</row>
+				<row>0x000050c0;posix_devio_init;system:sw:main</row>
+				<row>0x0000511c;ad7843_get_raw;system:sw:main</row>
+				<row>0x00005330;ad7843_open;system:sw:main</row>
+				<row>0x00005464;ioport_get_value;system:sw:main</row>
+				<row>0x000054e0;ioport_open;system:sw:main</row>
+				<row>0x00005588;led_open;system:sw:main</row>
+				<row>0x0000562c;led_set_intensity;system:sw:main</row>
+				<row>0x00005640;led_turn_all_off;system:sw:main</row>
+				<row>0x00005674;spi_cs_hi;system:sw:main</row>
+				<row>0x0000568c;spi_cs_lo;system:sw:main</row>
+				<row>0x000056a8;spi_get_bus;system:sw:main</row>
+				<row>0x0000583c;spi_open;system:sw:main</row>
+				<row>0x00005924;spi_release_bus;system:sw:main</row>
+				<row>0x00005a0c;spi_set_baudrate;system:sw:main</row>
+				<row>0x00005a4c;spi_transceive8;system:sw:main</row>
+				<row>0x00005ae4;terminal_open;system:sw:main</row>
+				<row>0x00005b44;terminal_read;system:sw:main</row>
+				<row>0x00005ba8;terminal_write;system:sw:main</row>
+				<row>0x00005dac;vga_16bpp_get_screen;system:sw:main</row>
+				<row>0x00005db4;vga_16bpp_open;system:sw:main</row>
+				<row>0x00005e88;vga_16bpp_set_resolution;system:sw:main</row>
+				<row>0x00005fcc;vga_16bpp_set_screen;system:sw:main</row>
+				<row>0x00006024;vga_16bpp_vsync_interrupt;system:sw:main</row>
+				<row>0x00006194;vga_ili9320_get_screen;system:sw:main</row>
+				<row>0x0000619c;vga_ili9320_open;system:sw:main</row>
+				<row>0x000066c0;vga_ili9320_screen_set;system:sw:main</row>
+				<row>0x000066f0;vga_ili9320_set_screen;system:sw:main</row>
+				<row>0x0000683c;vga_ili9320_sync_interrupt;system:sw:main</row>
+				<row>0x00006994;exit;system:sw:main</row>
+				<row>0x000069c4;fclose;system:sw:main</row>
+				<row>0x00006a2c;_fflush;system:sw:main</row>
+				<row>0x00006b28;freopen;system:sw:main</row>
+				<row>0x00006ba8;graphics_fill_canvas;system:sw:main</row>
+				<row>0x00006bd8;graphics_get_visible_canvas;system:sw:main</row>
+				<row>0x00006be0;graphics_open;system:sw:main</row>
+				<row>0x00006e0c;graphics_set_visible_canvas;system:sw:main</row>
+				<row>0x000071b0;graphics_draw_circle;system:sw:main</row>
+				<row>0x000076d0;graphics_draw_line;system:sw:main</row>
+				<row>0x00007ab4;graphics_draw_char;system:sw:main</row>
+				<row>0x00007b98;graphics_draw_string;system:sw:main</row>
+				<row>0x00007ea4;graphics_fill_circle;system:sw:main</row>
+				<row>0x00007fe0;_Exit;system:sw:main</row>
+				<row>0x00007fe8;_weakstub;system:sw:main</row>
+				<row>0x00007fe8;_doexit;system:sw:main</row>
+				<row>0x00007ff0;clock;system:sw:main</row>
+				<row>0x01000190;graphics_fill_rect;system:sw:main</row>
+				<row>0x010008fc;graphics_fill_triangle;system:sw:main</row>
+				<row>0x01000a38;graphics_draw_pixel;system:sw:main</row>
+				<row>0x01000b58;graphics_draw_pixel_alpha;system:sw:main</row>
+				<row>0x01000c88;graphics_get_pixel;system:sw:main</row>
+				<row>0x01000d5c;interrupt_configure;system:sw:main</row>
+				<row>0x01000df4;interrupt_register_native;system:sw:main</row>
+				<row>0x01000e5c;interrupts_common_handler;system:sw:main</row>
+				<row>0x01000e90;_clock;system:sw:main</row>
+				<row>0x01000eac;strcmp;system:sw:main</row>
+				<row>0x01000ed0;__mul64;system:sw:main</row>
+				<row>0x01000efc;strncmp;system:sw:main</row>
+				<row>0x01000f3c;_sbrk;system:sw:main</row>
+				<row>0x01000f84;__udiv64;system:sw:main</row>
+				<row>0x01001054;free;system:sw:main</row>
+				<row>0x01001054;_free;system:sw:main</row>
+				<row>0x01001054;_dofree;system:sw:main</row>
+				<row>0x0100113c;setvbuf;system:sw:main</row>
+				<row>0x01001230;malloc;system:sw:main</row>
+				<row>0x01001230;_malloc;system:sw:main</row>
+				<row>0x0100143c;_f_ftou;system:sw:main</row>
+				<row>0x01001494;sp_round8_and_normalize;system:sw:main</row>
+				<row>0x010014f4;_f_utof;system:sw:main</row>
+				<row>0x01001618;_f_div;system:sw:main</row>
+				<row>0x01001750;_f_mul;system:sw:main</row>
+				<row>0x010018d0;_lseek;system:sw:main</row>
+				<row>0x010018d8;open;system:sw:main</row>
+				<row>0x010018d8;_open;system:sw:main</row>
+				<row>0x0100195c;pal_architecture_clock_init;system:sw:main</row>
+				<row>0x01001964;pal_architecture_interrupt_configure;system:sw:main</row>
+				<row>0x0100198c;pal_architecture_interrupts_init;system:sw:main</row>
+				<row>0x010019dc;pal_architecture_processor_init;system:sw:main</row>
+				<row>0x010019e4;pal_architecture_timer_interrupt_init;system:sw:main</row>
+				<row>0x01001a30;tsk3000_set_interval_timer;system:sw:main</row>
+				<row>0x01001b58;pal_architecture_interrupt_disable;system:sw:main</row>
+				<row>0x01001bc0;pal_architecture_interrupt_enable;system:sw:main</row>
+				<row>0x01001c24;pal_architecture_set_native_handler;system:sw:main</row>
+				<row>0x01001d34;tsk3000_architecture_set_native_handler;system:sw:main</row>
+				<row>0x01001d60;tsk3000_extract_vector_table;system:sw:main</row>
+				<row>0x01001d68;tsk3000_patch_vector_table;system:sw:main</row>
+				<row>0x01001dc8;pal_init;system:sw:main</row>
+				<row>0x01001e1c;pal_timers_common_handler;system:sw:main</row>
+				<row>0x01001f0c;pal_delay_ms;system:sw:main</row>
+				<row>0x0100200c;pointer_open;system:sw:main</row>
+				<row>0x01002124;pointer_set_position;system:sw:main</row>
+				<row>0x010021a4;pointer_update;system:sw:main</row>
+				<row>0x01002304;terminal_to_serial_init;system:sw:main</row>
+				<row>0x0100242c;delay_ms;system:sw:main</row>
+				<row>0x01002434;touchscreen_calibrate;system:sw:main</row>
+				<row>0x01002978;touchscreen_get_pos;system:sw:main</row>
+				<row>0x01002ac8;touchscreen_open;system:sw:main</row>
+				<row>0x01002b8c;touchscreen_set_callback;system:sw:main</row>
+				<row>0x01002c14;touchscreen_to_pointer_init;system:sw:main</row>
+				<row>0x01002d04;write;system:sw:main</row>
+				<row>0x01002d04;_write;system:sw:main</row>
+				<row>0x01002dd4;_lc_ub_table;system:sw:main</row>
+				<row>0x010b2000;callback;system:sw:main</row>
+				<row>0x010b2000;_lc_gb_sda;system:sw:main</row>
+				<row>0x010b2004;canvas;system:sw:main</row>
+				<row>0x010b2008;color;system:sw:main</row>
+				<row>0x010b200c;colorcua1;system:sw:main</row>
+				<row>0x010b2010;colorcua2;system:sw:main</row>
+				<row>0x010b2014;colorcua3;system:sw:main</row>
+				<row>0x010b2018;dip;system:sw:main</row>
+				<row>0x010b201c;display;system:sw:main</row>
+				<row>0x010b2020;figure;system:sw:main</row>
+				<row>0x010b2024;leds;system:sw:main</row>
+				<row>0x010b2028;pointer_state;system:sw:main</row>
+				<row>0x010b202c;punt;system:sw:main</row>
+				<row>0x010b2030;term;system:sw:main</row>
+				<row>0x010b2034;touch;system:sw:main</row>
+				<row>0x010b2038;vga;system:sw:main</row>
+				<row>0x010b203c;vga1;system:sw:main</row>
+				<row>0x010b2040;drv_ioport_instance_table;system:sw:main</row>
+				<row>0x010b2048;drv_terminal_instance_table;system:sw:main</row>
+				<row>0x010b204c;graphics_instance0_ad_graphics;system:sw:main</row>
+				<row>0x010b2054;pointer_instance0_ad_pointer;system:sw:main</row>
+				<row>0x010b2058;b;system:sw:main</row>
+				<row>0x010b205c;c;system:sw:main</row>
+				<row>0x010b2060;cal1;system:sw:main</row>
+				<row>0x010b2068;per_terminal_instance_table;system:sw:main</row>
+				<row>0x010b206c;per_tspen_instance_table;system:sw:main</row>
+				<row>0x010b2070;_lc_ge_sda;system:sw:main</row>
+				<row>0x010b2090;devio_table;system:sw:main</row>
+				<row>0x010b2214;graphics_table;system:sw:main</row>
+				<row>0x010ba000;_SDA_BASE_;system:sw:main</row>
+				<row>0x010d7bb0;interrupt_table;system:sw:main</row>
+				<row>0x010d7cb8;errno;system:sw:main</row>
+				<row>0x010d7cb8;_Errno;system:sw:main</row>
+				<row>0x010d7d1c;pointer_table;system:sw:main</row>
+				<row>0x010d7dec;_iob;system:sw:main</row>
+				<row>0x010d8004;__clocks_per_sec;system:sw:main</row>
+				<row>0x010d800c;svg_colors;system:sw:main</row>
+				<row>0x010e040c;_lc_ub_stack;system:sw:main</row>
+				<row>0x010e040c;_lc_ub_heap;system:sw:main</row>
+				<row>0x010e840c;_lc_ue_heap;system:sw:main</row>
+			</table>
+		</part>
+	</part>
+	<part>
+		<name>Locate Rules</name>
+		<table>
+			<column>
+				<name>Address space</name>
+			</column>
+			<column>
+				<name>Type</name>
+			</column>
+			<column>
+				<name>Properties</name>
+			</column>
+			<column>
+				<name>Prio</name>
+				<alignment>right</alignment>
+			</column>
+			<column>
+				<name>Sections</name>
+			</column>
+			<row>system:sw:main;absolute;0x00000000;1;.start (1701)</row>
+			<row>system:sw:main;absolute;0x00000100;1;.text.intvec_0000 (625)</row>
+			<row>system:sw:main;absolute;0x00000128;1;.text.intvec_0028 (626)</row>
+			<row>system:sw:main;absolute;0x00000130;1;.text.intvec_0030 (627)</row>
+			<row>system:sw:main;absolute;0x00000138;1;.text.intvec_0038 (628)</row>
+			<row>system:sw:main;absolute;0x00000140;1;.text.intvec_0040 (629)</row>
+			<row>system:sw:main;absolute;0x00000148;1;.text.intvec_0048 (630)</row>
+			<row>system:sw:main;ranged;0x01067000..0x010fffff;1;.bss.graphics_instance0_canvasbuffer1_section (1277)</row>
+			<row>system:sw:main;ranged;0x01067000..0x010fffff;1;.bss.graphics_instance0_canvasbuffer2_section (1278)</row>
+			<row>system:sw:main;contiguous;;1;.sbss.MAIN.callback (18) | .sbss.MAIN.canvas (5) | .sbss.MAIN.color (12) | .sbss.MAIN.colorcua1 (13) | .sbss.MAIN.colorcua2 (14) | .sbss.MAIN.colorcua3 (15) | .sbss.MAIN.dip (8) | .sbss.MAIN.display (4) | .sbss.MAIN.figure (20) | .sbss.MAIN.leds (16) | .sbss.MAIN.pointer_state (10) | .sbss.MAIN.punt (11) | .sbss.MAIN.term (9) | .sbss.MAIN.touch (17) | .sbss.MAIN.vga (6) | .sbss.MAIN.vga1 (7) | .sbss.drv_ioport_cfg_instance.drv_ioport_instance_table (148) | .sbss.drv_terminal.drv_table (249) | .sbss.drv_terminal_cfg_instance.drv_terminal_instance_table (314) | .sbss.graphics_cfg_instance.graphics_instance0_ad_graphics (1276) | .sbss.pal_timers._pal_timers_registrations (707) | .sbss.pointer_cfg_instance.pointer_instance0_ad_pointer (1401) | .sdata.MAIN.b (19) | .sdata.MAIN.c (21) | .sdata.MAIN.cal1 (23) | .sdata.devio_init.$str (2957) | .sdata.per_terminal_cfg_instance.per_terminal_instance_table (607) | .sdata.per_tspen_cfg_instance.per_tspen_instance_table (2026)</row>
+			<row>system:sw:main;clustered;;1;.bss.canvas.color_cache_p1 (2192) + .bss.canvas.color_cache_p2 (2193) + .bss.canvas.color_cache_p4 (2194) + .bss.canvas.color_cache_p8 (2195) + .bss.devio.devio_table (1616) + .bss.drv_ad7843.drv_table (1705) + .bss.drv_ioport.ioport_driver_table (118) + .bss.drv_led.drv_table (162) + .bss.drv_spi.drv_table (1760) + .bss.drv_vga_16bpp.vga_16bpp_table (333) + .bss.drv_vga_ili9320.ili9320_table (468) + .bss.graphics.graphics_table (767) + .bss.graphics_cfg_instance.graphics_instance0_canvasbuffer3 (1279) + .bss.interrupts.interrupt_table (1299) + .bss.libc (3253) + .bss.libc (3254) + .bss.libc (3328) + .bss.pal_timers._pal_timer_handlers (706) + .bss.pointer.pointer_table (1351) + .bss.terminal_to_serial.terminal_to_serial_iofuncs (3016) + .bss.terminal_to_serial.terminal_to_serial_table (3017) + .bss.touchscreen.drv_table (1500)</row>
+			<row>system:sw:main;clustered;;1;.data._iob._iob (2975) + .data.drv_vga_ili9320.init_ili9320 (467) + .data.libc (3272) + .data.libc (3236) + .data.svg_palette.svg_colors (1270)</row>
+			<row>system:sw:main;clustered;;1;[.sdata.MAIN.b] (3437) + [.sdata.MAIN.c] (3438) + [.sdata.MAIN.cal1] (3439) + [.sdata.devio_init.$str] (3444) + [.sdata.per_terminal_cfg_instance.per_terminal_instance_table] (3441) + [.sdata.per_tspen_cfg_instance.per_tspen_instance_table] (3443)</row>
+			<row>system:sw:main;clustered;;1;[.data._iob._iob] (3445) + [.data.drv_vga_ili9320.init_ili9320] (3440) + [.data.libc] (3447) + [.data.libc] (3446) + [.data.svg_palette.svg_colors] (3442)</row>
+			<row>system:sw:main;ordered;;1;.text.intvec_0000 (625) &lt; .text.intvec_0028 (626) &lt; .text.intvec_0030 (627) &lt; .text.intvec_0038 (628) &lt; .text.intvec_0040 (629) &lt; .text.intvec_0048 (630)</row>
+			<row>system:sw:main;unrestricted;;1;.rodata.BitstreamVeraSans10.bitstreamverasans10 (740) , .rodata.BitstreamVeraSans10.bitstreamverasans10_data (739) , .rodata.MAIN.$str (22) , .rodata.ad_touchscreen_to_pointer_cfg_instance.ad_touchscreen_to_pointer_instance_table (2949) , .rodata.ad_vga_ili9320_cfg_instance.ad_vga_ili9320_instance_table (2924) , .rodata.bpmono8.bpmono8 (2115) , .rodata.bpmono8.bpmono8_data (2114) , .rodata.canvas._graphics_draw_pixel_alpha_rgb565 (2161) , .rodata.devio.$str (1617) , .rodata.drv_ad7843_cfg_instance.drv_ad7843_instance_table (1727) , .rodata.drv_led_cfg_instance.drv_led_instance_table (236) , .rodata.drv_spi_cfg_instance.drv_spi_instance_table (2014) , .rodata.drv_vga_16bpp.vga_16bpp_set_resolution (332) , .rodata.drv_vga_16bpp_cfg_instance.drv_vga_16bpp_instance_table (448) , .rodata.drv_vga_ili9320_cfg_instance.drv_vga_ili9320_instance_table (589) , .rodata.graphics_cfg_instance.graphics_instance_table (1280) , .rodata.per_ioport_cfg_instance.per_ioport_instance_table (595) , .rodata.per_led_cfg_instance.per_led_instance_table (601) , .rodata.per_spi_cfg_instance.per_spi_instance_table (2020) , .rodata.per_vga32_16bpp_cfg_instance.per_vga32_16bpp_instance_table (613) , .rodata.per_vga32_ili9320_cfg_instance.per_vga32_ili9320_instance_table (619) , .rodata.pointer.button_table (1350) , .rodata.pointer_cfg_instance.pointer_instance_table (1402) , .rodata.serial_cfg_instance.$str (3093) , .rodata.serial_cfg_instance.serial_instance_table (3094) , .rodata.terminal_to_serial_cfg_instance.terminal_to_serial_instance_table (3087) , .rodata.touchscreen.touchscreen_calibrate (1499) , .rodata.touchscreen_cfg_instance.touchscreen_instance_table (1590) , .text.MAIN.draw_mark (2) , .text.MAIN.main (1) , .text.MAIN.set_all_leds (3) , .text.__framework_init.framework_init (2891) , .text._fopen._fopen (3144) , .text._iob._doclose (2974) , .text.ad_vga_ili9320.ad_vga_ili9320_init (2913) , .text.canvas._canvas_set_rotation (2175) , .text.canvas._canvas_unset_rotation (2174) , .text.canvas._graphics_convert_color_from_p1 (2128) , .text.canvas._graphics_convert_color_from_p2 (2135) , .text.canvas._graphics_convert_color_from_p4 (2142) , .text.canvas._graphics_convert_color_from_p8 (2149) , .text.canvas._graphics_convert_color_from_rgb565 (2158) , .text.canvas._graphics_convert_color_from_rgb888 (2167) , .text.canvas._graphics_convert_color_to_p1 (2127) , .text.canvas._graphics_convert_color_to_p2 (2134) , .text.canvas._graphics_convert_color_to_p4 (2141) , .text.canvas._graphics_convert_color_to_p8 (2148) , .text.canvas._graphics_convert_color_to_palette (2123) , .text.canvas._graphics_convert_color_to_rgb565 (2157) , .text.canvas._graphics_convert_color_to_rgb888 (2166) , .text.canvas._graphics_draw_horizontal_p1 (2132) , .text.canvas._graphics_draw_horizontal_p2 (2139) , .text.canvas._graphics_draw_horizontal_p4 (2146) , .text.canvas._graphics_draw_horizontal_p8 (2153) , .text.canvas._graphics_draw_horizontal_rgb565 (2163) , .text.canvas._graphics_draw_horizontal_rgb888 (2171) , .text.canvas._graphics_draw_pixel_alpha_p1 (2130) , .text.canvas._graphics_draw_pixel_alpha_p2 (2137) , .text.canvas._graphics_draw_pixel_alpha_p4 (2144) , .text.canvas._graphics_draw_pixel_alpha_p8 (2151) , .text.canvas._graphics_draw_pixel_alpha_rgb565 (2160) , .text.canvas._graphics_draw_pixel_alpha_rgb888 (2169) , .text.canvas._graphics_draw_pixel_p1 (2129) , .text.canvas._graphics_draw_pixel_p2 (2136) , .text.canvas._graphics_draw_pixel_p4 (2143) , .text.canvas._graphics_draw_pixel_p8 (2150) , .text.canvas._graphics_draw_pixel_rgb565 (2159) , .text.canvas._graphics_draw_pixel_rgb888 (2168) , .text.canvas._graphics_draw_vertical_p1 (2133) , .text.canvas._graphics_draw_vertical_p2 (2140) , .text.canvas._graphics_draw_vertical_p4 (2147) , .text.canvas._graphics_draw_vertical_p8 (2154) , .text.canvas._graphics_draw_vertical_rgb565 (2164) , .text.canvas._graphics_draw_vertical_rgb888 (2172) , .text.canvas._graphics_get_pixel_p1 (2131) , .text.canvas._graphics_get_pixel_p2 (2138) , .text.canvas._graphics_get_pixel_p4 (2145) , .text.canvas._graphics_get_pixel_p8 (2152) , .text.canvas._graphics_get_pixel_rgb565 (2162) , .text.canvas._graphics_get_pixel_rgb888 (2170) , .text.canvas.canvas_initialize (2183) , .text.canvas.canvas_initialize_extern (2184) , .text.canvas.canvas_set_rotation (2176) , .text.close.close (3111) , .text.cstart (1702) , .text.devio.devio_close (1612) , .text.devio.devio_getdev (1610) , .text.devio.devio_install (1607) , .text.devio.devio_lookup (1609) , .text.devio.devio_open (1611) , .text.devio.devio_readwrite (1614) , .text.devio_init.posix_devio_init (2955) , .text.devio_init.stdio_init (2956) , .text.drv_ad7843.ad7843_get_raw (1704) , .text.drv_ad7843.ad7843_open (1703) , .text.drv_ioport.ioport_get_value (116) , .text.drv_ioport.ioport_open (117) , .text.drv_led.led_open (161) , .text.drv_led.led_set_intensity (160) , .text.drv_led.led_turn_all_off (157) , .text.drv_spi.spi_cs_hi (1739) , .text.drv_spi.spi_cs_lo (1738) , .text.drv_spi.spi_get_bus (1750) , .text.drv_spi.spi_open (1733) , .text.drv_spi.spi_release_bus (1751) , .text.drv_spi.spi_set_baudrate (1734) , .text.drv_spi.spi_transceive8 (1741) , .text.drv_terminal.terminal_getchar_internal (244) , .text.drv_terminal.terminal_open (248) , .text.drv_terminal.terminal_putchar_internal (242) , .text.drv_terminal.terminal_read (247) , .text.drv_terminal.terminal_write (246) , .text.drv_vga_16bpp._vga_16bpp_set_resolution (320) , .text.drv_vga_16bpp.vga_16bpp_get_screen (326) , .text.drv_vga_16bpp.vga_16bpp_open (322) , .text.drv_vga_16bpp.vga_16bpp_set_resolution (331) , .text.drv_vga_16bpp.vga_16bpp_set_screen (325) , .text.drv_vga_16bpp.vga_16bpp_vsync_interrupt (321) , .text.drv_vga_ili9320._ili9320_init (455) , .text.drv_vga_ili9320._ili9320_write (454) , .text.drv_vga_ili9320.vga_ili9320_get_screen (465) , .text.drv_vga_ili9320.vga_ili9320_open (457) , .text.drv_vga_ili9320.vga_ili9320_screen_set (463) , .text.drv_vga_ili9320.vga_ili9320_set_screen (464) , .text.drv_vga_ili9320.vga_ili9320_sync_interrupt (456) , .text.exit.exit (3100) , .text.fclose.fclose (2999) , .text.fflush._fflush (3155) , .text.freopen.freopen (2988) , .text.graphics.graphics_fill_canvas (766) , .text.graphics.graphics_get_visible_canvas (753) , .text.graphics.graphics_open (749) , .text.graphics.graphics_set_visible_canvas (752) , .text.graphics_draw_circle._graphics_draw_circle (935) , .text.graphics_draw_circle.graphics_draw_circle (934) , .text.graphics_draw_line._graphics_draw_line (957) , .text.graphics_draw_line.graphics_draw_line (956) , .text.graphics_draw_text._graphics_draw_glyph (981) , .text.graphics_draw_text.graphics_draw_char (982) , .text.graphics_draw_text.graphics_draw_string (983) , .text.graphics_fill_circle._graphics_fill_circle (1095) , .text.graphics_fill_circle.graphics_fill_circle (1094) , .text.graphics_fill_rect._graphics_fill_rect (1119) , .text.graphics_fill_rect.graphics_fill_rect (1118) , .text.graphics_fill_triangle._get_next_x (1147) , .text.graphics_fill_triangle._graphics_fill_triangle (1146) , .text.graphics_fill_triangle._init_struct (1148) , .text.graphics_fill_triangle.graphics_fill_triangle (1145) , .text.graphics_pixel_common.graphics_draw_pixel (1195) , .text.graphics_pixel_common.graphics_draw_pixel_alpha (1197) , .text.graphics_pixel_common.graphics_get_pixel (1199) , .text.interrupts.interrupt_configure (1297) , .text.interrupts.interrupt_register_native (1294) , .text.interrupts.interrupts_common_handler (1298) , .text.libc (3372) , .text.libc (3363) , .text.libc (3222) , .text.libc (3223) , .text.libc (3345) , .text.libc (3381) , .text.libc (3354) , .text.libc (3271) , .text.libc (3199) , .text.libc (3252) , .text.libc (3242) , .text.libc (3251) , .text.libfp (3391) , .text.libfp (3418) , .text.libfp (3382) , .text.libfp (3409) , .text.libfp (3400) , .text.lseek._lseek (3176) , .text.open.open (1596) , .text.pal_c3000.pal_architecture_clock_init (2036) , .text.pal_c3000.pal_architecture_interrupt_configure (2035) , .text.pal_c3000.pal_architecture_interrupts_init (2032) , .text.pal_c3000.pal_architecture_processor_init (2034) , .text.pal_c3000.pal_architecture_timer_interrupt_init (2033) , .text.pal_c3000.tsk3000_set_interval_timer (2037) , .text.pal_c3000_interrupts.interrupt_handler (631) , .text.pal_c3000_interrupts.pal_architecture_interrupt_disable (638) , .text.pal_c3000_interrupts.pal_architecture_interrupt_enable (637) , .text.pal_c3000_interrupts.pal_architecture_set_native_handler (635) , .text.pal_c3000_interrupts.pal_interrupt_clock_handler (632) , .text.pal_c3000_interrupts.tsk3000_architecture_set_native_handler (634) , .text.pal_c3000_interrupts.tsk3000_extract_vector_table (633) , .text.pal_c3000_interrupts.tsk3000_patch_vector_table (636) , .text.pal_init.pal_init (2902) , .text.pal_timers.pal_timers_common_handler (703) , .text.pal_timing.pal_delay_ms (2083) , .text.pointer.pointer_button_events (1346) , .text.pointer.pointer_open (1347) , .text.pointer.pointer_set_position (1349) , .text.pointer.pointer_update (1348) , .text.terminal_to_serial.terminal_to_serial_ctl (3015) , .text.terminal_to_serial.terminal_to_serial_init (3011) , .text.terminal_to_serial.terminal_to_serial_open (3012) , .text.terminal_to_serial.terminal_to_serial_read (3014) , .text.terminal_to_serial.terminal_to_serial_write (3013) , .text.timing.delay_ms (1413) , .text.touchscreen.touchscreen_calibrate (1498) , .text.touchscreen.touchscreen_get_pos (1491) , .text.touchscreen.touchscreen_open (1489) , .text.touchscreen.touchscreen_set_callback (1497) , .text.touchscreen_to_pointer.touchscreen_to_pointer_get_state (2930) , .text.touchscreen_to_pointer.touchscreen_to_pointer_init (2931) , .text.write.write (3133) , table (3436) , color_bmp (3427)</row>
+			<row>system:sw:main;unrestricted;;1;stack (3434)</row>
+			<row>system:sw:main;unrestricted;;1;heap (3435)</row>
+			<row>system:sw:main;unrestricted;;1;.alignment_protection (3448)</row>
+			<row>system:sw:main;unrestricted;;1;.alignment_protection (3449)</row>
+		</table>
+	</part>
+</mapfile>

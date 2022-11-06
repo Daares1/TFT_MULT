@@ -1,0 +1,2 @@
+Output\frameout\pal_arch_3000_pal_c3000_posix.obj :	"C:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\src\pal_c3000_posix.c"
+"C:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\src\pal_c3000_posix.c" :

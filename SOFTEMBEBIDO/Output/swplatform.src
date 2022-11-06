@@ -1,0 +1,923 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc7792a --dep-file=Output\swplatform.d --make-target=Output\swplatform.src -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\swplatform.src
+	; Module start
+	.source "swplatform.c"
+
+	.section	.text.swplatform.swplatform_init_stacks ,cluster('$group_swplatform_init_stacks')
+	.align	4
+	.global	swplatform_init_stacks
+; Function swplatform_init_stacks
+.L3:
+swplatform_init_stacks:	.type	func
+	addiu	$sp,$sp,-4
+.L32:
+	sw	$ra,0($sp)
+.L33:
+	jal	vga_16bpp_open
+	move	$a0,$zero
+	sw	$v0,@gprel(drv_vga_16bpp_1)($gp)
+.L74:
+	jal	led_open
+	move	$a0,$zero
+	sw	$v0,@gprel(drv_led_1)($gp)
+.L75:
+	jal	ioport_open
+	move	$a0,$zero
+	sw	$v0,@gprel(drv_ioport_1)($gp)
+.L76:
+	lui	$v0,@hi(_1_str)
+	addiu	$a0,$v0,@lo(_1_str)
+	jal	open
+	li	$a1,0x2
+	sw	$v0,@gprel(serial_1)($gp)
+.L77:
+	jal	graphics_open
+	move	$a0,$zero
+	sw	$v0,@gprel(graphics_1)($gp)
+.L78:
+	jal	pointer_open
+	move	$a0,$zero
+	sw	$v0,@gprel(pointer_1)($gp)
+.L79:
+	lw	$ra,0($sp)
+.L34:
+	jr	$ra
+	addiu	$sp,$sp,4
+.L25:
+	.size	swplatform_init_stacks,*-swplatform_init_stacks
+.L12:
+	; End of function
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.drv_vga_16bpp_1 ,cluster('$group_sbss')
+	.global	drv_vga_16bpp_1
+	.align	4
+drv_vga_16bpp_1:	.type	object
+	.size	drv_vga_16bpp_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.drv_led_1 ,cluster('$group_sbss')
+	.global	drv_led_1
+	.align	4
+drv_led_1:	.type	object
+	.size	drv_led_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.drv_ioport_1 ,cluster('$group_sbss')
+	.global	drv_ioport_1
+	.align	4
+drv_ioport_1:	.type	object
+	.size	drv_ioport_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.serial_1 ,cluster('$group_sbss')
+	.global	serial_1
+	.align	4
+serial_1:	.type	object
+	.size	serial_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.graphics_1 ,cluster('$group_sbss')
+	.global	graphics_1
+	.align	4
+graphics_1:	.type	object
+	.size	graphics_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.sbss.swplatform.pointer_1 ,cluster('$group_sbss')
+	.global	pointer_1
+	.align	4
+pointer_1:	.type	object
+	.size	pointer_1,4
+	.ds	4
+	.endsec	; End of section
+
+	.section	.rodata.swplatform.$str ,cluster('$group_rodata')
+	.align	4
+_1_str:	.type	object
+	.size	_1_str,14
+	.db	'/dev/SERIAL_1',0
+	.endsec	; End of section
+
+	.calls	'swplatform_init_stacks','vga_16bpp_open'
+	.calls	'swplatform_init_stacks','led_open'
+	.calls	'swplatform_init_stacks','ioport_open'
+	.calls	'swplatform_init_stacks','open'
+	.calls	'swplatform_init_stacks','graphics_open'
+	.calls	'swplatform_init_stacks','pointer_open'
+	.calls	'swplatform_init_stacks','',4
+	.extern	ioport_open
+	.extern	led_open
+	.extern	vga_16bpp_open
+	.extern	graphics_open
+	.extern	pointer_open
+	.extern	open
+	.section	.debug_info
+.L5:
+	.dw	2513
+	.dh	3
+	.dw	.L6
+	.db	4
+.L4:
+	.db	1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L7
+	.db	2
+	.db	"tsk3000_reset_interval_timer",0
+	.db	3,1,51,13,1,1,3,0,4
+	.db	"pal_architecture_current_interrupt",0
+	.db	3,1,121,17
+	.dw	.L35-.L5
+	.db	1,1,3,0
+.L35:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"pal_architecture_interrupts_enable",0
+	.db	3,1,128,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_disable",0
+	.db	3,1,133,1,17,1,1,3,0,2
+	.db	"pal_architecture_interrupts_set_mask",0
+	.db	3,1,141,1,17,1,1,6
+	.db	"mask",0
+	.db	1,141,1,63
+	.dw	246
+	.db	3,0,4
+	.db	"pal_architecture_interrupts_get_mask",0
+	.db	3,1,146,1,17
+	.dw	246
+	.db	1,1,3,0,4
+	.db	"pal_architecture_interrupts_mask_levels_below",0
+	.db	3,1,151,1,19
+	.dw	246
+	.db	1,1,6
+	.db	"level",0
+	.db	1,151,1,75
+	.dw	246
+	.db	7,3,3,0,0,2
+	.db	"pal_architecture_interrupt_acknowledge",0
+	.db	3,1,241,1,17,1,1,6
+	.db	"number",0
+	.db	1,241,1,65
+	.dw	246
+	.db	3,0,8
+	.dw	160
+	.db	3,0,8
+	.dw	198
+	.db	3,0,8
+	.dw	262
+	.db	3,0,8
+	.dw	307
+	.db	3,0,8
+	.dw	353
+	.db	9
+	.dw	398
+	.db	3,0,8
+	.dw	414
+	.db	3,0,8
+	.dw	465
+	.db	9
+	.dw	523
+	.db	7,10
+	.dw	262
+	.db	11
+	.dw	305
+	.db	0,3,10
+	.dw	307
+	.db	11
+	.dw	351
+	.db	0,3,0,0,8
+	.dw	543
+	.db	9
+	.dw	590
+	.db	3,0,12
+	.db	"ioport_open",0
+	.db	2,67,18
+	.dw	.L28-.L5
+	.db	1,1,1,1,6
+	.db	"id",0
+	.db	2,67,40
+	.dw	.L29-.L5
+	.db	0
+.L28:
+	.db	13
+	.dw	.L36-.L5
+.L36:
+	.db	14
+	.db	"ioport_drv_s",0
+	.db	2,57,16,12,15
+	.db	"port_count",0
+	.db	1
+	.dw	.L37-.L5
+	.db	2,35,0,15
+	.db	"data_width",0
+	.db	4
+	.dw	.L38-.L5
+	.db	2,35,4,15
+	.db	"base_address",0
+	.db	4
+	.dw	.L39-.L5
+	.db	2,35,8,0
+.L37:
+	.db	5
+	.db	"unsigned char",0
+	.db	1,8
+.L38:
+	.db	16
+	.db	"ioport_drv_datawidth_e",0
+	.db	2,42,14,4,17
+	.db	"DRV_IOPORT_DATA_WIDTH_8",0
+	.db	8,17
+	.db	"DRV_IOPORT_DATA_WIDTH_16",0
+	.db	16,17
+	.db	"DRV_IOPORT_DATA_WIDTH_32",0
+	.db	32,0
+.L39:
+	.db	5
+	.db	"unsigned long int",0
+	.db	4,7
+.L29:
+	.db	5
+	.db	"int",0
+	.db	4,5,12
+	.db	"led_open",0
+	.db	3,50,16
+	.dw	.L27-.L5
+	.db	1,1,1,1,6
+	.db	"id",0
+	.db	3,50,29
+	.dw	973
+	.db	0
+.L27:
+	.db	13
+	.dw	.L40-.L5
+.L40:
+	.db	18
+	.db	"_led_s",0
+	.db	3,37,16,1,12
+	.db	"vga_16bpp_open",0
+	.db	4,49,21
+	.dw	.L26-.L5
+	.db	1,1,1,1,6
+	.db	"id",0
+	.db	4,49,49
+	.dw	246
+	.db	0
+.L26:
+	.db	13
+	.dw	.L41-.L5
+.L41:
+	.db	18
+	.db	"_vga_16bpp_s",0
+	.db	4,47,16,1,12
+	.db	"graphics_open",0
+	.db	5,99,20
+	.dw	.L30-.L5
+	.db	1,1,1,1,6
+	.db	"id",0
+	.db	5,99,47
+	.dw	246
+	.db	0
+.L30:
+	.db	13
+	.dw	.L42-.L5
+.L42:
+	.db	18
+	.db	"_graphics_s",0
+	.db	5,86,16,1,12
+	.db	"pointer_open",0
+	.db	6,63,20
+	.dw	.L31-.L5
+	.db	1,1,1,1,6
+	.db	"id",0
+	.db	6,63,47
+	.dw	246
+	.db	0
+.L31:
+	.db	13
+	.dw	.L43-.L5
+.L43:
+	.db	18
+	.db	"_pointer_s",0
+	.db	6,47,16,1,12
+	.db	"open",0
+	.db	7,97,13
+	.dw	973
+	.db	1,1,1,1,19,7,97,29
+	.dw	.L44-.L5
+	.db	19,7,97,32
+	.dw	973
+	.db	20,7,97,37,0
+.L44:
+	.db	13
+	.dw	.L45-.L5
+.L45:
+	.db	21
+	.dw	.L46-.L5
+.L46:
+	.db	5
+	.db	"char",0
+	.db	1,6,22
+	.db	"__wchar_t",0
+	.db	8,1,1
+	.dw	.L47-.L5
+.L47:
+	.db	5
+	.db	"unsigned short int",0
+	.db	2,7,22
+	.db	"__size_t",0
+	.db	8,1,1
+	.dw	246
+	.db	22
+	.db	"__ssize_t",0
+	.db	8,1,1
+	.dw	973
+	.db	22
+	.db	"__ptrdiff_t",0
+	.db	8,1,1
+	.dw	973
+	.db	22
+	.db	"__codeptr",0
+	.db	8,1,1
+	.dw	.L48-.L5
+.L48:
+	.db	13
+	.dw	.L49-.L5
+.L49:
+	.db	23,1,22
+	.db	"uint8_t",0
+	.db	9,22,33
+	.dw	826
+	.db	22
+	.db	"uint16_t",0
+	.db	9,24,33
+	.dw	1284
+	.db	22
+	.db	"int32_t",0
+	.db	9,25,33
+	.dw	973
+	.db	22
+	.db	"uint32_t",0
+	.db	9,26,33
+	.dw	246
+	.db	22
+	.db	"int_least8_t",0
+	.db	9,33,33
+	.dw	.L50-.L5
+.L50:
+	.db	5
+	.db	"char",0
+	.db	1,6,22
+	.db	"uint_least8_t",0
+	.db	9,34,33
+	.dw	826
+	.db	22
+	.db	"uint_least16_t",0
+	.db	9,36,33
+	.dw	1284
+	.db	22
+	.db	"uintptr_t",0
+	.db	9,58,33
+	.dw	952
+	.db	22
+	.db	"size_t",0
+	.db	10,20,25
+	.dw	246
+	.db	22
+	.db	"interrupt_handler_t",0
+	.db	11,89,20
+	.dw	.L51-.L5
+.L51:
+	.db	13
+	.dw	.L52-.L5
+.L52:
+	.db	24
+	.dw	246
+	.db	1,1,25
+	.dw	246
+	.db	25
+	.dw	.L53-.L5
+	.db	0
+.L53:
+	.db	13
+	.dw	.L54-.L5
+.L54:
+	.db	26
+	.db	"void",0
+	.db	22
+	.db	"ioport_datawidth_t",0
+	.db	2,48,1
+	.dw	843
+	.db	22
+	.db	"ioport_t",0
+	.db	2,64,1
+	.dw	745
+	.db	22
+	.db	"led_t",0
+	.db	3,37,23
+	.dw	1018
+	.db	22
+	.db	"vga_16bpp_t",0
+	.db	4,47,29
+	.dw	1074
+	.db	22
+	.db	"graphics_t",0
+	.db	5,86,28
+	.dw	1135
+	.db	22
+	.db	"pointer_buttons_t",0
+	.db	6,45,3
+	.dw	.L55-.L5
+.L55:
+	.db	27,6,36,9,4,17
+	.db	"BUTTON_NONE",0
+	.db	0,17
+	.db	"BUTTON_LEFT",0
+	.db	1,17
+	.db	"BUTTON_LEFT_EVENT",0
+	.db	2,17
+	.db	"BUTTON_RIGHT",0
+	.db	4,17
+	.db	"BUTTON_RIGHT_EVENT",0
+	.db	8,17
+	.db	"BUTTON_MIDDLE",0
+	.db	16,17
+	.db	"BUTTON_MIDDLE_EVENT",0
+	.db	32,0,22
+	.db	"pointer_t",0
+	.db	6,47,27
+	.dw	1194
+	.db	22
+	.db	"_iob_flag_t",0
+	.db	12,92,25
+	.dw	1284
+	.db	22
+	.db	"FILE",0
+	.db	12,105,25
+	.dw	.L56-.L5
+.L56:
+	.db	14
+	.db	"_iobuf",0
+	.db	12,94,8,20,15
+	.db	"_ptr",0
+	.db	4
+	.dw	.L57-.L5
+	.db	2,35,0,15
+	.db	"_base",0
+	.db	4
+	.dw	.L57-.L5
+	.db	2,35,4,15
+	.db	"_cnt",0
+	.db	4
+	.dw	973
+	.db	2,35,8,15
+	.db	"_bufsiz",0
+	.db	4
+	.dw	973
+	.db	2,35,12,15
+	.db	"_flag",0
+	.db	2
+	.dw	1284
+	.db	2,35,16,15
+	.db	"_file",0
+	.db	1
+	.dw	826
+	.db	2,35,18,0
+.L57:
+	.db	13
+	.dw	1258
+	.db	22
+	.db	"vga_ili9320_t",0
+	.db	13,33,31
+	.dw	.L58-.L5
+.L58:
+	.db	18
+	.db	"_vga_ili9320_s",0
+	.db	13,33,16,1,22
+	.db	"off_t",0
+	.db	14,18,25
+	.dw	.L59-.L5
+.L59:
+	.db	5
+	.db	"long int",0
+	.db	4,5,22
+	.db	"pid_t",0
+	.db	14,34,13
+	.dw	973
+	.db	22
+	.db	"time_t",0
+	.db	14,36,27
+	.dw	952
+	.db	22
+	.db	"posix_thread_t",0
+	.db	14,44,25
+	.dw	.L60-.L5
+.L60:
+	.db	18
+	.db	"thread_t",0
+	.db	14,44,16,1,22
+	.db	"posix_threadqueue_t",0
+	.db	14,50,9
+	.dw	.L61-.L5
+.L61:
+	.db	14
+	.db	"posix_threadqueue_t",0
+	.db	14,46,17,8,15
+	.db	"head",0
+	.db	4
+	.dw	.L62-.L5
+	.db	2,35,0,15
+	.db	"tail",0
+	.db	4
+	.dw	.L62-.L5
+	.db	2,35,4,0
+.L62:
+	.db	13
+	.dw	2151
+	.db	22
+	.db	"pthread_mutex_t",0
+	.db	14,160,1,33
+	.dw	.L63-.L5
+.L63:
+	.db	14
+	.db	"_pthread_mutex_t",0
+	.db	14,162,1,8,32,28
+	.db	"type",0
+	.db	1
+	.dw	826
+	.db	2,0,2,35,0,28
+	.db	"protocol",0
+	.db	1
+	.dw	826
+	.db	2,2,2,35,0,28
+	.db	"prioceiling",0
+	.db	4
+	.dw	246
+	.db	16,4,2,35,0,28
+	.db	"recursive",0
+	.db	2
+	.dw	1284
+	.db	8,4,2,35,2,28
+	.db	"preprio",0
+	.db	2
+	.dw	.L64-.L5
+	.db	16,0,2,35,4,15
+	.db	"initi",0
+	.db	4
+	.dw	973
+	.db	2,35,8,15
+	.db	"owner",0
+	.db	4
+	.dw	2247
+	.db	2,35,12,15
+	.db	"nestup",0
+	.db	4
+	.dw	.L65-.L5
+	.db	2,35,16,15
+	.db	"nestdown",0
+	.db	4
+	.dw	.L65-.L5
+	.db	2,35,20,15
+	.db	"queue",0
+	.db	8
+	.dw	2193
+	.db	2,35,24,0
+.L64:
+	.db	5
+	.db	"short int",0
+	.db	2,5
+.L65:
+	.db	13
+	.dw	2277
+	.db	22
+	.db	"clockid_t",0
+	.db	14,183,1,13
+	.dw	973
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L6:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,3,11
+	.db	0,0,0,4,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,5,36,0,3,8,11,15,62,15,0,0,6,5,0,3,8,58
+	.db	15,59,15,57,15,73,19,0,0,7,11,1,0,0,8,46,1,49,19,0,0,9,5,0,49,19,0,0,10,29,1,49,19,0,0,11,11,0,49,19,0
+	.db	0,12,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,13,15,0,73,19,0,0,14,19,1,3,8,58,15
+	.db	59,15,57,15,11,15,0,0,15,13,0,3,8,11,15,73,19,56,9,0,0,16,4,1,3,8,58,15,59,15,57,15,11,15,0,0,17,40,0
+	.db	3,8,28,13,0,0,18,19,0,3,8,58,15,59,15,57,15,60,12,0,0,19,5,0,58,15,59,15,57,15,73,19,0,0,20,24,0,58,15
+	.db	59,15,57,15,0,0,21,38,0,73,19,0,0,22,22,0,3,8,58,15,59,15,57,15,73,19,0,0,23,21,0,54,15,0,0,24,21,1,73
+	.db	19,54,15,39,12,0,0,25,5,0,73,19,0,0,26,59,0,3,8,0,0,27,4,1,58,15,59,15,57,15,11,15,0,0,28,13,0,3,8,11
+	.db	15,73,19,13,15,12,15,56,9,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L7:
+	.dw	.L67-.L66
+.L66:
+	.dh	3
+	.dw	.L69-.L68
+.L68:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\processors\\c3000\\include\\pal_arch.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\ioport\\include\\drv_ioport.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\led\\include\\drv_led.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_16bpp\\include\\drv_vga_16bpp.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\pointer\\include\\pointer.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\fcntl.h",0
+	.db	0,0,0
+	.db	"swplatform.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\interrupts\\include\\interrupts.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\stdio.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\platform\\fpga\\drivers\\vga_ili9320\\include\\drv_vga_ili9320.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\posix\\include\\sys\\types.h",0
+	.db	0,0,0,0
+.L69:
+.L67:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_swplatform_init_stacks')
+.L8:
+	.dw	218
+	.dh	3
+	.dw	.L9
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L11,.L10
+	.db	2
+	.dw	.L4
+	.db	3
+	.db	"swplatform_init_stacks",0
+	.db	1,18,6,1,1,1
+	.dw	.L3,.L25,.L2
+	.db	4
+	.dw	.L3,.L25
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_swplatform_init_stacks')
+.L9:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_swplatform_init_stacks')
+.L10:
+	.dw	.L71-.L70
+.L70:
+	.dh	3
+	.dw	.L73-.L72
+.L72:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"swplatform.c",0
+	.db	0,0,0,0
+.L73:
+	.db	5,6,7,0,5,2
+	.dw	.L3
+	.db	3,17,1,5,54
+	.db	16+9*((.L33-.L3)/4)
+	.db	5,42
+	.db	15+9*((.L74-.L33)/4)
+	.db	5,48
+	.db	15+9*((.L75-.L74)/4)
+	.db	5,52
+	.db	15+9*((.L76-.L75)/4)
+	.db	5,48
+	.db	15+9*((.L77-.L76)/4)
+	.db	5,46
+	.db	15+9*((.L78-.L77)/4)
+	.db	5,1
+	.db	15+9*((.L79-.L78)/4)
+	.db	9
+	.dh	.L12-.L79
+	.db	0,1,1
+.L71:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_swplatform_init_stacks')
+.L11:
+	.dw	-1
+	.dw	.L3
+	.dw	0
+	.dw	.L12-.L3
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L13:
+	.dw	189
+	.dh	3
+	.dw	.L14
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"drv_vga_16bpp_1",0
+	.db	8,10,15
+	.dw	.L26
+	.db	1,5,3
+	.dw	drv_vga_16bpp_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L14:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L15:
+	.dw	183
+	.dh	3
+	.dw	.L16
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"drv_led_1",0
+	.db	8,11,15
+	.dw	.L27
+	.db	1,5,3
+	.dw	drv_led_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L16:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L17:
+	.dw	186
+	.dh	3
+	.dw	.L18
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"drv_ioport_1",0
+	.db	8,12,15
+	.dw	.L28
+	.db	1,5,3
+	.dw	drv_ioport_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L18:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L19:
+	.dw	182
+	.dh	3
+	.dw	.L20
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"serial_1",0
+	.db	8,13,15
+	.dw	.L29
+	.db	1,5,3
+	.dw	serial_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L20:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L21:
+	.dw	184
+	.dh	3
+	.dw	.L22
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"graphics_1",0
+	.db	8,14,15
+	.dw	.L30
+	.db	1,5,3
+	.dw	graphics_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L22:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_sbss')
+.L23:
+	.dw	183
+	.dh	3
+	.dw	.L24
+	.db	4,1
+	.db	"swplatform.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L4
+	.db	3
+	.db	"pointer_1",0
+	.db	8,15,15
+	.dw	.L31
+	.db	1,5,3
+	.dw	pointer_1
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_sbss')
+.L24:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_swplatform_init_stacks')
+.L2:
+	.dw	-1
+	.dw	.L3,.L3-.L3,.L32-.L3
+	.dh	2
+	.db	141,0
+	.dw	.L32-.L3,.L25-.L3
+	.dh	2
+	.db	141,4
+	.dw	.L25-.L3,.L25-.L3
+	.dh	2
+	.db	141,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L80:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_swplatform_init_stacks')
+	.dw	48
+	.dw	.L80,.L3,.L25-.L3
+	.db	4
+	.dw	(.L32-.L3)/4
+	.db	19,4,22,29,3,19,141,4,4
+	.dw	(.L33-.L32)/4
+	.db	17,31,124,4
+	.dw	(.L34-.L33)/4
+	.db	223,4
+	.dw	(.L25-.L34)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,1364 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc3424a --dep-file=Output\frameout\graphics_graphics_fill_rect.d --make-target=Output\frameout\graphics_graphics_fill_rect.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\graphics_fill_rect.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c"
+
+	.section	.text.graphics_fill_rect.graphics_fill_rect ,cluster('$group_graphics_fill_rect')
+	.align	4
+	.global	graphics_fill_rect
+; Function graphics_fill_rect
+.L20:
+graphics_fill_rect:	.type	func
+	addiu	$sp,$sp,-12
+.L60:
+	sw	$ra,8($sp)
+.L61:
+	move	$v0,$a3
+.L75:
+	lhu	$v1,84($a0)
+.L171:
+	lw	$a3,12($sp)
+.L69:
+	beq	$v1,$zero,.L2
+.L172:
+	lw	$t0,16($sp)
+.L64:
+	li	$t1,0x5a
+	beq	$v1,$t1,.L3
+	nop
+	li	$t1,0xb4
+	beq	$v1,$t1,.L4
+	nop
+	li	$t1,0x10e
+	beq	$v1,$t1,.L5
+	nop
+	j	.L6
+	nop
+.L2:
+	sw	$a3,0($sp)
+	lw	$v1,44($a0)
+	sw	$t0,4($sp)
+	lw	$a3,48($a0)
+.L70:
+	addu	$a1,$v1,$a1
+.L73:
+	addu	$a2,$a3,$a2
+.L77:
+	j	.L7
+.L173:
+	move	$a3,$v0
+.L3:
+	sw	$v0,0($sp)
+	lw	$v0,48($a0)
+.L76:
+	sw	$t0,4($sp)
+	subu	$v0,$v0,$a2
+	subu	$v0,$v0,$a3
+	lw	$v1,44($a0)
+	addiu	$v0,$v0,1
+	addu	$a2,$v1,$a1
+.L68:
+	j	.L8
+.L174:
+	move	$a1,$v0
+.L4:
+	sw	$a3,0($sp)
+	lw	$v1,44($a0)
+	sw	$t0,4($sp)
+	subu	$v1,$v1,$a1
+	subu	$v1,$v1,$v0
+	lw	$t0,48($a0)
+.L65:
+	addiu	$a1,$v1,1
+.L66:
+	subu	$v1,$t0,$a2
+	subu	$v1,$v1,$a3
+	addiu	$a2,$v1,1
+.L72:
+	j	.L9
+.L175:
+	move	$a3,$v0
+.L5:
+	sw	$v0,0($sp)
+	lw	$v1,48($a0)
+	sw	$t0,4($sp)
+	lw	$t0,44($a0)
+.L74:
+	addu	$v1,$v1,$a2
+	subu	$a1,$t0,$a1
+.L71:
+	subu	$v0,$a1,$v0
+.L63:
+	addiu	$a2,$v0,1
+.L67:
+	move	$a1,$v1
+.L7:
+.L8:
+.L9:
+	jal	_graphics_fill_rect
+	nop
+.L6:
+	lw	$ra,8($sp)
+.L62:
+	jr	$ra
+	addiu	$sp,$sp,12
+.L37:
+	.size	graphics_fill_rect,*-graphics_fill_rect
+.L31:
+	; End of function
+	.endsec	; End of section
+
+	.section	.text.graphics_fill_rect._graphics_fill_rect ,cluster('$group__graphics_fill_rect')
+	.align	4
+; Function _graphics_fill_rect
+.L22:
+_graphics_fill_rect:	.type	func
+	addiu	$sp,$sp,-52
+.L78:
+	sw	$ra,4($sp)
+.L79:
+	sw	$s0,8($sp)
+.L80:
+	sw	$s1,12($sp)
+.L81:
+	sw	$s2,16($sp)
+.L82:
+	sw	$s3,20($sp)
+.L83:
+	sw	$s4,24($sp)
+.L84:
+	sw	$s5,28($sp)
+.L85:
+	sw	$s6,32($sp)
+.L86:
+	sw	$s7,36($sp)
+.L87:
+	sw	$s8,40($sp)
+.L88:
+	move	$s0,$a0
+.L113:
+	move	$s1,$a1
+.L116:
+	move	$s2,$a2
+.L121:
+	lw	$s3,52($sp)
+.L115:
+	lw	$v0,36($s0)
+.L114:
+	lw	$a0,56($sp)
+.L100:
+	sw	$v0,48($sp)
+.L120:
+	lw	$s4,60($s0)
+.L128:
+	lw	$s6,68($s0)
+.L124:
+	lw	$s8,64($s0)
+.L125:
+	lw	$v0,72($s0)
+.L107:
+	move	$s5,$a3
+.L126:
+	sw	$v0,44($sp)
+.L109:
+	lw	$v0,24($s0)
+.L108:
+	jalr	$ra,$v0
+	nop
+.L99:
+	move	$s7,$v0
+.L110:
+	slt	$v0,$s1,$s4
+.L119:
+	beq	$v0,$zero,.L10
+	nop
+.L180:
+	subu	$v0,$s4,$s1
+	subu	$s5,$s5,$v0
+.L181:
+	move	$s1,$s4
+.L10:
+	addu	$v0,$s1,$s5
+	addiu	$v0,$v0,-1
+	slt	$v0,$s6,$v0
+	beq	$v0,$zero,.L11
+	nop
+.L182:
+	subu	$v0,$s6,$s1
+	addiu	$s5,$v0,1
+.L11:
+	slt	$v0,$s2,$s8
+	beq	$v0,$zero,.L12
+	nop
+.L183:
+	subu	$v0,$s8,$s2
+	subu	$s3,$s3,$v0
+.L184:
+	move	$s2,$s8
+.L12:
+	addu	$v0,$s2,$s3
+	lw	$v1,44($sp)
+.L111:
+	addiu	$v0,$v0,-1
+	slt	$v0,$v1,$v0
+	beq	$v0,$zero,.L13
+	nop
+.L185:
+	move	$v0,$v1
+.L105:
+	subu	$v0,$v0,$s2
+.L106:
+	addiu	$s3,$v0,1
+.L13:
+	lw	$v0,48($sp)
+.L117:
+	bne	$v0,$s5,.L14
+	nop
+.L186:
+	lw	$v0,80($s0)
+.L118:
+	slti	$v0,$v0,25
+	beq	$v0,$zero,.L15
+	nop
+.L187:
+	lw	$v0,16($s0)
+	mult	$v1,$s5,$s3
+.L112:
+	addiu	$a2,$v1,-1
+	move	$a0,$s0
+.L123:
+	move	$a1,$s1
+.L129:
+	move	$a3,$s2
+.L101:
+	jalr	$ra,$v0
+	sw	$s7,0($sp)
+.L102:
+	j	.L16
+	nop
+.L15:
+.L14:
+	blez	$s3,.L17
+.L188:
+	move	$s4,$zero
+.L127:
+	addu	$v0,$s1,$s5
+	addiu	$s5,$v0,-1
+.L18:
+	lw	$v0,16($s0)
+	addu	$a3,$s4,$s2
+	move	$a0,$s0
+.L122:
+	move	$a1,$s1
+.L103:
+	move	$a2,$s5
+	jalr	$ra,$v0
+	sw	$s7,0($sp)
+.L104:
+	addiu	$s4,$s4,1
+.L189:
+	slt	$s6,$s4,$s3
+	bne	$s6,$zero,.L18
+	nop
+.L17:
+.L16:
+	lw	$s8,40($sp)
+.L89:
+	lw	$s7,36($sp)
+.L90:
+	lw	$s6,32($sp)
+.L91:
+	lw	$s5,28($sp)
+.L92:
+	lw	$s4,24($sp)
+.L93:
+	lw	$s3,20($sp)
+.L94:
+	lw	$s2,16($sp)
+.L95:
+	lw	$s1,12($sp)
+.L96:
+	lw	$s0,8($sp)
+.L97:
+	lw	$ra,4($sp)
+.L98:
+	jr	$ra
+	addiu	$sp,$sp,52
+.L47:
+	.size	_graphics_fill_rect,*-_graphics_fill_rect
+.L36:
+	; End of function
+	.endsec	; End of section
+
+	.calls	'graphics_fill_rect','_graphics_fill_rect'
+	.calls	'_graphics_fill_rect','__INDIRECT__'
+	.calls	'graphics_fill_rect','',12
+	.calls	'_graphics_fill_rect','',52
+	.extern	__INDIRECT__
+	.section	.debug_info
+.L24:
+	.dw	2044
+	.dh	3
+	.dw	.L25
+	.db	4
+.L23:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L26
+.L38:
+	.db	2
+	.dw	.L130-.L24
+.L130:
+	.db	3
+	.dw	.L131-.L24
+.L131:
+	.db	4
+	.db	"_canvas_s",0
+	.db	1,8,8,88,5
+	.db	"buffer",0
+	.db	4
+	.dw	.L132-.L24
+	.db	2,35,0,5
+	.db	"draw_pixel",0
+	.db	4
+	.dw	.L133-.L24
+	.db	2,35,4,5
+	.db	"draw_pixel_alpha",0
+	.db	4
+	.dw	.L134-.L24
+	.db	2,35,8,5
+	.db	"get_pixel",0
+	.db	4
+	.dw	.L135-.L24
+	.db	2,35,12,5
+	.db	"draw_horizontal",0
+	.db	4
+	.dw	.L136-.L24
+	.db	2,35,16,5
+	.db	"draw_vertical",0
+	.db	4
+	.dw	.L136-.L24
+	.db	2,35,20,5
+	.db	"convert_color_to_native",0
+	.db	4
+	.dw	.L137-.L24
+	.db	2,35,24,5
+	.db	"convert_color_from_native",0
+	.db	4
+	.dw	.L137-.L24
+	.db	2,35,28,5
+	.db	"drv",0
+	.db	4
+	.dw	.L138-.L24
+	.db	2,35,32,5
+	.db	"buffer_width",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,36,5
+	.db	"buffer_height",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,40,5
+	.db	"canvas_left",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,44,5
+	.db	"canvas_top",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,48,5
+	.db	"canvas_width",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,52,5
+	.db	"canvas_height",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,56,5
+	.db	"pane_left",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,60,5
+	.db	"pane_top",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,64,5
+	.db	"pane_right",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,68,5
+	.db	"pane_bottom",0
+	.db	4
+	.dw	.L40-.L24
+	.db	2,35,72,5
+	.db	"default_font",0
+	.db	4
+	.dw	.L139-.L24
+	.db	2,35,76,5
+	.db	"color_format",0
+	.db	4
+	.dw	.L140-.L24
+	.db	2,35,80,5
+	.db	"rotation",0
+	.db	2
+	.dw	.L141-.L24
+	.db	2,35,84,5
+	.db	"allocation_type",0
+	.db	1
+	.dw	.L142-.L24
+	.db	2,35,86,5
+	.db	"locked",0
+	.db	1
+	.dw	.L143-.L24
+	.db	2,35,87,0
+.L132:
+	.db	6
+	.db	"unsigned long int",0
+	.db	4,7
+.L133:
+	.db	2
+	.dw	.L144-.L24
+.L144:
+	.db	7,1,1,8
+	.dw	.L145-.L24
+	.db	8
+	.dw	.L40-.L24
+	.db	8
+	.dw	.L40-.L24
+	.db	8
+	.dw	.L45-.L24
+	.db	0
+.L145:
+	.db	2
+	.dw	.L146-.L24
+.L146:
+	.db	3
+	.dw	336
+.L40:
+	.db	6
+	.db	"int",0
+	.db	4,5
+.L45:
+	.db	6
+	.db	"unsigned int",0
+	.db	4,7
+.L134:
+	.db	2
+	.dw	.L147-.L24
+.L147:
+	.db	7,1,1,8
+	.dw	924
+	.db	8
+	.dw	934
+	.db	8
+	.dw	934
+	.db	8
+	.dw	941
+	.db	8
+	.dw	.L142-.L24
+	.db	0
+.L142:
+	.db	6
+	.db	"unsigned char",0
+	.db	1,8
+.L135:
+	.db	2
+	.dw	.L148-.L24
+.L148:
+	.db	9
+	.dw	941
+	.db	1,1,8
+	.dw	924
+	.db	8
+	.dw	934
+	.db	8
+	.dw	934
+	.db	0
+.L136:
+	.db	2
+	.dw	.L149-.L24
+.L149:
+	.db	7,1,1,8
+	.dw	924
+	.db	8
+	.dw	934
+	.db	8
+	.dw	934
+	.db	8
+	.dw	934
+	.db	8
+	.dw	941
+	.db	0
+.L137:
+	.db	2
+	.dw	.L150-.L24
+.L150:
+	.db	9
+	.dw	941
+	.db	1,1,8
+	.dw	941
+	.db	0
+.L138:
+	.db	2
+	.dw	.L151-.L24
+.L151:
+	.db	10
+	.db	"void",0
+.L139:
+	.db	2
+	.dw	.L152-.L24
+.L152:
+	.db	3
+	.dw	.L153-.L24
+.L153:
+	.db	11
+	.db	"_font_s",0
+	.db	2,82,16,1
+.L140:
+	.db	12,2,64,9,4,13
+	.db	"COLOR_INVALID",0
+	.db	0,13
+	.db	"COLOR_PALETTE1",0
+	.db	1,13
+	.db	"COLOR_PALETTE2",0
+	.db	2,13
+	.db	"COLOR_PALETTE4",0
+	.db	4,13
+	.db	"COLOR_PALETTE8",0
+	.db	8,13
+	.db	"COLOR_RGB565",0
+	.db	16,13
+	.db	"COLOR_RGB888",0
+	.db	24,13
+	.db	"COLOR_NO_BUFFER",0
+	.db	25,13
+	.db	"COLOR_NO_BUFFER_BGR565",0
+	.db	26,13
+	.db	"COLOR_NO_BUFFER_BW",0
+	.db	27,13
+	.db	"COLOR_NO_BUFFER_MONO2",0
+	.db	28,13
+	.db	"COLOR_NO_BUFFER_MONO4",0
+	.db	29,13
+	.db	"COLOR_NO_BUFFER_MONO8",0
+	.db	30,0
+.L141:
+	.db	6
+	.db	"unsigned short int",0
+	.db	2,7
+.L143:
+	.db	6
+	.db	"_Bool",0
+	.db	1,2,14
+	.db	"__INDIRECT__",0
+	.db	3,1,1,1,1,1,15
+	.db	"__wchar_t",0
+	.db	3,1,1
+	.dw	1378
+	.db	15
+	.db	"__size_t",0
+	.db	3,1,1
+	.dw	941
+	.db	15
+	.db	"__ptrdiff_t",0
+	.db	3,1,1
+	.dw	934
+	.db	15
+	.db	"__codeptr",0
+	.db	3,1,1
+	.dw	.L154-.L24
+.L154:
+	.db	2
+	.dw	.L155-.L24
+.L155:
+	.db	16,1,15
+	.db	"int8_t",0
+	.db	4,21,33
+	.dw	.L156-.L24
+.L156:
+	.db	6
+	.db	"char",0
+	.db	1,6,15
+	.db	"uint8_t",0
+	.db	4,22,33
+	.dw	991
+	.db	15
+	.db	"uint16_t",0
+	.db	4,24,33
+	.dw	1378
+	.db	15
+	.db	"int32_t",0
+	.db	4,25,33
+	.dw	934
+	.db	15
+	.db	"uint32_t",0
+	.db	4,26,33
+	.dw	941
+	.db	15
+	.db	"uintptr_t",0
+	.db	4,58,33
+	.dw	874
+	.db	15
+	.db	"color_t",0
+	.db	2,29,25
+	.dw	941
+	.db	15
+	.db	"color_format_t",0
+	.db	2,79,3
+	.dw	1122
+	.db	15
+	.db	"font_t",0
+	.db	2,82,24
+	.dw	1109
+	.db	15
+	.db	"canvas_t",0
+	.db	5,14,26
+	.dw	336
+	.db	15
+	.db	"bmfileheader_t",0
+	.db	6,77,3
+	.dw	.L157-.L24
+.L157:
+	.db	17,6,71,9,14,5
+	.db	"type",0
+	.db	2
+	.dw	.L158-.L24
+	.db	2,35,0,5
+	.db	"size",0
+	.db	4
+	.dw	.L159-.L24
+	.db	2,35,2,5
+	.db	"reserved",0
+	.db	4
+	.dw	.L159-.L24
+	.db	2,35,6,5
+	.db	"offset",0
+	.db	4
+	.dw	.L159-.L24
+	.db	2,35,10,0
+.L158:
+	.db	18,2
+	.dw	.L160-.L24
+	.db	19,1,0
+.L160:
+	.db	6
+	.db	"char",0
+	.db	1,6
+.L159:
+	.db	18,4
+	.dw	991
+	.db	19,3,0,15
+	.db	"bminfoheader_t",0
+	.db	6,100,3
+	.dw	.L161-.L24
+.L161:
+	.db	17,6,87,9,40,5
+	.db	"size",0
+	.db	4
+	.dw	1795
+	.db	2,35,0,5
+	.db	"width",0
+	.db	4
+	.dw	1795
+	.db	2,35,4,5
+	.db	"height",0
+	.db	4
+	.dw	1795
+	.db	2,35,8,5
+	.db	"planes",0
+	.db	2
+	.dw	.L162-.L24
+	.db	2,35,12,5
+	.db	"bitcount",0
+	.db	2
+	.dw	.L162-.L24
+	.db	2,35,14,5
+	.db	"compression",0
+	.db	4
+	.dw	1795
+	.db	2,35,16,5
+	.db	"imagesize",0
+	.db	4
+	.dw	1795
+	.db	2,35,20,5
+	.db	"xppm",0
+	.db	4
+	.dw	1795
+	.db	2,35,24,5
+	.db	"yppm",0
+	.db	4
+	.dw	1795
+	.db	2,35,28,5
+	.db	"colorused",0
+	.db	4
+	.dw	1795
+	.db	2,35,32,5
+	.db	"colorimportant",0
+	.db	4
+	.dw	1795
+	.db	2,35,36,0
+.L162:
+	.db	18,2
+	.dw	991
+	.db	19,1,0,15
+	.db	"size_t",0
+	.db	7,20,25
+	.dw	941
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L25:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,15,0,73,19,0,0,3,38,0,73,19,0,0,4,19,1,3,8,58,15,59,15
+	.db	57,15,11,15,0,0,5,13,0,3,8,11,15,73,19,56,9,0,0,6,36,0,3,8,11,15,62,15,0,0,7,21,1,54,15,39,12,0,0,8,5
+	.db	0,73,19,0,0,9,21,1,73,19,54,15,39,12,0,0,10,59,0,3,8,0,0,11,19,0,3,8,58,15,59,15,57,15,60,12,0,0,12,4
+	.db	1,58,15,59,15,57,15,11,15,0,0,13,40,0,3,8,28,13,0,0,14,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0
+	.db	0,15,22,0,3,8,58,15,59,15,57,15,73,19,0,0,16,21,0,54,15,0,0,17,19,1,58,15,59,15,57,15,11,15,0,0,18,1,1
+	.db	11,15,73,19,0,0,19,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L26:
+	.dw	.L164-.L163
+.L163:
+	.dh	3
+	.dw	.L166-.L165
+.L165:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\canvas_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\canvas.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\internal\\graphics_i.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdlib.h",0
+	.db	0,0,0,0
+.L166:
+.L164:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_graphics_fill_rect')
+.L27:
+	.dw	482
+	.dh	3
+	.dw	.L28
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L30,.L29
+	.db	2
+	.dw	.L23
+	.db	3
+	.db	"graphics_fill_rect",0
+	.db	1,44,6,1,1,1
+	.dw	.L20,.L37,.L19
+	.db	4
+	.db	"canvas",0
+	.db	1,44,51
+	.dw	.L38,.L39
+	.db	4
+	.db	"x",0
+	.db	1,44,63
+	.dw	.L40,.L41
+	.db	4
+	.db	"y",0
+	.db	1,44,70
+	.dw	.L40,.L42
+	.db	4
+	.db	"width",0
+	.db	1,44,77
+	.dw	.L40,.L43
+	.db	4
+	.db	"height",0
+	.db	1,44,88
+	.dw	.L40,.L44
+	.db	4
+	.db	"color",0
+	.db	1,44,104
+	.dw	.L45,.L46
+	.db	5
+	.dw	.L20,.L37
+	.db	0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_graphics_fill_rect')
+.L28:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group_graphics_fill_rect')
+.L29:
+	.dw	.L168-.L167
+.L167:
+	.dh	3
+	.dw	.L170-.L169
+.L169:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	0,0,0,0
+.L170:
+	.db	5,6,7,0,5,2
+	.dw	.L20
+	.db	3,43,1,5,5
+	.db	16+9*((.L75-.L20)/4)
+	.db	5,6
+	.db	12+9*((.L171-.L75)/4)
+	.db	5,5
+	.db	16+9*((.L69-.L171)/4)
+	.db	5,6,7
+	.db	12+9*((.L172-.L69)/4)
+	.db	5,5
+	.db	16+9*((.L64-.L172)/4)
+	.db	5,144,1,9
+	.dh	.L2-.L64
+	.db	3,4,1,5,9
+	.db	15+9*((.L77-.L2)/4)
+	.db	5,144,1
+	.db	13+9*((.L173-.L77)/4)
+	.db	5,146,1,9
+	.dh	.L3-.L173
+	.db	3,5,1,5,9,9
+	.dh	.L68-.L3
+	.db	3,1,1,5,146,1
+	.db	13+9*((.L174-.L68)/4)
+	.db	5,148,1,9
+	.dh	.L4-.L174
+	.db	3,5,1,5,9,9
+	.dh	.L72-.L4
+	.db	3,1,1,5,148,1
+	.db	13+9*((.L175-.L72)/4)
+	.db	9
+	.dh	.L5-.L175
+	.db	3,5,1,5,1,9
+	.dh	.L6-.L5
+	.db	3,4,1,9
+	.dh	.L31-.L6
+	.db	0,1,1
+.L168:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group_graphics_fill_rect')
+.L30:
+	.dw	-1
+	.dw	.L20
+	.dw	0
+	.dw	.L31-.L20
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group__graphics_fill_rect')
+.L32:
+	.dw	591
+	.dh	3
+	.dw	.L33
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L35,.L34
+	.db	2
+	.dw	.L23
+	.db	3
+	.db	"_graphics_fill_rect",0
+	.db	1,72,13,1,1
+	.dw	.L22,.L47,.L21
+	.db	4
+	.db	"canvas",0
+	.db	1,72,59
+	.dw	.L38,.L48
+	.db	4
+	.db	"x",0
+	.db	1,72,71
+	.dw	.L40,.L49
+	.db	4
+	.db	"y",0
+	.db	1,72,78
+	.dw	.L40,.L50
+	.db	4
+	.db	"width",0
+	.db	1,72,85
+	.dw	.L40,.L51
+	.db	4
+	.db	"height",0
+	.db	1,72,96
+	.dw	.L40,.L52
+	.db	4
+	.db	"color",0
+	.db	1,72,112
+	.dw	.L45,.L53
+	.db	5
+	.dw	.L22,.L47
+	.db	6
+	.db	"w",0
+	.db	1,74,10
+	.dw	.L40,.L54
+	.db	6
+	.db	"left",0
+	.db	1,75,10
+	.dw	.L40,.L55
+	.db	6
+	.db	"right",0
+	.db	1,76,10
+	.dw	.L40,.L56
+	.db	6
+	.db	"top",0
+	.db	1,77,10
+	.dw	.L40,.L57
+	.db	6
+	.db	"bottom",0
+	.db	1,78,10
+	.dw	.L40,.L58
+	.db	5
+	.dw	.L14,.L16
+	.db	6
+	.db	"i",0
+	.db	1,112,18
+	.dw	.L40,.L59
+	.db	0,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group__graphics_fill_rect')
+.L33:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.db	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3,8,58
+	.db	15,59,15,57,15,73,16,2,6,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line ,cluster('$group__graphics_fill_rect')
+.L34:
+	.dw	.L177-.L176
+.L176:
+	.dh	3
+	.dw	.L179-.L178
+.L178:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\graphics_fill_rect.c",0
+	.db	0,0,0,0
+.L179:
+	.db	5,13,7,0,5,2
+	.dw	.L22
+	.db	3,199,0,1,5,17,9
+	.dh	.L115-.L22
+	.db	3,2,1,5,13
+	.db	12+9*((.L114-.L115)/4)
+	.db	5,17
+	.db	16+9*((.L100-.L114)/4)
+	.db	15+9*((.L120-.L100)/4)
+	.db	15+9*((.L128-.L120)/4)
+	.db	15+9*((.L124-.L128)/4)
+	.db	15+9*((.L125-.L124)/4)
+	.db	5,13,9
+	.dh	.L107-.L125
+	.db	3,122,1,5,17,9
+	.dh	.L126-.L107
+	.db	3,6,1,5,51
+	.db	16+9*((.L109-.L126)/4)
+	.db	5,5
+	.db	17+9*((.L110-.L109)/4)
+	.db	5,26
+	.db	16+9*((.L180-.L110)/4)
+	.db	5,17
+	.db	15+9*((.L181-.L180)/4)
+	.db	5,5
+	.db	16+9*((.L10-.L181)/4)
+	.db	5,30
+	.db	16+9*((.L182-.L10)/4)
+	.db	5,5
+	.db	17+9*((.L11-.L182)/4)
+	.db	5,26
+	.db	16+9*((.L183-.L11)/4)
+	.db	5,16
+	.db	15+9*((.L184-.L183)/4)
+	.db	5,5
+	.db	16+9*((.L12-.L184)/4)
+	.db	5,32
+	.db	16+9*((.L185-.L12)/4)
+	.db	5,9
+	.db	18+9*((.L13-.L185)/4)
+	.db	5,47
+	.db	14+9*((.L186-.L13)/4)
+	.db	5,69
+	.db	17+9*((.L187-.L186)/4)
+	.db	5,35,9
+	.dh	.L14-.L187
+	.db	3,5,1,5,20,7
+	.db	14+9*((.L188-.L14)/4)
+	.db	5,76
+	.db	16+9*((.L18-.L188)/4)
+	.db	5,40,9
+	.dh	.L104-.L18
+	.db	3,126,1,5,35
+	.db	14+9*((.L189-.L104)/4)
+	.db	5,1,9
+	.dh	.L16-.L189
+	.db	3,5,1,9
+	.dh	.L36-.L16
+	.db	0,1,1
+.L177:
+	.endsec	; End of section
+
+	.section	.debug_ranges ,cluster('$group__graphics_fill_rect')
+.L35:
+	.dw	-1
+	.dw	.L22
+	.dw	0
+	.dw	.L36-.L22
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L48:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L100-.L22
+	.dh	1
+	.db	84
+	.dw	.L113-.L22,.L97-.L22
+	.dh	1
+	.db	96
+	.dw	.L122-.L22,.L104-.L22
+	.dh	1
+	.db	84
+	.dw	.L123-.L22,.L102-.L22
+	.dh	1
+	.db	84
+	.dw	0,0
+.L57:
+	.dw	-1
+	.dw	.L22,.L125-.L22,.L89-.L22
+	.dh	1
+	.db	110
+	.dw	0,0
+.L56:
+	.dw	-1
+	.dw	.L22,.L124-.L22,.L18-.L22
+	.dh	1
+	.db	102
+	.dw	0,0
+.L53:
+	.dw	-1
+	.dw	.L22,.L100-.L22,.L99-.L22
+	.dh	1
+	.db	84
+	.dw	.L110-.L22,.L90-.L22
+	.dh	1
+	.db	103
+	.dw	.L22-.L22,.L47-.L22
+	.dh	2
+	.db	145,4
+	.dw	.L99-.L22,.L119-.L22
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_rect')
+.L19:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L60-.L20
+	.dh	2
+	.db	141,0
+	.dw	.L60-.L20,.L37-.L20
+	.dh	2
+	.db	141,12
+	.dw	.L37-.L20,.L37-.L20
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L41:
+	.dw	-1
+	.dw	.L20,.L3-.L20,.L66-.L20
+	.dh	1
+	.db	85
+	.dw	.L5-.L20,.L71-.L20
+	.dh	1
+	.db	85
+	.dw	.L20-.L20,.L73-.L20
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L54:
+	.dw	-1
+	.dw	.L22,.L114-.L22,.L107-.L22
+	.dh	1
+	.db	82
+	.dw	.L117-.L22,.L118-.L22
+	.dh	1
+	.db	82
+	.dw	.L120-.L22,.L47-.L22
+	.dh	2
+	.db	145,124
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_rect')
+.L42:
+	.dw	-1
+	.dw	.L20,.L5-.L20,.L67-.L20
+	.dh	1
+	.db	86
+	.dw	.L3-.L20,.L68-.L20
+	.dh	1
+	.db	86
+	.dw	.L4-.L20,.L72-.L20
+	.dh	1
+	.db	86
+	.dw	.L20-.L20,.L77-.L20
+	.dh	1
+	.db	86
+	.dw	0,0
+.L39:
+	.dw	-1
+	.dw	.L20,.L20-.L20,.L6-.L20
+	.dh	1
+	.db	84
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L50:
+	.dw	-1
+	.dw	.L22,.L101-.L22,.L102-.L22
+	.dh	1
+	.db	87
+	.dw	.L22-.L22,.L99-.L22
+	.dh	1
+	.db	86
+	.dw	.L121-.L22,.L95-.L22
+	.dh	1
+	.db	98
+	.dw	0,0
+.L21:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L78-.L22
+	.dh	2
+	.db	141,0
+	.dw	.L78-.L22,.L47-.L22
+	.dh	2
+	.db	141,52
+	.dw	.L47-.L22,.L47-.L22
+	.dh	2
+	.db	141,0
+	.dw	0,0
+.L55:
+	.dw	-1
+	.dw	.L22,.L128-.L22,.L127-.L22
+	.dh	1
+	.db	100
+	.dw	0,0
+.L49:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L99-.L22
+	.dh	1
+	.db	85
+	.dw	.L103-.L22,.L104-.L22
+	.dh	1
+	.db	85
+	.dw	.L116-.L22,.L96-.L22
+	.dh	1
+	.db	97
+	.dw	.L129-.L22,.L102-.L22
+	.dh	1
+	.db	85
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_rect')
+.L44:
+	.dw	-1
+	.dw	.L20,.L69-.L20,.L70-.L20
+	.dh	1
+	.db	87
+	.dw	.L3-.L20,.L6-.L20
+	.dh	1
+	.db	87
+	.dw	.L20-.L20,.L37-.L20
+	.dh	2
+	.db	145,0
+	.dw	.L20-.L20,.L37-.L20
+	.dh	2
+	.db	145,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L52:
+	.dw	-1
+	.dw	.L22,.L115-.L22,.L94-.L22
+	.dh	1
+	.db	99
+	.dw	.L22-.L22,.L47-.L22
+	.dh	2
+	.db	145,0
+	.dw	.L22-.L22,.L47-.L22
+	.dh	2
+	.db	145,0
+	.dw	.L22-.L22,.L47-.L22
+	.dh	2
+	.db	145,0
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_rect')
+.L46:
+	.dw	-1
+	.dw	.L20,.L64-.L20,.L65-.L20
+	.dh	1
+	.db	88
+	.dw	.L20-.L20,.L37-.L20
+	.dh	2
+	.db	145,4
+	.dw	.L20-.L20,.L37-.L20
+	.dh	2
+	.db	145,4
+	.dw	.L5-.L20,.L74-.L20
+	.dh	1
+	.db	88
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L58:
+	.dw	-1
+	.dw	.L22,.L14-.L22,.L18-.L22
+	.dh	1
+	.db	83
+	.dw	.L105-.L22,.L106-.L22
+	.dh	1
+	.db	82
+	.dw	.L107-.L22,.L108-.L22
+	.dh	1
+	.db	82
+	.dw	.L109-.L22,.L47-.L22
+	.dh	2
+	.db	145,120
+	.dw	.L111-.L22,.L112-.L22
+	.dh	1
+	.db	83
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group_graphics_fill_rect')
+.L43:
+	.dw	-1
+	.dw	.L20,.L4-.L20,.L63-.L20
+	.dh	1
+	.db	82
+	.dw	.L20-.L20,.L69-.L20
+	.dh	1
+	.db	87
+	.dw	.L75-.L20,.L76-.L20
+	.dh	1
+	.db	82
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_loc ,cluster('$group__graphics_fill_rect')
+.L51:
+	.dw	-1
+	.dw	.L22,.L22-.L22,.L99-.L22
+	.dh	1
+	.db	87
+	.dw	.L126-.L22,.L18-.L22
+	.dh	1
+	.db	101
+	.dw	0,0
+.L59:
+	.dw	-1
+	.dw	.L22,.L127-.L22,.L16-.L22
+	.dh	1
+	.db	100
+	.dw	.L14-.L22,.L127-.L22
+	.dh	1
+	.db	80
+	.dw	0,0
+	.endsec	; End of section
+
+	.section	.debug_frame
+.L190:
+	.dw	40
+	.dw	-1
+	.db	3,0,4,1,31,12,29,0,8,0,8,29,8,31,8,1,8,16,8,17,8,18,8,19,8,20,8,21,8,22,8,23,8,28,8,30
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group_graphics_fill_rect')
+	.dw	48
+	.dw	.L190,.L20,.L37-.L20
+	.db	4
+	.dw	(.L60-.L20)/4
+	.db	19,12,22,29,3,19,141,12,4
+	.dw	(.L61-.L60)/4
+	.db	17,31,124,4
+	.dw	(.L62-.L61)/4
+	.db	223,4
+	.dw	(.L37-.L62)/4
+	.db	19,0,8,29
+	.endsec	; End of section
+
+	.section	.debug_frame ,cluster('$group__graphics_fill_rect')
+	.dw	176
+	.dw	.L190,.L22,.L47-.L22
+	.db	4
+	.dw	(.L78-.L22)/4
+	.db	19,52,22,29,3,19,141,52,4
+	.dw	(.L79-.L78)/4
+	.db	17,31,80,4
+	.dw	(.L80-.L79)/4
+	.db	17,16,84,4
+	.dw	(.L81-.L80)/4
+	.db	17,17,88,4
+	.dw	(.L82-.L81)/4
+	.db	17,18,92,4
+	.dw	(.L83-.L82)/4
+	.db	17,19,96,4
+	.dw	(.L84-.L83)/4
+	.db	17,20,100,4
+	.dw	(.L85-.L84)/4
+	.db	17,21,104,4
+	.dw	(.L86-.L85)/4
+	.db	17,22,108,4
+	.dw	(.L87-.L86)/4
+	.db	17,23,112,4
+	.dw	(.L88-.L87)/4
+	.db	17,30,116,4
+	.dw	(.L89-.L88)/4
+	.db	222,4
+	.dw	(.L90-.L89)/4
+	.db	215,4
+	.dw	(.L91-.L90)/4
+	.db	214,4
+	.dw	(.L92-.L91)/4
+	.db	213,4
+	.dw	(.L93-.L92)/4
+	.db	212,4
+	.dw	(.L94-.L93)/4
+	.db	211,4
+	.dw	(.L95-.L94)/4
+	.db	210,4
+	.dw	(.L96-.L95)/4
+	.db	209,4
+	.dw	(.L97-.L96)/4
+	.db	208,4
+	.dw	(.L98-.L97)/4
+	.db	223,4
+	.dw	(.L47-.L98)/4
+	.db	19,0,8,29,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

@@ -1,0 +1,129 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc988a --dep-file=Output\frameout\graphics_svg_palette.d --make-target=Output\frameout\graphics_svg_palette.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\internal -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\svg_palette.src
+	; Module start
+	.source "C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\svg_palette.c"
+
+	.section	.data.svg_palette.svg_colors ,cluster('$group_data')
+	.global	svg_colors
+	.align	4
+svg_colors:	.type	object
+	.size	svg_colors,1024
+	.bs	4,0
+	.dw	16777215,16711680,65280,255,65535,16711935,16776960,8421504,12632256,8388608
+	.dw	32768,128,32896,8388736,8421376,13458524,15761536,16416882,15308410,16752762
+	.dw	14423100,11674146,9109504,16761035,16758465,16738740,16716947,13047173,14381203,16744272
+	.dw	16737095,16729344,16747520,16753920,16766720,16777184,16775885,16448210,16773077,16770229
+	.dw	16767673,15657130,15787660,12433259,15132410,14204888,14524637,15631086,14315734,12211667
+	.dw	9662683,9055202,9699539,10040012,9109643,4915330,6970061,4734347,8087790,11403055
+	.dw	8388352,8190976,3329330,10025880,9498256,64154,65407,3978097,3050327,2263842
+	.dw	25600,10145074,7048739,5597999,6737322,9419919,2142890,35723,14745599,11529966
+	.dw	8388564,4251856,4772300,52945,6266528,4620980,11584734,11591910,11393254,8900331
+	.dw	8900346,49151,2003199,6591981,4286945,205,139,1644912,16775388,16772045
+	.dw	16770244,16768685,16113331,14596231,13808780,12357519,16032864,14329120,12092939,13468991
+	.dw	13789470,9127187,10506797,10824234,16775930,15794160,16121850,15794175,15792383,16316671
+	.dw	16119285,16774638,16119260,16643558,16775920,16777200,16444375,16445670,16773365,16770273
+	.dw	14474460,13882323,11119017,6908265,7833753,7372944,3100495
+	.bs	4,0
+	.dw	197379,328965,526344,657930,855309,986895,1184274,1315860,1513239,1710618
+	.dw	1842204,2039583,2171169,2368548,2500134,2697513,2829099,3026478,3158064,3355443
+	.dw	3552822,3684408,3881787,4013373,4210752,4342338,4539717,4671303,4868682,5066061
+	.dw	5197647,5395026,5526612,5723991,5855577,6052956,6184542,6381921,6513507,6710886
+	.dw	6908265,7039851,7237230,7368816,7566195,7697781,7895160,8026746,8224125,8355711
+	.dw	8553090,8750469,8882055,9079434,9211020,9408399,9539985,9737364,9868950,10066329
+	.dw	10263708,10395294,10592673,10724259,10921638,11053224,11250603,11382189,11579568,11776947
+	.dw	11908533,12105912,12237498,12434877,12566463,12763842,12895428,13092807,13224393,13421772
+	.dw	13619151,13750737,13948116,14079702,14277081,14408667,14606046,14737632,14935011,15066597
+	.dw	15263976,15461355,15592941,15790320,15921906,16119285,16250871,16448250,16579836,16777215
+	.bs	68,0
+	.endsec	; End of section
+
+	.section	.debug_info
+.L3:
+	.dw	401
+	.dh	3
+	.dw	.L4
+	.db	4
+.L2:
+	.db	1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\svg_palette.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L5
+	.db	2
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L9-.L3
+.L9:
+	.db	3
+	.dw	.L10-.L3
+.L10:
+	.db	4,1,2
+	.db	"uint32_t",0
+	.db	2,26,33
+	.dw	.L11-.L3
+.L11:
+	.db	5
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"color_t",0
+	.db	3,29,25
+	.dw	361
+.L8:
+	.db	6,128,8
+	.dw	361
+	.db	7,255,1,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L4:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,22,0,3,8,58,15,59,15,57,15,73,19,0,0,3,15,0,73,19,0,0
+	.db	4,21,0,54,15,0,0,5,36,0,3,8,11,15,62,15,0,0,6,1,1,11,15,73,19,0,0,7,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L5:
+	.dw	.L13-.L12
+.L12:
+	.dh	3
+	.dw	.L15-.L14
+.L14:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\svg_palette.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\include\\graphics.h",0
+	.db	0,0,0,0
+.L15:
+.L13:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_data')
+.L6:
+	.dw	344
+	.dh	3
+	.dw	.L7
+	.db	4,1
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Library\\Software Platform R10\\services\\platform\\graphics\\src\\svg_palette.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"svg_colors",0
+	.db	1,148,2,9
+	.dw	.L8
+	.db	1,5,3
+	.dw	svg_colors
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_data')
+.L7:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end

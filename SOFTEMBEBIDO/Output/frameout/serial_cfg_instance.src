@@ -1,0 +1,153 @@
+	; TASKING TSK3000 VIPER C compiler v1.1r1 Build 235
+	; Options: -f cc6536a --dep-file=Output\frameout\serial_serial_cfg_instance.d --make-target=Output\frameout\serial_serial_cfg_instance.obj -D__ALTIUM_BUILD_MAJOR__=15 -D__ALTIUM_BUILD_MINOR__=1 -D__ALTIUM_PROJECT_NAME__="SOFT_EMBEBIDO" -D__SWPLATFORM__ -D__UNIFIED_HANDLES__=1 -D__POSIX_DEVIO__ -D__FRAMEWORK__ -DNDEBUG=1 -IOutput\framecfg -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\c3000\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\ifconfig\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\sysutils\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\ad7843\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\ioport\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\led\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\spi\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\terminal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\tspen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\peripherals\vga32_ili9320\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\graphics\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\interrupts\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\timing\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\touchscreen\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\serial\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\drivers\vga_16bpp\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\platform\fpga\processors\pal\include -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\platform\pointer\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\devio\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\services\posix\internal -IC:\ProgramData\Altium\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\Extensions\Embedded\Library\Software Platform R10\system\init\include -t0 -IC:\Users\david.DESKTOP-GFO7C5Q\Dropbox\P_DIGITALES\NB3000\NB3000_Project\TFT_MULT\SOFTEMBEBIDO --iso=99 --debug-info=default --global-type-checking -w508 -O2 --rename-sections={module}.{cname} --call=n --align-composites=n --extern-sdata --sdata=4 -o Output\frameout\serial_cfg_instance.src
+	; Module start
+	.source "Output\\framecfg\\serial_cfg_instance.c"
+
+	.section	.rodata.serial_cfg_instance.$str ,cluster('$group_rodata')
+	.align	4
+_1_str:	.type	object
+	.size	_1_str,9
+	.db	'SERIAL_1',0
+	.endsec	; End of section
+
+	.section	.rodata.serial_cfg_instance.serial_instance_table ,cluster('$group_rodata')
+	.global	serial_instance_table
+	.align	4
+serial_instance_table:	.type	object
+	.size	serial_instance_table,8
+	.dw	_1_str
+	.bs	4,0
+	.endsec	; End of section
+
+	.section	.debug_info
+.L3:
+	.dw	430
+	.dh	3
+	.dw	.L4
+	.db	4
+.L2:
+	.db	1
+	.db	"Output\\framecfg\\serial_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1
+	.dw	.L5
+	.db	2
+	.db	"__wchar_t",0
+	.db	1,1,1
+	.dw	.L9-.L3
+.L9:
+	.db	3
+	.db	"unsigned short int",0
+	.db	2,7,2
+	.db	"__size_t",0
+	.db	1,1,1
+	.dw	.L10-.L3
+.L10:
+	.db	3
+	.db	"unsigned int",0
+	.db	4,7,2
+	.db	"__ptrdiff_t",0
+	.db	1,1,1
+	.dw	.L11-.L3
+.L11:
+	.db	3
+	.db	"int",0
+	.db	4,5,2
+	.db	"__codeptr",0
+	.db	1,1,1
+	.dw	.L12-.L3
+.L12:
+	.db	4
+	.dw	.L13-.L3
+.L13:
+	.db	5,1,2
+	.db	"uint32_t",0
+	.db	2,26,33
+	.dw	242
+	.db	2
+	.db	"serial_cfg_instance_t",0
+	.db	3,22,3
+	.dw	.L14-.L3
+.L14:
+	.db	6,3,18,9,8,7
+	.db	"name",0
+	.db	4
+	.dw	.L15-.L3
+	.db	2,35,0,7
+	.db	"serial_adaptor",0
+	.db	4
+	.dw	278
+	.db	2,35,4,0
+.L15:
+	.db	4
+	.dw	.L16-.L3
+.L16:
+	.db	8
+	.dw	.L17-.L3
+.L17:
+	.db	3
+	.db	"char",0
+	.db	1,6
+.L8:
+	.db	8
+	.dw	.L18-.L3
+.L18:
+	.db	9,8
+	.dw	357
+	.db	10,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_abbrev
+.L4:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,22,0,3,8,58,15,59,15,57,15,73,19,0,0,3,36,0,3,8,11,15
+	.db	62,15,0,0,4,15,0,73,19,0,0,5,21,0,54,15,0,0,6,19,1,58,15,59,15,57,15,11,15,0,0,7,13,0,3,8,11,15,73,19
+	.db	56,9,0,0,8,38,0,73,19,0,0,9,1,1,11,15,73,19,0,0,10,33,0,47,15,0,0,0
+	.endsec	; End of section
+
+	.section	.debug_line
+.L5:
+	.dw	.L20-.L19
+.L19:
+	.dh	3
+	.dw	.L22-.L21
+.L21:
+	.db	4,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.db	"Output\\framecfg\\serial_cfg_instance.c",0
+	.db	0,0,0
+	.db	"C:\\ProgramData\\Altium\\Altium Designer {DAA2E7A7-37E9-4E98-9761-EDE7FDBE450E}\\Extensions\\Embedded\\Tasking\\c3000\\include\\stdint.h",0
+	.db	0,0,0
+	.db	"Output\\framecfg\\serial_cfg_instance.h",0
+	.db	0,0,0,0
+.L22:
+.L20:
+	.endsec	; End of section
+
+	.section	.debug_info ,cluster('$group_rodata')
+.L6:
+	.dw	220
+	.dh	3
+	.dw	.L7
+	.db	4,1
+	.db	"Output\\framecfg\\serial_cfg_instance.c",0
+	.db	"TASKING TSK3000 VIPER C compiler",0
+	.db	"C:\\Users\\david.DESKTOP-GFO7C5Q\\Dropbox\\P_DIGITALES\\NB3000\\NB3000_Project\\TFT_MULT\\SOFTEMBEBIDO\\",0
+	.db	12,1,2
+	.dw	.L2
+	.db	3
+	.db	"serial_instance_table",0
+	.db	1,9,29
+	.dw	.L8
+	.db	1,5,3
+	.dw	serial_instance_table
+	.db	0
+	.endsec	; End of section
+
+	.section	.debug_abbrev ,cluster('$group_rodata')
+.L7:
+	.db	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.db	0,0,0
+	.endsec	; End of section
+
+	; Module end
+	.end
